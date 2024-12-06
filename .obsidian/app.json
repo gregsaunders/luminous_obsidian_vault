@@ -1,0 +1,9 @@
+{
+  "readableLineLength": false,
+  "newFileLocation": "current",
+  "newLinkFormat": "absolute",
+  "useMarkdownLinks": false,
+  "showUnsupportedFiles": true,
+  "attachmentFolderPath": "./attachments",
+  "promptDelete": false
+}

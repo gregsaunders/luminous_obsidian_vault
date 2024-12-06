@@ -1,0 +1,11 @@
+{
+	"id": "folder-frontmatter-plugin",
+	"name": "Folder Front Matter Plugin",
+	"version": "1.0.0",
+	"minAppVersion": "0.15.0",
+	"description": "Adds folder front matter to files.",
+	"author": "Greg Saunders",
+	"authorUrl": "https://obsidian.md",
+	"fundingUrl": "https://obsidian.md/pricing",
+	"isDesktopOnly": false
+}

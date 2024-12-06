@@ -1,0 +1,313 @@
+[
+  {"type":"directory","name":".","contents":[
+    {"type":"file","name":".DS_Store"},
+    {"type":"directory","name":"Artifacts","contents":[
+      {"type":"file","name":".DS_Store"},
+      {"type":"file","name":"90 Day Jeff's stuff.md"},
+      {"type":"file","name":"90 days.md"},
+      {"type":"file","name":"Competition.md"},
+      {"type":"file","name":"Industry questionnaire.md"},
+      {"type":"file","name":"Items for discussion with lawyer.md"},
+      {"type":"file","name":"Items for discussion with lawyer.pdf"},
+      {"type":"file","name":"Whiteboard 2022-05-16.md"},
+      {"type":"directory","name":"attachments","contents":[
+        {"type":"file","name":"IMG_0212.jpg"},
+        {"type":"file","name":"IMG_0213.jpg"},
+        {"type":"file","name":"IMG_0215.jpg"},
+        {"type":"file","name":"whiteboard_2022-05-16.jpeg"}
+      ]}
+    ]},
+    {"type":"directory","name":"Journal","contents":[
+      {"type":"file","name":".DS_Store"},
+      {"type":"directory","name":"Greg","contents":[
+        {"type":"file","name":"2024-11-27.md"}
+      ]},
+      {"type":"directory","name":"Jeff","contents":[
+        {"type":"file","name":"2024-11-27.md"},
+        {"type":"directory","name":"Business stuff","contents":[
+          {"type":"directory","name":"Bio Sensor Meta Model","contents":[
+            {"type":"directory","name":"1. High Level Metamodel Concepts","contents":[
+              {"type":"file","name":"0. Introduction to the Ardoq Metamodel.md"},
+              {"type":"file","name":"00 What is a Metamodel?.md"},
+              {"type":"file","name":"1. Business Ecosystem 1.md"},
+              {"type":"file","name":"2. Business Propositions and Operations 1.md"},
+              {"type":"file","name":"3. Strategy, Change and Risk 1.md"},
+              {"type":"file","name":"4. Breaking Out Operations 1.md"},
+              {"type":"directory","name":"attachments"}
+            ]},
+            {"type":"directory","name":"2. Domains and Component Types","contents":[
+              {"type":"file","name":"0. The Ardoq Metamodel.md"},
+              {"type":"file","name":"1. Strategy and Objectives.md"},
+              {"type":"file","name":"10. Business Capabilities and Process.md"},
+              {"type":"file","name":"11. Applications.md"},
+              {"type":"file","name":"12. Technology Capabilities.md"},
+              {"type":"file","name":"13. Infrastructure.md"},
+              {"type":"file","name":"14. Technology Catalog.md"},
+              {"type":"file","name":"15. Business Roles People and Organization.md"},
+              {"type":"file","name":"16. Locations and Network.md"},
+              {"type":"file","name":"17. Risk and Controls.md"},
+              {"type":"file","name":"2. Innovation and Change.md"},
+              {"type":"file","name":"3. Persona and Market.md"},
+              {"type":"file","name":"4. Customers and Partners.md"},
+              {"type":"file","name":"5. Value Propositions.md"},
+              {"type":"file","name":"6. Digital Products and Channels.md"},
+              {"type":"file","name":"7. Products and Channels.md"},
+              {"type":"file","name":"8. Logical Information.md"},
+              {"type":"file","name":"9. Physical Data and Business Information Domain.md"}
+            ]},
+            {"type":"directory","name":"2. Metamodel Layers and Columns","contents":[
+              {"type":"file","name":"1. Metamodel Layers.md"},
+              {"type":"file","name":"2. Metamodel Columns.md"},
+              {"type":"directory","name":"attachments"}
+            ]},
+            {"type":"directory","name":"Reference Types","contents":[
+              {"type":"file","name":"20. Reference Categories.md"}
+            ]}
+          ]},
+          {"type":"directory","name":"Business Strategy Stuff","contents":[
+            {"type":"directory","name":"0. Cynefin","contents":[
+              {"type":"file","name":"0. Cynefin.md"},
+              {"type":"file","name":"1. Obvious.md"},
+              {"type":"file","name":"2. Complicated.md"},
+              {"type":"file","name":"3. Complex.md"},
+              {"type":"file","name":"4. Chaotic.md"},
+              {"type":"file","name":"5. Disorder.md"},
+              {"type":"directory","name":"Attachments"}
+            ]},
+            {"type":"directory","name":"1. IT Strategy and Governance","contents":[
+              {"type":"file","name":"1. IT Strategy and Governance.md"},
+              {"type":"file","name":"1. Playbook for Defining IT Strategy and Governance Framework.md"},
+              {"type":"file","name":"2. Business Goals Questionnaire.md"},
+              {"type":"file","name":"3. Alignment with Business Strategy.md"},
+              {"type":"file","name":"4. Implementing Governance Framework.md"},
+              {"type":"file","name":"5. Establishing IT policies and procedures.md"},
+              {"type":"file","name":"6. Plan for Execution.md"},
+              {"type":"file","name":"7. Communications and Training Plan.md"},
+              {"type":"file","name":"8. Monitor and Review.md"},
+              {"type":"file","name":"9. Leverage Technology and Data.md"}
+            ]},
+            {"type":"directory","name":"2. IT Startup Sequence of Events","contents":[
+              {"type":"file","name":"1. Start Up IT's Sequence of Events.md"}
+            ]},
+            {"type":"directory","name":"Ardoq","contents":[
+              {"type":"directory","name":"BCM Modelling","contents":[
+                {"type":"file","name":"1. BCM Benefits.md"},
+                {"type":"file","name":"2. Getting Started.md"},
+                {"type":"file","name":"3. Which Business Capabilities do I Compete On?.md"},
+                {"type":"file","name":"4. How Are My Business Capabilities Implemented?.md"},
+                {"type":"file","name":"5. What Is the Maturity of My Business Capabilities?.md"},
+                {"type":"file","name":"6. Take Your Business Capabilities Beyond the Strategy Room.md"},
+                {"type":"file","name":"Build Out Ardoq.md"},
+                {"type":"directory","name":"attachments"}
+              ]},
+              {"type":"directory","name":"Meta Model","contents":[
+                {"type":"directory","name":"1. High Level Metamodel Concepts","contents":[
+                  {"type":"file","name":"0. Introduction to the Ardoq Metamodel.md"},
+                  {"type":"file","name":"00 What is a Metamodel?.md"},
+                  {"type":"file","name":"1. Business Ecosystem 1.md"},
+                  {"type":"file","name":"2. Business Propositions and Operations 1.md"},
+                  {"type":"file","name":"3. Strategy, Change and Risk 1.md"},
+                  {"type":"file","name":"4. Breaking Out Operations 1.md"},
+                  {"type":"directory","name":"attachments"}
+                ]},
+                {"type":"directory","name":"2. Domains and Component Types","contents":[
+                  {"type":"file","name":"0. The Ardoq Metamodel.md"},
+                  {"type":"file","name":"1. Strategy and Objectives.md"},
+                  {"type":"file","name":"10. Business Capabilities and Process.md"},
+                  {"type":"file","name":"11. Applications.md"},
+                  {"type":"file","name":"12. Technology Capabilities.md"},
+                  {"type":"file","name":"13. Infrastructure.md"},
+                  {"type":"file","name":"14. Technology Catalog.md"},
+                  {"type":"file","name":"15. Business Roles People and Organization.md"},
+                  {"type":"file","name":"16. Locations and Network.md"},
+                  {"type":"file","name":"17. Risk and Controls.md"},
+                  {"type":"file","name":"2. Innovation and Change.md"},
+                  {"type":"file","name":"3. Persona and Market.md"},
+                  {"type":"file","name":"4. Customers and Partners.md"},
+                  {"type":"file","name":"5. Value Propositions.md"},
+                  {"type":"file","name":"6. Digital Products and Channels.md"},
+                  {"type":"file","name":"7. Products and Channels.md"},
+                  {"type":"file","name":"8. Logical Information.md"},
+                  {"type":"file","name":"9. Physical Data and Business Information Domain.md"}
+                ]},
+                {"type":"directory","name":"2. Metamodel Layers and Columns","contents":[
+                  {"type":"file","name":"1. Metamodel Layers.md"},
+                  {"type":"file","name":"2. Metamodel Columns.md"},
+                  {"type":"directory","name":"attachments"}
+                ]},
+                {"type":"directory","name":"Reference Types","contents":[
+                  {"type":"file","name":"20. Reference Categories.md"}
+                ]}
+              ]}
+            ]},
+            {"type":"directory","name":"Gap Selling","contents":[
+              {"type":"file","name":"1. Current State.md"},
+              {"type":"file","name":"2. Future State.md"},
+              {"type":"file","name":"3. Measuring the gap.md"},
+              {"type":"file","name":"4. Problem Identification Foundations.md"},
+              {"type":"file","name":"5. Business vs. Technical Problems.md"},
+              {"type":"file","name":"6. Discovery.md"},
+              {"type":"file","name":"7. Types of questions.md"},
+              {"type":"file","name":"8. Traditional Selling vs. Gap Selling.md"},
+              {"type":"file","name":"Gap Selling.md"}
+            ]},
+            {"type":"directory","name":"Learnings","contents":[
+              {"type":"directory","name":"Chat GPT","contents":[
+                {"type":"file","name":"Cheat Sheet.md"}
+              ]},
+              {"type":"directory","name":"Real Life BPMN Training","contents":[
+                {"type":"file","name":"0. Basic Elements of BPMN.md"},
+                {"type":"directory","name":"1.0 Introduction","contents":[
+                  {"type":"file","name":"0. Basic Elements of BPMN 1.md"},
+                  {"type":"file","name":"1.1 BPMN Introduction.md"},
+                  {"type":"file","name":"1.2 The BPMN Standards.md"},
+                  {"type":"file","name":"1.4 Can BPMN bridge the gap?.md"},
+                  {"type":"file","name":"1.5 A method framework for BPMN.md"},
+                  {"type":"file","name":"1.6 Domains, boundaries and the risk of BPMN monoliths.md"}
+                ]},
+                {"type":"directory","name":"2.0                                 The notation in detail","contents":[
+                  {"type":"file","name":"2.1 Understanding BPMN.md"},
+                  {"type":"file","name":"2.10 Data.md"},
+                  {"type":"file","name":"2.11 Artifacts.md"},
+                  {"type":"file","name":"2.12 Comparison with other notations.md"},
+                  {"type":"file","name":"2.13 Choreographies and conversations.md"},
+                  {"type":"file","name":"2.2 Simple tasks and none events.md"},
+                  {"type":"file","name":"2.3 Design process paths with gateways.md"},
+                  {"type":"file","name":"2.4 Design process paths without gateways.md"},
+                  {"type":"file","name":"2.5 Lanes.md"},
+                  {"type":"file","name":"2.6 Events.md"},
+                  {"type":"file","name":"2.7 Special tasks.md"},
+                  {"type":"file","name":"2.8 Subprocesses.md"},
+                  {"type":"file","name":"2.9 Pools and message flows.md"}
+                ]},
+                {"type":"directory","name":"3.0 Strategic process models","contents":[
+                  {"type":"file","name":"3.1 About this chapter.md"},
+                  {"type":"file","name":"3.2 Case example - Recruiting process.md"},
+                  {"type":"file","name":"3.3 Restricting the symbol set.md"},
+                  {"type":"file","name":"3.4 Process analysis on the strategic level.md"},
+                  {"type":"file","name":"3.5 Conversations and choreographies.md"}
+                ]},
+                {"type":"directory","name":"4.0                                 Operational process models","contents":[
+                  {"type":"file","name":"4.1 About this chapter.md"},
+                  {"type":"file","name":"4.2 From the strategic level to the operational level.md"},
+                  {"type":"file","name":"4.3 Processes of the participants.md"},
+                  {"type":"file","name":"4.4 Preparing for process automation.md"},
+                  {"type":"file","name":"4.5 Hands-on tips for the operational level.md"},
+                  {"type":"directory","name":"attachments"}
+                ]},
+                {"type":"directory","name":"attachments"}
+              ]},
+              {"type":"directory","name":"Story Mapping","contents":[
+                {"type":"file","name":"Story Map Concepts.md"},
+                {"type":"directory","name":"attachments"}
+              ]}
+            ]},
+            {"type":"directory","name":"Theory of Constraints (TOC)","contents":[
+              {"type":"file","name":"1. What is the Goal of Business.md"},
+              {"type":"file","name":"2. Getting Started with TOC.md"},
+              {"type":"file","name":"3. TOC Thinking Process (TP Tools).md"},
+              {"type":"directory","name":"Beyond The Goal - transcript"},
+              {"type":"file","name":"Constraints - The Chain Analogy.md"},
+              {"type":"file","name":"Definition of Constraint.md"},
+              {"type":"file","name":"Marketing with a Mafia Offer.md"},
+              {"type":"file","name":"Prerequisite Tree (PRT).md"},
+              {"type":"file","name":"TOC Applications.md"},
+              {"type":"file","name":"TOC Consulting vs. Strategy Consulting.md"},
+              {"type":"file","name":"The Five Focusing Steps (POOGI).md"},
+              {"type":"file","name":"What is the Theory of Constraints.md"},
+              {"type":"directory","name":"attachments"}
+            ]},
+            {"type":"directory","name":"docs","contents":[
+              {"type":"directory","name":"1. Ardoq Digital Transformation Journey","contents":[
+                {"type":"directory","name":"1. Digital Transformation Map","contents":[
+                  {"type":"file","name":"1. Digital Transformation Map.md"}
+                ]},
+                {"type":"directory","name":"2. Application Lifecycle Management","contents":[
+                  {"type":"file","name":"1. What is Application Lifecycle Management.md"},
+                  {"type":"file","name":"2. Why Application Lifecycle Management is Important for Organizations.md"},
+                  {"type":"file","name":"3. Phases of Application Lifecycle Management.md"},
+                  {"type":"file","name":"4. How to get Started with Application Lifecycle Management.md"},
+                  {"type":"file","name":"5. ALM Conclusion.md"}
+                ]},
+                {"type":"directory","name":"3. Business Capability Modelling","contents":[
+                  {"type":"file","name":"How are business Capabilities categorized?.md"},
+                  {"type":"file","name":"What are Business Capabilities.md"}
+                ]},
+                {"type":"directory","name":"4. Business Capability Realization","contents":[
+                  {"type":"file","name":"1. Objectives and Outcomes.md"},
+                  {"type":"file","name":"2. Business Capability Realization.md"},
+                  {"type":"file","name":"3. Business Capability Realization Metamodel.md"},
+                  {"type":"file","name":"4. Defining Your Problem.md"},
+                  {"type":"file","name":"5. Measuring Success.md"},
+                  {"type":"file","name":"6. Get Your Data Into Ardoq.md"},
+                  {"type":"file","name":"7. Get Your Capabilities and Applications Into Ardoq.md"},
+                  {"type":"file","name":"8. Get Your People Data into Ardoq.md"},
+                  {"type":"file","name":"9. Visualizing Your Data.md"},
+                  {"type":"directory","name":"Attachments"}
+                ]},
+                {"type":"directory","name":"Attachments"}
+              ]},
+              {"type":"directory","name":"Ardoq","contents":[
+                {"type":"directory","name":"Attachments"},
+                {"type":"directory","name":"BCM Modelling","contents":[
+                  {"type":"file","name":"1. Business Capabilities Modelling Benefits.md"},
+                  {"type":"file","name":"2. Tangible Outcomes.md"},
+                  {"type":"file","name":"3. Key Questions.md"},
+                  {"type":"file","name":"Build Out Ardoq.md"}
+                ]},
+                {"type":"directory","name":"Meta Model","contents":[
+                  {"type":"file","name":"1. The Ardoq Metamodel.md"},
+                  {"type":"file","name":"10. Logical Information.md"},
+                  {"type":"file","name":"11. Physical Data Domain.md"},
+                  {"type":"file","name":"12. Business Information.md"},
+                  {"type":"file","name":"13. Applications.md"},
+                  {"type":"file","name":"14. Technology Capabilities.md"},
+                  {"type":"file","name":"15. Infrastructure.md"},
+                  {"type":"file","name":"16. Technology Catalog.md"},
+                  {"type":"file","name":"17. Business Roles.md"},
+                  {"type":"file","name":"18. People and Organization.md"},
+                  {"type":"file","name":"19. Locations.md"},
+                  {"type":"file","name":"2. Value Propositions.md"},
+                  {"type":"file","name":"20. Networks.md"},
+                  {"type":"file","name":"21. Risk and Controls.md"},
+                  {"type":"file","name":"22. Reference Categories.md"},
+                  {"type":"file","name":"3. Business Capabilities.md"},
+                  {"type":"file","name":"3. Business Processes.md"},
+                  {"type":"file","name":"4. Innovation and Change.md"},
+                  {"type":"file","name":"5. Persona.md"},
+                  {"type":"file","name":"6. Market.md"},
+                  {"type":"file","name":"7. Customers and Partners.md"},
+                  {"type":"file","name":"8. Digital Products and Channels.md"},
+                  {"type":"file","name":"9. Products and Channels.md"},
+                  {"type":"directory","name":"Attachments"}
+                ]}
+              ]},
+              {"type":"file","name":"index.md"}
+            ]}
+          ]},
+          {"type":"directory","name":"Corporate Structure","contents":[
+            {"type":"file","name":"Operational Plan.md"},
+            {"type":"file","name":"Proposed Corporate Structure.md"}
+          ]},
+          {"type":"directory","name":"Target Prospects"}
+        ]},
+        {"type":"file","name":"NA Testing Research Notes.md"}
+      ]},
+      {"type":"directory","name":"Martin","contents":[
+        {"type":"file","name":"2024-11-27.md"}
+      ]},
+      {"type":"directory","name":"Shawn","contents":[
+        {"type":"file","name":"2024-11-27.md"}
+      ]}
+    ]},
+    {"type":"directory","name":"Projects","contents":[
+      {"type":"directory","name":"90 days","contents":[
+        {"type":"file","name":"Untitled.md"}
+      ]}
+    ]},
+    {"type":"file","name":"index.md"},
+    {"type":"file","name":"output.json"}
+  ]}
+,
+  {"type":"report","directories":63,"files":199}
+]

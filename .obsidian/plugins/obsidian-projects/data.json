@@ -1,0 +1,213 @@
+{
+  "version": 2,
+  "projects": [
+    {
+      "fieldConfig": {
+        "status": {
+          "options": [
+            "Backlog",
+            "To-do",
+            "In progress",
+            "Resolved",
+            "Done"
+          ]
+        }
+      },
+      "defaultName": "",
+      "templates": [],
+      "excludedNotes": [],
+      "isDefault": true,
+      "dataSource": {
+        "kind": "folder",
+        "config": {
+          "path": "Projects/90 days",
+          "recursive": true
+        }
+      },
+      "newNotesFolder": "",
+      "views": [
+        {
+          "config": {
+            "orderFields": [
+              "work_item_id",
+              "folder",
+              "name",
+              "due date",
+              "responsible",
+              "accountable",
+              "consulted",
+              "informed",
+              "status"
+            ],
+            "fieldConfig": {
+              "path": {
+                "width": 816,
+                "hide": true
+              },
+              "name": {
+                "width": 462
+              },
+              "due date": {
+                "width": 107
+              },
+              "responsible": {
+                "width": 149
+              },
+              "accountable": {
+                "width": 152
+              },
+              "consulted": {
+                "width": 147
+              },
+              "informed": {
+                "width": 139
+              },
+              "folder": {
+                "width": 374,
+                "hide": false
+              }
+            }
+          },
+          "filter": {
+            "conjunction": "or",
+            "conditions": [
+              {
+                "field": "responsible",
+                "operator": "is",
+                "enabled": false,
+                "value": "Greg"
+              },
+              {
+                "field": "responsible",
+                "operator": "is",
+                "enabled": false,
+                "value": "Jeff"
+              },
+              {
+                "field": "responsible",
+                "operator": "is",
+                "enabled": false,
+                "value": "Shawn"
+              }
+            ]
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": [
+              {
+                "field": "due date",
+                "order": "asc",
+                "enabled": true
+              },
+              {
+                "field": "work_item_id",
+                "order": "asc",
+                "enabled": false
+              },
+              {
+                "field": "folder",
+                "order": "asc",
+                "enabled": false
+              }
+            ]
+          },
+          "id": "849fbd4b-866c-4242-a461-f09ff52e1d42",
+          "name": "Table",
+          "type": "table"
+        },
+        {
+          "config": {
+            "interval": "month"
+          },
+          "filter": {
+            "conjunction": "and",
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "id": "f0086cdb-6993-4eac-8bdd-a43bd64cda1f",
+          "name": "Calendar",
+          "type": "calendar"
+        },
+        {
+          "config": {
+            "groupByField": "status",
+            "includeFields": [
+              "responsible",
+              "due date"
+            ],
+            "columns": {
+              "Backlog": {
+                "records": [
+                  "Projects/90 days/Finance/Develop detailed 12-month budget.md",
+                  "Projects/90 days/Legal/Corporate Setup/Meet with lawyer to establish optimal corporate structure.md",
+                  "Projects/90 days/Product/Innovation/Document current biosensor specifications and performance.md"
+                ]
+              },
+              "To-do": {
+                "records": [
+                  "Projects/90 days/Finance/Develop detailed 12-month budget.md",
+                  "Projects/90 days/Legal/Corporate Setup/Decide on legal structure.md",
+                  "Projects/90 days/Legal/Corporate Setup/Meet with lawyer to establish optimal corporate structure.md",
+                  "Projects/90 days/Operational/HR/Create organizational chart.md",
+                  "Projects/90 days/Product/Innovation/Document current biosensor specifications and performance.md"
+                ]
+              }
+            }
+          },
+          "filter": {
+            "conjunction": "and",
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "id": "c79612e4-9e0e-427e-8bbf-9e8c3e6ef6a4",
+          "name": "Board",
+          "type": "board"
+        },
+        {
+          "config": {
+            "groupByField": "responsible"
+          },
+          "filter": {
+            "conjunction": "and",
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "id": "25e139f0-6a80-4945-8990-cb78de73a9f6",
+          "name": "Assignee Buckets",
+          "type": "board"
+        }
+      ],
+      "id": "1269c6f9-bf82-4a86-8763-6aba7505d4b3",
+      "name": "90 Days"
+    }
+  ],
+  "archives": [],
+  "preferences": {
+    "projectSizeLimit": 1000,
+    "frontmatter": {
+      "quoteStrings": "PLAIN"
+    },
+    "locale": {
+      "firstDayOfWeek": "monday"
+    },
+    "commands": [],
+    "linkBehavior": "open-editor"
+  }
+}

@@ -1,0 +1,221 @@
+{
+  "main": {
+    "id": "1c6c675a1c2cbde8",
+    "type": "split",
+    "children": [
+      {
+        "id": "5eb3230c761e6be8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2a90ef907a6591e2",
+            "type": "leaf",
+            "state": {
+              "type": "obsidian-projects",
+              "state": {},
+              "icon": "projects-icon",
+              "title": "Projects"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "113a1b940d18f538",
+    "type": "split",
+    "children": [
+      {
+        "id": "3ce0f4460cc56bf8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "588cb12a155ad9aa",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "e087933215ca83e0",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "0ac24d5f04240042",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          },
+          {
+            "id": "021a8c4eb7fa3af8",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {},
+              "icon": "clock",
+              "title": "Recent Files"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 336.5
+  },
+  "right": {
+    "id": "c61c2be9af22c590",
+    "type": "split",
+    "children": [
+      {
+        "id": "1dc3c1b86eb3e2ec",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b161b4486c7696f8",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "ef596f9817328152",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "index.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from index"
+            }
+          },
+          {
+            "id": "c9ec6509e0e3e594",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "d639177d915eae4a",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "index.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of index"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-projects:Open projects": false
+    }
+  },
+  "active": "2a90ef907a6591e2",
+  "lastOpenFiles": [
+    "Projects/90 days/Operational/Supply Chain/Begin supplier qualification process.md",
+    "Projects/90 days/Operational/Supply Chain/Get quotes and lead times for materials.md",
+    "Projects/90 days/Business development/Commercialization/Develop pricing model.md",
+    "Journal/Shawn/2024-11-27.md",
+    "Projects/90 days/Business development/Marketing/Begin client outreach and attend industry events.md",
+    "Projects/90 days/Business development/Commercialization/Create pitch deck for potential investors.md",
+    "Journal/Jeff/Business stuff/Corporate Structure/Proposed Corporate Structure/Proposed Corporate Structure.md",
+    "Journal/Jeff/Business stuff/Business Development/NA Testing Research Notes.md",
+    "Journal/Jeff/Business stuff/Corporate Structure/Proposed Corporate Structure.md",
+    "Journal/Jeff/Business stuff/Corporate Structure/Proposed Corporate Structure",
+    "Journal/Jeff/Business stuff/Corporate Structure/Untitled",
+    "Journal/Jeff/Business stuff/Corporate Structure/Operational Plan/Operational Plan.md",
+    "Journal/Jeff/Business stuff/Corporate Structure/Operational Plan",
+    "Journal/Jeff/Business stuff/Corporate Structure/Operational Plan.md",
+    "Projects/90 days/Business development/Commercialization/Identify funding sources and prepare pitch deck.md",
+    "Projects/90 days/Business development/Commercialization/Develop post-pilot commercialization strategy.md",
+    "Projects/90 days/Business development/Marketing/Collect case studies and testimonials.md",
+    "Projects/90 days/Finance/NA Testing.md",
+    "Journal/Jeff/Business stuff/Bio Sensor Meta Model/1. High Level Metamodel Concepts/1. Business Ecosystem 1.md",
+    "Journal/Jeff/Business stuff/Bio Sensor Meta Model/1. High Level Metamodel Concepts/2. Business Propositions and Operations 1.md",
+    "Journal/Jeff/Business stuff/Bio Sensor Meta Model/1. High Level Metamodel Concepts/3. Strategy, Change and Risk 1.md",
+    "Journal/Jeff/Business stuff/Bio Sensor Meta Model/1. High Level Metamodel Concepts/4. Breaking Out Operations 1.md",
+    "Journal/Jeff/Business stuff/Bio Sensor Meta Model/1. High Level Metamodel Concepts/0. Introduction to the Ardoq Metamodel.md",
+    "Journal/Jeff/Business stuff/Bio Sensor Meta Model/1. High Level Metamodel Concepts/00 What is a Metamodel?.md",
+    "Journal/Jeff/NA Testing Research Notes.md",
+    "Projects/90 days/Finance/Develop detailed 12-month budget.md",
+    "temp/Document current biosensor specifications and performance.md",
+    "Journal/Jeff/Business stuff/Business Development/Market Research.md",
+    "Journal/Jeff/Business stuff/Business Development/Untitled Kanban.md",
+    "temp/obsidian-sample-plugin-master/node_modules/@esbuild/android-x64",
+    "temp/obsidian-sample-plugin-master/main.js",
+    "temp/obsidian-sample-plugin-master/package-lock.json",
+    "temp/obsidian-sample-plugin-master/node_modules/typescript/ThirdPartyNoticeText.txt",
+    "temp/obsidian-sample-plugin-master/node_modules/typescript/LICENSE.txt",
+    "temp/obsidian-sample-plugin-master/node_modules/typescript/CopyrightNotice.txt",
+    "temp/obsidian-sample-plugin-master/node_modules/typescript/loc/lcl/TRK/TypeScriptTasks/TypeScript.Tasks.dll.lcl",
+    "Journal/Jeff/Business stuff/Business Development/attachments/Pasted image 20241206134810.png",
+    "Artifacts/attachments/IMG_0212.jpg",
+    "Artifacts/attachments/IMG_0213.jpg",
+    "Artifacts/attachments/IMG_0214.png",
+    "Artifacts/attachments/IMG_0215.jpg",
+    "Journal/Jeff/Business stuff/Bio Sensor Meta Model/1. High Level Metamodel Concepts/attachments/Pasted image 20231122211815.png",
+    "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/1. High Level Metamodel Concepts/attachments/Pasted image 20231122211815.png",
+    "Journal/Jeff/Business stuff/Business Strategy Stuff/Learnings/Story Mapping/attachments/Pasted image 20240110093528.png",
+    "Journal/Jeff/Business stuff/Bio Sensor Meta Model/1. High Level Metamodel Concepts/attachments/Pasted image 20231122202820.png",
+    "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/1. High Level Metamodel Concepts/attachments/Pasted image 20231122202820.png"
+  ]
+}

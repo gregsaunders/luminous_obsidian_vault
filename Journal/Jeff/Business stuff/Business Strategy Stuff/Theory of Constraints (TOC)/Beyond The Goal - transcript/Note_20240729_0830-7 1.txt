@@ -1,0 +1,129 @@
+Speaker 1  0:03  
+What I would like to do next is to go into the detailed description of how to cause the change
+
+Unknown Speaker  0:18  
+but not to reveal it.
+
+Speaker 1  0:19  
+Let's first of all look on the magnitude of the problems that we are facing.
+
+Unknown Speaker  0:28  
+Because of change
+
+Speaker 1  0:31  
+definitely it's a culture change, because we're talking about changing the rules. The fundamental rules, the rules that are already part of the way that organizations behave. But are we demanding a change just from the organizations that is going to implement it? And the answer is absolutely not. We are demanding even a bigger change from the providers. And when we are talking about providers, we are not talking about one type of company we are talking about two.
+
+Unknown Speaker  1:03  
+One is a software company
+
+Speaker 1  1:06  
+and the second one is the integrator Company. Today, most of the implementations are not done by the software company done by much larger companies, which are the integrators and the change that we have to demand from them is probably bigger than the change that we are talking about. Demanding from the organization because we demand from them to drastically change the scope of what are they selling?
+
+Unknown Speaker  1:41  
+Let me ask some bothering questions.
+
+Speaker 1  1:47  
+The first question that I would like to ask is, are there inherent conflicts between the providers and their clients in the way that its business are done today? And everybody in the business will tell you yes, we do have, for example, if the integrators are paid, in the conventional way, do you know how most integrators in the world are paid today? According to men days, how many people have you done how many days of work and I'm paying you per Monday? As long as this is a method of payment? What do you think, the integrator does he want long project or short project? Well, you don't have to be a genius to answer that right. In other words, immediately the integrator is with a conflict with the client. The time was very short project is let's get the result as fast as possible. Let's get it over within let's have everything working and the integrated wants to get paid. And if it's paid by day, same problem. Or suppose that you're talking about a training companies that is paid like usually they are paid today, by course, or participate in the course. Now, what do they think they want more courses or less courses? And remember, the goal of the company is not the university. Yes, we have to give education in order to get the bottom line not in order. To give education. Once again, we will same problem. And when we are looking on the software company today, how it is paid. I was getting paid by how many modules of software they give you and how many concurrent users what do you think they want more? To give you more modules or less more users or less total inherent conflict and that's why today the client has to be Watchguard all the time. And the integrators wants only real conflict because one insight they want to do a good job and to be honest, and from the other inside. They have to look on their bottom line as well.
+
+Unknown Speaker  3:56  
+This is not the only question. Let's look at another question.
+
+Speaker 1  4:00  
+Should the providers be held responsible for their implicit promises? Okay,
+
+Unknown Speaker  4:09  
+I will sharpen the question.
+
+Speaker 1  4:13  
+I'm a software company. I'm coming to you. And I'm telling you, I think that you should buy my software. It's so good, and so on. What did I really implicitly telling you that if you buy my software, you will get benefits? Correct. This is my implicit message all over the place. But if you didn't get benefits, do I still demand my money you will forgive deliver us the software shall repeat my question Should the providers be held responsible for the implicit promises? Because today they are not. Because today, they're held accountable for their software working according to the specs of the software, not to whether or not it give you any value. Let's talk about the different problems that exist today. sub question what software module should be implemented first?
+
+Unknown Speaker  5:17  
+How many modules since ERP, which one should we implement first?
+
+Speaker 1  5:21  
+If I'm looking at the current practice in 80% of the implementations, the first module is a financial module. We're futzing around a whole year to implement it once it's implemented, what benefit does it bring to the bottom line of the company? Nothing so because
+
+Unknown Speaker  5:36  
+so let me repeat it again.
+
+Speaker 1  5:37  
+What software module should be implemented first. And now production measurement solution. Ladies and gentlemen, do you see now why I claim that we have to revisit the whole area, almost from scratch. And let me show you how what we've put so far is building the base, forgiving, getting good answers to all of them, for example. Right now let's look first of all and the second question, so the providers be held responsible for their implicit promises. In the past, I don't believe so. Why? Because the software they delivered did do the job. It handle that data orders of magnitude better than before. It did. Remove the major
+
+Unknown Speaker  6:32  
+huge
+
+Unknown Speaker  6:35  
+limitation.
+
+Speaker 1  6:38  
+If you didn't get results, it is because of what usually because you didn't change the rules. So as long as a priori, there is no way to guarantee that you will change the rules. They cannot be held accountable for the fact that there is no bottom line result. But if now, we will come with a real way to show that the company is determined to change the rules. Now we should
+
+Unknown Speaker  7:11  
+hold
+
+Speaker 1  7:12  
+the software provider accountable for getting results because now there is no reason why we don't we are not going to get it. Am I right?
+
+Unknown Speaker  7:21  
+To see what is it now
+
+Speaker 1  7:22  
+what is a way to prove to the software vendor that the company is really serious about changing the rules. We just said it. If all top management are spending eight days to reconstruct the strategy and tactic perfectly according to the new rules, what else do you need from them to prove to you that they're serious about it? So if they've gone through it, and they have an old implementation plan, and you can check the implementation reprint to see to what extent it is a continent new rules. Now if you don't want to commit as a software vendor or as an integrator to the result, it means you don't believe in your own product.
+
+Unknown Speaker  8:03  
+Is it understood
+
+Speaker 1  8:05  
+what about the second question? What software module should be implemented first? We have now the answers as well, because the result of the four by four was what was a detailed implementation plan to how to transfer the whole company. What modules should be implemented first, the one that is needed in order to enable the first step in the implementation plan. What module you need second, the one that is needed to do the next step in the implementation plan. And if there are a module that is not needed in order to do any step in the implementation plan, what does it mean? It means that the software that we have today about it is good enough. Don't touch it. Hello. You see what decisive answers we are getting. Now let's look on the first one. Are there inherent conflicts between the providers and their clients? Yes. Can we remove it? Yes. Why? Because we just said that there is a way now that the providers can say fine, we are willing to commit to results because you have shown that you are committed to change the rules. More than that, through your implementation plan. We know what results you are looking for. So now we can take a decisive step in rather than charging by our deliverables. We can charge by the impact of our deliverables. And the minutes that we do that in other words, we charge according to the values that you got when you got it. This means what everything is aligned. The client wants his results badly and fast. And now is the provider will get his money when these results are coming. And when they're coming. He wants the same thing. The results will be there. And if it's needed another two people, another two people, and he will not dump just 10 more people just for the heck of it because he's not going to get paid more. Now, how do we turn all of that into a workable procedure? And my suggesting is the following I call it the necessary and sufficient offer. And this is what I suggest that software companies should offer integrated companies should offer client should demand.
+
+Unknown Speaker  10:24  
+First step is
+
+Speaker 1  10:28  
+a TOC expert visit. This is important because let's face it, do not what's the meaning of putting all the top managers of the company for eight days. Do you think that it's not going to need some action in order to cause them to want it?
+
+Unknown Speaker  10:48  
+Do you think that this will happen by itself? Almost never.
+
+Unknown Speaker  10:54  
+We need here a
+
+Speaker 1  10:56  
+preamble, a major preamble that will enable it. And this is what I call the preamble is a PLC expert visit the rule is the following is not coming to talk about the OSI that will not be enough. Rule is here the following on top management own room for the day. One of them have prepared half an hour presentation about the company. He gives it to the TOC expert in front of everybody else. Of course it doesn't take half an hour because the TOC expert immediately start to ask questions. The difference is that with every question that he asks, You explain why did he ask the question and every answer that you get he explained what did he deduce from the answer? And then of course it goes many times. You said that but if that is correct, this must happen. But if that's the case, that's the opposite of what he told me five minutes ago what's going on here? That's why you need all top management in the room. By the way, I've never seen a company that all top management understand the whole company doesn't exist. Everybody sees only part of the of the elephant. This process which is basically whoever read the goal, know what I'm talking about. It's Jonah in action.
+
+Unknown Speaker  12:13  
+This process can take three or four or five hours
+
+Speaker 1  12:17  
+by the end of this process. The QC experts have to do two things. One is you have to show what is the winning strategy of the company and exactly all the steps that are needed in order to reach it in reality. This is one thing in other words, he will have to come up with what is the unreal fusible offers that we have to give how are we going to make sure that we are able to meet these commitments and so on the entire thing the entire solution he has to come up with but he has to show much more than that is to show that with each step, you are getting benefits. When do you know that he made it? When when top management start to discuss it. Some are saying it's beautiful. Some are saying wait shall problems but then comes a decisive sentence. Paul, one of them says wait a minute, even if we don't reach this winning strategy. The first two steps are more than enough to justify everything. This is what we call the low hanging fruits. In other words, it uses experts is to determine the real potential of the company what is the winning strategy and how to reach it,
+
+Unknown Speaker  13:34  
+but also what is the minimum improvement?
+
+Speaker 1  13:36  
+What is the improvement of the first steps and this minimum payment must be of such level that it dwarfs already the entire investment. Let me show you what I mean. When I will use an example that I've already used, remember the stories that I told you about
+
+Unknown Speaker  13:51  
+Cadillac okay.
+
+Speaker 1  13:54  
+What we have here is suppliers than the assembly line then the distribution then the outlets which are the dealers, okay? What we really want is to be able to offer whatever configure it to the end client, whatever configuration you want, very, very quickly, enormous ly reliably and by that to increase the market share, which means forge a real fortune. But what is the first step? The first step is to improve the capacity of the assembly. Remember, the assembly lines today are built according to line balancing, because that's what is taught in any university in the world. Which exact opposite of the idea is that you cannot have more than one bottleneck. And if you have one bottleneck, you have to protect the bottleneck with a buffer. And if you're an assembly line, it's not just a buffer of work before it, but it's empty buffer after it. Because if you don't have the empty buffer after the bottleneck if one of the machine after the bottleneck goes down, the bottleneck in the line will have to stop. The first step will be then to take the people in the assembly line to teach them all of that to figure out where the bottleneck how do you provide these buffers because usually it's not so simple, because everything is busy. conveyable don't have place and then when they're doing this in effort that takes about two three weeks, the capacity of the assembly line and remember the same line is $2 billion dollars or more jumps by minimum 15%. That's by itself justify everything. Second step is to put the dollar the concept on the suppliers and to say to the suppliers fellas, we are issuing now orders to you based on our focus our focus is so lousy that from one week to the other we have to correct our orders and 50% of the quantities are changing from one week to the other and you are jumping through hoops and this is total havoc. Let's change the rules. And the rule is I'm measuring you are holding here the inventory in my place. How much inventory you decide why? Because what decide on the size of the buffer. One is the consumption rate. Okay, I will give you my lousy forecast, that's the best that I can give you. Everything else that determines a buffer is what is the replenishment time and the replenishment time is a function of your meal fee of what is overloading your resources. What other orders Did you took How the hell do I know about it? So when should I guess it when you have most of the information? You decide how much buffer you're going to hold? By the way I don't have much room here. So here I have a buffer so much if you need more I will provide you within two miles a place. What I want from you is the following whenever I need something, I'm putting my hand and taking it if it's not there, you start to be measured by the dollars of the car multiplied by number of hours until it's there. As a matter of fact, in that case, it's not dollar days it's all hours. Okay.
+
+Unknown Speaker  16:57  
+What do you get in return? First of all,
+
+Speaker 1  16:59  
+you are in control of yourself. Second thing is it means that I attached bingo automatically you get the payment. Okay, I bought it. Two minutes I'm touching any part. And more than that. You know what? I'm not going to futz around with 700 Till we three suppliers. It's your responsibility. What I want from you is that you will supply all of it and I want something else that let's say 70% you will buy for somebody else. You are the prime contractor you have the full responsibility. But remember if you're though this goes down, somebody else will get it. It's a real win win the sense that you are getting all the volume you know it there is no red tape. And what I'm taking isn't taking because I need it not because of a fluke. These immediately enable the assembly plant schedule, not to be forced to be scheduled three or four weeks in advance. But on a daily basis immediately you get so much better response to the dealers. Now what we do is we establish this distribution, because remember in the car industry, this distribution of original warehouse does not exist. And at the same time, we are training the dealers about the pop concept popular configuration and how they should use the configurator. This takes a little bit longer. But you see before we reach that the impact the bottom line impacts that we got from here and from here already dwarfs all the investment in it. When we reach that we reach the Gulf but then we can take it a step further and say if I can now handle easily enormous amount of configurations, why won't they take advantage of it? And they start to build cars in a different way. Design cars in a different way where for example, I have 40 Different hoods and 50 different wings and 60 different type of doors on the outside which each one can go with each one and then you design your own car because now the number of configuration is trillion. You design your own car 12 days you get it. How do you like that? Because the one who will first reach that will take the market for sure. Don't you want to have a cause to know only you have it and you are the one who picked it. When this is in place, we can go on to the next step. This is what I call winning strategies. Depends on how far do you take it but the idea is that even the first steps are already generating immense bottom line value. Let's go back. This is one day. In other words, you have to show exactly how to do and to prove that the minimum performance the ones that we are getting immediately in implementation are already so big. Then based on that is asking for the four by four. But you see now top management if they are convinced that this is a winning strategy, that it's feasible, and you know what at worse, we are going to get benefits even for the first two steps. And now what why do we need the four before in order to have all the details because let's not expect that somebody no matter how gene you see is no matter how much experience is is able to construct it all in one day without making some mistakes. It has to be rethought and hammered out perfectly by all management and this is exactly now the four by four process. If this is done correctly, there is no problem to get to commitment. As a matter of fact, you have a problem to limit it to only 15 people because each one of the top managers will find trillion excuses why two of his subordinates must come as well. By the way, that's reality.
+
+Unknown Speaker  20:42  
+Then comes the third step.
+
+Speaker 1  20:44  
+And what is the third step? The third step is the providers and I'm talking about the software providers, the integrators, the educators because there has to be immense amount of education to change the rules. All of them and by the way, let's have always one prime contractor that the handle all of it for you are sitting down, taking the implementation plan as was constructed by the management and deduce from it one to one what software is needed, what integration is needed, when how much education is needed and to whom they are doing all the support plan in place. Now they know exactly is it understood this now it's not arbitrary. Nothing is not zero. By the way. My really recommendation is that at least the prime contractor should sit in the fall before not open his mouth but sit there because then he will understand two things. One is intricacies behind the implementation plan. And the second thing to what extent top management regard this implementation plan as a baby, and God forbid if you will deviate from it. That's his best way to get out on the spot. Once this is done, now you can talk about the fourth step which is to negotiate to negotiate the contract. And I believe that the contract should be built along the following lines in order not to have conflicts remember the conference that I was talking about before. I believe that the rules of the game should be following a fixed fee that covers only a portion sometimes a small portion of the total investment of the providers, the providers commit to the total effort. What they get upfront, is only a portion of what is going to be their investment something that definitely doesn't cover them, which means if they will not get any sent after that. They're bound to lose their pens. Then milestone payments triggered by real results. For example, each assembly line that now is producing 15% more with the same people. Another bulk of money each assembly line that now the suppliers is providing him to the dollar dozens of buffers in such a way that his deviation from the schedule is reduced by 50%. And other songs in other words, when this is reached, you don't have any arguments that the value to the company is huge. Much, much bigger than what is the payment. But then a real bond is huge. When the winning strategy works. When the winning strategy work that's the real deal when the money is really pouring in, and then let's talk about one to 3% of the sales of the winning strategy for some period of time. Something which is a fraction of the benefits to the company due to the fact that the winning strategy is working and limited in time because you don't want the partner in your company. But this is a gold bot. So you know that all the providers are shooting to exact same horizon than you are and the work exactly the same thing, no conflicts. And when you pay you pay only except for the fixed fee which is small the beginning you pay only after you got the benefits and replace all fraction of it. This is fair. This is win win. And I believe that if we do things this way, since the difference between the old rules and the new rules is so huge. We are going to talk if we do it on some scale. We are going to talk about
+
+Unknown Speaker  24:32  
+changing the standard of living of the world.
+
+Speaker 1  24:35  
+But it's about time to do so is enough bad things around let's have some good things.
+

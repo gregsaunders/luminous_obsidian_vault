@@ -1,0 +1,977 @@
+path,filename,front_matter,body
+Legal/Corporate Setup,Meet with lawyer to establish optimal corporate structure.md,"work_item_id: 1001
+due date: 2024-12-16
+responsible: Shawn
+accountable: Shawn
+consulted: Jeff
+informed: Board
+status: Backlog","
+**Task:**
+
+Meet with lawyer to establish optimal corporate structure
+
+**Details:**
+
+- Assess pros/cons of single vs. multiple entities
+- Consider IP protection strategy
+- Discuss dilution and investor attractiveness"
+Legal/Corporate Setup,Decide on legal structure.md,"work_item_id: 1040
+due date: 2024-12-16
+responsible: Shawn
+accountable: Greg
+consulted: Jeff
+informed: Board
+status: """"","
+**Task:**
+
+Decide on legal structure
+
+**Details:**
+
+- Compare corporation vs. LLC vs. other forms
+- Consider tax, funding, IP protection implications
+- Consult legal and finalize decision"
+Legal/Corporate Setup,File necessary incorporation documents.md,"work_item_id: 1002
+due date: 2024-12-18
+responsible: Shawn
+accountable: Greg
+consulted: Jeff
+informed: Board
+status: """"","
+**Task:**
+
+File necessary incorporation documents
+
+**Details:**
+
+- Prepare and submit articles of incorporation
+- Ensure compliance with local/federal regulations
+- Obtain corporate registration number"
+Legal/Corporate Setup,Register the company.md,"work_item_id: 1041
+due date: 2024-12-18
+responsible: Shawn
+accountable: Greg
+consulted: Jeff
+informed: Board
+status: """"","
+**Task:**
+
+Register the company
+
+**Details:**
+
+- File incorporation documents
+- Obtain registration, tax ID, licenses
+- Confirm official business name approval"
+Legal/Corporate Setup,Ownership and equity agreements.md,"work_item_id: 1042
+due date: 2024-12-23
+responsible: Shawn
+accountable: Greg
+consulted: Jeff
+informed: Board
+status: """"","
+**Task:**
+
+Ownership and equity agreements
+
+**Details:**
+
+- Draft founders’ agreement (equity, vesting, exits)
+- Plan for future investor equity/dilution
+- Secure signatures from all co-founders"
+Legal/Corporate Setup,Draft NDAs employee contracts service agreements.md,"work_item_id: 1044
+due date: 2025-01-03
+responsible: Greg
+accountable: Greg
+consulted: Shawn, Jeff
+informed: Board
+status: """"","
+**Task:**
+
+Draft NDAs, employee contracts, service agreements
+
+**Details:**
+
+- Create standard legal templates for confidentiality and employment
+- Include IP protection clauses
+- Review with legal counsel before hiring"
+Legal/Corporate Setup,Define service product agreement (Liability terms).md,"work_item_id: 1005
+due date: 2025-01-03
+responsible: Greg
+accountable: Greg
+consulted: Shawn, Jeff
+informed: Board
+status: """"","
+**Task:**
+
+Define service/product agreement (Liability terms)
+
+**Details:**
+
+- Draft standard client service agreement
+- Address liability, warranty, and indemnification clauses
+- Align terms with pilot and future commercial deployment"
+Intellectual property,Assist with patent finalization.md,"work_item_id: 1048
+due date: 2024-12-23
+responsible: Shawn
+accountable: Greg
+consulted: Jeff
+informed: Board
+status: """"","
+**Task:**
+
+Assist with patent finalization
+
+**Details:**
+
+- Work with researcher and attorney to finalize application
+- Ensure technical claims are accurate
+- Submit required forms/amendments"
+Intellectual property,Begin patent transfer process to company.md,"work_item_id: 1003
+due date: 2024-12-23
+responsible: Shawn
+accountable: Greg
+consulted: Jeff
+informed: Board
+status: """"","
+**Task:**
+
+Begin patent transfer process to company
+
+**Details:**
+
+- Initiate paperwork to transfer patent ownership
+- Coordinate with patent holder and legal counsel
+- Track progress and confirm filings"
+Intellectual property,Secure IP rights to the patent.md,"work_item_id: 1043
+due date: 2024-12-30
+responsible: Shawn
+accountable: Greg
+consulted: Jeff
+informed: Board
+status: """"","
+**Task:**
+
+Secure IP rights to the patent
+
+**Details:**
+
+- Finalize licensing/assignment with researcher
+- Confirm patent ownership transfer
+- Update IP portfolio documentation"
+Intellectual property,Draft initial IP licensing framework.md,"work_item_id: 1004
+due date: 2024-12-30
+responsible: Shawn
+accountable: Greg
+consulted: Jeff
+informed: Board
+status: """"","
+**Task:**
+
+Draft initial IP licensing framework
+
+**Details:**
+
+- Outline terms for IP licensing between entities (if multiple)
+- Consider royalty rates, exclusivity, termination clauses
+- Consult with legal to ensure enforceability"
+Regulatory,Identify necessary permits for engineered bacteria.md,"work_item_id: 1049
+due date: 2024-12-27
+responsible: Shawn
+accountable: Greg
+consulted: Jeff
+informed: Board
+status: """"","
+**Task:**
+
+Identify necessary permits for handling engineered bacteria
+
+**Details:**
+
+- Research environmental/safety regulations
+- List required permits for production/transport
+- Note agency contacts and application steps"
+Regulatory,Apply for required environmental and safety permits.md,"work_item_id: 1055
+due date: 2025-01-15
+responsible: Shawn
+accountable: Greg
+consulted: Jeff
+informed: Board
+status: """"","
+**Task:**
+
+Apply for required environmental and safety permits
+
+**Details:**
+
+- Submit applications identified earlier
+- Provide necessary documentation/data
+- Track approvals and follow-ups"
+Regulatory,Develop compliance strategy.md,"work_item_id: 1050
+due date: 2024-12-31
+responsible: Shawn
+accountable: Greg
+consulted: Jeff
+informed: Board
+status: """"","
+**Task:**
+
+Develop compliance strategy
+
+**Details:**
+
+- Outline steps to meet regulatory requirements
+- Assign responsibilities for filing/monitoring
+- Integrate compliance into dev timeline"
+Finance,Develop detailed 12-month budget.md,"work_item_id: 1007
+due date: 2024-12-16
+responsible: Greg
+accountable: Greg
+consulted: Shawn, Jeff
+informed: Board
+status: Backlog","
+**Task:**
+
+Develop detailed 12-month budget
+
+**Details:**
+
+- Estimate operational, R&D, personnel, and pilot costs
+- Include contingency funds
+- Finalize budget for stakeholder review"
+Finance,Create financial projections including pilot project costs.md,"work_item_id: 1008
+due date: 2024-12-20
+responsible: Jeff
+accountable: Greg
+consulted: Shawn
+informed: Board
+status: """"","
+**Task:**
+
+Create financial projections including pilot project costs
+
+**Details:**
+
+- Forecast revenue, expenses, and cash flow for pilot
+- Model best/worst case scenarios
+- Integrate into overall financial plan"
+Finance,Set up business banking relationships.md,"work_item_id: 1015
+due date: 2025-01-15
+responsible: Shawn
+accountable: Greg
+consulted: Jeff
+informed: Board
+status: """"","
+**Task:**
+
+Set up business banking relationships
+
+**Details:**
+
+- Open business checking/savings accounts
+- Explore credit lines or loans
+- Ensure secure online banking"
+Finance,Establish accounting systems.md,"work_item_id: 1016
+due date: 2025-01-22
+responsible: Greg
+accountable: Greg
+consulted: Shawn, Jeff
+informed: Board
+status: """"","
+**Task:**
+
+Establish accounting systems
+
+**Details:**
+
+- Select accounting software (e.g., QuickBooks)
+- Set up chart of accounts, invoicing, expense tracking
+- Train staff or bookkeeper"
+Business development/Marketing,Launch website and create brochures.md,"work_item_id: 1061
+due date: 2025-01-29
+responsible: Jeff
+accountable: Greg
+consulted: Shawn
+informed: Board
+status: """"","
+**Task:**
+
+Launch website and create brochures
+
+**Details:**
+
+- Develop basic website with product info/contact form
+- Produce brochures highlighting features/benefits
+- Maintain consistent brand messaging"
+Business development/Marketing,Develop value proposition.md,"work_item_id: 1059
+due date: 2025-01-29
+responsible: Jeff
+accountable: Greg
+consulted: Shawn
+informed: Board
+status: """"","
+**Task:**
+
+Develop value proposition
+
+**Details:**
+
+- Articulate how our product solves detection challenges
+- Emphasize accuracy, efficiency, compliance benefits
+- Use messaging in marketing materials"
+Business development/Marketing,Publish thought leadership articles.md,"work_item_id: 1070
+due date: 2025-03-07
+responsible: Jeff
+accountable: Greg
+consulted: Shawn
+informed: Board
+status: """"","
+**Task:**
+
+Publish thought leadership articles
+
+**Details:**
+
+- Write articles on sustainability, compliance, tech innovations
+- Submit to industry journals/pro networks
+- Enhance brand credibility"
+Business development/Marketing,Identify target market (oil sands operators).md,"work_item_id: 1057
+due date: 2025-01-15
+responsible: Jeff
+accountable: Greg
+consulted: Shawn
+informed: Board
+status: """"","
+**Task:**
+
+Identify target market (oil sands operators in Northern Alberta)
+
+**Details:**
+
+- Research major operators and compliance needs
+- Collect company profiles and contacts
+- Focus outreach strategy accordingly"
+Business development/Marketing,Issue press releases and conduct media outreach.md,"work_item_id: 1069
+due date: 2025-02-28
+responsible: Jeff
+accountable: Greg
+consulted: Shawn
+informed: Board
+status: """"","
+**Task:**
+
+Issue press releases and conduct media outreach
+
+**Details:**
+
+- Announce product readiness/pilot successes
+- Contact industry publications/news outlets
+- Track coverage and respond to inquiries"
+Business development/Marketing,Collect case studies and testimonials.md,"work_item_id: 1062
+due date: 2025-02-05
+responsible: Jeff
+accountable: Greg
+consulted: Shawn
+informed: Board
+status: """"","
+**Task:**
+
+Collect case studies and testimonials
+
+**Details:**
+
+- Gather early feedback from labs or pilot runs
+- Document success stories/results
+- Incorporate into marketing and investor pitches"
+Business development/Marketing,Begin client outreach and attend industry events.md,"work_item_id: 1067
+due date: 2025-02-28
+responsible: Jeff
+accountable: Greg
+consulted: Shawn
+informed: Board
+status: """"","
+**Task:**
+
+Begin client outreach and attend industry events
+
+**Details:**
+
+- Contact prospects via email, calls, LinkedIn
+- Sign up for trade shows/conferences
+- Schedule demos and meetings"
+Business development/Marketing,Analyze competitive landscape.md,"work_item_id: 1058
+due date: 2025-01-22
+responsible: Jeff
+accountable: Greg
+consulted: Shawn
+informed: Board
+status: """"","
+**Task:**
+
+Analyze competitive landscape
+
+**Details:**
+
+- Identify existing Naphthenic Acid detection solutions
+- Note competitor pricing, technology, market share
+- Highlight our unique selling points"
+Business development/Marketing,Launch digital marketing campaigns.md,"work_item_id: 1068
+due date: 2025-02-21
+responsible: Jeff
+accountable: Greg
+consulted: Shawn
+informed: Board
+status: """"","
+**Task:**
+
+Launch digital marketing campaigns (SEO, content)
+
+**Details:**
+
+- Optimize website for relevant keywords
+- Publish blog posts/white papers
+- Promote content via social media"
+Business development/Marketing,Develop initial marketing materials for Naphthenic Acid detection.md,"work_item_id: 1018
+due date: 2025-02-05
+responsible: Jeff
+accountable: Greg
+consulted: Shawn
+informed: Board
+status: """"","
+**Task:**
+
+Develop initial marketing materials focusing on Naphthenic Acid detection
+
+**Details:**
+
+- Create product one-pagers, brochures, flyers
+- Highlight unique environmental detection capabilities
+- Ensure consistent branding/messaging"
+Business development/Marketing,Create sales materials.md,"work_item_id: 1066
+due date: 2025-02-21
+responsible: Jeff
+accountable: Greg
+consulted: Shawn
+informed: Board
+status: """"","
+**Task:**
+
+Create sales materials (proposals, demos)
+
+**Details:**
+
+- Prepare custom proposals for target clients
+- Develop demo scripts/simulations
+- Align materials with brand and value proposition"
+Business development/Marketing,Finalize brand identity.md,"work_item_id: 1060
+due date: 2025-01-15
+responsible: Jeff
+accountable: Greg
+consulted: Shawn
+informed: Board
+status: """"","
+**Task:**
+
+Finalize brand identity (name, logo, guidelines)
+
+**Details:**
+
+- Confirm company name/trademarking
+- Design logo, define color palette
+- Document branding standards"
+Business development/Commercialization,Develop pricing model.md,"work_item_id: 1065
+due date: 2025-02-14
+responsible: Jeff
+accountable: Greg
+consulted: Shawn
+informed: Board
+status: """"","
+**Task:**
+
+Develop pricing model
+
+**Details:**
+
+- Calculate costs and desired margins
+- Compare competitor pricing and customer budgets
+- Set prices for commercial launch"
+Business development/Commercialization,Develop post-pilot commercialization strategy.md,"work_item_id: 1037
+due date: 2025-02-21
+responsible: Jeff
+accountable: Greg
+consulted: Shawn
+informed: Board
+status: """"","
+**Task:**
+
+Develop post-pilot commercialization strategy
+
+**Details:**
+
+- Define go-to-market plans after pilot success
+- Identify distribution channels, marketing campaigns
+- Set sales targets and growth milestones"
+Business development/Commercialization,Create pitch deck for potential investors.md,"work_item_id: 1033
+due date: 2025-02-21
+responsible: Jeff
+accountable: Greg
+consulted: Shawn
+informed: Board
+status: """"","
+**Task:**
+
+Create pitch deck for potential investors
+
+**Details:**
+
+- Highlight product value, market size, and business model
+- Include pilot plan, financials, team overview
+- Ensure visuals are professional and concise"
+Business development/Commercialization,Identify funding sources and prepare pitch deck.md,"work_item_id: 1052
+due date: 2024-12-31
+responsible: Jeff
+accountable: Greg
+consulted: Shawn
+informed: Board
+status: """"","
+**Task:**
+
+Identify funding sources and prepare pitch deck
+
+**Details:**
+
+- Research grants, angels, early-stage VCs
+- Summarize key points into investor-friendly slides
+- Ready deck for investor outreach"
+CNR pilot/Technical Requirements,Begin pilot project technical requirements analysis.md,"work_item_id: 1012
+due date: 2024-12-23
+responsible: Shawn
+accountable: Greg
+consulted: Jeff
+informed: Board
+status: """"","
+**Task:**
+
+Begin pilot project technical requirements analysis
+
+**Details:**
+
+- Outline technical needs for pilot environment
+- Define customizations or conditions needed
+- Document deliverables for pilot partner"
+CNR pilot/Technical Requirements,Finalize technical requirements with pilot customer.md,"work_item_id: 1028
+due date: 2025-02-14
+responsible: Jeff
+accountable: Greg
+consulted: Shawn
+informed: Board
+status: """"","
+**Task:**
+
+Finalize technical requirements with pilot customer
+
+**Details:**
+
+- Confirm pilot objectives, conditions, KPIs
+- Update specs based on feedback
+- Document final requirements in signed agreement"
+CNR pilot/Technical Requirements,Draft pilot project testing protocols.md,"work_item_id: 1025
+due date: 2025-01-29
+responsible: Shawn
+accountable: Greg
+consulted: Jeff
+informed: Board
+status: """"","
+**Task:**
+
+Draft pilot project testing protocols
+
+**Details:**
+
+- Define test scenarios, frequency, data reporting
+- Align with pilot customer’s requirements
+- Establish pass/fail criteria"
+CNR pilot/Technical Requirements,Identify needed modifications for pilot conditions.md,"work_item_id: 1013
+due date: 2024-12-30
+responsible: Shawn
+accountable: Greg
+consulted: Jeff
+informed: Board
+status: """"","
+**Task:**
+
+Identify needed modifications for pilot conditions
+
+**Details:**
+
+- Compare pilot site conditions with sensor specs
+- Propose design tweaks for optimal performance
+- Estimate cost/time for modifications"
+CNR pilot/Technical Requirements,Create success metrics and evaluation criteria.md,"work_item_id: 1030
+due date: 2025-02-28
+responsible: Shawn
+accountable: Greg
+consulted: Jeff
+informed: Board
+status: """"","
+**Task:**
+
+Create success metrics and evaluation criteria
+
+**Details:**
+
+- Define measurable performance indicators
+- Establish thresholds for success/failure
+- Prepare final report format for pilot results"
+CNR pilot/Environmental,Conduct environmental impact assessment.md,"work_item_id: 1056
+due date: 2025-01-29
+responsible: Shawn
+accountable: Greg
+consulted: Jeff
+informed: Board
+status: """"","
+**Task:**
+
+Conduct environmental impact assessment
+
+**Details:**
+
+- Evaluate product’s effect on ecosystems
+- Document findings and mitigation strategies
+- Adjust design to reduce environmental risk"
+CNR pilot/Execution,Set up pilot programs with early adopters.md,"work_item_id: 1063
+due date: 2025-02-14
+responsible: Jeff
+accountable: Greg
+consulted: Shawn
+informed: Board
+status: """"","
+**Task:**
+
+Set up pilot programs with early adopters
+
+**Details:**
+
+- Identify initial testing partners
+- Deliver kits and instructions
+- Collect performance data and feedback"
+CNR pilot/Execution,Identify lab location and finalize arrangements.md,"work_item_id: 1027
+due date: 2025-02-05
+responsible: Shawn
+accountable: Greg
+consulted: Jeff
+informed: Board
+status: """"","
+**Task:**
+
+Identify lab location and finalize arrangements
+
+**Details:**
+
+- Evaluate options (AU in Athabasca, Cochrane, Vogon Labs, Calgary)
+- Confirm equipment needs and rental terms
+- Secure chosen facility and draft agreements"
+Operational/HR,Draft job descriptions for key roles.md,"work_item_id: 1046
+due date: 2024-12-20
+responsible: Greg
+accountable: Greg
+consulted: Shawn, Jeff
+informed: Board
+status: """"","
+**Task:**
+
+Draft job descriptions for key roles
+
+**Details:**
+
+- Detail responsibilities, qualifications, KPIs
+- Align each role with business goals
+- Use for hiring and performance management"
+Operational/HR,Create organizational chart.md,"work_item_id: 1045
+due date: 2024-12-16
+responsible: Greg
+accountable: Greg
+consulted: Shawn, Jeff
+informed: Board
+status: """"","
+**Task:**
+
+Create organizational chart
+
+**Details:**
+
+- Identify key leadership roles and reporting lines
+- Define departments and functional areas
+- Present org chart for team clarity"
+Operational/HR,Develop training plan for staff.md,"work_item_id: 2000
+due date: 2025-01-15
+responsible: Greg
+accountable: Greg
+consulted: Shawn, Jeff
+informed: Board
+status: """"","
+**Task:**
+
+Develop training plan for staff
+
+**Details:**
+
+- Identify training needs (technical, operational)
+- Develop training materials or modules
+- Schedule and deliver training sessions"
+Operational/Supply Chain,Identify key suppliers for biosensor components.md,"work_item_id: 1009
+due date: 2024-12-27
+responsible: Shawn
+accountable: Greg
+consulted: Jeff
+informed: Board
+status: """"","
+**Task:**
+
+Identify key suppliers for biosensor components
+
+**Details:**
+
+- Research and shortlist reliable component suppliers
+- Evaluate quality, cost, lead times
+- Prepare initial outreach"
+Operational/Supply Chain,Begin supplier qualification process.md,"work_item_id: 1021
+due date: 2025-01-29
+responsible: Shawn
+accountable: Greg
+consulted: Jeff
+informed: Board
+status: """"","
+**Task:**
+
+Begin supplier qualification process
+
+**Details:**
+
+- Evaluate supplier reliability, quality standards
+- Conduct sample testing or audits if needed
+- Shortlist approved suppliers for pilot"
+Operational/Supply Chain,Get quotes and lead times for materials.md,"work_item_id: 1020
+due date: 2025-01-22
+responsible: Greg
+accountable: Greg
+consulted: Shawn, Jeff
+informed: Board
+status: """"","
+**Task:**
+
+Get quotes and lead times for materials
+
+**Details:**
+
+- Request formal quotes from preferred suppliers
+- Compare costs and delivery estimates
+- Document supplier performance criteria"
+Operational/Supply Chain,Secure supply chain.md,"work_item_id: 1071
+due date: 2025-02-21
+responsible: Shawn
+accountable: Greg
+consulted: Jeff
+informed: Board
+status: """"","
+**Task:**
+
+Secure supply chain (suppliers, logistics)
+
+**Details:**
+
+- Finalize agreements with approved suppliers
+- Arrange reliable shipping solutions
+- Implement inventory management system"
+Operational/Production,Create scaled manufacturing plan.md,"work_item_id: 1036
+due date: 2025-02-14
+responsible: Greg
+accountable: Greg
+consulted: Shawn, Jeff
+informed: Board
+status: """"","
+**Task:**
+
+Create scaled manufacturing plan
+
+**Details:**
+
+- Plan to ramp up production post-pilot
+- Identify capacity constraints and solutions
+- Budget for additional resources/personnel"
+Operational/Production,Scale-up production.md,"work_item_id: 1064
+due date: 2025-02-28
+responsible: Greg
+accountable: Greg
+consulted: Shawn, Jeff
+informed: Board
+status: """"","
+**Task:**
+
+Scale-up production for post-pilot demand
+
+**Details:**
+
+- Increase production capacity based on pilot results
+- Secure more materials, hire additional staff if needed
+- Maintain QC standards at larger scale"
+Operational/Production,Draft initial manufacturing and assembly procedures.md,"work_item_id: 1022
+due date: 2025-02-05
+responsible: Greg
+accountable: Greg
+consulted: Shawn, Jeff
+informed: Board
+status: """"","
+**Task:**
+
+Draft initial manufacturing/assembly procedures
+
+**Details:**
+
+- Outline production steps and required equipment
+- Document safety and QC steps
+- Prepare for pilot-scale production"
+Operational/QA,Establish quality control protocols.md,"work_item_id: 1054
+due date: 2025-01-29
+responsible: Shawn
+accountable: Greg
+consulted: Jeff
+informed: Board
+status: """"","
+**Task:**
+
+Establish quality control protocols (SOPs, testing)
+
+**Details:**
+
+- Define SOPs for kit prep and testing
+- Develop testing regimens for accuracy
+- Integrate QC into product iteration cycle"
+Operational/QA,Create quality assurance documentation.md,"work_item_id: 1026
+due date: 2025-02-05
+responsible: Shawn
+accountable: Greg
+consulted: Jeff
+informed: Board
+status: """"","
+**Task:**
+
+Create quality assurance documentation
+
+**Details:**
+
+- Develop QA checklists, audit forms
+- Define acceptable quality levels and corrective actions
+- Integrate QA into production workflow"
+Operational/General,Develop SOPs for biosensor operation.md,"work_item_id: 1024
+due date: 2025-01-22
+responsible: Shawn
+accountable: Greg
+consulted: Jeff
+informed: Board
+status: """"","
+**Task:**
+
+Develop SOPs for biosensor operation
+
+**Details:**
+
+- Standardize startup, calibration, shutdown procedures
+- Include maintenance and troubleshooting steps
+- Ensure safety protocols for lab staff"
+Operational/General,Arrange insurance.md,"work_item_id: 1006
+due date: 2025-01-05
+responsible: Greg
+accountable: Greg
+consulted: Shawn, Jeff
+informed: Board
+status: """"","
+**Task:**
+
+Arrange Insurance
+
+**Details:**
+
+- Identify necessary business insurance (general liability, E&O)
+- Obtain quotes and select insurer
+- Secure coverage before pilot launch"
+Operational/General,Establish internal communication tools.md,"work_item_id: 2001
+due date: 2025-01-10
+responsible: Greg
+accountable: Greg
+consulted: Shawn, Jeff
+informed: Board
+status: """"","
+**Task:**
+
+Establish internal communication/collaboration tools
+
+**Details:**
+
+- Evaluate platforms (Slack, Teams, etc.)
+- Set up user accounts and channels
+- Train team on usage and best practices"
+Product/Innovation,Plan Version 2.0 improvements.md,"work_item_id: 1038
+due date: 2025-02-28
+responsible: Shawn
+accountable: Greg
+consulted: Jeff
+informed: Board
+status: """"","
+**Task:**
+
+Plan Version 2.0 improvements
+
+**Details:**
+
+- Gather pilot feedback for enhancements
+- Prioritize feature, cost, or performance improvements
+- Outline R&D roadmap for next-gen product"
+Product/Innovation,Document current biosensor specifications and performance.md,"work_item_id: 1011
+due date: 2024-12-16
+responsible: Shawn
+accountable: Shawn
+consulted: Jeff
+informed: Board
+status: Backlog","
+**Task:**
+
+Document current biosensor specifications and performance data
+
+**Details:**
+
+- Gather existing technical data, lab results, benchmarks
+- Create a reference document for internal use
+- Identify data gaps needing further testing"
+Product/Innovation,Create prototypes and set up lab.md,"work_item_id: 1053
+due date: 2025-01-22
+responsible: Shawn
+accountable: Greg
+consulted: Jeff
+informed: Board
+status: """"","
+**Task:**
+
+Create prototypes (detection kits) and set up lab
+
+**Details:**
+
+- Secure lab space/equipment
+- Assemble initial batch of detection kits
+- Test and refine prototype design"
+Product/Innovation,Establish pilot data analysis framework.md,"work_item_id: 2002
+due date: 2025-02-10
+responsible: Shawn
+accountable: Greg
+consulted: Jeff
+informed: Board
+status: """"","
+**Task:**
+
+Establish pilot data analysis framework
+
+**Details:**
+
+- Define data collection methods and tools
+- Create standardized templates for data review
+- Train team on data interpretation and reporting"
