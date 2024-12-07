@@ -1,8 +1,16 @@
 {
   "recentFiles": [
     {
+      "basename": "Untitled",
+      "path": "Projects/90 days/Operational/Untitled.md"
+    },
+    {
       "basename": "90 days data view",
       "path": "Projects/90 days data view.md"
+    },
+    {
+      "basename": "Create pitch deck for potential investors",
+      "path": "Projects/90 days/Business development/Commercialization/Create pitch deck for potential investors.md"
     },
     {
       "basename": "Identify necessary permits for engineered bacteria",
@@ -47,10 +55,6 @@
     {
       "basename": "Develop post-pilot commercialization strategy",
       "path": "Projects/90 days/Business development/Commercialization/Develop post-pilot commercialization strategy.md"
-    },
-    {
-      "basename": "Create pitch deck for potential investors",
-      "path": "Projects/90 days/Business development/Commercialization/Create pitch deck for potential investors.md"
     },
     {
       "basename": "Develop SOPs for biosensor operation",

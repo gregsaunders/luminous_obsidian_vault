@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "aa483513f5e4a77c",
+        "id": "e9380a9a1a1534bf",
         "type": "tabs",
         "children": [
           {
-            "id": "d667c0c0d6a783b0",
+            "id": "598534e583669d00",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Projects/90 days data view.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "90 days data view"
+              "title": "New tab"
             }
           }
         ]
@@ -175,10 +171,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d667c0c0d6a783b0",
+  "active": "598534e583669d00",
   "lastOpenFiles": [
-    "Projects/90 days/Regulatory/Identify necessary permits for engineered bacteria.md",
+    "Projects/90 days/Business development/Commercialization/Untitled.md",
     "Projects/90 days data view.md",
+    "Projects/90 days/Business development/Commercialization/Create pitch deck for potential investors.md",
+    "Projects/90 days/Regulatory/Identify necessary permits for engineered bacteria.md",
     "Projects/90 days/Operational/General/Arrange insurance.md",
     "Projects/90 days/Operational/Production/Draft initial manufacturing and assembly procedures.md",
     "Projects/90 days/Operational/Production/Scale-up production.md",
@@ -189,7 +187,6 @@
     "Projects/90 days/Business development/Commercialization/Identify funding sources and prepare pitch deck.md",
     "Projects/90 days/Business development/Commercialization/Develop pricing model.md",
     "Projects/90 days/Business development/Commercialization/Develop post-pilot commercialization strategy.md",
-    "Projects/90 days/Business development/Commercialization/Create pitch deck for potential investors.md",
     "Projects/90 days/Operational/General/Develop SOPs for biosensor operation.md",
     "Projects/90 days/Legal/Corporate Setup/Define service product agreement (Liability terms).md",
     "Journal/Greg/2024-12-06.md",
@@ -205,7 +202,6 @@
     "Journal/Jeff/Business stuff/Corporate Structure/Operational Plan/Operational Plan.md",
     "Journal/Jeff/Business stuff/Corporate Structure/Operational Plan",
     "Journal/Jeff/Business stuff/Corporate Structure/Operational Plan.md",
-    "Projects/90 days/Business development/Marketing/Collect case studies and testimonials.md",
     "temp/obsidian-sample-plugin-master/node_modules/@esbuild/android-x64",
     "temp/obsidian-sample-plugin-master/main.js",
     "temp/obsidian-sample-plugin-master/package-lock.json",
