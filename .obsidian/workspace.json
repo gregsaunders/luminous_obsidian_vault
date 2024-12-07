@@ -25,10 +25,14 @@
             "id": "2d4756fceae663e9",
             "type": "leaf",
             "state": {
-              "type": "obsidian-projects",
-              "state": {},
-              "icon": "projects-icon",
-              "title": "Projects"
+              "type": "markdown",
+              "state": {
+                "file": "Projects/90 days/Operational/General/Arrange insurance.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Arrange insurance"
             }
           }
         ],
@@ -114,6 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Projects/90 days/Operational/General/Arrange insurance.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +128,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for Arrange insurance"
             }
           },
           {
@@ -187,12 +192,14 @@
   },
   "active": "2d4756fceae663e9",
   "lastOpenFiles": [
-    "Projects/90 days/Operational/General/Establish internal communication tools.md",
     "Projects/90 days/Business development/Commercialization/Create pitch deck for potential investors.md",
+    "Projects/90 days/Business development/Commercialization/Develop pricing model.md",
+    "Projects/90 days/Business development/Commercialization/Develop post-pilot commercialization strategy.md",
+    "Projects/90 days data view.md",
+    "Projects/90 days/Operational/General/Establish internal communication tools.md",
     "Journal/Greg/2024-12-06.md",
     "Projects/90 days/Operational/Supply Chain/Begin supplier qualification process.md",
     "Projects/90 days/Operational/Supply Chain/Get quotes and lead times for materials.md",
-    "Projects/90 days/Business development/Commercialization/Develop pricing model.md",
     "Journal/Shawn/2024-11-27.md",
     "Projects/90 days/Business development/Marketing/Begin client outreach and attend industry events.md",
     "Journal/Jeff/Business stuff/Corporate Structure/Proposed Corporate Structure/Proposed Corporate Structure.md",
@@ -204,7 +211,6 @@
     "Journal/Jeff/Business stuff/Corporate Structure/Operational Plan",
     "Journal/Jeff/Business stuff/Corporate Structure/Operational Plan.md",
     "Projects/90 days/Business development/Commercialization/Identify funding sources and prepare pitch deck.md",
-    "Projects/90 days/Business development/Commercialization/Develop post-pilot commercialization strategy.md",
     "Projects/90 days/Business development/Marketing/Collect case studies and testimonials.md",
     "Projects/90 days/Finance/NA Testing.md",
     "Journal/Jeff/Business stuff/Bio Sensor Meta Model/1. High Level Metamodel Concepts/1. Business Ecosystem 1.md",
@@ -215,7 +221,6 @@
     "Journal/Jeff/Business stuff/Bio Sensor Meta Model/1. High Level Metamodel Concepts/00 What is a Metamodel?.md",
     "Journal/Jeff/NA Testing Research Notes.md",
     "Projects/90 days/Finance/Develop detailed 12-month budget.md",
-    "temp/Document current biosensor specifications and performance.md",
     "temp/obsidian-sample-plugin-master/node_modules/@esbuild/android-x64",
     "temp/obsidian-sample-plugin-master/main.js",
     "temp/obsidian-sample-plugin-master/package-lock.json",

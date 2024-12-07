@@ -39,11 +39,11 @@
               "work_item_id",
               "folder",
               "name",
-              "due date",
               "responsible",
               "accountable",
               "consulted",
               "informed",
+              "due date",
               "status"
             ],
             "fieldConfig": {
