@@ -266,12 +266,13 @@ export default class FolderFrontMatterPlugin extends Plugin {
     }
 
     private async handleFileEvent(file: TFile) {
-        console.log(`File event triggered for: ${file.path}`);
+        // Skip if file shouldn't be processed
         if (!this.shouldProcessFile(file)) {
-            console.log(`Skipping file ${file.path} - not eligible for processing`);
             return;
         }
-        console.log(`Processing front matter for: ${file.path}`);
+
+        // Using a more concise single log entry
+        console.log(`Processing: ${file.path} (folder: ${this.fileProcessor.getRelativeFolderPath(file)})`);
         await this.ensureFolderFrontMatter(file);
     }
 
@@ -282,8 +283,6 @@ export default class FolderFrontMatterPlugin extends Plugin {
 
     private async ensureFolderFrontMatter(file: TFile) {
         const folderPath = this.fileProcessor.getRelativeFolderPath(file);
-        console.log(`Calculated relative folder path: "${folderPath}" for file: ${file.path}`);
-        
         const originalContent = await this.app.vault.read(file);
         
         const { content: newContent, changed } = this.frontMatterService.updateFrontMatter(
@@ -293,8 +292,8 @@ export default class FolderFrontMatterPlugin extends Plugin {
         );
 
         if (changed) {
-            console.log(`Updating front matter for ${file.path} with ${this.settings.attributeName}: "${folderPath}"`);
             await this.app.vault.modify(file, newContent);
+            console.log(`Updated front matter for ${file.path} [${this.settings.attributeName}: "${folderPath}"]`);
         }
     }
 }

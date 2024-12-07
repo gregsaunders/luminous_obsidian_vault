@@ -11,10 +11,14 @@
             "id": "598534e583669d00",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Projects/90 days/Operational/General/Untitled.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Untitled"
             }
           }
         ]
@@ -171,9 +175,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "598534e583669d00",
+  "active": "588cb12a155ad9aa",
   "lastOpenFiles": [
-    "Projects/90 days/Business development/Commercialization/Untitled.md",
+    "Projects/90 days/Operational/General/Untitled.md",
     "Projects/90 days data view.md",
     "Projects/90 days/Business development/Commercialization/Create pitch deck for potential investors.md",
     "Projects/90 days/Regulatory/Identify necessary permits for engineered bacteria.md",
