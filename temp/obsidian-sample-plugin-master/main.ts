@@ -1,36 +1,151 @@
 import { App, Plugin, PluginSettingTab, Setting, TFile, Notice } from "obsidian";
 
 // ---------------------
-// Plugin Settings Interface
+// Types and Interfaces
 // ---------------------
 interface FolderFrontMatterSettings {
     rootDir: string;
     attributeName: string;
 }
 
+type FrontMatterResult = {
+    content: string;
+    changed: boolean;
+};
+
+// ---------------------
+// Constants
+// ---------------------
 const DEFAULT_SETTINGS: FolderFrontMatterSettings = {
     rootDir: "Projects",
     attributeName: "folder"
 };
 
 // ---------------------
+// File Processing Service
+// ---------------------
+class FileProcessor {
+    constructor(private settings: FolderFrontMatterSettings) {}
+
+    isMarkdownFile(file: TFile): boolean {
+        return file.extension === "md";
+    }
+
+    isInRootDir(file: TFile): boolean {
+        const rootDir = this.normalizePath(this.settings.rootDir);
+        const filePath = file.path;
+        return filePath.startsWith(`${rootDir}/`) || filePath === rootDir;
+    }
+
+    getRelativeFolderPath(file: TFile): string {
+        const rootDir = this.normalizePath(this.settings.rootDir);
+        const parts = file.path.split("/");
+        parts.pop(); // Remove filename
+        
+        if (parts.length > 0 && parts[0] === rootDir) {
+            parts.shift(); // Remove root directory if it matches
+        }
+        
+        return parts.join("/");
+    }
+
+    private normalizePath(path: string): string {
+        return path.replace(/\\/g, "/");
+    }
+}
+
+// ---------------------
+// Front Matter Service
+// ---------------------
+class FrontMatterService {
+    private readonly frontMatterRegex = /^---\n([\s\S]*?)\n---\n?/;
+
+    updateFrontMatter(content: string, key: string, value: string): FrontMatterResult {
+        const match = content.match(this.frontMatterRegex);
+        
+        if (match) {
+            return this.updateExistingFrontMatter(content, match, key, value);
+        }
+        
+        return this.createNewFrontMatter(content, key, value);
+    }
+
+    private updateExistingFrontMatter(
+        content: string, 
+        match: RegExpMatchArray, 
+        key: string, 
+        value: string
+    ): FrontMatterResult {
+        const frontMatterLines = match[1].split("\n");
+        const newLine = this.createFrontMatterLine(key, value);
+        let keyPresent = false;
+        let changed = false;
+
+        const updatedLines = frontMatterLines.map(line => {
+            const [foundKey, ...rest] = line.split(":");
+            if (foundKey?.trim().toLowerCase() === key.toLowerCase()) {
+                keyPresent = true;
+                const currentVal = rest.join(":").trim().replace(/^"|"$/g, '');
+                if (currentVal !== value) {
+                    changed = true;
+                    return newLine;
+                }
+            }
+            return line;
+        });
+
+        if (!keyPresent) {
+            updatedLines.push(newLine);
+            changed = true;
+        }
+
+        if (!changed) {
+            return { content, changed: false };
+        }
+
+        const newContent = content.replace(
+            this.frontMatterRegex, 
+            `---\n${updatedLines.join("\n")}\n---\n`
+        );
+        return { content: newContent, changed: true };
+    }
+
+    private createNewFrontMatter(content: string, key: string, value: string): FrontMatterResult {
+        const newLine = this.createFrontMatterLine(key, value);
+        return {
+            content: `---\n${newLine}\n---\n${content}`,
+            changed: true
+        };
+    }
+
+    private createFrontMatterLine(key: string, value: string): string {
+        return `${key}: "${value}"`;
+    }
+}
+
+// ---------------------
 // Settings Tab
 // ---------------------
 class FolderFrontMatterSettingTab extends PluginSettingTab {
-    plugin: FolderFrontMatterPlugin;
-
-    constructor(app: App, plugin: FolderFrontMatterPlugin) {
+    constructor(app: App, private plugin: FolderFrontMatterPlugin) {
         super(app, plugin);
-        this.plugin = plugin;
     }
 
     display(): void {
         const { containerEl } = this;
         containerEl.empty();
+        
+        this.createHeader();
+        this.createRootDirSetting();
+        this.createAttributeNameSetting();
+    }
 
-        containerEl.createEl("h2", { text: "Folder Front Matter Settings" });
+    private createHeader(): void {
+        this.containerEl.createEl("h2", { text: "Folder Front Matter Settings" });
+    }
 
-        new Setting(containerEl)
+    private createRootDirSetting(): void {
+        new Setting(this.containerEl)
             .setName("Root Directory")
             .setDesc("Only files below this directory will get the front matter attribute.")
             .addText(text => text
@@ -39,8 +154,10 @@ class FolderFrontMatterSettingTab extends PluginSettingTab {
                     this.plugin.settings.rootDir = value.trim();
                     await this.plugin.saveSettings();
                 }));
+    }
 
-        new Setting(containerEl)
+    private createAttributeNameSetting(): void {
+        new Setting(this.containerEl)
             .setName("Front Matter Attribute Name")
             .setDesc("The key name to insert into the front matter (e.g. 'folder').")
             .addText(text => text
@@ -57,33 +174,61 @@ class FolderFrontMatterSettingTab extends PluginSettingTab {
 // ---------------------
 export default class FolderFrontMatterPlugin extends Plugin {
     settings: FolderFrontMatterSettings;
+    private fileProcessor: FileProcessor;
+    private frontMatterService: FrontMatterService;
 
     async onload() {
         await this.loadSettings();
+        this.initializeServices();
+        this.registerSettingsTab();
+        this.registerEventHandlers();
+        this.registerCommands();
+        this.processExistingFiles();
+    }
 
-        // Add settings tab
+    private initializeServices(): void {
+        this.fileProcessor = new FileProcessor(this.settings);
+        this.frontMatterService = new FrontMatterService();
+    }
+
+    private registerSettingsTab(): void {
         this.addSettingTab(new FolderFrontMatterSettingTab(this.app, this));
+    }
 
-        // Register file event handlers
-        this.registerEvent(this.app.vault.on("create", (abstractFile) => {
-            if (abstractFile instanceof TFile) {
-                this.handleFileEvent(abstractFile);
-            }
-        }));
-        
-        this.registerEvent(this.app.vault.on("modify", (abstractFile) => {
-            if (abstractFile instanceof TFile) {
-                this.handleFileEvent(abstractFile);
-            }
-        }));
+    private registerEventHandlers(): void {
+        this.registerFileEvents();
+    }
 
-        this.registerEvent(this.app.vault.on("rename", (abstractFile, oldPath) => {
-            if (abstractFile instanceof TFile) {
-                this.handleFileEvent(abstractFile);
-            }
-        }));
-                
-        // Add a command to manually re-process all files
+    private registerFileEvents(): void {
+        // Register create event
+        this.registerEvent(
+            this.app.vault.on('create', (file) => {
+                if (file instanceof TFile) {
+                    this.handleFileEvent(file);
+                }
+            })
+        );
+
+        // Register modify event
+        this.registerEvent(
+            this.app.vault.on('modify', (file) => {
+                if (file instanceof TFile) {
+                    this.handleFileEvent(file);
+                }
+            })
+        );
+
+        // Register rename event - includes oldPath parameter
+        this.registerEvent(
+            this.app.vault.on('rename', (file, oldPath) => {
+                if (file instanceof TFile) {
+                    this.handleFileEvent(file);
+                }
+            })
+        );
+    }
+
+    private registerCommands(): void {
         this.addCommand({
             id: 'update-all-folder-frontmatter',
             name: 'Update All Folder Frontmatter',
@@ -92,8 +237,9 @@ export default class FolderFrontMatterPlugin extends Plugin {
                 new Notice('All relevant files updated with folder front matter.');
             }
         });
+    }
 
-        // On layout ready, process existing files
+    private processExistingFiles(): void {
         this.app.workspace.onLayoutReady(() => {
             this.updateAllRelevantFiles().catch(console.error);
         });
@@ -107,125 +253,37 @@ export default class FolderFrontMatterPlugin extends Plugin {
         await this.saveData(this.settings);
     }
 
-    /**
-     * Update all markdown files under the rootDir that don't have the attribute or need refreshing.
-     */
     async updateAllRelevantFiles() {
         const files = this.app.vault.getMarkdownFiles();
-        for (const file of files) {
-            if (this.isInRootDir(file)) {
-                await this.ensureFolderFrontMatter(file);
-            }
-        }
+        const relevantFiles = files.filter(file => this.fileProcessor.isInRootDir(file));
+        
+        await Promise.all(
+            relevantFiles.map(file => this.ensureFolderFrontMatter(file))
+        );
     }
 
-    /**
-     * Check if file is under the configured root directory.
-     */
-    private isInRootDir(file: TFile): boolean {
-        const rootDir = this.settings.rootDir.replace(/\\/g, "/");
-        const filePath = file.path;
-        return filePath.startsWith(rootDir + "/") || filePath === rootDir;
-    }
-
-    /**
-     * Handles file creation/modification events and ensures the folder attribute is set.
-     */
     private async handleFileEvent(file: TFile) {
-        if (!this.isMarkdownFile(file)) return;
-        if (!this.isInRootDir(file)) return;
+        if (!this.shouldProcessFile(file)) return;
         await this.ensureFolderFrontMatter(file);
     }
 
-    /**
-     * Check if file is a markdown file.
-     */
-    private isMarkdownFile(file: TFile): boolean {
-        return file.extension === "md";
+    private shouldProcessFile(file: TFile): boolean {
+        return this.fileProcessor.isMarkdownFile(file) && 
+               this.fileProcessor.isInRootDir(file);
     }
 
-    /**
-     * Ensure the folder attribute is set in the front matter of the file.
-     */
     private async ensureFolderFrontMatter(file: TFile) {
-        const folderPath = this.getRelativeFolderPath(file);
-        const attrName = this.settings.attributeName;
-
+        const folderPath = this.fileProcessor.getRelativeFolderPath(file);
         const originalContent = await this.app.vault.read(file);
-        const { content: newContent, changed } = this.updateFrontMatter(originalContent, attrName, folderPath);
+        
+        const { content: newContent, changed } = this.frontMatterService.updateFrontMatter(
+            originalContent,
+            this.settings.attributeName,
+            folderPath
+        );
 
         if (changed) {
             await this.app.vault.modify(file, newContent);
         }
-    }
-
-    /**
-     * Returns the relative folder path inside the rootDir.
-     * - If file is directly under rootDir: returns ""
-     * - If file is under subfolders: returns the full path (e.g. "90 days/Finance").
-     */
-    private getRelativeFolderPath(file: TFile): string {
-        const rootDir = this.settings.rootDir.replace(/\\/g, "/");
-        const parts = file.path.split("/");
-        // Remove filename
-        parts.pop();
-        // Remove the root directory if it matches
-        if (parts.length > 0 && parts[0] === rootDir) {
-            parts.shift();
-        }
-        // Join what's left. If nothing is left, it's directly under rootDir, so return ""
-        return parts.join("/");
-    }
-
-    /**
-     * Update the front matter of the file content with the given attribute/value.
-     * If attribute doesn't exist, it adds it. If it exists but differs, update it.
-     * If no front matter block, create one.
-     */
-    private updateFrontMatter(content: string, key: string, value: string): { content: string; changed: boolean } {
-        const frontMatterRegex = /^---\n([\s\S]*?)\n---\n?/;
-        let changed = false;
-        let newContent = content;
-
-        // Always quote the value to handle empty strings and spaces properly
-        const newLine = `${key}: "${value}"`;
-
-        const match = content.match(frontMatterRegex);
-        if (match) {
-            const frontMatterLines = match[1].split("\n");
-            let keyPresent = false;
-            const updatedLines = frontMatterLines.map(line => {
-                const [foundKey, ...rest] = line.split(":");
-                if (foundKey && foundKey.trim().toLowerCase() === key.toLowerCase()) {
-                    keyPresent = true;
-                    const currentVal = rest.join(":").trim().replace(/^"|"$/g, '');
-                    if (currentVal !== value) {
-                        changed = true;
-                        return newLine;
-                    }
-                }
-                return line;
-            });
-
-            if (!keyPresent) {
-                updatedLines.push(newLine);
-                changed = true;
-            }
-
-            if (changed) {
-                newContent = content.replace(frontMatterRegex, `---\n${updatedLines.join("\n")}\n---\n`);
-            }
-
-        } else {
-            // No front matter block, create one
-            newContent = `---\n${newLine}\n---\n${content}`;
-            changed = true;
-        }
-
-        return { content: newContent, changed };
-    }
-
-    onunload() {
-        // Cleanup if needed
     }
 }
