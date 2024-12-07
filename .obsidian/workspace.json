@@ -13,15 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Journal/Greg/2024-12-06.md",
+                "file": "Projects/90 days/Operational/General/Establish internal communication tools.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2024-12-06"
+              "title": "Establish internal communication tools"
+            }
+          },
+          {
+            "id": "2d4756fceae663e9",
+            "type": "leaf",
+            "state": {
+              "type": "obsidian-projects",
+              "state": {},
+              "icon": "projects-icon",
+              "title": "Projects"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -103,7 +114,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Journal/Greg/2024-12-06.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +123,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 2024-12-06"
+              "title": "Backlinks"
             }
           },
           {
@@ -175,15 +185,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2a90ef907a6591e2",
+  "active": "2d4756fceae663e9",
   "lastOpenFiles": [
+    "Projects/90 days/Operational/General/Establish internal communication tools.md",
+    "Projects/90 days/Business development/Commercialization/Create pitch deck for potential investors.md",
     "Journal/Greg/2024-12-06.md",
     "Projects/90 days/Operational/Supply Chain/Begin supplier qualification process.md",
     "Projects/90 days/Operational/Supply Chain/Get quotes and lead times for materials.md",
     "Projects/90 days/Business development/Commercialization/Develop pricing model.md",
     "Journal/Shawn/2024-11-27.md",
     "Projects/90 days/Business development/Marketing/Begin client outreach and attend industry events.md",
-    "Projects/90 days/Business development/Commercialization/Create pitch deck for potential investors.md",
     "Journal/Jeff/Business stuff/Corporate Structure/Proposed Corporate Structure/Proposed Corporate Structure.md",
     "Journal/Jeff/Business stuff/Business Development/NA Testing Research Notes.md",
     "Journal/Jeff/Business stuff/Corporate Structure/Proposed Corporate Structure.md",
@@ -205,7 +216,6 @@
     "Journal/Jeff/NA Testing Research Notes.md",
     "Projects/90 days/Finance/Develop detailed 12-month budget.md",
     "temp/Document current biosensor specifications and performance.md",
-    "Journal/Jeff/Business stuff/Business Development/Market Research.md",
     "temp/obsidian-sample-plugin-master/node_modules/@esbuild/android-x64",
     "temp/obsidian-sample-plugin-master/main.js",
     "temp/obsidian-sample-plugin-master/package-lock.json",
