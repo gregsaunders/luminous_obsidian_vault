@@ -5,12 +5,28 @@
       "path": "Projects/90 days data view.md"
     },
     {
-      "basename": "Develop detailed 12-month budget",
-      "path": "Projects/90 days/Finance/Develop detailed 12-month budget.md"
+      "basename": "Identify necessary permits for engineered bacteria",
+      "path": "Projects/90 days/Regulatory/Identify necessary permits for engineered bacteria.md"
     },
     {
       "basename": "Arrange insurance",
       "path": "Projects/90 days/Operational/General/Arrange insurance.md"
+    },
+    {
+      "basename": "Draft initial manufacturing and assembly procedures",
+      "path": "Projects/90 days/Operational/Production/Draft initial manufacturing and assembly procedures.md"
+    },
+    {
+      "basename": "Scale-up production",
+      "path": "Projects/90 days/Operational/Production/Scale-up production.md"
+    },
+    {
+      "basename": "Create organizational chart",
+      "path": "Projects/90 days/Operational/HR/Create organizational chart.md"
+    },
+    {
+      "basename": "Develop detailed 12-month budget",
+      "path": "Projects/90 days/Finance/Develop detailed 12-month budget.md"
     },
     {
       "basename": "Establish accounting systems",
