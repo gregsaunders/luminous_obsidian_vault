@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "530682a2978c833e",
+        "id": "2e9fb123f437cbf8",
         "type": "tabs",
         "children": [
           {
-            "id": "6ca3be9019e691dd",
+            "id": "c9d6eb71e13855a6",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -150,13 +150,33 @@
               "icon": "lucide-list",
               "title": "Outline of index"
             }
+          },
+          {
+            "id": "bd6f072ea5eed083",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          },
+          {
+            "id": "eb88a646bb04dfea",
+            "type": "leaf",
+            "state": {
+              "type": "git-history-view",
+              "state": {},
+              "icon": "history",
+              "title": "History"
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -171,7 +191,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "6ca3be9019e691dd",
+  "active": "c9d6eb71e13855a6",
   "lastOpenFiles": [
     "utils/folder-frontmatter-source/node_modules/@typescript-eslint/utils/_ts3.4/dist/ast-utils/eslint-utils/scopeAnalysis.d.ts",
     "utils/folder-frontmatter-source/node_modules/@typescript-eslint/utils/_ts3.4/dist/ast-utils/eslint-utils/predicates.d.ts",
