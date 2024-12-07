@@ -13,16 +13,13 @@ type FrontMatterResult = {
     changed: boolean;
 };
 
-// ---------------------
-// Constants
-// ---------------------
 const DEFAULT_SETTINGS: FolderFrontMatterSettings = {
     rootDir: "Projects",
     attributeName: "folder"
 };
 
 // ---------------------
-// File Processing Service
+// File Processor Service
 // ---------------------
 class FileProcessor {
     constructor(private settings: FolderFrontMatterSettings) {}
@@ -205,27 +202,43 @@ export default class FolderFrontMatterPlugin extends Plugin {
     private registerFileEvents(): void {
         // Register create event
         this.registerEvent(
-            this.app.vault.on('create', (file) => {
-                if (file instanceof TFile) {
-                    this.handleFileEvent(file);
+            this.app.vault.on('create', async (file) => {
+                try {
+                    if (file instanceof TFile) {
+                        // Add small delay to allow other operations to complete
+                        await new Promise(resolve => setTimeout(resolve, 100));
+                        await this.handleFileEvent(file);
+                    }
+                } catch (error) {
+                    console.error(`Error handling create event for ${file.path}:`, error);
                 }
             })
         );
 
         // Register modify event
         this.registerEvent(
-            this.app.vault.on('modify', (file) => {
-                if (file instanceof TFile) {
-                    this.handleFileEvent(file);
+            this.app.vault.on('modify', async (file) => {
+                try {
+                    if (file instanceof TFile) {
+                        await this.handleFileEvent(file);
+                    }
+                } catch (error) {
+                    console.error(`Error handling modify event for ${file.path}:`, error);
                 }
             })
         );
 
         // Register rename event - includes oldPath parameter
         this.registerEvent(
-            this.app.vault.on('rename', (file, oldPath) => {
-                if (file instanceof TFile) {
-                    this.handleFileEvent(file);
+            this.app.vault.on('rename', async (file, oldPath) => {
+                try {
+                    if (file instanceof TFile) {
+                        // Add small delay to allow other operations to complete
+                        await new Promise(resolve => setTimeout(resolve, 100));
+                        await this.handleFileEvent(file);
+                    }
+                } catch (error) {
+                    console.error(`Error handling rename event for ${file.path}:`, error);
                 }
             })
         );
@@ -282,18 +295,31 @@ export default class FolderFrontMatterPlugin extends Plugin {
     }
 
     private async ensureFolderFrontMatter(file: TFile) {
-        const folderPath = this.fileProcessor.getRelativeFolderPath(file);
-        const originalContent = await this.app.vault.read(file);
-        
-        const { content: newContent, changed } = this.frontMatterService.updateFrontMatter(
-            originalContent,
-            this.settings.attributeName,
-            folderPath
-        );
+        try {
+            // Verify file still exists and is accessible
+            if (!await this.app.vault.adapter.exists(file.path)) {
+                console.log(`File no longer exists: ${file.path}`);
+                return;
+            }
 
-        if (changed) {
-            await this.app.vault.modify(file, newContent);
-            console.log(`Updated front matter for ${file.path} [${this.settings.attributeName}: "${folderPath}"]`);
+            const folderPath = this.fileProcessor.getRelativeFolderPath(file);
+            const originalContent = await this.app.vault.read(file);
+            
+            const { content: newContent, changed } = this.frontMatterService.updateFrontMatter(
+                originalContent,
+                this.settings.attributeName,
+                folderPath
+            );
+
+            if (changed) {
+                // Verify file still exists before modifying
+                if (await this.app.vault.adapter.exists(file.path)) {
+                    await this.app.vault.modify(file, newContent);
+                    console.log(`Updated front matter for ${file.path} [${this.settings.attributeName}: "${folderPath}"]`);
+                }
+            }
+        } catch (error) {
+            console.error(`Error processing front matter for ${file.path}:`, error);
         }
     }
 }
