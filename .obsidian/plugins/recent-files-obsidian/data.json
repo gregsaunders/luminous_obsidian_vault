@@ -1,12 +1,28 @@
 {
   "recentFiles": [
     {
+      "basename": "90 days data view",
+      "path": "Projects/90 days data view.md"
+    },
+    {
+      "basename": "Develop detailed 12-month budget",
+      "path": "Projects/90 days/Finance/Develop detailed 12-month budget.md"
+    },
+    {
       "basename": "Arrange insurance",
       "path": "Projects/90 days/Operational/General/Arrange insurance.md"
     },
     {
-      "basename": "Create pitch deck for potential investors",
-      "path": "Projects/90 days/Business development/Commercialization/Create pitch deck for potential investors.md"
+      "basename": "Establish accounting systems",
+      "path": "Projects/90 days/Finance/Establish accounting systems.md"
+    },
+    {
+      "basename": "Establish internal communication tools",
+      "path": "Projects/90 days/Operational/General/Establish internal communication tools.md"
+    },
+    {
+      "basename": "Identify funding sources and prepare pitch deck",
+      "path": "Projects/90 days/Business development/Commercialization/Identify funding sources and prepare pitch deck.md"
     },
     {
       "basename": "Develop pricing model",
@@ -17,12 +33,16 @@
       "path": "Projects/90 days/Business development/Commercialization/Develop post-pilot commercialization strategy.md"
     },
     {
-      "basename": "90 days data view",
-      "path": "Projects/90 days data view.md"
+      "basename": "Create pitch deck for potential investors",
+      "path": "Projects/90 days/Business development/Commercialization/Create pitch deck for potential investors.md"
     },
     {
-      "basename": "Establish internal communication tools",
-      "path": "Projects/90 days/Operational/General/Establish internal communication tools.md"
+      "basename": "Develop SOPs for biosensor operation",
+      "path": "Projects/90 days/Operational/General/Develop SOPs for biosensor operation.md"
+    },
+    {
+      "basename": "Define service product agreement (Liability terms)",
+      "path": "Projects/90 days/Legal/Corporate Setup/Define service product agreement (Liability terms).md"
     },
     {
       "basename": "2024-12-06",
@@ -53,10 +73,6 @@
       "path": "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/BCM Modelling/1. BCM Benefits.md"
     },
     {
-      "basename": "Develop detailed 12-month budget",
-      "path": "Projects/90 days/Finance/Develop detailed 12-month budget.md"
-    },
-    {
       "basename": "Market Research",
       "path": "Journal/Jeff/Business stuff/Business Development/Market Research.md"
     },
@@ -67,10 +83,6 @@
     {
       "basename": "Set up business banking relationships",
       "path": "Projects/90 days/Finance/Set up business banking relationships.md"
-    },
-    {
-      "basename": "Establish accounting systems",
-      "path": "Projects/90 days/Finance/Establish accounting systems.md"
     },
     {
       "basename": "2024-11-27",
