@@ -11,6 +11,13 @@
             "Resolved",
             "Done"
           ]
+        },
+        "accountable": {
+          "options": [
+            "Shawn",
+            "Jeff",
+            "Greg"
+          ]
         }
       },
       "defaultName": "",
