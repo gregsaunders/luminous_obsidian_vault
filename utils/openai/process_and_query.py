@@ -51,7 +51,7 @@ vectorstore.persist()
 
 # Step 4: Build a retrieval-based QA chain
 retriever = vectorstore.as_retriever(search_kwargs={"k": 5})
-llm = ChatOpenAI(openai_api_key=OPENAI_API_KEY, model_name=MODEL_NAME)
+llm = ChatOpenAI(openai_api_key=OPENAI_API_KEY, model_name=MODEL_NAME, max_tokens=1000)
 qa_chain = RetrievalQA.from_chain_type(llm=llm, retriever=retriever)
 
 print("Setup complete. You can now query your vault.")
