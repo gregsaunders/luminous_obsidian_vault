@@ -106,12 +106,12 @@
               {
                 "field": "due date",
                 "order": "asc",
-                "enabled": true
+                "enabled": false
               },
               {
                 "field": "work_item_id",
                 "order": "asc",
-                "enabled": false
+                "enabled": true
               },
               {
                 "field": "folder",

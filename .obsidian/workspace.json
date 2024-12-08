@@ -13,15 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/90 days/Finance/Develop detailed 12-month budget.md",
+                "file": "Projects/90 days data view.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Develop detailed 12-month budget"
+              "title": "90 days data view"
+            }
+          },
+          {
+            "id": "48f7df58f3e4f8da",
+            "type": "leaf",
+            "state": {
+              "type": "obsidian-projects",
+              "state": {},
+              "icon": "projects-icon",
+              "title": "Projects"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -196,11 +207,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c9d6eb71e13855a6",
+  "active": "588cb12a155ad9aa",
   "lastOpenFiles": [
-    "Projects/90 days data view.md",
-    "temp/2024-12-08.md",
     "chroma_db/chroma.sqlite3-journal",
+    "Projects/90 days data view.md",
+    "Projects/90 days/Finance/Develop detailed 12-month budget.md",
+    "temp/2024-12-08.md",
     "chroma_db/91663fa0-9cc3-408b-8b06-59133f3f8bbd/index_metadata.pickle",
     "chroma_db/91663fa0-9cc3-408b-8b06-59133f3f8bbd/link_lists.bin",
     "chroma_db/91663fa0-9cc3-408b-8b06-59133f3f8bbd/length.bin",
@@ -236,7 +248,6 @@
     "utils/folder-frontmatter-source/node_modules/@typescript-eslint/eslint-plugin/docs/rules/space-before-function-paren.md",
     "utils/folder-frontmatter-source/node_modules/@typescript-eslint/eslint-plugin/docs/rules/space-before-blocks.md",
     "utils/folder-frontmatter-source/node_modules/@typescript-eslint/eslint-plugin/docs/rules/sort-type-union-intersection-members.md",
-    "utils/folder-frontmatter-source/node_modules/@typescript-eslint/eslint-plugin/docs/rules/semi.md",
     "Journal/Jeff/Business stuff/Business Development/attachments/Pasted image 20241206134810.png",
     "Artifacts/attachments/IMG_0212.jpg",
     "Artifacts/attachments/IMG_0213.jpg",

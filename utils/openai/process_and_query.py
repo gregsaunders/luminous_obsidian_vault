@@ -16,7 +16,8 @@ CHROMA_DB_DIR = "chroma_db"  # Directory to store the Chroma DB
 CHUNK_SIZE = 1000
 CHUNK_OVERLAP = 100
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-MODEL_NAME = "gpt-4"  # You can also try "gpt-3.5-turbo" if you prefer
+# MODEL_NAME = "gpt-4-turbo"
+MODEL_NAME = "o1-mini"
 # -----------------------------------------
 
 if OPENAI_API_KEY is None:
