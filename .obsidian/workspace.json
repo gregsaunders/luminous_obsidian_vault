@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Journal/Greg/2024-12/2024-12-08.md",
+                "file": "Journal/Greg/2024-12/ArticlesScheduleAB.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2024-12-08"
+              "title": "ArticlesScheduleAB"
             }
           }
         ],
@@ -213,10 +213,11 @@
   },
   "active": "df070be0592d2883",
   "lastOpenFiles": [
+    "Journal/Greg/2024-12/2024-12-08.md",
+    "Journal/Greg/2024-12/ArticlesScheduleAB.md",
     "Journal/Greg/2024-12/2024-12-06.md",
     "Docket/Open.md",
     "Docket/Closed.md",
-    "Journal/Greg/2024-12/2024-12-08.md",
     "Journal/Greg/2024-12",
     "Journal/Greg/2024-11",
     "Projects/90 days/Legal/Corporate Setup/Define service product agreement (Liability terms).md",
@@ -252,7 +253,6 @@
     "utils/folder-frontmatter-source/node_modules/@typescript-eslint/eslint-plugin/docs/rules/typedef.md",
     "utils/folder-frontmatter-source/node_modules/@typescript-eslint/eslint-plugin/docs/rules/type-annotation-spacing.md",
     "utils/folder-frontmatter-source/node_modules/@typescript-eslint/eslint-plugin/docs/rules/triple-slash-reference.md",
-    "utils/folder-frontmatter-source/node_modules/@typescript-eslint/eslint-plugin/docs/rules/switch-exhaustiveness-check.md",
     "Journal/Jeff/Business stuff/Business Development/attachments/Pasted image 20241206134810.png",
     "Artifacts/attachments/IMG_0212.jpg",
     "Artifacts/attachments/IMG_0213.jpg",
