@@ -9,6 +9,14 @@
       "path": "Journal/Greg/2024-12/2024-12-06.md"
     },
     {
+      "basename": "Open",
+      "path": "Docket/Open.md"
+    },
+    {
+      "basename": "Closed",
+      "path": "Docket/Closed.md"
+    },
+    {
       "basename": "Define service product agreement (Liability terms)",
       "path": "Projects/90 days/Legal/Corporate Setup/Define service product agreement (Liability terms).md"
     },
@@ -19,14 +27,6 @@
     {
       "basename": "90 days data view",
       "path": "Projects/90 days data view.md"
-    },
-    {
-      "basename": "Open",
-      "path": "Docket/Open.md"
-    },
-    {
-      "basename": "Closed",
-      "path": "Docket/Closed.md"
     },
     {
       "basename": "Create pitch deck for potential investors",
