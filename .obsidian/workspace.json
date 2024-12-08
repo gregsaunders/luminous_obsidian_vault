@@ -34,9 +34,19 @@
               "icon": "lucide-file",
               "title": "90 days data view"
             }
+          },
+          {
+            "id": "845b4951bcd0a3d5",
+            "type": "leaf",
+            "state": {
+              "type": "obsidian-projects",
+              "state": {},
+              "icon": "projects-icon",
+              "title": "Projects"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -211,8 +221,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "48f7df58f3e4f8da",
+  "active": "845b4951bcd0a3d5",
   "lastOpenFiles": [
+    "Projects/90 days data view.md",
     "Projects/90 days/output.csv",
     "chroma_db/chroma.sqlite3-journal",
     "chroma_db/d7522639-80df-40ed-baf2-ce791f68a511/link_lists.bin",
@@ -223,8 +234,6 @@
     "chroma_db/chroma.sqlite3",
     "chroma_db",
     "chroma_db/5a9cce21-4e35-409c-987b-83ec2fe2e8b4/link_lists.bin",
-    "chroma_db/5a9cce21-4e35-409c-987b-83ec2fe2e8b4/length.bin",
-    "Projects/90 days data view.md",
     "Projects/90 days/Finance/Develop detailed 12-month budget.md",
     "temp/2024-12-08.md",
     "venv/lib/python3.11/site-packages/langchain/cli/create_repo/templates/repo/README.md",
