@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/90 days data view.md",
+                "file": "temp/2024-12-08.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "90 days data view"
+              "title": "2024-12-08"
             }
           }
         ]
@@ -198,17 +198,18 @@
   },
   "active": "c9d6eb71e13855a6",
   "lastOpenFiles": [
-    "utils/folder-frontmatter-source/node_modules/@typescript-eslint/utils/_ts3.4/dist/ast-utils/eslint-utils/scopeAnalysis.d.ts",
-    "utils/folder-frontmatter-source/node_modules/@typescript-eslint/utils/_ts3.4/dist/ast-utils/eslint-utils/predicates.d.ts",
-    "utils/folder-frontmatter-source/node_modules/@typescript-eslint/utils/_ts3.4/dist/ast-utils/eslint-utils/astUtilities.d.ts",
-    "utils/folder-frontmatter-source/node_modules/@typescript-eslint/utils/_ts3.4/dist/ast-utils/eslint-utils/index.d.ts",
-    "utils/folder-frontmatter-source/node_modules/@typescript-eslint/utils/_ts3.4/dist/ast-utils/eslint-utils/PatternMatcher.d.ts",
-    "utils/folder-frontmatter-source/node_modules/@typescript-eslint/utils/_ts3.4/dist/ast-utils/eslint-utils/ReferenceTracker.d.ts",
-    "utils/folder-frontmatter-source/node_modules/tsutils/node_modules/tslib/test/validateModuleExportsMatchCommonJS/package.json",
-    "utils/folder-frontmatter-source/node_modules/tsutils/node_modules/tslib/test/validateModuleExportsMatchCommonJS/index.js",
-    "utils/folder-frontmatter-source/node_modules/typescript/loc/lcl/TRK/TypeScriptLanguageService/Microsoft.CodeAnalysis.TypeScript.EditorFeatures.dll.lcl",
-    "utils/folder-frontmatter-source/node_modules/typescript/loc/lcl/TRK/TypeScriptTasks/TypeScript.Tasks.dll.lcl",
-    "utils/folder-frontmatter-source/node_modules/typescript/loc/lcl/TRK/TypeScriptDebugEngine/TypeScriptDebugEngine.dll.lcl",
+    "Projects/90 days data view.md",
+    "temp/2024-12-08.md",
+    "venv/bin/activate",
+    "venv/bin/Activate.ps1",
+    "venv/bin/activate.csh",
+    "venv/bin/activate.fish",
+    "venv/bin/pip3.11",
+    "venv/bin/pip3",
+    "venv/bin/pip",
+    "venv/lib/python3.11/site-packages/pip/_vendor/webencodings/__pycache__/x_user_defined.cpython-311.pyc",
+    "venv/lib/python3.11/site-packages/pip/_vendor/webencodings/__pycache__/tests.cpython-311.pyc",
+    "venv/lib/python3.11/site-packages/pip/_vendor/webencodings/__pycache__/labels.cpython-311.pyc",
     "utils/folder-frontmatter-source/node_modules/@typescript-eslint/eslint-plugin/docs/rules/unified-signatures.md",
     "utils/folder-frontmatter-source/node_modules/@typescript-eslint/eslint-plugin/docs/rules/unbound-method.md",
     "utils/folder-frontmatter-source/node_modules/@typescript-eslint/eslint-plugin/docs/rules/typedef.md",
@@ -233,7 +234,6 @@
     "utils/folder-frontmatter-source/node_modules/@typescript-eslint/eslint-plugin/docs/rules/prefer-return-this-type.md",
     "utils/folder-frontmatter-source/node_modules/@typescript-eslint/eslint-plugin/docs/rules/prefer-regexp-exec.md",
     "utils/folder-frontmatter-source/node_modules/@typescript-eslint/eslint-plugin/docs/rules/prefer-reduce-type-parameter.md",
-    "utils/folder-frontmatter-source/node_modules/@typescript-eslint/eslint-plugin/docs/rules/prefer-readonly.md",
     "Journal/Jeff/Business stuff/Business Development/attachments/Pasted image 20241206134810.png",
     "Artifacts/attachments/IMG_0212.jpg",
     "Artifacts/attachments/IMG_0213.jpg",
