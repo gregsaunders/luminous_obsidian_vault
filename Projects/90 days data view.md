@@ -55,4 +55,3 @@ FROM "Projects/90 days"
 WHERE responsible = "Shawn"
 SORT due-date asc
 ```
-[2024-12-08 3:02 PM]

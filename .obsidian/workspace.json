@@ -8,49 +8,35 @@
         "type": "tabs",
         "children": [
           {
-            "id": "c9d6eb71e13855a6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Projects/90 days data view.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "90 days data view"
-            }
-          },
-          {
-            "id": "48f7df58f3e4f8da",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Projects/90 days data view.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "90 days data view"
-            }
-          },
-          {
             "id": "845b4951bcd0a3d5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/90 days data view.md",
+                "file": "Journal/Greg/2024-12/2024-12-08.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "90 days data view"
+              "title": "2024-12-08"
+            }
+          },
+          {
+            "id": "df070be0592d2883",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Journal/Greg/2024-12/2024-12-08.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2024-12-08"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -225,9 +211,18 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "845b4951bcd0a3d5",
+  "active": "df070be0592d2883",
   "lastOpenFiles": [
+    "Journal/Greg/2024-12/2024-12-06.md",
+    "Journal/Greg/2024-12",
+    "Journal/Greg/2024-11",
+    "Projects/90 days/Legal/Corporate Setup/Define service product agreement (Liability terms).md",
+    "Journal/Greg/2024-12/2024-12-08.md",
+    "Artifacts/RACI.md",
     "Projects/90 days data view.md",
+    "Docket/Open.md",
+    "Docket/Closed.md",
+    "Docket",
     "Projects/90 days/output.csv",
     "chroma_db/chroma.sqlite3-journal",
     "chroma_db/d7522639-80df-40ed-baf2-ce791f68a511/link_lists.bin",
@@ -235,9 +230,6 @@
     "chroma_db/d7522639-80df-40ed-baf2-ce791f68a511/header.bin",
     "chroma_db/d7522639-80df-40ed-baf2-ce791f68a511/data_level0.bin",
     "chroma_db/d7522639-80df-40ed-baf2-ce791f68a511",
-    "chroma_db/chroma.sqlite3",
-    "chroma_db",
-    "chroma_db/5a9cce21-4e35-409c-987b-83ec2fe2e8b4/link_lists.bin",
     "Projects/90 days/Finance/Develop detailed 12-month budget.md",
     "temp/2024-12-08.md",
     "venv/lib/python3.11/site-packages/langchain/cli/create_repo/templates/repo/README.md",
@@ -261,11 +253,6 @@
     "utils/folder-frontmatter-source/node_modules/@typescript-eslint/eslint-plugin/docs/rules/type-annotation-spacing.md",
     "utils/folder-frontmatter-source/node_modules/@typescript-eslint/eslint-plugin/docs/rules/triple-slash-reference.md",
     "utils/folder-frontmatter-source/node_modules/@typescript-eslint/eslint-plugin/docs/rules/switch-exhaustiveness-check.md",
-    "utils/folder-frontmatter-source/node_modules/@typescript-eslint/eslint-plugin/docs/rules/strict-boolean-expressions.md",
-    "utils/folder-frontmatter-source/node_modules/@typescript-eslint/eslint-plugin/docs/rules/space-infix-ops.md",
-    "utils/folder-frontmatter-source/node_modules/@typescript-eslint/eslint-plugin/docs/rules/space-before-function-paren.md",
-    "utils/folder-frontmatter-source/node_modules/@typescript-eslint/eslint-plugin/docs/rules/space-before-blocks.md",
-    "utils/folder-frontmatter-source/node_modules/@typescript-eslint/eslint-plugin/docs/rules/sort-type-union-intersection-members.md",
     "Journal/Jeff/Business stuff/Business Development/attachments/Pasted image 20241206134810.png",
     "Artifacts/attachments/IMG_0212.jpg",
     "Artifacts/attachments/IMG_0213.jpg",

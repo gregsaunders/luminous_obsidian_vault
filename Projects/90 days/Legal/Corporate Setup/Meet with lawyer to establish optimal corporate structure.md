@@ -3,7 +3,7 @@ work_item_id: 1001
 due date: 2024-12-16
 responsible: Shawn
 accountable: Shawn
-consulted: Jeff
+consulted: Jeff, Greg
 informed: Board
 status: To-do
 folder: 90 days/Legal/Corporate Setup
