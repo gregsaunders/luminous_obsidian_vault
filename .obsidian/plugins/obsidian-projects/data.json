@@ -11,13 +11,6 @@
             "Resolved",
             "Done"
           ]
-        },
-        "accountable": {
-          "options": [
-            "Shawn",
-            "Jeff",
-            "Greg"
-          ]
         }
       },
       "defaultName": "",
@@ -39,11 +32,11 @@
               "work_item_id",
               "folder",
               "name",
+              "due date",
               "responsible",
               "accountable",
               "consulted",
               "informed",
-              "due date",
               "status"
             ],
             "fieldConfig": {
@@ -70,7 +63,7 @@
                 "width": 139
               },
               "folder": {
-                "width": 374,
+                "width": 310,
                 "hide": false
               }
             }
@@ -111,12 +104,17 @@
               {
                 "field": "work_item_id",
                 "order": "asc",
-                "enabled": true
+                "enabled": false
               },
               {
                 "field": "folder",
                 "order": "asc",
                 "enabled": false
+              },
+              {
+                "field": "responsible",
+                "order": "asc",
+                "enabled": true
               }
             ]
           },
@@ -144,6 +142,24 @@
         },
         {
           "config": {
+            "groupByField": "responsible"
+          },
+          "filter": {
+            "conjunction": "and",
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "id": "25e139f0-6a80-4945-8990-cb78de73a9f6",
+          "name": "Assignee Buckets",
+          "type": "board"
+        },
+        {
+          "config": {
             "groupByField": "status",
             "includeFields": [
               "responsible",
@@ -152,13 +168,66 @@
             "columns": {
               "Backlog": {
                 "records": [
-                  "Projects/90 days/Finance/Develop detailed 12-month budget.md",
-                  "Projects/90 days/Legal/Corporate Setup/Meet with lawyer to establish optimal corporate structure.md",
-                  "Projects/90 days/Product/Innovation/Document current biosensor specifications and performance.md"
+                  "Projects/90 days/Business development/Commercialization/Create pitch deck for potential investors.md",
+                  "Projects/90 days/Business development/Commercialization/Develop post-pilot commercialization strategy.md",
+                  "Projects/90 days/Business development/Commercialization/Develop pricing model.md",
+                  "Projects/90 days/Business development/Marketing/Create sales materials.md",
+                  "Projects/90 days/Business development/Marketing/Develop value proposition.md",
+                  "Projects/90 days/Business development/Marketing/Issue press releases and conduct media outreach.md",
+                  "Projects/90 days/Business development/Marketing/Launch digital marketing campaigns.md",
+                  "Projects/90 days/Business development/Marketing/Launch website and create brochures.md",
+                  "Projects/90 days/Business development/Marketing/Publish thought leadership articles.md",
+                  "Projects/90 days/CNR pilot/Environmental/Conduct environmental impact assessment.md",
+                  "Projects/90 days/CNR pilot/Execution/Identify lab location and finalize arrangements.md",
+                  "Projects/90 days/CNR pilot/Execution/Set up pilot programs with early adopters.md",
+                  "Projects/90 days/CNR pilot/Technical Requirements/Begin pilot project technical requirements analysis.md",
+                  "Projects/90 days/CNR pilot/Technical Requirements/Create success metrics and evaluation criteria.md",
+                  "Projects/90 days/CNR pilot/Technical Requirements/Draft pilot project testing protocols.md",
+                  "Projects/90 days/CNR pilot/Technical Requirements/Finalize technical requirements with pilot customer.md",
+                  "Projects/90 days/CNR pilot/Technical Requirements/Identify needed modifications for pilot conditions.md",
+                  "Projects/90 days/Finance/Create financial projections including pilot project costs.md",
+                  "Projects/90 days/Finance/Establish accounting systems.md",
+                  "Projects/90 days/Finance/Set up business banking relationships.md",
+                  "Projects/90 days/Intellectual property/Assist with patent finalization.md",
+                  "Projects/90 days/Intellectual property/Begin patent transfer process to company.md",
+                  "Projects/90 days/Intellectual property/Draft initial IP licensing framework.md",
+                  "Projects/90 days/Intellectual property/Secure IP rights to the patent.md",
+                  "Projects/90 days/Legal/Corporate Setup/Define service product agreement (Liability terms).md",
+                  "Projects/90 days/Legal/Corporate Setup/Draft NDAs employee contracts service agreements.md",
+                  "Projects/90 days/Legal/Corporate Setup/File necessary incorporation documents.md",
+                  "Projects/90 days/Legal/Corporate Setup/Ownership and equity agreements.md",
+                  "Projects/90 days/Legal/Corporate Setup/Register the company.md",
+                  "Projects/90 days/Operational/General/Arrange insurance.md",
+                  "Projects/90 days/Operational/General/Develop SOPs for biosensor operation.md",
+                  "Projects/90 days/Operational/General/Establish internal communication tools.md",
+                  "Projects/90 days/Operational/HR/Develop training plan for staff.md",
+                  "Projects/90 days/Operational/HR/Draft job descriptions for key roles.md",
+                  "Projects/90 days/Operational/Production/Create scaled manufacturing plan.md",
+                  "Projects/90 days/Operational/Production/Draft initial manufacturing and assembly procedures.md",
+                  "Projects/90 days/Operational/Production/Scale-up production.md",
+                  "Projects/90 days/Operational/QA/Create quality assurance documentation.md",
+                  "Projects/90 days/Operational/QA/Establish quality control protocols.md",
+                  "Projects/90 days/Operational/Supply Chain/Begin supplier qualification process.md",
+                  "Projects/90 days/Operational/Supply Chain/Get quotes and lead times for materials.md",
+                  "Projects/90 days/Operational/Supply Chain/Identify key suppliers for biosensor components.md",
+                  "Projects/90 days/Operational/Supply Chain/Secure supply chain.md",
+                  "Projects/90 days/Product/Innovation/Create prototypes and set up lab.md",
+                  "Projects/90 days/Product/Innovation/Establish pilot data analysis framework.md",
+                  "Projects/90 days/Product/Innovation/Plan Version 2.0 improvements.md",
+                  "Projects/90 days/Regulatory/Apply for required environmental and safety permits.md",
+                  "Projects/90 days/Regulatory/Develop compliance strategy.md",
+                  "Projects/90 days/Regulatory/Identify necessary permits for engineered bacteria.md"
                 ]
               },
               "To-do": {
                 "records": [
+                  "Projects/90 days/Business development/Commercialization/Identify funding sources and prepare pitch deck.md",
+                  "Projects/90 days/Business development/Marketing/Analyze competitive landscape.md",
+                  "Projects/90 days/Business development/Marketing/Begin client outreach and attend industry events.md",
+                  "Projects/90 days/Business development/Marketing/Collect case studies and testimonials.md",
+                  "Projects/90 days/Business development/Marketing/Develop initial marketing materials for Naphthenic Acid detection.md",
+                  "Projects/90 days/Business development/Marketing/Finalize brand identity.md",
+                  "Projects/90 days/Business development/Marketing/Identify target market (oil sands operators).md",
                   "Projects/90 days/Finance/Develop detailed 12-month budget.md",
                   "Projects/90 days/Legal/Corporate Setup/Decide on legal structure.md",
                   "Projects/90 days/Legal/Corporate Setup/Meet with lawyer to establish optimal corporate structure.md",
@@ -180,24 +249,6 @@
           },
           "id": "c79612e4-9e0e-427e-8bbf-9e8c3e6ef6a4",
           "name": "Board",
-          "type": "board"
-        },
-        {
-          "config": {
-            "groupByField": "responsible"
-          },
-          "filter": {
-            "conjunction": "and",
-            "conditions": []
-          },
-          "colors": {
-            "conditions": []
-          },
-          "sort": {
-            "criteria": []
-          },
-          "id": "25e139f0-6a80-4945-8990-cb78de73a9f6",
-          "name": "Assignee Buckets",
           "type": "board"
         }
       ],
