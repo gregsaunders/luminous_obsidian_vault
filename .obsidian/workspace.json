@@ -194,6 +194,8 @@
   },
   "active": "cfa8975471e52b09",
   "lastOpenFiles": [
+    "Journal/Shawn/2024-12-09.md",
+    "Journal/Shawn/Untitled.md",
     "Projects/90 days/Regulatory/Develop compliance strategy.md",
     "Projects/90 days/Finance/Create financial projections including pilot project costs.md",
     "Projects/90 days/Regulatory/Identify necessary permits for engineered bacteria.md",
@@ -228,8 +230,6 @@
     "venv/lib/python3.11/site-packages/huggingface_hub/templates/modelcard_template.md",
     "venv/lib/python3.11/site-packages/huggingface_hub/templates/datasetcard_template.md",
     "venv/lib/python3.11/site-packages/onnxruntime/tools/mobile_helpers/nnapi_supported_ops.md",
-    "venv/lib/python3.11/site-packages/onnxruntime/tools/mobile_helpers/coreml_supported_neuralnetwork_ops.md",
-    "venv/lib/python3.11/site-packages/onnxruntime/tools/mobile_helpers/coreml_supported_mlprogram_ops.md",
     "venv/lib/python3.11/site-packages/sympy/plotting/tests/test_region_xor.png",
     "venv/lib/python3.11/site-packages/sympy/plotting/tests/test_region_not.png",
     "venv/lib/python3.11/site-packages/sympy/plotting/tests/test_region_or.png",

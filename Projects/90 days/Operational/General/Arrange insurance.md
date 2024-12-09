@@ -18,3 +18,5 @@ Arrange Insurance
 - Identify necessary business insurance (general liability, E&O)
 - Obtain quotes and select insurer
 - Secure coverage before pilot launch
+
+My note
