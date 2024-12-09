@@ -63,7 +63,7 @@
                 "width": 139
               },
               "folder": {
-                "width": 310,
+                "width": 381,
                 "hide": false
               }
             }
@@ -109,12 +109,12 @@
               {
                 "field": "folder",
                 "order": "asc",
-                "enabled": false
+                "enabled": true
               },
               {
                 "field": "responsible",
                 "order": "asc",
-                "enabled": true
+                "enabled": false
               }
             ]
           },
