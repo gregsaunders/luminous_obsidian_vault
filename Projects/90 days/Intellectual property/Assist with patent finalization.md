@@ -3,7 +3,7 @@ work_item_id: 1048
 due date: 2024-12-23
 responsible: Shawn
 accountable: Shawn
-consulted: Jeff
+consulted: Jeff, Greg
 informed: Board
 status: Backlog
 folder: 90 days/Intellectual property

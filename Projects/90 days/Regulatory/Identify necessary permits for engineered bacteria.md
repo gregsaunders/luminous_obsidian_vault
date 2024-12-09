@@ -3,8 +3,8 @@ work_item_id: 1049
 due date: 2024-12-27
 responsible: Shawn
 accountable: Shawn
-consulted: 
-informed: Board, Jeff, Greg
+consulted: Jeff, Greg
+informed: Board
 status: Backlog
 folder: 90 days/Regulatory
 ---

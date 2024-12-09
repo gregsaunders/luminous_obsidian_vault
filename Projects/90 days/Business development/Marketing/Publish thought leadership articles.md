@@ -1,9 +1,9 @@
 ---
 work_item_id: 1070
 due date: 2025-03-07
-responsible: Jeff
-accountable: Greg
-consulted: Shawn
+responsible: Shawn
+accountable: Shawn
+consulted: Greg, Jeff
 informed: Board
 status: Backlog
 folder: 90 days/Business development/Marketing

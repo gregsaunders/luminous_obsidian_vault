@@ -1,8 +1,8 @@
 ---
 work_item_id: 1067
 due date: 2025-02-28
-responsible: Jeff
-accountable: Greg
+responsible: Shawn
+accountable: Jeff
 consulted: Shawn
 informed: Board
 status: To-do

@@ -2,7 +2,7 @@
 work_item_id: 1020
 due date: 2025-01-22
 responsible: Greg
-accountable: Greg
+accountable: Shawn
 consulted: Shawn, Jeff
 informed: Board
 status: Backlog
