@@ -41,7 +41,7 @@
             ],
             "fieldConfig": {
               "path": {
-                "width": 816,
+                "width": 735,
                 "hide": true
               },
               "name": {
@@ -104,12 +104,12 @@
               {
                 "field": "work_item_id",
                 "order": "asc",
-                "enabled": true
+                "enabled": false
               },
               {
                 "field": "folder",
                 "order": "asc",
-                "enabled": false
+                "enabled": true
               },
               {
                 "field": "responsible",
