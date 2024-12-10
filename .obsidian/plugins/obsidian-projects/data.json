@@ -104,12 +104,12 @@
               {
                 "field": "work_item_id",
                 "order": "asc",
-                "enabled": false
+                "enabled": true
               },
               {
                 "field": "folder",
                 "order": "asc",
-                "enabled": true
+                "enabled": false
               },
               {
                 "field": "responsible",
@@ -217,8 +217,7 @@
                   "Projects/90 days/Regulatory/Apply for required environmental and safety permits.md",
                   "Projects/90 days/Regulatory/Develop compliance strategy.md",
                   "Projects/90 days/Regulatory/Identify necessary permits for engineered bacteria.md"
-                ],
-                "collapse": false
+                ]
               },
               "To-do": {
                 "records": [
@@ -235,15 +234,6 @@
                   "Projects/90 days/Operational/HR/Create organizational chart.md",
                   "Projects/90 days/Product/Innovation/Document current biosensor specifications and performance.md"
                 ]
-              },
-              "In progress": {
-                "records": []
-              },
-              "Resolved": {
-                "records": []
-              },
-              "Done": {
-                "records": []
               }
             }
           },
