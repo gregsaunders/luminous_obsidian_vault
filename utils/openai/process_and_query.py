@@ -1,17 +1,16 @@
 import os
 import glob
+import openai
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.vectorstores import Chroma
-from langchain.chat_models import ChatOpenAI
 from dotenv import load_dotenv
 from tqdm import tqdm
-from langchain.schema import HumanMessage
 
-load_dotenv()  # Load environment variables from .env file
+load_dotenv()
 
 # ------------- Configuration -------------
-VAULT_PATH = os.getenv("VAULT_PATH", "/path/to/ObsidianVault")  
+VAULT_PATH = os.getenv("VAULT_PATH", "/path/to/ObsidianVault")
 CHROMA_DB_DIR = "chroma_db"  # Directory to store the Chroma DB
 CHUNK_SIZE = 1000
 CHUNK_OVERLAP = 100
@@ -21,6 +20,8 @@ MODEL_NAME = "o1-preview-2024-09-12"
 
 if OPENAI_API_KEY is None:
     raise ValueError("OPENAI_API_KEY not found. Please set it in .env.")
+
+openai.api_key = OPENAI_API_KEY
 
 print("Reading and splitting Markdown files...")
 file_paths = glob.glob(os.path.join(VAULT_PATH, "**/*.md"), recursive=True)
@@ -40,16 +41,15 @@ print("Embedding the text chunks...")
 embedding = OpenAIEmbeddings(openai_api_key=OPENAI_API_KEY)
 
 print("Creating Chroma vector store...")
-vectorstore = Chroma.from_texts(texts, embedding, collection_name="obsidian_docs", persist_directory=CHROMA_DB_DIR)
+vectorstore = Chroma.from_texts(
+    texts, 
+    embedding, 
+    collection_name="obsidian_docs", 
+    persist_directory=CHROMA_DB_DIR
+)
 vectorstore.persist()
 
 retriever = vectorstore.as_retriever(search_kwargs={"k": 5})
-
-llm = ChatOpenAI(
-    openai_api_key=OPENAI_API_KEY,
-    model_name=MODEL_NAME,
-    model_kwargs={"max_completion_tokens": 1000}
-)
 
 print("Setup complete. You can now query your vault.")
 print("Type 'quit' to exit.")
@@ -59,16 +59,32 @@ while True:
     if query.lower() in ["quit", "exit"]:
         break
 
+    # Retrieve relevant documents
     docs = retriever.get_relevant_documents(query)
-    context_text = "\n".join([d.page_content for d in docs])
+    context_text = "\n---\n".join([doc.page_content for doc in docs])
 
-    user_content = f"""Below is some context:
+    # Combine instructions and context into a single user message
+    user_content = f"""You are a helpful assistant. Below is some context:
+---
 {context_text}
+---
 
 Question: {query}
 
-Please provide a detailed answer:"""
+Please provide a detailed answer:
+"""
 
-    message = HumanMessage(content=user_content)
-    response = llm([message])
-    print("\nAnswer:", response.content, "\n")
+    messages = [
+        {
+            "role": "user",
+            "content": user_content
+        }
+    ]
+
+    completion = openai.ChatCompletion.create(
+        model=MODEL_NAME,
+        messages=messages
+    )
+
+    answer = completion.choices[0].message["content"]
+    print("\nAnswer:", answer, "\n")
