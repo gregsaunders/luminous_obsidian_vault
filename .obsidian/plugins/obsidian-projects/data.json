@@ -104,7 +104,7 @@
               {
                 "field": "work_item_id",
                 "order": "asc",
-                "enabled": false
+                "enabled": true
               },
               {
                 "field": "folder",
@@ -223,16 +223,19 @@
                 "records": [
                   "Projects/90 days/Business development/Marketing/Begin client outreach and attend industry events.md",
                   "Projects/90 days/Business development/Marketing/Begin client outreach and attend industry events.md",
+                  "Projects/90 days/Business development/Marketing/Analyze competitive landscape.md",
                   "Projects/90 days/Business development/Marketing/Collect case studies and testimonials.md",
-                  "Projects/90 days/Business development/Marketing/Begin client outreach and attend industry events.md",
-                  "Projects/90 days/Business development/Marketing/Begin client outreach and attend industry events.md",
                   "Projects/90 days/Business development/Marketing/Finalize brand identity.md",
+                  "Projects/90 days/Business development/Marketing/Begin client outreach and attend industry events.md",
+                  "Projects/90 days/Business development/Marketing/Begin client outreach and attend industry events.md",
                   "Projects/90 days/Business development/Marketing/Identify target market (oil sands operators).md",
                   "Projects/90 days/Finance/Develop detailed 12-month budget.md",
                   "Projects/90 days/Legal/Corporate Setup/Decide on legal structure.md",
                   "Projects/90 days/Legal/Corporate Setup/Meet with lawyer to establish optimal corporate structure.md",
                   "Projects/90 days/Operational/HR/Create organizational chart.md",
-                  "Projects/90 days/Product/Innovation/Document current biosensor specifications and performance.md"
+                  "Projects/90 days/Product/Innovation/Document current biosensor specifications and performance.md",
+                  "Projects/90 days/Business development/Marketing/Develop initial marketing materials for Naphthenic Acid detection.md",
+                  "Projects/90 days/Business development/Commercialization/Identify funding sources and prepare pitch deck.md"
                 ]
               }
             }
@@ -241,10 +244,10 @@
             "conjunction": "and",
             "conditions": [
               {
-                "field": "name",
+                "field": "responsible",
                 "operator": "is",
                 "enabled": true,
-                "value": ""
+                "value": "Jeff"
               }
             ]
           },
