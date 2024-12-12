@@ -239,13 +239,26 @@
           },
           "filter": {
             "conjunction": "and",
-            "conditions": []
+            "conditions": [
+              {
+                "field": "name",
+                "operator": "is",
+                "enabled": true,
+                "value": ""
+              }
+            ]
           },
           "colors": {
             "conditions": []
           },
           "sort": {
-            "criteria": []
+            "criteria": [
+              {
+                "field": "name",
+                "order": "asc",
+                "enabled": false
+              }
+            ]
           },
           "id": "c79612e4-9e0e-427e-8bbf-9e8c3e6ef6a4",
           "name": "Board",
