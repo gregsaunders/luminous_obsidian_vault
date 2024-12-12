@@ -41,7 +41,7 @@
             ],
             "fieldConfig": {
               "path": {
-                "width": 735,
+                "width": 816,
                 "hide": true
               },
               "name": {
@@ -63,7 +63,7 @@
                 "width": 139
               },
               "folder": {
-                "width": 381,
+                "width": 310,
                 "hide": false
               }
             }
@@ -109,12 +109,12 @@
               {
                 "field": "folder",
                 "order": "asc",
-                "enabled": true
+                "enabled": false
               },
               {
                 "field": "responsible",
                 "order": "asc",
-                "enabled": false
+                "enabled": true
               }
             ]
           },
@@ -221,11 +221,11 @@
               },
               "To-do": {
                 "records": [
-                  "Projects/90 days/Business development/Commercialization/Identify funding sources and prepare pitch deck.md",
-                  "Projects/90 days/Business development/Marketing/Analyze competitive landscape.md",
+                  "Projects/90 days/Business development/Marketing/Begin client outreach and attend industry events.md",
                   "Projects/90 days/Business development/Marketing/Begin client outreach and attend industry events.md",
                   "Projects/90 days/Business development/Marketing/Collect case studies and testimonials.md",
-                  "Projects/90 days/Business development/Marketing/Develop initial marketing materials for Naphthenic Acid detection.md",
+                  "Projects/90 days/Business development/Marketing/Begin client outreach and attend industry events.md",
+                  "Projects/90 days/Business development/Marketing/Begin client outreach and attend industry events.md",
                   "Projects/90 days/Business development/Marketing/Finalize brand identity.md",
                   "Projects/90 days/Business development/Marketing/Identify target market (oil sands operators).md",
                   "Projects/90 days/Finance/Develop detailed 12-month budget.md",
