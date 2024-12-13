@@ -1,4 +1,4 @@
-![](Business%20stuff/Business%20Strategy%20Stuff/Ardoq/Meta%20Model/1.%20High%20Level%20Metamodel%20Concepts/attachments/Pasted%20image%2020231101132454.png)
+![](Journal/Jeff/Business%20stuff/Business%20Strategy%20Stuff/Ardoq/Meta%20Model/01%20High%20Level%20Metamodel%20Concepts/attachments/Pasted%20image%2020231101132454.png)
 #### What Are Metamodels?
 
 Metamodels define the structure of your components and references through one-on-one relationships with your workspaces.

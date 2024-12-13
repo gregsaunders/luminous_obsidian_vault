@@ -6,5 +6,7 @@
   "obsidian-plantuml",
   "obsidian-advanced-uri",
   "folder-frontmatter-plugin",
-  "recent-files-obsidian"
+  "recent-files-obsidian",
+  "obsidian-git",
+  "waypoint"
 ]

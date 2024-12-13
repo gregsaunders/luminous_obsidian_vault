@@ -1,0 +1,21 @@
+%% Begin Waypoint %%
+- [[02-00 The Ardoq Metamodel]]
+- [[02-01 Strategy and Objectives]]
+- [[02-03 Persona and Market]]
+- [[2. Innovation and Change]]
+- [[4. Customers and Partners]]
+- [[5. Value Propositions]]
+- [[6. Digital Products and Channels]]
+- [[7. Products and Channels]]
+- [[8. Logical Information]]
+- [[9. Physical Data and Business Information Domain]]
+- [[10. Business Capabilities and Process]]
+- [[11. Applications]]
+- [[12. Technology Capabilities]]
+- [[13. Infrastructure]]
+- [[14. Technology Catalog]]
+- [[15. Business Roles People and Organization]]
+- [[16. Locations and Network]]
+- [[17. Risk and Controls]]
+
+%% End Waypoint %%
