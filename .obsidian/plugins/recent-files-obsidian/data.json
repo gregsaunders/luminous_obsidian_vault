@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "11. Applications",
+      "path": "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/2. Domains and Component Types/11. Applications.md"
+    },
+    {
+      "basename": "10. Business Capabilities and Process",
+      "path": "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/2. Domains and Component Types/10. Business Capabilities and Process.md"
+    },
+    {
+      "basename": "9. Physical Data and Business Information Domain",
+      "path": "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/2. Domains and Component Types/9. Physical Data and Business Information Domain.md"
+    },
+    {
       "basename": "8. Logical Information",
       "path": "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/2. Domains and Component Types/8. Logical Information.md"
     },
@@ -187,18 +199,6 @@
     {
       "basename": "Market Research",
       "path": "Journal/Jeff/Business stuff/Business Development/Market Research.md"
-    },
-    {
-      "basename": "NA Testing Research Notes",
-      "path": "Journal/Jeff/Business stuff/Business Development/NA Testing Research Notes.md"
-    },
-    {
-      "basename": "2. Getting Started",
-      "path": "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/BCM Modelling/2. Getting Started.md"
-    },
-    {
-      "basename": "Develop detailed 12-month budget",
-      "path": "Projects/90 days/Finance/Develop detailed 12-month budget.md"
     }
   ],
   "omittedPaths": [],
