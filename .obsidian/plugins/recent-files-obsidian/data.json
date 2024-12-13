@@ -1,6 +1,58 @@
 {
   "recentFiles": [
     {
+      "basename": "02-00 The Ardoq Metamodel",
+      "path": "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/02 Domains and Component Types/02-00 The Ardoq Metamodel.md"
+    },
+    {
+      "basename": "6. Take Your Business Capabilities Beyond the Strategy Room",
+      "path": "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/BCM Modelling/6. Take Your Business Capabilities Beyond the Strategy Room.md"
+    },
+    {
+      "basename": "4. Breaking Out Operations 1",
+      "path": "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/01 High Level Metamodel Concepts/4. Breaking Out Operations 1.md"
+    },
+    {
+      "basename": "3. Strategy, Change and Risk 1",
+      "path": "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/01 High Level Metamodel Concepts/3. Strategy, Change and Risk 1.md"
+    },
+    {
+      "basename": "2. Business Propositions and Operations 1",
+      "path": "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/01 High Level Metamodel Concepts/2. Business Propositions and Operations 1.md"
+    },
+    {
+      "basename": "1. Business Ecosystem 1",
+      "path": "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/01 High Level Metamodel Concepts/1. Business Ecosystem 1.md"
+    },
+    {
+      "basename": "0. Introduction to the Ardoq Metamodel",
+      "path": "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/01 High Level Metamodel Concepts/0. Introduction to the Ardoq Metamodel.md"
+    },
+    {
+      "basename": "00 What is a Metamodel?",
+      "path": "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/01 High Level Metamodel Concepts/00 What is a Metamodel?.md"
+    },
+    {
+      "basename": "02-17 Risk and Controls",
+      "path": "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/02 Domains and Component Types/02-17 Risk and Controls.md"
+    },
+    {
+      "basename": "02-16 Locations and Network",
+      "path": "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/02 Domains and Component Types/02-16 Locations and Network.md"
+    },
+    {
+      "basename": "1. Market Analysis",
+      "path": "Projects/90 days/Business development/Business Feasibility Assessment/1. Market Analysis.md"
+    },
+    {
+      "basename": "02-15 Business Roles People and Organization",
+      "path": "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/02 Domains and Component Types/02-15 Business Roles People and Organization.md"
+    },
+    {
+      "basename": "02-14 Technology Catalog",
+      "path": "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/02 Domains and Component Types/02-14 Technology Catalog.md"
+    },
+    {
       "basename": "02 Domains and Component Types",
       "path": "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/02 Domains and Component Types/02 Domains and Component Types.md"
     },
@@ -9,12 +61,8 @@
       "path": "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/02 Domains and Component Types/02-03 Persona and Market.md"
     },
     {
-      "basename": "16. Locations and Network",
-      "path": "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/02 Domains and Component Types/16. Locations and Network.md"
-    },
-    {
-      "basename": "11. Applications",
-      "path": "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/02 Domains and Component Types/11. Applications.md"
+      "basename": "02-11 Applications",
+      "path": "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/02 Domains and Component Types/02-11 Applications.md"
     },
     {
       "basename": "5. Revenue Models and Pricing Strategies",
@@ -25,44 +73,16 @@
       "path": "Journal/Jeff/Business stuff/Business Strategy Stuff/docs/Ardoq/Meta Model/1. The Ardoq Metamodel.md"
     },
     {
-      "basename": "14. Technology Catalog",
-      "path": "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/02 Domains and Component Types/14. Technology Catalog.md"
-    },
-    {
-      "basename": "15. Business Roles People and Organization",
-      "path": "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/02 Domains and Component Types/15. Business Roles People and Organization.md"
-    },
-    {
-      "basename": "13. Infrastructure",
-      "path": "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/02 Domains and Component Types/13. Infrastructure.md"
-    },
-    {
       "basename": "Test 2024-12-10a",
       "path": "Projects/90 days/CNR pilot/Execution/Test 2024-12-10a.md"
     },
     {
-      "basename": "1. Market Analysis",
-      "path": "Projects/90 days/Business development/Business Feasibility Assessment/1. Market Analysis.md"
-    },
-    {
-      "basename": "6. Digital Products and Channels",
-      "path": "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/02 Domains and Component Types/6. Digital Products and Channels.md"
-    },
-    {
-      "basename": "10. Business Capabilities and Process",
-      "path": "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/02 Domains and Component Types/10. Business Capabilities and Process.md"
+      "basename": "02-06 Digital Products and Channels",
+      "path": "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/02 Domains and Component Types/02-06 Digital Products and Channels.md"
     },
     {
       "basename": "02-01 Strategy and Objectives",
       "path": "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/02 Domains and Component Types/02-01 Strategy and Objectives.md"
-    },
-    {
-      "basename": "02-00 The Ardoq Metamodel",
-      "path": "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/02 Domains and Component Types/02-00 The Ardoq Metamodel.md"
-    },
-    {
-      "basename": "3. Strategy, Change and Risk 1",
-      "path": "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/01 High Level Metamodel Concepts/3. Strategy, Change and Risk 1.md"
     },
     {
       "basename": "2. Business Propositions and Operations 1",
@@ -81,32 +101,16 @@
       "path": "Journal/Jeff/Business stuff/Bio Sensor Meta Model/1. High Level Metamodel Concepts/00 What is a Metamodel?.md"
     },
     {
-      "basename": "12. Technology Capabilities",
-      "path": "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/02 Domains and Component Types/12. Technology Capabilities.md"
+      "basename": "02-09 Physical Data and Business Information Domain",
+      "path": "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/02 Domains and Component Types/02-09 Physical Data and Business Information Domain.md"
     },
     {
-      "basename": "9. Physical Data and Business Information Domain",
-      "path": "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/02 Domains and Component Types/9. Physical Data and Business Information Domain.md"
+      "basename": "02-05 Value Propositions",
+      "path": "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/02 Domains and Component Types/02-05 Value Propositions.md"
     },
     {
-      "basename": "8. Logical Information",
-      "path": "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/02 Domains and Component Types/8. Logical Information.md"
-    },
-    {
-      "basename": "7. Products and Channels",
-      "path": "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/02 Domains and Component Types/7. Products and Channels.md"
-    },
-    {
-      "basename": "5. Value Propositions",
-      "path": "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/02 Domains and Component Types/5. Value Propositions.md"
-    },
-    {
-      "basename": "4. Customers and Partners",
-      "path": "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/02 Domains and Component Types/4. Customers and Partners.md"
-    },
-    {
-      "basename": "2. Innovation and Change",
-      "path": "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/02 Domains and Component Types/2. Innovation and Change.md"
+      "basename": "02-04 Customers and Partners",
+      "path": "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/02 Domains and Component Types/02-04 Customers and Partners.md"
     },
     {
       "basename": "8. Scalability and Long-Term Opportunities",
@@ -195,10 +199,6 @@
     {
       "basename": "Arrange insurance",
       "path": "Projects/90 days/Operational/General/Arrange insurance.md"
-    },
-    {
-      "basename": "Develop pricing model",
-      "path": "Projects/90 days/Business development/Commercialization/Develop pricing model.md"
     }
   ],
   "omittedPaths": [],
