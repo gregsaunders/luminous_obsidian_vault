@@ -1,6 +1,22 @@
 {
   "recentFiles": [
     {
+      "basename": "15. Business Roles People and Organization",
+      "path": "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/2. Domains and Component Types/15. Business Roles People and Organization.md"
+    },
+    {
+      "basename": "14. Technology Catalog",
+      "path": "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/2. Domains and Component Types/14. Technology Catalog.md"
+    },
+    {
+      "basename": "13. Infrastructure",
+      "path": "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/2. Domains and Component Types/13. Infrastructure.md"
+    },
+    {
+      "basename": "12. Technology Capabilities",
+      "path": "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/2. Domains and Component Types/12. Technology Capabilities.md"
+    },
+    {
       "basename": "11. Applications",
       "path": "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/2. Domains and Component Types/11. Applications.md"
     },
@@ -183,22 +199,6 @@
     {
       "basename": "Open",
       "path": "Docket/Open.md"
-    },
-    {
-      "basename": "Closed",
-      "path": "Docket/Closed.md"
-    },
-    {
-      "basename": "Define service product agreement (Liability terms)",
-      "path": "Projects/90 days/Legal/Corporate Setup/Define service product agreement (Liability terms).md"
-    },
-    {
-      "basename": "RACI",
-      "path": "Artifacts/RACI.md"
-    },
-    {
-      "basename": "Market Research",
-      "path": "Journal/Jeff/Business stuff/Business Development/Market Research.md"
     }
   ],
   "omittedPaths": [],
