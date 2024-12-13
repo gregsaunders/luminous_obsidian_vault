@@ -11,13 +11,28 @@
             "id": "eb480e6746d9d2e5",
             "type": "leaf",
             "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/2. Domains and Component Types/13. Infrastructure.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "13. Infrastructure"
+            }
+          },
+          {
+            "id": "f4dc49ebe4510f86",
+            "type": "leaf",
+            "state": {
               "type": "obsidian-projects",
               "state": {},
               "icon": "projects-icon",
               "title": "Projects"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -83,7 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 266.5
+    "width": 452.5
   },
   "right": {
     "id": "c61c2be9af22c590",
@@ -192,8 +207,22 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "eb480e6746d9d2e5",
+  "active": "f4dc49ebe4510f86",
   "lastOpenFiles": [
+    "Projects/Jeff Test Project",
+    "Projects/Untitled",
+    "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/2. Domains and Component Types/13. Infrastructure.md",
+    "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/2. Domains and Component Types/14. Technology Catalog.md",
+    "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/2. Domains and Component Types/15. Business Roles People and Organization.md",
+    "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/2. Domains and Component Types/16. Locations and Network.md",
+    "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/2. Domains and Component Types/10. Business Capabilities and Process.md",
+    "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/2. Domains and Component Types/1. Strategy and Objectives.md",
+    "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/2. Domains and Component Types/0. The Ardoq Metamodel.md",
+    "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/1. High Level Metamodel Concepts/3. Strategy, Change and Risk 1.md",
+    "Journal/Jeff/Business stuff/Bio Sensor Meta Model/1. High Level Metamodel Concepts/2. Business Propositions and Operations 1.md",
+    "Journal/Jeff/Business stuff/Bio Sensor Meta Model/1. High Level Metamodel Concepts/1. Business Ecosystem 1.md",
+    "Journal/Jeff/Business stuff/Bio Sensor Meta Model/1. High Level Metamodel Concepts/0. Introduction to the Ardoq Metamodel.md",
+    "Journal/Jeff/Business stuff/Bio Sensor Meta Model/1. High Level Metamodel Concepts/00 What is a Metamodel?.md",
     "Projects/90 days/Business development/Business Feasibility Assessment/1. Market Analysis.md",
     "Projects/90 days/Business development/Business Feasibility Assessment/8. Scalability and Long-Term Opportunities.md",
     "Projects/90 days/Business development/Business Feasibility Assessment/7. Risk Assessment.md",
@@ -209,9 +238,6 @@
     "Journal/Jeff/Journal",
     "Projects/90 days/Business development/Determine Business Feasibility.md",
     "Projects/90 days data view.md",
-    "variables/work_item_id.md",
-    "Projects/90 days/CNR pilot/Environmental/Conduct environmental impact assessment.md",
-    "Projects/90 days/CNR pilot/Execution/Test 2024-12-10a.md",
     "utils/openai/chroma_db/chroma.sqlite3-journal",
     "utils/openai/chroma_db/a5cebfbd-589f-4b93-97de-c925883fa61c/link_lists.bin",
     "utils/openai/chroma_db/a5cebfbd-589f-4b93-97de-c925883fa61c/length.bin",
@@ -219,17 +245,6 @@
     "utils/openai/chroma_db/a5cebfbd-589f-4b93-97de-c925883fa61c/data_level0.bin",
     "utils/openai/chroma_db/a5cebfbd-589f-4b93-97de-c925883fa61c",
     "utils/openai/chroma_db/chroma.sqlite3",
-    "utils/openai/chroma_db",
-    "Projects/90 days/Legal/Corporate Setup/Meet with lawyer to establish optimal corporate structure.md",
-    "Journal/Shawn/2024-12-09.md",
-    "Journal/Shawn/Untitled.md",
-    "Projects/90 days/Regulatory/Develop compliance strategy.md",
-    "Projects/90 days/Finance/Create financial projections including pilot project costs.md",
-    "Projects/90 days/Regulatory/Identify necessary permits for engineered bacteria.md",
-    "Projects/90 days/Business development/Marketing/Analyze competitive landscape.md",
-    "Journal/Greg/2024-12/2024-12-08.md",
-    "Journal/Greg/2024-12/ArticlesScheduleAB.md",
-    "Journal/Greg/2024-12/2024-12-06.md",
     "venv/lib/python3.11/site-packages/sympy/plotting/tests/test_region_xor.png",
     "venv/lib/python3.11/site-packages/sympy/plotting/tests/test_region_not.png",
     "venv/lib/python3.11/site-packages/sympy/plotting/tests/test_region_or.png",

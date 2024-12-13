@@ -104,17 +104,17 @@
               {
                 "field": "work_item_id",
                 "order": "asc",
-                "enabled": true
+                "enabled": false
               },
               {
                 "field": "folder",
                 "order": "asc",
-                "enabled": false
+                "enabled": true
               },
               {
                 "field": "responsible",
                 "order": "asc",
-                "enabled": true
+                "enabled": false
               }
             ]
           },
