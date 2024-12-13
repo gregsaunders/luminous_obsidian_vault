@@ -5,7 +5,7 @@ responsible: Jeff
 accountable: Shawn
 consulted: Shawn
 informed: Board
-status: To-do
+status: Backlog
 folder: 90 days/Business development/Marketing
 ---
 

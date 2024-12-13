@@ -146,7 +146,14 @@
           },
           "filter": {
             "conjunction": "and",
-            "conditions": []
+            "conditions": [
+              {
+                "field": "responsible",
+                "operator": "is",
+                "enabled": true,
+                "value": "Jeff"
+              }
+            ]
           },
           "colors": {
             "conditions": []
@@ -169,6 +176,10 @@
               "Backlog": {
                 "records": [
                   "Projects/90 days/Business development/Commercialization/Create pitch deck for potential investors.md",
+                  "Projects/90 days/Business development/Marketing/Develop initial marketing materials for Naphthenic Acid detection.md",
+                  "Projects/90 days/Business development/Marketing/Identify target market (oil sands operators).md",
+                  "Projects/90 days/Business development/Marketing/Finalize brand identity.md",
+                  "Projects/90 days/Business development/Marketing/Collect case studies and testimonials.md",
                   "Projects/90 days/Business development/Commercialization/Develop post-pilot commercialization strategy.md",
                   "Projects/90 days/Business development/Commercialization/Develop pricing model.md",
                   "Projects/90 days/Business development/Marketing/Create sales materials.md",
@@ -217,26 +228,36 @@
                   "Projects/90 days/Regulatory/Apply for required environmental and safety permits.md",
                   "Projects/90 days/Regulatory/Develop compliance strategy.md",
                   "Projects/90 days/Regulatory/Identify necessary permits for engineered bacteria.md"
-                ]
+                ],
+                "weight": 0
               },
               "To-do": {
                 "records": [
                   "Projects/90 days/Business development/Marketing/Begin client outreach and attend industry events.md",
                   "Projects/90 days/Business development/Marketing/Begin client outreach and attend industry events.md",
                   "Projects/90 days/Business development/Marketing/Analyze competitive landscape.md",
-                  "Projects/90 days/Business development/Marketing/Collect case studies and testimonials.md",
-                  "Projects/90 days/Business development/Marketing/Finalize brand identity.md",
                   "Projects/90 days/Business development/Marketing/Begin client outreach and attend industry events.md",
                   "Projects/90 days/Business development/Marketing/Begin client outreach and attend industry events.md",
-                  "Projects/90 days/Business development/Marketing/Identify target market (oil sands operators).md",
                   "Projects/90 days/Finance/Develop detailed 12-month budget.md",
                   "Projects/90 days/Legal/Corporate Setup/Decide on legal structure.md",
                   "Projects/90 days/Legal/Corporate Setup/Meet with lawyer to establish optimal corporate structure.md",
                   "Projects/90 days/Operational/HR/Create organizational chart.md",
                   "Projects/90 days/Product/Innovation/Document current biosensor specifications and performance.md",
-                  "Projects/90 days/Business development/Marketing/Develop initial marketing materials for Naphthenic Acid detection.md",
                   "Projects/90 days/Business development/Commercialization/Identify funding sources and prepare pitch deck.md"
-                ]
+                ],
+                "weight": 1
+              },
+              "In progress": {
+                "weight": 2
+              },
+              "Resolved": {
+                "weight": 3
+              },
+              "Done": {
+                "weight": 4
+              },
+              "Projects/90 days/Business development/Determine Business Feasibility.md": {
+                "weight": 5
               }
             }
           },
