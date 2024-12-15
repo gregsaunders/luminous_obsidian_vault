@@ -36,7 +36,7 @@ Like many other industrial processes, the oil sands mining process requires wate
 #### Safe and Effective Release
 Safe and effective release of treated water from oil sands mines is a crucial component to enable the reclamation of these mines, including tailings facilities. Dewatering is necessary to be able to reclaim most tailings facilities at oil sands mines, but that water can only be removed if it can be treated for safe release to the environment.
 
-![[Journal/Jeff/Business stuff/Business Development/attachments/Pasted image 20241206134810.png]]
+![[Journal/Jeff/Business Development/attachments/Pasted image 20241206134810.png]]
 
 ### Reducing Water Storage
 
