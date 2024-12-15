@@ -1,5 +1,5 @@
 %% Begin Waypoint %%
-- [[02-00 The Ardoq Metamodel]]
+- [[02-00 Defining and Realizing Business Capabilities]]
 - [[02-01 Strategy and Objectives]]
 - [[02-02 Innovation and Change]]
 - [[02-03 Persona and Market]]
@@ -15,8 +15,6 @@
 - [[02-13 Infrastructure]]
 - [[02-14 Technology Catalog]]
 - [[02-15 Business Roles People and Organization]]
-- [[02-16 Locations and Network]]
-- [[Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/02 Domains and Component Types/02-1702-15 Business Roles People and Organization]]
 - [[02-16 Locations and Network]]
 - [[02-17 Risk and Controls]]
 
