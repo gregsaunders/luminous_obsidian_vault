@@ -5,11 +5,20 @@
 1. **Define Vision and Mission Statements**
         - **Who:** All founders
     - **Action:** Draft shared vision and mission statements for each company, emphasizing the synergies between research and commercialization.
+
+**Vision:**  
+To cultivate a world where industry and nature coexist in harmony by empowering organizations to minimize their environmental footprints, inspiring a community of talented, diverse, and purpose-driven individuals dedicated to safeguarding the planet for future generations.
+
+**Mission:**  
+We provide innovative, science-based environmental testing and remediation insights that help heavy industries operate responsibly and sustainably. By valuing our people, embracing diversity, and fostering a culture of integrity and excellence, we strive to deliver meaningful impact, trust, and long-term value to our customers, our colleagues, and our shared environment—proving that conscientious business can benefit both the bottom line and the world we cherish.
+
     
 2. **Determine Roles and Responsibilities**    
     - **Who:** Shaun, Greg, and Jeff
     - **Action:** Clearly outline roles and responsibilities within each company, specifying who leads research, commercialization, technology, and business development.
-    
+
+
+
 3. **Establish Friendship Principles**    
     - **Who:** All founders
     - **Action:** Create principles to guide interactions, decision-making, and conflict resolution to preserve relationships.

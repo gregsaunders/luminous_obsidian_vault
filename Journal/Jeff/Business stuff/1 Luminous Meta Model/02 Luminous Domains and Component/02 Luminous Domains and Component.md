@@ -1,0 +1,21 @@
+%% Begin Waypoint %%
+- [[02-00 BCM - Defining Business Capabilities]]
+- [[02-01 Strategy and Objectives]]
+- [[02-02 Innovation and Change]]
+- [[02-03 Persona and Market]]
+- [[02-04 Customers and Partners]]
+- [[02-05 Value Propositions]]
+- [[02-06 Digital Products and Channels]]
+- [[02-07 Products and Channels]]
+- [[02-08 Logical Information]]
+- [[02-09 Physical Data and Business Information Domain]]
+- [[02-10 Business Capabilities and Process]]
+- [[02-11 Applications]]
+- [[02-12 Technology Capabilities]]
+- [[02-13 Infrastructure]]
+- [[02-14 Technology Catalog]]
+- [[02-15 Business Roles People and Organization]]
+- [[02-16 Locations and Network]]
+- [[02-17 Risk and Controls]]
+
+%% End Waypoint %%
