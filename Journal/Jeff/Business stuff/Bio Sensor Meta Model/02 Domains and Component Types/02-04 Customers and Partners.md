@@ -5,7 +5,6 @@ The **customers and partners** domain groups external parties – people and org
 
 - **External Organization Component** - An **external organization** is any third party organization which the organization has an interest in. They can fulfil a number of roles in relation to the organization, the most commonly modeled of which are suppliers and distribution partners. However, other important roles include competitors, regulators, standards bodies, research collaborators, media and more.
 
-
 ### Luminous Customer Segments:
 
 1. **Large Oil Sands Operators Segment**  
@@ -40,7 +39,7 @@ The **customers and partners** domain groups external parties – people and org
    - **Interest:** Stable, long-term supply agreements and growing demand for their components.  
    - **Influence:** Cost, quality, and scalability of product development depend on the strength and reliability of these relationships.
 
-4. **Competing Biosensor Manufacturers**  
+4. **Competing Testing Manufacturers**  
    - **Role:** Other companies offering similar environmental monitoring technologies.  
    - **Interest:** Compete for market share and influence product innovation trends.  
    - **Influence:** Competitive pressures can drive price adjustments, feature enhancements, and strategic pivots.

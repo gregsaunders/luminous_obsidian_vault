@@ -1,48 +1,72 @@
 {
   "recentFiles": [
     {
-      "basename": "02-00 The Ardoq Metamodel",
-      "path": "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/02 Domains and Component Types/02-00 The Ardoq Metamodel.md"
+      "basename": "00 What is a Metamodel?",
+      "path": "Journal/Jeff/Business stuff/Bio Sensor Meta Model/1. High Level Metamodel Concepts/00 What is a Metamodel?.md"
+    },
+    {
+      "basename": "4. Breaking Out Operations 1",
+      "path": "Journal/Jeff/Business stuff/Bio Sensor Meta Model/1. High Level Metamodel Concepts/4. Breaking Out Operations 1.md"
+    },
+    {
+      "basename": "3. Strategy, Change and Risk 1",
+      "path": "Journal/Jeff/Business stuff/Bio Sensor Meta Model/1. High Level Metamodel Concepts/3. Strategy, Change and Risk 1.md"
+    },
+    {
+      "basename": "2. Business Propositions and Operations 1",
+      "path": "Journal/Jeff/Business stuff/Bio Sensor Meta Model/1. High Level Metamodel Concepts/2. Business Propositions and Operations 1.md"
+    },
+    {
+      "basename": "1. Business Ecosystem 1",
+      "path": "Journal/Jeff/Business stuff/Bio Sensor Meta Model/1. High Level Metamodel Concepts/1. Business Ecosystem 1.md"
+    },
+    {
+      "basename": "02-06 Digital Products and Channels",
+      "path": "Journal/Jeff/Business stuff/Bio Sensor Meta Model/02 Domains and Component Types/02-06 Digital Products and Channels.md"
+    },
+    {
+      "basename": "02-05 Value Propositions",
+      "path": "Journal/Jeff/Business stuff/Bio Sensor Meta Model/02 Domains and Component Types/02-05 Value Propositions.md"
+    },
+    {
+      "basename": "02-04 Customers and Partners",
+      "path": "Journal/Jeff/Business stuff/Bio Sensor Meta Model/02 Domains and Component Types/02-04 Customers and Partners.md"
+    },
+    {
+      "basename": "02-03 Persona and Market",
+      "path": "Journal/Jeff/Business stuff/Bio Sensor Meta Model/02 Domains and Component Types/02-03 Persona and Market.md"
+    },
+    {
+      "basename": "02-02 Innovation and Change",
+      "path": "Journal/Jeff/Business stuff/Bio Sensor Meta Model/02 Domains and Component Types/02-02 Innovation and Change.md"
+    },
+    {
+      "basename": "02-01 Strategy and Objectives",
+      "path": "Journal/Jeff/Business stuff/Bio Sensor Meta Model/02 Domains and Component Types/02-01 Strategy and Objectives.md"
+    },
+    {
+      "basename": "02-00 BCM - Defining Business Capabilities",
+      "path": "Journal/Jeff/Business stuff/Bio Sensor Meta Model/02 Domains and Component Types/02-00 BCM - Defining Business Capabilities.md"
     },
     {
       "basename": "02 Domains and Component Types",
-      "path": "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/02 Domains and Component Types/02 Domains and Component Types.md"
+      "path": "Journal/Jeff/Business stuff/Bio Sensor Meta Model/02 Domains and Component Types/02 Domains and Component Types.md"
     },
     {
       "basename": "1. BCM Benefits",
       "path": "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/BCM Modelling/1. BCM Benefits.md"
     },
     {
-      "basename": "02-02 Innovation and Change",
-      "path": "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/02 Domains and Component Types/02-02 Innovation and Change.md"
-    },
-    {
       "basename": "4. Economic Viability and Cost Structure",
       "path": "Projects/90 days/Business development/Business Feasibility Assessment/4. Economic Viability and Cost Structure.md"
     },
     {
-      "basename": "02-01 Strategy and Objectives",
-      "path": "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/02 Domains and Component Types/02-01 Strategy and Objectives.md"
-    },
-    {
       "basename": "02-10 Business Capabilities and Process",
-      "path": "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/02 Domains and Component Types/02-10 Business Capabilities and Process.md"
+      "path": "Journal/Jeff/Business stuff/Bio Sensor Meta Model/02 Domains and Component Types/02-10 Business Capabilities and Process.md"
     },
     {
       "basename": "5. Revenue Models and Pricing Strategies",
       "path": "Projects/90 days/Business development/Business Feasibility Assessment/5. Revenue Models and Pricing Strategies.md"
-    },
-    {
-      "basename": "02-06 Digital Products and Channels",
-      "path": "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/02 Domains and Component Types/02-06 Digital Products and Channels.md"
-    },
-    {
-      "basename": "02-05 Value Propositions",
-      "path": "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/02 Domains and Component Types/02-05 Value Propositions.md"
-    },
-    {
-      "basename": "02-03 Persona and Market",
-      "path": "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/02 Domains and Component Types/02-03 Persona and Market.md"
     },
     {
       "basename": "7. Risk Assessment",
@@ -54,19 +78,15 @@
     },
     {
       "basename": "02-17 Risk and Controls",
-      "path": "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/02 Domains and Component Types/02-17 Risk and Controls.md"
+      "path": "Journal/Jeff/Business stuff/Bio Sensor Meta Model/02 Domains and Component Types/02-17 Risk and Controls.md"
     },
     {
       "basename": "02-07 Products and Channels",
-      "path": "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/02 Domains and Component Types/02-07 Products and Channels.md"
+      "path": "Journal/Jeff/Business stuff/Bio Sensor Meta Model/02 Domains and Component Types/02-07 Products and Channels.md"
     },
     {
       "basename": "6. Partnerships and Distribution Channels",
       "path": "Projects/90 days/Business development/Business Feasibility Assessment/6. Partnerships and Distribution Channels.md"
-    },
-    {
-      "basename": "02-04 Customers and Partners",
-      "path": "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/02 Domains and Component Types/02-04 Customers and Partners.md"
     },
     {
       "basename": "1. Market Analysis",
@@ -102,19 +122,19 @@
     },
     {
       "basename": "02-16 Locations and Network",
-      "path": "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/02 Domains and Component Types/02-16 Locations and Network.md"
+      "path": "Journal/Jeff/Business stuff/Bio Sensor Meta Model/02 Domains and Component Types/02-16 Locations and Network.md"
     },
     {
       "basename": "02-15 Business Roles People and Organization",
-      "path": "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/02 Domains and Component Types/02-15 Business Roles People and Organization.md"
+      "path": "Journal/Jeff/Business stuff/Bio Sensor Meta Model/02 Domains and Component Types/02-15 Business Roles People and Organization.md"
     },
     {
       "basename": "02-14 Technology Catalog",
-      "path": "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/02 Domains and Component Types/02-14 Technology Catalog.md"
+      "path": "Journal/Jeff/Business stuff/Bio Sensor Meta Model/02 Domains and Component Types/02-14 Technology Catalog.md"
     },
     {
       "basename": "02-11 Applications",
-      "path": "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/02 Domains and Component Types/02-11 Applications.md"
+      "path": "Journal/Jeff/Business stuff/Bio Sensor Meta Model/02 Domains and Component Types/02-11 Applications.md"
     },
     {
       "basename": "1. The Ardoq Metamodel",
@@ -125,24 +145,12 @@
       "path": "Projects/90 days/CNR pilot/Execution/Test 2024-12-10a.md"
     },
     {
-      "basename": "2. Business Propositions and Operations 1",
-      "path": "Journal/Jeff/Business stuff/Bio Sensor Meta Model/1. High Level Metamodel Concepts/2. Business Propositions and Operations 1.md"
-    },
-    {
-      "basename": "1. Business Ecosystem 1",
-      "path": "Journal/Jeff/Business stuff/Bio Sensor Meta Model/1. High Level Metamodel Concepts/1. Business Ecosystem 1.md"
-    },
-    {
       "basename": "0. Introduction to the Ardoq Metamodel",
       "path": "Journal/Jeff/Business stuff/Bio Sensor Meta Model/1. High Level Metamodel Concepts/0. Introduction to the Ardoq Metamodel.md"
     },
     {
-      "basename": "00 What is a Metamodel?",
-      "path": "Journal/Jeff/Business stuff/Bio Sensor Meta Model/1. High Level Metamodel Concepts/00 What is a Metamodel?.md"
-    },
-    {
       "basename": "02-09 Physical Data and Business Information Domain",
-      "path": "Journal/Jeff/Business stuff/Business Strategy Stuff/Ardoq/Meta Model/02 Domains and Component Types/02-09 Physical Data and Business Information Domain.md"
+      "path": "Journal/Jeff/Business stuff/Bio Sensor Meta Model/02 Domains and Component Types/02-09 Physical Data and Business Information Domain.md"
     },
     {
       "basename": "3. Intellectual Property and Differentiation",
@@ -167,38 +175,6 @@
     {
       "basename": "Conduct environmental impact assessment",
       "path": "Projects/90 days/CNR pilot/Environmental/Conduct environmental impact assessment.md"
-    },
-    {
-      "basename": "Identify funding sources and prepare pitch deck",
-      "path": "Projects/90 days/Business development/Commercialization/Identify funding sources and prepare pitch deck.md"
-    },
-    {
-      "basename": "Create pitch deck for potential investors",
-      "path": "Projects/90 days/Business development/Commercialization/Create pitch deck for potential investors.md"
-    },
-    {
-      "basename": "2024-11-27",
-      "path": "Journal/Greg/2024-11/2024-11-27.md"
-    },
-    {
-      "basename": "Meet with lawyer to establish optimal corporate structure",
-      "path": "Projects/90 days/Legal/Corporate Setup/Meet with lawyer to establish optimal corporate structure.md"
-    },
-    {
-      "basename": "Develop post-pilot commercialization strategy",
-      "path": "Projects/90 days/Business development/Commercialization/Develop post-pilot commercialization strategy.md"
-    },
-    {
-      "basename": "Proposed Corporate Structure",
-      "path": "Journal/Jeff/Business stuff/Corporate Structure/Proposed Corporate Structure/Proposed Corporate Structure.md"
-    },
-    {
-      "basename": "Draft NDAs employee contracts service agreements",
-      "path": "Projects/90 days/Legal/Corporate Setup/Draft NDAs employee contracts service agreements.md"
-    },
-    {
-      "basename": "2024-12-08",
-      "path": "Journal/Greg/2024-12/2024-12-08.md"
     }
   ],
   "omittedPaths": [],

@@ -8,7 +8,6 @@ The **markets domain** is used to describe spaces or forums through which the or
 
 - **Market Component** - A **market** it is a space where buyers and sellers meet to transact the exchange of products and services. Traditionally markets were physical spaces where prices and terms of exchange were negotiated fact-to-face. In the twenty-first century markets are increasingly virtual (i.e. accessed via a communications network) and automated (i.e. buying and selling is carried out via applications and algorithms).
 
-
 ### Luminous Personas Domain
 
 1. **Environmental Compliance Officer Persona**  

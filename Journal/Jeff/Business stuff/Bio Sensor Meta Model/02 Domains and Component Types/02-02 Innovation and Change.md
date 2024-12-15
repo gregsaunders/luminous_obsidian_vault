@@ -7,7 +7,6 @@ Change activities are one-time and nonrepeating, their purpose being to move som
 
 - **Initiative Component** - An **initiative** is a prioritized and resourced non-repeating activity with the objective of realizing a defined objective or benefit. Initiatives implement changes to other metamodel component types that constitute the organization’s propositions or operations. They may be decomposed into sub-initiatives (for example, Epics or Stories) and may themselves be composed into higher-level initiatives.
 
-
 ### Luminous Ideas:
 1. **Broadening Contaminant Detection:**  
    - Extend the biosensor’s capabilities beyond NAs to other waterborne contaminants commonly found in tailings ponds or related industries.  

@@ -1,8 +1,0 @@
-### Value Propositions Domain
-The **value propositions** domain enables products managers and business planners to model the logical characteristics of a product or service in terms of its value to consumers without specifying which products and services will realize that value. This enables organizations to analyze a product portfolio for gaps (i.e. an unserved market) or redundancies (i.e. where two products potentially compete for the same market).
-
-- **Value Proposition Component** - A value proposition is an abstracted description of the value the organization offers to consumers by meeting their needs, addressing their concerns or providing goods or services that are attractive to them. Value propositions should be defined in relation to market concepts like personas and customer segments and are realized by the physical or digital products and services the organization creates.
-
-
-### Luminous Value Proposition  
-We offer an integrated environmental monitoring and advisory solution that combines innovative bacterial biosensors, advanced analytics, and expert consulting to help oil sands operators confidently meet regulatory standards, streamline their testing programs, and make data-driven decisions. Our holistic approach—ranging from rapid, cost-effective on-site screening to deeper, third-party lab validation and continuous data enrichment—empowers customers to proactively manage water quality, reduce operational uncertainty, and foster long-term environmental stewardship.

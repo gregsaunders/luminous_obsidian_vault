@@ -5,8 +5,6 @@ The **strategy and objectives** domain defines organizational direction. It arti
 
 - **Objective Component** - An **objective** is a desired state outcome to be achieved by the organization. Objectives are the desired outcomes of strategies and are the means of determining whether a strategy has been realized. So well-defined objectives are typically measurable and time-bounded (e.g. ‘increase sales by 5% within three years’) but they can also simply be stated aspirations (e.g. ‘be the most customer-focussed software company in the world’).
 
-
-
 ### Luminous Strategies  
 
 1. **Market Penetration Strategy:**  

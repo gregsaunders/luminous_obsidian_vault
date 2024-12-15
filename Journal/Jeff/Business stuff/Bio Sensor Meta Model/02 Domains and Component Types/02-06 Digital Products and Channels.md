@@ -6,7 +6,7 @@ The **digital products and channels** domain describes the products and services
 
 
 ### Luminous Digital Product:
-**Environmental Data Analytics Platform** – A secure, cloud-based platform that aggregates biosensor readings, enriched lab test results, and third-party data into a single, user-friendly interface. It leverages modern analytics tools to provide real-time insights, trend analysis, and predictive modeling. This platform is designed with modular, API-driven architecture, ensuring seamless integration with existing client systems and industry-standard tools. It can be delivered as a fully hosted SaaS solution or deployed on-premises for clients requiring additional data sovereignty or security controls.
+**Environmental Data Analytics Platform** – A secure, technology platform that aggregates biosensor readings, enriched lab test results, and third-party data into a single, user-friendly interface. It leverages modern analytics tools to provide real-time insights, trend analysis, and predictive modeling. This platform is designed with modular, API-driven architecture, ensuring seamless integration with existing client systems and industry-standard tools. It can be delivered as a fully hosted SaaS solution or deployed on-premises for clients requiring additional data sovereignty or security controls.
 
 ### Luminous Digital Channels:
 **Web-based Dashboard:** Accessible via desktop or mobile devices, this dashboard allows environmental compliance officers, engineers, and consultants to quickly visualize performance metrics, compliance status, and remediation progress. It can also facilitate role-based access control and reporting functions.

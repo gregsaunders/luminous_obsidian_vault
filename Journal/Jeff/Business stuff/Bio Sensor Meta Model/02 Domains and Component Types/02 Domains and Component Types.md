@@ -1,5 +1,5 @@
 %% Begin Waypoint %%
-- [[02-00 Defining and Realizing Business Capabilities]]
+- [[02-00 BCM - Defining Business Capabilities]]
 - [[02-01 Strategy and Objectives]]
 - [[02-02 Innovation and Change]]
 - [[02-03 Persona and Market]]
