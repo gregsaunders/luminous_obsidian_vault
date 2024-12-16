@@ -2,6 +2,7 @@
 folder: 90 days/Business development/Business Feasibility Assessment
 responsible: Jeff
 consulted: Greg, Shawn
+work_item_id: 1076
 ---
 1. Market risks: Slow regulatory approvals, conservative industry adoption.  
   

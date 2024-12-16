@@ -4,53 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "356b5b32deeaa369",
+        "id": "75346e36190c9a63",
         "type": "tabs",
         "children": [
           {
-            "id": "e231478423ecd1ac",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Journal/Jeff/Business stuff/1 Luminous Meta Model/02 Luminous Domains and Component/02-00 BCM - Defining Business Capabilities.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "02-00 BCM - Defining Business Capabilities"
-            }
-          },
-          {
-            "id": "40b9e048fc647463",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Projects/90 days/Business development/Commercialization/Create pitch deck for potential investors.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Create pitch deck for potential investors"
-            }
-          },
-          {
-            "id": "a51f8c324145bd49",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Projects/90 days/Business development/Commercialization/Develop post-pilot commercialization strategy.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Develop post-pilot commercialization strategy"
-            }
-          },
-          {
-            "id": "c1911a6281691981",
+            "id": "584a4496f62c326e",
             "type": "leaf",
             "state": {
               "type": "obsidian-projects",
@@ -59,8 +17,7 @@
               "title": "Projects"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -126,7 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 452.5
+    "width": 419.5
   },
   "right": {
     "id": "c61c2be9af22c590",
@@ -235,13 +192,25 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c1911a6281691981",
+  "active": "584a4496f62c326e",
   "lastOpenFiles": [
+    "Projects/90 days/Test 2024-12-16a.md",
+    "Projects/90 days/CNR pilot/Execution/Test 2024-12-10a.md",
+    "Projects/90 days data view.md",
+    "Projects/90 days/Business development/Business Feasibility Assessment/01 Market Analysis.md",
+    "Projects/90 days/Business development/Business Feasibility Assessment/02 Regulatory and Policy Review.md",
+    "Projects/90 days/Business development/Business Feasibility Assessment/03 Intellectual Property and Differentiation.md",
+    "Projects/90 days/Business development/Business Feasibility Assessment/05 Revenue Models and Pricing Strategies.md",
+    "Projects/90 days/Business development/Business Feasibility Assessment/06 Partnerships and Distribution Channels.md",
+    "Projects/90 days/Business development/Business Feasibility Assessment/07 Risk Assessment.md",
+    "Projects/90 days/Business development/Business Feasibility Assessment/04 Economic Viability and Cost Structure.md",
+    "Projects/90 days/Business development/Marketing/Finalize brand identity.md",
+    "Journal/Shawn/2024-12-16.md",
+    "Untitled",
     "Projects/90 days/Business development/Commercialization/Develop post-pilot commercialization strategy.md",
     "Projects/90 days/Business development/Commercialization/Create pitch deck for potential investors.md",
     "Journal/Jeff/Business stuff/1 Luminous Meta Model/02 Luminous Domains and Component/02-00 BCM - Defining Business Capabilities.md",
     "Projects/90 days/Business development/Marketing/Launch website and create brochures.md",
-    "Projects/90 days/Business development/Marketing/Finalize brand identity.md",
     "Journal/Jeff/Business stuff/1 Luminous Meta Model/01 What is a Meta Model?/attachments/Pasted image 20231122203420.png",
     "Journal/Jeff/Business stuff/1 Luminous Meta Model/01 What is a Meta Model?/attachments/Pasted image 20231122211815.png",
     "Journal/Jeff/Business stuff/1 Luminous Meta Model/01 What is a Meta Model?/attachments/Pasted image 20231122202820.png",
@@ -262,17 +231,6 @@
     "Journal/Jeff/Business stuff/1 Luminous Meta Model/02 Luminous Domains and Component/02-03 Persona and Market.md",
     "Journal/Jeff/Business stuff/1 Luminous Meta Model/01 What is a Meta Model?/BCM Modelling/3. Which Business Capabilities do I Compete On?.md",
     "Journal/Jeff/Business stuff/1 Luminous Meta Model/02 Luminous Domains and Component/02-10 Business Capabilities and Process.md",
-    "Journal/Jeff/Business stuff/1 Luminous Meta Model/01 What is a Meta Model?/BCM Modelling/4. How Are My Business Capabilities Implemented?.md",
-    "Journal/Jeff/Business stuff/1 Luminous Meta Model/02 Luminous Domains and Component/02-04 Customers and Partners.md",
-    "Journal/Jeff/Business stuff/1 Luminous Meta Model/02 Luminous Domains and Component/02-09 Physical Data and Business Information Domain.md",
-    "Journal/Jeff/Business stuff/1 Luminous Meta Model/02 Luminous Domains and Component/02-12 Technology Capabilities.md",
-    "Journal/Jeff/Business stuff/1 Luminous Meta Model/01 What is a Meta Model?/BCM Modelling/Build Out Ardoq.md",
-    "Journal/Jeff/Business stuff/1 Luminous Meta Model/01 What is a Meta Model?/BCM Modelling/5. What Is the Maturity of My Business Capabilities?.md",
-    "Journal/Jeff/Business stuff/1 Luminous Meta Model/02 Luminous Domains and Component/02-02 Innovation and Change.md",
-    "Journal/Jeff/Business stuff/1 Luminous Meta Model/01 What is a Meta Model?/BCM Modelling/1. BCM Benefits.md",
-    "Journal/Jeff/Business stuff/1 Luminous Meta Model/02 Luminous Domains and Component/02-07 Products and Channels.md",
-    "Journal/Jeff/Business stuff/1 Luminous Meta Model/02 Luminous Domains and Component/02-16 Locations and Network.md",
-    "Journal/Jeff/Business stuff/1 Luminous Meta Model/02 Luminous Domains and Component/02-01 Strategy and Objectives.md",
     "Journal/Jeff/Business stuff/1 Luminous Meta Model/01 What is a Meta Model?/BCM Modelling/attachments",
     "Journal/Jeff/Business stuff/1 Luminous Meta Model/01 What is a Meta Model?/BCM Modelling",
     "Journal/Jeff/Business stuff/1 Luminous Meta Model/01 What is a Meta Model?/attachments",
@@ -281,7 +239,6 @@
     "Journal/Jeff/Business stuff/1 Luminous Meta Model",
     "Journal/Jeff/Business Development/Market Research",
     "Journal/Jeff/Business Development/attachments",
-    "Journal/Jeff/Business Development",
-    "Journal/Jeff/Business stuff/Business Development/Market Research"
+    "Journal/Jeff/Business Development"
   ]
 }

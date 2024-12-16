@@ -2,9 +2,10 @@
 folder: 90 days/Business development/Business Feasibility Assessment
 responsible: Jeff
 consulted: Greg, Shawn
+work_item_id: 1077
 ---
-1. Explore collaborations with established testing labs, oil sands operators, or environmental agencies to create go-to-market channels.  
-   
+1. Explore collaborations with established testing labs (eg Vogon Labs, Bureau Veritas (formally Maxxam)), oil sands operators, or environmental agencies to create go-to-market channels.  
+
 2. Assess the potential of bundling the biosensor with other water quality testing products.
 
 

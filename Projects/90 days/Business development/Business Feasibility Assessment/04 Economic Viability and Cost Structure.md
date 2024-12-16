@@ -2,6 +2,7 @@
 folder: 90 days/Business development/Business Feasibility Assessment
 responsible: Jeff
 consulted: Greg, Shawn
+work_item_id: 1079
 ---
 1. Analyze production costs and scalability of the biosensor. 
 

@@ -2,6 +2,7 @@
 folder: 90 days/Business development/Business Feasibility Assessment
 responsible: Jeff
 consulted: Greg, Shawn
+work_item_id: 1078
 ---
 1. Consider selling test kits directly, subscription-based monitoring services, 
  

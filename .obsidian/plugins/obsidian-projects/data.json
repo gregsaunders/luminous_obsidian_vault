@@ -48,7 +48,7 @@
                 "width": 462
               },
               "due date": {
-                "width": 107
+                "width": 143
               },
               "responsible": {
                 "width": 149
@@ -104,12 +104,12 @@
               {
                 "field": "work_item_id",
                 "order": "asc",
-                "enabled": false
+                "enabled": true
               },
               {
                 "field": "folder",
                 "order": "asc",
-                "enabled": true
+                "enabled": false
               },
               {
                 "field": "responsible",
@@ -121,24 +121,6 @@
           "id": "849fbd4b-866c-4242-a461-f09ff52e1d42",
           "name": "Table",
           "type": "table"
-        },
-        {
-          "config": {
-            "interval": "month"
-          },
-          "filter": {
-            "conjunction": "and",
-            "conditions": []
-          },
-          "colors": {
-            "conditions": []
-          },
-          "sort": {
-            "criteria": []
-          },
-          "id": "f0086cdb-6993-4eac-8bdd-a43bd64cda1f",
-          "name": "Calendar",
-          "type": "calendar"
         },
         {
           "config": {
@@ -287,6 +269,24 @@
           "id": "c79612e4-9e0e-427e-8bbf-9e8c3e6ef6a4",
           "name": "Board",
           "type": "board"
+        },
+        {
+          "config": {
+            "interval": "month"
+          },
+          "filter": {
+            "conjunction": "and",
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "id": "3340a51a-ecd0-4ffe-8bb9-9714cbaba47a",
+          "name": "Calendar",
+          "type": "calendar"
         }
       ],
       "id": "1269c6f9-bf82-4a86-8763-6aba7505d4b3",
