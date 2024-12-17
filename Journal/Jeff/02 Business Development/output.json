@@ -1,0 +1,33 @@
+[
+  {"type":"directory","name":"./","contents":[
+    {"type":"directory","name":"02-01 Target Accounts","contents":[
+      {"type":"file","name":"Oil Sands Operators.md"}
+    ]},
+    {"type":"directory","name":"02-02 Industry Partners","contents":[
+      {"type":"file","name":"Industry Partners.md"}
+    ]},
+    {"type":"directory","name":"02-03 Regulatory Partners"},
+    {"type":"directory","name":"02-04 Market Research","contents":[
+      {"type":"file","name":"Market Research.md"},
+      {"type":"file","name":"NA Testing Research Notes.md"}
+    ]},
+    {"type":"directory","name":"02-05 Revenue Streams","contents":[
+      {"type":"file","name":"02-05-01 Monitoring Service.md"},
+      {"type":"file","name":"02-05-02 Grants.md"},
+      {"type":"file","name":"02-05-03 NA Remediation Consulting.md"},
+      {"type":"file","name":"02-05-04 Paid Pilots.md"},
+      {"type":"file","name":"02-05-05 Industry Research Grants.md"},
+      {"type":"file","name":"02-05-06 Licensing Agreements.md"},
+      {"type":"file","name":"02-05-07 Data.md"}
+    ]},
+    {"type":"directory","name":"NAs in the Media","contents":[
+      {"type":"file","name":"NAs in the Media.md"}
+    ]},
+    {"type":"directory","name":"attachments","contents":[
+      {"type":"file","name":"Pasted image 20241206134810.png"}
+    ]},
+    {"type":"file","name":"output.json"}
+  ]}
+,
+  {"type":"report","directories":8,"files":14}
+]
