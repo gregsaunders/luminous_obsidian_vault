@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "75346e36190c9a63",
+        "id": "aad8a847cf5ca584",
         "type": "tabs",
         "children": [
           {
-            "id": "584a4496f62c326e",
+            "id": "24d16409dc35a511",
             "type": "leaf",
             "state": {
-              "type": "obsidian-projects",
-              "state": {},
-              "icon": "projects-icon",
-              "title": "Projects"
+              "type": "markdown",
+              "state": {
+                "file": "Projects/90 days/Business development/Business Feasibility Assessment/01 Market Analysis.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "01 Market Analysis"
             }
           }
         ]
@@ -83,7 +87,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 419.5
+    "width": 322.5
   },
   "right": {
     "id": "c61c2be9af22c590",
@@ -192,23 +196,37 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "584a4496f62c326e",
+  "active": "588cb12a155ad9aa",
   "lastOpenFiles": [
+    "Projects/90 days/Business development/Commercialization/Create pitch deck for potential investors.md",
+    "Journal/Shawn/test 2024-12-16.md",
+    "Projects/90 days/Regulatory/new to do.md",
+    "Projects/90 days/Misc Shawn To Do",
+    "Projects/90 days/Regulatory/Test work item for Shaun.md",
+    "Projects/90 days/Business development/Business Feasibility Assessment/06 Partnerships and Distribution Channels.md",
+    "Projects/90 days/Business development/Business Feasibility Assessment/07 Risk Assessment.md",
+    "Projects/90 days/Business development/Business Feasibility Assessment/05 Revenue Models and Pricing Strategies.md",
+    "Projects/90 days/Business development/Business Feasibility Assessment/04 Economic Viability and Cost Structure.md",
+    "Projects/90 days/Business development/Business Feasibility Assessment/03 Intellectual Property and Differentiation.md",
+    "Projects/90 days/Business development/Business Feasibility Assessment/02 Regulatory and Policy Review.md",
+    "Projects/90 days/Business development/Business Feasibility Assessment/01 Market Analysis.md",
+    "Journal/Jeff/Business Development/Market Research/Market Research.md",
+    "Journal/Jeff/Business Development/Market Research/NA Testing Research Notes.md",
+    "Journal/Greg/2024-12/Test 2024-12-16a.md",
+    "Journal/Greg/2024-12/attachments/2024-11-04-Triangle-WorldEliteMastercard.pdf",
+    "Journal/Greg/2024-12/attachments/team2col.png",
+    "Journal/Greg/2024-12/attachments/Pasted image 20241216170929.png",
+    "Journal/Greg/2024-12/attachments",
+    "Journal/Greg/2024-12/Test 2024-12-16c.md",
+    "Journal/Greg/2024-12/Test 2024-12-16b.md",
+    "Journal/Shawn/2024-12-16.md",
+    "Journal/Shawn/2024-11-27.md",
     "Projects/90 days/Test 2024-12-16a.md",
     "Projects/90 days/CNR pilot/Execution/Test 2024-12-10a.md",
     "Projects/90 days data view.md",
-    "Projects/90 days/Business development/Business Feasibility Assessment/01 Market Analysis.md",
-    "Projects/90 days/Business development/Business Feasibility Assessment/02 Regulatory and Policy Review.md",
-    "Projects/90 days/Business development/Business Feasibility Assessment/03 Intellectual Property and Differentiation.md",
-    "Projects/90 days/Business development/Business Feasibility Assessment/05 Revenue Models and Pricing Strategies.md",
-    "Projects/90 days/Business development/Business Feasibility Assessment/06 Partnerships and Distribution Channels.md",
-    "Projects/90 days/Business development/Business Feasibility Assessment/07 Risk Assessment.md",
-    "Projects/90 days/Business development/Business Feasibility Assessment/04 Economic Viability and Cost Structure.md",
     "Projects/90 days/Business development/Marketing/Finalize brand identity.md",
-    "Journal/Shawn/2024-12-16.md",
     "Untitled",
     "Projects/90 days/Business development/Commercialization/Develop post-pilot commercialization strategy.md",
-    "Projects/90 days/Business development/Commercialization/Create pitch deck for potential investors.md",
     "Journal/Jeff/Business stuff/1 Luminous Meta Model/02 Luminous Domains and Component/02-00 BCM - Defining Business Capabilities.md",
     "Projects/90 days/Business development/Marketing/Launch website and create brochures.md",
     "Journal/Jeff/Business stuff/1 Luminous Meta Model/01 What is a Meta Model?/attachments/Pasted image 20231122203420.png",
@@ -219,26 +237,12 @@
     "Journal/Jeff/Business stuff/1 Luminous Meta Model/01 What is a Meta Model?/attachments/Pasted image 20231101131951.png",
     "Journal/Jeff/Business stuff/1 Luminous Meta Model/01 What is a Meta Model?/attachments/Pasted image 20231122211554.png",
     "Journal/Jeff/Business stuff/1 Luminous Meta Model/01 What is a Meta Model?/attachments/Pasted image 20231101132110.png",
-    "Journal/Jeff/Business stuff/1 Luminous Meta Model/01 What is a Meta Model?/attachments/Pasted image 20231122203021.png",
-    "Journal/Jeff/Business stuff/1 Luminous Meta Model/01 What is a Meta Model?/attachments/Pasted image 20231101132454.png",
     "Journal/Jeff/Business stuff/1 Luminous Meta Model/02 Luminous Domains and Component/02-15 Business Roles People and Organization.md",
-    "Journal/Jeff/Business stuff/1 Luminous Meta Model/02 Luminous Domains and Component/02-17 Risk and Controls.md",
-    "Journal/Jeff/Business stuff/1 Luminous Meta Model/02 Luminous Domains and Component/02-11 Applications.md",
-    "Journal/Jeff/Business stuff/1 Luminous Meta Model/02 Luminous Domains and Component/02-08 Logical Information.md",
-    "Journal/Jeff/Business stuff/1 Luminous Meta Model/02 Luminous Domains and Component/02-14 Technology Catalog.md",
-    "Journal/Jeff/Business stuff/1 Luminous Meta Model/02 Luminous Domains and Component/02-13 Infrastructure.md",
-    "Journal/Jeff/Business stuff/1 Luminous Meta Model/01 What is a Meta Model?/BCM Modelling/2. Getting Started.md",
-    "Journal/Jeff/Business stuff/1 Luminous Meta Model/02 Luminous Domains and Component/02-03 Persona and Market.md",
-    "Journal/Jeff/Business stuff/1 Luminous Meta Model/01 What is a Meta Model?/BCM Modelling/3. Which Business Capabilities do I Compete On?.md",
-    "Journal/Jeff/Business stuff/1 Luminous Meta Model/02 Luminous Domains and Component/02-10 Business Capabilities and Process.md",
     "Journal/Jeff/Business stuff/1 Luminous Meta Model/01 What is a Meta Model?/BCM Modelling/attachments",
     "Journal/Jeff/Business stuff/1 Luminous Meta Model/01 What is a Meta Model?/BCM Modelling",
     "Journal/Jeff/Business stuff/1 Luminous Meta Model/01 What is a Meta Model?/attachments",
     "Journal/Jeff/Business stuff/1 Luminous Meta Model/02 Luminous Domains and Component",
     "Journal/Jeff/Business stuff/1 Luminous Meta Model/01 What is a Meta Model?",
-    "Journal/Jeff/Business stuff/1 Luminous Meta Model",
-    "Journal/Jeff/Business Development/Market Research",
-    "Journal/Jeff/Business Development/attachments",
-    "Journal/Jeff/Business Development"
+    "Journal/Jeff/Business stuff/1 Luminous Meta Model"
   ]
 }
