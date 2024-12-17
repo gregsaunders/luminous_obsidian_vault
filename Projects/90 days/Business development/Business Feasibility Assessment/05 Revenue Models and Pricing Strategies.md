@@ -11,7 +11,7 @@ work_item_id: 1078
 
 #### Luminous Meta Model References
 
-[[Journal/Jeff/Business stuff/1 Luminous Meta Model/02 Luminous Domains and Component/02-01 Strategy and Objectives|02-01 Strategy and Objectives]]
-[[Journal/Jeff/Business stuff/1 Luminous Meta Model/02 Luminous Domains and Component/02-06 Digital Products and Channels|02-06 Digital Products and Channels]]
-[[Journal/Jeff/Business stuff/Business Strategy Stuff/docs/Ardoq/Meta Model/9. Products and Channels|9. Products and Channels]]
+[[Journal/Jeff/01 Business stuff/1 Luminous Meta Model/02 Luminous Domains and Component/02-01 Strategy and Objectives|02-01 Strategy and Objectives]]
+[[Journal/Jeff/01 Business stuff/1 Luminous Meta Model/02 Luminous Domains and Component/02-06 Digital Products and Channels|02-06 Digital Products and Channels]]
+[[Journal/Jeff/01 Business stuff/Jeff's Learnings/docs/Ardoq/Meta Model/9. Products and Channels|9. Products and Channels]]
 

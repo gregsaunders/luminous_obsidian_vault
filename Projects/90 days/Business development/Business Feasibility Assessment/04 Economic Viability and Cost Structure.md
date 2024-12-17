@@ -11,6 +11,6 @@ work_item_id: 1079
 
 #### Luminous Meta Model References
 
-[[Journal/Jeff/Business stuff/1 Luminous Meta Model/02 Luminous Domains and Component/02-01 Strategy and Objectives|02-01 Strategy and Objectives]]
-[[Journal/Jeff/Business stuff/1 Luminous Meta Model/02 Luminous Domains and Component/02-02 Innovation and Change|02-02 Innovation and Change]]
-[[Journal/Jeff/Business stuff/1 Luminous Meta Model/02 Luminous Domains and Component/02-05 Value Propositions|02-05 Value Propositions]]
+[[Journal/Jeff/01 Business stuff/1 Luminous Meta Model/02 Luminous Domains and Component/02-01 Strategy and Objectives|02-01 Strategy and Objectives]]
+[[Journal/Jeff/01 Business stuff/1 Luminous Meta Model/02 Luminous Domains and Component/02-02 Innovation and Change|02-02 Innovation and Change]]
+[[Journal/Jeff/01 Business stuff/1 Luminous Meta Model/02 Luminous Domains and Component/02-05 Value Propositions|02-05 Value Propositions]]

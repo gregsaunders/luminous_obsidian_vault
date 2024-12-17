@@ -11,10 +11,10 @@ work_item_id: 1077
 
 #### Luminous Meta Model References
 
-[[Journal/Jeff/Business stuff/1 Luminous Meta Model/02 Luminous Domains and Component/02-04 Customers and Partners|02-04 Customers and Partners]]
-[[Journal/Jeff/Business stuff/1 Luminous Meta Model/02 Luminous Domains and Component/02-03 Persona and Market|02-03 Persona and Market]]
-[[Journal/Jeff/Business stuff/1 Luminous Meta Model/02 Luminous Domains and Component/02-07 Products and Channels|02-07 Products and Channels]]
-[[Journal/Jeff/Business stuff/1 Luminous Meta Model/02 Luminous Domains and Component/02-06 Digital Products and Channels|02-06 Digital Products and Channels]]
+[[Journal/Jeff/01 Business stuff/1 Luminous Meta Model/02 Luminous Domains and Component/02-04 Customers and Partners|02-04 Customers and Partners]]
+[[Journal/Jeff/01 Business stuff/1 Luminous Meta Model/02 Luminous Domains and Component/02-03 Persona and Market|02-03 Persona and Market]]
+[[Journal/Jeff/01 Business stuff/1 Luminous Meta Model/02 Luminous Domains and Component/02-07 Products and Channels|02-07 Products and Channels]]
+[[Journal/Jeff/01 Business stuff/1 Luminous Meta Model/02 Luminous Domains and Component/02-06 Digital Products and Channels|02-06 Digital Products and Channels]]
 
 
 
