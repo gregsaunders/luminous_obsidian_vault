@@ -13,4 +13,5 @@ work_item_id: 1082
 
 Note: Build on the 'market intelligence report' done by Carla Davidson/Scientific Endeavour and Caroline Wakefield/ CRTS
 
-Assessing "willingness to adopt new technology" is an important aspect.
+Assessing "willingness to adopt new technology" is an important aspect. #Shawn
+
