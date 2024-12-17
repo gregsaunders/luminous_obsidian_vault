@@ -2,7 +2,15 @@
   "recentFiles": [
     {
       "basename": "Untitled",
-      "path": "Journal/Jeff/02 Business Development/02-02 Industry Partners/Untitled.md"
+      "path": "Journal/Jeff/02 Business Development/NAs in the Media/Untitled.md"
+    },
+    {
+      "basename": "Industry Partners",
+      "path": "Journal/Jeff/02 Business Development/02-02 Industry Partners/Industry Partners.md"
+    },
+    {
+      "basename": "2024-11-27",
+      "path": "Journal/Shawn/2024-11-27.md"
     },
     {
       "basename": "Oil Sands Operators",
@@ -43,10 +51,6 @@
     {
       "basename": "2024-12-16",
       "path": "Journal/Shawn/2024-12-16.md"
-    },
-    {
-      "basename": "2024-11-27",
-      "path": "Journal/Shawn/2024-11-27.md"
     },
     {
       "basename": "01 Market Analysis",
@@ -195,10 +199,6 @@
     {
       "basename": "Finalize brand identity",
       "path": "Projects/90 days/Business development/Marketing/Finalize brand identity.md"
-    },
-    {
-      "basename": "Develop value proposition",
-      "path": "Projects/90 days/Business development/Marketing/Develop value proposition.md"
     }
   ],
   "omittedPaths": [],
