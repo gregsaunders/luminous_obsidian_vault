@@ -1,52 +1,60 @@
 {
   "recentFiles": [
     {
+      "basename": "Industry Research Grants",
+      "path": "Journal/Jeff/02 Business Development/Revenue Streams/Industry Research Grants.md"
+    },
+    {
+      "basename": "Industry and Regulatory Partners",
+      "path": "Journal/Jeff/02 Business Development/Industry and Regulatory Partners/Industry and Regulatory Partners.md"
+    },
+    {
+      "basename": "NA Testing Research Notes",
+      "path": "Journal/Jeff/02 Business Development/Market Research/NA Testing Research Notes.md"
+    },
+    {
+      "basename": "Market Research",
+      "path": "Journal/Jeff/02 Business Development/Market Research/Market Research.md"
+    },
+    {
+      "basename": "NAs in the Media",
+      "path": "Journal/Jeff/02 Business Development/Market Research/NAs in the Media.md"
+    },
+    {
+      "basename": "Grants",
+      "path": "Journal/Jeff/02 Business Development/Revenue Streams/Grants.md"
+    },
+    {
       "basename": "index",
       "path": "Journal/Jeff/02 Business Development/index.md"
     },
     {
-      "basename": "02-05-01 Monitoring Service",
-      "path": "Journal/Jeff/02 Business Development/02-05 Revenue Streams/02-05-01 Monitoring Service.md"
+      "basename": "Monitoring Service",
+      "path": "Journal/Jeff/02 Business Development/Revenue Streams/Monitoring Service.md"
     },
     {
-      "basename": "02-05-03 NA Remediation Consulting",
-      "path": "Journal/Jeff/02 Business Development/02-05 Revenue Streams/02-05-03 NA Remediation Consulting.md"
+      "basename": "NA Remediation Consulting",
+      "path": "Journal/Jeff/02 Business Development/Revenue Streams/NA Remediation Consulting.md"
     },
     {
-      "basename": "02-05-07 Data",
-      "path": "Journal/Jeff/02 Business Development/02-05 Revenue Streams/02-05-07 Data.md"
+      "basename": "Data",
+      "path": "Journal/Jeff/02 Business Development/Revenue Streams/Data.md"
     },
     {
-      "basename": "02-05-04 Paid Pilots",
-      "path": "Journal/Jeff/02 Business Development/02-05 Revenue Streams/02-05-04 Paid Pilots.md"
-    },
-    {
-      "basename": "Market Research",
-      "path": "Journal/Jeff/02 Business Development/02-04 Market Research/Market Research.md"
+      "basename": "Paid Pilots",
+      "path": "Journal/Jeff/02 Business Development/Revenue Streams/Paid Pilots.md"
     },
     {
       "basename": "Oil Sands Operators",
-      "path": "Journal/Jeff/02 Business Development/02-01 Target Accounts/Oil Sands Operators.md"
-    },
-    {
-      "basename": "Industry Partners",
-      "path": "Journal/Jeff/02 Business Development/02-02 Industry Partners/Industry Partners.md"
+      "path": "Journal/Jeff/02 Business Development/Target Accounts/Oil Sands Operators.md"
     },
     {
       "basename": "2024-11-27",
       "path": "Journal/Shawn/2024-11-27.md"
     },
     {
-      "basename": "02-05-05 Industry Research Grants",
-      "path": "Journal/Jeff/02 Business Development/02-05 Revenue Streams/02-05-05 Industry Research Grants.md"
-    },
-    {
-      "basename": "02-05-06 Licensing Agreements",
-      "path": "Journal/Jeff/02 Business Development/02-05 Revenue Streams/02-05-06 Licensing Agreements.md"
-    },
-    {
-      "basename": "02-05-02 Grants",
-      "path": "Journal/Jeff/02 Business Development/02-05 Revenue Streams/02-05-02 Grants.md"
+      "basename": "Licensing Agreements",
+      "path": "Journal/Jeff/02 Business Development/Revenue Streams/Licensing Agreements.md"
     },
     {
       "basename": "02-00 BCM - Defining Business Capabilities",
@@ -87,10 +95,6 @@
     {
       "basename": "04 Economic Viability and Cost Structure",
       "path": "Projects/90 days/Business development/Business Feasibility Assessment/04 Economic Viability and Cost Structure.md"
-    },
-    {
-      "basename": "NA Testing Research Notes",
-      "path": "Journal/Jeff/02 Business Development/02-04 Market Research/NA Testing Research Notes.md"
     },
     {
       "basename": "Test 2024-12-16a",
@@ -195,10 +199,6 @@
     {
       "basename": "Identify target market (oil sands operators)",
       "path": "Projects/90 days/Business development/Marketing/Identify target market (oil sands operators).md"
-    },
-    {
-      "basename": "Finalize brand identity",
-      "path": "Projects/90 days/Business development/Marketing/Finalize brand identity.md"
     }
   ],
   "omittedPaths": [],
