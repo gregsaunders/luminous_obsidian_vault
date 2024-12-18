@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Open",
+      "path": "Docket/Open.md"
+    },
+    {
       "basename": "index",
       "path": "Discussions/index.md"
     },
@@ -21,28 +25,12 @@
       "path": "Journal/Greg/2024-12/corporate/ArticlesScheduleAB.md"
     },
     {
-      "basename": "This is a new topic for discussion",
-      "path": "Discussions/This is a new topic for discussion.md"
-    },
-    {
-      "basename": "This is a new topic",
-      "path": "Discussions/This is a new topic.md"
-    },
-    {
       "basename": "2024-12-08",
       "path": "Journal/Greg/2024-12/2024-12-08.md"
     },
     {
-      "basename": "Open",
-      "path": "Docket/Open.md"
-    },
-    {
       "basename": "2024-12-18",
       "path": "Journal/Greg/2024-12/2024-12-18.md"
-    },
-    {
-      "basename": "Test folder discusion",
-      "path": "Discussions/Test folder discussion/Test folder discusion.md"
     },
     {
       "basename": "Comment",
