@@ -1,40 +1,64 @@
 {
   "recentFiles": [
     {
-      "basename": "This is a new topic",
-      "path": "Discussions/This is a new topic.md"
+      "basename": "index",
+      "path": "Discussions/index.md"
+    },
+    {
+      "basename": "Tasks",
+      "path": "Journal/Greg/Tasks.md"
+    },
+    {
+      "basename": "Tasks - Done",
+      "path": "Journal/Greg/Tasks - Done.md"
+    },
+    {
+      "basename": "ArticlesScheduleAB",
+      "path": "Journal/Greg/2024-12/corporate/ArticlesScheduleAB.pdf"
+    },
+    {
+      "basename": "ArticlesScheduleAB",
+      "path": "Journal/Greg/2024-12/corporate/ArticlesScheduleAB.md"
     },
     {
       "basename": "This is a new topic for discussion",
       "path": "Discussions/This is a new topic for discussion.md"
     },
     {
-      "basename": "Analyze competitive landscape",
-      "path": "Projects/90 days/Business development/Marketing/Analyze competitive landscape.md"
+      "basename": "This is a new topic",
+      "path": "Discussions/This is a new topic.md"
     },
     {
-      "basename": "Test folder discusion",
-      "path": "Discussions/Test folder discussion/Test folder discusion.md"
-    },
-    {
-      "basename": "index",
-      "path": "Discussions/index.md"
-    },
-    {
-      "basename": "Closed",
-      "path": "Docket/Closed.md"
+      "basename": "2024-12-08",
+      "path": "Journal/Greg/2024-12/2024-12-08.md"
     },
     {
       "basename": "Open",
       "path": "Docket/Open.md"
     },
     {
+      "basename": "2024-12-18",
+      "path": "Journal/Greg/2024-12/2024-12-18.md"
+    },
+    {
+      "basename": "Test folder discusion",
+      "path": "Discussions/Test folder discussion/Test folder discusion.md"
+    },
+    {
+      "basename": "Comment",
+      "path": "Templates/Comment.md"
+    },
+    {
       "basename": "Discussion",
       "path": "Templates/Discussion.md"
     },
     {
-      "basename": "2024-12-18",
-      "path": "Journal/Greg/2024-12/2024-12-18.md"
+      "basename": "Analyze competitive landscape",
+      "path": "Projects/90 days/Business development/Marketing/Analyze competitive landscape.md"
+    },
+    {
+      "basename": "Closed",
+      "path": "Docket/Closed.md"
     },
     {
       "basename": "07 Risk Assessment",
@@ -175,30 +199,6 @@
     {
       "basename": "Establish accounting systems",
       "path": "Projects/90 days/Finance/Establish accounting systems.md"
-    },
-    {
-      "basename": "Set up business banking relationships",
-      "path": "Projects/90 days/Finance/Set up business banking relationships.md"
-    },
-    {
-      "basename": "Develop detailed 12-month budget",
-      "path": "Projects/90 days/Finance/Develop detailed 12-month budget.md"
-    },
-    {
-      "basename": "Create financial projections including pilot project costs",
-      "path": "Projects/90 days/Finance/Create financial projections including pilot project costs.md"
-    },
-    {
-      "basename": "Draft pilot project testing protocols",
-      "path": "Projects/90 days/CNR pilot/Technical Requirements/Draft pilot project testing protocols.md"
-    },
-    {
-      "basename": "Begin pilot project technical requirements analysis",
-      "path": "Projects/90 days/CNR pilot/Technical Requirements/Begin pilot project technical requirements analysis.md"
-    },
-    {
-      "basename": "Set up pilot programs with early adopters",
-      "path": "Projects/90 days/CNR pilot/Execution/Set up pilot programs with early adopters.md"
     }
   ],
   "omittedPaths": [],
