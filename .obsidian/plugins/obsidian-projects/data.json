@@ -48,7 +48,7 @@
                 "width": 462
               },
               "due date": {
-                "width": 107
+                "width": 143
               },
               "responsible": {
                 "width": 149
@@ -63,7 +63,7 @@
                 "width": 139
               },
               "folder": {
-                "width": 310,
+                "width": 375,
                 "hide": false
               }
             }
@@ -80,7 +80,7 @@
               {
                 "field": "responsible",
                 "operator": "is",
-                "enabled": true,
+                "enabled": false,
                 "value": "Jeff"
               },
               {
@@ -99,7 +99,7 @@
               {
                 "field": "due date",
                 "order": "asc",
-                "enabled": false
+                "enabled": true
               },
               {
                 "field": "work_item_id",
@@ -109,7 +109,7 @@
               {
                 "field": "folder",
                 "order": "asc",
-                "enabled": true
+                "enabled": false
               },
               {
                 "field": "responsible",
@@ -121,24 +121,6 @@
           "id": "849fbd4b-866c-4242-a461-f09ff52e1d42",
           "name": "Table",
           "type": "table"
-        },
-        {
-          "config": {
-            "interval": "month"
-          },
-          "filter": {
-            "conjunction": "and",
-            "conditions": []
-          },
-          "colors": {
-            "conditions": []
-          },
-          "sort": {
-            "criteria": []
-          },
-          "id": "f0086cdb-6993-4eac-8bdd-a43bd64cda1f",
-          "name": "Calendar",
-          "type": "calendar"
         },
         {
           "config": {
@@ -236,14 +218,14 @@
                   "Projects/90 days/Business development/Marketing/Begin client outreach and attend industry events.md",
                   "Projects/90 days/Business development/Marketing/Begin client outreach and attend industry events.md",
                   "Projects/90 days/Business development/Marketing/Analyze competitive landscape.md",
+                  "Projects/90 days/Business development/Commercialization/Identify funding sources and prepare pitch deck.md",
                   "Projects/90 days/Business development/Marketing/Begin client outreach and attend industry events.md",
                   "Projects/90 days/Business development/Marketing/Begin client outreach and attend industry events.md",
                   "Projects/90 days/Finance/Develop detailed 12-month budget.md",
                   "Projects/90 days/Legal/Corporate Setup/Decide on legal structure.md",
                   "Projects/90 days/Legal/Corporate Setup/Meet with lawyer to establish optimal corporate structure.md",
                   "Projects/90 days/Operational/HR/Create organizational chart.md",
-                  "Projects/90 days/Product/Innovation/Document current biosensor specifications and performance.md",
-                  "Projects/90 days/Business development/Commercialization/Identify funding sources and prepare pitch deck.md"
+                  "Projects/90 days/Product/Innovation/Document current biosensor specifications and performance.md"
                 ],
                 "weight": 1
               },
@@ -287,6 +269,24 @@
           "id": "c79612e4-9e0e-427e-8bbf-9e8c3e6ef6a4",
           "name": "Board",
           "type": "board"
+        },
+        {
+          "config": {
+            "interval": "month"
+          },
+          "filter": {
+            "conjunction": "and",
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "id": "3340a51a-ecd0-4ffe-8bb9-9714cbaba47a",
+          "name": "Calendar",
+          "type": "calendar"
         }
       ],
       "id": "1269c6f9-bf82-4a86-8763-6aba7505d4b3",

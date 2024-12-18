@@ -8,5 +8,6 @@
   "folder-frontmatter-plugin",
   "recent-files-obsidian",
   "obsidian-git",
-  "waypoint"
+  "waypoint",
+  "templater-obsidian"
 ]
