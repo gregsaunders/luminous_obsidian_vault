@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Templates/Corporate structure.md",
+                "file": "Discussions/Test topic.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Corporate structure"
+              "title": "Test topic"
             }
           }
         ]
@@ -199,8 +199,8 @@
   },
   "active": "24d16409dc35a511",
   "lastOpenFiles": [
-    "Discussions/Untitled.md",
     "Templates/Corporate structure.md",
+    "Discussions/Test topic.md",
     "Discussions/index.md",
     "Journal/Greg/2024-12/2024-12-18.md",
     "Discussions",
