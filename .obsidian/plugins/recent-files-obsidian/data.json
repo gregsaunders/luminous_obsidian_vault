@@ -5,12 +5,68 @@
       "path": "Docket/Open.md"
     },
     {
-      "basename": "index",
-      "path": "Discussions/index.md"
+      "basename": "Comment",
+      "path": "Templates/Comment.md"
+    },
+    {
+      "basename": "Discussion",
+      "path": "Templates/Discussion.md"
+    },
+    {
+      "basename": "2024-12-18",
+      "path": "Journal/Greg/2024-12/2024-12-18.md"
+    },
+    {
+      "basename": "Closed",
+      "path": "Docket/Closed.md"
+    },
+    {
+      "basename": "2024-12-08",
+      "path": "Journal/Greg/2024-12/2024-12-08.md"
     },
     {
       "basename": "Tasks",
       "path": "Journal/Greg/Tasks.md"
+    },
+    {
+      "basename": "2024-11-27",
+      "path": "Journal/Martin/2024-11-27.md"
+    },
+    {
+      "basename": "01 Market Analysis",
+      "path": "Projects/90 days/Business development/Business Feasibility Assessment/01 Market Analysis.md"
+    },
+    {
+      "basename": "Items for discussion with lawyer",
+      "path": "Artifacts/Items for discussion with lawyer.md"
+    },
+    {
+      "basename": "Items for discussion with lawyer",
+      "path": "Artifacts/Items for discussion with lawyer.pdf"
+    },
+    {
+      "basename": "Competition",
+      "path": "Artifacts/Competition.md"
+    },
+    {
+      "basename": "90 Day Jeff's stuff",
+      "path": "Artifacts/90 Day Jeff's stuff.md"
+    },
+    {
+      "basename": "index",
+      "path": "Discussions/index.md"
+    },
+    {
+      "basename": "Corporate structure - one company or two",
+      "path": "Discussions/Corporate structure - one company or two.md"
+    },
+    {
+      "basename": "Market Research",
+      "path": "Journal/Jeff/02 Business Development/Market Research/Market Research.md"
+    },
+    {
+      "basename": "USA - unan shareholder agreement",
+      "path": "Discussions/USA - unan shareholder agreement.md"
     },
     {
       "basename": "Tasks - Done",
@@ -25,28 +81,8 @@
       "path": "Journal/Greg/2024-12/corporate/ArticlesScheduleAB.md"
     },
     {
-      "basename": "2024-12-08",
-      "path": "Journal/Greg/2024-12/2024-12-08.md"
-    },
-    {
-      "basename": "2024-12-18",
-      "path": "Journal/Greg/2024-12/2024-12-18.md"
-    },
-    {
-      "basename": "Comment",
-      "path": "Templates/Comment.md"
-    },
-    {
-      "basename": "Discussion",
-      "path": "Templates/Discussion.md"
-    },
-    {
       "basename": "Analyze competitive landscape",
       "path": "Projects/90 days/Business development/Marketing/Analyze competitive landscape.md"
-    },
-    {
-      "basename": "Closed",
-      "path": "Docket/Closed.md"
     },
     {
       "basename": "07 Risk Assessment",
@@ -117,20 +153,12 @@
       "path": "Journal/Jeff/02 Business Development/Market Research/NA Testing Research Notes.md"
     },
     {
-      "basename": "Market Research",
-      "path": "Journal/Jeff/02 Business Development/Market Research/Market Research.md"
-    },
-    {
       "basename": "index",
       "path": "Journal/Jeff/02 Business Development/index.md"
     },
     {
       "basename": "Decide on legal structure",
       "path": "Projects/90 days/Legal/Corporate Setup/Decide on legal structure.md"
-    },
-    {
-      "basename": "01 Market Analysis",
-      "path": "Projects/90 days/Business development/Business Feasibility Assessment/01 Market Analysis.md"
     },
     {
       "basename": "Proposed Corporate Structure",
@@ -167,26 +195,6 @@
     {
       "basename": "Define service product agreement (Liability terms)",
       "path": "Projects/90 days/Legal/Corporate Setup/Define service product agreement (Liability terms).md"
-    },
-    {
-      "basename": "Secure IP rights to the patent",
-      "path": "Projects/90 days/Intellectual property/Secure IP rights to the patent.md"
-    },
-    {
-      "basename": "Draft initial IP licensing framework",
-      "path": "Projects/90 days/Intellectual property/Draft initial IP licensing framework.md"
-    },
-    {
-      "basename": "Begin patent transfer process to company",
-      "path": "Projects/90 days/Intellectual property/Begin patent transfer process to company.md"
-    },
-    {
-      "basename": "Assist with patent finalization",
-      "path": "Projects/90 days/Intellectual property/Assist with patent finalization.md"
-    },
-    {
-      "basename": "Establish accounting systems",
-      "path": "Projects/90 days/Finance/Establish accounting systems.md"
     }
   ],
   "omittedPaths": [],
