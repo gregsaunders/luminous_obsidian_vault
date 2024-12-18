@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "2024-12-18",
+      "path": "Journal/Greg/2024-12/2024-12-18.md"
+    },
+    {
+      "basename": "2024-12-16",
+      "path": "Journal/Shawn/2024-12-16.md"
+    },
+    {
       "basename": "Open",
       "path": "Docket/Open.md"
     },
@@ -81,10 +89,6 @@
       "path": "Journal/Jeff/01 Business stuff/1 Luminous Meta Model/02 Luminous Domains and Component/02-00 BCM - Defining Business Capabilities.md"
     },
     {
-      "basename": "2024-12-16",
-      "path": "Journal/Shawn/2024-12-16.md"
-    },
-    {
       "basename": "03 Intellectual Property and Differentiation",
       "path": "Projects/90 days/Business development/Business Feasibility Assessment/03 Intellectual Property and Differentiation.md"
     },
@@ -107,18 +111,6 @@
     {
       "basename": "04 Economic Viability and Cost Structure",
       "path": "Projects/90 days/Business development/Business Feasibility Assessment/04 Economic Viability and Cost Structure.md"
-    },
-    {
-      "basename": "Test 2024-12-16a",
-      "path": "Journal/Greg/2024-12/Test 2024-12-16a.md"
-    },
-    {
-      "basename": "Test 2024-12-16c",
-      "path": "Journal/Greg/2024-12/Test 2024-12-16c.md"
-    },
-    {
-      "basename": "Test 2024-12-16b",
-      "path": "Journal/Greg/2024-12/Test 2024-12-16b.md"
     },
     {
       "basename": "90 days data view",
@@ -195,10 +187,6 @@
     {
       "basename": "Launch website and create brochures",
       "path": "Projects/90 days/Business development/Marketing/Launch website and create brochures.md"
-    },
-    {
-      "basename": "Launch digital marketing campaigns",
-      "path": "Projects/90 days/Business development/Marketing/Launch digital marketing campaigns.md"
     }
   ],
   "omittedPaths": [],
