@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Open",
+      "path": "Docket/Open.md"
+    },
+    {
       "basename": "Oil Sands Operators",
       "path": "Journal/Jeff/02 Business Development/Target Accounts/Oil Sands Operators.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Launch digital marketing campaigns",
       "path": "Projects/90 days/Business development/Marketing/Launch digital marketing campaigns.md"
-    },
-    {
-      "basename": "Issue press releases and conduct media outreach",
-      "path": "Projects/90 days/Business development/Marketing/Issue press releases and conduct media outreach.md"
     }
   ],
   "omittedPaths": [],
