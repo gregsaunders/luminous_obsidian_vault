@@ -1,16 +1,24 @@
 {
   "recentFiles": [
     {
-      "basename": "Untitled",
-      "path": "Discussions/Untitled.md"
+      "basename": "This is a new topic for discussion",
+      "path": "Discussions/This is a new topic for discussion.md"
     },
     {
-      "basename": "Corporate structure",
-      "path": "Templates/Corporate structure.md"
+      "basename": "This is a new topic",
+      "path": "Discussions/This is a new topic.md"
+    },
+    {
+      "basename": "Test folder discusion",
+      "path": "Discussions/Test folder discussion/Test folder discusion.md"
     },
     {
       "basename": "index",
       "path": "Discussions/index.md"
+    },
+    {
+      "basename": "Discussion",
+      "path": "Templates/Discussion.md"
     },
     {
       "basename": "2024-12-18",
@@ -191,14 +199,6 @@
     {
       "basename": "Conduct environmental impact assessment",
       "path": "Projects/90 days/CNR pilot/Environmental/Conduct environmental impact assessment.md"
-    },
-    {
-      "basename": "Publish thought leadership articles",
-      "path": "Projects/90 days/Business development/Marketing/Publish thought leadership articles.md"
-    },
-    {
-      "basename": "Launch website and create brochures",
-      "path": "Projects/90 days/Business development/Marketing/Launch website and create brochures.md"
     }
   ],
   "omittedPaths": [],
