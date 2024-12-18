@@ -13,12 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Discussions/This is a new topic for discussion.md",
+                "file": "Discussions/This is a new topic.md",
                 "mode": "source",
+                "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "This is a new topic for discussion"
+              "title": "This is a new topic"
             }
           }
         ]
@@ -199,10 +200,16 @@
   },
   "active": "25c54249b5a61ce9",
   "lastOpenFiles": [
-    "Discussions/This is a new topic.md",
-    "Discussions/Test folder discussion/Test folder discusion.md",
     "Discussions/This is a new topic for discussion.md",
+    "Discussions/This is a new topic.md",
+    "Projects/90 days/Business development/Marketing/Analyze competitive landscape.md",
+    "Discussions/Test folder discussion/Test folder discusion.md",
+    "Meetings/2025-01",
+    "Meetings/2024-12",
+    "Meetings",
     "Discussions/index.md",
+    "Docket/Closed.md",
+    "Docket/Open.md",
     "Templates/Discussion.md",
     "Discussions/Test folder discussion",
     "Discussions/Test discussion on corporate structure.md",
@@ -214,7 +221,6 @@
     "Journal/Greg/2024-12/Test 2024-12-16c.md",
     "Journal/Greg/2024-12/Test 2024-12-16b.md",
     "Journal/Shawn/2024-12-16.md",
-    "Docket/Open.md",
     "Journal/Jeff/02 Business Development/Target Accounts/Oil Sands Operators.md",
     "Journal/Jeff/02 Business Development/Revenue Streams/Paid Pilots.md",
     "Journal/Jeff/02 Business Development/Revenue Streams/NA Remediation Consulting.md",
@@ -227,14 +233,9 @@
     "Projects/90 days/Legal/Corporate Setup/Decide on legal structure.md",
     "Journal/Jeff/02 Business Development/Industry and Regulatory Partners/Industry and Regulatory Partners.md",
     "Journal/Jeff/02 Business Development/Industry and Regulatory Partners",
-    "Journal/Jeff/02 Business Development/Market Research/NAs in the Media.md",
-    "Journal/Jeff/02 Business Development/Market Research/Market Research.md",
     "Journal/Jeff/02 Business Development/Market Research",
     "Journal/Jeff/02 Business Development/Regulatory Partners",
     "Journal/Jeff/02 Business Development/Industry Partners",
-    "Journal/Jeff/02 Business Development/Revenue Streams",
-    "Journal/Jeff/02 Business Development/Target Accounts",
-    "Journal/Jeff/02 Business Development/output.json",
     "Journal/Jeff/02 Business Development/attachments/Pasted image 20241206134810.png",
     "Journal/Jeff/01 Business stuff/1 Luminous Meta Model/01 What is a Meta Model?/attachments/Pasted image 20231122211815.png",
     "Journal/Jeff/01 Business stuff/Jeff's Learnings/Learnings/Story Mapping/attachments/Pasted image 20240110093528.png",

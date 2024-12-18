@@ -1,12 +1,16 @@
 {
   "recentFiles": [
     {
+      "basename": "This is a new topic",
+      "path": "Discussions/This is a new topic.md"
+    },
+    {
       "basename": "This is a new topic for discussion",
       "path": "Discussions/This is a new topic for discussion.md"
     },
     {
-      "basename": "This is a new topic",
-      "path": "Discussions/This is a new topic.md"
+      "basename": "Analyze competitive landscape",
+      "path": "Projects/90 days/Business development/Marketing/Analyze competitive landscape.md"
     },
     {
       "basename": "Test folder discusion",
@@ -17,16 +21,20 @@
       "path": "Discussions/index.md"
     },
     {
+      "basename": "Closed",
+      "path": "Docket/Closed.md"
+    },
+    {
+      "basename": "Open",
+      "path": "Docket/Open.md"
+    },
+    {
       "basename": "Discussion",
       "path": "Templates/Discussion.md"
     },
     {
       "basename": "2024-12-18",
       "path": "Journal/Greg/2024-12/2024-12-18.md"
-    },
-    {
-      "basename": "Open",
-      "path": "Docket/Open.md"
     },
     {
       "basename": "07 Risk Assessment",
@@ -191,14 +199,6 @@
     {
       "basename": "Set up pilot programs with early adopters",
       "path": "Projects/90 days/CNR pilot/Execution/Set up pilot programs with early adopters.md"
-    },
-    {
-      "basename": "Identify lab location and finalize arrangements",
-      "path": "Projects/90 days/CNR pilot/Execution/Identify lab location and finalize arrangements.md"
-    },
-    {
-      "basename": "Conduct environmental impact assessment",
-      "path": "Projects/90 days/CNR pilot/Environmental/Conduct environmental impact assessment.md"
     }
   ],
   "omittedPaths": [],
