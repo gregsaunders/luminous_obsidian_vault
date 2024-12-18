@@ -1,8 +1,12 @@
 {
   "recentFiles": [
     {
-      "basename": "Untitled",
-      "path": "Discussions/Untitled.md"
+      "basename": "discussion",
+      "path": "Templates/discussion.md"
+    },
+    {
+      "basename": "index",
+      "path": "Discussions/index.md"
     },
     {
       "basename": "2024-12-18",
