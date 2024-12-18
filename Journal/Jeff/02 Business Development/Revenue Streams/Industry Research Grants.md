@@ -11,6 +11,8 @@ https://innovation.ised-isde.canada.ca/innovation/s/?language=en_CA
 https://www.canada.ca/en/revenue-agency/services/scientific-research-experimental-development-tax-incentive-program.html
 
 
+
+### Chat GPT Search 
 Establishing a biotech startup in Calgary focused on developing biosensors for detecting and remediating naphthenic acids in oil sands tailings ponds aligns well with current environmental priorities.Several government funding programs and tax incentives are available to support such innovative ventures:
 
 **1. Alberta Innovates Programs:**
@@ -60,68 +62,68 @@ Establishing a biotech startup in Calgary focused on developing biosensors for d
 
 **12. Western Economic Diversification Canada (WD):**
 
-- Provides funding and support to businesses in Western Canada, including Alberta, to promote economic diversification and growth.
+- Provides funding and support to businesses in Western Canada, including Alberta, to promote economic diversification and growth.
 
 **13. Alberta Innovates Voucher and Micro-Voucher Programs:**
 
-- Provide funding to support early-stage technology development projects, including product development and commercialization activities.
+- Provide funding to support early-stage technology development projects, including product development and commercialization activities.
 
 **14. Emissions Reduction Alberta (ERA):**
 
-- Offers funding for projects that reduce greenhouse gas emissions, which may align with your environmental remediation efforts.
+- Offers funding for projects that reduce greenhouse gas emissions, which may align with your environmental remediation efforts.
 
 **15. Alberta Energy Regulator (AER) Tailings Management Framework:**
 
-- While not a direct funding source, understanding AER's regulations and frameworks can help align your technology with industry needs and potentially attract funding from industry partners. citeturn0search12
+- While not a direct funding source, understanding AER's regulations and frameworks can help align your technology with industry needs and potentially attract funding from industry partners.
 
 **16. National Research Council of Canada (NRC) Industrial Research Assistance Program (IRAP):**
 
-- Provides financial support to qualified small and medium-sized enterprises in Canada to help them undertake technology innovation.
+- Provides financial support to qualified small and medium-sized enterprises in Canada to help them undertake technology innovation.
 
 **17. Alberta Innovates R&D Associates Program:**
 
-- Supports the hiring of recent graduates to work on research and development projects within Alberta-based companies.
+- Supports the hiring of recent graduates to work on research and development projects within Alberta-based companies.
 
 **18. Mitacs Accelerate Program:**
 
-- Offers funding for research internships, connecting companies with graduate students and postdoctoral fellows for innovative projects.
+- Offers funding for research internships, connecting companies with graduate students and postdoctoral fellows for innovative projects.
 
 **19. Natural Sciences and Engineering Research Council of Canada (NSERC) Alliance Grants:**
 
-- Supports collaborations between companies and academic researchers to advance knowledge and technology.
+- Supports collaborations between companies and academic researchers to advance knowledge and technology.
 
 **20. Alberta Machine Intelligence Institute (Amii) Programs:**
 
-- Provides support and funding for companies looking to adopt artificial intelligence and machine learning technologies, which may enhance your biosensor development.
+- Provides support and funding for companies looking to adopt artificial intelligence and machine learning technologies, which may enhance your biosensor development.
 
 **21. Canadian Environmental Assessment Agency (CEAA) Funding Programs:**
 
-- Offers funding to support projects that assess and mitigate environmental impacts, which may be relevant to your remediation efforts.
+- Offers funding to support projects that assess and mitigate environmental impacts, which may be relevant to your remediation efforts.
 
 **22. Alberta Economic Development and Trade (EDT) Programs:**
 
-- Provides various funding and support programs aimed at promoting economic development and innovation within the province.
+- Provides various funding and support programs aimed at promoting economic development and innovation within the province.
 
 **23. Green Municipal Fund (GMF):**
 
-- Offers funding for environmental initiatives led by municipalities, which could be potential partners in your remediation projects.
+- Offers funding for environmental initiatives led by municipalities, which could be potential partners in your remediation projects.
 
 **24. Canadian Foundation for Innovation (CFI) Funding:**
 
-- Provides funding to support the development of research infrastructure, which may be beneficial for your biosensor development.
+- Provides funding to support the development of research infrastructure, which may be beneficial for your biosensor development.
 
 **25. Alberta Small Business Innovation and Research Initiative (ASBIRI):**
 
-- Supports small businesses in developing and commercializing innovative products and services in response to public sector needs.
+- Supports small businesses in developing and commercializing innovative products and services in response to public sector needs.
 
 **26. Alberta Innovates Clean Technology Development Program:**
 
-- Provides funding for the development and commercialization of clean technologies that reduce environmental impacts.
+- Provides funding for the development and commercialization of clean technologies that reduce environmental impacts.
 
 **27. Canadian Agricultural Partnership (CAP) Environmental Stewardship and Climate Change Program:**
 
-- Offers funding for projects that improve environmental sustainability, which may align with your remediation efforts if there are agricultural implications.
+- Offers funding for projects that improve environmental sustainability, which may align with your remediation efforts if there are agricultural implications.
 
 **28. Alberta Innovates Entrepreneurial Investments Program:**
 
-- Provides funding and
+-Provides funding and
