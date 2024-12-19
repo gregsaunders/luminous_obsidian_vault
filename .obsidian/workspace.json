@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Docket/Open.md",
+                "file": "Discussions/Corporate structure - one company or two.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Open"
+              "title": "Corporate structure - one company or two"
             }
           }
         ]
@@ -186,7 +186,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -209,9 +209,10 @@
   },
   "active": "4dec3b1fa26c26eb",
   "lastOpenFiles": [
+    "Discussions/USA - unanimous shareholder agreement.md",
+    "Docket/Open.md",
     "Templates/Comment.md",
     "Templates/Discussion.md",
-    "Docket/Open.md",
     "Journal/Greg/2024-12/2024-12-18.md",
     "Docket/Closed.md",
     "Journal/Shawn/2024-12-18.md",
@@ -224,7 +225,6 @@
     "Discussions/index.md",
     "Discussions/Corporate structure - one company or two.md",
     "Journal/Jeff/02 Business Development/Market Research/Market Research.md",
-    "Discussions/USA - unan shareholder agreement.md",
     "Discussions/Untitled",
     "Discussions/This is a new topic.md",
     "Journal/Greg/Tasks.md",
