@@ -1,4 +1,4 @@
-![](Journal/Jeff/01%20Business%20stuff/1%20Luminous%20Meta%20Model/01%20What%20is%20a%20Meta%20Model?/attachments/Pasted%20image%2020231101131036.png)
+![](Business%20Development/1%20Luminous%20Meta%20Model/01%20What%20is%20a%20Meta%20Model?/attachments/Pasted%20image%2020231101131036.png)
 So far we’ve modeled the organization in a **steady state**.
 
 We now need to introduce some extra concepts to enable the organization to deal with **planned and unplanned change**.

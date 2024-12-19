@@ -11,6 +11,6 @@ work_item_id: 1081
 
 #### Luminous Meta Model References
 
-[[Journal/Jeff/01 Business stuff/1 Luminous Meta Model/02 Luminous Domains and Component/02-17 Risk and Controls|02-17 Risk and Controls]]
+[[Business Development/1 Luminous Meta Model/02 Luminous Domains and Component/02-17 Risk and Controls|02-17 Risk and Controls]]
 
 Note: Speak to consultant Carla Davidson from Scientific Endeavours (consultant who did some contract reserach)

@@ -1,4 +1,4 @@
-![](Journal/Jeff/01%20Business%20stuff/1%20Luminous%20Meta%20Model/01%20What%20is%20a%20Meta%20Model?/attachments/Pasted%20image%2020231101131208.png)
+![](Business%20Development/1%20Luminous%20Meta%20Model/01%20What%20is%20a%20Meta%20Model?/attachments/Pasted%20image%2020231101131208.png)
 Now let’s break down what happens inside the **operations box.**
 
 At this point you might expect to see **business processes, departments and IT systems**, but we’ll keep it higher-level than that for a moment.

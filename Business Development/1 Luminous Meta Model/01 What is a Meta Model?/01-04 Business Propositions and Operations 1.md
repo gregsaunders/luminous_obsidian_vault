@@ -1,4 +1,4 @@
-![](Journal/Jeff/01%20Business%20stuff/1%20Luminous%20Meta%20Model/01%20What%20is%20a%20Meta%20Model?/attachments/Pasted%20image%2020231101130921.png)
+![](Business%20Development/1%20Luminous%20Meta%20Model/01%20What%20is%20a%20Meta%20Model?/attachments/Pasted%20image%2020231101130921.png)
 Next we open up the black box to see what it’s made up of.
 
 We break the organization down into two high-level concepts: Its **propositions** and its **operations**.

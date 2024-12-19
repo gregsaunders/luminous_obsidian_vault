@@ -14,4 +14,4 @@ work_item_id: 1076
 
 #### Luminous Meta Model References
 
-[[Journal/Jeff/01 Business stuff/1 Luminous Meta Model/02 Luminous Domains and Component/02-17 Risk and Controls|02-17 Risk and Controls]]
+[[Business Development/1 Luminous Meta Model/02 Luminous Domains and Component/02-17 Risk and Controls|02-17 Risk and Controls]]

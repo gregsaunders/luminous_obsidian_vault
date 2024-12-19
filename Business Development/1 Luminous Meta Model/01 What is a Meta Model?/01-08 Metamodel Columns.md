@@ -14,4 +14,4 @@ So IT systems and business organizations are seen to be equivalent realizations 
 **Physical-automated Column** - Describes the realization of logical business and technical concepts by machines and digital assets, or in a form optimized for use by machines.
 **Physical-manual Column** - Describes the realization of logical business concepts and activities by people and physical assets and environments, or in a form optimized for use by people.
 
-![[Journal/Jeff/01 Business stuff/1 Luminous Meta Model/01 What is a Meta Model?/attachments/Pasted image 20240110133644.png]]
+![[Business Development/1 Luminous Meta Model/01 What is a Meta Model?/attachments/Pasted image 20240110133644.png]]

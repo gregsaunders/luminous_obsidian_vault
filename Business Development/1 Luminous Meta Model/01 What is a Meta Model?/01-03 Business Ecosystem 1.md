@@ -1,4 +1,4 @@
-![](Journal/Jeff/01%20Business%20stuff/1%20Luminous%20Meta%20Model/01%20What%20is%20a%20Meta%20Model?/attachments/Pasted%20image%2020231101130747.png)
+![](Business%20Development/1%20Luminous%20Meta%20Model/01%20What%20is%20a%20Meta%20Model?/attachments/Pasted%20image%2020231101130747.png)
 At the highest level we represent the organization as a black box which interacts with its environment.
 
 We commonly model three categories of external actor: **Markets**, other **organizations**, and **people**.

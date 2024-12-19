@@ -1,52 +1,64 @@
 {
   "recentFiles": [
     {
+      "basename": "2024-12-18",
+      "path": "Journal/Shawn/2024-12-18.md"
+    },
+    {
+      "basename": "Domains",
+      "path": "Infrastructure/Domains.md"
+    },
+    {
+      "basename": "2024-12-18",
+      "path": "Journal/Greg/2024-12/2024-12-18.md"
+    },
+    {
       "basename": "02-03 Persona and Market",
-      "path": "Journal/Jeff/01 Business stuff/1 Luminous Meta Model/02 Luminous Domains and Component/02-03 Persona and Market.md"
+      "path": "Business Development/1 Luminous Meta Model/02 Luminous Domains and Component/02-03 Persona and Market.md"
     },
     {
       "basename": "02-02 Innovation and Change",
-      "path": "Journal/Jeff/01 Business stuff/1 Luminous Meta Model/02 Luminous Domains and Component/02-02 Innovation and Change.md"
+      "path": "Business Development/1 Luminous Meta Model/02 Luminous Domains and Component/02-02 Innovation and Change.md"
     },
     {
       "basename": "02-01 Strategy and Objectives",
-      "path": "Journal/Jeff/01 Business stuff/1 Luminous Meta Model/02 Luminous Domains and Component/02-01 Strategy and Objectives.md"
+      "path": "Business Development/1 Luminous Meta Model/02 Luminous Domains and Component/02-01 Strategy and Objectives.md"
     },
     {
       "basename": "02-00 BCM - Defining Business Capabilities",
-      "path": "Journal/Jeff/01 Business stuff/1 Luminous Meta Model/02 Luminous Domains and Component/02-00 BCM - Defining Business Capabilities.md"
+      "path": "Business Development/1 Luminous Meta Model/02 Luminous Domains and Component/02-00 BCM - Defining Business Capabilities.md"
     },
     {
       "basename": "02 Luminous Domains and Component",
-      "path": "Journal/Jeff/01 Business stuff/1 Luminous Meta Model/02 Luminous Domains and Component/02 Luminous Domains and Component.md"
+      "path": "Business Development/1 Luminous Meta Model/02 Luminous Domains and Component/02 Luminous Domains and Component.md"
     },
     {
       "basename": "01-08 Metamodel Columns",
-      "path": "Journal/Jeff/01 Business stuff/1 Luminous Meta Model/01 What is a Meta Model?/01-08 Metamodel Columns.md"
+      "path": "Business Development/1 Luminous Meta Model/01 What is a Meta Model?/01-08 Metamodel Columns.md"
     },
     {
       "basename": "01-07 Metamodel Layers",
-      "path": "Journal/Jeff/01 Business stuff/1 Luminous Meta Model/01 What is a Meta Model?/01-07 Metamodel Layers.md"
+      "path": "Business Development/1 Luminous Meta Model/01 What is a Meta Model?/01-07 Metamodel Layers.md"
     },
     {
       "basename": "01-01 Introduction to the Ardoq Metamodel",
-      "path": "Journal/Jeff/01 Business stuff/1 Luminous Meta Model/01 What is a Meta Model?/01-01 Introduction to the Ardoq Metamodel.md"
+      "path": "Business Development/1 Luminous Meta Model/01 What is a Meta Model?/01-01 Introduction to the Ardoq Metamodel.md"
     },
     {
       "basename": "01-06 Breaking Out Operations 1",
-      "path": "Journal/Jeff/01 Business stuff/1 Luminous Meta Model/01 What is a Meta Model?/01-06 Breaking Out Operations 1.md"
+      "path": "Business Development/1 Luminous Meta Model/01 What is a Meta Model?/01-06 Breaking Out Operations 1.md"
     },
     {
       "basename": "01-05 Strategy, Change and Risk 1",
-      "path": "Journal/Jeff/01 Business stuff/1 Luminous Meta Model/01 What is a Meta Model?/01-05 Strategy, Change and Risk 1.md"
+      "path": "Business Development/1 Luminous Meta Model/01 What is a Meta Model?/01-05 Strategy, Change and Risk 1.md"
     },
     {
       "basename": "01-03 Business Ecosystem 1",
-      "path": "Journal/Jeff/01 Business stuff/1 Luminous Meta Model/01 What is a Meta Model?/01-03 Business Ecosystem 1.md"
+      "path": "Business Development/1 Luminous Meta Model/01 What is a Meta Model?/01-03 Business Ecosystem 1.md"
     },
     {
       "basename": "01-02 What is a Metamodel?",
-      "path": "Journal/Jeff/01 Business stuff/1 Luminous Meta Model/01 What is a Meta Model?/01-02 What is a Metamodel?.md"
+      "path": "Business Development/1 Luminous Meta Model/01 What is a Meta Model?/01-02 What is a Metamodel?.md"
     },
     {
       "basename": "Corporate structure - one company or two",
@@ -55,10 +67,6 @@
     {
       "basename": "USA - unanimous shareholder agreement",
       "path": "Discussions/USA - unanimous shareholder agreement.md"
-    },
-    {
-      "basename": "2024-12-18",
-      "path": "Journal/Shawn/2024-12-18.md"
     },
     {
       "basename": "Open",
@@ -71,10 +79,6 @@
     {
       "basename": "Discussion",
       "path": "Templates/Discussion.md"
-    },
-    {
-      "basename": "2024-12-18",
-      "path": "Journal/Greg/2024-12/2024-12-18.md"
     },
     {
       "basename": "Closed",
@@ -118,7 +122,7 @@
     },
     {
       "basename": "Market Research",
-      "path": "Journal/Jeff/02 Business Development/Market Research/Market Research.md"
+      "path": "Business Development/Market Research/Market Research.md"
     },
     {
       "basename": "Tasks - Done",
@@ -166,39 +170,31 @@
     },
     {
       "basename": "Oil Sands Operators",
-      "path": "Journal/Jeff/02 Business Development/Target Accounts/Oil Sands Operators.md"
+      "path": "Business Development/Target Accounts/Oil Sands Operators.md"
     },
     {
       "basename": "Paid Pilots",
-      "path": "Journal/Jeff/02 Business Development/Revenue Streams/Paid Pilots.md"
+      "path": "Business Development/Revenue Streams/Paid Pilots.md"
     },
     {
       "basename": "NA Remediation Consulting",
-      "path": "Journal/Jeff/02 Business Development/Revenue Streams/NA Remediation Consulting.md"
+      "path": "Business Development/Revenue Streams/NA Remediation Consulting.md"
     },
     {
       "basename": "Monitoring Service",
-      "path": "Journal/Jeff/02 Business Development/Revenue Streams/Monitoring Service.md"
+      "path": "Business Development/Revenue Streams/Monitoring Service.md"
     },
     {
       "basename": "Licensing Agreements",
-      "path": "Journal/Jeff/02 Business Development/Revenue Streams/Licensing Agreements.md"
+      "path": "Business Development/Revenue Streams/Licensing Agreements.md"
     },
     {
       "basename": "Industry Research Grants",
-      "path": "Journal/Jeff/02 Business Development/Revenue Streams/Industry Research Grants.md"
+      "path": "Business Development/Revenue Streams/Industry Research Grants.md"
     },
     {
       "basename": "Grants",
-      "path": "Journal/Jeff/02 Business Development/Revenue Streams/Grants.md"
-    },
-    {
-      "basename": "Data",
-      "path": "Journal/Jeff/02 Business Development/Revenue Streams/Data.md"
-    },
-    {
-      "basename": "NAs in the Media",
-      "path": "Journal/Jeff/02 Business Development/Market Research/NAs in the Media.md"
+      "path": "Business Development/Revenue Streams/Grants.md"
     }
   ],
   "omittedPaths": [],
