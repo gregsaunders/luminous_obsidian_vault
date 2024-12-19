@@ -1,5 +1,8 @@
 Building a budget for your startup is an essential step to ensure you have a clear financial roadmap:
 
+![[Business Development/Startup Budget/attachments/Startup_Budget_Template.xlsx]]
+
+
 ---
 
 ### 1. **Define Our Goals**
@@ -85,4 +88,5 @@ Building a budget for your startup is an essential step to ensure you have a cle
      **Startup Capital = $50,500 (startup costs) + ($16,700 x 6) = $150,700**
 
 ---
+
 

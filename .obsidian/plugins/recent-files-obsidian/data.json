@@ -1,16 +1,16 @@
 {
   "recentFiles": [
     {
+      "basename": "Domains",
+      "path": "Infrastructure/Domains.md"
+    },
+    {
       "basename": "Untitled",
       "path": "Business Development/Startup Budget/Untitled.md"
     },
     {
       "basename": "2024-12-18",
       "path": "Journal/Shawn/2024-12-18.md"
-    },
-    {
-      "basename": "Domains",
-      "path": "Infrastructure/Domains.md"
     },
     {
       "basename": "2024-12-18",
@@ -195,10 +195,6 @@
     {
       "basename": "Industry Research Grants",
       "path": "Business Development/Revenue Streams/Industry Research Grants.md"
-    },
-    {
-      "basename": "Grants",
-      "path": "Business Development/Revenue Streams/Grants.md"
     }
   ],
   "omittedPaths": [],
