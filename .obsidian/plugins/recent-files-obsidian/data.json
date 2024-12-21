@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "Industry Research Grants",
+      "path": "Business Development/Revenue Streams/Industry Research Grants.md"
+    },
+    {
+      "basename": "Grants",
+      "path": "Business Development/Revenue Streams/Grants.md"
+    },
+    {
+      "basename": "Industry and Regulatory Partners",
+      "path": "Business Development/Industry and Regulatory Partners/Industry and Regulatory Partners.md"
+    },
+    {
       "basename": "Domains",
       "path": "Infrastructure/Domains.md"
     },
@@ -187,14 +199,6 @@
     {
       "basename": "Monitoring Service",
       "path": "Business Development/Revenue Streams/Monitoring Service.md"
-    },
-    {
-      "basename": "Licensing Agreements",
-      "path": "Business Development/Revenue Streams/Licensing Agreements.md"
-    },
-    {
-      "basename": "Industry Research Grants",
-      "path": "Business Development/Revenue Streams/Industry Research Grants.md"
     }
   ],
   "omittedPaths": [],
