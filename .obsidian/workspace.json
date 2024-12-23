@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "13dadd9b1473f615",
+        "id": "9899e22c52aa59c4",
         "type": "tabs",
         "children": [
           {
-            "id": "4dec3b1fa26c26eb",
+            "id": "58665a895156c8f9",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -207,10 +207,10 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "4dec3b1fa26c26eb",
+  "active": "58665a895156c8f9",
   "lastOpenFiles": [
-    "Discussions/index.md",
     "Meetings/2024-12-18/Jeff_Greg_Shawn_sync.md",
+    "Discussions/index.md",
     "utils/vtt_to_markdown.py",
     "Meetings/2024-12-18/Jeff _ Greg _ Shawn sync.vtt",
     "Discussions/Corporate structure - one company or two.md",
@@ -244,7 +244,6 @@
     "Business Development/Market Research/Market Research.md",
     "Business Development/Market Research/NA Testing Research Notes.md",
     "Business Development/Market Research/NAs in the Media.md",
-    "Business Development/Industry and Regulatory Partners/Industry and Regulatory Partners.md",
     "Business Development/1 Luminous Meta Model/01 What is a Meta Model?/attachments/Pasted image 20231122211815.png",
     "Business Development/1 Luminous Meta Model/01 What is a Meta Model?/attachments/Pasted image 20231122202820.png",
     "Business Development/1 Luminous Meta Model/01 What is a Meta Model?/attachments/Pasted image 20231122211453.png",
