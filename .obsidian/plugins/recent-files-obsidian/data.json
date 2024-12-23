@@ -1,6 +1,46 @@
 {
   "recentFiles": [
     {
+      "basename": "Jeff_Greg_Shawn_sync",
+      "path": "Meetings/2024-12-18/Jeff_Greg_Shawn_sync.md"
+    },
+    {
+      "basename": "index",
+      "path": "Discussions/index.md"
+    },
+    {
+      "basename": "Corporate structure - one company or two",
+      "path": "Discussions/Corporate structure - one company or two.md"
+    },
+    {
+      "basename": "2024-12-18",
+      "path": "Journal/Greg/2024-12/2024-12-18.md"
+    },
+    {
+      "basename": "2024-12-23",
+      "path": "Journal/Greg/2024-12/2024-12-23.md"
+    },
+    {
+      "basename": "2024-12-08",
+      "path": "Journal/Greg/2024-12/2024-12-08.md"
+    },
+    {
+      "basename": "Open",
+      "path": "Docket/Open.md"
+    },
+    {
+      "basename": "2024-12-18",
+      "path": "Journal/Shawn/2024-12-18.md"
+    },
+    {
+      "basename": "1. What is the Goal of Business",
+      "path": "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/1. What is the Goal of Business.md"
+    },
+    {
+      "basename": "2. Getting Started with TOC",
+      "path": "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/2. Getting Started with TOC.md"
+    },
+    {
       "basename": "Definition of Constraint",
       "path": "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/Definition of Constraint.md"
     },
@@ -11,14 +51,6 @@
     {
       "basename": "3. TOC Thinking Process (TP Tools)",
       "path": "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/3. TOC Thinking Process (TP Tools).md"
-    },
-    {
-      "basename": "2. Getting Started with TOC",
-      "path": "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/2. Getting Started with TOC.md"
-    },
-    {
-      "basename": "1. What is the Goal of Business",
-      "path": "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/1. What is the Goal of Business.md"
     },
     {
       "basename": "Industry Research Grants",
@@ -39,14 +71,6 @@
     {
       "basename": "Untitled",
       "path": "Business Development/Startup Budget/Untitled.md"
-    },
-    {
-      "basename": "2024-12-18",
-      "path": "Journal/Shawn/2024-12-18.md"
-    },
-    {
-      "basename": "2024-12-18",
-      "path": "Journal/Greg/2024-12/2024-12-18.md"
     },
     {
       "basename": "02-03 Persona and Market",
@@ -97,16 +121,8 @@
       "path": "Business Development/1 Luminous Meta Model/01 What is a Meta Model?/01-02 What is a Metamodel?.md"
     },
     {
-      "basename": "Corporate structure - one company or two",
-      "path": "Discussions/Corporate structure - one company or two.md"
-    },
-    {
       "basename": "USA - unanimous shareholder agreement",
       "path": "Discussions/USA - unanimous shareholder agreement.md"
-    },
-    {
-      "basename": "Open",
-      "path": "Docket/Open.md"
     },
     {
       "basename": "Comment",
@@ -119,10 +135,6 @@
     {
       "basename": "Closed",
       "path": "Docket/Closed.md"
-    },
-    {
-      "basename": "2024-12-08",
-      "path": "Journal/Greg/2024-12/2024-12-08.md"
     },
     {
       "basename": "Tasks",
@@ -151,10 +163,6 @@
     {
       "basename": "90 Day Jeff's stuff",
       "path": "Artifacts/90 Day Jeff's stuff.md"
-    },
-    {
-      "basename": "index",
-      "path": "Discussions/index.md"
     },
     {
       "basename": "Market Research",
@@ -191,14 +199,6 @@
     {
       "basename": "04 Economic Viability and Cost Structure",
       "path": "Projects/90 days/Business development/Business Feasibility Assessment/04 Economic Viability and Cost Structure.md"
-    },
-    {
-      "basename": "03 Intellectual Property and Differentiation",
-      "path": "Projects/90 days/Business development/Business Feasibility Assessment/03 Intellectual Property and Differentiation.md"
-    },
-    {
-      "basename": "02 Regulatory and Policy Review",
-      "path": "Projects/90 days/Business development/Business Feasibility Assessment/02 Regulatory and Policy Review.md"
     }
   ],
   "omittedPaths": [],

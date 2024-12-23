@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Infrastructure/Domains.md",
+                "file": "Meetings/2024-12-18/Jeff_Greg_Shawn_sync.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Domains"
+              "title": "Jeff_Greg_Shawn_sync"
             }
           }
         ]
@@ -209,6 +209,17 @@
   },
   "active": "4dec3b1fa26c26eb",
   "lastOpenFiles": [
+    "Discussions/index.md",
+    "Meetings/2024-12-18/Jeff_Greg_Shawn_sync.md",
+    "utils/vtt_to_markdown.py",
+    "Meetings/2024-12-18/Jeff _ Greg _ Shawn sync.vtt",
+    "Discussions/Corporate structure - one company or two.md",
+    "Journal/Greg/2024-12/2024-12-18.md",
+    "Journal/Greg/2024-12/2024-12-23.md",
+    "Journal/Greg/2024-12/2024-12-08.md",
+    "Docket/Open.md",
+    "Journal/Shawn/2024-12-18.md",
+    "Infrastructure/Domains.md",
     "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/4. Constraints - The Chain Analogy.md",
     "utils/word_count.py",
     "Business Development/Startup Budget/attachments/~$Startup_Budget_Template.xlsx",
@@ -218,14 +229,11 @@
     "Journal/Greg/2024-12/budget/named anything you want.md",
     "Journal/Greg/2024-12/budget/attachments/Quants (stock.quant).xlsx",
     "Journal/Greg/2024-12/budget/attachments",
-    "Infrastructure/Domains.md",
     "Journal/Greg/2024-12/budget",
     "Business Development/Startup Budget/Startup Budget.md",
     "Business Development/Startup Budget",
-    "Business Development/Untitled",
     "Business Development/index.md",
     "Business Development/Target Accounts/Oil Sands Operators.md",
-    "Business Development/Target Accounts",
     "Business Development/Revenue Streams/Industry Research Grants.md",
     "Business Development/Revenue Streams/Paid Pilots.md",
     "Business Development/Revenue Streams/Data.md",
@@ -246,14 +254,6 @@
     "Business Development/1 Luminous Meta Model/01 What is a Meta Model?/attachments/Pasted image 20231122203420.png",
     "Business Development/1 Luminous Meta Model/01 What is a Meta Model?/attachments/Pasted image 20231101132110.png",
     "Business Development/1 Luminous Meta Model/01 What is a Meta Model?/attachments/Pasted image 20231122203021.png",
-    "Business Development/1 Luminous Meta Model/01 What is a Meta Model?/attachments/Pasted image 20231101132454.png",
-    "Business Development/1 Luminous Meta Model/02 Luminous Domains and Component/02-15 Business Roles People and Organization.md",
-    "Business Development/Corporate Structure/Operational Plan/Operational Plan.md",
-    "Business Development/1 Luminous Meta Model/02 Luminous Domains and Component/02-17 Risk and Controls.md",
-    "Business Development/1 Luminous Meta Model/02 Luminous Domains and Component/02-11 Applications.md",
-    "Business Development/1 Luminous Meta Model/02 Luminous Domains and Component/02-08 Logical Information.md",
-    "Business Development/1 Luminous Meta Model/02 Luminous Domains and Component/02-14 Technology Catalog.md",
-    "Business Development/1 Luminous Meta Model/02 Luminous Domains and Component/02-13 Infrastructure.md",
-    "Business Development/1 Luminous Meta Model/01 What is a Meta Model?/BCM Modelling/2. Getting Started.md"
+    "Business Development/1 Luminous Meta Model/01 What is a Meta Model?/attachments/Pasted image 20231101132454.png"
   ]
 }
