@@ -11,10 +11,14 @@
             "id": "58665a895156c8f9",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Meetings/2024-12-18/Jeff_Greg_Shawn_sync.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Jeff_Greg_Shawn_sync"
             }
           }
         ]
@@ -206,8 +210,8 @@
   "active": "58665a895156c8f9",
   "lastOpenFiles": [
     "Meetings/2024-12-18/Jeff_Greg_Shawn_sync.md",
-    "Discussions/index.md",
     "utils/vtt_to_markdown.py",
+    "Discussions/index.md",
     "Meetings/2024-12-18/Jeff _ Greg _ Shawn sync.vtt",
     "Discussions/Corporate structure - one company or two.md",
     "Journal/Greg/2024-12/2024-12-18.md",
