@@ -4,7 +4,7 @@ The **Theory of Constraints** is a process improvement methodology that emphas
   
 ​Common benefits of implementing the Theory of Constraints include better control over operations, less inventory, reduced conflicts between team member and drastically reduced firefighting. Often, additional capacity gets exposed without further capital investment or hiring additional workers.
 
-- **The Five Focusing Steps** – the original expression of TOC which will be explained in detail in this article [[Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/7. The Five Focusing Steps (POOGI)|7. The Five Focusing Steps (POOGI)]]
+- **The Five Focusing Steps** – the original expression of TOC which will be explained in detail in this article [[Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/8. The Five Focusing Steps (POOGI)|8. The Five Focusing Steps (POOGI)]]
 - **Throughput Accounting** – a robust method of measuring operations which removes certain problematic distortions in financial accounting practices to accurately measure progress towards the goal and facilitate better decision-making  
 - **TOC Thinking Processes & Philosophy** – a set of problem solving tools and assumptions for developing breakthroughs across a wide variety of situations and environments. They help decide: 
     1. _What to change?_
