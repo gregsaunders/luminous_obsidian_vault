@@ -1,8 +1,16 @@
 {
   "recentFiles": [
     {
+      "basename": "0. Definition of Constraint",
+      "path": "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/0. Definition of Constraint.md"
+    },
+    {
       "basename": "0. What is the Theory of Constraints",
       "path": "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/0. What is the Theory of Constraints.md"
+    },
+    {
+      "basename": "Constraints - The Chain Analogy",
+      "path": "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/Constraints - The Chain Analogy.md"
     },
     {
       "basename": "The Five Focusing Steps (POOGI)",
@@ -23,10 +31,6 @@
     {
       "basename": "4. Constraints - The Chain Analogy",
       "path": "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/4. Constraints - The Chain Analogy.md"
-    },
-    {
-      "basename": "Definition of Constraint",
-      "path": "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/Definition of Constraint.md"
     },
     {
       "basename": "2. Getting Started with TOC",
@@ -195,10 +199,6 @@
     {
       "basename": "Analyze competitive landscape",
       "path": "Projects/90 days/Business development/Marketing/Analyze competitive landscape.md"
-    },
-    {
-      "basename": "07 Risk Assessment",
-      "path": "Projects/90 days/Business development/Business Feasibility Assessment/07 Risk Assessment.md"
     }
   ],
   "omittedPaths": [],
