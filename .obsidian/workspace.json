@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "9899e22c52aa59c4",
+        "id": "234bd1126c39edc9",
         "type": "tabs",
         "children": [
           {
-            "id": "58665a895156c8f9",
+            "id": "3e400f1a74f53c32",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Meetings/2024-12-18/Jeff_Greg_Shawn_sync.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Jeff_Greg_Shawn_sync"
+              "title": "New tab"
             }
           }
         ]
@@ -207,8 +203,23 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "58665a895156c8f9",
+  "active": "3e400f1a74f53c32",
   "lastOpenFiles": [
+    "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/attachments/Pasted image 20241224090107.png",
+    "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/attachments",
+    "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/0. What is the Theory of Constraints.md",
+    "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/Definition of Constraint.md",
+    "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/TOC Applications.md",
+    "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/The Five Focusing Steps (POOGI).md",
+    "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/Prerequisite Tree (PRT).md",
+    "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/Marketing with a Mafia Offer.md",
+    "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/TOC Consulting vs. Strategy Consulting.md",
+    "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/4. Constraints - The Chain Analogy.md",
+    "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/3. TOC Thinking Process (TP Tools).md",
+    "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/1. What is the Goal of Business.md",
+    "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/2. Getting Started with TOC.md",
+    "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework",
+    "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/0. What is the Theory of Constraints.md",
     "Meetings/2024-12-18/Jeff_Greg_Shawn_sync.md",
     "utils/vtt_to_markdown.py",
     "Discussions/index.md",
@@ -229,21 +240,7 @@
     "Journal/Greg/2024-12/budget/named anything you want.md",
     "Journal/Greg/2024-12/budget/attachments/Quants (stock.quant).xlsx",
     "Journal/Greg/2024-12/budget/attachments",
-    "Journal/Greg/2024-12/budget",
     "Business Development/Startup Budget/Startup Budget.md",
-    "Business Development/Startup Budget",
-    "Business Development/index.md",
-    "Business Development/Target Accounts/Oil Sands Operators.md",
-    "Business Development/Revenue Streams/Industry Research Grants.md",
-    "Business Development/Revenue Streams/Paid Pilots.md",
-    "Business Development/Revenue Streams/Data.md",
-    "Business Development/Revenue Streams/NA Remediation Consulting.md",
-    "Business Development/Revenue Streams/Monitoring Service.md",
-    "Business Development/Revenue Streams/Licensing Agreements.md",
-    "Business Development/Revenue Streams/Grants.md",
-    "Business Development/Market Research/Market Research.md",
-    "Business Development/Market Research/NA Testing Research Notes.md",
-    "Business Development/Market Research/NAs in the Media.md",
     "Business Development/1 Luminous Meta Model/01 What is a Meta Model?/attachments/Pasted image 20231122211815.png",
     "Business Development/1 Luminous Meta Model/01 What is a Meta Model?/attachments/Pasted image 20231122202820.png",
     "Business Development/1 Luminous Meta Model/01 What is a Meta Model?/attachments/Pasted image 20231122211453.png",
