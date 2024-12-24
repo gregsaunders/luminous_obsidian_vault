@@ -5,6 +5,10 @@
       "path": "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/Untitled.md"
     },
     {
+      "basename": "4. What is a Strategic Constraint",
+      "path": "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/4. What is a Strategic Constraint.md"
+    },
+    {
       "basename": "3. Why do Constraints Exist?",
       "path": "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/3. Why do Constraints Exist?.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Market Research",
       "path": "Business Development/Market Research/Market Research.md"
-    },
-    {
-      "basename": "Tasks - Done",
-      "path": "Journal/Greg/Tasks - Done.md"
     }
   ],
   "omittedPaths": [],
