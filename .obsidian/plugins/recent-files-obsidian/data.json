@@ -1,8 +1,12 @@
 {
   "recentFiles": [
     {
-      "basename": "Untitled",
-      "path": "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/Untitled.md"
+      "basename": "5. How to Manage the Constraint?",
+      "path": "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/5. How to Manage the Constraint?.md"
+    },
+    {
+      "basename": "5. What is a Capacity Constrained Resource (CCR)?",
+      "path": "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/5. What is a Capacity Constrained Resource (CCR)?.md"
     },
     {
       "basename": "4. What is a Strategic Constraint",
@@ -13,6 +17,18 @@
       "path": "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/3. Why do Constraints Exist?.md"
     },
     {
+      "basename": "2. Where are Constraints Located?",
+      "path": "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/2. Where are Constraints Located?.md"
+    },
+    {
+      "basename": "1. Why Do Constraints Matter?",
+      "path": "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/1. Why Do Constraints Matter?.md"
+    },
+    {
+      "basename": "0. Definition of Constraint",
+      "path": "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/0. Definition of Constraint.md"
+    },
+    {
       "basename": "Constraints - The Chain Analogy 1",
       "path": "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/Constraints - The Chain Analogy 1.md"
     },
@@ -21,16 +37,8 @@
       "path": "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/TOC Thinking Process (TP Tools).md"
     },
     {
-      "basename": "2. Where are Constraints Located?",
-      "path": "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/2. Where are Constraints Located?.md"
-    },
-    {
       "basename": "Getting Started with TOC",
       "path": "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/Getting Started with TOC.md"
-    },
-    {
-      "basename": "1. Why Do Constraints Matter?",
-      "path": "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/1. Why Do Constraints Matter?.md"
     },
     {
       "basename": "What is the Goal of Business",
@@ -39,10 +47,6 @@
     {
       "basename": "What is the Theory of Constraints",
       "path": "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/What is the Theory of Constraints.md"
-    },
-    {
-      "basename": "0. Definition of Constraint",
-      "path": "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/0. Definition of Constraint.md"
     },
     {
       "basename": "The Five Focusing Steps (POOGI)",
@@ -195,10 +199,6 @@
     {
       "basename": "90 Day Jeff's stuff",
       "path": "Artifacts/90 Day Jeff's stuff.md"
-    },
-    {
-      "basename": "Market Research",
-      "path": "Business Development/Market Research/Market Research.md"
     }
   ],
   "omittedPaths": [],
