@@ -1,26 +1,6 @@
 {
   "recentFiles": [
     {
-      "basename": "Untitled",
-      "path": "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/Untitled.md"
-    },
-    {
-      "basename": "8. The Five Focusing Steps (POOGI)",
-      "path": "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/8. The Five Focusing Steps (POOGI).md"
-    },
-    {
-      "basename": "7. What is the Goal of Business",
-      "path": "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/7. What is the Goal of Business.md"
-    },
-    {
-      "basename": "6. How to Manage the Constraint?",
-      "path": "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/6. How to Manage the Constraint?.md"
-    },
-    {
-      "basename": "5. What is a Capacity Constrained Resource (CCR)?",
-      "path": "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/5. What is a Capacity Constrained Resource (CCR)?.md"
-    },
-    {
       "basename": "4. What is a Strategic Constraint",
       "path": "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/4. What is a Strategic Constraint.md"
     },
@@ -39,6 +19,30 @@
     {
       "basename": "0. Definition of Constraint",
       "path": "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/0. Definition of Constraint.md"
+    },
+    {
+      "basename": "10. TOC Applications",
+      "path": "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/10. TOC Applications.md"
+    },
+    {
+      "basename": "9. Getting Started with TOC",
+      "path": "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/9. Getting Started with TOC.md"
+    },
+    {
+      "basename": "8. The Five Focusing Steps (POOGI)",
+      "path": "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/8. The Five Focusing Steps (POOGI).md"
+    },
+    {
+      "basename": "7. What is the Goal of Business",
+      "path": "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/7. What is the Goal of Business.md"
+    },
+    {
+      "basename": "6. How to Manage the Constraint?",
+      "path": "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/6. How to Manage the Constraint?.md"
+    },
+    {
+      "basename": "5. What is a Capacity Constrained Resource (CCR)?",
+      "path": "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/5. What is a Capacity Constrained Resource (CCR)?.md"
     },
     {
       "basename": "Constraints - The Chain Analogy 1",
@@ -195,10 +199,6 @@
     {
       "basename": "Items for discussion with lawyer",
       "path": "Artifacts/Items for discussion with lawyer.pdf"
-    },
-    {
-      "basename": "Competition",
-      "path": "Artifacts/Competition.md"
     }
   ],
   "omittedPaths": [],
