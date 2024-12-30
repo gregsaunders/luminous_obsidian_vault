@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "Untitled",
+      "path": "Meetings/2024-12-18/Untitled.md"
+    },
+    {
+      "basename": "Jeff _ Greg _ Shawn sync",
+      "path": "Meetings/2024-12-18/Jeff _ Greg _ Shawn sync.md"
+    },
+    {
       "basename": "Open",
       "path": "Docket/Open.md"
     },
@@ -191,10 +199,6 @@
     {
       "basename": "Closed",
       "path": "Docket/Closed.md"
-    },
-    {
-      "basename": "Tasks",
-      "path": "Journal/Greg/Tasks.md"
     }
   ],
   "omittedPaths": [],

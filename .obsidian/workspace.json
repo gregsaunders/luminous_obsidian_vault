@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Docket/Open.md",
+                "file": "Meetings/2024-12-18/AI summary.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Open"
+              "title": "AI summary"
             }
           }
         ]
@@ -208,8 +208,22 @@
   },
   "active": "3e400f1a74f53c32",
   "lastOpenFiles": [
+    "Meetings/2024-12-18/Jeff _ Greg _ Shawn sync.md",
+    "Meetings/2024-12-18/AI summary.md",
+    "Docket/Open.md",
+    "venv/lib/python3.11/site-packages/docx/__pycache__/types.cpython-311.pyc",
+    "venv/lib/python3.11/site-packages/docx/__pycache__/table.cpython-311.pyc",
+    "venv/lib/python3.11/site-packages/docx/__pycache__/shared.cpython-311.pyc",
+    "venv/lib/python3.11/site-packages/docx/__pycache__/shape.cpython-311.pyc",
+    "venv/lib/python3.11/site-packages/docx/__pycache__/settings.cpython-311.pyc",
+    "venv/lib/python3.11/site-packages/docx/__pycache__/package.cpython-311.pyc",
+    "venv/lib/python3.11/site-packages/docx/__pycache__/section.cpython-311.pyc",
+    "venv/lib/python3.11/site-packages/docx/__pycache__/exceptions.cpython-311.pyc",
+    "venv/lib/python3.11/site-packages/docx/__pycache__/document.cpython-311.pyc",
+    "venv/lib/python3.11/site-packages/docx/__pycache__/blkcntnr.cpython-311.pyc",
+    "venv/lib/python3.11/site-packages/docx/templates/default-docx-template/docProps/thumbnail.jpeg",
+    "venv/docx-template/docProps/thumbnail.jpeg",
     "Meetings/2024-12-18/Jeff_Greg_Shawn_sync.md",
-    "Meetings/2024-12-18/Jeff _ Greg _ Shawn sync.fld/filelist.xml",
     "Meetings/2024-12-18/Jeff _ Greg _ Shawn sync.fld/image008.jpg",
     "Meetings/2024-12-18/Jeff _ Greg _ Shawn sync.fld/image007.png",
     "Meetings/2024-12-18/Jeff _ Greg _ Shawn sync.fld/image006.jpg",
@@ -218,16 +232,6 @@
     "Meetings/2024-12-18/Jeff _ Greg _ Shawn sync.fld/image003.png",
     "Meetings/2024-12-18/Jeff _ Greg _ Shawn sync.fld/image002.jpg",
     "Meetings/2024-12-18/Jeff _ Greg _ Shawn sync.fld/image001.png",
-    "Meetings/2024-12-18/Jeff _ Greg _ Shawn sync.fld/colorschememapping.xml",
-    "Meetings/2024-12-18/Jeff _ Greg _ Shawn sync.fld/themedata.thmx",
-    "Meetings/2024-12-18/Jeff _ Greg _ Shawn sync.fld/filelist.xm_",
-    "Meetings/2024-12-18/Jeff _ Greg _ Shawn sync.fld/image008.jp_",
-    "Meetings/2024-12-18/Jeff _ Greg _ Shawn sync.fld/image007.pn_",
-    "Meetings/2024-12-18/Jeff _ Greg _ Shawn sync.fld/image006.jp_",
-    "Meetings/2024-12-18/Jeff _ Greg _ Shawn sync.fld/image005.pn_",
-    "Meetings/2024-12-18/Jeff _ Greg _ Shawn sync.fld/image004.jp_",
-    "Meetings/2024-12-18/Jeff _ Greg _ Shawn sync.fld/image003.pn_",
-    "Docket/Open.md",
     "Discussions/Corporate structure - one company or two.md",
     "Discussions/USA - unanimous shareholder agreement.md",
     "Journal/Greg/2024-12/2024-12-30.md",
@@ -249,10 +253,6 @@
     "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/7. What is the Goal.md",
     "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/TOC Thinking Processes.md",
     "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/12. Getting Started with TOC.md",
-    "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/11. TOC Thinking Process (TP Tools).md",
-    "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/10. TOC Applications.md",
-    "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/9. Getting Started with TOC.md",
-    "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/attachments/Pasted image 20241224090107.png",
-    "Business Development/1 Luminous Meta Model/01 What is a Meta Model?/attachments/Pasted image 20231122211815.png"
+    "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/11. TOC Thinking Process (TP Tools).md"
   ]
 }
