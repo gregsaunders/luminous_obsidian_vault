@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "01 Market Analysis",
+      "path": "Projects/90 days/Business development/Business Feasibility Assessment/01 Market Analysis.md"
+    },
+    {
+      "basename": "90 days data view",
+      "path": "Projects/90 days data view.md"
+    },
+    {
       "basename": "AI summary",
       "path": "Meetings/2024-12-18/AI summary.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "Comment",
       "path": "Templates/Comment.md"
-    },
-    {
-      "basename": "Discussion",
-      "path": "Templates/Discussion.md"
-    },
-    {
-      "basename": "Closed",
-      "path": "Docket/Closed.md"
     }
   ],
   "omittedPaths": [],

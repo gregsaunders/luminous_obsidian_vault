@@ -13,15 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Meetings/2024-12-18/AI summary.md",
+                "file": "Projects/90 days/Business development/Business Feasibility Assessment/01 Market Analysis.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AI summary"
+              "title": "01 Market Analysis"
+            }
+          },
+          {
+            "id": "e330b5a9fa4f6480",
+            "type": "leaf",
+            "state": {
+              "type": "obsidian-projects",
+              "state": {},
+              "icon": "projects-icon",
+              "title": "Projects"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -206,10 +217,13 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "3e400f1a74f53c32",
+  "active": "e330b5a9fa4f6480",
   "lastOpenFiles": [
-    "Meetings/2024-12-18/Jeff _ Greg _ Shawn sync.md",
+    "Projects/90 days/Business development/Business Feasibility Assessment/01 Market Analysis.md",
+    "Projects/90 days data view.md",
     "Meetings/2024-12-18/AI summary.md",
+    "Meetings/2024-12-30",
+    "Meetings/2024-12-18/Jeff _ Greg _ Shawn sync.md",
     "Docket/Open.md",
     "venv/lib/python3.11/site-packages/docx/__pycache__/types.cpython-311.pyc",
     "venv/lib/python3.11/site-packages/docx/__pycache__/table.cpython-311.pyc",
@@ -220,7 +234,6 @@
     "venv/lib/python3.11/site-packages/docx/__pycache__/section.cpython-311.pyc",
     "venv/lib/python3.11/site-packages/docx/__pycache__/exceptions.cpython-311.pyc",
     "venv/lib/python3.11/site-packages/docx/__pycache__/document.cpython-311.pyc",
-    "venv/lib/python3.11/site-packages/docx/__pycache__/blkcntnr.cpython-311.pyc",
     "venv/lib/python3.11/site-packages/docx/templates/default-docx-template/docProps/thumbnail.jpeg",
     "venv/docx-template/docProps/thumbnail.jpeg",
     "Meetings/2024-12-18/Jeff_Greg_Shawn_sync.md",
@@ -251,8 +264,6 @@
     "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/9. The Five Focusing Steps (POOGI).md",
     "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/8. What is the Theory of Constraints.md",
     "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/7. What is the Goal.md",
-    "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/TOC Thinking Processes.md",
-    "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/12. Getting Started with TOC.md",
-    "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/11. TOC Thinking Process (TP Tools).md"
+    "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/TOC Thinking Processes.md"
   ]
 }
