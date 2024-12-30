@@ -1,6 +1,22 @@
 {
   "recentFiles": [
     {
+      "basename": "2024-12-30",
+      "path": "Journal/Greg/2024-12/2024-12-30.md"
+    },
+    {
+      "basename": "Jeff, Greg, Shawn, sync",
+      "path": "Meetings/2024-12-30/Jeff, Greg, Shawn, sync.md"
+    },
+    {
+      "basename": "Open",
+      "path": "Docket/Open.md"
+    },
+    {
+      "basename": "AI summary",
+      "path": "Meetings/2024-12-30/AI summary.md"
+    },
+    {
       "basename": "01 Market Analysis",
       "path": "Projects/90 days/Business development/Business Feasibility Assessment/01 Market Analysis.md"
     },
@@ -17,20 +33,12 @@
       "path": "Meetings/2024-12-18/Jeff _ Greg _ Shawn sync.md"
     },
     {
-      "basename": "Open",
-      "path": "Docket/Open.md"
-    },
-    {
       "basename": "Corporate structure - one company or two",
       "path": "Discussions/Corporate structure - one company or two.md"
     },
     {
       "basename": "USA - unanimous shareholder agreement",
       "path": "Discussions/USA - unanimous shareholder agreement.md"
-    },
-    {
-      "basename": "2024-12-30",
-      "path": "Journal/Greg/2024-12/2024-12-30.md"
     },
     {
       "basename": "2024-12-06",
@@ -191,14 +199,6 @@
     {
       "basename": "01-03 Business Ecosystem 1",
       "path": "Business Development/1 Luminous Meta Model/01 What is a Meta Model?/01-03 Business Ecosystem 1.md"
-    },
-    {
-      "basename": "01-02 What is a Metamodel?",
-      "path": "Business Development/1 Luminous Meta Model/01 What is a Meta Model?/01-02 What is a Metamodel?.md"
-    },
-    {
-      "basename": "Comment",
-      "path": "Templates/Comment.md"
     }
   ],
   "omittedPaths": [],
