@@ -5,13 +5,13 @@ Building a budget for your startup is an essential step to ensure you have a cle
 
 ---
 
-### 1. **Define Our Goals**
+### 1. Define Our Goals
    - Outline business objectives and the services you plan to offer.
    - Identify key milestones (e.g., acquiring your first client, breaking even, scaling up).
 
 ---
 
-### 2. **Estimate Startup Costs**
+### 2. Estimate Startup Costs
    One-time expenses to get your business running:
    - **Equipment and Tools:**
      - Computers, software licenses, office furniture.
@@ -26,8 +26,8 @@ Building a budget for your startup is an essential step to ensure you have a cle
 
 ---
 
-### 3. **Identify Ongoing Operating Expenses**
-   Recurring costs you’ll incur monthly or quarterly:
+### 3. Identify Ongoing Operating Expenses
+   Recurring costs you'll incur monthly or quarterly:
    - **Personnel:**
      - Salaries or contractor fees (if hiring others).
    - **Marketing:**
@@ -41,14 +41,14 @@ Building a budget for your startup is an essential step to ensure you have a cle
 
 ---
 
-### 4. **Estimate Revenue**
+### 4. Estimate Revenue
    - **Set Pricing:** Define our hourly rates. project fees monitoring services.
    - **Forecast Sales:** Be conservative and realistic about how many clients we can secure in the first 3-6 months.
    - **Consider Payment Terms:** Be relentless when negotiating terms. Account for possible delays in payments when projecting cash flow.
 
 ---
 
-### 5. **Create Financial Projections**
+### 5. Create Financial Projections
    - **Startup Capital Needed:** Sum of startup costs and 8-12 months of operating expenses to ensure cash flow.
    - **Income Statement (Profit & Loss):**
      - Forecast monthly income and expenses to determine your breakeven point.
@@ -58,12 +58,12 @@ Building a budget for your startup is an essential step to ensure you have a cle
 
 ---
 
-### 6. **Add a Contingency**
+### 6. Add a Contingency
    - Allocate 20-30% of your total budget for unexpected costs or delays.
 
 ---
 
-### 7. **Monitor and Adjust**
+### 7. Monitor and Adjust
    - Review budget monthly and adjust based on actual income and expenses.
    - Use accounting software to track finances.
 
@@ -83,7 +83,7 @@ Building a budget for your startup is an essential step to ensure you have a cle
 
 ---
 
-### 8. **Calculate Capital Needs**
+### 8. Calculate Capital Needs
    - If your monthly costs are $7,500, and you want a 6-month runway:  
      **Startup Capital = $50,500 (startup costs) + ($16,700 x 6) = $150,700**
 

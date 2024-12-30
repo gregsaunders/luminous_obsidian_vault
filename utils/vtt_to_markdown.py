@@ -75,6 +75,11 @@ def convert_vtt_to_markdown(vtt_file_path, output_file_path=None):
     except Exception as e:
         print(f"Error writing markdown file: {str(e)}")
 
+def remove_header_bold(content):
+    """Remove bold markers from h3 headers while preserving the ### markers."""
+    pattern = r'(### )\*\*(.*?)\*\*'
+    return re.sub(pattern, r'\1\2', content)
+
 def main():
     if len(sys.argv) < 2:
         print("Usage: python vtt_to_markdown.py <vtt_file_path> [output_file_path]")
