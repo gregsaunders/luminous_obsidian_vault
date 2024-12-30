@@ -1,6 +1,38 @@
 {
   "recentFiles": [
     {
+      "basename": "Open",
+      "path": "Docket/Open.md"
+    },
+    {
+      "basename": "Corporate structure - one company or two",
+      "path": "Discussions/Corporate structure - one company or two.md"
+    },
+    {
+      "basename": "USA - unanimous shareholder agreement",
+      "path": "Discussions/USA - unanimous shareholder agreement.md"
+    },
+    {
+      "basename": "2024-12-30",
+      "path": "Journal/Greg/2024-12/2024-12-30.md"
+    },
+    {
+      "basename": "2024-12-06",
+      "path": "Journal/Greg/2024-12/2024-12-06.md"
+    },
+    {
+      "basename": "2024-12-08",
+      "path": "Journal/Greg/2024-12/2024-12-08.md"
+    },
+    {
+      "basename": "2024-12-18",
+      "path": "Journal/Greg/2024-12/2024-12-18.md"
+    },
+    {
+      "basename": "2024-12-23",
+      "path": "Journal/Greg/2024-12/2024-12-23.md"
+    },
+    {
       "basename": "Startup Budget XLS",
       "path": "Business Development/Startup Budget/Startup Budget XLS.md"
     },
@@ -77,26 +109,6 @@
       "path": "Discussions/index.md"
     },
     {
-      "basename": "Corporate structure - one company or two",
-      "path": "Discussions/Corporate structure - one company or two.md"
-    },
-    {
-      "basename": "2024-12-18",
-      "path": "Journal/Greg/2024-12/2024-12-18.md"
-    },
-    {
-      "basename": "2024-12-23",
-      "path": "Journal/Greg/2024-12/2024-12-23.md"
-    },
-    {
-      "basename": "2024-12-08",
-      "path": "Journal/Greg/2024-12/2024-12-08.md"
-    },
-    {
-      "basename": "Open",
-      "path": "Docket/Open.md"
-    },
-    {
       "basename": "2024-12-18",
       "path": "Journal/Shawn/2024-12-18.md"
     },
@@ -169,10 +181,6 @@
       "path": "Business Development/1 Luminous Meta Model/01 What is a Meta Model?/01-02 What is a Metamodel?.md"
     },
     {
-      "basename": "USA - unanimous shareholder agreement",
-      "path": "Discussions/USA - unanimous shareholder agreement.md"
-    },
-    {
       "basename": "Comment",
       "path": "Templates/Comment.md"
     },
@@ -187,18 +195,6 @@
     {
       "basename": "Tasks",
       "path": "Journal/Greg/Tasks.md"
-    },
-    {
-      "basename": "2024-11-27",
-      "path": "Journal/Martin/2024-11-27.md"
-    },
-    {
-      "basename": "01 Market Analysis",
-      "path": "Projects/90 days/Business development/Business Feasibility Assessment/01 Market Analysis.md"
-    },
-    {
-      "basename": "Items for discussion with lawyer",
-      "path": "Artifacts/Items for discussion with lawyer.md"
     }
   ],
   "omittedPaths": [],
