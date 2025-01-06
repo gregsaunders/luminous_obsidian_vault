@@ -1,6 +1,26 @@
 {
   "recentFiles": [
     {
+      "basename": "Jeff_Greg_Shawn_sync",
+      "path": "Meetings/2025-01-06/Jeff_Greg_Shawn_sync.md"
+    },
+    {
+      "basename": "AI summary",
+      "path": "Meetings/2025-01-06/AI summary.md"
+    },
+    {
+      "basename": "Open",
+      "path": "Docket/Open.md"
+    },
+    {
+      "basename": "USA - unanimous shareholder agreement",
+      "path": "Discussions/USA - unanimous shareholder agreement.md"
+    },
+    {
+      "basename": "Corporate structure - one company or two",
+      "path": "Discussions/Corporate structure - one company or two.md"
+    },
+    {
       "basename": "Jeff, Greg, Shawn, sync",
       "path": "Meetings/2024-12-30/Jeff, Greg, Shawn, sync.md"
     },
@@ -37,24 +57,12 @@
       "path": "Journal/Greg/2024-12/2024-12-30.md"
     },
     {
-      "basename": "Open",
-      "path": "Docket/Open.md"
-    },
-    {
       "basename": "01 Market Analysis",
       "path": "Projects/90 days/Business development/Business Feasibility Assessment/01 Market Analysis.md"
     },
     {
       "basename": "90 days data view",
       "path": "Projects/90 days data view.md"
-    },
-    {
-      "basename": "Corporate structure - one company or two",
-      "path": "Discussions/Corporate structure - one company or two.md"
-    },
-    {
-      "basename": "USA - unanimous shareholder agreement",
-      "path": "Discussions/USA - unanimous shareholder agreement.md"
     },
     {
       "basename": "2024-12-06",
@@ -187,18 +195,6 @@
     {
       "basename": "02-00 BCM - Defining Business Capabilities",
       "path": "Business Development/1 Luminous Meta Model/02 Luminous Domains and Component/02-00 BCM - Defining Business Capabilities.md"
-    },
-    {
-      "basename": "02 Luminous Domains and Component",
-      "path": "Business Development/1 Luminous Meta Model/02 Luminous Domains and Component/02 Luminous Domains and Component.md"
-    },
-    {
-      "basename": "01-08 Metamodel Columns",
-      "path": "Business Development/1 Luminous Meta Model/01 What is a Meta Model?/01-08 Metamodel Columns.md"
-    },
-    {
-      "basename": "01-07 Metamodel Layers",
-      "path": "Business Development/1 Luminous Meta Model/01 What is a Meta Model?/01-07 Metamodel Layers.md"
     }
   ],
   "omittedPaths": [],
