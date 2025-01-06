@@ -291,6 +291,65 @@
       ],
       "id": "1269c6f9-bf82-4a86-8763-6aba7505d4b3",
       "name": "90 Days"
+    },
+    {
+      "fieldConfig": {},
+      "defaultName": "",
+      "templates": [],
+      "excludedNotes": [],
+      "isDefault": false,
+      "dataSource": {
+        "kind": "folder",
+        "config": {
+          "path": "Projects",
+          "recursive": true
+        }
+      },
+      "newNotesFolder": "",
+      "views": [
+        {
+          "config": {
+            "fieldConfig": {
+              "name": {
+                "width": 340
+              },
+              "path": {
+                "width": 289,
+                "hide": true
+              },
+              "folder": {
+                "width": 472
+              }
+            },
+            "orderFields": [
+              "work_item_id",
+              "folder",
+              "name",
+              "due date",
+              "status",
+              "responsible",
+              "accountable",
+              "consulted",
+              "informed"
+            ]
+          },
+          "filter": {
+            "conjunction": "and",
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "id": "19708b6a-8635-4d5f-973c-c69afa78aa03",
+          "name": "Table",
+          "type": "table"
+        }
+      ],
+      "id": "ef5fcacd-49a7-44dc-a9b9-d02354728034",
+      "name": "All Projects"
     }
   ],
   "archives": [],

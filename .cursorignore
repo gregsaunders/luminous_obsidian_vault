@@ -1,0 +1,26 @@
+# Add directories or file patterns to ignore during indexing (e.g. foo/ or *.csv)
+venv
+env
+
+.env
+
+# vscode
+.vscode 
+
+# Intellij
+*.iml
+.idea
+
+# npm
+node_modules
+
+
+# Exclude sourcemaps
+*.map
+
+# Exclude macOS Finder (System Explorer) View States
+.DS_Store
+
+temp
+
+.obsidian
