@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Meetings/2025-01-06/AI summary.md",
+                "file": "Journal/Greg/2025-01/Untitled.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AI summary"
+              "title": "Untitled"
             }
           }
         ]
@@ -207,12 +207,13 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "588cb12a155ad9aa",
+  "active": "b4c7bbbbad8374ee",
   "lastOpenFiles": [
+    "Meetings/2025-01-06/AI summary.md",
+    "Journal/Greg/2025-01/Untitled.md",
     "Journal/Greg/2025-01",
     "Meetings/2024-12-30/AI summary.md",
     "Meetings/2024-12-18/AI summary.md",
-    "Meetings/2025-01-06/AI summary.md",
     "Meetings/2025-01-06/Jeff_Greg_Shawn_sync.md",
     "Business Development/Market Research/2024-11-12 NA Testing_Scientific Endeavours Reporting.pdf",
     "Business Development/Market Research/2024-11-12 NA Testing.pdf",
@@ -233,7 +234,6 @@
     "Meetings/2024-12-30",
     "venv/lib/python3.11/site-packages/docx/__pycache__/types.cpython-311.pyc",
     "venv/lib/python3.11/site-packages/docx/__pycache__/table.cpython-311.pyc",
-    "venv/lib/python3.11/site-packages/docx/__pycache__/shared.cpython-311.pyc",
     "venv/lib/python3.11/site-packages/docx/templates/default-docx-template/docProps/thumbnail.jpeg",
     "venv/docx-template/docProps/thumbnail.jpeg",
     "Meetings/2024-12-18/Jeff_Greg_Shawn_sync.md",
