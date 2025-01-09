@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Journal/Greg/2025-01/For discussion.md",
+                "file": "Meetings/2025-01-09/For discussion.md",
                 "mode": "source",
                 "source": false
               },
@@ -207,10 +207,11 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "b942f3fd3a26d547",
+  "active": "588cb12a155ad9aa",
   "lastOpenFiles": [
+    "Meetings/2025-01-09",
     "Journal/Greg/2025-01/Corporate structure 1.md",
-    "Journal/Greg/2025-01/For discussion.md",
+    "Meetings/2025-01-09/For discussion.md",
     "Meetings/2025-01-06/AI summary.md",
     "Journal/Greg/2025-01",
     "Meetings/2024-12-30/AI summary.md",
@@ -253,7 +254,6 @@
     "Journal/Greg/2024-12/2024-12-18.md",
     "Journal/Greg/2024-12/2024-12-23.md",
     "Business Development/Startup Budget/Startup Budget XLS.md",
-    "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/16. Marketing with a Mafia Offer.md",
-    "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/15. TOC Consulting vs. Strategy Consulting.md"
+    "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/16. Marketing with a Mafia Offer.md"
   ]
 }

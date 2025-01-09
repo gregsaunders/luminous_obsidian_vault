@@ -78,7 +78,7 @@ Possible Answers & Structures:
 
 > [!note] Greg note
 > [2025-01-09 11:00 AM]
-> I am in favour of option 2 where Sean maintains majority voting power in both entities. Maybe not exactly as it's outlined here but the principle of it.
+> I am in favour of option 2 where Shawn maintains majority voting power in both entities. Maybe not exactly as it's outlined here but the principle of it.
 
 ---
 
@@ -105,8 +105,13 @@ Possible Answers & Structures:
 
 3. Hybrid Approach (IP in Lewenza Labs + Equal Splits in Luminous Bio Solutions)  
    - Mechanism: Shawn owns Lewenza Labs (IP), each partner owns 33.3% of Luminous, with Shawn holding voting control in Luminous via special shares.  
+	   - optionally, there should be the ability for Greg and Jeff to purchase shares (minority) at some point in the future of Lewenza Labs.
    - Pros: Balances IP protection with equal operational ownership; very flexible for licensing deals.  
    - Cons: Involves two entities, more legal fees and complexity.
+
+> [!note] Greg note
+> [2025-01-09 11:35 AM]
+> I am in favour of option 3.
 
 ---
 
@@ -130,35 +135,103 @@ Possible Answers & Structures:
    - Cons: Could undercut Luminous’s unique advantage.
 
 3. Field- or Territory-Specific License  
-   - For example, Luminous gets exclusive rights for oil & gas applications, while Lewenza Labs can license to other sectors.  
+   - For example, Luminous gets exclusive rights for oil & gas applications, possible exclusivity in Canada or North America, while Lewenza Labs can license to other jurisdictions.  
    - Pros: Balances Luminous’s exclusivity with potential expansions elsewhere.  
    - Cons: Higher contractual complexity; must define strict boundaries.
+
+> [!note] Greg note
+> [2025-01-09 11:37 AM]
+> I am in favour of option 3.
 
 ---
 
 ## 5. Funding and Capital Contributions
 
-### Q5: How should the initial (and future) funding be handled?
+### Q5: How should the initial (and future) funding be handled under one-company vs. two-company scenarios?
 
 Why It Matters:  
-- From the codebase and meeting notes, each partner plans to contribute $5,000 initially. But what if more cash is needed later?
+- Each founder is expected to contribute some cash initially (e.g., \$5,000). However, as the business grows, additional capital may be required—whether for R&D, commercialization, or both. Determining who contributes, how much, and when can affect each partner’s equity stake and influence.
 
-Possible Answers & Mechanisms:
+### One-Company Structure
 
-1. Equal Cash Contributions  
-   - Each partner contributes the same amount (e.g., $5,000).  
-   - Pros: Simple; everyone has “skin in the game.”  
-   - Cons: May not account for the high value of Shawn’s IP or differing financial capacities.
+1. **Equal Cash Contributions**  
+   - **Mechanism:** All three founders (Shawn, Greg, Jeff) contribute the same dollar amount.  
+   - **Pros:**  
+     - Straightforward to administer—everyone has equal “skin in the game.”  
+     - Avoids early debates about valuing Shawn’s IP separately.  
+   - **Cons:**  
+     - Ignores any intangible contributions (e.g., Shawn’s IP, specialized sweat equity).  
+     - May overburden a partner with fewer liquid resources.
 
-2. IP as Shawn’s Contribution, Cash from Others  
-   - Assign a monetary value to IP, offset Shawn’s cash requirement.  
-   - Pros: Recognizes Shawn’s IP as an asset.  
-   - Cons: Hard to agree on IP valuation at an early stage.
+2. **IP as Shawn’s Contribution, Cash from Others**  
+   - **Mechanism:** Place a monetary value on Shawn’s patent or invention. This offsets (fully or partially) his cash requirement, so Greg and Jeff contribute more cash to match Shawn’s IP.  
+   - **Pros:**  
+     - Acknowledges the value of Shawn's IP from day one.  
+     - Reduces Shawn’s out-of-pocket expenses, reflecting the upfront IP contribution.  
+   - **Cons:**  
+     - Assigning a fair valuation to the IP can be contentious.  
+     - Requires an agreed-upon formula or external valuation to avoid future disputes.
 
-3. Future Capital Calls  
-   - Define triggers (e.g., hitting certain milestones or burn rate thresholds).  
-   - Pros: Clarifies how additional funds will be raised.  
-   - Cons: Partners must be prepared to invest or risk dilution if they can’t match contributions.
+3. **Future Capital Calls**  
+   - **Mechanism:** Define milestones or triggers (e.g., run rate, new product launch) where additional investment is required. If a partner doesn’t contribute, others can invest and dilute the non-participants.  
+   - **Pros:**  
+     - Aligns funding with actual growth and cash needs.  
+     - Can be structured to reward partners willing to invest more at critical junctures.  
+   - **Cons:**  
+     - Partners must be prepared for potential dilution if they can’t contribute later.  
+     - Negotiating the details (valuations, deadlines) can become complex.
+
+> [!note] Greg note
+> [2025-01-09 11:40 AM]
+> I am not in favour of the "one-company" structure as it feels like it could get convoluted quickly
+
+### Two-Company Structure (e.g., Lewenza Labs for IP, Luminous Bio Solutions for Operations)
+
+1. **Initial Cash into Luminous Bio Solutions, Minimal Funding in Lewenza Labs**  
+   - **Mechanism:**  
+     - Shawn primarily capitalizes Lewenza Labs with his IP (and minimal cash, if any).  
+     - Greg, Jeff and Shawn invest startup capital into Luminous Bio Solutions.  
+   - **Pros:**  
+     - Clearly segments the R&D/IP side (Shawn’s domain) from commercialization.  
+     - Greg, Jeff and Shawn focus cash where short-term expenses (e.g., sales, marketing, operations) will occur.  
+   - **Cons:**  
+     - Lewenza Labs might need funding later for further R&D if Shawn can’t finance it alone.  
+     - Requires a licensing agreement for Luminous to use the IP.
+
+2. **Split Contributions Across Both Companies**  
+   - **Mechanism:**  
+     - All founders invest in Lewenza Labs for ongoing R&D, and also invest in Luminous Bio Solutions for commercialization.  
+     - Shawn’s IP can be assigned a specific dollar value that offsets his share of cash in Lewenza Labs.  
+   - **Pros:**  
+     - Ensures each entity has working capital; reduces the risk of underfunding the R&D side.  
+     - Provides Greg and Jeff with an economic stake in the IP entity.  
+   - **Cons:**  
+     - More complex to track who owns what in each entity.  
+     - Valuing the IP in Lewenza Labs still poses challenges.
+
+3. **Future Funding / Capital Calls in Each Entity**  
+   - **Mechanism:**  
+     - Define separate capital-call triggers for Lewenza Labs (e.g., new patents, prototypes) and Luminous Bio Solutions (e.g., product launches, scaling).  
+     - If a founder cannot meet a capital call in one entity, they may face dilution **only in that entity** (rather than across the board).  
+   - **Pros:**  
+     - Tailors funding to the distinct needs of R&D vs. commercialization.  
+     - Partners can choose where to allocate their capital based on interest or resources.  
+   - **Cons:**  
+     - Could lead to uneven ownership stakes and control across the two companies.  
+     - Requires tight legal and accounting frameworks to manage parallel investment rounds.
+
+> [!note] Greg note
+> [2025-01-09 11:50 AM]
+> I prefer option 1 here
+
+### Key Takeaways
+
+- **Valuing Shawn’s IP** is critical whether you have one or two companies; it’s simpler to skip formal IP valuation at the outset, but that may cause disputes later.  
+- **Equal cash contributions** foster simplicity but don’t address intangible contributions or different financial capacities.  
+- **Future capital calls** are common in startups—plan for them by specifying how valuations will be determined and what happens if a partner can’t invest more.  
+- In **two-company scenarios**, decide how cash flows to each entity and how each founder’s contributions (cash or IP) translate into equity and control in the respective business.
+
+A sound approach is to establish a **founders’ agreement** or **unanimous shareholder agreement** that spells out these funding rules in detail, ensuring all partners have clarity on when and how additional investment might be required. 
 
 ---
 
@@ -184,6 +257,10 @@ Possible Answers & Structures:
    - Certain decisions require unanimous approval or special founder consent.  
    - Pros: Protects key interests (e.g., IP).  
    - Cons: Can lead to stalemates if used too broadly.
+
+> [!note] Greg note
+> [2025-01-09 11:51 AM]
+> I think option 1, mediation, is the best likely course. A shotgun really only works with 2 partners. Option 3 also works but that likely requires a "board". Possible to migrate from "1" to "3" later (?)
 
 ---
 
@@ -211,6 +288,10 @@ Possible Answers & Mechanisms:
    - Pros: Reduces the risk of a partner leaving immediately with significant ownership.  
    - Cons: Adds complexity and ongoing tracking.
 
+> [!note] Greg note
+> [2025-01-09 11:51 AM]
+> Prefer option 1
+
 ---
 
 ## 8. Future Growth and Exit Strategies
@@ -218,7 +299,7 @@ Possible Answers & Mechanisms:
 ### Q8: How does the chosen structure impact scaling, raising capital, or eventually selling the business?
 
 Why It Matters:  
-- Both the internal structure and the shareholder agreement need to accommodate expansions into new markets (e.g., U.S. EPA), large capital raises, or a potential acquisition.
+- Both the internal structure and the shareholder agreement need to accommodate expansions into new markets (e.g., U.S.), large capital raises, or a potential acquisition.
 
 Possible Answers & Considerations:
 
@@ -233,8 +314,11 @@ Possible Answers & Considerations:
    - Cons: Minority holders lose some autonomy if the majority wants to sell.
 
 3. Revenue Targets & Milestones  
-   - Jeff proposes aiming for $4–5M in annual revenue (e.g., $1M from each major client).  
    - The structure should help manage client relationships, expansions, and potential pivots.
+
+> [!note] Greg note
+> [2025-01-09 11:55 AM]
+> I don't know if a decision has to be made on this point, it's more of a discussion area.
 
 ---
 
@@ -282,10 +366,10 @@ Key Points:
 
 ### Final Note
 
-From all the data (meeting notes, codebase references, and cost analysis), the partners currently seem inclined toward a two-company approach. Shawn would keep IP in Lewenza Labs, while Luminous Bio Solutions handles commercialization—both sharing economic benefits but with Shawn holding voting control to safeguard the invention. This setup aligns with:
+From all the data (meeting notes, repository references, and cost analysis), the partners currently seem inclined toward a two-company approach. Shawn would keep IP in Lewenza Labs, while Luminous Bio Solutions handles commercialization—both sharing economic benefits but with Shawn holding voting control to safeguard the invention. This setup aligns with:
 
 • Shawn’s priority of IP protection.  
 • Greg’s and Jeff’s interests in fair equity stakes and operational roles.  
 • Future flexibility to attract investment or facilitate an acquisition without jeopardizing the core patent.
 
-Whichever path they choose, clarity in legal agreements and alignment on each partner’s role is the most critical factor for success.
+Whichever path we choose, clarity in legal agreements and alignment on each partner’s role is the most critical factor for success.
