@@ -37,30 +37,48 @@ One-Company Structure
 
 ## 2. Voting Control and Governance
 
-### Q2: How should voting control be structured among Shawn (inventor), Greg (operations/tech), and Jeff (sales/marketing)?
+### Q2: In a two-company model (e.g., Lewenza Labs for IP, Luminous Bio Solutions for commercialization), how should voting control be structured among Shawn (inventor), Greg (operations/tech), and Jeff (sales/marketing)?
 
 Why It Matters:  
-- Voting control defines who makes final decisions on major corporate actions. It’s particularly crucial if Shawn wants to protect his invention and research direction.
+- When IP ownership and commercialization are split between two entities, you need clarity on who makes final decisions—particularly around Shawn’s patent and ongoing R&D, as well as strategic and operational moves within the commercial entity.
 
 Possible Answers & Structures:
 
-1. Equal Voting Rights (33.3% Each)  
-   - Pros: Everyone has an equal say; fosters collaboration.  
-   - Cons: Risk of deadlock (2 vs. 1). Shawn’s IP protection might be weaker if he’s outvoted.
+1. Shawn Owns All Voting Shares in Lewenza Labs; Equal Voting in Luminous  
+   - **Mechanism:**  
+     - Lewenza Labs (IP holder): Shawn holds all voting shares (and possibly Greg/Jeff hold non-voting shares for economic participation or options to purchase at future dates).  
+     - Luminous Bio Solutions (operations): Shawn, Greg, and Jeff each have equal voting shares or a board structure with equal representation.  
+   - **Pros:**  
+     - Protects Shawn’s IP interests and ensures he retains control over R&D decisions.  
+     - Encourages collaboration and equal say in day-to-day commercial operations.  
+   - **Cons:**  
+     - Shawn’s dominance in the IP entity may leave Greg and Jeff feeling less empowered about patent-related decisions.  
+     - Two distinct voting schemes can add complexity when making cross-entity decisions (e.g., licensing, revenue sharing).
 
-2. Shawn Maintains Majority Vote  
-   - Mechanism: Shawn could own all or the majority of voting shares, while Greg and Jeff hold non-voting shares (or fewer voting shares).  
-   - Pros: Preserves Shawn’s final say, aligns with the goal of IP protection.  
-   - Cons: Greg and Jeff may feel they have less control over strategic decisions.
+2. Shawn Maintains Majority Voting Power in Both Entities  
+   - **Mechanism:**  
+     - Lewenza Labs: Shawn owns a majority (or 100%) of voting shares, Greg and Jeff own non-voting shares (if at all, or options to purchase at future dates).  
+     - Luminous Bio Solutions: Shawn still holds a majority of voting shares, while Greg and Jeff have minority voting stakes or only non-voting shares.  
+   - **Pros:**  
+     - Preserves Shawn’s final authority on both R&D and commercial decisions, aligning with the goal of IP protection.  
+   - **Cons:**  
+     - Greg and Jeff may feel sidelined regarding key business or operational strategies.  
+     - Could reduce collaboration if decisions are ultimately controlled by one partner.
 
-3. Board-Control Mechanism  
-   - Mechanism: Equal share ownership, but the board’s composition ensures Shawn can’t be outvoted on critical IP or strategic matters.  
-   - Pros: Everyone appears equal in shares, but certain decisions require unanimous consent.  
-   - Cons: Slightly more complex to define in legal documents.
+3. Board-Control or Hybrid Mechanism  
+   - **Mechanism:**  
+     - Lewenza Labs: Shawn as controlling shareholder (e.g., majority of voting shares), possibly with a small board if Greg and Jeff hold non-voting or minority positions.  
+     - Luminous Bio Solutions: Equal share ownership, but a board structure grants Shawn a tiebreaker or “founder veto” on critical decisions tied to IP usage.  
+   - **Pros:**  
+     - Balances Shawn’s need to protect IP with a more democratic approach to commercial operations.  
+     - Major decisions might require unanimous consent, ensuring all founders feel included.  
+   - **Cons:**  
+     - Requires careful drafting of “reserved matters” or “founder veto rights” to avoid deadlocks.  
+     - More complex to administer when major decisions affect both companies (e.g., renegotiating a licensing deal).
 
 > [!note] Greg note
 > [2025-01-09 11:00 AM]
-> I am in favour of a 2 company structure
+> I am in favour of option 2 where Sean maintains majority voting power in both entities. Maybe not exactly as it's outlined here but the principle of it.
 
 ---
 
