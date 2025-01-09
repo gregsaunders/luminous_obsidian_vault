@@ -5,6 +5,10 @@
       "path": "Journal/Greg/2025-01/Untitled.md"
     },
     {
+      "basename": "Corporate structure 1",
+      "path": "Journal/Greg/2025-01/Corporate structure 1.md"
+    },
+    {
       "basename": "Jeff_Greg_Shawn_sync",
       "path": "Meetings/2025-01-06/Jeff_Greg_Shawn_sync.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "02-02 Innovation and Change",
       "path": "Business Development/1 Luminous Meta Model/02 Luminous Domains and Component/02-02 Innovation and Change.md"
-    },
-    {
-      "basename": "02-01 Strategy and Objectives",
-      "path": "Business Development/1 Luminous Meta Model/02 Luminous Domains and Component/02-01 Strategy and Objectives.md"
     }
   ],
   "omittedPaths": [],
