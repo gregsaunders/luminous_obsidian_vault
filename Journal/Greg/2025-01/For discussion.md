@@ -29,6 +29,10 @@ One-Company Structure
   2. Less Flexible for Future Splits/Investments: Spinning out or selling the IP alone is more cumbersome later.  
   3. Ownership Tangles: If partners disagree on how to handle IP vs. operations, it’s harder to keep them separate.
 
+> [!note] Greg note
+> [2025-01-09 10:59 AM]
+> I am in favour of a 2 company structure
+
 ---
 
 ## 2. Voting Control and Governance
@@ -53,6 +57,10 @@ Possible Answers & Structures:
    - Mechanism: Equal share ownership, but the board’s composition ensures Shawn can’t be outvoted on critical IP or strategic matters.  
    - Pros: Everyone appears equal in shares, but certain decisions require unanimous consent.  
    - Cons: Slightly more complex to define in legal documents.
+
+> [!note] Greg note
+> [2025-01-09 11:00 AM]
+> I am in favour of a 2 company structure
 
 ---
 
