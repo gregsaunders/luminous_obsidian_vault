@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Meetings/2025-01-09/For discussion.md",
+                "file": "Meetings/2025-01-09/For discussion 2025-01-09.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "For discussion"
+              "title": "For discussion 2025-01-09"
             }
           }
         ]
@@ -207,11 +207,11 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "588cb12a155ad9aa",
+  "active": "b942f3fd3a26d547",
   "lastOpenFiles": [
     "Meetings/2025-01-09",
     "Journal/Greg/2025-01/Corporate structure 1.md",
-    "Meetings/2025-01-09/For discussion.md",
+    "Meetings/2025-01-09/For discussion 2025-01-09.md",
     "Meetings/2025-01-06/AI summary.md",
     "Journal/Greg/2025-01",
     "Meetings/2024-12-30/AI summary.md",
