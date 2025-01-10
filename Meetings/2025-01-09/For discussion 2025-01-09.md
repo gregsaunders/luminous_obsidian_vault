@@ -285,7 +285,9 @@ Possible Answers & Structures:
 > I think option 1, mediation, is the best likely course. A shotgun really only works with 2 partners. Option 3 also works but that likely requires a "board". Possible to migrate from "1" to "3" later (?)
 
 > [!note] Jeff's note 
-> I agree with Greg, however some 
+> I agree with Greg, however some basic guiding principles, goals and how we are going to meet these goals needs to be agreed upon so we are all singing of the same hymm sheet. 
+> 
+
 
 ---
 
@@ -317,6 +319,10 @@ Possible Answers & Mechanisms:
 > [2025-01-09 11:51 AM]
 > Prefer option 1
 
+> [!note] Jeff's note
+> Agree with option 1 for the first 12 - 18 months. If after that time one partner goes inactive, option 2 or 3 kicks in. 
+
+
 ---
 
 ## 8. Future Growth and Exit Strategies
@@ -344,6 +350,12 @@ Possible Answers & Considerations:
 > [!note] Greg note
 > [2025-01-09 11:55 AM]
 > I don't know if a decision has to be made on this point, it's more of a discussion area.
+
+> [!note] Jeff's note
+> I want to know both of your perspectives going in, we may not need an agreement but if this thing starts to kick, or gets too hard but is still viable, what would we want to do? We will be the major shareholders for the foreseeable future so I don't care about minorities yet.   
+
+
+
 
 ---
 
@@ -398,3 +410,8 @@ From all the data (meeting notes, repository references, and cost analysis), the
 • Future flexibility to attract investment or facilitate an acquisition without jeopardizing the core patent.
 
 Whichever path we choose, clarity in legal agreements and alignment on each partner’s role is the most critical factor for success.
+
+
+> [!note] Jeff's note
+> To be honest, I want to start talking to customers, partners, regulators to get a sense of the true market potential and what this looks like. I strongly suggest we keep this as simple as possible. We get and agreement set up in principal, we all sign it and shake hands. Lets start talking to the market see the opportunity, then set a predetermined date to ensure all of this is formalized. 
+
