@@ -33,9 +33,8 @@ One-Company Structure
 > [2025-01-09 10:59 AM]
 > I am in favour of a 2 company structure
 
-> [!note] Greg note
-> [2025-01-09 10:59 AM]
-> I am in favour of a 2 company structure
+> [!note] Jeff note
+> I am 
 
 ---
 
