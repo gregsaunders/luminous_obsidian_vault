@@ -34,7 +34,9 @@ One-Company Structure
 > I am in favour of a 2 company structure
 
 > [!note] Jeff note
-> I am 
+> I am Okay with either, however if we start with one company we have a clear identified and agreed upon path to the 2 company model.  
+
+
 
 ---
 
