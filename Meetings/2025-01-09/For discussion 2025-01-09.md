@@ -85,6 +85,9 @@ Possible Answers & Structures:
 > [2025-01-09 11:00 AM]
 > I am in favour of option 2 where Shawn maintains majority voting power in both entities. Maybe not exactly as it's outlined here but the principle of it.
 
+> [!note] Jeff note
+> I am in agreement with Shawn having voting control of Lewenza Labs as he is the expertise in research and development. On the commercialization side I want to ensure Greg and I have some control and contribution to ensure the business decisions (what we are good at) are not limiting our ability to meet business objectives.   
+
 ---
 
 ## 3. Equity Splits and Share Classes
@@ -118,6 +121,8 @@ Possible Answers & Structures:
 > [2025-01-09 11:35 AM]
 > I am in favour of option 3.
 
+> [!note] Jeffs note
+> I agree with Shawn having all of Lewenza Labs and Greg and I being issued options to purchase with a vesting period that requires us to be involved over 12 - 24 months. For Luminous I agree with the 33.33% each. We may want to have another eshare class defined set out to attract other key players to the company. This would be issued at a future stock price different to the founders shares. 
 ---
 
 ## 4. IP Licensing and Inter-Company Agreements
@@ -147,6 +152,10 @@ Possible Answers & Structures:
 > [!note] Greg note
 > [2025-01-09 11:37 AM]
 > I am in favour of option 3.
+
+> [!note] Jeff's note
+> My interest is in building the value of both the IP and the commercialization of it. I want all of us participate in building both and be rewarded for both so if there is an option 3 I would like to see Luminous to be the broker and managing licensing of the geographic expansion. 
+
 
 ---
 
@@ -190,6 +199,10 @@ Why It Matters:
 > [2025-01-09 11:40 AM]
 > I am not in favour of the "one-company" structure as it feels like it could get convoluted quickly
 
+> [!note] Jeff's note
+> I agree that there needs to be value place on Shawn's IP, however valuing it is difficult until we know what its worth and market uptake.  There is no question we need to come up with an amount that is going to get this going. Bootstrapping will be easy but we will need operating capital once things get rolling.  
+>
+
 ### Two-Company Structure (e.g., Lewenza Labs for IP, Luminous Bio Solutions for Operations)
 
 1. **Initial Cash into Luminous Bio Solutions, Minimal Funding in Lewenza Labs**  
@@ -229,6 +242,10 @@ Why It Matters:
 > [2025-01-09 11:50 AM]
 > I prefer option 1 here
 
+> [!note] Jeff's note
+> I agree with option 1
+
+
 ### Key Takeaways
 
 - **Valuing Shawn’s IP** is critical whether you have one or two companies; it’s simpler to skip formal IP valuation at the outset, but that may cause disputes later.  
@@ -266,6 +283,9 @@ Possible Answers & Structures:
 > [!note] Greg note
 > [2025-01-09 11:51 AM]
 > I think option 1, mediation, is the best likely course. A shotgun really only works with 2 partners. Option 3 also works but that likely requires a "board". Possible to migrate from "1" to "3" later (?)
+
+> [!note] Jeff's note 
+> I agree with Greg, however some 
 
 ---
 
