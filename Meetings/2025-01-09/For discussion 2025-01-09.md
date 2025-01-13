@@ -141,6 +141,9 @@ Possible Answers & Structures:
 > I agree with Shawn having all of Lewenza Labs and Greg and I being issued options to purchase with a vesting period that requires us to be involved over 12 - 24 months. For Luminous I agree with the 33.33% each. We may want to have another eshare class defined set out to attract other key players to the company. This would be issued at a future stock price different to the founders shares. 
 ---
 
+
+---
+
 ## 4. IP Licensing and Inter-Company Agreements
 
 ### Q4: How should IP be licensed if there are two companies?
