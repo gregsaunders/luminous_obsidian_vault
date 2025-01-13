@@ -36,6 +36,7 @@ One-Company Structure
 > [!note] Jeff note
 > I am Okay with either, however if we start with one company we have a clear identified and agreed upon path to the 2 company model.  
 
+>Regarding Flexibility for Aqu
 
 
 ---
