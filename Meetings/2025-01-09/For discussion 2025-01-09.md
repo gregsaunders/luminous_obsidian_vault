@@ -36,15 +36,22 @@ One-Company Structure
 > [!note] Jeff note
 > I am Okay with either, however if we start with one company we have a clear identified and agreed upon path to the 2 company model.  
 
->Shawn Note. Regarding Flexibility for Acquisition: What if you want to sell the marketing/sales and I don't want to sell the R&D? Then the buyer has squat, because R&D also does the services. Or if I want to sell the R&D (which also does the services), could sell to someone else with sales/marketing. I see complications for acquisitions.
+> [!note] Shawn Note
+> 
+> Regarding Flexibility for Acquisition: What if you want to sell the marketing/sales and I don't want to sell the R&D? Then the buyer has squat, because R&D also does the services. Or if I want to sell the R&D (which also does the services), could sell to someone else with sales/marketing. I see complications for acquisitions.
 >
 >The disadvantge of 1 company regarding the risk is a good point, I want to learn more about this
 >
 >When I look at this as a whole, I read the context of Greg/Jeff to be" If there are troubles with Shawn, I want out", which is not a great starting context.
 >
-A point was raised in the last meeting to get 1 company started right away, which would be the public facing Luminous. One idea to this 1 or 2 company problem, is to start 1 company with a 1 year term and agreement. We review the 'to do' list, and decide what we want to do in year 1, and who will do each task. Then after year 1, we have more time to consider 1 or 2 companies, and our initial agreement is to revisit and revise the agreement. Did we meet our milestones? Was every partner fully engaged? 
+>A point was raised in the last meeting to get 1 company started right away, which would be the public facing Luminous. One idea to this 1 or 2 company problem, is to start 1 company with a 1 year term and agreement. We review the 'to do' list, and decide what we want to do in year 1, and who will do each task. Then after year 1, we have more time to consider 1 or 2 companies, and our initial agreement is to revisit and revise the agreement. Did we meet our milestones? Was every partner fully engaged? 
 
-
+>[!note] Greg note
+> Clarifying comment: in a 2 company scenario, I see "Lewenza Labs" only function as a holder of IP, research, and academic relationships. I do envision services being executed in the operating company. The operating company having a license to use the IP. In a "sell the company" situation, licenses, leaseholds, relationships, revenue and profit are all valued.
+> 
+> Clarifying comment: the motivation of a 2 company vs 1 approach is solely about protecting intellection property. As a thought experiment, IP is "capital", so exchange IP (patents, etc.) for a cash value ... helps to expose structural problems in a potential transfer of IP if IP is thought of as an intangible vs a tangible asset.
+> 
+> Clarifying comment: I do want to chat about your (Shawn's) interpretation of the context. Jeff and I are very much "conflict resolution" oriented. We are very much about "wanting in" and finding a path to achieve that. I will restate that I prefer a 1 vs 2 company approach to protect Shawn's IP.
 
 
 ---
