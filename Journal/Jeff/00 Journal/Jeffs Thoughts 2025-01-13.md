@@ -30,5 +30,5 @@ We capitalize on **a crisis**, both with starting the business and the problem
 - Determine core constraint that limit us to get this business going. 
 - **Exploit** the core constraint, **Subordinate** everything we do to the constraint, then **Elevate the constraint**! To get this thing going, knowing our core constraint, then exploiting the it's maximum efficiency, followed by subordinating everything else to support it,  and last elevating the constraint to overcome limitations. This ensures every effort drives meaningful progress.
 - Prevent  **Inertia**  from becoming our constraint. Progress stalls when inertia becomes our new bottleneck! We need to challenge ourselves and ensure our other priorities become the barriers to this success. Momentum is our key to success.
-- Place expansion plans on hold until we remove the  all non-essential new equipment, additional headcount etc. ToC implementation will almost certainly release significant spare capacity!
+- Place expansion plans on hold until we remove the all non-essential stuff. ToC intention is to ensure we have available capacity to focus on what is most important!
 
