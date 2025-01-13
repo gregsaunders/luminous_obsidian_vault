@@ -23,10 +23,14 @@ Not-for-profit companies, wholly owned companies, and individual people this is 
 
 # Getting Started with ToC
 
-Capitalize on **a crisis** to begin the transformation. This could be a working capital shortage, dismal profitability, poor customer due-date performance, high-stress high-workload environment, frequent internal conflicts, external crisis in the economy/industry, etc. If your company isn’t in crisis, focus attention on an emerging competitive threat or find a customer who is willing demand dramatically better due-date performance.
+We capitalize on **a crisis** both with starting the business and the problem we solve. Our problem could be a working capital shortage, potential low profitability, poor customer payments, high-stress high-workload environment, internal conflicts, external crisis in the economy/industry, etc. If we don't anticipate a crisis, we focus attention on an emerging competitive threat or a customer who is over demanding or not valuing our services for what they are.
 
-- Align the top team to global, bottom-line oriented measurements (abolish KPAs).
-- **Identify your constraint(s)**, based on inventory accumulation, expediting trends and rated capacity.
-- Identify your organization's core conflict
-- Place expansion plans on hold - all non-essential new equipment, additional headcount etc. ToC implementation will almost certainly release significant spare capacity!
+- Align the team to bottom-line oriented measurements (abolish the thought of KPAs).
+- **Identify our core constraint(s)**, Low working capital, access to capital, market adoption timing, start up limitations, capacity restraints etc.
+- Determine the core constraint that is limiting us to get this business going. 
+- **Exploit** this constraint, **Subordinate** everything to the constraint, then **Elevate it**! To get this thing going, knowing our core constraint, then exploiting the it's maximum efficiency, followed by subordinating everything else to support it,  and last elevating the constraint to overcome limitations. This ensures every effort drives meaningful progress.
+- Prevent  **Inertia**  from becoming a constraint. Progress stalls when inertia becomes our new bottleneck! We need to challenge the status quo, help you adapt to evolving needs, and ensure improvements don’t become barriers themselves. 
+
+Momentum is key to sustained growth and success.
+- Place expansion plans on hold until we remove the  all non-essential new equipment, additional headcount etc. ToC implementation will almost certainly release significant spare capacity!
 
