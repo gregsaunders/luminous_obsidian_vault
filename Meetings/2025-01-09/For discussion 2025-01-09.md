@@ -36,7 +36,15 @@ One-Company Structure
 > [!note] Jeff note
 > I am Okay with either, however if we start with one company we have a clear identified and agreed upon path to the 2 company model.  
 
->Regarding Flexibility for Aqu
+>Shawn Note. Regarding Flexibility for Acquisition: What if you want to sell the marketing/sales and I don't want to sell the R&D? Then the buyer has squat, because R&D also does the services. Or if I want to sell the R&D (which also does the services), could sell to someone else with sales/marketing. I see complications for acquisitions.
+>
+>The disadvantge of 1 company regarding the risk is a good point, I want to learn more about this
+>
+>When I look at this as a whole, I read the context of Greg/Jeff to be" If there are troubles with Shawn, I want out", which is not a great starting context.
+>
+A point was raised in the last meeting to get 1 company started right away, which would be the public facing Luminous. One idea to this 1 or 2 company problem, is to start 1 company with a 1 year term and agreement. We review the 'to do' list, and decide what we want to do in year 1, and who will do each task. Then after year 1, we have more time to consider 1 or 2 companies, and our initial agreement is to revisit and revise the agreement. Did we meet our milestones? Was every partner fully engaged? 
+
+
 
 
 ---
