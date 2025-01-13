@@ -21,14 +21,14 @@ Not-for-profit companies, wholly owned companies, and individual people this is 
 - **Necessary Conditions (Means)** - Secure & Satisfied, healthy, self esteem, family / group versus Secure and satisfied employees, customers, suppliers, investors, lenders, etc. 
 
 
-# Getting Started with ToC
+# Getting Started
 
-We capitalize on **a crisis** both with starting the business and the problem we solve. Our problem could be a working capital shortage, potential low profitability, poor customer payments, high-stress high-workload environment, internal conflicts, external crisis in the economy/industry, etc. If we don't anticipate a crisis, we focus attention on an emerging competitive threat or a customer who is over demanding or not valuing our services for what they are.
+We capitalize on **a crisis**, both with starting the business and the problem we solve. Our problem could be a working capital shortage, potential low profitability, poor customer payments, high-stress high-workload environment, internal conflicts, external crisis in the economy/industry, etc. If we don't anticipate a crisis, we focus attention on competitive threat or over demanding customer who don't fully value our services for what they are.
 
-- Align the team to bottom-line oriented measurements (abolish the thought of KPAs).
-- **Identify our core constraint(s)**, Low working capital, access to capital, market adoption timing, start up limitations, capacity restraints etc.
-- Determine the core constraint that is limiting us to get this business going. 
-- **Exploit** this constraint, **Subordinate** everything to the constraint, then **Elevate it**! To get this thing going, knowing our core constraint, then exploiting the it's maximum efficiency, followed by subordinating everything else to support it,  and last elevating the constraint to overcome limitations. This ensures every effort drives meaningful progress.
+- Align to bottom-line oriented measurements.
+- **Identify our core constraint(s)** ie: Low working capital, access to capital, market adoption timing, start up limitations, capacity restraints etc.
+- Determine core constraint that limit us to get this business going. 
+- **Exploit** the core constraint, **Subordinate** everything we do to the constraint, then **Elevate the constraint**! To get this thing going, knowing our core constraint, then exploiting the it's maximum efficiency, followed by subordinating everything else to support it,  and last elevating the constraint to overcome limitations. This ensures every effort drives meaningful progress.
 - Prevent  **Inertia**  from becoming our constraint. Progress stalls when inertia becomes our new bottleneck! We need to challenge ourselves and ensure our other priorities become the barriers to this success. Momentum is our key to success.
 - Place expansion plans on hold until we remove the  all non-essential new equipment, additional headcount etc. ToC implementation will almost certainly release significant spare capacity!
 
