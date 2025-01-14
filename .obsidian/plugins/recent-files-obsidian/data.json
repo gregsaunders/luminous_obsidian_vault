@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Untitled",
+      "path": "Meetings/2025-01-09/Untitled.md"
+    },
+    {
       "basename": "For discussion 2025-01-09",
       "path": "Meetings/2025-01-09/For discussion 2025-01-09.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Domains",
       "path": "Infrastructure/Domains.md"
-    },
-    {
-      "basename": "Untitled",
-      "path": "Business Development/Startup Budget/Untitled.md"
     }
   ],
   "omittedPaths": [],
