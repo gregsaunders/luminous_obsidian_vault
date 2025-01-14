@@ -53,9 +53,11 @@ One-Company Structure
 > 
 > Clarifying comment: I do want to chat about your (Shawn's) interpretation of the context. Jeff and I are "conflict resolution" oriented. We are very much about "wanting in" and finding a path to achieve that. I will restate that I prefer a 1 vs 2 company approach to protect Shawn's IP.
 
-There seems to be some misunderstanding about the R&D aspect of "Lewenza Labs". Research won't likely be done in this entity for some time, but it will be in my academic lab, if grants are obtained, and if the research is successful, it can be patented and commercialized ie bioremedation solution. So "research" will be academic in the near term. Perhaps the company will generate revenue in the future, and then develop research projects for new products, but do I need a company called "lewenza lab" to do that. I also don't know if I personally have to be the holder of the IP, or Luminous is. Or, still not clear that 2 companies is needed to protect IP. I do see "IP" as capital. 
+>There seems to be some misunderstanding about the R&D aspect of "Lewenza Labs". Research won't likely be done in this entity for some time, but it will be in my academic lab If traditional academic grants are obtained, and if the research is successful, it can be patented and commercialized ie bioremedation solution. So "research" will be academic in the near term. Perhaps the company will generate revenue in the future, and then develop research projects for new products, but do I need a company called "lewenza lab" to do that in the short term? I also don't know if I personally have to be the holder of the IP, or could Luminous hold the IP? Still not clear that 2 companies is needed to protect IP but I do see "IP" as capital. 
 
-I also do realize but you oriented to conflict resolution.
+>I also do realize but you are oriented to conflict resolution.
+
+>If Luminous is the operating company, that does services, than this would require the setup of a lab facility. I don't have a great sense of how to finance a lab setup. The options are 1) Use the UofC lab (it's probably too small to do this, and keep academic research going) and pay them a small share (1% revenue), 2) setup and equip independent lab 3) setup on AU campus with as yet unknown agreement with AU, but likely favourable and supportive. I would like to chat more about the valuation in the event of "sell the company", and how each company would be valued.
  
 ---
 
@@ -107,7 +109,8 @@ Possible Answers & Structures:
 > [!note] Jeff note
 > I am in agreement with Shawn having voting control of Lewenza Labs as he is the expertise in research and development. On the commercialization side I want to ensure Greg and I have some control and contribution to ensure the business decisions (what we are good at) are not limiting our ability to meet business objectives.   
 
-I don't know that having a board for option 3 is necessary, or at least at this time. Ultimatley, I don' t have the skills to make this d
+>I don't know that having a board for option 3 is necessary, or at least at this time. Ultimately, I don' t have the skills to make this decision, that's your expertise. If I at least understood it really well, that would help. Option 2 does seem to acknowledge that I have more sweat equity in this company, at this stage, or is this only relating to voting control/governance, not equity?? I don't see how you would be sidelined regarding key decisions with option 2, as I generally would defer to your judgement around business decisions. The exception could be if we somehow find ourselves in a significant disagreement about a key decision. Decision making would be collaborative, even if the voting share is not equal. This may be a naive perspective.
+
 
 ---
 
@@ -146,6 +149,7 @@ Possible Answers & Structures:
 > I agree with Shawn having all of Lewenza Labs and Greg and I being issued options to purchase with a vesting period that requires us to be involved over 12 - 24 months. For Luminous I agree with the 33.33% each. We may want to have another eshare class defined set out to attract other key players to the company. This would be issued at a future stock price different to the founders shares. 
 ---
 
+>This appears to be about equity, not governance, but this distinction is still unclear to me. This one is hard to answer, as the roles are not exactly clear or justified yet. Option 3 does not capture all the work that I have already done. Option 2 seems closer  to what I envision as a starting point, but I don't understand the Con that is listed.
 
 ---
 
