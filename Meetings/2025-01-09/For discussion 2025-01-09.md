@@ -149,7 +149,7 @@ Possible Answers & Structures:
 > I agree with Shawn having all of Lewenza Labs and Greg and I being issued options to purchase with a vesting period that requires us to be involved over 12 - 24 months. For Luminous I agree with the 33.33% each. We may want to have another eshare class defined set out to attract other key players to the company. This would be issued at a future stock price different to the founders shares. 
 ---
 
->This appears to be about equity, not governance, but this distinction is still unclear to me. This one is hard to answer, as the roles are not exactly clear or justified yet. Option 3 does not capture all the work that I have already done. Option 2 seems closer  to what I envision as a starting point, but I don't understand the Con that is listed.
+>This appears to be about equity, not governance, but this distinction is still unclear to me. This one is hard to answer, as the roles are not exactly clear or justified yet. Option 3 does not capture all the work that I have already done. Option 2 seems closer to what I envision as a starting point, but I don't understand the Con that is listed. What is the value of the IP if the 2nd company has a license to use the IP, performs the services, has the clients, etc??
 
 ---
 
@@ -183,6 +183,8 @@ Possible Answers & Structures:
 
 > [!note] Jeff's note
 > My interest is in building the value of both the IP and the commercialization of it. I want all of us participate in building both and be rewarded for both so if there is an option 3 I would like to see Luminous to be the broker and managing licensing of the geographic expansion. 
+
+>I agree with Jeff in building the value of the IP and commercialization, towards application in other contexts, with other clients. If only 1 company, no licensing between them is necessary, but potentially license to other users. With 2 companies, I think I favour #3, but again, Lewenza Labs would not deliberately license to a third party, if it would jeopardize advantage of Luminous.
 
 
 ---
@@ -231,6 +233,7 @@ Why It Matters:
 > I agree that there needs to be value place on Shawn's IP, however valuing it is difficult until we know what its worth and market uptake.  There is no question we need to come up with an amount that is going to get this going. Bootstrapping will be easy but we will need operating capital once things get rolling.  
 >
 
+>
 ### Two-Company Structure (e.g., Lewenza Labs for IP, Luminous Bio Solutions for Operations)
 
 1. **Initial Cash into Luminous Bio Solutions, Minimal Funding in Lewenza Labs**  
