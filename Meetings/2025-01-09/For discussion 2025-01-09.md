@@ -462,3 +462,6 @@ Whichever path we choose, clarity in legal agreements and alignment on each part
 > [!note] Shawn Note
 >I have the sense as Jeff, keep simple to start, find the potential in a short time frame, than revisit.
 
+---
+
+![[Meetings/2025-01-09/attachments/Pasted image 20250114115026.png]]
