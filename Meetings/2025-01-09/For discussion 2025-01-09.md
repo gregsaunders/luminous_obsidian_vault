@@ -53,10 +53,11 @@ One-Company Structure
 > 
 > Clarifying comment: I do want to chat about your (Shawn's) interpretation of the context. Jeff and I are "conflict resolution" oriented. We are very much about "wanting in" and finding a path to achieve that. I will restate that I prefer a 1 vs 2 company approach to protect Shawn's IP.
 
+>[!note] Shawn Note
 >There seems to be some misunderstanding about the R&D aspect of "Lewenza Labs". Research won't likely be done in this entity for some time, but it will be in my academic lab If traditional academic grants are obtained, and if the research is successful, it can be patented and commercialized ie bioremedation solution. So "research" will be academic in the near term. Perhaps the company will generate revenue in the future, and then develop research projects for new products, but do I need a company called "lewenza lab" to do that in the short term? I also don't know if I personally have to be the holder of the IP, or could Luminous hold the IP? Still not clear that 2 companies is needed to protect IP but I do see "IP" as capital. 
-
+>
 >I also do realize but you are oriented to conflict resolution.
-
+>
 >If Luminous is the operating company, that does services, than this would require the setup of a lab facility. I don't have a great sense of how to finance a lab setup. The options are 1) Use the UofC lab (it's probably too small to do this, and keep academic research going) and pay them a small share (1% revenue), 2) setup and equip independent lab 3) setup on AU campus with as yet unknown agreement with AU, but likely favourable and supportive. I would like to chat more about the valuation in the event of "sell the company", and how each company would be valued.
  
 ---
@@ -109,6 +110,7 @@ Possible Answers & Structures:
 > [!note] Jeff note
 > I am in agreement with Shawn having voting control of Lewenza Labs as he is the expertise in research and development. On the commercialization side I want to ensure Greg and I have some control and contribution to ensure the business decisions (what we are good at) are not limiting our ability to meet business objectives.   
 
+> [!note] Shawn Note
 >I don't know that having a board for option 3 is necessary, or at least at this time. Ultimately, I don' t have the skills to make this decision, that's your expertise. If I at least understood it really well, that would help. Option 2 does seem to acknowledge that I have more sweat equity in this company, at this stage, or is this only relating to voting control/governance, not equity?? I don't see how you would be sidelined regarding key decisions with option 2, as I generally would defer to your judgement around business decisions. The exception could be if we somehow find ourselves in a significant disagreement about a key decision. Decision making would be collaborative, even if the voting share is not equal. This may be a naive perspective.
 
 
@@ -149,6 +151,7 @@ Possible Answers & Structures:
 > I agree with Shawn having all of Lewenza Labs and Greg and I being issued options to purchase with a vesting period that requires us to be involved over 12 - 24 months. For Luminous I agree with the 33.33% each. We may want to have another eshare class defined set out to attract other key players to the company. This would be issued at a future stock price different to the founders shares. 
 ---
 
+> [!note] Shawn Note
 >This appears to be about equity, not governance, but this distinction is still unclear to me. This one is hard to answer, as the roles are not exactly clear or justified yet. Option 3 does not capture all the work that I have already done. Option 2 seems closer to what I envision as a starting point, but I don't understand the Con that is listed. What is the value of the IP if the 2nd company has a license to use the IP, performs the services, has the clients, etc??
 
 ---
@@ -184,6 +187,7 @@ Possible Answers & Structures:
 > [!note] Jeff's note
 > My interest is in building the value of both the IP and the commercialization of it. I want all of us participate in building both and be rewarded for both so if there is an option 3 I would like to see Luminous to be the broker and managing licensing of the geographic expansion. 
 
+> [!note] Shawn Note
 >I agree with Jeff in building the value of the IP and commercialization, towards application in other contexts, with other clients. If only 1 company, no licensing between them is necessary, but potentially license to other users. With 2 companies, I think I favour #3, but again, Lewenza Labs would not deliberately license to a third party, if it would jeopardize advantage of Luminous.
 
 
@@ -233,6 +237,7 @@ Why It Matters:
 > I agree that there needs to be value place on Shawn's IP, however valuing it is difficult until we know what its worth and market uptake.  There is no question we need to come up with an amount that is going to get this going. Bootstrapping will be easy but we will need operating capital once things get rolling.  
 >
 
+> [!note] Shawn Note
 >Where future investment is needed, is it going to come from either/all of the founders? I assume it would come from external investors, as we would not have the cash to invest. I think #1 is still reasonable, because the IP valuation would be accounted for elsewhere eg equity shares or voting/governance.
 
 ### Two-Company Structure (e.g., Lewenza Labs for IP, Luminous Bio Solutions for Operations)
@@ -277,6 +282,7 @@ Why It Matters:
 > [!note] Jeff's note
 > I agree with option 1
 
+> [!note] Shawn Note
 >As mentioned above, I won't be personally financing R&D for Lewenza Labs, it will be externally funded as was the biosensor R&D.  Short-term is sell the product we have, long-term is develop new products, seems like we are getting bogged down in fancy future planning. 
 
 ### Key Takeaways
@@ -321,6 +327,7 @@ Possible Answers & Structures:
 > I agree with Greg, however some basic guiding principles, goals and how we are going to meet these goals needs to be agreed upon so we are all singing off the same hymn sheet. 
 > 
 
+> [!note] Shawn Note
 >Option 1
 
 ---
@@ -356,6 +363,7 @@ Possible Answers & Mechanisms:
 > [!note] Jeff's note
 > Agree with option 1 for the first 12 - 18 months. If after that time one partner goes inactive, option 2 or 3 kicks in. 
 
+> [!note] Shawn Note
 >Jeff's proposal seems good. This would be made more clear by including in the agreement a strong future plans, tasks and roles, for all parties, at the onset.
 
 ---
@@ -389,6 +397,7 @@ Possible Answers & Considerations:
 > [!note] Jeff's note
 > I want to know both of your perspectives going in, we may not need an agreement but if this thing starts to kick, or gets too hard but is still viable, what would we want to do? We will be the major shareholders for the foreseeable future so I don't care about minorities yet.   
 
+> [!note] Shawn Note
 >This is not my in my wheelhouse.
 
 
@@ -450,5 +459,6 @@ Whichever path we choose, clarity in legal agreements and alignment on each part
 > [!note] Jeff's note
 > To be honest, I want to start talking to customers, partners, regulators to get a sense of the true market potential and what this looks like. I strongly suggest we keep this as simple as possible. We get and agreement set up in principal, we all sign it and shake hands. Lets start talking to the market see the opportunity, then set a predetermined date to ensure all of this is formalized. 
 
+> [!note] Shawn Note
 >I have the sense as Jeff, keep simple to start, find the potential in a short time frame, than revisit.
 
