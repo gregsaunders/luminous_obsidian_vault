@@ -53,7 +53,10 @@ One-Company Structure
 > 
 > Clarifying comment: I do want to chat about your (Shawn's) interpretation of the context. Jeff and I are "conflict resolution" oriented. We are very much about "wanting in" and finding a path to achieve that. I will restate that I prefer a 1 vs 2 company approach to protect Shawn's IP.
 
+There seems to be some misunderstanding about the R&D aspect of "Lewenza Labs". Research won't likely be done in this entity for some time, but it will be in my academic lab, if grants are obtained, and if the research is successful, it can be patented and commercialized ie bioremedation solution. So "research" will be academic in the near term. Perhaps the company will generate revenue in the future, and then develop research projects for new products, but do I need a company called "lewenza lab" to do that. I also don't know if I personally have to be the holder of the IP, or Luminous is. Or, still not clear that 2 companies is needed to protect IP. I do see "IP" as capital. 
 
+I also do realize but you oriented to conflict resolution.
+ 
 ---
 
 ## 2. Voting Control and Governance
@@ -103,6 +106,8 @@ Possible Answers & Structures:
 
 > [!note] Jeff note
 > I am in agreement with Shawn having voting control of Lewenza Labs as he is the expertise in research and development. On the commercialization side I want to ensure Greg and I have some control and contribution to ensure the business decisions (what we are good at) are not limiting our ability to meet business objectives.   
+
+I don't know that having a board for option 3 is necessary, or at least at this time. Ultimatley, I don' t have the skills to make this d
 
 ---
 
