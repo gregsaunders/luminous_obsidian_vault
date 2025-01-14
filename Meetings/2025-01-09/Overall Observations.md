@@ -22,31 +22,50 @@ Below is a **high-level review** of the notes, the group chat, and the **new con
    - Given that the IP is **not yet** under Shawn’s direct control, forming **Lewenza Labs** can be **phased in** once the transfer is imminent.
 
 4. **Voting Control & Governance**  
-   - The plan is for Shawn to **maintain majority voting** (all voting shares) in Lewenza Labs.  
-   - **Greg** and **Jeff** would hold **non-voting shares** (or options) in Lewenza Labs and equal **voting/equity stakes** in Luminous.  
-   - In Luminous, the group might share voting more equally (e.g., 33.3% each), or Shawn can still have a tiebreaker vote if that’s agreed upon.
+
+• **Lewenza Labs (Future IP Entity)**  
+  - If and when Lewenza Labs is formed (i.e., once the patent is ready for transfer from AU), **Shawn** will initially own **100%** of the shares (including voting rights).  
+  - **Greg** and **Jeff** may be granted **options** to purchase equity in Lewenza Labs at a future date, potentially allowing them to share in any economic upside without affecting Shawn’s voting control.
+
+• **Luminous (Current/Commercial Entity)**  
+  - **Shawn** holds **all voting shares** in Luminous, giving him ultimate decision-making authority on major corporate actions.  
+  - **Greg** and **Jeff** each receive **common, non-voting shares** in Luminous, ensuring they participate equally with Shawn in the **economic value** (dividends, retained earnings, share appreciation) without altering Shawn’s voting control.  
+  - In this scenario, all three parties share **economic benefits** on an equal basis, but Shawn retains a **tiebreaker** or final say in governance matters.
+
+	This approach achieves the following:
+	
+	1. **Protects Shawn’s IP interests** and maintains his ultimate decision-making authority in both entities, which aligns with the role of inventor and primary researcher.  
+	2. **Allows Greg and Jeff** to invest their time, skills, and resources into commercial operations, and still **share in the upside** without threatening Shawn’s voting control.  
+	3. **Keeps governance simple** by separating **voting power** from **economic participation**, which may prove advantageous if disagreements arise or if the company seeks outside investment later.
+
 
 5. **Equity & Share Classes**  
-   - The notion of **equal economic ownership** but **Shawn retaining voting control** is consistent with a **two-class share structure**:  
-     - **Voting shares** (held by Shawn).  
-     - **Non-voting common shares** (held by Greg and Jeff, plus Shawn if he wants an economic share beyond control).  
-   - For Luminous, the typical structure is **1 class of common shares** divided equally among Shawn, Greg, and Jeff.  
-   - This arrangement ensures Shawn’s final say on IP-related decisions, while Greg and Jeff have meaningful involvement in commercialization.
+- **Lewenza Labs (Future IP Entity):**  
+  - Shawn will initially own **100%** of the shares (including all voting rights).  
+  - Greg and Jeff may receive **options** to purchase equity at a later date, allowing them to participate in Lewenza Labs’ economic upside without changing Shawn’s voting majority.
+
+- **Luminous (Commercial Entity):**  
+  - Shawn holds **all voting shares**, thereby retaining final decision-making authority.  
+  - Greg and Jeff each hold **non-voting common shares**, ensuring **equal economic participation** in the company’s value (e.g., dividends, retained earnings, share appreciation).  
+  - While Greg and Jeff do not have voting power in Luminous, they remain actively involved in day-to-day operations and strategic decisions by virtue of their roles (operations, sales/marketing).
+
+This arrangement balances **Shawn’s desire for IP and voting control** with **Greg and Jeff’s interest** in capturing the company’s economic benefits. It also keeps clear lines between **voting shares** (held by Shawn) and **non-voting shares** (held by Jeff and Greg, in equal proportions to voting shares if so desired for economic splitting), aligning with the group’s priorities.
+
 
 6. **Licensing Strategy**  
-   - In the **near term**, Luminous negotiates an **exclusive (or semi-exclusive) license** with AU, letting Luminous proceed to market.  
+   - In the **near term**, Luminous negotiates an **exclusive license** with AU, letting Luminous proceed to market.  
    - In the **longer term**, once the IP is officially transferred from AU to **Lewenza Labs**, Luminous transitions to a **license** or **royalty arrangement** with Lewenza Labs.  
    - This phased approach avoids setting up Lewenza Labs too soon, since **AU** is the current IP owner.
 
 7. **Funding & Capital Contributions**  
-   - Everyone still anticipates a small **initial cash contribution** (e.g., \$5,000 each for Luminous).  
+   - Everyone still anticipates a small **initial cash contribution** (e.g., \$? each for Luminous).  
    - **No large outlay** is expected for R&D since Shawn’s academic lab at AU covers much of the early research cost.  
-   - When Lewenza Labs eventually acquires the patent from AU, the **value** of the IP (and any payment terms) will need to be recognized—possibly offsetting Shawn’s cash contribution.
+   - When Lewenza Labs eventually acquires the patent from AU, the **value** of the IP (and any payment terms) will need to be recognized.
 
 8. **Group Chat Insights**  
    - Shawn finds the overall legal structure **overwhelming** but sees the importance of hashing out details.  
    - Jeff wants to **keep things simple** initially, quickly test market assumptions, and only finalize more complex arrangements once there’s real traction.  
-   - Greg echoes the preference for **two entities** but is open to phased implementation.
+   - Greg echoes the preference for **two entities** but prefers a phased implementation.
 
 ---
 
@@ -54,7 +73,7 @@ Below is a **high-level review** of the notes, the group chat, and the **new con
 
 ### Short Answer: Yes
 
-With the **new AU context**, you still appear to have **sufficient alignment** on these core points:
+We appear to have **sufficient alignment** on these core points:
 
 1. **IP Roadmap**  
    - In the **short term**, Luminous licenses IP directly from AU.  
@@ -65,8 +84,8 @@ With the **new AU context**, you still appear to have **sufficient alignment** o
    - Luminous handles **commercialization**, with Greg, Jeff, and Shawn as **co-owners** (likely 33.3% each) and a **licensing agreement** from Lewenza Labs when the time comes.
 
 3. **Shawn’s Voting Control**  
-   - Shawn will hold **all voting shares** in Lewenza Labs.  
-   - In Luminous, the group can either share equal voting or structure a tiebreaker in Shawn’s favor. But the main goal is for Greg/Jeff to have enough operational say to drive business decisions.
+   - **Lewenza Labs:** Shawn will own all voting shares (initially 100% ownership). Greg and Jeff may later acquire non-voting equity or options without affecting Shawn’s majority vote.  
+   - **Luminous:** Shawn likewise holds all voting shares, retaining final decision-making authority. Greg and Jeff receive non-voting common shares that grant equal economic rights, ensuring they can actively drive business decisions in their operational roles while Shawn retains ultimate voting control.
 
 4. **Initial Funding & Roles**  
    - Each founder contributes **roughly equal startup cash** to Luminous; Shawn’s **academic lab** covers R&D until the IP is formally moved.  
@@ -90,7 +109,7 @@ With the **new AU context**, you still appear to have **sufficient alignment** o
      - Greg & Jeff: non-voting shares or options, if they want economic participation in the IP.  
    - **Luminous** (commercial entity):  
      - Shawn, Greg, Jeff each hold 33.3% (or a similar split).  
-     - Decide how to handle any **special voting** or tiebreaker rights if desired.
+     - Shawn to have a voting share class, Jeff and Greg non-voting.
 
 3. **Establish a “Phase-In” Timeline**  
    - Phase 1: **Luminous + AU License** to test the market and sign initial customers.  
