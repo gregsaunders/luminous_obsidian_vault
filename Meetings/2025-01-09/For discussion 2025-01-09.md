@@ -233,7 +233,7 @@ Why It Matters:
 > I agree that there needs to be value place on Shawn's IP, however valuing it is difficult until we know what its worth and market uptake.  There is no question we need to come up with an amount that is going to get this going. Bootstrapping will be easy but we will need operating capital once things get rolling.  
 >
 
->
+>Where future investment is needed, is it going to come from either/all of the founders? I assume it would come from external investors, as we would not have the cash to invest. I think #1 is still reasonable, because the IP valuation would be accounted for elsewhere eg equity shares or voting/governance.
 ### Two-Company Structure (e.g., Lewenza Labs for IP, Luminous Bio Solutions for Operations)
 
 1. **Initial Cash into Luminous Bio Solutions, Minimal Funding in Lewenza Labs**  
@@ -276,7 +276,7 @@ Why It Matters:
 > [!note] Jeff's note
 > I agree with option 1
 
-
+>As mentioned above, I won't be personally financing R&D for Lewenza Labs, it will be externally funded as was the biosensor R&D.  Short-term is sell the product we have, long-term is develop new products, seems like we are getting bogged down in fancy future planning. 
 ### Key Takeaways
 
 - **Valuing Shawn’s IP** is critical whether you have one or two companies; it’s simpler to skip formal IP valuation at the outset, but that may cause disputes later.  
@@ -319,7 +319,7 @@ Possible Answers & Structures:
 > I agree with Greg, however some basic guiding principles, goals and how we are going to meet these goals needs to be agreed upon so we are all singing off the same hymn sheet. 
 > 
 
-
+>Option 1
 ---
 
 ## 7. Handling Inactive Partners
@@ -353,7 +353,7 @@ Possible Answers & Mechanisms:
 > [!note] Jeff's note
 > Agree with option 1 for the first 12 - 18 months. If after that time one partner goes inactive, option 2 or 3 kicks in. 
 
-
+>Jeff's proposal seems good. This would be made more clear by including in the agreement a strong future plans, tasks and roles, for all parties, at the onset.
 ---
 
 ## 8. Future Growth and Exit Strategies
@@ -385,6 +385,7 @@ Possible Answers & Considerations:
 > [!note] Jeff's note
 > I want to know both of your perspectives going in, we may not need an agreement but if this thing starts to kick, or gets too hard but is still viable, what would we want to do? We will be the major shareholders for the foreseeable future so I don't care about minorities yet.   
 
+>This is not my in my wheelhouse.
 
 
 
@@ -446,3 +447,4 @@ Whichever path we choose, clarity in legal agreements and alignment on each part
 > [!note] Jeff's note
 > To be honest, I want to start talking to customers, partners, regulators to get a sense of the true market potential and what this looks like. I strongly suggest we keep this as simple as possible. We get and agreement set up in principal, we all sign it and shake hands. Lets start talking to the market see the opportunity, then set a predetermined date to ensure all of this is formalized. 
 
+>I have the sense as Jeff, keep simple to start, find the potential in a short time frame, than revisit.
