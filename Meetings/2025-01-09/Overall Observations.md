@@ -45,7 +45,8 @@ This approach achieves the following:
 #### Lewenza Labs (Future IP Entity)
 - Shawn will initially own **100%** of the shares (including all voting rights).  
 - Greg and Jeff may receive **options** to purchase equity at a later date, allowing them to participate in Lewenza Labs' economic upside without changing Shawn's voting majority.
-
+-
+>I don't see what the "Lewenza Labs" economic upside may be?
 #### Luminous (Commercial Entity)
 - Shawn holds **all voting shares**, thereby retaining final decision-making authority.  
 - Greg and Jeff each hold **non-voting common shares**, ensuring **equal economic participation** in the company's value (e.g., dividends, retained earnings, share appreciation).  
