@@ -140,7 +140,7 @@ We appear to have **sufficient alignment** on these core points:
 
 ## 4. Conclusion
 
-Given our discussions, the **new lab services context**, and the desire to keep things **simple** while still protecting Shawn's invention, we appear to have **enough clarity** to:
+Given our discussions, the **lab services context**, and the desire to keep things **simple** while still protecting Shawn's invention, we appear to have **enough clarity** to:
 
 - Draft a **basic founders' agreement** or "agreement in principle" that spells out the **short-term licensing arrangement** with AU, the plan to **form Lewenza Labs** down the road, the **voting/equity** structure in each entity, **and** a lab services agreement with the U of C.  
 - Formally recognize that **Shawn** holds all **voting shares** of Lewenza Labs (once established) and Greg/Jeff may have **non-voting** or **option** shares if they wish to participate economically in the IP.  
