@@ -11,6 +11,8 @@ Below is a **high-level review** of the notes, the group chat, and the context r
 - **Shawn** is the named inventor due to his role as a professor; the research lab remains at AU.  
 - The group envisions **Luminous** initially negotiating a **license** directly with AU, giving Luminous the right to commercialize.
 
+>do you mean the research lab remains at UC?
+>
 ### 1.2 Future Transfer of IP
 - Once the patent is granted (or near granted), **Shawn** could form **Lewenza Labs** and **negotiate a transfer** of the IP from AU to Lewenza Labs.  
 - This means that for a transitional period, the patent **remains at AU** while Luminous commercializes under a **university license**.  
