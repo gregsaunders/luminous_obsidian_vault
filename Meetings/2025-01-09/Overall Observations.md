@@ -11,8 +11,9 @@ Below is a **high-level review** of the notes, the group chat, and the context r
 - **Shawn** is the named inventor due to his role as a professor; the research lab remains at AU.  
 - The group envisions **Luminous** initially negotiating a **license** directly with AU, giving Luminous the right to commercialize.
 
->do you mean the research lab remains at UC?
->
+> [!note] Shawn Note
+> do you mean the research lab remains at UC?
+
 ### 1.2 Future Transfer of IP
 - Once the patent is granted (or near granted), **Shawn** could form **Lewenza Labs** and **negotiate a transfer** of the IP from AU to Lewenza Labs.  
 - This means that for a transitional period, the patent **remains at AU** while Luminous commercializes under a **university license**.  
@@ -45,8 +46,10 @@ This approach achieves the following:
 #### Lewenza Labs (Future IP Entity)
 - Shawn will initially own **100%** of the shares (including all voting rights).  
 - Greg and Jeff may receive **options** to purchase equity at a later date, allowing them to participate in Lewenza Labs' economic upside without changing Shawn's voting majority.
--
+
+> [!note] Shawn Note
 >I don't see what the "Lewenza Labs" economic upside may be?
+
 #### Luminous (Commercial Entity)
 - Shawn holds **all voting shares**, thereby retaining final decision-making authority.  
 - Greg and Jeff each hold **non-voting common shares**, ensuring **equal economic participation** in the company's value (e.g., dividends, retained earnings, share appreciation).  
@@ -74,6 +77,7 @@ This arrangement balances **Shawn's desire for IP and voting control** with **Gr
 - **Early testing and commercial services** for Luminous would be provided by Shawn’s U of C lab, requiring a **lab services agreement** with the U of C (and possibly AU’s sign-off).  
 - In the future, if Luminous (or Lewenza Labs) has the capital to establish its own lab, or if AU prefers relocating services to an AU facility, the lab operations could shift. However, this is seen as a **long-term** possibility.
 
+> [!note] Shawn Note
 >small addition, ass adjunct prof at UC
 >i don't think that the UC lab is a great solution for a medium term, it is small with 2-3 bench spaces for research. If new funds received in April 2025, research will begin on the 'bioremediation' project, which could be a future service of luminous. 
 >UC could work for 1 or 2 years, depending on how much testing is being done.
@@ -95,7 +99,9 @@ We appear to have **sufficient alignment** on these core points:
 - Lewenza Labs eventually becomes the **IP holder** once AU transfers the patent.  
 - Luminous handles **commercialization**, with Greg, Jeff, and Shawn as **co-owners** (though Shawn holds voting shares) and a **licensing agreement** from Lewenza Labs when the time comes.
 
+> [!note] Shawn Note
 >If I'm honest, I am still unsure about being equal and shared co-owners at the start. I think phasing in an increased sharing over the course of 1 year, towards equal ownership, might be more appropriate. I am seeking some external consulting regarding this agreement, as I simply don't have this perspective or experience. 
+
 ### 2.3 Shawn's Voting Control
 - **Lewenza Labs:** Shawn will own all voting shares (initially 100% ownership). Greg and Jeff may later acquire non-voting equity or options without affecting Shawn's majority vote.  
 - **Luminous:** Shawn likewise holds all voting shares, retaining final decision-making authority. Greg and Jeff receive non-voting common shares that grant equal economic rights, ensuring they can actively drive business decisions in their operational roles while Shawn retains ultimate voting control.
@@ -104,6 +110,7 @@ We appear to have **sufficient alignment** on these core points:
 - Each founder contributes **roughly equal startup cash** to Luminous; Shawn's **academic lab** covers R&D until the IP is formally moved.  
 - **No immediate** large personal R&D investment needed from Shawn, Greg, or Jeff.
 
+> [!note] Shawn Note
 >My lab is currently supporting the R&D needed to solve the process of testing raw OSPW/tailings ponds water. We are in the final stages of having an efficient process to concentrate NA and test with bacterial biosensors.
 
 ### 2.5 Keeping It Simple at First
