@@ -1,4 +1,4 @@
-====# What is the goal of the Business?
+# What is the goal of the Business?
 
 ### What are the necessary conditions? 
 
