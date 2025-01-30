@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Untitled",
+      "path": "Journal/Greg/Untitled.md"
+    },
+    {
       "basename": "Overall Observations",
       "path": "Meetings/2025-01-09/Overall Observations.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Industry and Regulatory Partners",
       "path": "Business Development/Industry and Regulatory Partners/Industry and Regulatory Partners.md"
-    },
-    {
-      "basename": "Domains",
-      "path": "Infrastructure/Domains.md"
     }
   ],
   "omittedPaths": [],
