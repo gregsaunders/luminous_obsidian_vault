@@ -1,12 +1,16 @@
 {
   "recentFiles": [
     {
-      "basename": "2025-01-30a Agreement in principle v1 notes",
-      "path": "Journal/Greg/2025-01-30a Agreement in principle v1 notes.md"
+      "basename": "2025-01-30a Agreement in principle v1",
+      "path": "Agreements/2025-01-30a Agreement in principle v1.pdf"
     },
     {
       "basename": "2025-01-30a Agreement in principle v1",
       "path": "Journal/Greg/2025-01-30a Agreement in principle v1.md"
+    },
+    {
+      "basename": "2025-01-30a Agreement in principle v1 notes",
+      "path": "Journal/Greg/2025-01-30a Agreement in principle v1 notes.md"
     },
     {
       "basename": "Overall Observations",
@@ -195,10 +199,6 @@
     {
       "basename": "Industry Research Grants",
       "path": "Business Development/Revenue Streams/Industry Research Grants.md"
-    },
-    {
-      "basename": "Grants",
-      "path": "Business Development/Revenue Streams/Grants.md"
     }
   ],
   "omittedPaths": [],
