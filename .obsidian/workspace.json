@@ -11,12 +11,14 @@
             "id": "0970d4fd715a93dd",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Agreements/2025-01-30a Agreement in principle v1.pdf"
+                "file": "Market Research/Shawn_Lewenza_Report.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "2025-01-30a Agreement in principle v1"
+              "icon": "lucide-file",
+              "title": "Shawn_Lewenza_Report"
             }
           }
         ]
@@ -205,14 +207,16 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "588cb12a155ad9aa",
+  "active": "0970d4fd715a93dd",
   "lastOpenFiles": [
-    "Market Research/Luminous BioSolutions_Market Sizing Model.xlsx",
+    "Market Research/~$Luminous BioSolutions_Market Sizing Model.xlsx",
     "Market Research/Shawn Lewenza Report - Edmonton Unlimited.pptx.pdf",
+    "Market Research/Shawn_Lewenza_Report.md",
+    "Agreements/2025-01-30a Agreement in principle v1.pdf",
+    "Market Research/Luminous BioSolutions_Market Sizing Model.xlsx",
     "Market Research",
     "Journal/Greg/2025-01-30a Agreement in principle v1.md",
     "Agreements",
-    "Agreements/2025-01-30a Agreement in principle v1.pdf",
     "Journal/Greg/2025-01-30a Agreement in principle v1 notes.md",
     "Meetings/2025-01-09/Overall Observations.md",
     "Meetings/2025-01-09/For discussion 2025-01-09.md",
@@ -233,7 +237,6 @@
     "Meetings/2024-12-30/AI summary.md",
     "Meetings/2025-01-06/Jeff_Greg_Shawn_sync.md",
     "Business Development/Market Research/2024-11-12 NA Testing_Scientific Endeavours Reporting.pdf",
-    "Business Development/Market Research/2024-11-12 NA Testing.pdf",
     "Meetings/2025-01-06/Jeff, Greg, Shawn, sync.md",
     "Meetings/2024-12-30/Jeff, Greg, Shawn, sync.md",
     "Meetings/2024-12-18/Jeff _ Greg _ Shawn sync.md",
@@ -252,7 +255,6 @@
     "Meetings/2024-12-18/Jeff _ Greg _ Shawn sync.fld/image006.jpg",
     "Meetings/2024-12-18/Jeff _ Greg _ Shawn sync.fld/image005.png",
     "Meetings/2024-12-18/Jeff _ Greg _ Shawn sync.fld/image004.jpg",
-    "Meetings/2024-12-18/Jeff _ Greg _ Shawn sync.fld/image003.png",
-    "Discussions/Corporate structure - one company or two.md"
+    "Meetings/2024-12-18/Jeff _ Greg _ Shawn sync.fld/image003.png"
   ]
 }
