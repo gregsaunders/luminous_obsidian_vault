@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "Broader opportunities",
+      "path": "Market Research/Broader opportunities.md"
+    },
+    {
+      "basename": "Broader opportunities - PFAS",
+      "path": "Market Research/Broader opportunities - PFAS.md"
+    },
+    {
       "basename": "Shawn_Lewenza_Report",
       "path": "Market Research/Shawn_Lewenza_Report.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "1. Why Do Constraints Matter?",
       "path": "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/1. Why Do Constraints Matter?.md"
-    },
-    {
-      "basename": "12. Getting Started with TOC",
-      "path": "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/12. Getting Started with TOC.md"
-    },
-    {
-      "basename": "index",
-      "path": "Discussions/index.md"
     }
   ],
   "omittedPaths": [],
