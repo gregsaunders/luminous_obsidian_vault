@@ -18,7 +18,7 @@ There are multiple strategies—each with pros and cons.
 
 ### 2.1 Enzymatic Biosensors
 
-Principle: Certain enzymes are inhibited or activated by specific metals (e.g., urease, acetylcholinesterase). When the metal binds to or otherwise alters enzyme activity, the biosensor measures that change (often via color change, fluorescence, or electrochemical signal).
+Principle: Certain enzymes are inhibited or activated by specific metals (e.g., urease, acetylcholinesterase). When the metal binds to or otherwise alters enzyme activity, the biosensor measures that change (often via colour change, fluorescence, or electrochemical signal).
 
 Examples: Lead can inhibit enzymes related to neurotransmission or metabolic pathways, giving a measurable decrease in enzyme output.
 
@@ -40,7 +40,7 @@ Challenges: Creating robust aptamers that work well in complex water matrices. S
 
 ### 2.4 Nanoparticle Biosensors
 
-Principle: Gold/silver or carbon-based nanoparticles functionalized with biomolecules that selectively bind metals, causing color shifts or changes in electrical properties.
+Principle: Gold/silver or carbon-based nanoparticles functionalized with biomolecules that selectively bind metals, causing colour shifts or changes in electrical properties.
 
 Advantages: Often highly sensitive (parts-per-billion or lower), can be designed for visual readout.
 
@@ -50,7 +50,7 @@ Challenges: Batch-to-batch reproducibility, nanoparticle stability, ensuring no 
 
 Lab Validation: Many published papers demonstrate functional prototypes for lead, arsenic, and mercury detection using enzymes, aptamers, or microbial whole-cell platforms.
 
-Commercial Examples (Early-Stage): A few companies and labs offer field kits (often colorimetric or immuno-based), but many remain early-stage or specialized to specific use cases (e.g., lead in paint chips, arsenic in groundwater).
+Commercial Examples (Early-Stage): A few companies and labs offer field kits (often colourimetric or immuno-based), but many remain early-stage or specialized to specific use cases (e.g., lead in paint chips, arsenic in groundwater).
 
 Challenges: Achieving both ultra-low detection limits (necessary for many drinking water standards) and reliable performance in real-world conditions (pH, temperature variability, high salinity, presence of other interfering metals).
 
