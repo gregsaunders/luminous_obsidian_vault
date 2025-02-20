@@ -72,6 +72,12 @@
 10. Ian Gates UofC
 	https://www.linkedin.com/in/ian-gates-phd-peng-fcae-84722634/
 	ian.gates@ucalgary.ca
+	I joined the Department of Chemical and Petroleum Engineering at the University of Calgary in 2004. I am a registered professional engineer in the Province of Alberta and have been a consultant for many small and large energy companies.  
+  
+	My current research interests are in energy and material science, in particular, hydrogen, heavy oil, and natural gas.  
+  
+	Please go to my webpage for more information, list of publications, and patents:  
+https://profiles.ucalgary.ca/ian-d-gates
 
 
 11. Grace Meikle - Emmissions Reduction Alberta
