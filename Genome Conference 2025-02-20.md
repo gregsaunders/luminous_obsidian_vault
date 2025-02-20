@@ -59,10 +59,14 @@
 
 8. **Lisa Stein** - UofA
 	https://www.linkedin.com/in/lisa-y-stein-b4b06613/
+	Our research team between the faculties of Science and Engineering are building genome-scale metabolic models for methane-consuming microorganisms and N-cycle lithotrophs. These models will enable us to generate better genome annotations, predict metabolic fluxes, and develop novel hypotheses regarding microbial regulation of biogeochemical cycles. Our primary goal is to integrate evolutionary, functional, and regulatory information of genes/enzymes involved in nitrogen, carbon, and other biogeochemical cycles to inform studies on natural and engineered ecosystems and to gate carbon into value-added products. This work is particularly important for deciphering meta'omic data that relies on proper database annotation and true-to-life context of gene/enzyme functions.  
+  
+	Specialties: microbial physiology; molecular biology; functional genomics; nitrogen cycle; nitrogen oxide metabolism; methanotrophy; single-carbon metabolism; methane bioconversion
 
-
-9. **John McDougall** - SynBioBlox
+9. **John McDougall** - SynBioBlox - https://www.synbioblox.com/ 
 	https://www.linkedin.com/in/john-mcdougall-049280124/
+	To improve Canadian performance in industrial innovation through leading, advising, evaluating and assisting companies and organizations.
+	Applying synthetic biology to the development of biological products based on GHG inputs
 
 
 10. Ian Gates UofC
