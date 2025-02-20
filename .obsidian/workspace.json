@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Journal/Greg/2025-02-11a.md",
+                "file": "Meetings/2025-02-20 Ty/AI summary.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-02-11a"
+              "title": "AI summary"
             }
           }
         ]
@@ -210,6 +210,10 @@
   },
   "active": "3dc5fbeb417517b2",
   "lastOpenFiles": [
+    "Meetings/2025-02-20 Ty/Raw text.md",
+    "Meetings/2025-02-20 Ty/AI summary.md",
+    "Journal/Greg/2025-02-11a.md",
+    "Meetings/2025-02-20 Ty",
     "attachments/Pasted image 20250220104622.png",
     "attachments",
     "Genome Conference 2025-02-20.md",
@@ -218,7 +222,6 @@
     "Agreements/2025-01-30a Agreement in principle v1 (in-progress) (signed).pdf",
     "Agreements/2025-01-30a Agreement in principle v1 (signed).pdf",
     "Journal/Shawn/2024-12-16.md",
-    "Journal/Greg/2025-02-11a.md",
     "Journal/Shawn/2024-12-18.md",
     "Journal/Shawn/2024-11-27.md",
     "Agreements/2025-01-30a Agreement in principle v1.pdf",
@@ -231,7 +234,6 @@
     "Market Research/Luminous BioSolutions_Market Sizing Model.xlsx",
     "Market Research",
     "Journal/Greg/2025-01-30a Agreement in principle v1.md",
-    "Agreements",
     "Journal/Greg/2025-01-30a Agreement in principle v1 notes.md",
     "Meetings/2025-01-09/Overall Observations.md",
     "Meetings/2025-01-09/For discussion 2025-01-09.md",
@@ -248,14 +250,12 @@
     "Meetings/2024-12-30/AI summary.md",
     "Meetings/2025-01-06/Jeff_Greg_Shawn_sync.md",
     "Meetings/2025-01-06/Jeff, Greg, Shawn, sync.md",
-    "Meetings/2024-12-30/Jeff, Greg, Shawn, sync.md",
     "venv/lib/python3.11/site-packages/docx/templates/default-docx-template/docProps/thumbnail.jpeg",
     "venv/docx-template/docProps/thumbnail.jpeg",
     "Meetings/2024-12-18/Jeff _ Greg _ Shawn sync.fld/image008.jpg",
     "Meetings/2024-12-18/Jeff _ Greg _ Shawn sync.fld/image007.png",
     "Meetings/2024-12-18/Jeff _ Greg _ Shawn sync.fld/image006.jpg",
     "Meetings/2024-12-18/Jeff _ Greg _ Shawn sync.fld/image005.png",
-    "Meetings/2024-12-18/Jeff _ Greg _ Shawn sync.fld/image004.jpg",
-    "Meetings/2024-12-18/Jeff _ Greg _ Shawn sync.fld/image003.png"
+    "Meetings/2024-12-18/Jeff _ Greg _ Shawn sync.fld/image004.jpg"
   ]
 }

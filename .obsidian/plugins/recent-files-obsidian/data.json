@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "AI summary",
+      "path": "Meetings/2025-02-20 Ty/AI summary.md"
+    },
+    {
+      "basename": "Raw text",
+      "path": "Meetings/2025-02-20 Ty/Raw text.md"
+    },
+    {
       "basename": "2025-02-11a",
       "path": "Journal/Greg/2025-02-11a.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "8. What is the Theory of Constraints",
       "path": "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/8. What is the Theory of Constraints.md"
-    },
-    {
-      "basename": "7. What is the Goal",
-      "path": "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/7. What is the Goal.md"
-    },
-    {
-      "basename": "6. How to Manage the Constraint?",
-      "path": "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/6. How to Manage the Constraint?.md"
     }
   ],
   "omittedPaths": [],
