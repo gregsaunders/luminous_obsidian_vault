@@ -76,3 +76,5 @@
 12. Soheil Asgarpour -  
 	 https://www.linkedin.com/in/soheil-asgarpour-45507517/
 	 Council of Canadian Academies
+
+![[attachments/Pasted image 20250220104622.png]]
