@@ -1,38 +1,65 @@
 ### Participants 
 
-1. Jayne Rattray - CNRL 
+1. **Jayne Rattray** - CNRL 
 	https://www.linkedin.com/in/jayne-rattray-12a1336/
 	jayne.rattray@cnrl.com
+	About - I have +20 years experience in organic geochemistry and molecular separation techniques. My specialisation is developing and applying novel analytical techniques for detecting microorganisms in aquatic and geological systems. I enjoy integrating large data sets to help improve understanding of Earths deep biosphere.
 
-2. Mark Summers - Alberta Innovates
+2. **Mark Summers** - Alberta Innovates
 	https://www.linkedin.com/in/m-summers/
 	mark.summers@albertainnovates.ca
 	+1 780-423-5727
 
-3. Carolina Berdugo - Imperial 
+3. **Carolina Berdugo** - Imperial  COSIA 
 	https://www.linkedin.com/in/carolina-berdugo-clavijo-80306353/
-	
-4. Lisa Gieg - UofC
+	At my current job I look for opportunities to improve industry's environmental performance, supporting and developing research programs related to water treatment, land reclamation and restoration and environmental monitoring, and by establishing collaborations with researchers in academia, government and private sectors to answer industry's knowledge gaps and support environmental compliance of the industry.  
+  
+	Other experiences include: eDNA, data analysis, microbiology, methanogenesis, environmental education, and bioremediation.
+
+4. **Lisa Gieg** - UofC
 	 https://www.linkedin.com/in/lisa-gieg-5a076124/
 	 lmgieg@ucalgary.ca
+	 Environmental Microbiology, Petroleum Microbiology, Anaerobic Hydrocarbon Metabolism, Biodegradation, Bioremediation, Enhanced Energy Recovery, Sulfate Reduction, Methanogenesis
 
-5. Gabrielle Scheffer - Genome Alberta
+	In the Gieg laboratory, we aim to understand how anaerobic microorganisms metabolize a variety of compounds associated with the energy industry (mainly hydrocarbons) that have either been accidentally released into the environment or are present in natural reservoirs.  Recent studies have shown that anaerobic microorganisms use metabolic strategies distinct from those of aerobes in order to biodegrade hydrocarbons, such as activation by fumarate addition, carboxylation, hydroxylation, and methylation.  Overall, anaerobic hydrocarbon metabolism is poorly understood.  
+
+	Using combined tools of cultivation, analytical chemistry, and molecular biology, we seek to: 
+
+	1. elucidate novel anaerobic biodegradation pathways of different classes of hydrocarbons and related compounds under highly reduced conditions (e.g., sulfate-reducing and methanogenic conditions)  
+	2. understand the associated biochemical and enzymatic mechanisms 
+	3. identify and isolate key consortia and species involved 
+	4. investigate the ecological constraints on anaerobic hydrocarbon metabolism
+
+	In determining the fundamental science underlying anaerobic hydrocarbon biodegradation, we can begin to formulate universal themes of metabolism and apply what we learn to important environmental problems or energy-related systems such as:
+
+	- Anaerobic bioremediation at fuel-contaminated sites
+	- Enhanced energy recovery via the bioconversion of oil to methane in marginal oilfields
+	- Biocorrosion
+	- Paraffin biotreatment or prevention
+	- Heavy oil formation and recovery via microbial activity
+	- Oil sands tailings ponds reclamation
+	- Oil and gas souring
+
+5. **Gabrielle Scheffer** - Genome Alberta
 	https://www.linkedin.com/in/gabrielle-scheffer-msc-phd-38105b120/
 	gscheffer@genomealberta.ca
 
-6. Gijs va Rooijen - Genome Alberta
+6. **Gijs va Rooijen** - Genome Alberta
 	https://www.linkedin.com/in/gijs-van-rooijen/
 	vanrooijen@genomealberta.ca
 
-7. Beth Richardson - MRU
+7. **Beth Richardson** - MRU
+	https://www.mtroyal.ca/ProgramsCourses/FacultiesSchoolsCentres/ScienceTechnology/Departments/Biology/Faculty/Beth-Richardson.htm
 
+	Beth Richardson is a microbial ecologist and environmental DNA specialist, who uses DNA extracted from soil, sediment and water to examine the microbiome of her study sites. Most of her work focuses on landscapes undergoing reclamation in the Athabasca Oil Sands Region, though she has also worked on samples from environments as diverse as sea ice in the Arctic,the sunlit ocean, and municipal recreation sites. Though her work has applications in public and environmental health, her favourite aspect of her research is studying the evolution of microbes in the ecological niche they have chosen to call home. By examining the biology of single-celled organisms in complex and often challenging environments, Beth aims to discover the genomic adaptations that allow them to survive and thrive, and how these traits are shared across other microbes in the same community.
 
+	She did postdoctoral work at the University of Alberta in the School of Public Health, continuing her research on microbial communities in the Athabasca Oil Sands. She began her current position as an Assistant Professor in Cell Biology and Genetics at Mount Royal University in 2022.
 
-8. Lisa Stein - UofA
+8. **Lisa Stein** - UofA
 	https://www.linkedin.com/in/lisa-y-stein-b4b06613/
 
 
-9. John McDougall - SynBioBlox
+9. **John McDougall** - SynBioBlox
 	https://www.linkedin.com/in/john-mcdougall-049280124/
 
 
