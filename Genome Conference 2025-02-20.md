@@ -43,10 +43,12 @@
 5. **Gabrielle Scheffer** - Genome Alberta
 	https://www.linkedin.com/in/gabrielle-scheffer-msc-phd-38105b120/
 	gscheffer@genomealberta.ca
+	Gabrielle is an ambitious and energetic individual. She obtained her BSc in Molecular Microbiology from the University of Sherbrooke and her MSc and PhD in Environmental Microbiology and Geomicrobiology from the University of Calgary. Prior to joining Genome Alberta, she started her own business to apply genomics in the energy sector and drive innovation in the province. Outside of work, Gabrielle enjoys hiking in the beautiful Rockies and spending time with her pets and a good book.
 
 6. **Gijs va Rooijen** - Genome Alberta
 	https://www.linkedin.com/in/gijs-van-rooijen/
 	vanrooijen@genomealberta.ca
+	Gijs obtained a Ph.D. degree from the University of Calgary in 1993 and in 2006 he became the inaugural Chief Scientific Officer for Genome Alberta. He is an inventor on several U.S. patents and currently serves on several science advisory boards. In September 2017, he was elected to the University of Calgary Senate and is engaged in several volunteer activities, including mentoring students that are considering a career in science. In his spare time, he enjoys hiking and traveling across Europe.
 
 7. **Beth Richardson** - MRU
 	https://www.mtroyal.ca/ProgramsCourses/FacultiesSchoolsCentres/ScienceTechnology/Departments/Biology/Faculty/Beth-Richardson.htm
