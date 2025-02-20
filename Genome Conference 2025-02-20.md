@@ -89,6 +89,15 @@ https://profiles.ucalgary.ca/ian-d-gates
 	 https://www.linkedin.com/in/soheil-asgarpour-45507517/
 	 Council of Canadian Academies
 
+13. Allan Fogwill 
+	https://www.linkedin.com/in/allanfogwill/
+	afogwill@ptac.org
+	https://ptac.org/
+
+	A results-oriented energy sector executive with over 35 years’ experience with government agencies and private sector companies. Proven expertise in four core areas: energy industry market/technology analysis, leadership and management, business and utility planning, and energy policy and regulations.
+	
+
+
 ![[attachments/Pasted image 20250220104622.png]]
 
 
