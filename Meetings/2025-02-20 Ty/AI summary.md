@@ -35,6 +35,8 @@ The discussion highlighted strong potential interest from industry in this techn
 
 ---
 
+## Second summary
+
 I'll provide a comprehensive summary of this conversation about naphthenic acids (NA) monitoring and testing technology in the oil sands industry.
 
 Key Points:
