@@ -77,10 +77,10 @@
 	My current research interests are in energy and material science, in particular, hydrogen, heavy oil, and natural gas.  
   
 	Please go to my webpage for more information, list of publications, and patents:  
-https://profiles.ucalgary.ca/ian-d-gates
+	https://profiles.ucalgary.ca/ian-d-gates
 
 
-11. Grace Meikle - Emmissions Reduction Alberta
+1. Grace Meikle - Emissions Reduction Alberta
 	https://www.linkedin.com/in/gracekmeikle/
 	gmeikle@eralberta.ca
 	I'm a technology expert with more than a decade of experience scaling up clean energy innovation. I have worked in diverse roles ranging from field work at oil rigs and nuclear labs, to business development, and project management, with a focus on delivering new technologies to market. I'm a strong writer, communicator, and relationship manager. My experience in Alberta's cleantech sector is focused on hydrogen, CCUS, nuclear energy, and overall industrial transformation. Previously, I have lived and worked overseas in Japan, India, and China, and have language skills in Chinese, Spanish, and Japanese.
