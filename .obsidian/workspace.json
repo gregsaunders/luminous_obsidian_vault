@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Meetings/2025-02-20 Ty/AI summary.md",
+                "file": "Journal/Greg/2025-02-21a.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AI summary"
+              "title": "2025-02-21a"
             }
           }
         ]
@@ -210,8 +210,12 @@
   },
   "active": "3dc5fbeb417517b2",
   "lastOpenFiles": [
-    "Meetings/2025-02-20 Ty/Raw text.md",
+    "Journal/Greg/History of Microbial Genomics.pdf",
+    "Journal/Greg/~$story of Microbial Genomics.docx",
+    "Journal/Greg/History of Microbial Genomics.docx",
     "Meetings/2025-02-20 Ty/AI summary.md",
+    "Journal/Greg/2025-02-21a.md",
+    "Meetings/2025-02-20 Ty/Raw text.md",
     "Journal/Greg/2025-02-11a.md",
     "Meetings/2025-02-20 Ty",
     "attachments/Pasted image 20250220104622.png",
@@ -231,8 +235,6 @@
     "Market Research/Shawn_Lewenza_Report.md",
     "Market Research/~$Luminous BioSolutions_Market Sizing Model.xlsx",
     "Market Research/Shawn Lewenza Report - Edmonton Unlimited.pptx.pdf",
-    "Market Research/Luminous BioSolutions_Market Sizing Model.xlsx",
-    "Market Research",
     "Journal/Greg/2025-01-30a Agreement in principle v1.md",
     "Journal/Greg/2025-01-30a Agreement in principle v1 notes.md",
     "Meetings/2025-01-09/Overall Observations.md",
@@ -248,8 +250,6 @@
     "Journal/Greg/2025-01/Corporate structure 1.md",
     "Meetings/2025-01-06/AI summary.md",
     "Meetings/2024-12-30/AI summary.md",
-    "Meetings/2025-01-06/Jeff_Greg_Shawn_sync.md",
-    "Meetings/2025-01-06/Jeff, Greg, Shawn, sync.md",
     "venv/lib/python3.11/site-packages/docx/templates/default-docx-template/docProps/thumbnail.jpeg",
     "venv/docx-template/docProps/thumbnail.jpeg",
     "Meetings/2024-12-18/Jeff _ Greg _ Shawn sync.fld/image008.jpg",
