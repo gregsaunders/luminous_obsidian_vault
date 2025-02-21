@@ -85,22 +85,29 @@
 	gmeikle@eralberta.ca
 	I'm a technology expert with more than a decade of experience scaling up clean energy innovation. I have worked in diverse roles ranging from field work at oil rigs and nuclear labs, to business development, and project management, with a focus on delivering new technologies to market. I'm a strong writer, communicator, and relationship manager. My experience in Alberta's cleantech sector is focused on hydrogen, CCUS, nuclear energy, and overall industrial transformation. Previously, I have lived and worked overseas in Japan, India, and China, and have language skills in Chinese, Spanish, and Japanese.
 
-12. Soheil Asgarpour -  
+12. **Soheil Asgarpour** -  
 	 https://www.linkedin.com/in/soheil-asgarpour-45507517/
 	 Council of Canadian Academies
 
-13. Allan Fogwill 
+13. **Allan Fogwill** 
 	https://www.linkedin.com/in/allanfogwill/
 	afogwill@ptac.org
 	https://ptac.org/
 
 	A results-oriented energy sector executive with over 35 years’ experience with government agencies and private sector companies. Proven expertise in four core areas: energy industry market/technology analysis, leadership and management, business and utility planning, and energy policy and regulations.
 	
-14. Tyler Veness - Pathways Alliance
-15. tyler.veness@pathwaysalliance.ca
-16. https://www.linkedin.com/in/ty-veness-698778b8/
-17. https://pathwaysalliance.ca/
+14. **Tyler Veness** - Pathways Alliance
+	tyler.veness@pathwaysalliance.ca
+	https://www.linkedin.com/in/ty-veness-698778b8/
+	https://pathwaysalliance.ca/
 
+	I work with Pathways Alliance (COSIA) as Director of Environmental Monitoring. I am formally trained in water sciences, and have spent my adult life working in the Arctic, British Columbia, and Alberta.  
+  
+	I am passionate about environmental accountability and sustainability. Within my role, I support multistakeholder engagement in development and refinement of robust environmental monitoring initiatives within Alberta’s Oil Sands Region. I work within the realm of governance and policy in support of effective monitoring outcomes that inform regulatory and management decisions toward environmental accountability.  
+  
+	In my down time I am a distance trail runner, back country skier, and avid cyclist. I love spending time with my dogs in the mountains.  
+  
+	I am a commercially licensed sea captain and am currently bumbling my way through learning Gaelic.
 
 
 ![[attachments/Pasted image 20250220104622.png]]
