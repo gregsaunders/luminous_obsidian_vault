@@ -96,6 +96,11 @@ https://profiles.ucalgary.ca/ian-d-gates
 
 	A results-oriented energy sector executive with over 35 years’ experience with government agencies and private sector companies. Proven expertise in four core areas: energy industry market/technology analysis, leadership and management, business and utility planning, and energy policy and regulations.
 	
+14. Tyler Veness - Pathways Alliance
+15. tyler.veness@pathwaysalliance.ca
+16. https://www.linkedin.com/in/ty-veness-698778b8/
+17. https://pathwaysalliance.ca/
+
 
 
 ![[attachments/Pasted image 20250220104622.png]]
