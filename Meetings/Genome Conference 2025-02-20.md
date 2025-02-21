@@ -69,7 +69,7 @@
 	Applying synthetic biology to the development of biological products based on GHG inputs
 
 
-10. Ian Gates UofC
+10. **Ian Gates** UofC
 	https://www.linkedin.com/in/ian-gates-phd-peng-fcae-84722634/
 	ian.gates@ucalgary.ca
 	I joined the Department of Chemical and Petroleum Engineering at the University of Calgary in 2004. I am a registered professional engineer in the Province of Alberta and have been a consultant for many small and large energy companies.  
@@ -80,7 +80,7 @@
 	https://profiles.ucalgary.ca/ian-d-gates
 
 
-1. Grace Meikle - Emissions Reduction Alberta
+11. **Grace Meikle** - Emissions Reduction Alberta
 	https://www.linkedin.com/in/gracekmeikle/
 	gmeikle@eralberta.ca
 	I'm a technology expert with more than a decade of experience scaling up clean energy innovation. I have worked in diverse roles ranging from field work at oil rigs and nuclear labs, to business development, and project management, with a focus on delivering new technologies to market. I'm a strong writer, communicator, and relationship manager. My experience in Alberta's cleantech sector is focused on hydrogen, CCUS, nuclear energy, and overall industrial transformation. Previously, I have lived and worked overseas in Japan, India, and China, and have language skills in Chinese, Spanish, and Japanese.
