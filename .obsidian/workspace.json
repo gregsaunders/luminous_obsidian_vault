@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "1d030b34cf01b5e8",
+        "id": "671d5fe5508cd881",
         "type": "tabs",
         "children": [
           {
-            "id": "3dc5fbeb417517b2",
+            "id": "852f67d78e71e9c5",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Meetings/Genome Conference 2025-02-20.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Genome Conference 2025-02-20"
+              "title": "New tab"
             }
           }
         ]
@@ -208,10 +204,11 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "3dc5fbeb417517b2",
+  "active": "852f67d78e71e9c5",
   "lastOpenFiles": [
+    "Meetings/2025-02-20 Genome Conference/Genome Conference 2025-02-20.md",
+    "Meetings/2025-02-20 Genome Conference",
     "Journal/Greg/2025-02-21a.md",
-    "Meetings/Genome Conference 2025-02-20.md",
     "Journal/Greg/Summary of the History of Microbial Genomics - Grok 2.pdf",
     "Journal/Greg/~$mmary of the History of Microbial Genomics - Grok 2.docx",
     "Journal/Greg/Summary of the History of Microbial Genomics - Grok 2.docx",
@@ -224,7 +221,6 @@
     "Meetings/2025-02-20 Ty/AI summary.md",
     "Meetings/2025-02-20 Ty/Raw text.md",
     "Journal/Greg/2025-02-11a.md",
-    "Meetings/2025-02-20 Ty",
     "attachments/Pasted image 20250220104622.png",
     "Genome Conference 2025-02-20.md",
     "2025-02-20.md",
@@ -249,7 +245,6 @@
     "2025-01-13.md",
     "Journal/Greg/2025-01/Corporate structure 1.md",
     "Meetings/2025-01-06/AI summary.md",
-    "Meetings/2024-12-30/AI summary.md",
     "venv/lib/python3.11/site-packages/docx/templates/default-docx-template/docProps/thumbnail.jpeg",
     "venv/docx-template/docProps/thumbnail.jpeg",
     "Meetings/2024-12-18/Jeff _ Greg _ Shawn sync.fld/image008.jpg",
