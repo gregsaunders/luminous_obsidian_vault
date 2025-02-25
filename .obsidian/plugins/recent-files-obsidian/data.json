@@ -1,28 +1,44 @@
 {
   "recentFiles": [
     {
-      "basename": "Genome Conference 2025-02-20",
-      "path": "Meetings/Genome Conference 2025-02-20.md"
+      "basename": "For discussion 2025-01-09",
+      "path": "Meetings/2025-01-09/For discussion 2025-01-09.md"
     },
     {
-      "basename": "2025-02-21a",
-      "path": "Journal/Greg/2025-02-21a.md"
+      "basename": "2025-01-30a Agreement in principle v1",
+      "path": "Journal/Greg/2025-01-30a Agreement in principle v1.md"
     },
     {
-      "basename": "Untitled",
-      "path": "Journal/Greg/Untitled.md"
+      "basename": "2025-01-30a Agreement in principle v1 notes",
+      "path": "Journal/Greg/2025-01-30a Agreement in principle v1 notes.md"
     },
     {
       "basename": "AI summary",
       "path": "Meetings/2025-02-20 Ty/AI summary.md"
     },
     {
-      "basename": "Raw text",
-      "path": "Meetings/2025-02-20 Ty/Raw text.md"
-    },
-    {
       "basename": "2025-02-11a",
       "path": "Journal/Greg/2025-02-11a.md"
+    },
+    {
+      "basename": "2025-02-21a",
+      "path": "Journal/Greg/2025-02-21a.md"
+    },
+    {
+      "basename": "Tasks",
+      "path": "Journal/Greg/Tasks.md"
+    },
+    {
+      "basename": "Genome Conference 2025-02-20",
+      "path": "Meetings/2025-02-20 Genome Conference/Genome Conference 2025-02-20.md"
+    },
+    {
+      "basename": "Untitled",
+      "path": "Journal/Greg/Untitled.md"
+    },
+    {
+      "basename": "Raw text",
+      "path": "Meetings/2025-02-20 Ty/Raw text.md"
     },
     {
       "basename": "2024-12-16",
@@ -61,20 +77,8 @@
       "path": "Market Research/Shawn Lewenza Report - Edmonton Unlimited.pptx.pdf"
     },
     {
-      "basename": "2025-01-30a Agreement in principle v1",
-      "path": "Journal/Greg/2025-01-30a Agreement in principle v1.md"
-    },
-    {
-      "basename": "2025-01-30a Agreement in principle v1 notes",
-      "path": "Journal/Greg/2025-01-30a Agreement in principle v1 notes.md"
-    },
-    {
       "basename": "Overall Observations",
       "path": "Meetings/2025-01-09/Overall Observations.md"
-    },
-    {
-      "basename": "For discussion 2025-01-09",
-      "path": "Meetings/2025-01-09/For discussion 2025-01-09.md"
     },
     {
       "basename": "Jeffs Thoughts 2025-01-13",
@@ -195,10 +199,6 @@
     {
       "basename": "11. Prerequisite Tree (PRT)",
       "path": "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/11. Prerequisite Tree (PRT).md"
-    },
-    {
-      "basename": "10. The Five Focusing Steps (POOGI)",
-      "path": "Journal/Jeff/01 Business stuff/Jeff's Learnings/Theory of Constraints (TOC)/TOC Framework/10. The Five Focusing Steps (POOGI).md"
     }
   ],
   "omittedPaths": [],
