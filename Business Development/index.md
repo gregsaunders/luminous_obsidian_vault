@@ -15,7 +15,7 @@ _(Empty Directory)_
 
 ## Revenue Streams
 - [Monitoring Service](Business%20Development/Revenue%20Streams/Monitoring%20Service.md)
-- [Grants](Business%20Development/Revenue%20Streams/Grants.md)
+- [Grants - Funding](Business%20Development/Revenue%20Streams/Grants%20-%20Funding.md)
 - [NA Remediation Consulting](Business%20Development/Revenue%20Streams/NA%20Remediation%20Consulting.md)
 - [Paid Pilots](Business%20Development/Revenue%20Streams/Paid%20Pilots.md)
 - [Industry Research Grants](Business%20Development/Revenue%20Streams/Industry%20Research%20Grants.md)
