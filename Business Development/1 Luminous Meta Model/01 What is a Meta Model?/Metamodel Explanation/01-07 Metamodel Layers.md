@@ -12,3 +12,5 @@ The layers are based on the principle that to offer products and services to its
 Each of the 5P-M layers depends on the one beneath it.
 
 ![](Journal/Jeff/Business%20stuff/Bio%20Sensor%20Meta%20Model/01%20What%20is%20a%20Meta%20Model?/Ardoq/Meta%20Model/01%20High%20Level%20Metamodel%20Concepts/attachments/Pasted%20image%2020231101131951.png)
+
+![[Business Development/1 Luminous Meta Model/01 What is a Meta Model?/Metamodel Explanation/attachments/Pasted image 20250310091414.png]]

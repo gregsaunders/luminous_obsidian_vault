@@ -1,4 +1,4 @@
-The Ardoq Metamodel is Ardoq’s best-practice enterprise modeling metamodel. We developed it to enable architecture, design and transformation teams to get rapid and ongoing value from their investment in enterprise modeling.
+The Ardoq Metamodel is Ardoq’s best-practice enterprise modeling metamodel developed to enable architecture, design and transformation teams to get rapid and ongoing value from their investment in enterprise modeling.
 
 Its use with Ardoq is optional. Ardoq is a highly flexible platform and can be configured in a huge number of different ways.
 
@@ -10,9 +10,9 @@ The metamodel has been informed by detailed study of pre-existing modeling frame
 
 Our experience shows that many existing standards, while well-conceived, fall short in two areas that should be mission-critical for any twenty-first century modeling initiative. Specifically in their ability to:
 
-Quickly and clearly communicate key business and IT concepts to non-technical audiences with little appetite for modeling formalisms.
+1. Quickly and clearly communicate key business and IT concepts to non-technical audiences with little appetite for modeling formalisms.
 
-Create actionable insight and analysis by efficiently querying or searching enterprise models to provide answers to key business questions.
+2. Create actionable insight and analysis by efficiently querying or searching enterprise models to provide answers to key business questions.
 
 The Ardoq Metamodel aims to balance the technical rigor needed to build holistic and interconnected models of organizations with ease of understanding, analytical efficiency and the flexibility to rapidly integrate new concepts as both your modeling initiative - and the organization itself - grows and morphs.
 

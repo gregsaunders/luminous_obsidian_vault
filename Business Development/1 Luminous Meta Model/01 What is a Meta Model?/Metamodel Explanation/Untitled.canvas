@@ -1,0 +1,23 @@
+{
+	"nodes":[
+		{"id":"7693fc5dcab87600","type":"group","x":-600,"y":-80,"width":1640,"height":960,"label":"Organization "},
+		{"id":"e42473032fc6cf2a","type":"group","x":-180,"y":280,"width":820,"height":520,"label":"Operations"},
+		{"id":"ddc5579dbeddb1c1","type":"text","text":"# Propositions\nProducts, Services and Channels\n Products and services offered to the market, and the channels we interacts with our customers, partners and the market in general.","x":-160,"y":0,"width":780,"height":160},
+		{"id":"2a46ca535890cde9","type":"text","text":"# Processed\nInformation\n","x":-160,"y":300,"width":780,"height":120},
+		{"id":"13d7b826eced60f0","type":"text","text":"# Process \nBusiness Capabilities, Process, Application ","x":-160,"y":420,"width":780,"height":120},
+		{"id":"9cb5125a536b1172","type":"text","text":"# Processor \nRoles, People, Tech Capability, Technology\n","x":-160,"y":540,"width":780,"height":120},
+		{"id":"a66fc20dee7a5d2c","type":"text","text":"# Place \nNetwork, Location ","x":-160,"y":660,"width":780,"height":120},
+		{"id":"9524010c22fb843a","type":"text","text":"# Strategy, Change & Innovation\n1. Our plan or to achieve a long-term or high-level outcome","x":-565,"y":0,"width":365,"height":800},
+		{"id":"62dd5c9c431afcd8","type":"text","text":"# Risk and Controls \n","x":680,"y":0,"width":300,"height":800},
+		{"id":"b451eb98d0371001","type":"text","text":"# Market\nThe external environment and actors we transacts and interacts with.","x":-605,"y":-369,"width":405,"height":149},
+		{"id":"915a278dc1e5ef14","type":"text","text":"# Persona\nAn abstracted description (not a real person) of the segment of our target customer base.","x":-150,"y":-369,"width":390,"height":149},
+		{"id":"ca8143a1cc228671","type":"text","text":"# External Organization\nAny third party organization which we have an interest in.","x":720,"y":-369,"width":340,"height":149},
+		{"id":"75ab05e4e96b3296","type":"text","text":"# Customer Segment \nCustomers who have similar needs, and behaviours.","x":290,"y":-369,"width":380,"height":149}
+	],
+	"edges":[
+		{"id":"2bb9a807cf7ce709","fromNode":"ddc5579dbeddb1c1","fromSide":"top","toNode":"b451eb98d0371001","toSide":"bottom","fromEnd":"arrow"},
+		{"id":"c7d20643b18cb05a","fromNode":"ddc5579dbeddb1c1","fromSide":"top","toNode":"915a278dc1e5ef14","toSide":"bottom","fromEnd":"arrow"},
+		{"id":"bf6836a3ef932f04","fromNode":"ddc5579dbeddb1c1","fromSide":"top","toNode":"75ab05e4e96b3296","toSide":"bottom","fromEnd":"arrow"},
+		{"id":"14fa959f37c84422","fromNode":"ddc5579dbeddb1c1","fromSide":"top","toNode":"ca8143a1cc228671","toSide":"bottom","fromEnd":"arrow"}
+	]
+}

@@ -17,5 +17,6 @@
 - [[02-15 Business Roles People and Organization]]
 - [[02-16 Locations and Network]]
 - [[02-17 Risk and Controls]]
+- [[Luminous Meta Model.canvas]]
 
 %% End Waypoint %%
