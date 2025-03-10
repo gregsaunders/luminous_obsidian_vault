@@ -11,10 +11,14 @@
             "id": "a1dc06dea49f9438",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Meetings/2025-02-20 Ty/AI summary MARTIN COMMENTS.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "AI summary MARTIN COMMENTS"
             }
           }
         ]
@@ -206,6 +210,16 @@
   },
   "active": "a1dc06dea49f9438",
   "lastOpenFiles": [
+    "Meetings/2025-02-20 Ty/AI summary.md",
+    "Meetings/2025-02-20 Ty/AI summary MARTIN COMMENTS.md",
+    "Meetings/2025-02-20 Ty/Raw text.md",
+    "Meetings/2025-01-09/Overall Observations.md",
+    "Meetings/2024-12-18/Jeff _ Greg _ Shawn sync.md",
+    "Journal/Greg/2025-01/Corporate structure 1.md",
+    "Business Development/1 Luminous Meta Model/01 What is a Meta Model?/Metamodel Explanation/01-06 Breaking Out Operations 1.md",
+    "Business Development/1 Luminous Meta Model/01 What is a Meta Model?/Metamodel Explanation/01-04 Business Propositions and Operations 1.md",
+    "Discussions/Corporate structure - one company or two.md",
+    "Discussions/index.md",
     "Business Development/1 Luminous Meta Model/02 Luminous Domains and Component/Luminous Meta Model.canvas",
     "Untitled 1.canvas",
     "Business Development/Revenue Streams/Grants - Funding.md",
@@ -225,16 +239,7 @@
     "Meetings/2025-01-09/For discussion 2025-01-09.md",
     "Journal/Greg/2025-01-30a Agreement in principle v1.md",
     "Journal/Greg/2025-01-30a Agreement in principle v1 notes.md",
-    "Meetings/2025-02-20 Ty/AI summary.md",
     "Business Development/Lean Canvas/LUMINOUS Lean Canvas.canvas",
-    "Business Development/Lean Canvas/7) COST STRUCTURE 💰.md",
-    "Business Development/Lean Canvas/6) REVENUE STREAMS 💸.md",
-    "Business Development/Lean Canvas/5) CHANNELS 🎯.md",
-    "Business Development/Lean Canvas/8) KEY METRICS 🗝️.md",
-    "Business Development/Lean Canvas/4) SOLUTION 💡.md",
-    "Business Development/Lean Canvas/9) UNFAIR ADVANTAGE ✨.md",
-    "Business Development/Lean Canvas/3) UNIQUE VALUE PROPOSITION 💎.md",
-    "Business Development/Lean Canvas/2) CUSTOMER PROBLEMS❗️.md",
     "Business Development/Lean Canvas",
     "Journal/Shawn/NSERC Discovery GRANT FINAL PROPOSAL ONLY 2024.pdf",
     "Meetings/2025-02-20 Genome Conference",
