@@ -1,7 +1,9 @@
-Without an accurate baseline of NA concentration in the tailings ponds and a method to track progress, making informed decisions is impossible.  We are developing an **NA monitoring and analytics platform** that compiles NA test results in a **data hub** to provide:
+We cannot afford to wait, the cost of inaction - both financial and reputational - is too high. 
 
-- **Real-time tracking of NA levels** across multiple sites and throughout the water cycle.
-- **AI-powered trend analysis** to predict problem areas before they escalate.
-- **Regulatory compliance support**, ensuring all monitoring data is easily accessible for audits and public transparency.
+Our biosensors, remediation technologies and data analytics are a new, innovative, practical, cost-effective, and scalable solution to address the NA challenge in tailings ponds.
 
-Combining **biosensor screening with remediation and data analytics**, operators, regulators, and stakeholders are empowered with actionable intelligence for better environmental management.
+By adopting our strategies, oil sands operators can improve environmental performance, rebuild public trust, and accelerate responsible reclamation efforts.
+
+We invite oil sands operators, regulators, and Indigenous, local communities’ environmental stakeholders to collaborate with us in deploying this solution.
+
+Contact us today to explore pilot projects and implementation opportunities.
