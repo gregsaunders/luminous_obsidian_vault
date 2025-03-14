@@ -1,10 +1,9 @@
-Luminous BioSolutions is a new Canadian Environmental Technology Company who has developed an innovative approach to detecting and breaking down Naphthenic Acids.
+Current NA monitoring methods (i.e.. Mass Spectrometry) are accurate but suffer from high costs, slow turnaround times, and limited sampling frequency. This results in low-resolution data, leaving industry and regulators blind to real-time changes.
 
-Our bioluminescent bacterial biosensors provide a **fast, cost-effective, and highly scalable** method for monitoring NA levels and offering real-time insights that existing techniques cannot match.
+#### With Luminous biosensors, Oil Sands operators can:
 
-#### How It Works
+- **Increase testing frequency** across more locations throughout the water cycle, providing a **higher-resolution map** of NA concentrations.
+- **Track changes in near real-time**, allowing for proactive management rather than reactive mitigation.
+- **Reduce environmental risk** due to confident and comprehensive NA monitoring data.
 
-- **Rapid Detection:** Our engineered bacteria emit light in the presence of NAs, providing an immediate, easy-to-read signal of contamination.
-- **High Sensitivity:** Detects even low concentrations of NAs, making it an ideal early-warning system.
-
-**Scalable & Cost-Effective:** Unlike expensive lab tests that require weeks of processing, our biosensors allow high-throughput screening at **a fraction of the cost**.
+For **regulators and local communities**, this means **greater transparency and trust** with clear, consistent data that ensures environmental safety.
