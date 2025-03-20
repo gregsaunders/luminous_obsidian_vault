@@ -3,23 +3,29 @@ Here's a concise recommendation:
 ### Tag List
 
 - **Prospects**
-  - **Leads:** Initial interest contacts.
-  - **Qualified Prospects:** Contacts vetted as opportunities.
+	  - **Leads:** Initial interest contacts.
+	  - **Qualified Prospects:** Contacts vetted as opportunities.
 - **Customers**
-  - **Active Customers:** Current paying clients.
-  - **Former Customers:** Previously active, for historical reference.
+	  - **Active Customers:** Current paying clients.
+	  - **Former Customers:** Previously active, for historical reference.
+- **Funders**
+	- **Government Funders**
+	- **Private Funders**
+	- **Prospective Funders** 
 - **Partners**
-  - **Strategic Partners:** Long-term, co-development, or joint ventures.
-  - **Channel/Reseller Partners:** Distributors or market enablers.
+	  - **Strategic Partners:** Long-term, co-development, or joint ventures.
+	  - **Channel/Reseller Partners:** Distributors or market enablers.
 - **Suppliers**
-  - **Approved Suppliers:** Preferred vendors.
-  - **Alternate Suppliers:** Secondary or backup providers.
+	  - **Approved Suppliers:** Preferred vendors.
+	  - **Alternate Suppliers:** Secondary or backup providers.
 - **Internal Contacts**
-  - **Employees:** Full-time or permanent staff.
-  - **Contractors:** External resources with limited engagement.
+	  - **Employees:** Full-time or permanent staff.
+	  - **Contractors:** External resources with limited engagement.
+- **Regulator**
+- **Community Stakeholder**
 - **Other**
-  - **Investors/Advisors:** If applicable, for strategic and financial support.
-  - **Board Members:** Key governance contacts.
+	  - **Investors/Advisors:** If applicable, for strategic and financial support.
+	  - **Board Members:** Key governance contacts.
 
 ### Tagging Strategy
 
