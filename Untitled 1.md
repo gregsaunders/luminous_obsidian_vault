@@ -1,0 +1,1 @@
+Our mission is to help the Alberta oil sands industry address the complex problem of Naphthenic Acid (NAs) in the their tailings pond water. We have developed a bioluminescent bacterial biosensor that will help address this problem. This BioSensor will not only provide a fast and 
