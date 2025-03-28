@@ -1,17 +1,11 @@
-We are Canadian Owned and operated.
+I'm excited to announce the launch of **Luminous BioSolutions** – a new venture born from over a decade of research and a shared passion for solving real-world challenges in our oil sands industry.
 
-Our mission is to help the Alberta oil sands industry address the complex problem of Naphthenic Acid (NAs) in tailings pond water. 
+At Luminous, we have developed an innovative bioluminescent bacterial biosensors to help monitor and remediate naphthenic acids (NAs) in tailings pond water. Our goal is to help oil sands operators, regulators, and communities with real-time, high-resolution data, enabling more effective environmental management and faster progress toward safe water release.
 
-We have developed a bioluminescent bacterial biosensor to address this problem. 
- Our BioSensor provides a fast and cost effective way to monitor the presence of NA's in the water.  
+Our team brings together expertise in scientific research, technology, and business proving that collaboration, trust, and persistence can drive meaningful change. I’m excited to work alongside brilliant colleagues and long-time friends, and this opportunity to contribute to a cleaner, more sustainable future for northern Alberta.
 
-We are also developing microbial solutions to accelerate remediation efforts by identifying naturally occurring bacteria that can break down NAs.
+I look forward to sharing our journey and collaborating with industry partners who are equally committed to innovation and responsible environmental stewardship.
 
-This helps water reclamation in:
-- Constructed Wetlands: Our biosensors help select and enhance microbial communities that can be used in wetlands to accelerate NA degradation.
+Thank you for your support!
 
-- Bioaugmentation Strategies: We can scale up the most effective bacteria and introduce them into treatment sites, dramatically improving NA breakdown rates.
-
-- Continuous Monitoring: Unlike conventional approaches, which rely on infrequent lab tests, biosensors can provide ongoing feedback on remediation progress, ensuring treatment success.
-
-This is significant for oil sands operators seeking cost-effective, scientifically sound reclamation strategies that align with evolving environmental regulations.
+#NewBeginnings #EnvironmentalInnovation #OilSands #Sustainability #Biosensors
