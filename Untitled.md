@@ -68,7 +68,7 @@ Why this Matters
 
 ---
 
-Current NA monitoring methods (i.e. Mass Spectrometry) are accurate but suffer from prohibitive costs, slow turnaround times, and limited sampling frequency. This results in low-resolution data, leaving industry and regulators blind to real-time changes.
+Unlike expensive analytical chemistry methods that require weeks of processing, our biosensors allow high-throughput screening at a fraction of the cost.Unlike expensive analytical chemistry methods that require weeks of processing, our biosensors allow high-throughput screening at a fraction of the cost.
 
 **Luminous biosensors solution allows Oil Sands operators to**:
 
