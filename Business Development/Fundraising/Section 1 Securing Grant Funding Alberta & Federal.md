@@ -4,11 +4,16 @@
 
 Luminous BioSolutions Inc. ("Luminous") is positioned at the intersection of biotechnology and environmental remediation, offering novel solutions to address the significant challenge of naphthenic acid (NA) contamination within Alberta's oil sands tailings ponds. The company's core technology leverages engineered bioluminescent bacterial biosensors for rapid, cost-effective NA detection, coupled with bioremediation strategies using naturally occurring bacteria to degrade these persistent contaminants. An integrated data platform further enhances this offering, providing real-time monitoring and analytics capabilities.
 
-The context for Luminous's market entry is defined by the immense scale of oil sands tailings – estimated at over 1.3 billion cubic metres of fluid tailings alone – and a potential self imposed production cap should the Tailings Ponds reach capacity, the associated environmental risks and multi-billion dollar reclamation liabilities faced by operators. 
+The context for Luminous's market entry is defined by the immense scale of oil sands tailings estimated at over 1.3 billion cubic metres of fluid tailings alone combined with:
+- A potential self imposed production cap should the Tailings Ponds reach capacity
+- The associated environmental risks
+- Multi-billion dollar reclamation liabilities faced by operators
 
 Compounding this challenge is a stringent regulatory environment, primarily governed by the Alberta Energy Regulator's (AER) Directive 085 and the provincial Tailings Management Framework (TMF), which mandates progressive reclamation and sets firm timelines for rendering tailings "ready-to-reclaim" (RTR).
 
-This playbook provides a strategic roadmap for Luminous BioSolutions to navigate critical business development activities essential for its growth and market penetration. It outlines the preparatory steps required for securing non-dilutive grant funding, preparing for pre-seed/seed venture capital investment, effectively pitching pilot programs to oil sands operators, and engaging respectfully and productively with Indigenous communities, local stakeholders, and regulatory bodies like the AER. The successful execution of these interconnected activities is crucial for validating Luminous's technology, building market traction, and establishing the company as a key player in sustainable oil sands development.
+This playbook provides a strategic roadmap for Luminous BioSolutions to navigate critical business development activities essential for its growth and market penetration. It outlines the preparatory steps required for securing non-dilutive grant funding, preparing for pre-seed/seed venture capital investment, effectively pitching pilot programs to oil sands operators, and engaging respectfully and productively with Indigenous communities, local stakeholders, and regulatory bodies like the AER. 
+
+The successful execution of these interconnected activities is crucial for validating Luminous's technology, building market traction, and establishing the company as a key player in sustainable oil sands development.
 
 ## Section 1: Securing Grant Funding (Alberta & Federal)
 
@@ -42,9 +47,9 @@ Several provincial and federal programs align with Luminous's focus on clean tec
     
 	- **Mandate:** Supports innovative Canadian companies developing, demonstrating, and commercializing clean technologies that provide environmental benefits (climate change, clean air, water, soil). Luminous fits squarely within this mandate.
     
-	- **Funding Model (Historical SDTC)**: Typically funded 33-40% of eligible project costs, averaging $2M-$4M per project, focused on late-stage development/pre-commercialization (TRL 3-7).32 Required private sector contribution (min 25%) and consortium partners.
+	- **Funding Model (Historical SDTC)**: Typically funded 33-40% of eligible project costs, averaging $2M-$4M per project, focused on late-stage development/pre-commercialization (TRL 3-7). Required private sector contribution (min 25%) and consortium partners.
     
-	- **Current Status:** Funding for existing projects has resumed, but new applications under NRC IRAP Clean Technology are expected to open "early" in fiscal 2025-2026.35 Luminous should monitor NRC announcements and connect with IRAP.
+	- **Current Status:** Funding for existing projects has resumed, but new applications under NRC IRAP Clean Technology are expected to open "early" in fiscal 2025-2026. Luminous should monitor NRC announcements and connect with IRAP.
     
 - **Strategic Innovation Fund (SIF):** A federal program supporting large-scale, transformative projects across various sectors, including clean technology and industrial transformation.
     
