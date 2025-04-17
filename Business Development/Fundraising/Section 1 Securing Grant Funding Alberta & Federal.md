@@ -53,13 +53,13 @@ Several provincial and federal programs align with Luminous's focus on clean tec
     
 - **Strategic Innovation Fund (SIF):** A federal program supporting large-scale, transformative projects across various sectors, including clean technology and industrial transformation.
     
-- **Focus:** Aims to accelerate technology transfer, commercialization, firm growth, and investment attraction. Minimum contribution typically >$10M.39
+	- **Focus:** Aims to accelerate technology transfer, commercialization, firm growth, and investment attraction. Minimum contribution typically >$10M.
     
-- **Net Zero Accelerator (NZA):** A dedicated stream within SIF ($5B+ incremental budget) supporting projects that decarbonize heavy industry and advance clean technologies.41
+	- **Net Zero Accelerator (NZA):** A dedicated stream within SIF ($5B+ incremental budget) supporting projects that decarbonize heavy industry and advance clean technologies.
     
-- **CRIN Funding:** SIF allocated $100M via the Clean Resource Innovation Network (CRIN) to support technologies lowering environmental impacts in oil and gas. Luminous should explore CRIN membership and funding opportunities.
+	- **CRIN Funding:** SIF allocated $100M via the Clean Resource Innovation Network (CRIN) to support technologies lowering environmental impacts in oil and gas. Luminous should explore CRIN membership and funding opportunities.
     
-- **Relevance for Luminous:** While potentially targeting larger-scale projects than Luminous's current stage, future consortia or scale-up activities could align with SIF, particularly the NZA or CRIN streams.
+	- **Relevance for Luminous:** While potentially targeting larger-scale projects than Luminous's current stage, future consortia or scale-up activities could align with SIF, particularly the NZA or CRIN streams.
     
 ### 1.2 Common Eligibility Criteria and Documentation
 
