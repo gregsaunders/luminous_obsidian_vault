@@ -8,7 +8,7 @@ In Alberta's oil sands industry, several companies operate tailings ponds to man
     
 - **Canadian Natural Resources Limited (CNRL)**: Manages tailings ponds at its Horizon Oil Sands site.
     
-- **Teck Resources**: Involved in tailings management for its oil sands operations.
+- **Meg Energy**: Involved in tailings management for its oil sands operations.
     
 
 These tailings ponds are engineered structures designed to contain process-affected water and solids, preventing environmental contamination. Operators are responsible for the safe management and eventual reclamation of these sites.
