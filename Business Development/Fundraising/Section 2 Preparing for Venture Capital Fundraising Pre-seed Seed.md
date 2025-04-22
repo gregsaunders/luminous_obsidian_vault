@@ -8,11 +8,11 @@ The context for Luminous's market entry is defined by the immense scale of oil s
 
 Compounding this challenge is a stringent regulatory environment, primarily governed by the Alberta Energy Regulator's (AER) Directive 085 and the provincial Tailings Management Framework (TMF), which mandates progressive reclamation and sets firm timelines for rendering tailings "ready-to-reclaim" (RTR).
 
-This playbook provides a strategic roadmap for Luminous BioSolutions to navigate critical business development activities essential for its growth and market penetration. It outlines the preparatory steps required for securing non-dilutive grant funding, preparing for pre-seed/seed venture capital investment, effectively pitching pilot programs to oil sands operators, and engaging respectfully and productively with Indigenous communities, local stakeholders, and regulatory bodies like the AER. The successful execution of these interconnected activities is crucial for validating Luminous's technology, building market traction, and establishing the company as a key player in sustainable oil sands development.
+This playbook provides a strategic roadmap for Luminous BioSolutions to navigate critical business development activities essential for its growth and market penetration. It outlines the preparatory steps required for preparing for pre-seed/seed venture capital investment. The successful execution of these activities is crucial for validating Luminous's technology, building market traction, and establishing the company as a key player in sustainable oil sands development.
 
-## Section 2: Preparing for Venture Capital Fundraising (Pre-seed/Seed)
+## Preparing for Venture Capital Fundraising (Pre-seed/Seed)
 
-Venture capital (VC) provides crucial equity funding for high-growth potential startups like Luminous. Securing pre-seed or seed funding requires a compelling pitch deck that clearly articulates the investment opportunity, supported by credible data and a strong founding team.
+Venture capital (VC) provides crucial equity funding startups like Luminous. Securing pre-seed or seed funding requires a compelling pitch deck that clearly articulates the investment opportunity, supported by credible data and a strong founding team.
 
 ### 2.1 Standard Pitch Deck Components
 
