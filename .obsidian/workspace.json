@@ -11,10 +11,12 @@
             "id": "684342a2fc167744",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "type": "image",
+              "state": {
+                "file": "Pasted image 20250421084539.png"
+              },
+              "icon": "lucide-image",
+              "title": "Pasted image 20250421084539"
             }
           }
         ]
@@ -84,7 +86,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 355.5
+    "width": 414.5
   },
   "right": {
     "id": "c61c2be9af22c590",
@@ -206,6 +208,10 @@
   },
   "active": "684342a2fc167744",
   "lastOpenFiles": [
+    "Business Development/Messaging/Elevator Pitch's.md",
+    "Business Development/Messaging/Untitled.md",
+    "Business Development/Messaging",
+    "Business Development/Untitled",
     "Pasted image 20250421084539.png",
     "Business Development/Fundraising/Section 6 Conclusion and Strategic Recommendations.md",
     "Business Development/Fundraising/Fundraising 101.md",
@@ -219,7 +225,6 @@
     "Pasted image 20250421085407.png",
     "Pasted image 20250421085328.png",
     "Pasted image 20250421085228.png",
-    "Pasted image 20250421085150.png",
     "Business Development/Target Accounts/Syncrude.md",
     "Random stuff/utils/folder-frontmatter-source/node_modules/ajv/README.md",
     "Random stuff/Artifacts/Items for discussion with lawyer.pdf",
@@ -242,7 +247,6 @@
     "Random stuff/utils/folder-frontmatter-source/node_modules/eslint/README.md",
     "Random stuff/utils/folder-frontmatter-source/node_modules/flat-cache/changelog.md",
     "Random stuff/utils/folder-frontmatter-source/node_modules/keyv/README.md",
-    "Random stuff/utils/folder-frontmatter-source/node_modules/glob/README.md",
     "Random stuff/venv/lib/python3.11/site-packages/pkg_resources/tests/data/my-test-package_unpacked-egg/my_test_package-1.0-py3.7.egg/EGG-INFO",
     "Random stuff/venv/lib/python3.11/site-packages/pkg_resources/tests/data/my-test-package_unpacked-egg/my_test_package-1.0-py3.7.egg",
     "Random stuff/venv/lib/python3.11/site-packages/langchain/cli/create_repo/templates/repo/____project_name_identifier/__pycache__",
@@ -250,8 +254,6 @@
     "Random stuff/utils/folder-frontmatter-source/node_modules/tsutils/node_modules/tslib/test/validateModuleExportsMatchCommonJS",
     "Random stuff/utils/folder-frontmatter-source/node_modules/@typescript-eslint/eslint-plugin/dist/rules/indent-new-do-not-use",
     "Random stuff/utils/folder-frontmatter-source/node_modules/@typescript-eslint/utils/_ts3.4/dist/ast-utils/eslint-utils",
-    "Random stuff/venv/lib/python3.11/site-packages/onnxruntime/tools/ort_format_model/ort_flatbuffers_py/fbs/__pycache__",
-    "Random stuff/venv/lib/python3.11/site-packages/langchain/cli/create_repo/templates/repo/____project_name_identifier",
     "Business Development/1 Luminous Meta Model/02 Luminous Domains and Component/Luminous Meta Model.canvas",
     "Untitled 1.canvas",
     "Business Development/Lean Canvas/LUMINOUS Lean Canvas.canvas",
