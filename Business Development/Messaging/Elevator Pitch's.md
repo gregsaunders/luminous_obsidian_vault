@@ -1,21 +1,24 @@
 ### **30-Second Elevator Pitch (Casual Professional)**
 
-Luminous BioSolutions is tackling one of the biggest environmental challenges in the oil sands — toxic naphthenic acids in tailings ponds. We’ve developed a breakthrough system using bioluminescent bacteria to detect these toxins in real time, plus smart microbial treatments to break them down safely. It’s faster, cheaper, and more scalable than traditional lab testing, and it helps operators meet tough environmental and regulatory demands while reducing their long-term cleanup costs.
+Luminous BioSolutions is tackling one of the biggest environmental challenges in the oil sands — toxic naphthenic acids in tailings ponds. 
+
+We’ve developed a breakthrough solution using bioluminescent bacteria to detect these toxins in real time, plus smart microbial treatments to accelerate breaking them down safely. It’s faster, cheaper, and more scalable than traditional lab testing, and it helps operators meet tough environmental and regulatory demands and reducing their long-term cleanup costs.
 
 ### **2-Minute Elevator Pitch (Expanded Version)**
 
-Luminous BioSolutions is a cleantech company focused on solving the massive environmental and financial problem of naphthenic acids in oil sands tailings ponds. These acids are toxic, hard to treat, and incredibly expensive to monitor using current lab methods — which can take weeks and cost thousands.
+Luminous BioSolutions is a clean tech company focused on solving the massive environmental and financial problem of naphthenic acids in oil sands tailings ponds. These acids are toxic, hard to treat, and incredibly expensive to monitor using current lab methods — which can take weeks and cost thousands.
 
 Our team has developed a game-changing, three-part solution:
 
-1. **Real-time biosensors** that use engineered bacteria to instantly detect toxic compounds — it’s like having a lab in the field that gives results in minutes, not weeks.
+1. **Real-time biosensors** that use engineered bacteria to instantly detect toxic compounds — it gives results in minutes, not weeks.
     
 2. **Targeted microbial remediation**, using natural bacteria to actually break down the toxins right in the ponds.
     
 3. **A cloud-based data platform** that tracks and analyzes everything, helping operators stay compliant and make better decisions with predictive insights.
     
+We’re working with oil sands operators and environmental consultants to run pilot projects, prove the value, and scale. Our tech saves money, accelerates cleanup, improves transparency, and helps industry players show leadership on ESG. 
 
-We’re working with oil sands operators and environmental consultants to run pilot projects, prove the value, and scale. Our tech saves money, accelerates cleanup, improves transparency, and helps industry players show leadership on ESG. It’s high-impact innovation for one of the toughest environmental challenges in Canada.
+It’s high-impact innovation for one of the toughest environmental challenges in Canada.
 
 # Investor Networking Event focused
 ### **30-Second Investor Elevator Pitch**
