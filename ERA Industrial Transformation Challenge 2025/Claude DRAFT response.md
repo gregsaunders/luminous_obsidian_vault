@@ -42,6 +42,8 @@ The process functions as follows: (1) Water samples from tailings ponds are coll
 
 Our technology addresses a critical problem in oil sands tailings management. NAs are toxic, persistent compounds that remain in tailings ponds for decades, preventing safe water release, delaying land reclamation, increasing financial liabilities, and intensifying public scrutiny. Current NA detection methods (mass spectrometry, FTIR) are slow, expensive, and impractical for high-frequency testing across vast tailings volumes (1.486 billion m³ as of 2023). This creates a significant bottleneck, as operators lack the real-time data needed to effectively manage and remediate NAs.
 
+==add something about Methane reduction from tailings and low carbon solution==
+
 Compared to conventional analytical chemistry approaches, our biosensor technology offers transformative advantages:
 
 1. **Speed**: Results in minutes versus weeks for traditional lab analysis
@@ -74,23 +76,27 @@ The proposed project will demonstrate the effectiveness, reliability, and scalab
 4. Generate performance data under varying environmental conditions to validate technical and economic benefits
 5. Establish protocols for regulatory acceptance of biosensor data for compliance reporting
 
-The field demonstration will be conducted at approximately 1:2 scale of a full commercial implementation, with monitoring coverage across a designated section of an operational tailings pond (approximately 2 km²), deploying approximately 15-20 monitoring stations. The remediation component will target a treatment area of 0.5 km² using our bacterial consortium approach. The data platform will integrate all field monitoring points and provide real-time visualization and analytics.
+The field demonstration will be conducted at approximately ==1:2 scale== of a full commercial implementation, with monitoring coverage across a designated section of an operational tailings pond ==(approximately 2 km²), deploying approximately 15-20 monitoring stations. The remediation component will target a treatment area of 0.5 km² using our bacterial consortium approach. The data platform will integrate all field monitoring points and provide real-time visualization and analytics.==
 
-The project will be located at a major oil sands operation in the Athabasca region near Fort McMurray, Alberta. We have engaged with Imperial Oil Resources Ltd. as our site host partner, utilizing their Kearl Oil Sands site for the demonstration. This partnership builds on our existing smaller-scale collaborative trials with Imperial's environmental team on constructed wetlands for NA degradation.
+The project will be located at ==a major oil sands operation== in the Athabasca region near Fort McMurray, Alberta. ==We have engaged with Imperial Oil Resources Ltd. as our site host partner, utilizing their Kearl Oil Sands site for the demonstration. This partnership builds on our existing smaller-scale collaborative trials with Imperial's environmental team on constructed wetlands for NA degradation.==
 
-The total project budget is $4,500,000 CAD, with eligible costs of $4,200,000 CAD. We are requesting $2,000,000 CAD from ERA, representing 47.6% of eligible costs. The project will be supported by a combination of Luminous BioSolutions' equity ($1,000,000), partner contributions from Imperial Oil ($800,000 in-kind, $400,000 cash), and additional grant funding from Alberta Innovates ($300,000, application in process) and NRC-IRAP ($500,000, application in process).
+==The total project budget is $4,500,000 CAD, with eligible costs of $4,200,000 CAD. We are requesting $2,000,000 CAD from ERA, representing 47.6% of eligible costs. The project will be supported by a combination of Luminous BioSolutions' equity ($1,000,000), partner contributions from Imperial Oil ($800,000 in-kind, $400,000 cash), and additional grant funding from Alberta Innovates ($300,000, application in process) and NRC-IRAP ($500,000, application in process).==
 
-**Project Consortium and Structure:**
-- **Luminous BioSolutions Inc.** (Lead Applicant): Overall project management, technology provider, data platform development and operation
-- **Imperial Oil Resources Ltd.** (Confirmed Site Host): Providing tailings pond access, operational support, and in-kind contributions
-- **University of Calgary** (Confirmed Research Partner): Supporting laboratory validation, quality control protocols, and scientific expertise
-- **SynergyTech Environmental** (In Discussion): Environmental consulting support, regulatory engagement, and field operations assistance
+==**Project Consortium and Structure:**==
+- ==**Luminous BioSolutions Inc.** (Lead Applicant): Overall project management, technology provider, data platform development and operation==
+- **==CNRL** (Confirmed Site Host): Providing tailings pond access, operational support, and in-kind contributions==
+- ==**Pathways Alliance** (Confirmed Site Host): Providing tailings pond access, operational support, and in-kind contributions==
+- ==**Imperial Oil Resources Ltd.** (Confirmed Site Host): Providing tailings pond access, operational support, and in-kind contributions==
+- ==**Athabasca University (Confirmed Research Partner): Supporting laboratory validation, quality control protocols, and scientific expertise==
+- ==**University of Calgary** (Confirmed Research Partner): Supporting laboratory validation, quality control protocols, and scientific expertise==
+- ==**SynergyTech Environmental** (In Discussion): Environmental consulting support, regulatory engagement, and field operations assistance==
 
 The core project team includes:
 - **Jeff Violo** (Luminous BioSolutions, COO): Project Director with 30+ years of operational experience
 - **Dr. Shawn Lewenza** (Luminous BioSolutions, CSO): Technical Lead with extensive expertise in microbiology and biosensor development
 - **Greg Saunders** (Luminous BioSolutions, CTO): Data Platform Lead with deep experience in tech solutions
-- **Dr. Emily Chen** (University of Calgary): Microbiology advisor and validation lead
+- Ty from Pathways
+- Christine Brown CNR
 - **Mark Richardson** (Imperial Oil): Site Operations Coordinator with 15+ years in tailings management
 
 The project follows a clear line of sight to commencement with: (1) Preliminary site engagement already completed; (2) Basic infrastructure requirements identified; (3) Initial permitting discussions with AER undertaken; (4) Internal approvals process at Imperial Oil underway; and (5) Field logistics planning initiated.
