@@ -20,7 +20,7 @@ Application link - https://grant-manager.com/erims/home
 Luminous Submission Dropbox Folder Link - https://www.dropbox.com/scl/fo/h63zdvb5narkanpfezost/AFeacuyIvn3xL0rX12Ha1fA?rlkey=wsrymi4l772mlc662o4lke35a&st=c4jalvgd&dl=0
 
 Successful applicants are eligible for up to $10 million per project; exceptionally strong projects with a high funding leverage ratio may be eligible up to $15 million on a limited basis. The minimum request is $500,000. The maximum ERA contribution to a single project will be no more than 50 per cent of the project’s eligible expenses. 
-#### Eligible Technology category we play in :
+#### Eligible Technology category we play in:
 
 - Environmental remediation and sustainability
     - Novel solutions for soil remediation and land reclamation
