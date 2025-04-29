@@ -46,4 +46,27 @@ https://www.linkedin.com/in/isabellatarasco/
 
 
 
+![[Pasted image 20250429113334.png]]
+
+
+
+![[Pasted image 20250429113445.png]]
+
+
+![[Pasted image 20250429113705.png]]
+
+
+![[Pasted image 20250429113914.png]]
+
+
+![[Pasted image 20250429114144.png]]
+
+![[Pasted image 20250429114430.png]]
+
+
+![[Pasted image 20250429114609.png]]
+
+![[Pasted image 20250429114818.png]]
+
+
 
