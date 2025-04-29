@@ -27,6 +27,8 @@ Several provincial and federal programs align with Luminous's focus on clean tec
 - **Alberta Innovates (AI)**: As Alberta's primary research and innovation agency, AI offers various programs supporting technology development and commercialization across different sectors. Relevant streams could include:
     
 	- **Clean Technology Program:** Supports technologies for energy decarbonization, environmental sustainability, and economic diversification, with focus areas like Clean Power, Energy Storage, CCUS, and Hydrogen. Luminous's technology directly addresses environmental sustainability in the energy sector.
+
+		
     
 	- **Digital Innovation in Clean Energy (DICE)**: Funds the development of digital technologies (AI, IoT, data analytics) that reduce emissions or improve efficiency in the energy sector. Luminous's data platform aligns well with this program's objectives. Funding is available up to $250,000 per project for technology development (TRL 3-7). While the latest intake closed Feb 2024, future rounds are likely.
     
