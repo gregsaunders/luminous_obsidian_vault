@@ -11,10 +11,14 @@
             "id": "684342a2fc167744",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "ERA Industrial Transformation Challenge 2025/Claude DRAFT response.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Claude DRAFT response"
             }
           }
         ]
@@ -206,9 +210,9 @@
   },
   "active": "684342a2fc167744",
   "lastOpenFiles": [
-    "ERA Industrial Transformation Challenge 2025/Submission details.md",
-    "ERA Industrial Transformation Challenge 2025/Untitled.md",
     "ERA Industrial Transformation Challenge 2025/Program Slides.md",
+    "ERA Industrial Transformation Challenge 2025/Claude DRAFT response.md",
+    "ERA Industrial Transformation Challenge 2025/Submission details.md",
     "ERA Industrial Transformation Challenge 2025/attachments/Pasted image 20250429120809.png",
     "ERA Industrial Transformation Challenge 2025/attachments/Pasted image 20250429114818.png",
     "ERA Industrial Transformation Challenge 2025/attachments/Pasted image 20250429114609.png",
