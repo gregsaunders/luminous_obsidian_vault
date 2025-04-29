@@ -91,39 +91,40 @@ The project will be located at ==a major oil sands operation== in the Athabasca 
 - ==**University of Calgary** (Confirmed Research Partner): Supporting laboratory validation, quality control protocols, and scientific expertise==
 - ==**SynergyTech Environmental** (In Discussion): Environmental consulting support, regulatory engagement, and field operations assistance==
 
-The core project team includes:
-- **Jeff Violo** (Luminous BioSolutions, COO): Project Director with 30+ years of operational experience
-- **Dr. Shawn Lewenza** (Luminous BioSolutions, CSO): Technical Lead with extensive expertise in microbiology and biosensor development
-- **Greg Saunders** (Luminous BioSolutions, CTO): Data Platform Lead with deep experience in tech solutions
-- Ty from Pathways
-- Christine Brown CNR
-- **Mark Richardson** (Imperial Oil): Site Operations Coordinator with 15+ years in tailings management
+==The core project team includes:==
+==- **Jeff Violo** (Luminous BioSolutions, COO): Project Director with 30+ years of operational experience
+- ==**Dr. Shawn Lewenza** (Luminous BioSolutions, CSO): Technical Lead with extensive expertise in microbiology and biosensor development==
+- ==**Greg Saunders** (Luminous BioSolutions, CTO): Data Platform Lead with deep experience in tech solutions==
+- ==Ty Vaness from Pathways Alliance==
+- ==Christine Brown CNR==
+- ==Carolina Berdugo Imperial Oil==
+- ==**Mark Richardson** (Imperial Oil): Site Operations Coordinator with 15+ years in tailings management==
 
-The project follows a clear line of sight to commencement with: (1) Preliminary site engagement already completed; (2) Basic infrastructure requirements identified; (3) Initial permitting discussions with AER undertaken; (4) Internal approvals process at Imperial Oil underway; and (5) Field logistics planning initiated.
+The project follows a clear line of sight to commencement with: ==(1) Preliminary site engagement already completed; (2) Basic infrastructure requirements identified; (3) Initial permitting discussions with AER undertaken; (4) Internal approvals process at Imperial Oil underway; and (5) Field logistics planning initiated.==
 
 Key project risks and mitigation strategies include:
 1. **Technical performance risk**: Mitigated through laboratory pre-testing, staged deployment, and parallel validation with conventional methods
-2. **Regulatory acceptance**: Mitigated through early and continuous AER engagement and side-by-side testing with accepted methodologies
-3. **Seasonal/weather limitations**: Mitigated through weatherized equipment design and flexible scheduling
-4. **Stakeholder concerns**: Mitigated through transparent engagement with Indigenous communities and regulatory bodies
+2. ==**Regulatory acceptance**: Mitigated through early and continuous AER engagement and side-by-side testing with accepted methodologies==
+3. ==**Seasonal/weather limitations**: Mitigated through weatherized equipment design and flexible scheduling==
+4. ==**Stakeholder concerns**: Mitigated through transparent engagement with Indigenous communities and regulatory bodies==
 
-ERA funding is critical to enable this large-scale field demonstration, which would not proceed at the same scale or timeline without support. The funding will specifically mitigate the technical validation risk associated with scaling from laboratory to field-scale application, and enable comprehensive demonstration across all system components. The requested amount is justified based on the scale of the demonstration (2 km² monitoring area), the 3-year timeline required for seasonal validation, and the need for comprehensive data collection to satisfy regulatory requirements.
+ERA funding is critical to enable this large-scale field demonstration, which would not proceed at the same scale or timeline without support. The funding will specifically mitigate the technical validation risk associated with scaling from laboratory to field-scale application, and enable comprehensive demonstration across all system components. The requested amount is justified based ==on the scale of the demonstration (2 km² monitoring area), the 3-year timeline required for seasonal validation, and the need for comprehensive data collection to satisfy regulatory requirements.==
 
   -----------------------------------------------------------------------
-  FINANCIAL CONTRIBUTORS                AMOUNT            STATUS
-  ------------------------------------ ----------------- ----------------
-  ERA (Requested)                      $2,000,000        Applied for
+  ==FINANCIAL CONTRIBUTORS                AMOUNT            STATUS==
+  ==------------------------------------ ----------------- ----------------==
+  ==ERA (Requested)                      $2,000,000        Applied for==
 
-  Alberta Innovates                    $300,000          Applied for
+  ==Alberta Innovates                    $300,000          Applied for==
 
-  NRC-IRAP                             $500,000          Applied for
+  ==NRC-IRAP                             $500,000          Applied for==
 
-  Imperial Oil Resources Ltd.          $1,200,000        $400K Committed
-                                                         $800K In-kind Committed
+  ==Imperial Oil Resources Ltd.          $1,200,000        $400K Committed==
+                                                         ==$800K In-kind Committed==
 
-  Luminous BioSolutions Inc.           $500,000          Committed
+  ==Luminous BioSolutions Inc.           $500,000          Committed==
 
-  Total Financing                      $4,500,000        
+  ==Total Financing                      $4,500,000==        
   -----------------------------------------------------------------------
 
 3.  **GHG Benefits**
@@ -134,29 +135,29 @@ Luminous BioSolutions' naphthenic acid (NA) detection and remediation system con
 
 The proposed field demonstration will directly reduce GHG emissions through several mechanisms:
 
-1. **Reduced methane emissions from enhanced biodegradation**: Our targeted bacterial consortia not only degrade NAs but also help remediate other hydrocarbon components in tailings ponds that contribute to methane generation. By promoting more complete and rapid degradation of these compounds in aerobic conditions, our approach reduces the formation of methane from anaerobic decomposition. Based on our pilot studies and literature data on tailings pond emissions, we estimate this will reduce methane emissions by 0.5-1.5 kg CO₂e/m² of treated area annually. For our 0.5 km² (500,000 m²) treatment area, this represents annual emissions reductions of 250-750 tonnes CO₂e.
+1. **Reduced methane emissions from enhanced biodegradation**: Our targeted bacterial consortia not only degrade NAs but also help remediate other hydrocarbon components in tailings ponds that contribute to methane generation. By promoting more complete and rapid degradation of these compounds in aerobic conditions, our approach reduces the formation of methane from anaerobic decomposition. ==Based on our pilot studies and literature data on tailings pond emissions, we estimate this will reduce methane emissions by 0.5-1.5 kg CO₂e/m² of treated area annually. For our 0.5 km² (500,000 m²) treatment area, this represents annual emissions reductions of 250-750 tonnes CO₂e.==
 
-2. **Reduced energy use for monitoring**: Traditional NA analysis requires extensive sample transport, preparation, and energy-intensive analytical processes. Our biosensor approach reduces these requirements significantly. We estimate energy savings of 85-90% compared to conventional methods, representing approximately 25 tonnes CO₂e annually for the scale of monitoring in this project (approximately 3,000 samples per year).
+2. **Reduced energy use for monitoring**: ==Traditional NA analysis requires extensive sample transport, preparation, and energy-intensive analytical processes. Our biosensor approach reduces these requirements significantly. We estimate energy savings of 85-90% compared to conventional methods, representing approximately 25 tonnes CO₂e annually for the scale of monitoring in this project (approximately 3,000 samples per year).==
 
-3. **On-site data processing**: Our on-site data system eliminates the need for physical sample transport to distant laboratories, reducing transportation emissions by approximately 5 tonnes CO₂e annually.
+3. ==**On-site data processing**: Our on-site data system eliminates the need for physical sample transport to distant laboratories, reducing transportation emissions by approximately 5 tonnes CO₂e annually.==
 
-For the direct project implementation, we conservatively estimate total annual GHG reductions of 280-780 tonnes CO₂e, or approximately 840-2,340 tonnes CO₂e over the three-year project duration.
+==For the direct project implementation, we conservatively estimate total annual GHG reductions of 280-780 tonnes CO₂e, or approximately 840-2,340 tonnes CO₂e over the three-year project duration.==
 
-**Market Implementation GHG Potential:**
+==**Market Implementation GHG Potential:**==
 
-The transformative GHG reduction potential of our technology lies in its ability to accelerate the responsible reclamation of tailings ponds by providing the monitoring and remediation tools needed to manage NA levels effectively. This enables:
+==The transformative GHG reduction potential of our technology lies in its ability to accelerate the responsible reclamation of tailings ponds by providing the monitoring and remediation tools needed to manage NA levels effectively. This enables:==
 
-1. **Accelerated pond closure and reclamation**: Alberta's tailings ponds emit an estimated 40-60 kg CO₂e/m²/year, primarily as methane from the decomposition of hydrocarbons. By enabling more rapid NA remediation and water treatment, our technology could accelerate pond closure by 3-5 years. For Alberta's approximately 300 km² of tailings ponds, this acceleration represents potential emissions reductions of 36-90 million tonnes CO₂e by 2050.
+1. ==**Accelerated pond closure and reclamation**: Alberta's tailings ponds emit an estimated 40-60 kg CO₂e/m²/year, primarily as methane from the decomposition of hydrocarbons. By enabling more rapid NA remediation and water treatment, our technology could accelerate pond closure by 3-5 years. For Alberta's approximately 300 km² of tailings ponds, this acceleration represents potential emissions reductions of 36-90 million tonnes CO₂e by 2050.==
 
-2. **Optimized treatment processes**: Real-time monitoring enables tailings operators to optimize existing treatment processes (constructed wetlands, physical treatments), potentially reducing energy consumption by 15-25% compared to current practices. This represents approximately 0.5 million tonnes CO₂e in annual savings if implemented across Alberta's oil sands operations by 2030.
+2. ==**Optimized treatment processes**: Real-time monitoring enables tailings operators to optimize existing treatment processes (constructed wetlands, physical treatments), potentially reducing energy consumption by 15-25% compared to current practices. This represents approximately 0.5 million tonnes CO₂e in annual savings if implemented across Alberta's oil sands operations by 2030.==
 
-3. **Reduced land disturbance**: By enabling more effective use of existing pond capacity through better water management, our technology helps reduce the need for new pond construction, preserving boreal forest carbon sinks. This could prevent emissions of 5-10 million tonnes CO₂e by 2050.
+3. ==**Reduced land disturbance**: By enabling more effective use of existing pond capacity through better water management, our technology helps reduce the need for new pond construction, preserving boreal forest carbon sinks. This could prevent emissions of 5-10 million tonnes CO₂e by 2050.==
 
-Based on market adoption projections, we estimate our technology could achieve:
-- By 2030: Implementation at 30-40% of Alberta's tailings facilities, delivering annual GHG reductions of 1.5-2.5 million tonnes CO₂e
-- By 2050: Implementation at 70-80% of facilities, with cumulative GHG reductions of 41-100 million tonnes CO₂e
+==Based on market adoption projections, we estimate our technology could achieve:==
+- ==By 2030: Implementation at 30-40% of Alberta's tailings facilities, delivering annual GHG reductions of 1.5-2.5 million tonnes CO₂e==
+- ==By 2050: Implementation at 70-80% of facilities, with cumulative GHG reductions of 41-100 million tonnes CO₂e==
 
-This technology directly supports the net-zero ambitions of oil sands operators by addressing a critical barrier to tailings remediation. Major operators like Suncor, CNRL, and Imperial Oil have identified tailings management as a key component of their environmental strategies and pathways to net-zero operations. Our solution provides the monitoring and remediation tools needed to implement these strategies effectively, helping operators meet both their regulated reclamation timelines and their voluntary climate commitments.
+==This technology directly supports the net-zero ambitions of oil sands operators by addressing a critical barrier to tailings remediation. Major operators like Suncor, CNRL, and Imperial Oil have identified tailings management as a key component of their environmental strategies and pathways to net-zero operations. Our solution provides the monitoring and remediation tools needed to implement these strategies effectively, helping operators meet both their regulated reclamation timelines and their voluntary climate commitments.==
 
 4.  **Economic and Environmental Benefits**
 
@@ -186,7 +187,7 @@ Luminous BioSolutions' technology delivers substantial non-GHG environmental ben
 
 The project will directly support significant employment:
 
-- **Direct Project Employment**: 12 new jobs (8 in Alberta) during the demonstration phase, including environmental scientists, field technicians, data specialists, and project managers
+- **Direct Project Employment**: 12 new jobs during the demonstration phase, including environmental scientists, field technicians, data specialists, and project managers
 - **Indirect Project Employment**: 18-22 positions through suppliers, contractors, and research partners (15+ in Alberta)
 - **Post-Project Commercial Phase**: Potential for 30-45 permanent positions within Luminous BioSolutions by 2030, with 75-80% located in Alberta
 
