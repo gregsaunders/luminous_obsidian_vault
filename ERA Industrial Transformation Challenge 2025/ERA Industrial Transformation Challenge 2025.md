@@ -69,4 +69,6 @@ https://www.linkedin.com/in/isabellatarasco/
 ![[Pasted image 20250429114818.png]]
 
 
+![[Pasted image 20250429120809.png]]
+
 
