@@ -10,12 +10,12 @@ Successful applicants are eligible for up to $10 million per project; exceptiona
 
 The application deadline is **Thursday, June 12, 5 p.m. MDT (UTC-6h)**. Late submissions will not be accepted. An hour-long online webinar was held on Tuesday, April 29, at 11 a.m. MDT (UTC-6h).
 
-### DEADLINE FOR SUBMISSION
+#### DEADLINE FOR SUBMISSION
 **Thursday, June 12, 2025**  
 5 p.m. Mountain Daylight Time (UTC-6h)
 10 pages max
 
-Application link - https://grant-manager.com/erims/home
+2025 Industrial Transformation Challenge Application link - https://grant-manager.com/erims/home
 
 Luminous Submission Dropbox Folder Link - https://www.dropbox.com/scl/fo/h63zdvb5narkanpfezost/AFeacuyIvn3xL0rX12Ha1fA?rlkey=wsrymi4l772mlc662o4lke35a&st=c4jalvgd&dl=0
 
