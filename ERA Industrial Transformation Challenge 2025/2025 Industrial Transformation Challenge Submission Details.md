@@ -16,7 +16,10 @@ Partnerships are encouraged. Consortiums help attract and retain highly skilled 
 5 p.m. Mountain Daylight Time (UTC-6h)
 10 pages max
 
-Program Manager - applications@eralberta.ca 
+**Industrial Transformation Challenge Program Manager**:
+Isabella Tarasco 
+Lead, Technology Investment 
+applications@eralberta.ca 
 
 **2025 Industrial Transformation Challenge Application link** - https://www.eralberta.ca/funding-technology/industrial-transformation-challenge-2025/
 
@@ -46,7 +49,7 @@ Submissions will be selected through ERA’s competitive review process. A team 
 
 #### TIMELINE
 - _**April 2025:**_ competition launch
-- _**June 2025:**_ application deadline/adjudication begins
+- _**June 12, 2025:**_ application deadline/adjudication begins
 - _**July 2025:**_ requests sent to shortlist for Full Project Proposals (FPPs)
 - _**September 2025:**_ FPP review/adjudication
 - **_December 2025:_** Board approval
