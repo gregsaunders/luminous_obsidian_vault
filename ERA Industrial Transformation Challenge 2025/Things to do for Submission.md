@@ -13,9 +13,11 @@
 - [ ] PTAC
 - [ ] Genome Alberta
 - [ ] Carla Davidson
+- [ ] Indigenous 
 - [ ] Alberta Innovates
 - [ ] CRIN
 - [ ] AER
+- [ ] Natural resources Canada (NRC)
 - [ ] 
 
 
