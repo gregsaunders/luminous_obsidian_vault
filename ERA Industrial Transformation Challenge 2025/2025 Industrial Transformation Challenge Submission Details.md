@@ -16,7 +16,7 @@ Partnerships are encouraged. Consortiums help attract and retain highly skilled 
 5 p.m. Mountain Daylight Time (UTC-6h)
 10 pages max
 
-Program Manager - 
+Program Manager - applications@eralberta.ca 
 
 **2025 Industrial Transformation Challenge Application link** - https://www.eralberta.ca/funding-technology/industrial-transformation-challenge-2025/
 
