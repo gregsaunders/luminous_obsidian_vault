@@ -20,6 +20,8 @@ Program Manager -
 
 **2025 Industrial Transformation Challenge Application link** - https://www.eralberta.ca/funding-technology/industrial-transformation-challenge-2025/
 
+**2025 Industrial Transformation Challenge Webinar Presentation - https://youtu.be/TaUsysQfKUI
+
 **Luminous Submission Dropbox Folder Link** - https://www.dropbox.com/scl/fo/h63zdvb5narkanpfezost/AFeacuyIvn3xL0rX12Ha1fA?rlkey=wsrymi4l772mlc662o4lke35a&st=c4jalvgd&dl=0
 
 #### ELIGIBLE TECHNOLOGIES
