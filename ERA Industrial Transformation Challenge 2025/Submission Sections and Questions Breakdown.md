@@ -42,7 +42,7 @@
 
 
 
-### 3. **1.**  GHG Benefits**
+### 3. GHG Benefits
 
 - Describe how the proposed solution results in direct or indirect greenhouse gas (GHG) benefits, including GHG reductions, displacement of higher-GHG products, GHG removals, carbon sequestration, or carbon sink enhancement. Please also describe how the proposed solution may contribute to any enabled GHG reductions.
 
@@ -50,5 +50,53 @@
 
 - Estimate the annual GHG reduction potential that could be achieved by market implementation of the solution by 2030 and 2050, and indicate any assumptions made for market penetration rate. Indicate what portion of market GHG benefits are expected within Alberta.
 
-·  Discuss how the solution may contribute to achieving net-zero GHG emissions in the sector(s) to which it applies. In particular, highlight the planned or expected role of the solution in corporate net-zero plans/commitments.
+- Discuss how the solution may contribute to achieving net-zero GHG emissions in the sector(s) to which it applies. In particular, highlight the planned or expected role of the solution in corporate net-zero plans/commitments.
 
+
+
+
+### 4. Economic and Environmental Benefits
+
+- Describe any non-GHG environmental benefits associated with the technology and project, including air, water, land use, remediation, waste reduction, etc. Where possible, quantify the impact both at the project level and per unit of market deployment.
+
+- Discuss the economic benefits associated with the project and potential technology commercialization. This encompasses how the project can benefit the applicant, partners, community, and Alberta. These benefits include financial gains like increased revenue or profit, job creation, training opportunities, attraction of investment capital, improving cost competitiveness, economic diversification, etc., using quantitative factors where possible.
+
+- Quantify the direct employment that will be supported by implementation of the project, including creation of new temporary and permanent jobs, retention of workforce, and support of contractors. Clearly indicate which jobs will be located in Alberta and outside of Alberta.
+
+- Describe any potential negative impacts of the solution relative to current practice (e.g.: increased water consumption, air quality, public safety, chemical handling, etc.).
+
+- Describe any ancillary benefits associated with adoption of the proposed solution, including social, health, and other regional impacts. These may involve engaging Indigenous and rural groups, post-secondary involvement for training future generations, improved access to resources and services, and better health and safety outcomes. Ultimately, these benefits enhance the quality of life for employees, residents, and community members by ensuring they have the necessary support systems and opportunities.
+
+
+
+### 5. Market and Value Proposition
+
+- Describe the target market for commercialization of the solution in Alberta, including potential customers or clients.
+
+- Discuss the overall market potential in Alberta (e.g. number of sites, scale of installations, installed capacity, etc.). Market assessments should consider both the market for deploying the proposed solution (e.g.: number of sites) AND the market for any outputs of the technology (e.g.: tonnes of product sold).
+
+- Where applicable, quantify and discuss the potential for the solution to be exported beyond Alberta, i.e., the market potential elsewhere in Canada and internationally.
+
+- Briefly discuss the applicability or adaptability of the solution to other sectors beyond the initial target market(s).
+
+- Provide a brief overview of the economics for the proposed solution at commercial scale in terms of capital cost, operating cost, and return on investment.
+
+- Briefly outline the pathway to commercial implementation of the technology in Alberta including next steps following the completion of the proposed project.
+
+- Describe the challenges, barriers, and risks to the commercialization pathway, including policies required for successful commercialization.
+
+- Briefly discuss the plan for distribution and sharing of results from the proposed project. Elements to consider include workshops, papers/reports, presentations, IP sharing, etc. Identify the extent to which outcomes, data, and learnings will be shared (e.g.: with industry members, researchers, regulators, and the public).
+
+
+
+### Required Attachment: Milestone Summary Table
+
+- Please fill in the table below with as much detail as possible and to the best of your knowledge.
+
+- This milestone table will NOT count towards the 10-page EOI limit.
+
+- Please refrain from appending additional information or attachments as these will be removed and not considered as part of the review.
+
+- Do not modify the format of this template. Modifications may result in this portion of the proposal being disqualified from a review.
+
+![[Pasted image 20250430151751.png]]
