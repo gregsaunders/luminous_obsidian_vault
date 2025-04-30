@@ -19,7 +19,7 @@
 
 - **Our Integrated Solution – A Game Changer:** Forget slow, expensive lab tests and uncertain remediation. Luminous brings a three-part solution poised to transform tailings management:
     1. **Rapid Biosensors:** Engineered bacteria that _glow_ in the presence of Naphthenic Acids (NAs), giving results in _minutes_, not weeks. Imagine real-time, pond-wide NA maps!
-    2. **Targeted Bioremediation:** We don't just detect; we help _defeat_ NAs. Using insights from our sensors, we identify and deploy the most effective _native_ Alberta microbes to naturally break down these stubborn toxins faster.docx].
+    2. **Targeted Bioremediation:** We don't just detect; we help _defeat_ NAs. Using insights from our sensors, we identify and deploy the most effective _native_ Alberta microbes to naturally break down these stubborn toxins faster.
     3. **Intelligent Data Platform:** All this data feeds into a smart, cloud-based platform, turning numbers into actionable insights, tracking progress, predicting hotspots, and ensuring transparency.
 - **Why This Project Matters:**
     - **Beyond the Lab:** This isn't just theory. This project takes our proven components (currently TRL 5-6) and integrates them into a full system demonstration _in actual tailings ponds_ (reaching TRL 7-8).
