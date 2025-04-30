@@ -1,4 +1,3 @@
-
 ## ANNOUNCING UP TO $65 MILLION FOR 2025 INDUSTRIAL TRANSFORMATION CHALLENGE TO INCREASE ALBERTA’S GLOBAL COMPETITIVENESS
 Alberta’s emissions-intensive, trade-exposed industries face challenges to reducing emissions while improving operational efficiencies and increasing global competitiveness amidst geopolitical changes. ERA’s Industrial Transformation Challenge is an annual funding competition designed to improve the economic competitiveness and environmental sustainability of Alberta’s industrial and natural resource sectors. 
 
@@ -7,8 +6,10 @@ The 2025 Industrial Transformation Challenge provides up to $65 million towards 
 New for this year, projects and technologies with environmental benefits beyond emissions reduction are invited to apply, including improved water management, soil remediation, reduced land use or disturbance, and the reduction of air pollutants.
 
 Successful applicants are eligible for up to $10 million per project; exceptionally strong projects with a high funding leverage ratio may be eligible up to $15 million on a limited basis. The minimum request is $500,000. The maximum ERA contribution to a single project will be no more than 50 per cent of the project’s eligible expenses.
+
 #### WHO SHOULD APPLY
 Innovators, technology developers, industrial facility owners and operators, industrial associations, small and medium-sized enterprises (SMEs), research and development organizations, universities, not-for-profit organizations, government research labs, and individuals are invited to apply. While technology solutions can originate from anywhere globally, they should be piloted, demonstrated, or deployed in Alberta or show direct economic benefit to the province.
+
 #### PARTNERSHIPS
 Partnerships are encouraged. Consortiums help attract and retain highly skilled workers, increase Alberta’s innovation capacity, engage local communities, and leverage complementary resources. Applicants are encouraged to partner with Alberta’s post-secondary and research institutions, Indigenous communities, co-operative organizations, and municipalities where they can.
 #### DEADLINE FOR SUBMISSION
@@ -19,11 +20,12 @@ Partnerships are encouraged. Consortiums help attract and retain highly skilled 
 **Industrial Transformation Challenge Program Manager**:
 Isabella Tarasco 
 Lead, Technology Investment 
+kduncan@eralberta.ca
 applications@eralberta.ca 
 
 **2025 Industrial Transformation Challenge Application link** - https://www.eralberta.ca/funding-technology/industrial-transformation-challenge-2025/
 
-**2025 Industrial Transformation Challenge Webinar Presentation - https://youtu.be/TaUsysQfKUI
+**2025 Industrial Transformation Challenge Webinar Presentation** - https://youtu.be/TaUsysQfKUI
 
 **Luminous Submission Dropbox Folder Link** - https://www.dropbox.com/scl/fo/h63zdvb5narkanpfezost/AFeacuyIvn3xL0rX12Ha1fA?rlkey=wsrymi4l772mlc662o4lke35a&st=c4jalvgd&dl=0
 
