@@ -5,8 +5,8 @@
 - [ ] Athabasca U  
 - [ ] UofC 
 - [ ] Pathways Alliance 
-- [ ] CNR
-- [ ] Imperial
+- [x] CNR ✅ 2025-05-01
+- [x] Imperial ✅ 2025-05-01
 - [ ] Suncor
 - [ ] Vogon Labs
 - [ ] Northern Alberta Greenhouse wetland researchers
