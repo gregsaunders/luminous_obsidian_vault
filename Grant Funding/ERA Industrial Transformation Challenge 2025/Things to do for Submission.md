@@ -4,15 +4,15 @@
 
 #### Partners
 
-- [ ] Genome Alberta
+- [x] Genome Alberta ✅ 2025-05-12
 - [ ] Alberta Innovates 
 - [ ] Vogon Labs
-- [ ] CNR
-- [ ] Imperial
+- [x] CNR ✅ 2025-05-12
+- [x] Imperial ✅ 2025-05-12
 - [ ] Pathways / COSIA
 - [ ] Suncor
 - [ ] Edmonton Unlimited
-- [ ] ERA
+- [x] ERA ✅ 2025-05-12
 - [ ] AU
 - [ ] UofC
 - [ ] Indigenous Carla Davidson
