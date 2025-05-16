@@ -135,7 +135,7 @@ Stage 2: Field Pilots with Industry (8-18 months)
 - Deploy biosensor monitoring for 2-3 operators
 - Establish baseline NA profiles 
 - Conduct controlled bioaugmentation trials 
-- Refine detection limits and sensitivity in field
+- Refine detection limits and sensitivity in field (**WHAT is THIS?**)
 - Validate cost models and performance metrics
 
 Stage 3: Scaling Commercial Deployment (18-36 months)
@@ -150,10 +150,10 @@ Resources Required:
 
 Technical:
 
-- Laboratory facilities for biosensor optimization and bacterial cultivation
+- Laboratory facilities for **biosensor testing** and bacterial cultivation
 - Field testing equipment and transportation logistics
 - Data infrastructure for analytics platform
-- Molecular biology capabilities for strain optimization
+- Molecular biology capabilities for strain optimization (**DELETE, THERE IS NO GMO for bioremediation, biosensors are done)**
 
 Team Expansion:
 
@@ -165,7 +165,7 @@ Team Expansion:
 Business Development Resources:
 
 - Industry partnership agreements with 2-3 key operators
-- IP protection for novel bacterial strains and biosensor configurations 
+- IP protection for  biosensor configurations and **bioaugmentation** bacterial strains
 - Quality assurance systems for consistent field performance
 - Customer support infrastructure for commercial deployment
 
@@ -190,16 +190,16 @@ Consider any legal, regulatory, development, market, and/or business model risk
 Technical Risks:
 
 Field Performance: Biosensor performance may be affected by diverse tailings pond conditions (temperature, pH, other contaminants).
-Mitigation: Our extensive lab testing across varied conditions has identified optimal operating parameters. We'll implement adaptive calibration protocols for each deployment site and maintain parallel testing with conventional methods during early deployments.
+Mitigation: Our extensive lab testing across varied conditions has identified optimal operating parameters. We'll implement adaptive calibration protocols for each deployment site and maintain parallel testing with conventional methods during early deployments. **(WHAT is this referring to? biosensors?)**
 Bioaugmentation Efficacy Scale-up: NA degradation rates achieved in controlled settings may not directly translate to full-scale operations.
-Mitigation: Our approach uses graduated testing, starting with small controlled sections before expanding. The monitoring system provides real-time feedback on degradation rates, allowing continuous optimization.
+Mitigation: Our approach uses graduated testing, starting with small controlled **pilots** before expanding. The monitoring system provides real-time feedback on degradation rates, allowing continuous optimization.
 
 Regulatory Risks:
 
-Acceptance of Biosensor Data: Regulatory agencies may require validation against traditional analytical methods.
+Acceptance of Biosensor Data: Regulatory agencies may require validation against traditional analytical methods (**partner in place, Vogon Labs**).
 Mitigation: We recommend sporadic mass spectrometry testing for regulatory acceptance. Early engagement with AER will established acceptance criteria.
 Bioaugmentation Approvals: Environmental release permits for bacterial strains may face regulatory hurdles.
-Mitigation: We exclusively use naturally occurring bacteria indigenous to oil sands environments, documented through 10+ years of research. Our field pilot have validated this approach.
+Mitigation: We exclusively use naturally occurring bacteria indigenous to oil sands environments, documented through **20+** years of research. O**ur lab pilot ha**ve validated this approach. (**careful here, 20+ years showing oil sands bacteria degrade NA, before me, are you referring to the mesocosm pilot using the biosensors? I would add that this to point #1, that we have used biosensors in a pilot mesocosm water treatment and shown consistency with orbitrap MS)**
 
 Business Risks:
 
@@ -223,18 +223,18 @@ The Project is the scope of work presented in this Application, to be delivered 
 This project will develop and validate a comprehensive solution for naphthenic acid (NA) detection and degradation in oil sands tailings ponds. This project will advance our technology from its current validated laboratory proof-of-concept to field implementation.
 
 The methodology follows a systematic approach across three integrated workstreams:
-Workstream 1: Biosensor Optimization 
-Building on our successful demonstrations at the University of Calgary lab, we will optimize our three-biosensor panel for commercial application, focusing on sensitivity, specificity, and robustness. 
+Workstream 1: Biosensor **Implementation** (Optimization) 
+Building on our successful demonstrations at the University of Calgary lab, and **a mesocosm water treatment system**, we will optimize our three-biosensor panel for commercial application, focusing on sensitivity, specificity, and robustness. 
 
 Activities include:
-Optimizing biosensor performance across variable field conditions (temperature ranges, pH variations etc.)
+Optimizing biosensor performance across variable field conditions (**ospw chemistry, pH variations etc**.)
 Developing standardized sampling protocols for tailings pond environments
 Creating a portable, user-friendly field testing kit with simplified workflows
 Establishing quality control standards for consistent performance
 
 Workstream 2: Bioaugmentation System Development
 Leveraging Athabasca University's facilities, we will:
-Scale up cultivation of identified NA-degrading bacterial consortia
+Scale up **bioreactor** cultivation of identified NA-degrading bacterial consortia
 Optimize growth conditions for maximum NA degradation efficiency
 Develop field deployment protocols for controlled bioaugmentation
 Design and test a modular bioreactor system for on-site bacterial production
@@ -250,7 +250,7 @@ Design a user-friendly interface for operational decision support
 Establish reporting templates for regulatory compliance documentation
 
 Project Objectives
-Develop a biosensor service capable of detecting multiple NA classes at concentrations of 10-100 mg/L with results within 60 minutes
+Develop a biosensor service capable of detecting multiple NA classes at concentrations of **1-100 mg/L** with results within **48 hrs (we want to be able to detect at very low concentratinos, like in the athabasca river 1-5 mg/L**
 Establish NA-degrading bacterial consortia that demonstrate accelerated reduction in NA compounds under field-relevant conditions
 Create an integrated data analytics platform that transforms biosensor readings into actionable intelligence for tailings management
 Validate the integrated system through controlled field testing at partner oil sands operations
@@ -265,7 +265,7 @@ Regulatory submission package supporting acceptance of technology for compliance
 
 Anticipated Outcomes
 
-Technical: A validated, integrated platform that achieves mass NA monitoring while enabling targeted NA remediation
+Technical: A validated, integrated platform that achieves **high volume** NA monitoring while enabling targeted NA remediation
 Environmental: Accelerated NA degradation pathways significantly reducing remediation timelines to natural attenuation
 Economic: Solution that delivers low monitoring expenses and long-term remediation liabilities
 Regulatory Outcomes: Science-based framework for demonstrating progress toward water release quality standards
@@ -307,7 +307,7 @@ Positive Impacts (Short-term: 2-3 years)
 
 Positive Impacts (Medium-term: 3-5 years)
 - Bioaugmentation will accelerate NA degradation significantly compared to natural attenuation, reducing the environmental persistence of these toxic compounds
-- Improved water quality in treated areas will create opportunities for safe recycling and reduced freshwater consumption
+- Improved water quality in treated areas will create opportunities for safe **water release,** recycling and reduced freshwater consumption
 - Targeted remediation will reduce overall environmental footprint of tailings management
 
 Positive Impacts (Long-term: 5-10 years)
@@ -361,7 +361,7 @@ Positive Impacts (Long-term: 7-15 years)
 
 Potential Negative Impacts and Mitigation
 - Potential public concern about bioaugmentation approaches
-  Mitigation: Transparent communication about safety protocols and use of indigenous bacteria only
+  Mitigation: Transparent communication about safety protocols and use of **non-GMO** bacteria only
 
 Other Strategic Impacts
 
