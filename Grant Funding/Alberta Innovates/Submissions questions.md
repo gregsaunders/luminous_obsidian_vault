@@ -4,13 +4,13 @@
 
 ##### This is a brief, non-confidential lay summary of the project, the activities to be performed and the anticipated outcomes. When preparing this section, consider using a third-person narrative format.
 
-Alberta's oil sands tailings ponds present an urgent environmental challenge: 1.4 trillion litres of process-affected water contaminated with persistent, toxic naphthenic acids (NAs). These compounds prevent safe water release, delay land reclamation, increase financial liabilities for operators, and erode public trust. The industry faces a critical bottleneck – monitoring NAs requires expensive, slow laboratory methods that yield sporadic, limited data snapshots, leaving operators essentially blind to real-time changes and hampering efforts to develop effective remediation strategies.
+Alberta's oil sands tailings ponds present an urgent environmental challenge: 1.4 trillion litres of process-affected water contaminated with persistent, toxic naphthenic acids (NAs). These compounds prevent safe water release, delay land reclamation, increase financial liabilities for operators, and erode public trust. The industry faces a critical bottleneck – monitoring NAs requires expensive, slow laboratory methods that yield sporadic, limited data snapshots, leaving operators essentially blind to real-time changes and hampering efforts to develop effective remediation strategies. 
 
-Luminous BioSolutions' BioLuminescent Monitoring and Remediation Platform offers a transformative solution. The technology harnesses engineered bacteria that emit light in direct proportion to NA concentration, providing results within minutes rather than weeks. Unlike conventional methods, these biosensors can detect multiple classes of NAs at environmentally relevant concentrations (1.5-15 mg/L) at a fraction of current costs, enabling comprehensive monitoring across vast tailings volumes.
+Luminous BioSolutions' BioLuminescent Monitoring and Remediation Platform offers a transformative solution. The technology harnesses engineered bacteria that emit light in direct proportion to NA concentration, providing results within minutes rather than weeks. Unlike conventional methods, **these biosensors can detect multiple classes of NAs at concentrations that are present in tailings ponds  (10-120 mg/L)** at a fraction of current costs, enabling comprehensive monitoring across vast tailings volumes.
 
-This project will optimize a multi-biosensor panel for the lab or potential field deployment, validate performance with sporatic validation from mass spectrometry. We're developing an analytics platform that transforms real-time data into actionable intelligence. Our biosensor panel goes beyond detection, it simultaneously identifies naturally occurring bacteria capable of degrading specific NA compounds, enabling targeted bioremediation approaches.
+This project will optimize a multi-biosensor panel for the lab or potential field deployment, **and will be validated with mass spectrometry**. We're developing an analytics platform that transforms real-time data into actionable intelligence. **Our biosensor panel goes beyond detection of NA in water, it allows rapid  identification of NA degrading abilities of naturally occurring bacteria in OSPW,  thereby identifying the essential microbes for bioaugmentation  approaches.**
 
-The stark contrast between current and future states is compelling: from sporadic, expensive sampling to continuous, affordable monitoring; from uncertainty about NA distribution to precise mapping; from reactive management to proactive solutions; and ultimately, from indefinite containment to pathways for safe water release.
+The stark contrast between current and future states is compelling: from sporadic, expensive NA monitoring to continuous, affordable monitoring; from uncertainty about NA distribution to precise mapping; from reactive management to proactive solutions; and ultimately, f**rom indefinite containment to pathways for safe water treatment and eventual water release.**
 
 The outcomes will revolutionize tailings management: Significant reduction in monitoring costs, unprecedented temporal and spatial resolution of NA data, accelerated remediation timelines, and a science-based framework for regulatory compliance. This made-in-Alberta innovation directly addresses a pressing environmental challenge while creating new economic opportunities in environmental technology – a perfect alignment of ecological responsibility and economic advancement.
 
@@ -25,7 +25,7 @@ Operational constraints are evident with some operators approaching storage capa
 
 The persistence of NAs compounds this challenge – these molecules can remain toxic in tailings ponds for decades under natural conditions. The slow degradation rate of complex NAs creates a critical need for accelerated breakdown mechanisms, as natural attenuation timelines are incompatible with regulatory and business requirements.
 
-Regulatory requirements create complexity – without reliable, comprehensive NA monitoring data, operators cannot demonstrate compliance with emerging water quality standards for potential release. Current monitoring methods cost $500-1,500 per sample and require weeks for results, making frequent, large-scale sampling economically impractical.
+Regulatory requirements create complexity – without reliable, comprehensive NA monitoring data, operators cannot demonstrate compliance with emerging water quality standards for potential release. Current monitoring methods cost $500-**1,000** per sample and require weeks for results, making frequent, **high throughput** sampling economically impractical.
 
 Community and stakeholder relationships are challenged – concerns about NA impacts on watershed health influence social license to operate and regulatory approvals. Indigenous communities downstream have expressed specific concerns about long-term water quality impacts.
 
@@ -45,15 +45,18 @@ The foundation of this innovation are bioluminescent bacterial biosensors – en
 
 The solution consists of three components:
 
-1. Multi-Biosensor Panel for NA Detection: Our panel features three distinct biosensors, each responding to different classes of NAs found in tailings ponds:
-    - atuA biosensor responds primarily to acyclic NAs, detection limits as low as 15 mg/L
-    - marR biosensor detects complex, multi-ringed NAs, responds to OSPW extracts at concentrations of 16 mg/L
-    - hyp3680 biosensor highly sensitive to cyclic NAs, detection limits as low as 10 mg/L
+1a. Multi-Biosensor Panel for NA Detection: Our panel features three distinct biosensors, each responding to different classes of NAs found in tailings ponds:
+    - atuA biosensor responds primarily to acyclic NAs, 
+    - marR biosensor detects complex, multi-ringed NAs, 
+    - 3680 biosensor highly sensitive to classic NAs, 
+    
+**1b. Biosensors can be grown directly in water sample to detect NAs at concentrations between 10-120 mg/L. For lower NA concentrations, water can be evaporated and tested immediately, or NAs are concentrated using solid phase extraction and tested to produce semi-quantitative** results.
 
-2. Bioaugmentation for Enhanced NA Degradation: Leveraging the same biological principles as our biosensors. We identify and cultivate naturally occurring bacteria with the highest capacity to degrade specific NA compounds. These bacteria can be:
-    - Selected for optimal performance in constructed wetland treatment systems
-    - Produced at scale for direct introduction (bioaugmentation) into treatment zones
+2. Bioaugmentation for Enhanced NA Degradation:  **We cultivate and identify naturally occurring, NA degrading bacteria using the NA biosensors, which can be done in a period of days, compared to years using analytical chemistry methods. These bacteria can be:**
+    - Grown as **pure cultures or defined, simple communities** for optimal performance in water treatment systems (eg. constructed wetlands, pit lake)
+    - Produced at scale for direct introduction (bioaugmentation) into treatment process
     - Paired with monitoring to create closed-loop optimization of remediation 
+    - **Supplemented with proprietary nutrients to stimulate growth and degradation (biostimulation)**
     
 3. Data Analytics Platform: Our software compiles biosensor readings and remediation performance data to create actionable intelligence for tailings management:
     - Near real-time mapping of NA concentrations 
@@ -65,13 +68,14 @@ Scientific Validation
 
 Our technology is built on solid scientific foundations and preliminary validation. Our biosensors have demonstrated:
 
-- Detection limits of 10-15 mg/L, aligning with environmentally relevant NA concentrations in tailings ponds (10-120 mg/L)
+- Detection limits of **1.5-15 mg/L** , aligning with environmentally relevant NA concentrations in tailings ponds (10-120 mg/L)
+- **Minimal water treatment to concentrate and detect NA at low concentration.**
 - Clear dose-dependent responses to NA mixtures, enabling semi-quantitative measurement
 - Specificity to different NA classes, allowing for comprehensive assessment of NA composition
-- Successful detection of NAs in actual OSPW samples from oil sands facilities
+- Successful detection of NAs in **actual raw and treated OSPW samples** from oil sands facilities
 - Response times of minutes compared to weeks for conventional analytical methods
 
-Our bioaugmentation approach is supported by research showing specific bacterial strains can degrade NAs under appropriate conditions. Degradation rates varying by NA structure,  our technology identifies the most effective degraders for each NA class present in a specific tailings facility.
+Our bioaugmentation approach is supported by research showing specific bacterial strains can degrade NAs under **lab c**onditions. Degradation rates varying by NA structure,  our technology identifies the most effective degraders for each NA class present in a specific tailings facility.
 
 The scientific principles underpinning this technology are documented in peer-reviewed research, including publications demonstrating successful biosensor construction for NA detection in OSPW.
 
@@ -101,7 +105,7 @@ Primary applications include:
 - Performance validation: Real-time monitoring of NA removal efficiency
 - Release readiness: Validation of water quality for potential future release
 
-Potential users span the oil sands ecosystem, operators, environmental consultants, local stakeholders, regulators, and research institutions.
+Potential users span the oil sands ecosystem, operators, **environmental monitoring providers, consultants**, local stakeholders, regulators, and research institutions.
 
 Competitive Landscape
 
@@ -111,7 +115,7 @@ No solution combines rapid detection of biosensors with the identification and d
 
 Pathway to Implementation
 
-The technology has progressed through laboratory validation and is ready for field testing. Initial deployments will focus on biosensor monitoring to establish baselines, followed by bioaugmentation trials in controlled areas. The analytics system will evolve based on field data, creating an increasingly valuable dataset with each deployment.
+The technology has progressed through laboratory validation and is ready for field testing. Initial deployments will focus on biosensor monitoring to establish baselines, **followed by **bioaugmentation in pilot scale experiments in mesocosms, progressing to trials in constructed wetlands.** The analytics system will evolve based on field data, creating an increasingly valuable dataset with each deployment.
 
 This innovation represents a practical, biologically-based approach to a complex environmental challenge. By making comprehensive NA monitoring economically viable and pairing it with targeted remediation, it addresses both the detection and treatment aspects of tailings management, ultimately supporting the industry's goal of responsible water management and reclamation.
 
@@ -122,7 +126,7 @@ Consider the pathways for commercialization (for technology-based projects) or k
 Luminous is advancing technology from academic research to commercial application with clear milestones planned:
 
 Stage 1: Optimization and Validation (6-12 months)
-- Finalize biosensor specifications
+- Finalize biosensor specifications (**delete- THIS IS DONE**)
 - Establish bioaugmentation bacterial libraries
 - Complete data analytics platform 
 
