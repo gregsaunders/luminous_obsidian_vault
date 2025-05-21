@@ -2,11 +2,11 @@
 
 ## 1. Made-in-Alberta Innovation Solving a Critical Environmental Challenge
 
-Luminous BioSolutions represents a true Alberta success story – born from research at Athabasca University and University of Calgary, addressing a pressing Alberta-specific environmental challenge. This integrated solution for naphthenic acid monitoring and remediation demonstrates how local innovation can address complex industry challenges. By supporting this technology, ERA invests not just in environmental outcomes, but in Alberta's growing cleantech innovation ecosystem.
+Luminous BioSolutions represents a true Alberta success story born from research at Athabasca University and University of Calgary, addressing a pressing Alberta-specific environmental challenge. This integrated solution for naphthenic acid monitoring and remediation demonstrates how local innovation can address complex industry challenges. By supporting this technology, ERA invests not just in environmental outcomes, but in Alberta's growing cleantech innovation ecosystem.
 
 ## 2. Unlocking Tailings Pond Management with Transformative Technology
 
-Our solution directly addresses one of the most persistent and challenging barriers to tailings management and water release – the persistent toxicity of naphthenic acids. By tackling this specific challenge through our three-part approach (rapid detection, data-driven insights, and targeted bioaugmentation), we enable operators to move from passive containment to active management and eventual reclamation. This represents a paradigm shift for an industry seeking viable pathways to reduce their environmental footprint.
+Our solution directly addresses one of the most persistent and challenging barriers to tailings management and water release, the persistent toxicity of naphthenic acids. By tackling this specific challenge through our three-part approach (rapid detection, data-driven insights, and targeted bioaugmentation), we enable operators to move from passive containment to active management and eventual reclamation. This represents a paradigm shift for an industry seeking viable pathways to reduce their environmental footprint.
 
 ## 3. Minimal Energy Intensity for Maximum Environmental Impact
 
