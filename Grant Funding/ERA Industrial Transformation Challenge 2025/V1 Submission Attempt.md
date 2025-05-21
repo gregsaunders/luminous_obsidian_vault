@@ -155,20 +155,22 @@ Without ERA funding, commercialization would likely be delayed by 3-5 years, as 
 
 ### Project Locations
 
-- **Laboratory Work**: LuminouAthabasca University and University of Calgary facilities
+- **Laboratory Work**: Luminous BioSolutions office Calgary, Athabasca University and University of Calgary facilities
 - **Controlled Testing**: University of Calgary mesocosm facilities
 - **Field Implementation**: [NEED INFORMATION - Has a specific oil sands site been identified or are you still in discussions?]
 
 ### Project Consortium and Execution Structure
 
-|**Organization**|**Role**|**Status**|**Key Responsibilities**|
-|---|---|---|---|
-|Luminous BioSolutions|Lead Proponent|Confirmed|Project management, technology integration, commercialization|
-|Athabasca University|Academic Partner|Confirmed|Biosensor optimization, laboratory facilities|
-|University of Calgary|Academic Partner|Confirmed|Bacterial culture development, mesocosm testing|
-|Endeavour Scientific|Indigenous Engagement Partner|Confirmed|Stakeholder engagement, knowledge translation|
-|[Oil Sands Operator]|Industry Partner|In Discussion|Field site provision, technical guidance|
-|Pathways Alliance/COSIA|Industry Consortium|In Discussion|Knowledge sharing, technical advisory|
+| **Organization**        | **Role**                      | **Status**    | **Key Responsibilities**                                      |
+| ----------------------- | ----------------------------- | ------------- | ------------------------------------------------------------- |
+| Luminous BioSolutions   | Lead Proponent                | Confirmed     | Project management, technology integration, commercialization |
+| Athabasca University    | Academic Partner              | Confirmed     | Biosensor optimization, laboratory facilities                 |
+| University of Calgary   | Academic Partner              | Confirmed     | Bacterial culture development,                                |
+| Endeavour Scientific    | Indigenous Engagement Partner | Confirmed     | Stakeholder engagement, knowledge translation                 |
+| [Oil Sands Operator]    | Industry Partner              | In Discussion | Field site provision, technical guidance                      |
+| Pathways Alliance/COSIA | Industry Consortium           | In Discussion | Knowledge sharing, technical advisory                         |
+| ==Meocosm facility==    | Pilot Facility Partner        |               | mesocosm testing                                              |
+| Vogon Labs              | Testing Partner               |               | ==MS Testing==                                                |
 
 ### Core Team Members
 
@@ -200,24 +202,24 @@ ERA funding is critical to bridge the "valley of death" between laboratory succe
 
 1. **Technical Risk Reduction**: Field validation at operational scale is essential to prove commercial viability
 2. **Industry Adoption Barrier**: First deployment risk is too high for industry partners without proven field performance
-3. **Infrastructure Development**: Data platform and field equipment development requires upfront investment not justified for single implementation
+3. **Infrastructure Development**: Data platform, bio reactor and field equipment development requires upfront investment not justified for single implementation
 4. **Regulatory Pathway**: Demonstration project provides data necessary for regulatory approval of broader implementation
 
-**Information Still Needed**:
+==**Information Still Needed**:==
 
-1. **Budget Details**: What is your target total project budget and ERA funding request amount?
+1. **Budget Details**: What is our target total project budget and ERA funding request amount?
     
 2. **Financial Contributors**: Specific funding commitments and amounts from:
-    
     - Luminous BioSolutions (cash and in-kind)
     - Industry partners
-    - Academic institutions (in-kind contributions)
     - Other potential funders (Genome Alberta, Alberta Innovates, etc.)
-3. **Field Site Details**:
+    - Investors
     
+3. **Field Site Details**:
     - Has a specific site been identified?
     - What scale of implementation is planned?
     - Any specific agreements or MOUs in place?
+    
 4. **Academic Team Details**: Key personnel from university partners and their specific roles
     
 5. **Timeline Specifics**: What are your target start and end dates, and key milestone timing?
