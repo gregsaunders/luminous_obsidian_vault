@@ -89,21 +89,20 @@ Current NA remediation approaches each have significant limitations compared to 
 ### Novel and Innovative Aspects
 
 - **First Integrated Solution**: No existing commercial solution to this problem combines rapid detection, data analytics, and targeted remediation in an integrated system. This holistic approach allows for continuous improvement through a feedback loop between monitoring and treatment optimization.
-- **Patented Biosensor Technology**: Our bacterial biosensors (patent pending) utilize synthetic biology to create NA-specific light responses unseen in any commercial application. The genetic circuits are designed with specificity for different NA compound classes, enabling comprehensive assessment of total toxicity. This is a critical
-- **Indigenous Bacterial Strains**: We've isolated and characterized native bacteria specifically evolved to degrade NAs in Alberta's unique climate and conditions. These strains are already adapted to the local environment, enhancing survival and performance while minimizing environmental concerns.
+- **Patented Biosensor Technology**: Our bacterial biosensors (patent pending) utilize synthetic biology to create NA-specific light responses unseen in any commercial application. The genetic circuits are designed with specificity for different NA compound classes, enabling comprehensive assessment of total toxicity. This is a critical component for addressing remediation strategies as it informs decisions in near real time. 
+- **Indigenous Bacterial Strains**: We've isolated and characterized native bacteria specifically evolved to degrade NAs in the oil sands tailings ponds unique climate and conditions. These strains are already adapted to the local environment, enhancing survival and performance while minimizing environmental concerns.
 - **Data-Driven Remediation**: Real-time monitoring enables precise application and verification of remediation effectiveness, optimizing resource use. The analytics platform applies machine learning algorithms to identify optimal treatment conditions and predict remediation outcomes.
-
 ### Current Status and Advancement
 
 The technology is currently at TRL 5-6, with:
 
 - **Biosensors**: Laboratory validation complete using OSPW samples from multiple sources. Demonstrated detection limits of 5-15 mg/L for key NA compound classes, with linear response up to 150 mg/L. Validated against standard analytical methods with >90% correlation.
 - **Data Platform**: Architecture designed and beta version developed with core functionality for data integration and visualization. Initial machine learning models trained on laboratory datasets.
-- **Bioaugmentation**: Ten bacterial strains identified with significant NA degradation capability, demonstrating 40-60% reduction of total NAs within 60 days under laboratory conditions. Preliminary mesocosm testing shows promising results.
+- ==**Bioaugmentation**: three bacterial strains identified with significant NA degradation capability, demonstrating 40-60% reduction of total NAs within 60 days under laboratory conditions. Preliminary mesocosm testing shows promising results.==
 
 Through this project, we will advance to TRL 7-8 by:
 
-1. Optimizing biosensor formulations for field conditions, improving robustness, shelf-life, and performance in variable environments
+1. ==Optimizing biosensor formulations for field conditions, improving robustness, shelf-life, and performance in variable environments
 2. Developing field-deployable biosensor kits and protocols for non-laboratory settings
 3. Building the full data platform with stakeholder-specific interfaces and predictive analytics
 4. Testing bioaugmentation at increasing scales: laboratory → mesocosms → field implementation
