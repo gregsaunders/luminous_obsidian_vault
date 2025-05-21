@@ -36,6 +36,54 @@ Applicant Contact Email: Jeff.violo@luminousbiosolutions.com
 
 Luminous BioSolutions has developed an integrated three component system to address one of Alberta's most persistent environmental challenges; naphthenic acids (NAs) in oil sands process-affected water (OSPW).  NAs are acutely toxic compounds that persist for decades, preventing water release and hindering reclamation efforts across 1.4 trillion litres of stored OSPW.
 
+```mermaid
+flowchart TB
+    subgraph OSPW["Oil Sands Process-Affected Water"]
+        TP[Tailings Pond]
+    end
+
+    subgraph Component1["1. Biosensor Technology"]
+        SC[Sample Collection]
+        BA[Biosensor Analysis]
+        LD[Light Detection & Quantification]
+    end
+
+    subgraph Component2["2. Data Analytics Platform"]
+        DI[Data Integration]
+        VA[Visualization & Analytics]
+        PA[Predictive Algorithms]
+        DS[Decision Support]
+    end
+
+    subgraph Component3["3. Bioaugmentation"]
+        BC[Bacterial Culture Production]
+        BS[Bacterial Strain Selection]
+        BA2[Bioaugmentation Application]
+    end
+
+    TP --> SC
+    SC --> BA
+    BA --> LD
+    LD --> DI
+    DI --> VA
+    VA --> PA
+    PA --> DS
+    DS --> BS
+    BS --> BC
+    BC --> BA2
+    BA2 --> TP
+    DS --> |"Monitoring Plan"| SC
+
+    classDef ospw fill:#e6f7ff,stroke:#0077b6
+    classDef biosensor fill:#d8f3dc,stroke:#2d6a4f
+    classDef dataplatform fill:#f8edeb,stroke:#9d8189
+    classDef bioaug fill:#caf0f8,stroke:#0077b6
+    
+    class OSPW ospw
+    class Component1 biosensor
+    class Component2 dataplatform
+    class Component3 bioaug
+```
 Figure 1: Integrated NA monitoring, data analytics, and remediation system
 
 Our solution combines:
@@ -51,12 +99,14 @@ Our solution combines:
 
 Current approaches to NA management involve expensive analytical chemistry (FTIR, GC-MS) with weeks-long turnaround times, severely limiting testing frequency and responsiveness. No cost-effective remediation technology exists at industrial scale. Our solution's advantages include:
 
-|**Current Practice**|**Luminous Solution**|**Improvement Factor**|
-|---|---|---|
-|2-4 week result turnaround|Minutes to hours|~100X faster|
-|$250-800 per sample|$10-40 per sample|~20X cost reduction|
-|Limited testing frequency|Continuous monitoring possible|50-100X more data points|
-|Passive containment only|Active remediation|Enables reclamation pathway|
+**Monitoring**
+
+| **Current Practice**       | **Luminous Solution**          | **Improvement Factor**      |
+| -------------------------- | ------------------------------ | --------------------------- |
+| 2-4 week result turnaround | Minutes to hours               | ~100X faster                |
+| $250-1,000 per sample      | $10-50 per sample              | ~20X cost reduction         |
+| Limited testing frequency  | Continuous monitoring possible | 50-100X more data points    |
+| Passive containment only   | Active remediation             | Enables reclamation pathway |
 
 ### Competitive Alternatives
 
@@ -64,7 +114,7 @@ Current NA remediation approaches each have significant limitations compared to 
 
 - **Physical/Chemical Treatment**: Methods like ozonation or photocatalysis require substantial energy input, create harmful by-products, and are prohibitively expensive at scale.
 - **Chemical Amendments**: Adding polymers or coagulants may reduce some toxicity but don't address the NA compounds directly.
-- **Passive Natural Attenuation**: Current default approach; requires 20-40 years for significant NA reduction with no active management.
+- **Passive Natural Attenuation**: Current default approach; requires many years for significant NA reduction with no active management. Our bioaugmentation would significantly accelerate NA remediation complementing passive natural attenuation.
 
 ### Novel and Innovative Aspects
 
