@@ -36,63 +36,32 @@ Applicant Contact Email: Jeff.violo@luminousbiosolutions.com
 
 Luminous BioSolutions has developed an integrated three component system to address one of Alberta's most persistent environmental challenges; naphthenic acids (NAs) in oil sands process-affected water (OSPW).  NAs are acutely toxic compounds that persist for decades, preventing water release and hindering reclamation efforts across 1.4 trillion litres of stored OSPW.
 
+
 ```mermaid
 flowchart TB
-    subgraph OSPW["Oil Sands Process-Affected Water"]
-        TP[Tailings Pond]
-    end
-
-    subgraph Component1["1. Biosensor Technology"]
-        SC[Sample Collection]
-        BA[Biosensor Analysis]
-        LD[Light Detection & Quantification]
-    end
-
-    subgraph Component2["2. Data Analytics Platform"]
-        DI[Data Integration]
-        VA[Visualization & Analytics]
-        PA[Predictive Algorithms]
-        DS[Decision Support]
-    end
-
-    subgraph Component3["3. Bioaugmentation"]
-        BC[Bacterial Culture Production]
-        BS[Bacterial Strain Selection]
-        BA2[Bioaugmentation Application]
-    end
-
-    TP --> SC
-    SC --> BA
-    BA --> LD
-    LD --> DI
-    DI --> VA
-    VA --> PA
-    PA --> DS
-    DS --> BS
-    BS --> BC
-    BC --> BA2
+    TP[Tailings Pond] --> SC[Sample Collection]
+    SC --> BA[Biosensor Analysis]
+    BA --> LD[Light Detection & Quantification]
+    LD --> DI[Data Integration]
+    DI --> VA[Visualization & Analytics]
+    VA --> PA[Predictive Algorithms]
+    PA --> DS[Decision Support]
+    DS --> BS[Bacterial Strain Selection]
+    BS --> BC[Bacterial Culture Production]
+    BC --> BA2[Bioaugmentation Application]
     BA2 --> TP
-    DS --> |"Monitoring Plan"| SC
-
-    classDef ospw fill:#e6f7ff,stroke:#0077b6
-    classDef biosensor fill:#d8f3dc,stroke:#2d6a4f
-    classDef dataplatform fill:#f8edeb,stroke:#9d8189
-    classDef bioaug fill:#caf0f8,stroke:#0077b6
-    
-    class OSPW ospw
-    class Component1 biosensor
-    class Component2 dataplatform
-    class Component3 bioaug
+    DS --> |Monitoring Plan| SC
 ```
+
 Figure 1: Integrated NA monitoring, data analytics, and remediation system
 
-Our solution combines:
+#### Our solution combines:
 
-1. **Rapid Bacterial Biosensor Technology**: Engineered bacteria emit light in direct proportion to NA concentration, providing quantitative results within minutes versus weeks for conventional methods. Biosensors are tailored to detect specific NA compound classes, enabling comprehensive screening, and can be made field deployable.
-    
-2. **Real-Time Data Analytics Platform**: Cloud-based system aggregates biosensor data across monitoring points, providing visualization, trend analysis, and predictive insights to operators, regulators, and stakeholders.
-    
-3. **Targeted Bioaugmentation**: Selected native bacteria from Northern Alberta's environment are cultivated and applied to accelerate NA degradation; a process proven effective in laboratory and mesocosm studies.
+1. **Rapid Bacterial Biosensor Technology**: Engineered bacteria emit light in direct proportion to NA concentration, providing quantitative results within minutes versus weeks for conventional methods. The biosensors contain synthetic genetic circuits that respond specifically to different classes of naphthenic acids, activating the production of a bioluminescent protein. Light output is measured using portable luminometers, with intensity directly proportional to NA concentration. These biosensors are tailored to detect specific NA compound classes, enabling comprehensive screening, and can be deployed in field conditions.
+
+2. **Real-Time Data Analytics Platform**: A cloud-based system aggregates biosensor data across monitoring points, providing visualization, trend analysis, and predictive insights. The platform integrates geospatial data with temporal trends, enabling operators to map NA concentration patterns, identify hotspots, and track remediation progress. Customized dashboards provide relevant information to different stakeholders operational metrics for operators, compliance data for regulators, and transparency for communities.
+
+3. **Targeted Bioaugmentation**: Selected native bacteria from Northern Alberta's environment are cultivated and applied to accelerate NA degradation – a process proven effective in laboratory and mesocosm studies. These bacteria express enzymes capable of breaking down the cyclic and acyclic structures of NAs, converting them to less toxic compounds that can be further metabolized. Application methods include direct injection, floating bioreactors, and enhanced constructed wetlands.
     
 
 ### Transformative Improvement Over Current Practice
