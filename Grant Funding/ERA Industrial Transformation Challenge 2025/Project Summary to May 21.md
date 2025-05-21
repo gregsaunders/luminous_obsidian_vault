@@ -14,6 +14,7 @@
     - Dani, Doug, and Christine - Exploring mesocosm testing partnership
     - Genome Alberta - Initial discussions underway
     - Ralph Hindle (analytical MS services) - Potential partner
+    - Carla DavidsonEndeavour Scientific
 
 ### Technical Development
 
