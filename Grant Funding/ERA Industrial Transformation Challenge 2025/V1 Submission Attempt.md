@@ -117,135 +117,117 @@ ERA investment will accelerate commercialization by:
 - **Creating Implementation Protocols**: Field implementation will establish standard operating procedures required for commercial deployment.
 
 Without ERA funding, commercialization would likely be delayed by 3-5 years, as each component would need to be developed sequentially through smaller initiatives, rather than as an integrated system with field validation.
+
 ## 2. Implementation Plan
 
-### Project Objectives and Scope
+### Project Objectives, Work Scope, and Deliverables
 
-This project will demonstrate and validate our integrated NA monitoring and remediation system at increasing scales, culminating in field implementation at an operational oil sands facility. Specific objectives include:
+**Primary Objective**: Demonstrate and validate Luminous BioSolutions' integrated naphthenic acid monitoring and remediation system at field scale, advancing the technology from TRL 5-6 to TRL 7-8 and establishing commercial deployment protocols.
 
-1. Optimize biosensor performance for field conditions and develop production protocols
-2. Build and deploy the data analytics platform with stakeholder-specific interfaces
-3. Scale up bacterial culture production and develop field application methods
-4. Demonstrate overall system effectiveness in reducing NA concentrations in OSPW
-5. Establish performance metrics and protocols for regulatory compliance
+**Specific Objectives**:
+1. Optimize biosensor technology for field deployment conditions
+2. Develop scalable bacterial culture production and application methods
+3. Build and validate the integrated data analytics platform
+4. Demonstrate system effectiveness in reducing NA concentrations in operational OSPW
+5. Establish performance metrics and regulatory compliance protocols
+6. Create commercial implementation framework for industry-wide adoption
 
-### Proposed Deployment
+**Work Scope**: Three-phase approach progressing from laboratory optimization through controlled testing to field demonstration:
+- Phase 1: Laboratory optimization and production protocol development
+- Phase 2: Controlled environment testing and system integration
+- Phase 3: Field implementation and performance validation
 
-The project involves a three-phase approach moving from laboratory to field implementation:
+**Key Deliverables**:
+- Field-ready biosensor production protocols and equipment
+- Validated bacterial cultivation and application systems
+- Fully functional data analytics platform with stakeholder interfaces
+- Demonstrated NA reduction performance in operational tailings pond environment
+- Regulatory compliance documentation and protocols
+- Commercial scaling and implementation plan
 
-**Phase 1: Laboratory Optimization and Controlled Testing**
+### Nature of Deployment and Scale
 
-- Biosensor refinement and production protocol development
-- Initial bacterial strain optimization and cultivation methods
-- Data platform core development and laboratory validation
+**Deployment Type**: Field demonstration transitioning from pilot to first-of-kind deployment
 
-**Phase 2: Mesocosm Demonstration**
+**Scale**: [NEED INFORMATION - What specific scale are you targeting for the field demonstration? e.g., treatment area size, volume of water]
 
-- Controlled environment testing at University of Calgary/Athabasca University mesocosms
-- System integration validation under semi-controlled conditions
-- Pilot-scale bacterial cultivation and application
-
-**Phase 3: Field Implementation**
-
-- On-site deployment at partner oil sands facility
-- Full system integration with existing monitoring infrastructure
-- Performance verification under operational conditions
-
-The field implementation will initially target a 10,000 m³ section of an existing tailings pond, representing approximately 1:1000 scale of a commercial application but sufficient to validate performance at operational scale.
+**Relevance to Commercial System**: The field demonstration will validate all core system components at a scale that proves commercial viability while allowing for modular expansion. Each component (monitoring stations, bacterial application systems, data integration) will be designed for scalable deployment across multiple sites.
 
 ### Project Locations
 
-- Laboratory work: University of Calgary and Athabasca University facilities
-- Mesocosm testing: University of Calgary controlled environment facility
-- Field implementation: Northern Alberta oil sands operation (site selection in progress with industry partners)
+- **Laboratory Work**: LuminouAthabasca University and University of Calgary facilities
+- **Controlled Testing**: University of Calgary mesocosm facilities
+- **Field Implementation**: [NEED INFORMATION - Has a specific oil sands site been identified or are you still in discussions?]
 
-### Project Work Plan Overview
+### Project Consortium and Execution Structure
 
-|**Milestone**|**Timeline**|**Key Activities**|
-|---|---|---|
-|Milestone 1|Jan-Jun 2026|Laboratory optimization of biosensors and bacterial strains; Initial data platform development|
-|Milestone 2|Jul-Dec 2026|Production scale-up for biosensors and bacterial cultures; Field monitoring protocol development|
-|Milestone 3|Jan-Aug 2027|Mesocosm demonstration of integrated system; Data platform enhancement|
-|Milestone 4|Sep 2027-Apr 2028|Field implementation preparation; Site preparation; Equipment installation|
-|Milestone 5|May-Dec 2028|Field operation, monitoring, and performance verification; Final reporting|
-
-### Project Budget Summary
-
-|**Milestone**|**Total Cost (CAD)**|**ERA Contribution (CAD)**|
-|---|---|---|
-|Milestone 1|$950,000|$475,000|
-|Milestone 2|$850,000|$425,000|
-|Milestone 3|$1,100,000|$550,000|
-|Milestone 4|$950,000|$475,000|
-|Milestone 5|$750,000|$375,000|
-|**Total**|**$4,600,000**|**$2,300,000**|
-
-### Project Consortium and Structure
-
-|**Organization**|**Role**|**Status**|
-|---|---|---|
-|Luminous BioSolutions|Lead proponent; Technology provider; Project management|Confirmed|
-|Athabasca University|Academic partner; Biosensor research; Laboratory facilities|Confirmed|
-|University of Calgary|Academic partner; Mesocosm testing; Bacterial analysis|Confirmed|
-|Oil Sands Operator|Industry partner; Field implementation site; Technical guidance|In discussion|
-|Pathways Alliance/COSIA|Industry consortium; Knowledge sharing; Technical guidance|In discussion|
-|Endeavour Scientific|Indigenous engagement; Knowledge translation|Confirmed|
+|**Organization**|**Role**|**Status**|**Key Responsibilities**|
+|---|---|---|---|
+|Luminous BioSolutions|Lead Proponent|Confirmed|Project management, technology integration, commercialization|
+|Athabasca University|Academic Partner|Confirmed|Biosensor optimization, laboratory facilities|
+|University of Calgary|Academic Partner|Confirmed|Bacterial culture development, mesocosm testing|
+|Endeavour Scientific|Indigenous Engagement Partner|Confirmed|Stakeholder engagement, knowledge translation|
+|[Oil Sands Operator]|Industry Partner|In Discussion|Field site provision, technical guidance|
+|Pathways Alliance/COSIA|Industry Consortium|In Discussion|Knowledge sharing, technical advisory|
 
 ### Core Team Members
 
-- **Jeff Violo (Luminous BioSolutions)**: Project Lead, 15+ years experience in commercial technology deployment
-- **Dr. Shawn Lewenza (Chief Scientific Officer)**: 20+ years microbiology expertise, developer of the biosensor technology
-- **Greg Saunders (Luminous BioSolutions)**: Technical Lead, extensive experience in environmental monitoring systems
-- **Dr. Carla Davidson (Endeavour Scientific)**: Indigenous engagement and knowledge translation specialist
-- **[Oil Sands Partner Representative]**: Industry implementation expertise
+**Luminous BioSolutions Team**:
 
-### Financial Contributors
+- Jeff Violo (Co-founder, COO): Project leadership and operational management
+- Dr. Shawn Lewenza (Co-founder, CSO): Technology development and scientific oversight
+- Greg Saunders (Co-founder, CTO): Technical systems integration
 
-|**FINANCIAL CONTRIBUTORS**|**AMOUNT**|**STATUS**|
+**Key Partner Representatives**:
+
+- Dr. Carla Davidson (Endeavour Scientific): Indigenous engagement and knowledge translation
+- [NEED INFORMATION - Academic team members from Athabasca and UofC]
+- [NEED INFORMATION - Industry partner representatives]
+
+### Risk Assessment and Mitigation
+
+|**Risk Category**|**Specific Risk**|**Mitigation Strategy**|
 |---|---|---|
-|ERA (Requested)|$2,300,000|Applied for|
-|Luminous BioSolutions|$800,000|Committed|
-|Industry Partner|$1,000,000|In discussion|
-|Athabasca University (In-kind)|$300,000|Committed|
-|University of Calgary (In-kind)|$200,000|Committed|
-|Genome Alberta|$200,000|In discussion|
-|Total Financing|$4,800,000||
-
-### Financing Plan
-
-Luminous BioSolutions has committed $800,000 in cash and in-kind contributions through company resources and founder investments. Academic partners have confirmed in-kind contributions totaling $500,000. We are in advanced discussions with industry partners and Genome Alberta for the remaining funding, with decisions expected by Q3 2025. If ERA funding is approved, we anticipate finalizing all partner contributions by November 2025, allowing for project commencement in January 2026.
-
-### Path to Implementation
-
-The project is ready to commence upon funding approval with:
-
-- Laboratory facilities secured at university partners
-- Core team members identified and committed
-- Preliminary biosensor and bacterial strain work underway
-- Discussions with industry partners at advanced stage for site selection
-- Regulatory pathway mapped with Alberta Energy Regulator
-
-### Risk Mitigation
-
-|**Risk**|**Mitigation Strategy**|
-|---|---|
-|Field performance below laboratory results|Extensive mesocosm testing to identify variables; Adaptive optimization protocol|
-|Regulatory approval delays|Early engagement with AER; Consultation with Endeavour Scientific for regulatory navigation|
-|Industry partner commitment delays|Multiple parallel discussions underway; Flexible implementation approach|
-|Technical challenges in bacterial production|Alternative strain selection process; Multiple cultivation approaches being tested|
-|Weather/seasonal constraints for field implementation|Schedule flexibility within implementation window; Contingency periods built into timeline|
+|Technical|Field performance differs from laboratory results|Extensive mesocosm validation; adaptive optimization protocols|
+|Regulatory|Delays in field testing approvals|Early engagement with AER; regulatory pathway mapping|
+|Partnership|Industry partner commitment delays|Multiple parallel discussions; flexible implementation timeline|
+|Environmental|Seasonal/weather constraints|Schedule flexibility; contingency periods built into milestones|
+|Financial|Funding timeline misalignment|Diversified funding strategy; staged implementation approach|
 
 ### ERA Funding Justification
 
-ERA funding is essential to bridge the gap between laboratory success and field implementation. Without it, this technology faces the classic "valley of death" where promising solutions fail to reach commercial implementation due to scale-up risks. Specific barriers ERA funding will address:
+ERA funding is critical to bridge the "valley of death" between laboratory success and commercial deployment. Specific barriers addressed:
 
-1. **Technical Risk**: Field-scale validation is required to confirm laboratory and mesocosm results can translate to actual tailings ponds.
-2. **Financial Risk**: The $2.3M requested reduces industry partner exposure while enabling critical validation work.
-3. **First Deployment Barrier**: No operator can justify being first to implement without demonstrated field results.
-4. **Infrastructure Development**: Support for data platform development and field equipment that wouldn't be justified for a single implementation.
+1. **Technical Risk Reduction**: Field validation at operational scale is essential to prove commercial viability
+2. **Industry Adoption Barrier**: First deployment risk is too high for industry partners without proven field performance
+3. **Infrastructure Development**: Data platform and field equipment development requires upfront investment not justified for single implementation
+4. **Regulatory Pathway**: Demonstration project provides data necessary for regulatory approval of broader implementation
 
-The funding amount requested represents 50% of eligible costs and allows for comprehensive field demonstration at a scale that will provide compelling evidence for industry-wide adoption.
+**Information Still Needed**:
 
+1. **Budget Details**: What is your target total project budget and ERA funding request amount?
+    
+2. **Financial Contributors**: Specific funding commitments and amounts from:
+    
+    - Luminous BioSolutions (cash and in-kind)
+    - Industry partners
+    - Academic institutions (in-kind contributions)
+    - Other potential funders (Genome Alberta, Alberta Innovates, etc.)
+3. **Field Site Details**:
+    
+    - Has a specific site been identified?
+    - What scale of implementation is planned?
+    - Any specific agreements or MOUs in place?
+4. **Academic Team Details**: Key personnel from university partners and their specific roles
+    
+5. **Timeline Specifics**: What are your target start and end dates, and key milestone timing?
+    
+6. **Technical Specifications**: Any specific performance targets or success criteria you want to include?
+    
+7. **Regulatory Requirements**: Any specific permits or approvals needed for field testing?
+    
+
+Once you provide this information, I can complete the Implementation Plan section with accurate, verifiable details that reflect your actual project scope and partnerships.
 ## 3. GHG Benefits
 
 ### GHG Reduction Mechanisms
