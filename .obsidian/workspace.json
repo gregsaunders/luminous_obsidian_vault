@@ -88,7 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 414.5
+    "width": 377.5
   },
   "right": {
     "id": "c61c2be9af22c590",
@@ -208,8 +208,10 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "684342a2fc167744",
+  "active": "588cb12a155ad9aa",
   "lastOpenFiles": [
+    "Grant Funding/ERA Industrial Transformation Challenge 2025/draft submission",
+    "Grant Funding/ERA Industrial Transformation Challenge 2025/draft submission/ERA DRAFT V3.docx",
     "Grant Funding/ERA Industrial Transformation Challenge 2025/2.1 Budget 2 detail.md",
     "Grant Funding/ERA Industrial Transformation Challenge 2025/2. Budget Framework - 3 Year Project.md",
     "Grant Funding/ERA Industrial Transformation Challenge 2025/1.2 V2 Gemini Submission.md",
@@ -254,7 +256,6 @@
     "Grant Funding/ERA Industrial Transformation Challenge 2025/attachments",
     "Grant Funding/ERA Industrial Transformation Challenge 2025",
     "Grant Funding",
-    "Projects/90 days/Business development/Business Feasibility Assessment",
     "Untitled.canvas",
     "Untitled 1.canvas",
     "Business Development/1 Luminous Meta Model/01 What is a Meta Model?/Metamodel Explanation/Untitled.canvas",
