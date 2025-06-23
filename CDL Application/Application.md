@@ -1,4 +1,4 @@
-#### Venture Overview
+### Venture Overview
 
 ### Venture Name
 
@@ -26,8 +26,6 @@ Naphthenic Acids 
 NAs are toxic, harming wetlands, wildlife, and human health.  
 NAs are persistent in tailings ponds for decades, affecting aquatic life and ecosystems.
 
-  
-
 ### Provide an "elevator pitch" overview of the venture you are building to solve this problem.
 
 Luminous BioSolutions is a Canadian Environmental Technology Company who has developed an innovative approach to detecting and breaking down Naphthenic Acids in Alberta Oil Sands Tailings Ponds.  
@@ -40,7 +38,7 @@ Quantitative. The biosensors produce light in direct proportion to the concentra
 - Specific and Sensitive: Our panel of NA biosensors detect key NA compounds within the complex NA mixtures that represent the major classes of NA compounds. The NA biosensors can detect the NA at the concentrations present in most tailings ponds (10 -120 mg/L).  
 - Scalable & Cost-Effective: Unlike expensive analytical chemistry methods that require weeks of processing, our biosensors allow high-throughput screening at a fraction of the cost.  
   
-Why this Matters  
+**Why this Matters**  
 Current NA monitoring methods (i.e. Mass Spectrometry) are accurate but suffer from prohibitive costs, slow turnaround times, and limited sampling frequency. This results in low-resolution data, leaving industry and regulators blind to real-time changes.  
   
 Luminous biosensors solution allows Oil Sands operators to:  
@@ -50,20 +48,20 @@ Luminous biosensors solution allows Oil Sands operators to:
   
 For regulators and local communities, this means greater transparency and trust with clear, consistent data that ensures environmental safety.  
   
-Beyond Detection: NA Remediation  
+**Beyond Detection: NA Remediation**  
   
 Remediation of NAs in Tailings Ponds is a daunting challenge, as NAs are toxic and persistent for decades.   
   
 Luminous BioSolutions are developing our bacterial solutions to accelerate remediation efforts by identifying naturally occurring bacteria that can efficiently break down NAs.  
   
-How this helps Oil Sands water reclamation:  
+**How this helps Oil Sands water reclamation:**  
 - Constructed Wetlands: Our biosensors help identify and select microbial communities that can be used in wetlands to accelerate NA degradation.  
 - Bioaugmentation Strategies: We can scale up production of most effective bacteria and introduce them into treatment sites, dramatically improving NA breakdown rates.  
 - Continuous Monitoring: Unlike conventional approaches, which rely on infrequent lab tests, biosensors can provide ongoing feedback on remediation progress, ensuring treatment success.  
   
 This is game-changing for oil sands operators seeking cost-effective, scientifically sound reclamation strategies that align with evolving environmental regulations.  
   
-Data-Driven Environmental Management  
+**Data-Driven Environmental Management**  
 It is impossible to make any informed decisions without an accurate monitoring process of NA concentrations in the tailings ponds and a method to track their removal. We have developed an NA monitoring and analytics platform that compiles NA test results in a data hub to provide:  
   
 - Real-time tracking of NA levels across multiple sites and throughout the water cycle.  
@@ -72,7 +70,7 @@ It is impossible to make any informed decisions without an accurate monitoring p
   
 Combining biosensor screening with remediation and data analytics, operators, regulators, and stakeholders are empowered with actionable intelligence for better environmental management.  
   
-A Holistic Approach   
+**A Holistic Approach**   
   
 The cost of inaction - both financial and reputational - is too high.   
   
@@ -86,28 +84,15 @@ Adopting our strategies enables oil sands operators to improve their environment
 
 Yes
 
-  
-
 ### Date of registration or incorporation
 
 4/8/2025
-
-  
-
 ### Jurisdiction of registration or incorporation 
 
-Alberta
-
-Canada
-
-  
-
+Alberta, Canada
 ### Business Sector (NAICS Code)
 
 54: Professional, Scientific and Technical Services
-
-  
-
 ### Additional Business Sector (NAICS Code) - Professional, Scientific and Technical Services
 
 5417: Scientific Research and Development Services
