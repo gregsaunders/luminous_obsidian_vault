@@ -4,7 +4,9 @@ Genomics is a big data science that allows us to study the genetic material in a
 
 While genomics science continues to advance at a rapid pace, the broadscale adoption of these technology solutions in the energy sector is growing but still limited. We are looking to accelerate the benefits of technology adoption and support a greener energy future.
 
-Genome Alberta, with support from the Government of Alberta, is investing in new research collaborations to close the gap in scaling genomic innovations in support of broader application in Alberta’s energy sector for improved environmental outcomes. The **Genomic Innovations: Energy and Environmental Solutions**initiative will fund genomics-based research projects that aim to accelerate the development of adoptable outputs—products, processes, or applications derived from genomics technologies with clear potential for implementation within the energy sector. Applications will be accepted for projects  that will help in reducing or assessing the environmental impact of energy operations and will promote environmental stewardship, including the areas of:
+Genome Alberta, with support from the Government of Alberta, is investing in new research collaborations to close the gap in scaling genomic innovations in support of broader application in Alberta’s energy sector for improved environmental outcomes. 
+
+The **Genomic Innovations: Energy and Environmental Solutions**initiative will fund genomics-based research projects that aim to accelerate the development of adoptable outputs—products, processes, or applications derived from genomics technologies with clear potential for implementation within the energy sector. Applications will be accepted for projects  that will help in reducing or assessing the environmental impact of energy operations and will promote environmental stewardship, including the areas of:
 
 - Bioremediation and reclamation of contaminated sites
 - GHG emission reduction via microbial processes or bio-based carbon capture
