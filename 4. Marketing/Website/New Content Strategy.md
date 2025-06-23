@@ -32,7 +32,7 @@
 
 [Introductory Paragraph]
 
-The oil sands industry faces a trillion-litre tailings challenge, with toxic Naphthenic Acids (NAs) posing a significant risk to the environment and a multi-billion-dollar liability for operators111111111. Luminous BioSolutions, born from over a decade of dedicated university research, offers a faster, smarter, and more effective way forward. Our integrated platform moves beyond slow, reactive methods to provide the real-time intelligence and targeted remediation needed to meet this challenge head-on.
+The oil sands industry faces a trillion-litre tailings challenge, with toxic Naphthenic Acids (NAs) posing a significant risk to the environment and a multi-billion-dollar liability for operators. Luminous BioSolutions, born from over a decade of dedicated university research, offers a faster, smarter, and more effective way forward. Our integrated platform moves beyond slow, reactive methods to provide the real-time intelligence and targeted remediation needed to meet this challenge head-on.
 
 ---
 
