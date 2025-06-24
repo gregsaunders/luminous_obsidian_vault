@@ -205,21 +205,29 @@ The study, published in the Journal of Environmental Chemical Engineering, confi
 
 ---
 
-Section: The Challenge: A Documented Performance Gap
+**Section: The Gaps: Key Challenges Identified by Independent Research**
 
-The same independent study identified a critical operational challenge: the rate of NA degradation was not constant. While initially rapid, the attenuation rate slowed by more than 50% as the season progressed, from -0.53 mg/L/day down to -0.25 mg/L/day24. This performance gap can stall reclamation timelines and limit the overall effectiveness of the system.
+While proving the potential of CWTSs, the Kearl study also transparently identified two critical gaps that can limit overall success:
+
+- **1. The Performance Gap (Slowing Degradation):** The rate of NA degradation was not constant. While initially rapid, the attenuation rate **slowed by more than 50%** as the season progressed, from -0.53 mg/L/day down to -0.25 mg/L/day. This slowdown can stall reclamation timelines and limit the system's effectiveness on more resistant compounds.
+    
+- **2. The Monitoring Gap (Data Latency):** The study's monitoring relied on collecting physical "grab samples" for complex off-site analysis. This method, while precise, results in low-frequency data snapshots (e.g., every 10-15 days). This significant time lag makes it impossible to understand the immediate impact of system changes (like OSPW refills) or to manage the biological process in real-time.
+    
 
 ---
 
-Section: The Luminous Solution: Enhancing Nature's Performance
+**Section: The Luminous Solution: Enhancing Nature's Performance & Clarity**
 
-The performance gap identified in the Kearl study is the precise problem our technology platform is designed to solve.
+The Luminous Platform is uniquely designed to address both the performance and monitoring gaps identified in the Kearl study, transforming a passive system into an actively managed and optimized one.
 
-- **Targeted Bioaugmentation** directly addresses the slowing degradation by introducing specialized, native microbial teams to break down the remaining, more resistant compounds.
-- **Real-Time Biosensors** provide the minute-by-minute operational data needed to actively manage and optimize the wetland's performance, ensuring it operates at peak efficiency all season long.
-- Our **Confluent Intelligence Platform** then processes this high-resolution data, providing predictive analytics and clear visualizations of the wetland's performance. This allows operators to not only see what's happening in real-time but also to track remediation efficacy, forecast trends, and generate transparent reports for stakeholders and regulators.
+- To solve the **performance gap**, our **Targeted Bioaugmentation** service directly counteracts the slowing degradation by introducing specialized, native microbial teams selected for their ability to break down the remaining, more resistant compounds.
+    
+- To solve the **monitoring gap**, our **Real-Time Biosensors** replace slow lab tests with data in **minutes**, providing the high-frequency operational intelligence needed to truly understand and actively manage the remediation process.
+    
+- This stream of high-resolution data is managed by our **Confluent Intelligence Platform**, which provides predictive analytics and clear visualizations required to track remediation efficacy, forecast trends, and generate transparent reports for all stakeholders.
+    
 
-Luminous doesn't compete with wetlands; we make the significant investment in these nature-based systems more effective, reliable, and successful.
+Luminous doesn't compete with wetlands; we provide the integrated biological and data-intelligence toolkit to make these significant investments in nature-based systems smarter, faster, and verifiably successful.
 
 **(End of "Industry Validation" Page Content)**
 
