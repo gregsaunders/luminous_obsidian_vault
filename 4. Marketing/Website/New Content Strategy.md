@@ -201,7 +201,7 @@ Luminous BioSolutions is committed to providing solutions that work within the r
 
 Section: The Promise: A Proven Foundation
 
-The study, published in the Journal of Environmental Chemical Engineering, confirmed that constructed wetlands are a highly effective foundational technology for treating toxic Naphthenic Acids (NAFCs)22. It provided definitive evidence that natural, oxidative processes in the wetland can significantly deplete and transform NAFCs under real-world conditions23.
+The study, published in the Journal of Environmental Chemical Engineering, confirmed that constructed wetlands are a highly effective foundational technology for treating toxic Naphthenic Acids (NAFCs). It provided definitive evidence that natural, oxidative processes in the wetland can significantly deplete and transform NAFCs under real-world AOSR conditions.
 
 ---
 
