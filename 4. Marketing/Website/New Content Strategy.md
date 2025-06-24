@@ -217,6 +217,7 @@ The performance gap identified in the Kearl study is the precise problem our tec
 
 - **Targeted Bioaugmentation** directly addresses the slowing degradation by introducing specialized, native microbial teams to break down the remaining, more resistant compounds.
 - **Real-Time Biosensors** provide the minute-by-minute operational data needed to actively manage and optimize the wetland's performance, ensuring it operates at peak efficiency all season long.
+- Our **Confluent Intelligence Platform** then processes this high-resolution data, providing predictive analytics and clear visualizations of the wetland's performance. This allows operators to not only see what's happening in real-time but also to track remediation efficacy, forecast trends, and generate transparent reports for stakeholders and regulators.
 
 Luminous doesn't compete with wetlands; we make the significant investment in these nature-based systems more effective, reliable, and successful.
 
