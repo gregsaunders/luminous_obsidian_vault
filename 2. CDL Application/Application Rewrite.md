@@ -21,28 +21,30 @@ Please describe the product or service you are building/have built, and how this
 An oil sands operator engages with Luminous BioSolutions through a clear, phased partnership designed to enhance their existing reclamation assets, such as a constructed wetland. The customer journey is:
 
 - **Phase 1: Baseline Assessment & Strategy.** We first deploy our rapid biosensors to create a high-resolution "NA Health Map" of the customer's specific water body. This provides, often for the first time, a clear and comprehensive baseline of contamination hotspots. Collaborating with the customer's team, we use this data to co-develop a targeted, site-specific remediation strategy and timeline.
-- **Phase 2: Targeted Deployment.** We deploy our bioaugmentation solution of selected native microbial communities—precisely into the identified problem areas to accelerate the natural breakdown of NAs.
-- **Phase 3: Real-Time Validation & Optimization.** Throughout the engagement, the customer has access to our Confluent data platform. They receive ongoing monitoring data that tracks remediation progress against the baseline in near real-time. The output is a verifiably cleaner water system and the robust data required for regulatory reporting and stakeholder transparency.
+- **Phase 2: Targeted Deployment.** We deploy our bioaugmentation solution of selected native microbial communities precisely into the wetland to accelerate the natural breakdown of NAs.
+- **Phase 3: Real-Time Validation & Optimization.** Throughout the engagement, the customer has access to our Confluent data platform. They receive ongoing monitoring data that tracks remediation progress against the baseline in near real-time. 
+
+The output is a verifiably cleaner water system and the robust data required for regulatory reporting and stakeholder transparency.
 
 What is the value proposition for this customer? Include quantifiable metrics if possible.
 
 Our value proposition is to transform tailings management from a slow, uncertain liability into a fast, predictable, and data-driven operation. We provide certainty and control.
 
-- **Faster Data:** We reduce NA monitoring time from **weeks to minutes**, enabling real-time operational intelligence3.
+- **Faster Data:** We reduce NA monitoring time from weeks to minutes, enabling real-time operational intelligence.
     
-- **Smarter Remediation:** We solve the performance gap identified in recent industry research (e.g., the Kearl Wetland Report) where natural degradation rates can **slow by over 50%**. Our targeted bioaugmentation enhances and accelerates these proven natural processes4444.
+- **Smarter Remediation:** We solve the performance gap identified in recent industry research (e.g., the Kearl Wetland Report) where natural degradation rates can slow by over 50%. Our targeted bioaugmentation enhances and accelerates these proven natural processes.
     
-- **Better Outcomes:** Our integrated platform provides a verifiable, low-cost "polishing step" that de-risks multi-billion-dollar reclamation plans and provides the transparent data needed to satisfy regulators and stakeholders5555.
+- **Better Outcomes:** Our integrated platform provides a verifiable, low-cost "polishing step" that de-risks multi-billion-dollar reclamation plans and provides the transparent data needed to satisfy regulators and stakeholders.
     
 
 Who are your competitors and what differentiates your product/service from them?
 
 Our competition includes the status quo (containment), labs using slow analytical chemistry, and standalone remediation technologies (e.g., chemical treatments).
 
-Our differentiation is that we are an **integrated enhancement platform**, not a replacement.
+Our differentiation is that we are an integrated enhancement platform, not a replacement.
 
-- **vs. Labs:** We complement high-fidelity labs by providing rapid, affordable screening to tell them _where_and _when_ to use their precise tools.
-- **vs. Remediation Tech:** Unlike "blind" solutions, we use our data to see the problem, guide the remediation, and prove it’s working. We make nature-based systems like constructed wetlands smarter, faster, and more reliable6.
+- vs. Labs: We complement high-fidelity labs by providing rapid, affordable screening to tell them where and _when_ to use their precise tools.
+- vs. Remediation Tech Unlike "blind" solutions, we use our data to see the problem, guide the remediation, and prove it’s working. We make nature-based systems like constructed wetlands smarter, faster, and more reliable at a significantly lower cost.
     
 
 ---
