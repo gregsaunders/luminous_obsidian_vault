@@ -20,8 +20,8 @@ Please describe the product or service you are building/have built, and how this
 
 An oil sands operator engages with Luminous BioSolutions through a clear, phased partnership designed to enhance their existing reclamation assets, such as a constructed wetland. The customer journey is:
 
-- **Phase 1: Baseline Assessment & Strategy.** We first deploy our rapid biosensors to create a high-resolution "NA Health Map" of the customer's water body. This provides, often for the first time, a clear and comprehensive baseline of contamination hotspots. Collaborating with the customer's team, we use this data to co-develop a targeted, site-specific remediation strategy and timeline.
-- **Phase 2: Targeted Deployment.** We deploy our bioaugmentation solution—selected native microbial communities—precisely into the identified problem areas to accelerate the natural breakdown of NAs.
+- **Phase 1: Baseline Assessment & Strategy.** We first deploy our rapid biosensors to create a high-resolution "NA Health Map" of the customer's specific water body. This provides, often for the first time, a clear and comprehensive baseline of contamination hotspots. Collaborating with the customer's team, we use this data to co-develop a targeted, site-specific remediation strategy and timeline.
+- **Phase 2: Targeted Deployment.** We deploy our bioaugmentation solution of selected native microbial communities—precisely into the identified problem areas to accelerate the natural breakdown of NAs.
 - **Phase 3: Real-Time Validation & Optimization.** Throughout the engagement, the customer has access to our Confluent data platform. They receive ongoing monitoring data that tracks remediation progress against the baseline in near real-time. The output is a verifiably cleaner water system and the robust data required for regulatory reporting and stakeholder transparency.
 
 What is the value proposition for this customer? Include quantifiable metrics if possible.
