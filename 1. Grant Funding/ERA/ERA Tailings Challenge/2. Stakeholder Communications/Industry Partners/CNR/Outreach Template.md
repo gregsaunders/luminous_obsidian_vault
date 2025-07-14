@@ -2,22 +2,21 @@
 
 **Subject:** A Published Solution to the NA Remediation Gap & the ERA Tailings Challenge
 
-**Dear [Contact Name],**
+Dear Theo and Jayne,
 
-I'm writing to you to Discuss the Emission Reduction Alberta (because two recent publications present a clear, evidence-based opportunity to significantly advance tailings water remediation, and it aligns perfectly with the new ERA Tailings Technology Challenge.
+I'm reaching out to discuss the recently announced Emission Reduction Alberta (ERA) Tailings Technology Challenge and the opportunity for CNR to partner in our submission. 
 
-In short, the data suggests a powerful synergy between our technologies and the industry's current trajectory:
+To date, CNR has invested over $500,000 academic funding for the development of our Naphthenic Acid (NA) Biosensor, and it has proven successful in the lab, and the field (Kearl Constructed Wetland pilot). 
 
-- **The Problem is Validated:** The recently published **Kearl Wetland study** confirmed that while nature-based systems are a promising start, they have a documented performance gap, achieving a 36% NA reduction before degradation rates slow significantly.
-    
-- **Our Monitoring Solution is Validated:** Our core biosensor technology, which was field-tested at the Kearl pilot with results comparable to mass spectrometry, has now been **published in the peer-reviewed journal _ACS Synthetic Biology_**. This confirms we have a rapid, cost-effective tool to generate the high-resolution data needed to manage these systems effectively.
-    
-- **The Logical Next Step:** Our deep expertise in microbiology allows us to use the biosensor to identify and cultivate the most effective native NA-degrading bacteria. Deploying these as a targeted **bioaugmentation** service is the logical solution to address the performance gap identified at Kearl.
-    
+Our Biosensor tests results from the Kearl project were comparable to Mass Spec with our biosensor delivering results faster, easier to use, and significantly less expensive. 
+
+The ERA application will fund a full scale up pilot that will validate our Bioaugmentation solution  works at "tailings ponds" scale, and a low risk, low cost environment to tune our solution.  Our solution is designed to compliment and accelerate existing remediation techniques like Constructed Wetlands or Solar Pass.   
 
 We have a fully-scoped, systematic pilot project designed to validate this integrated approach at scale, leveraging existing Alberta infrastructure (UofC, Innotech).
 
-Given the focus of the new **ERA Tailings Technology Challenge**, we believe a partnership would create a highly compelling submission. Would you be open to a brief technical discussion next week to review the data from these papers and explore how this project could benefit [Their Company Name]?
+Given the focus of the new ERA Tailings Technology Challenge, we believe a partnership would create a highly compelling submission. 
+
+Could we schedule a brief technical discussion next week to review the our submission and explore how this project could benefit CNR?
 
 Best regards,
 
