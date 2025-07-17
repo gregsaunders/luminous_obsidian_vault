@@ -66,6 +66,28 @@ This deck will be 11 slides, incorporating your two new slides and modifying the
 - **Placement:** Insert "The Partnership Model" slide here.
     
 - **Reasoning:** This is the core of your proposal to them. After you've shown the problem, your solution, the ROI, the validation, and the plan, you now present the clear, de-risked, and financially compelling partnership structure. It logically follows the roadmap.
+**Headline: A Capital-Efficient Partnership to Solve the Tailings Challenge**
+
+**Sub-headline:** We are seeking industry partners to join our **$8M** pilot project, submitted to the ERA Tailings Technology Challenge.
+
+**[Use two large, clear boxes side-by-side]**
+
+**Box 1: Project Funding**
+
+- **Total Project Cost:** $8,016,150
+    
+- **ERA Contribution (50%):** $4,008,075
+    
+- **Required Industry Match (50%):** $4,008,075
+    
+
+**Box 2: A De-Risked Investment for Our Partners**
+
+- **Shared Investment:** If shared between **3 operators**, the contribution is only **~$1.34M per partner**.
+    
+- **Spread Over 4 Years:** This equates to a manageable operational expense of only **~$335k per year**.
+    
+- **Milestone-Based:** Funding is only disbursed upon the successful completion of pre-agreed milestones.
     
 
 ---
@@ -81,6 +103,24 @@ This deck will be 11 slides, incorporating your two new slides and modifying the
     - **Body Text:** "We are seeking industry partners to provide a Letter of Support and join our consortium for the September 24th submission. We believe a partnership between Luminous, our academic collaborators, and industry leaders like [Their Company Name] will create an exceptionally strong and successful proposal."
         
     - **Contact Info:** Your contact details.
+
+- #### **The "What You Get" Value Proposition**
+
+This is where you clearly articulate the direct return on their investment, using the excellent points you provided.
+
+**(Start of Slide Content or Talking Points)**
+
+**Headline: The Direct ROI for Our Industry Partners**
+
+For a de-risked investment of ~$335k per year, our partners gain direct access to:
+
+- **1. A Validated, Low-Cost Monitoring Solution:** Four years of extensive NA testing using our biosensor technology, continuously validated against mass spectrometry, to optimize your current and future remediation projects.
+    
+- **2. Exclusive Bioremediation Data:** Proprietary data and insights from our large-scale mesocosm studies, giving you a first look at the next generation of effective, nature-based remediation techniques.
+    
+- **3. A Tailored NA Remediation Technology:** The development of a proven bioaugmentation solution designed specifically to complement and accelerate your existing assets, like constructed wetlands.
+    
+- **4. A Pathway to a Low-Capital, No-Waste Solution:** A front-row seat and preferential access to a commercial-ready technology that avoids the immense capital cost and secondary waste streams of chemical or physical treatment plants.
         
 
 ---
@@ -111,3 +151,8 @@ This deck will be 11 slides, incorporating your two new slides and modifying the
     
 
 This revised structure transforms your investor deck into a powerful tool specifically designed to convince an industry partner that joining your ERA proposal is a smart, strategic, and low-risk decision.
+
+
+
+
+
