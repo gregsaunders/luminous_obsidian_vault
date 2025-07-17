@@ -15,3 +15,6 @@ I would be grateful for the opportunity to have a brief call with you to discuss
 Thank you for your foundational vision and support. We believe we have reached the outcome you originally hoped for and are excited about the next steps.
 
 Best regards,
+
+
+The new **ERA Tailings Technology Challenge** provides the perfect, low-risk funding vehicle to validate this integrated solution at scale. Our proposed **$8M pilot project** is eligible for a 1-to-1 match from ERA, creating a uniquely capital-efficient opportunity for industry partners to co-fund a solution to one of their most significant challenges. The project is structured over four years with milestone-based funding, significantly de-risking the investment."
