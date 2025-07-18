@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "8b421e3d6e12e04a",
+        "id": "547b4174a235c97e",
         "type": "tabs",
         "children": [
           {
-            "id": "684342a2fc167744",
+            "id": "7ddca7a728116fe6",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "3. Publications/Bookout et al/Claude Analysis.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Claude Analysis"
+              "title": "New tab"
             }
           }
         ]
@@ -88,7 +84,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 377.5
+    "width": 462.5
   },
   "right": {
     "id": "c61c2be9af22c590",
@@ -208,8 +204,10 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "684342a2fc167744",
+  "active": "7ddca7a728116fe6",
   "lastOpenFiles": [
+    "temp/2025-07-18b.md",
+    "3. Publications/Bookout et al/Claude Analysis.md",
     "temp/2025-07-18a.md",
     "temp/2025-07-18_13-09_ERA_Tailings_Challenge_Session_Summary.md",
     "temp/ERA_Tailings_Challenge_Draft_Submission.md",
@@ -254,8 +252,6 @@
     "Pasted image 20250703142039.png",
     "2. CDL Application/Application Rewrite.md",
     "Journal/Jeff/00 Journal/Communications/Emails/Marc at PTAC.md",
-    "Journal/Jeff/00 Journal/Communications/Emails/Untitled.md",
-    "Journal/Jeff/00 Journal/Communications/Emails/Mark Summers Alberta Innovates.md",
     "Untitled.canvas",
     "Untitled 1.canvas",
     "Business Development/1 Luminous Meta Model/01 What is a Meta Model?/Metamodel Explanation/Untitled.canvas",
