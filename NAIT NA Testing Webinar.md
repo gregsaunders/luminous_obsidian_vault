@@ -38,7 +38,17 @@ Government of Alberta](https://www.linkedin.com/company/164028/)
 
 (https://www.linkedin.com/in/andreasedgwick/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B394uXMOLRgGMa0n8%2FMJ57g%3D%3D)
 
+Rick Frank - Research Scientist
+Environment Canada.  (https://www.linkedin.com/company/1562/)
 
+(https://www.linkedin.com/in/rick-frank-1669393/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BBn55zEZwTnSfYtD4b4DGvA%3D%3D)
+
+Blake Skanes - Physical Scientist
+
+Environment and Climate Change Canada
+(https://www.linkedin.com/company/1562/)
+
+(https://www.linkedin.com/in/blakeskanes/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BClB0Eb8sS%2B%2BMN1JkqdPJnA%3D%3D)
 
 
 
