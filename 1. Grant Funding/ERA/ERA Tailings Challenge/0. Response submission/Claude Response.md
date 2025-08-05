@@ -75,17 +75,18 @@ While the Oil Sands Mine Water Steering Committee correctly identified HRMS as t
 - **Capacity constraints** threatening expanded production
 - **Growing environmental liability** creating urgent pressure for accelerated solutions
 
-**4. The Monitoring and Management Bottleneck** The OSMWSC correctly identified the need for standardized NA measurement methods, recommending HRMS as the accuracy standard. However, **HRMS alone cannot enable the operational control required**:
+**4. The Monitoring and Management Bottleneck** The OSMWSC correctly identified the need for standardized NA measurement methods, recommending HRMS as the accuracy standard. However, HRMS alone cannot enable the operational control required:
 
 - **Cost barrier**: $500-1000 per test makes frequent monitoring economically prohibitive
 - **Time barrier**: 2-4 weeks for results prevents real-time process optimization
-- **Scale barrier**: Cannot perform the mass testing required across complex, large-scale operations
+- **Scale barrier**: HRMS requires extensive sample prep, highly skilled technicians, and sophisticated equipment that cannot perform the mass testing required across complex, large-scale operations
 
-**The fundamental challenge**: "If you can't measure it, you can't manage it." Current monitoring capabilities cannot support the frequency and scale of testing required to confidently treat water for safe environmental release.
+**The fundamental challenge**: "If you can't measure it, you can't manage it." Current monitoring capabilities cannot support the frequency and scale of testing required to confidently measure treatment techniques effectiveness that leads to water for safe environmental release.
 
 ### The Luminous Solution: Enabling Mass Monitoring at Unprecedented Scale
 
-**The Luminous Integrated Platform** provides the breakthrough capability needed: **mass rapid testing that enables active, data-driven management of water treatment processes**. Our platform consists of three synergistic technologies:
+**The Luminous Integrated Platform** provides the breakthrough capability needed: 
+mass rapid testing that enables active, data-driven management of water treatment processes**. Our platform consists of three synergistic technologies:
 
 **1. Rapid, Field-Validated Biosensing Technology (TRL 6-7)** **The missing piece that makes HRMS-based solutions viable at operational scale.** Our laboratory-validated biosensor technology, demonstrated through field testing at Imperial Oil's Kearl Engineered Wetland, provides the breakthrough monitoring capability:
 
