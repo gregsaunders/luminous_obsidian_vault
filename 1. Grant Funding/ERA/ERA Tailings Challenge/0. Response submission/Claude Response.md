@@ -19,12 +19,12 @@
 
 **Transformational Cost Structure for Water Release Applications:**
 
-|**Cost Category**|**Current Practice (HRMS)**|**Luminous Platform**|**Improvement**|
-|---|---|---|---|
-|**Cost per test**|$500-1,000|<$100|85%+ reduction|
-|**Time to results**|2-4 weeks|<24 hours|20x faster|
-|**Testing frequency**|Monthly/quarterly|Daily/weekly|10-20x more frequent|
-|**Capital requirements**|High (lab infrastructure)|Low (modular deployment)|80% reduction|
+| **Cost Category**        | **Current Practice (HRMS)**                      | **Luminous Platform**                            | **Improvement**      |
+| ------------------------ | ------------------------------------------------ | ------------------------------------------------ | -------------------- |
+| **Cost per test**        | $500-1,000                                       | <$100                                            | 85%+ reduction       |
+| **Time to results**      | 2-4 weeks                                        | <24 hours                                        | 20x faster           |
+| **Testing frequency**    | Monthly/quarterly                                | Daily/weekly                                     | 10-20x more frequent |
+| **Capital requirements** | High (lab infrastructure, highly skilled labour) | Low (basic equipment, modorately skilled labour) | 80% reduction        |
 
 **Return on Investment for Targeted Applications:**
 
@@ -39,19 +39,21 @@
 **Total Project Budget:** $8,016,150  
 **ERA Funding Requested:** $4,008,075  
 **Project Duration:** 48 months  
-**Project Location:** Alberta (Calgary, University of Calgary, InnoTech Alberta)
+**Project Location:** Alberta (Calgary, University of Calgary, InnoTech Edmonton & Vegreville, Alberta)
 
 ---
 
 ## Executive Summary
 
-**Alberta's oil sands industry faces an unprecedented challenge: for the first time in its history, the need to safely release treated water into the environment.** Unlike other mining operations with established water release protocols, oil sands operations have never had regulatory approval for discharge due to persistent naphthenic acid (NA) contamination that resists traditional breakdown methods.
+Alberta's oil sands industry faces an unprecedented challenge: for the first time in its history, the need to safely release treated water into the environment. Unlike other mining operations with established water release protocols, oil sands operations have never had regulatory approval for discharge due to persistent naphthenic acid (NA) contamination that resists traditional breakdown methods.
 
-**The scale and urgency are immense**: 1.4 trillion litres of stored tailings water, capacity constraints threatening expanded production, and government commitments creating urgent need for breakthrough solutions. **The bottleneck is not just treatment—it's the inability to monitor and manage NA reduction at the speed and scale required.**
+**The scale and urgency are immense**: 1.4 trillion litres of stored tailings water, capacity constraints threatening expanded production, and government commitments creating urgent need for breakthrough solutions. The bottleneck is not just treatment, it's the inability to monitor and manage NA reduction at the speed and scale required.
 
-While the Oil Sands Mine Water Steering Committee correctly identified HRMS as the accuracy standard, its cost ($500-1000/test), complexity, and 2-4 week turnaround time make the frequent monitoring essential for process control economically impossible. **The industry faces a paradox: "If you can't measure it, you can't manage it," and current methods cannot measure at the required scale and frequency.**
+While the Oil Sands Mine Water Steering Committee correctly identified HRMS as the accuracy standard, its cost ($500-1000/test), complexity, and 2-4 week turnaround time make the frequent monitoring essential for process control economically impossible. 
 
-**Luminous BioSolutions provides the missing piece**: field-validated biosensor technology (R² = 0.76 correlation with HRMS) that enables mass rapid testing in <24 hours at <$100/test. Our integrated platform combines this breakthrough monitoring with targeted bioaugmentation specifically designed for water streams destined for release.
+**The industry faces a paradox:** "If you can't measure it, you can't manage it," and current methods cannot measure at the required scale and frequency.
+
+**Luminous BioSolutions provides the missing piece**: field-validated biosensor technology (R² = 0.76 correlation with HRMS) that enables mass rapid testing in  less than 24 hours at significantly less than $100/test. Our integrated platform combines this breakthrough monitoring with targeted bioaugmentation specifically designed for water streams destined for release.
 
 **This project's "Contained-by-Design" validation approach** eliminates environmental risk while generating comprehensive performance data needed to establish our platform as the essential tool enabling operational control of water treatment processes.
 
@@ -63,9 +65,9 @@ While the Oil Sands Mine Water Steering Committee correctly identified HRMS as t
 
 **Alberta's oil sands industry faces a unique environmental challenge never before encountered**: the urgent need to safely release treated water into the environment. This situation is unprecedented because:
 
-**1. No Historical Precedent for Water Release** Unlike other Canadian mining operations (copper, gold, diamond) that have established regulatory frameworks for treated water discharge, **oil sands operations have never had regulatory approval for water release**. This creates a first-of-its-kind challenge requiring breakthrough solutions.
+**1. No Historical Precedent for Water Release:** Unlike other Canadian mining operations (copper, gold, diamond etc.) that have established regulatory frameworks for treated water discharge, oil sands operations have never had regulatory approval for water release. This creates a first-of-its-kind challenge requiring breakthrough solutions.
 
-**2. The Naphthenic Acid Barrier** The primary obstacle preventing water release is persistent naphthenic acid (NA) contamination. **Traditional remediation methods that effectively break down other organic contaminants are insufficient for NAs**, which remain toxic and persistent in tailings water for decades.
+**2. The Naphthenic Acid Barrier:** The primary obstacle preventing water release is persistent naphthenic acid (NA) contamination. Traditional remediation methods that effectively break down other organic contaminants are insufficient for NAs, which remain toxic and persistent in tailings water for decades.
 
 **3. Scale and Urgency Crisis**
 
