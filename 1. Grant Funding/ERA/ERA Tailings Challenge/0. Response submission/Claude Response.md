@@ -174,8 +174,8 @@ Despite the urgent need for mass monitoring capabilities, **the industry has no
 **Project Advancement Plan:**
 
 - **Phase 1**: Laboratory optimization and biosensor-bioaugmentation integration
-- **Phase 2**: Small-scale controlled mesocosms (University of Calgary)
-- **Phase 3**: Large outdoor mesocosms (InnoTech Alberta)
+- **Phase 2**: Small-scale controlled mesocosms / bioreactor (University of Calgary)
+- **Phase 3**: Large outdoor mesocosms / Bioreactor (InnoTech Alberta)
 - **Phase 4**: Performance validation and commercial pathway development
 
 **Target Post-Project TRL:** 7-8 (system demonstration in operational environment)
