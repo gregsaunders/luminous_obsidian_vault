@@ -86,28 +86,30 @@ While the Oil Sands Mine Water Steering Committee correctly identified HRMS as t
 ### The Luminous Solution: Enabling Mass Monitoring at Unprecedented Scale
 
 **The Luminous Integrated Platform** provides the breakthrough capability needed: 
-mass rapid testing that enables active, data-driven management of water treatment processes**. Our platform consists of three synergistic technologies:
+mass rapid testing that enables active, data-driven management of water treatment processes. 
 
-**1. Rapid, Field-Validated Biosensing Technology (TRL 6-7)** **The missing piece that makes HRMS-based solutions viable at operational scale.** Our laboratory-validated biosensor technology, demonstrated through field testing at Imperial Oil's Kearl Engineered Wetland, provides the breakthrough monitoring capability:
+Our platform consists of three synergistic technologies:
 
-- **Strong correlation (R² = 0.76)** with HRMS maintains scientific accuracy
-- **<24 hour results** vs. 2-4 weeks for HRMS enables real-time process control
-- **<$100/test** vs. $500-1000 for HRMS makes frequent monitoring economically feasible
-- **Mass rapid testing capability** enables monitoring at required scale and frequency
+**1. Rapid, Field-Validated Biosensor Technology (TRL 6-7)** The missing piece that makes HRMS-based solutions viable at operational scale. Our lab-validated biosensor technology demonstrated through field testing at Imperial Oil's Kearl Engineered Wetland, provides the breakthrough monitoring capability:
+
+- **Strong correlation (R² = 0.76) with HRMS** - maintains scientific accuracy
+- **Rapid Results** - <24 hour results vs. 2-4 weeks for HRMS enables real-time process control
+- **Low cost testing** <$100/test vs. $500-1000 for HRMS makes frequent monitoring economically feasible
+- **Mass rapid testing capability** enables the needed high volume monitoring at required scale and frequency
 - **Peer-reviewed validation** published in _ACS Synthetic Biology_ (Bookout et al., 2024)
 
-**This technology doesn't replace HRMS - it enables HRMS-based solutions by providing the operational monitoring capability that makes confident water treatment and release decisions possible.**
+This technology doesn't replace HRMS, it enables HRMS-based solutions by providing the operational monitoring capability that makes confident water treatment and release decisions possible.
 
-**2. Targeted Biological Remediation for Water Release (TRL 4→7)** Building on Kearl Wetland findings showing declining removal rates (from -0.53 mg/L/d to -0.25 mg/L/d), our bioaugmentation specifically targets **water streams intended for release or reuse**. We use potent, naturally occurring bacterial communities isolated from OSPW to serve as a vital "polishing step" achieving water quality standards required for safe discharge.
+**2. Targeted Bioaugmentation Remediation for Water Release (TRL 4→7)** Building on Kearl Wetland findings showing declining removal rates (from -0.53 mg/L/d to -0.25 mg/L/d), our bioaugmentation specifically targets water streams intended for release or reuse. We identified potent, naturally occurring bacterial communities isolated from OSPW to serve as a vital "polishing step" helping to attain water quality standards required for safe discharge.
 
-**3. Data-Driven Optimization Platform (TRL 5-6)** Led by CTO Greg Saunders, our Confluent Data Platform integrates real-time biosensor data with treatment activities, creating a knowledge graph that enables operators to move from passive waiting to **active, optimized management** of water treatment processes.
+**3. Data-Driven Optimization Platform (TRL 5-6)** Our Confluent Data Platform integrates real-time biosensor data and other vital sensor data with treatment activities, creating a knowledge graph that enables operators to move from passive waiting to active, optimized management of water treatment processes. "If you cant see it, you cant be it!"
 
 **Performance Comparison:**
 
-|Method|Time to Result|Cost/Test|Complexity|Scalability|
-|---|---|---|---|---|
-|**HRMS (Current Standard)**|2-4 weeks|$500-1,000|High (extraction required)|Limited throughput|
-|**Luminous Biosensor**|<24 hours|<$100 (projected)|Low (direct testing)|Mass rapid testing|
+| Method                      | Time to Result | Cost/Test         | Complexity                 | Scalability        |
+| --------------------------- | -------------- | ----------------- | -------------------------- | ------------------ |
+| **HRMS (Current Standard)** | 2-4 weeks      | $500-1,000        | High (extraction required) | Limited throughput |
+| **Luminous Biosensor**      | <24 hours      | <$100 (projected) | Low (direct testing)       | Mass rapid testing |
 
 **2. Targeted Biological Remediation for Water Release Applications (TRL 4→7)** We have identified and isolated potent, naturally occurring bacterial communities from OSPW that are highly effective at degrading NAs. This project will pilot a bioaugmentation process specifically targeting **water intended for release or reuse applications**, introducing optimized consortia into controlled environments to reduce NA concentrations below regulatory thresholds. Building on Kearl Wetland findings that show declining removal rates (from -0.53 mg/L/d to -0.25 mg/L/d), our approach serves as a vital "polishing step" to achieve the water quality standards required for safe discharge or operational reuse.
 
