@@ -98,11 +98,11 @@ Our platform consists of three synergistic technologies:
 - **Mass rapid testing capability** enables the needed high volume monitoring at required scale and frequency
 - **Peer-reviewed validation** published in _ACS Synthetic Biology_ (Bookout et al., 2024)
 
-This technology doesn't replace HRMS, it enables HRMS-based solutions by providing the operational monitoring capability that makes confident water treatment and release decisions possible.
+**This technology doesn't replace HRMS, it enables HRMS-based solutions by providing the operational monitoring capability that makes confident water treatment and release decisions possible.**
 
-**2. Targeted Bioaugmentation Remediation for Water Release (TRL 4→7)** Building on Kearl Wetland findings showing declining removal rates (from -0.53 mg/L/d to -0.25 mg/L/d), our bioaugmentation specifically targets water streams intended for release or reuse. We identified potent, naturally occurring bacterial communities isolated from OSPW to serve as a vital "polishing step" helping to attain water quality standards required for safe discharge.
+**2. Targeted Biological Remediation for Water Release Applications (TRL 4→7)** We have identified and isolated potent, naturally occurring bacterial communities from OSPW that are highly effective at degrading NAs. This project will pilot a bioaugmentation process specifically targeting water streams intended for release or reuse, introducing optimized consortia into controlled environments to reduce NA concentrations below regulatory thresholds. Building on Kearl Wetland findings that show declining removal rates (from -0.53 mg/L/d to -0.25 mg/L/d), our approach serves as a vital "polishing step" to achieve the water quality standards required for safe discharge.
 
-**3. Data-Driven Optimization Platform (TRL 5-6)** Our Confluent Data Platform integrates real-time biosensor data and other vital sensor data with treatment activities, creating a knowledge graph that enables operators to move from passive waiting to active, optimized management of water treatment processes. "If you cant see it, you cant be it!"
+**3. Data-Driven Optimization Platform (TRL 5-6)** Led by CTO Greg Saunders, our Confluent Data Platform integrates real-time biosensor data with treatment activities and environmental conditions, creating a queryable knowledge graph that utilizes machine learning to identify key drivers of successful NA degradation. This enables operators to move from passive waiting to active, optimized management of water treatment processes specifically targeting release-ready water streams.
 
 **Performance Comparison:**
 
@@ -111,9 +111,6 @@ This technology doesn't replace HRMS, it enables HRMS-based solutions by providi
 | **HRMS (Current Standard)** | 2-4 weeks      | $500-1,000        | High (extraction required) | Limited throughput |
 | **Luminous Biosensor**      | <24 hours      | <$100 (projected) | Low (direct testing)       | Mass rapid testing |
 
-**2. Targeted Biological Remediation for Water Release Applications (TRL 4→7)** We have identified and isolated potent, naturally occurring bacterial communities from OSPW that are highly effective at degrading NAs. This project will pilot a bioaugmentation process specifically targeting **water intended for release or reuse applications**, introducing optimized consortia into controlled environments to reduce NA concentrations below regulatory thresholds. Building on Kearl Wetland findings that show declining removal rates (from -0.53 mg/L/d to -0.25 mg/L/d), our approach serves as a vital "polishing step" to achieve the water quality standards required for safe discharge or operational reuse.
-
-**3. Data-Driven Optimization Platform (TRL 5-6)** Led by CTO Greg Saunders, our Confluent Data Platform integrates real-time biosensor data with remediation activities and environmental conditions, creating a queryable knowledge graph that utilizes machine learning to identify key drivers of successful NA degradation. This allows operators to move from passive waiting to active, optimized management of their water treatment processes, specifically targeting water streams destined for release or reuse applications.
 
 ### Alignment with Call Objectives and OSMWSC Recommendations
 
@@ -155,6 +152,7 @@ Despite the urgent need for mass monitoring capabilities, **the industry has no
     - Technical workshops for operators and consultants
     - Regulatory engagement to establish biosensor monitoring protocols
     - Industry conference presentations positioning biosensors within the HRMS framework
+    
 4. **Partnership Development**: Work with HRMS laboratories and consulting firms to integrate biosensor screening into their service offerings
     
 
