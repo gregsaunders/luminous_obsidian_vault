@@ -1,13 +1,27 @@
-Wes,
+Hello Ty,
 
-I'm writing to you directly as my team has developed a scientifically-validated, cost-effective platform to solve the Naphthenic Acid (NA) challenge, and we believe it can significantly accelerate Pathways' environmental performance goals.
+Hope you are doing well.
 
-Our core biosensor technology, initially supported by CNR and Imperial, was just **published in the peer-reviewed journal, _ACS Synthetic Biology_**. We use this rapid detection to guide a targeted, nature-based remediation that directly addresses the performance gaps (i.e., slowing degradation rates) identified in the recent Kearl wetland study.
+Following up on our conversations in May, I wanted to provide an update. 
 
-We are preparing a submission for the upcoming **ERA Tailings Technology Challenge** and are seeking an executive sponsor. We are already engaged with Ty Veness and technical teams at your member companies, and believe a partnership with Pathways would create a formidable proposal.
+The landscape for tailings remediation has evolved favourably since we last spoke, with two key pieces of research now published that directly frame the value of our work.
 
-Are you the right person to discuss this, or could you please point me to who is? We would be happy to schedule a brief 15-minute call to outline the opportunity.
+First, the multi-year study on the Kearl constructed wetland has been published, providing two critical insights: 1) It validates that wetlands are an effective foundational technology for NA degradation, but 2) it documents that degradation rates slow significantly over the season, identifying a key performance gap.
 
-Thank you,
+Second, Our participation at the Kearl wetland pilot, showed the performance of our Biosensor was comparable to mass spectrometry! The sensors work effectively in raw OSPW, our paper will be released this summer.
 
-**Jeff Violo** Co-founder | Chief Operating Officer Luminous BioSolutions Inc. 403-813-8529 [Link to your Luminous BioSolutions Website]
+This is where our solution shows a positive opportunity for your members. Our solution is uniquely positioned to address the challenges identified in the Kearl report. We use our biosensors to close the data gap caused by infrequent testing, and our bioaugmentation solution can  address the performance slowdown.
+
+We are building strong momentum. We have aligned with Dr. Doug Muench at the UofC (one of the leaders on the Kearl project) to use their greenhouse mesocosms for the first stage of our pilot, and with Innotech Alberta for larger-scale testing. We are excited that our entire pilot can be delivered using existing Alberta infrastructure.
+
+As you may know, ERA has now launched the Tailings Technology Challenge, which is a perfect fit for this project. We are preparing our submission and believe a partnership with Pathways Alliance and its members would create an exceptionally strong proposal.
+
+I would love to grab 30-45 minutes for a call next week? We can share our ERA Industrial Challenge Submission with you (which will essentially be the same as the Tailing Technology challenge) This will give you a clear understanding of the scale up piulot we are proposing. 
+
+We are confident we have an evidence-based, cost-effective solution to this significant challenge.
+
+Looking forward to hearing from you.
+
+Regards,
+
+Jeff
