@@ -15,7 +15,7 @@
 
 ### **Executive Summary**
 
-The Alberta oil sands industry faces an unprecedented challenge: for the first time in its history, the need to safely release treated water into the environment. Unlike other mining operations with established water release protocols, oil sands operations have never had regulatory approval for discharge due to persistent naphthenic acid (NA) contamination that resists traditional breakdown methods.
+The Alberta oil sands industry faces an unprecedented challenge: for the first time in its history, the need to find a path to safely releasing Oil Sands tailing water into the environment. Unlike other mining operations with established water release protocols, oil sands operations have never had regulatory approval for discharge due to persistent naphthenic acid (NA) contamination that resists traditional breakdown methods.
 
 The scale and urgency are immense: 1.4 trillion litres of stored tailings water, capacity constraints threatening expanded production, and government commitments creating an urgent need for breakthrough solutions. The bottleneck is not just treatment, it's the inability to monitor and manage NA reduction at the speed and scale required. While the Oil Sands Mine Water Steering Committee correctly identified HRMS as the accuracy standard, its cost ($500-$1000/test), complexity, and 2-4 week turnaround time make the frequent monitoring essential for process control practically and economically impossible. The industry faces a paradox: "If you can't measure it, you can't manage it," and current methods cannot measure at the required scale and frequency.
 
@@ -33,7 +33,7 @@ Alberta's oil sands industry faces a unique environmental challenge never before
     
 3. **Scale and Urgency Crisis:** The problem has reached a critical scale with ~1.4 trillion litres of stored tailings requiring treatment and tailings facilities nearing capacity, creating urgent pressure for accelerated solutions.
     
-4. **The Monitoring and Management Bottleneck:** The OSMWSC recommended standardized NA measurement. However, the HRMS standard, while accurate, presents barriers to the operational control required for this challenge:  
+4. **The Monitoring and Management Bottleneck:** The OSMWSC recommended standardized NA measurement. However, the HRMS standard, while accurate, presents barriers to the operational control required for this challenge. This challenge extends to the R&D process itself; traditional analytical chemistry is a major bottleneck, with studies showing success rates of less than 10% in identifying NA-degrading microbes from samples. This inefficiency has slowed the development of effective biological solutions for years:  
     
     - **Cost barrier** ($500-$1000/test) 
     
@@ -56,7 +56,7 @@ The Luminous Integrated Platform provides the capability to address this challen
         
     - **High-throughput capability** for mass rapid testing.
         
-2. **Targeted Biological Remediation (TRL 4):** Building on Kearl Wetland findings that show declining removal rates in passive systems, our bioaugmentation serves as a vital "performance enhancement." We use potent, naturally occurring bacterial communities isolated from OSPW to accelerate the degradation of the most persistent NAs.
+2. **Targeted Biological Remediation (TRL 4):** Building on Kearl Wetland findings that show declining removal rates in passive systems, our bioaugmentation serves as a vital "performance enhancement." We use our validated biosensor platform to rapidly screen thousands of native OSPW isolates. This proven method has already allowed us to identify dozens of potent strains and design **minimal, stable bacterial communities with enhanced NA degradation phenotypes**, ready for pilot-scale testing.
     
 3. **Data-Driven Optimization Platform (TRL 5):** Our data platform integrates real-time biosensor data and any additional relevant sensor data with remediation activities, creating a knowledge graph that allows operators to move from passive waiting to active, optimized management of their water treatment processes.
     
@@ -78,11 +78,11 @@ The primary objective is to validate and optimize the integrated Luminous platfo
 
 This three to four year project follows a systematic scale-up approach:
 
-- **Year 1: High-Throughput Screening:** Screen 1,000+ bacterial isolates to identify optimal NA-degrading consortia.
+- **Year 1: High-Throughput Screening:** Screen 1,000+ bacterial isolates to identify optimal NA-degrading consortia. This process builds on our successful preliminary work, where we have already used this methodology to identify and validate over 40 unique NA-degrading strains from an initial sample set.
     
 - **Year 1 - 2: Controlled Mesocosm Optimization (U of C):** Conduct extensive bioaugmentation trials in greenhouse mesocosms, using the biosensor to provide rapid feedback. Grow Bacterial Strains in desktop bioreactors at UofC
     
-- **Year 2 - 3: Large-Scale Outdoor Validation (InnoTech):** Scale up to large (5,000-15,000L) outdoor mesocosms under real-world conditions. Large Scale (1,000L) bacterial strains growth at InnoTech Fermentation Plant in Edmonton. 
+- **Year 2 - 3: Large-Scale Outdoor Validation (InnoTech):** Scale up to large (5,000-15,000L) outdoor mesocosms under real-world conditions. Large Scale (1,000L) bacterial strains growth at InnoTech Fermentation Plant in Edmonton. Monitoring will include not only water chemistry via biosensors and HRMS, but also **16S rRNA gene sequencing** of the water and sediment. This will allow us to track the survival and persistence of our augmented consortia and confirm their safe integration into the native microbial ecosystem.
     
 - **Year 3 - 4: Commercial Pathway Development:** Finalize performance analysis, prepare for regulatory submission, and formalize industry partnerships.
     
