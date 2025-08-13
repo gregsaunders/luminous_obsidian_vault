@@ -128,13 +128,36 @@ ERA funding is the critical catalyst to unite this industry-academic consortium 
 
 ### **3. Environmental Performance**
 
-**GHG Emissions Reductions**
+**A Vision for Ecosystem Restoration**
 
-This project's primary GHG benefit is the enablement of accelerated tailings pond reclamation, which directly eliminates a significant source of Alberta's industrial fugitive methane (CH₄) emissions. Oil sands tailings ponds are known sources of fugitive methane, with emissions estimated at 0.02–5.5 g CH₄/m²/day. By accelerating water treatment, our technology helps eliminate these methane sources sooner. Furthermore, our low-energy biological process avoids the significant GHG footprint of energy-intensive chemical treatment alternatives.
+This project's goal is not just to treat water, but to enable the **holistic restoration of the post-mining landscape.** Our platform provides the essential tools to manage and accelerate the healing of the ecosystem, addressing the core environmental damage caused by tailings ponds at a scale that matters.
 
-**Water, Air, and Land Benefits**
+---
 
-The platform provides direct toxicity reduction by accelerating NA degradation, enabling a pathway to safe water release. This enhances water recycling, reduces the need for freshwater withdrawals, and allows for faster land reclamation, returning vast areas to productive use years sooner.
+**Restoring Alberta's Land and Water**
+
+Our primary environmental impact is the direct, accelerated detoxification of tailings water, which unlocks a cascade of benefits:
+
+- **Direct Toxicity Reduction:** By targeting and degrading the most persistent naphthenic acids, our platform directly reduces the toxicity of the **~1.4 trillion litres of water** currently held in storage. This is the critical first step to breaking the cycle of contamination.
+    
+- **Enabling a Pathway to Water Release:** For the first time, this technology provides a viable pathway to treat OSPW to a quality safe for release, creating the potential to **restore natural water flows** to the Athabasca River watershed and reduce the long-term hydrological risks posed by vast water storage ponds.
+    
+- **Accelerated Land Reclamation:** By solving the water problem, we unlock the land solution. Our technology will accelerate the reclamation of over 
+    
+    **300 km² of industrial landscape**, returning it to a self-sustaining, native boreal forest ecosystem years sooner than current methods allow. This means faster restoration of wildlife habitat and land for traditional use.
+    
+- **Reduced Freshwater Demand:** By enabling effective water treatment and recycling, our platform will help operators significantly **reduce their reliance on fresh water withdrawals** from the Athabasca River, preserving this vital water resource for the ecosystem and downstream communities.
+    
+
+---
+
+**A Significant Climate Co-Benefit: Methane Reduction**
+
+A direct and powerful co-benefit of this restoration work is a significant reduction in greenhouse gas emissions.
+
+- **Eliminating Methane Sources:** This project's primary GHG benefit is the enablement of accelerated tailings pond reclamation, which **directly eliminates a significant source of Alberta's industrial fugitive methane (CH₄) emissions**. With emissions estimated at 0.02–5.5 g CH₄/m²/day from these ponds, permanently reclaiming these surfaces is one of the most impactful GHG reduction strategies available in the oil sands.
+    
+- **Low-Carbon Process:** Furthermore, our low-energy biological process avoids the significant GHG footprint of energy-intensive chemical or mechanical treatment alternatives, ensuring the solution is as sustainable as the outcome.
 
 ### **4. Economic & Ancillary Benefits**
 
