@@ -23,50 +23,26 @@ This project will scale our validated monitoring technology by integrating it wi
 
 ### **1. Technology Advancement**
 
-**The Critical Problem: An Unprecedented Challenge in Oil Sands History**
+**The Management Paradox: Alberta's Critical Tailings Bottleneck**
 
-Alberta's oil sands industry faces a unique environmental challenge never before encountered in the sector's history: the urgent need to safely release treated water into the environment. This situation is unprecedented because:
+For decades, Alberta's oil sands have faced a unique challenge: the inability to safely release treated water due to persistent naphthenic acid (NA) contamination across ~1.4 trillion litres of tailings. The fundamental barrier to solving this isn't just treatment; it's the management paradox. The industry's "gold standard" for accuracy, HRMS, is a bottleneck, with high costs ($500-$1000/test) and 2-4 week turnaround times making the frequent monitoring required for active process control impossible.
 
-1. **No Historical Precedent for Water Release:** Unlike other Canadian mining operations (copper, gold) that have established regulatory frameworks for treated water discharge, oil sands operations have never had regulatory approval for water release. This creates a first-of-its-kind challenge requiring breakthrough solutions.
+This inefficiency extends to innovation itself, with traditional R&D methods showing success rates of less than 10% in identifying NA-degrading microbes. The industry cannot effectively manage, or improve, what it cannot affordably and rapidly measure.
+
+**The Luminous Solution: A De-Risked Platform for Active Management**
+
+The Luminous Integrated Platform breaks this impasse. Our solution is a synergistic toolkit designed to enable active, data-driven management of water treatment for the first time.
+
+- **Pillar 1: Field-Validated Monitoring (TRL 5-6).** The platform's core is our peer-reviewed biosensor technology. Field validation at Imperial Oil's Kearl Wetland confirmed its credibility, demonstrating a strong positive correlation **(R² = 0.76)** with the HRMS standard on real OSPW samples. This technology delivers actionable data in **<24 hours at a projected 85%+ cost reduction**, unlocking the high-throughput capability essential for operational control. 
+
+- **Pillar 2: Targeted Bioremediation (TRL 4).** Building on the Kearl Wetland finding that passive systems have declining performance, our bioaugmentation acts as a vital "performance enhancement." Using our validated biosensor, we have already developed a proven methodology to rapidly screen and identify dozens of potent bacterial strains that are **naturally occurring and native to the oil sands tailings environment**. We use these indigenous microbes to design **minimal, stable bacterial communities with enhanced NA degradation phenotypes**, creating a powerful and environmentally safe solution ready for pilot-scale deployment.
     
-2. **The Naphthenic Acid Barrier:** The primary obstacle is persistent naphthenic acid (NA) contamination. Traditional remediation methods have proved to be insufficient NAs, which remain toxic in tailings water for decades.
-    
-3. **Scale and Urgency Crisis:** The problem has reached a critical scale with ~1.4 trillion litres of stored tailings requiring treatment and tailings facilities nearing capacity, creating urgent pressure for accelerated solutions.
-    
-4. **The Monitoring and Management Bottleneck:** The OSMWSC recommended standardized NA measurement. However, the HRMS standard, while accurate, presents barriers to the operational control required for this challenge. This challenge extends to the R&D process itself; traditional analytical chemistry is a major bottleneck, with studies showing success rates of less than 10% in identifying NA-degrading microbes from samples. This inefficiency has slowed the development of effective biological solutions for years:  
-    
-    - **Cost barrier** ($500-$1000/test) 
-    
-    - **Time barrier** (weeks for results)
-    
-    - **Scale barrier** (inability to perform mass testing). 
-    
-	The fundamental challenge remains: "If you can't measure it, you can't manage it."
+- **Pillar 3: Data-Driven Optimization (TRL 5).** Our data platform integrates all monitoring data to create a knowledge graph, allowing operators to optimize their treatment processes with predictive insights.
     
 
-**The Luminous Solution: Enabling Active Management at Unprecedented Scale**
+**A De-Risked Investment at the Ideal Stage for ERA**
 
-The Luminous Integrated Platform provides the capability to address this challenge: mass rapid testing that enables active, data-driven management of water treatment processes. Our platform consists of three synergistic technologies:
-
-1. **Rapid, Field-Validated Biosensor (TRL 5-6):** The core of our innovation is a peer-reviewed biosensor technology. Field validation at Imperial Oil's Kearl Engineered Wetland demonstrated a strong positive correlation (R² = 0.76) with the HRMS gold standard. This result confirms that our rapid, low-cost sensor reliably tracks actual NA content in complex OSPW samples. It provides:
-    
-    - **Rapid Results** - <24 hour results vs. 2-4 weeks for HRMS.
-        
-    - **Significant Lower Cost** - Projected 85%+ cost reduction per test.
-        
-    - **High-throughput capability** for mass rapid testing.
-        
-2. **Targeted Biological Remediation (TRL 4):** Building on Kearl Wetland findings that show declining removal rates in passive systems, our bioaugmentation serves as a vital "performance enhancement." We use our validated biosensor platform to rapidly screen thousands of native OSPW isolates. This proven method has already allowed us to identify dozens of potent strains and design **minimal, stable bacterial communities with enhanced NA degradation phenotypes**, ready for pilot-scale testing.
-    
-3. **Data-Driven Optimization Platform (TRL 5):** Our data platform integrates real-time biosensor data and any additional relevant sensor data with remediation activities, creating a knowledge graph that allows operators to move from passive waiting to active, optimized management of their water treatment processes.
-    
-
-**Technology Readiness and Advancement Plan**
-
-- **Current State:** Biosensor: TRL 5-6 (field-validated, peer-reviewed); Bioaugmentation: TRL 4 (lab-characterized consortia).
-    
-- **Project Goal:** Advance the integrated platform to TRL 7-8 (system demonstration in a relevant environment).
-    
+This project is perfectly positioned for ERA funding. We are not proposing to invent a technology, but to **integrate and scale validated components.** The biosensor is field-proven, and the methodology for developing the bioaugmentation solution is already de-risked. This project will advance the integrated platform from **TRL 4-6 to TRL 7-8**, bridging the exact commercialization gap that ERA targets. We have a credible, low-risk plan to deliver a commercially-ready platform that addresses one of Alberta's most significant environmental and economic challenges.
 
 ### **2. Implementation & Readiness**
 
