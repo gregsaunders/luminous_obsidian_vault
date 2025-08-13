@@ -128,36 +128,32 @@ ERA funding is the critical catalyst to unite this industry-academic consortium 
 
 ### **3. Environmental Performance**
 
-**A Vision for Ecosystem Restoration**
+**Forging a Credible Pathway to Water Release**
 
-This project's goal is not just to treat water, but to enable the **holistic restoration of the post-mining landscape.** Our platform provides the essential tools to manage and accelerate the healing of the ecosystem, addressing the core environmental damage caused by tailings ponds at a scale that matters.
-
----
-
-**Restoring Alberta's Land and Water**
-
-Our primary environmental impact is the direct, accelerated detoxification of tailings water, which unlocks a cascade of benefits:
-
-- **Direct Toxicity Reduction:** By targeting and degrading the most persistent naphthenic acids, our platform directly reduces the toxicity of the **~1.4 trillion litres of water** currently held in storage. This is the critical first step to breaking the cycle of contamination.
-    
-- **Enabling a Pathway to Water Release:** For the first time, this technology provides a viable pathway to treat OSPW to a quality safe for release, creating the potential to **restore natural water flows** to the Athabasca River watershed and reduce the long-term hydrological risks posed by vast water storage ponds.
-    
-- **Accelerated Land Reclamation:** By solving the water problem, we unlock the land solution. Our technology will accelerate the reclamation of over 
-    
-    **300 km² of industrial landscape**, returning it to a self-sustaining, native boreal forest ecosystem years sooner than current methods allow. This means faster restoration of wildlife habitat and land for traditional use.
-    
-- **Reduced Freshwater Demand:** By enabling effective water treatment and recycling, our platform will help operators significantly **reduce their reliance on fresh water withdrawals** from the Athabasca River, preserving this vital water resource for the ecosystem and downstream communities.
-    
+The ~1.4 trillion litre tailings inventory is a multi-generational challenge that will require a suite of technologies and decades of effort. Our project is not positioned as a silver bullet, but as the **critical, missing first step**: a credible and scalable pathway for treating oil sands water to a standard safe for environmental release. The primary environmental benefit of this project is to **prove and de-risk this essential "treat and monitor" toolkit**, which, once validated, can be replicated and scaled across the industry.
 
 ---
 
-**A Significant Climate Co-Benefit: Methane Reduction**
+**Demonstrating a Safe Return to the Watershed**
 
-A direct and powerful co-benefit of this restoration work is a significant reduction in greenhouse gas emissions.
+This pilot will focus on demonstrating a treatment train specifically for the fraction of water being prepared for release, the industry's most immediate need. The environmental benefits are targeted and foundational:
 
-- **Eliminating Methane Sources:** This project's primary GHG benefit is the enablement of accelerated tailings pond reclamation, which **directly eliminates a significant source of Alberta's industrial fugitive methane (CH₄) emissions**. With emissions estimated at 0.02–5.5 g CH₄/m²/day from these ponds, permanently reclaiming these surfaces is one of the most impactful GHG reduction strategies available in the oil sands.
+- **Validating a Process for Safe Discharge:** The project's core environmental goal is to prove, within a contained and controlled system, that a biological treatment process actively managed by real-time monitoring can consistently reduce NA toxicity below the thresholds required for safe return to the Athabasca River watershed.
     
-- **Low-Carbon Process:** Furthermore, our low-energy biological process avoids the significant GHG footprint of energy-intensive chemical or mechanical treatment alternatives, ensuring the solution is as sustainable as the outcome.
+- **Creating the "Recipe" for Land Reclamation:** A viable water treatment solution is the prerequisite for all large-scale land reclamation. By validating this process, we provide operators with the first credible "recipe" for managing their water liabilities, which in turn accelerates their ability to reclaim portions of the over **300 km² of impacted landscape.**
+    
+- **Reducing New Freshwater Demand:** While this pilot's volume is small, the methodology it validates will enable operators to more confidently treat and recycle water on-site, reducing the long-term burden on the Athabasca River for new projects and sustaining operations.
+
+---
+
+**A Significant and Verifiable Climate Co-Benefit**
+
+A direct co-benefit of creating this pathway to reclamation is a significant reduction in long-term greenhouse gas emissions.
+
+- **Enabling the Eventual Elimination of Methane Sources:** This project provides the enabling technology for tailings pond reclamation, which is the only permanent way to **eliminate the fugitive methane (CH₄) emissions**from these sites. While this pilot will not reclaim a pond itself, it validates the key process that allows for future reclamations to occur faster and with greater confidence.
+    
+- **Low-Carbon by Design:** Our low-energy biological process avoids the significant GHG footprint of energy-intensive chemical or mechanical treatment alternatives, ensuring the solution's climate benefit is not undermined by its operational impact.
+
 
 ### **4. Economic & Ancillary Benefits**
 
@@ -183,6 +179,7 @@ Beyond the direct economic returns, this project delivers significant ancillary 
 - **Indigenous Economic Inclusion:** We are committed to ensuring Indigenous communities share in the economic outcomes. Our plan includes **employment and training opportunities** for community members in field operations and monitoring roles, and our transparent data-sharing platform provides a tool for Indigenous-led environmental oversight.
     
 - **Health, Safety, and Global Recognition:** By championing a biological solution, we reduce the need for and handling of hazardous chemicals associated with other treatment methods. Success will establish Alberta's leadership in sustainable resource development, creating an exportable technology and brand that can be deployed in mining sectors worldwide.
+
 
 ### **6. Commercialization & Market Fit**
 
