@@ -180,7 +180,45 @@ Beyond the direct economic returns, this project delivers significant ancillary 
     
 - **Health, Safety, and Global Recognition:** By championing a biological solution, we reduce the need for and handling of hazardous chemicals associated with other treatment methods. Success will establish Alberta's leadership in sustainable resource development, creating an exportable technology and brand that can be deployed in mining sectors worldwide.
 
+### **5. Stakeholder Engagement**
 
+**A Strategy of Co-Development and Shared Trust**
+
+Our engagement philosophy is built on the understanding that technological acceptance is earned, not assumed. We will move beyond traditional consultation to a model of **co-development and radical transparency**, where stakeholder expertise and feedback are actively integrated into our project. Our goal is to build a coalition of confidence among operators, regulators, and communities, ensuring our solution is not only scientifically valid but also socially robust.
+
+---
+
+**Pillar 1: Radical Transparency Through Technology**
+
+The foundation of our engagement is the Confluent Knowledge Platform. We will provide all stakeholders with a version of the truth, at the same time.
+
+- **Real-Time Data Access:** We will provide role-based dashboards with real-time, unvarnished data from our "Contained-by-Design" mesocosm pilot to our industry partners, the AER, and designated community representatives. This builds trust through evidence, not just reports.
+    
+- **Open Dialogue on Performance:** This transparency allows for an open dialogue about the technology's performance, both successes and challenges, creating a shared understanding of its capabilities and limitations as we progress.
+    
+
+---
+
+**Pillar 2: Co-Development and Capacity Building with Indigenous Partners**
+
+We are committed to ensuring our project honours Treaty rights and creates lasting value with and for Indigenous communities.
+
+- **Stakeholder Technical Advisory Committee:** We will invite representatives from partner Indigenous communities, the AER, and industry to form an advisory committee that will meet quarterly to review progress and provide direct input on monitoring protocols and project direction.
+    
+- **Capacity Building and Economic Inclusion:** Our commitment goes beyond consultation to concrete participation. We will develop a certified environmental monitoring technician training program with a goal of minimum 25% Indigenous participation in all field operations roles.
+    
+- **Traditional Knowledge Integration:** We will actively work with community Elders and knowledge keepers to integrate Traditional Environmental Knowledge into our understanding of ecosystem health and the ultimate goals of reclamation.
+    
+
+---
+
+**Pillar 3: A Proactive Dialogue on the Future of Monitoring**
+
+A key objective of this project is to educate all stakeholders on the need for a modern, two-tiered monitoring system and to build the regulatory pathway for its adoption.
+
+- **Engaging the OSMWSC and AER:** We will proactively engage with the Oil Sands Mine Water Steering Committee and the AER to present the findings from this project. Our goal is to demonstrate how our field-validated biosensor is the essential **complement** to their HRMS recommendation. We will show how our technology provides the rapid, cost-effective "management" tool that makes the high-accuracy HRMS "validation" tool practical at an industrial scale.
+    
+- **Building the Case for a New Standard:** The data generated in this project will form the basis of a formal submission to the AER to have biosensing recognized as a standard method for operational process control in water treatment and release applications. This project is a critical step in creating the regulatory framework that will enable the entire industry to move forward.
 ### **6. Commercialization & Market Fit**
 
 **Target Market in Alberta**
