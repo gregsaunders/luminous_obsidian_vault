@@ -138,26 +138,28 @@ The platform provides direct toxicity reduction by accelerating NA degradation, 
 
 ### **4. Economic & Ancillary Benefits**
 
-**Economic Impact & Competitiveness**
+**A Transformational Shift in Operational Economics**
 
-This project will create 10-15 high-quality FTE positions in Alberta. For operators, the technology fundamentally improves competitiveness:
+This project delivers a fundamental shift in the economics of tailings management, moving from a position of costly containment to one of efficient, data-driven stewardship. The economic benefits are direct, quantifiable, and provide a compelling return on investment for both industry and the province.
 
-- **Monitoring Cost Transformation:** An 85%+ reduction in monitoring expenses per sample compared to HRMS.
+- **Disruptive Cost Reduction in Monitoring:** Our platform introduces a transformational cost structure. By complementing infrequent, expensive HRMS tests ($500-$1000/test) with high-frequency, low-cost biosensor screening (<$100/test), we deliver an **85%+ reduction in the cost-per-insight**. This enables a **10-20x increase in testing frequency**, giving operators an unprecedented level of operational control for the same or lower cost.
     
-- **Operational Control:** A 10-20x increase in testing frequency, enabling unprecedented process optimization and risk management.
+- **Accelerated Liability Reduction:** The single largest economic driver for this technology is the ability to accelerate reclamation. For a typical tailings pond, accelerating closure by just one year can save an operator tens of millions of dollars in ongoing monitoring, maintenance, and security costs. Our platform is the enabling technology for this acceleration, with a projected **3-5 year payback period** for operators through these combined cost savings.
     
-- **Liability Reduction:** Accelerated reclamation significantly decreases long-term financial obligations.
+- **Direct Job Creation and Investment:** This **$8M project** will create **10-15 high-quality, Alberta-based FTE positions** for scientists, data analysts, and technicians over its term. Success will anchor Luminous BioSolutions in Alberta, catalyzing a projected **$10-15M in follow-on Series A investment** and creating a foundation for sustained employment growth in the province's cleantech sector.
     
 
-### **5. Stakeholder Engagement**
+---
 
-**Engagement Approach: Transparency Through Technology**
+**Ancillary Benefits: Building Capacity and a Sustainable Future**
 
-Our "Contained-by-Design" pilot, combined with the Luminous Data Hub, allows us to provide all stakeholders, regulators, industry, Indigenous and local communities with direct access to performance and safety data, building trust through evidence, not just promises.
+Beyond the direct economic returns, this project delivers significant ancillary benefits that align with ERA's broader mandate. These are not afterthoughts but are integrated into our project's design.
 
-**Regulatory and Policymaker Engagement**
-
-This project directly supports OSMWSC Recommendation #5. We will provide regulators with comprehensive data on a technology that serves as the essential complement to HRMS, enabling the high-frequency monitoring required to effectively manage and regulate water treatment in the oil sands.
+- **Innovation and HQP Development:** Our partnerships with the **University of Calgary and Athabasca University**are central to the project. We are not only leveraging their world-class facilities but also actively funding post-doctoral fellows and graduate students, building a pipeline of Highly Qualified Personnel (HQP) in the critical field of environmental biotechnology.
+    
+- **Indigenous Economic Inclusion:** We are committed to ensuring Indigenous communities share in the economic outcomes. Our plan includes **employment and training opportunities** for community members in field operations and monitoring roles, and our transparent data-sharing platform provides a tool for Indigenous-led environmental oversight.
+    
+- **Health, Safety, and Global Recognition:** By championing a biological solution, we reduce the need for and handling of hazardous chemicals associated with other treatment methods. Success will establish Alberta's leadership in sustainable resource development, creating an exportable technology and brand that can be deployed in mining sectors worldwide.
 
 ### **6. Commercialization & Market Fit**
 
