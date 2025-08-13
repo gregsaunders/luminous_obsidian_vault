@@ -221,10 +221,57 @@ A key objective of this project is to educate all stakeholders on the need for a
 - **Building the Case for a New Standard:** The data generated in this project will form the basis of a formal submission to the AER to have biosensing recognized as a standard method for operational process control in water treatment and release applications. This project is a critical step in creating the regulatory framework that will enable the entire industry to move forward.
 ### **6. Commercialization & Market Fit**
 
-**Target Market in Alberta**
+**Our Vision: To Become the Global Standard for Industrial Water Intelligence**
 
-The primary market is the major oil sands operators who manage over 300 km² of tailings ponds containing ~1.4 trillion litres of OSPW and are mandated to remediate them under AER Directive 085. This represents an estimated total addressable market of $15-20M annually in Alberta.
+Our vision extends far beyond this initial project. We are building Luminous BioSolutions to be the global leader in biological sensing and data analytics for industrial water management. This ERA-funded project is the critical commercial launchpad, allowing us to establish our technology in the most challenging and highest-value market first: the Alberta oil sands. Success here will create a powerful, Alberta-based company with a proven solution ready for export to mining and industrial sectors worldwide.
 
-**Pathway to Commercialization**
+---
 
-Following successful project completion, our pathway includes securing commercial agreements, scaling sensor production, and deploying the integrated system in an operational constructed wetland, with subsequent expansion across the oil sands and into export markets.
+**A Phased, Credible Pathway to Market Leadership**
+
+Our commercialization plan is a deliberate "crawl, walk, run" strategy, designed to build momentum, de-risk market entry, and establish a foundation for scalable growth.
+
+**Phase 1: Secure the Beachhead Market (Project Term: Years 1-4)**
+
+The primary goal of this ERA-funded project is to secure our first commercial beachhead with our committed oil sands partner.
+
+- **Our Product:** We will offer a "Two-Tiered Modern Monitoring" service, combining our rapid biosensor screening with periodic HRMS validation. This isn't just a technology sale; it's a complete **Monitoring-as-a-Service (MaaS)**solution.
+    
+- **Go-to-Market:** We will leverage our existing partner relationship to move from a co-funded pilot to the first commercial service contract. The data and ROI case developed during this project will be the primary sales tool to convert the rest of the market.
+    
+- **Key Commercial Milestone:** By the end of this project, we will have not only a validated technology but also our **first multi-year commercial contract** and a proven, repeatable sales process.
+    
+
+**Phase 2: Dominate the Alberta Market (Post-Project: Years 5-7)**
+
+With a proven case study and a strong endorsement from our initial partner, we will expand to capture the broader Alberta market.
+
+- **Market Expansion:** We will target the remaining major oil sands operators, offering our validated MaaS and bioaugmentation solutions. The estimated **$15-20M annual addressable market** in the oil sands is our primary target.
+	
+- **Catalyzing Private Investment:** The successful completion of this ERA-funded project will provide Luminous with a de-risked platform, a flagship commercial contract, and a proven ROI model. This powerful combination of technical and market validation will serve as the primary catalyst for our planned pre-seed/seed funding round. This injection of private capital will be used to scale our commercial team and build the inventory required for our expansion.
+    
+- **Product Expansion:** We will leverage our data platform to offer a **predictive analytics SaaS (Software-as-a-Service)** product, helping operators optimize their chemical usage and treatment processes based on our growing dataset.
+    
+
+**Phase 3: Global Expansion and Diversification (Years 8+)**
+
+With a dominant position in the oil sands and a strong capital base, we will execute our export strategy.
+
+- **New Markets:** We will adapt our platform for other major mining sectors (e.g., copper, gold, coal) and industrial wastewater applications (e.g., pulp and paper) in Canada, the US, and Australia.
+    
+- **Scalable Business Model:** Our primary export product will be the licensable data platform and proprietary biosensor technology, allowing for high-margin, scalable growth through international channel partners.
+    
+
+---
+
+**Barriers to Adoption and Our Mitigation Strategy**
+
+A strong commercial plan acknowledges market realities.
+
+- **Barrier:** The conservative nature and long sales cycles of the oil sands industry.
+    
+    - **Mitigation:** Our strategy of co-developing the solution with a **committed industry partner** from the outset is our primary mitigation. We are not selling to the industry; we are building the solution _with_ them.
+        
+- **Barrier:** Regulatory acceptance of a novel monitoring technology.
+    
+    - **Mitigation:** Our proactive **Stakeholder Engagement** plan is designed to bring the AER along on the journey. By providing them with transparent data and demonstrating the correlation to HRMS, we are building the case for acceptance in parallel with our technical validation.
