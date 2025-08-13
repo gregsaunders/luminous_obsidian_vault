@@ -48,36 +48,83 @@ This project is perfectly positioned for ERA funding. We are not proposing to in
 
 **Project Objectives and Scope**
 
-The primary objective is to validate and optimize the integrated Luminous platform through a systematic scale-up pilot in controlled, contained mesocosm environments. The project's fundamental design principle is "Contained-by-Design", all validation activities occur within existing Alberta research infrastructure (University of Calgary, InnoTech Alberta) with zero potential for environmental contamination during the project term.
+The primary objective of this industry-supported project is to validate and optimize the integrated Luminous platform through a systematic scale-up pilot. The project's fundamental design principle is **"Contained-by-Design"**; all validation activities occur within existing Alberta research infrastructure (University of Calgary, InnoTech Alberta) with zero potential for environmental contamination during the project term. This approach will generate the robust, transparent performance data required for regulatory acceptance and full-scale commercial adoption by our partners and the broader industry.
+
+---
+
+**Consortium and Execution Structure**
+
+This project is a powerful collaboration between a technology innovator, world-class research institutions, and a committed industry leader.
+
+- **Lead Applicant:** Luminous BioSolutions Inc. (Project management, technology integration, commercialization).
+    
+- **Industry Partner (Committed):** A leading Canadian oil sands operator will act as the project's primary industrial partner, providing **committed co-funding**, access to diverse OSPW samples, and a technical advisory committee to guide the project towards commercial relevance. This partnership ensures a direct path to an on-site field pilot following successful project completion.
+    
+- **Academic & Infrastructure Partners (Confirmed):**
+    
+    - **University of Calgary:** Provider of greenhouse mesocosm facilities and academic expertise for rapid optimization trials.
+        
+    - **InnoTech Alberta:** Provider of large-scale outdoor mesocosm facilities and fermentation/bioreactor expertise for at-scale validation.
+        
+
+---
+
+**Team Expertise**
+
+Our team has the specific scientific and commercial experience required for success. The project is led by **Dr. Shawn Lewenza (CEO/CSO)**, who has successfully validated this biosensor technology in the Kearl Wetland pilot, and **Jeff Violo**, an executive with decades of experience in technology commercialization, and **Greg Saunders** a sesond Software Architect with over 30 years experience developing software applications . The team is augmented by the technical advisory committee from our committed industry partner, ensuring all project outcomes are directly aligned with operator needs.
+
+---
 
 **Work Plan and Milestones**
 
-This three to four year project follows a systematic scale-up approach:
+This **48-month project** follows a systematic, four-phase scale-up approach with clear, deliverable-focused milestones:
 
-- **Year 1: High-Throughput Screening:** Screen 1,000+ bacterial isolates to identify optimal NA-degrading consortia. This process builds on our successful preliminary work, where we have already used this methodology to identify and validate over 40 unique NA-degrading strains from an initial sample set.
+- **Phase 1: High-Throughput Screening & Protocol Development (Year 1)**
     
-- **Year 1 - 2: Controlled Mesocosm Optimization (U of C):** Conduct extensive bioaugmentation trials in greenhouse mesocosms, using the biosensor to provide rapid feedback. Grow Bacterial Strains in desktop bioreactors at UofC
+    - **Objective:** Identify the most potent bacterial consortia using partner-provided OSPW.
+        
+    - **Key Deliverable:** A ranked portfolio of the top ~10 validated NA-degrading consortia ready for mesocosm testing.
+        
+- **Phase 2: Controlled Mesocosm Optimization (Year 2)**
     
-- **Year 2 - 3: Large-Scale Outdoor Validation (InnoTech):** Scale up to large (5,000-15,000L) outdoor mesocosms under real-world conditions. Large Scale (1,000L) bacterial strains growth at InnoTech Fermentation Plant in Edmonton. Monitoring will include not only water chemistry via biosensors and HRMS, but also **16S rRNA gene sequencing** of the water and sediment. This will allow us to track the survival and persistence of our augmented consortia and confirm their safe integration into the native microbial ecosystem.
+    - **Objective:** Optimize bioaugmentation performance in a controlled environment.
+        
+    - **Key Deliverable:** A comprehensive performance report from the U of C greenhouse trials detailing optimal dosing strategies and demonstrating a >50% improvement in NA removal rates.
+        
+- **Phase 3: Large-Scale Outdoor Validation (Year 3)**
     
-- **Year 3 - 4: Commercial Pathway Development:** Finalize performance analysis, prepare for regulatory submission, and formalize industry partnerships.
+    - **Objective:** Validate the optimized process at scale under real-world conditions.
+        
+    - **Key Deliverable:** A regulatory-grade dataset from the InnoTech outdoor mesocosms validating performance, safety, scalability, and including 16S rRNA sequencing results confirming safe integration of consortia.
+        
+- **Phase 4: Commercial Deployment Planning (Year 4)**
     
+    - **Objective:** Translate pilot success into a shovel-ready commercial project.
+        
+    - **Key Deliverable:** A detailed engineering plan and commercial agreement for the first on-site field pilot at our industry partner's operational facility.
+        
+
+---
 
 **Budget and Financing**
 
-| FINANCIAL CONTRIBUTORS     | AMOUNT   | STATUS         |             |
-| -------------------------- | -------- | -------------- | ----------- |
-| **ERA (Requested)**        |          | **$4,008,075** | Applied for |
-| Alberta Innovates          | $800,000 | Anticipated    |             |
-| Canadian Natural Resources | $675,000 | Interested     |             |
-| Suncor / Imperial Oil      | $675,000 | Interested     |             |
-| Pathways Alliance          | $675,000 | Interested     |             |
-| Other Grants (NRC IRAP)    | $500,000 | Interested     |             |
-| **Total Project Budget**   |          | **$8,016,150** |             |
+The project is strongly supported by a consortium of funders, led by a committed industry partner, which substantially de-risks the project's financial plan.
+
+| FINANCIAL CONTRIBUTORS      | AMOUNT         | STATUS        |
+| --------------------------- | -------------- | ------------- |
+| **ERA (Requested)**         | **$4,008,075** | Applied for   |
+| **Lead Oil Sands Operator** | **$1,000,000** | **Committed** |
+| Alberta Innovates           | $800,000       | Anticipated   |
+| Other Industry Partners     | $1,100,000     | In Discussion |
+| Other Grants (NRC IRAP)     | $433,150       | In Discussion |
+| **Total Project Budget**    | **$8,016,150** |               |
+
+
+---
 
 **Rationale for ERA Funding**
 
-ERA funding is the critical catalyst to advance our validated components to an integrated commercial platform. This project represents a unique opportunity for ERA to fund not just a technology, but to validate a complete, capital-efficient platform that addresses monitoring, treatment, and optimization simultaneously. It is a strategic investment in a foundational technology that will unlock significant, long-term environmental and economic benefits for Alberta.
+ERA funding is the critical catalyst to unite this industry-academic consortium and advance a validated technology platform to commercial readiness. This project represents a unique opportunity for ERA to leverage a **committed private sector investment** to validate a complete, capital-efficient platform that addresses monitoring, treatment, and optimization simultaneously. It is a strategic investment in a foundational technology that will unlock significant, long-term environmental and economic benefits for Alberta.
 
 ### **3. Environmental Performance**
 
