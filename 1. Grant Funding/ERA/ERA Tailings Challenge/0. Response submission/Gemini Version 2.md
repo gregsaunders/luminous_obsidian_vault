@@ -7,62 +7,29 @@
 |**Applicant Organization (Legal name):**|Luminous BioSolutions Inc.|
 |**Project Location(s):**|Northern Alberta Oil Sands / Calgary, AB / Vegreville, AB|
 |**Project Start Date:**|January 1, 2026|
-|**Project Completion Date:**|December 31, 2028 (36 Months)|
-|**Total Project Budget:**|**$4,500,000**|
-|**Requested ERA Funding:**|**$2,250,000**|
+|**Project Completion Date:**|December 31, 2029 (48 Months)|
+|**Total Project Budget:**|**$8,016,150**|
+|**Requested ERA Funding:**|**$4,008,075**|
 |**Applicant Contact Name:**|Jeff Violo|
 |**Applicant Contact Email:**|jeff.violo@luminousbiosolutions.com|
+
+Export to Sheets
 
 ---
 
 ### **Executive Summary**
 
-The critical bottleneck to solving Alberta's 1.4 trillion litre tailings challenge isn't just treatment, it's management. While the industry has a "gold standard" for accuracy (HRMS), its high cost and 2-4 week turnaround time make the frequent monitoring required for active process control impossible. This creates a management paradox: operators cannot effectively manage what they cannot affordably and rapidly measure.
+The critical bottleneck to solving Alberta's 1.4 trillion litre tailings challenge isn't just treatment—it's **management**. While the industry has a "gold standard" for accuracy (HRMS), its high cost and 2-4 week turnaround time make the frequent monitoring required for active process control impossible. This creates a management paradox: operators cannot effectively manage what they cannot affordably and rapidly measure.
 
-Luminous BioSolutions provides the key to unlock this paradox. Our platform's core is a field-validated biosensor that delivers actionable NA data in under 24 hours at a fraction of the cost of HRMS. Validation at Imperial Oil's Kearl Wetland confirmed our technology's credibility, demonstrating a strong correlation **(R² = 0.76)** with the HRMS standard on real OSPW samples. We provide the essential tool that complements HRMS, enabling a shift from passive containment to **active, data-driven water management.**
+Luminous BioSolutions provides the key to unlock this paradox. Our platform's core is a field-validated biosensor that delivers actionable NA data in under 24 hours at a fraction of the cost of HRMS. Validation at Imperial Oil's Kearl Wetland confirmed our technology's credibility, demonstrating a strong correlation **(R² = 0.76)** with the HRMS standard on real OSPW samples. We provide the essential tool that **complements** HRMS, enabling a shift from passive containment to **active, data-driven water management.**
 
-This focused **$X.YM project** will advance our validated biosensor from TRL 5 to a commercially-ready monitoring platform (TRL 7-8). In a risk-free, **"Contained-by-Design"** pilot, we will prove the platform's reliability at scale and explore its application in guiding a secondary objective: targeted bioaugmentation. This investment will provide Alberta's oil sands with the first viable, scalable toolset to finally manage and remediate one of its largest and most urgent environmental liabilities.
+This **$8M project**, ==supported by a committed industry partner,== will scale our validated monitoring technology by integrating it with a targeted bioaugmentation solution in a risk-free, **"Contained-by-Design"** pilot. By leveraging existing Alberta research infrastructure, we will de-risk the complete platform and deliver a commercially-ready system. This investment will provide Alberta's oil sands with the first viable, scalable toolset to finally manage and remediate one of its largest and most urgent environmental liabilities.
 
 ---
 
 ### **1. Technology Advancement**
 
-**The Management Paradox: Alberta's Critical Tailings Bottleneck**
-
-Alberta's oil sands face a unique challenge: the inability to safely release treated water due to persistent naphthenic acid (NA) contamination across 
-
-**~1.4 trillion litres of tailings**. The fundamental barrier is a management paradox. The HRMS "gold standard" for accuracy presents insurmountable operational barriers:
-
-- **Cost Barrier:** $500-$1000 per test makes frequent monitoring economically prohibitive.
-    
-- **Time Barrier:** 2-4 week turnaround times prevent real-time process optimization.
-    
-- **Scale Barrier:** The inability to perform mass testing across vast and complex sites.
-    
-
-This inefficiency has slowed innovation, with traditional R&D methods showing success rates of **less than 10% in identifying NA-degrading microbes**. The industry cannot effectively manage, or improve, what it cannot affordably and rapidly measure.
-
-**The Luminous Solution: A De-Risked Platform for Active Management**
-
-Our solution is a synergistic toolkit designed to enable active, data-driven management of water treatment for the first time.
-
-- **Pillar 1: Commercial-Grade Monitoring Platform (Primary Objective, TRL 5 → 7/8).** The project's core focus is to advance our peer-reviewed biosensor technology into a robust, commercially-ready monitoring platform. Initial validation shows a strong correlation (R² = 0.76) with HRMS. This project will further validate this performance across a wider range of conditions to quantify its real-world operational accuracy and variability.
-    
-- **Pillar 2: Platform-Guided Bioremediation (Secondary Objective, TRL 4 → 6).** To demonstrate the power of our monitoring platform, we will use it to guide a secondary, exploratory objective. We will leverage our proven screening method to design minimal, stable bacterial communities from **naturally occurring, native OSPW strains** and test their efficacy as a "performance enhancement" for NA degradation.
-    
-
-**Key Performance Indicators (KPIs) and Success Metrics**
-
-| Category                   | Metric                           | Target                                                                                |
-| -------------------------- | -------------------------------- | ------------------------------------------------------------------------------------- |
-| **Technology Performance** | Biosensor correlation with HRMS  | Maintain R² > 0.70 across all trials                                                  |
-|                            | Biosensor operational accuracy   | Achieve a coefficient of variation <20% in repeat samples                             |
-| **Environmental Outcome**  | NA Degradation (Bioaugmentation) | Demonstrate a >30% improvement in NA removal rates in augmented mesocosms vs. control |
-| **Commercial Viability**   | Cost per Test                    | Validate a per-test operational cost of <$100                                         |
-
-**Competitive Analysis**
-
-The market for rapid NA monitoring is nascent. While HRMS labs are service providers, they do not offer a scalable technology for _operational control_. Our sustainable advantage is our proprietary library of native bacterial strains, our patent-pending biosensor designs, and the network effects of our data platform - every test makes our predictive analytics smarter.
+**(This section remains as previously refined, outlining the problem, the three-pillar solution, KPIs, and competitive analysis.)**
 
 ---
 
@@ -70,105 +37,57 @@ The market for rapid NA monitoring is nascent. While HRMS labs are service provi
 
 **Project Objectives and Scope**
 
-The primary objective is to validate the Luminous biosensor as a commercial-grade, high-throughput monitoring tool in a large-scale, industrially relevant environment. The project is fundamentally designed as **"Contained-by-Design,"** with all activities occurring within existing Alberta research infrastructure (University of Calgary, InnoTech Alberta) with zero potential for environmental contamination.
+The primary objective is to validate and optimize the integrated Luminous platform through a systematic scale-up pilot in controlled, contained mesocosm environments. The project's fundamental design principle is **"Contained-by-Design"**; all validation activities occur within existing Alberta research infrastructure (University of Calgary, InnoTech Alberta) with zero potential for environmental contamination during the project term.
 
 **Consortium and Execution Structure**
 
-This project is a collaboration between Luminous, research institutions, and a **committed industry partner** who validates the market need.
+This project is a powerful collaboration between a technology innovator, world-class research institutions, and a **committed industry leader**.
 
-- **Lead Applicant:** Luminous BioSolutions Inc.
+- **Lead Applicant:** Luminous BioSolutions Inc. 
     
-- **Industry Partner (Committed):** A leading Canadian oil sands operator will provide co-funding, OSPW samples, and a technical advisory committee.
+- **Industry Partner (Committed):** A leading Canadian oil sands operator will act as the project's primary industrial partner, providing **committed co-funding**, OSPW samples, and a technical advisory committee.
     
 - **Infrastructure Partners (Confirmed):** University of Calgary and InnoTech Alberta.
     
 
 **Work Plan and Milestones**
 
-This **36-month project** follows a systematic, gated work plan:
+This **48-month project** follows an efficient, integrated, and overlapping four-phase plan designed to maximize scientific rigor and accelerate outcomes.
 
-- **Phase 1: Platform Setup & High-Throughput Screening (Months 1-12)**
+- **Phase 1: Project Initiation & High-Throughput Screening (Months 1-12)**
     
-    - **Objective:** Identify optimal consortia and establish scaled-up monitoring protocols.
+    - **Objective:** Prepare all project components and identify the most potent bacterial consortia for bioaugmentation trials. This phase builds on our successful preliminary work, where we have already used this methodology to identify and validate over 40 unique NA-degrading strains.
         
-    - **Key Deliverable:** A ranked portfolio of the top 5 validated NA-degrading consortia.
+    - **Key Deliverable:** A ranked portfolio of the top 10 validated NA-degrading consortia and fully commissioned greenhouse mesocosm systems at the University of Calgary.
         
-- **Phase 2: Mesocosm Validation & Go/No-Go Gate (Months 13-24)**
+- **Phase 2: Integrated Validation at Greenhouse Scale (Months 10-24)**
     
-    - **Objective:** Validate biosensor performance at scale and test bioaugmentation.
+    - **Objective:** To simultaneously validate the biosensor platform's commercial-grade performance (TRL 5 → 7) _using_ the dynamic environment of the bioaugmentation trials conducted in the **U of C greenhouse mesocosms**. This integrated approach ensures the biosensor is tested under realistic, actively managed remediation conditions.
         
-    - **Key Deliverable:** A comprehensive performance report from the U of C and InnoTech mesocosm trials validating biosensor KPIs (R² > 0.70, CV <20%).
+    - **Key Deliverable:** A comprehensive "Greenhouse Validation Report" detailing both the biosensor's performance against all KPIs and the efficacy of the top bioaugmentation consortia at a small scale.
         
-    - **Go/No-Go Decision Point:** Bioaugmentation work in Phase 3 will only proceed if biosensor KPIs are met.
-        
-- **Phase 3: Commercial Pathway Development (Months 25-36)**
+- **Phase 3: At-Scale Validation in Outdoor Mesocosms (Months 25-36)**
     
-    - **Objective:** Translate pilot success into a shovel-ready commercial project.
+    - **Objective:** To validate the entire integrated process (monitoring + bioaugmentation) at a larger scale under real-world environmental conditions at the **InnoTech Alberta** facility.
         
-    - **Key Deliverable:** A detailed engineering plan for the first on-site commercial pilot with our industry partner.
+    - **Key Deliverable:** A "Scale-Up Performance Report" from the InnoTech trials, providing the final, regulatory-grade dataset needed for commercial planning.
+        
+- **Phase 4: Commercial Pathway Development (Months 37-48)**
+    
+    - **Objective:** To translate the full pilot success into a shovel-ready commercial project.
+        
+    - **Key Deliverable:** A detailed engineering plan and a finalized commercial agreement for the first on-site deployment at our industry partner's operational facility.
         
 
 **Budget and Financing**
 
+The project is strongly supported by a consortium of funders, led by a committed industry partner, which substantially de-risks the project's financial plan.
+
 |FINANCIAL CONTRIBUTORS|AMOUNT|STATUS|
 |---|---|---|
-|**ERA (Requested)**|**$2,250,000**|Applied for|
-|**Lead Oil Sands Operator**|**$750,000**|**Committed**|
-|Alberta Innovates|$750,000|Anticipated|
-|Other Partners/Grants|$750,000|In Discussion|
-|**Total Project Budget**|**$4,500,000**||
-
----
-
-### **3. Environmental Performance**
-
-**Forging a Credible Pathway to Water Release**
-
-The ~1.4 trillion litre tailings inventory is a multi-generational challenge6. This project provides the critical, missing first step: a validated, scalable pathway for the monitoring and management required to treat water to a releasable standard. Its primary environmental benefit is to 
-
-**prove and de-risk this essential "treat and monitor" toolkit**, which, once validated, can be replicated and scaled across the industry. This pilot will demonstrate a process that can consistently reduce NA toxicity below the thresholds required for a safe return to the Athabasca River watershed.
-
-**A Significant Climate Co-Benefit: Methane Reduction**
-
-A direct co-benefit of creating this pathway to reclamation is a significant reduction in long-term GHG emissions. This project enables future tailings pond reclamation, which is the only permanent way to 
-
-**eliminate the fugitive methane (CH₄) emissions** from these sites7777.
-
----
-
-### **4. Economic & Ancillary Benefits**
-
-**A Transformational Shift in Operational Economics**
-
-This project delivers a fundamental shift in the economics of tailings management.
-
-- **Disruptive Cost Reduction:** Our platform delivers an **85%+ reduction in the cost-per-insight**compared to HRMS8.
-    
-- **Accelerated Liability Reduction:** By enabling active management, our technology is the key to accelerating reclamation, a process where shortening the timeline by even one year can save an operator tens of millions of dollars.
-    
-- **Job Creation and Investment:** This **$4.5M project** will create **8-10 high-quality, Alberta-based FTE positions**. Success will serve as the catalyst for our planned **pre-seed/seed funding round in 2029** to scale the commercial team.
-    
-
----
-
-### **5. Stakeholder Engagement**
-
-**A Strategy of Co-Development and Shared Trust**
-
-Our engagement philosophy is built on a model of **co-development and radical transparency**. We will form a **Stakeholder Technical Advisory Committee**, including representatives from our partner Indigenous communities, the AER, and industry, to provide direct input on project direction. Our Luminous Data Hub will provide all partners with real-time access to pilot data, building trust through evidence, not just reports. This proactive dialogue is essential for educating stakeholders on the role of our biosensor as the essential **complement** to the HRMS standard.
-
----
-
-### **6. Commercialization & Market Fit**
-
-**Our Vision: To Become the Global Standard for Industrial Water Intelligence**
-
-Our vision is to build a world-leading company in Alberta. This ERA-funded project is our commercial launchpad.
-
-**A Phased Pathway to Market Leadership**
-
-1. **Secure the Beachhead (This Project):** Validate the technology and business model with our committed oil sands partner, securing our first multi-year commercial contract for **Monitoring-as-a-Service (MaaS)**.
-    
-2. **Dominate the Alberta Market (Post-Project):** Expand to the remaining oil sands operators, capturing a significant share of the **$15-20M annual addressable market**.
-    
-3. **Global Expansion:** Adapt and export our technology to other mining and industrial sectors worldwide.
+|**ERA (Requested)**|**$4,008,075**|Applied for|
+|**Lead Oil Sands Operator**|**$1,000,000**|**Committed**|
+|Alberta Innovates|$800,000|Anticipated|
+|Other Industry Partners|$1,100,000|In Discussion|
+|Other Grants (NRC IRAP)|$433,150|In Discussion|
+|**Total Project Budget**|**$8,016,150**|
