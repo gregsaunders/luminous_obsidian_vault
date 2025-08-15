@@ -249,7 +249,7 @@ All project activities utilize existing, contained research infrastructure - no 
 |Other Grants (NRC IRAP)|$433,150|Anticipated|
 |**TOTAL PROJECT BUDGET**|**$8,016,150**||
 
-**CNRL's $1M commitment validates the urgent commercial need** for breakthrough monitoring capabilities to address the $30-130 billion remediation challenge. This industry investment significantly de-risks the project's technical and commercial viability.
+==**CNRL's $1M commitment validates the urgent commercial need** for breakthrough monitoring capabilities to address the $30-130 billion remediation challenge. This industry investment significantly de-risks the project's technical and commercial viability.==
 
 ### Rationale for ERA Funding - Strategic Investment in $30-130 Billion Solution
 
@@ -268,7 +268,7 @@ ERA funding represents a **strategic investment in the foundational technology 
 **Lead Applicant:** Luminous BioSolutions Inc.
 
 - **Role**: Project management, technology integration, commercialization
-- **Key Personnel**: Jeff Violo (CEO), Dr. Shawn Lewenza (Chief Science Officer)
+- **Key Personnel**: Jeff Violo (COO), Dr. Shawn Lewenza (Chief Science Officer), Greg Saunders (Chief Technology Officer)
 
 **Academic Partners:**
 
@@ -289,28 +289,28 @@ ERA funding represents a **strategic investment in the foundational technology 
 - Direct experience in successful field deployment at Kearl Wetland
 - Professor, Athabasca University; Adjunct Professor, University of Calgary
 
-**Jeff Violo, CEO**
+**Jeff Violo, COO**
 
-- 15+ years cleantech commercialization experience
-- Expertise in oil and gas environmental technology deployment
-- Proven track record in regulatory engagement and industry partnerships
+- 15+ years commercialization experience
+- Expertise commercialization 
+- Proven track record in introducing tew technologies into new industries
 
 **Technical Team:**
 
 - Environmental microbiologists specializing in OSPW systems
-- Data scientists with expertise in environmental monitoring platforms
-- Field operations specialists with oil sands experience
+- Data scientists with expertise in monitoring platforms
+- Field operations specialists 
 
 ### Readiness and Approvals
 
 **Current Status:**
 
-- ✅ Peer-reviewed technology validation (Bookout et al., 2024)
-- ✅ Field performance data from Kearl Wetland pilot
-- ✅ University of Calgary facility access agreements
-- ✅ InnoTech Alberta partnership confirmation
-- 🔄 Industry partner final negotiations (expected completion Q4 2025)
-- 🔄 Regulatory pre-consultation initiated with AER
+- Peer-reviewed technology validation (Bookout et al., 2024)
+- Field performance data from Kearl Wetland pilot
+- University of Calgary facility access agreements
+- InnoTech Alberta partnership confirmation
+- Industry partner final negotiations (expected completion Q4 2025)
+- Regulatory pre-consultation initiated with AER
 
 **Path to Project Launch:**
 
