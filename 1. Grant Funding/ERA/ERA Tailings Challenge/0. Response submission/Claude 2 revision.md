@@ -109,10 +109,6 @@
 |**HRMS (Current Standard)**|2-4 weeks|$500-1,000|High (extraction required)|Limited throughput|
 |**Luminous Biosensor**|<24 hours|<$100 (projected)|Low (direct testing)|Mass rapid testing|
 
-**2. Targeted Biological Remediation for Water Release Applications (TRL 4→7)** We have identified and isolated potent, naturally occurring bacterial communities from OSPW that are highly effective at degrading NAs. This project will pilot a bioaugmentation process specifically targeting **water intended for release or reuse applications**, introducing optimized consortia into controlled environments to reduce NA concentrations below regulatory thresholds. Building on Kearl Wetland findings that show declining removal rates (from -0.53 mg/L/d to -0.25 mg/L/d), our approach serves as a vital "polishing step" to achieve the water quality standards required for safe discharge or operational reuse.
-
-**3. Data-Driven Optimization Platform (TRL 5-6)** Led by CTO Greg Saunders, our Confluent Data Platform integrates real-time biosensor data with remediation activities and environmental conditions, creating a queryable knowledge graph that utilizes machine learning to identify key drivers of successful NA degradation. This allows operators to move from passive waiting to active, optimized management of their water treatment processes, specifically targeting water streams destined for release or reuse applications.
-
 ### Alignment with Call Objectives and OSMWSC Recommendations
 
 This project directly addresses three critical ERA focus areas while supporting key government priorities:
