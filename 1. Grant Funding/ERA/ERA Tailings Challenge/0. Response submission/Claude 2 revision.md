@@ -399,7 +399,7 @@ ERA funding serves as the **critical catalyst** to advance validated technolog
 
 - **Reduced volatile organic compound (VOC) emissions** from tailings ponds through accelerated treatment
 - **Elimination of chemical treatment emissions** compared to oxidation/incineration alternatives
-- **Dust reduction** through faster pond consolidation and reclamation
+- ==**Dust reduction** through faster pond consolidation and reclamation==
 
 **Land Use and Reclamation:**
 
@@ -412,7 +412,7 @@ ERA funding serves as the **critical catalyst** to advance validated technolog
 
 **Project Scale (48-month demonstration):**
 
-- Treatment of 50,000-100,000 m³ OSPW in controlled mesocosm systems
+- Treatment of ==50,000-100,000 m³== OSPW in controlled mesocosm systems
 - Demonstration of 2-3x improvement in NA removal rates vs. passive wetlands
 - Generation of 1,000+ data points validating environmental performance
 
@@ -427,9 +427,9 @@ ERA funding serves as the **critical catalyst** to advance validated technolog
 
 **Potential Trade-offs:**
 
-- **Increased biological activity** may temporarily increase oxygen demand
-- **Bacterial introduction** requires monitoring for ecological effects
-- **Enhanced treatment** may concentrate some contaminants requiring management
+- ==**Increased biological activity** may temporarily increase oxygen demand==
+- ==**Bacterial introduction** requires monitoring for ecological effects==
+- ==**Enhanced treatment** may concentrate some contaminants requiring management==
 
 **Mitigation Strategies:**
 
@@ -480,7 +480,7 @@ ERA funding serves as the **critical catalyst** to advance validated technolog
 
 **Operator Cost Benefits:**
 
-- **Monitoring cost reduction**: From $500-1000/test (HRMS) to <$50/test (biosensor)
+- **Monitoring cost reduction**: From $500-1000/test (HRMS) to <$100/test (biosensor)
 - **Treatment optimization**: Real-time feedback reduces over-treatment and chemical consumption
 - **Liability reduction**: Accelerated reclamation decreases long-term financial obligations
 - **Regulatory compliance**: Continuous monitoring reduces non-compliance risks and associated costs
