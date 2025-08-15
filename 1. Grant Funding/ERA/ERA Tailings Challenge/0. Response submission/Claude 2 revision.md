@@ -185,7 +185,7 @@ Despite the urgent need for mass monitoring capabilities, **the industry has no
 
 **Primary Objective:** Validate and optimize an integrated biosensor-bioaugmentation platform through systematic scale-up in controlled, contained mesocosm environments, ensuring environmental safety while generating robust performance data for regulatory acceptance and commercial deployment.
 
-**The project's fundamental design principle is "contained-by-design" environmental safety** - all validation activities occur within existing Alberta research infrastructure with zero potential for environmental contamination during the project term.
+**The project's fundamental design principle is "contained-by-design" environmental safety**, all validation activities occur within existing Alberta research infrastructure with zero potential for environmental contamination during the project term.
 
 **Specific Objectives:**
 
@@ -215,9 +215,9 @@ All project activities utilize existing, contained research infrastructure - no 
 - Establish project infrastructure and quality systems
 - Screen 1,000+ bacterial isolates to identify optimal NA-degrading consortia
 - Develop biosensor-bioreactor integration protocols
-- **Key Milestone**: Selection of top 10 bacterial consortia with validated NA degradation rates
+- **Key Milestone**: Selection of top bacterial consortia with validated NA degradation rates
 
-**Phase 2: Controlled Mesocosm Optimization (Year 2)**
+**Phase 2: Controlled Mesocosm Optimization (Year 1-2)**
 
 - Extensive bioaugmentation trials in University of Calgary greenhouse mesocosms
 - Rapid testing of variables: bacterial combinations, dosing frequencies, environmental conditions
