@@ -7,5 +7,6 @@
     "downscalePercent": 100
   },
   "showUnsupportedFiles": true,
-  "promptDelete": false
+  "promptDelete": false,
+  "attachmentFolderPath": "./attachments"
 }
