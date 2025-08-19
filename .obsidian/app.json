@@ -8,5 +8,7 @@
   },
   "showUnsupportedFiles": true,
   "promptDelete": false,
-  "attachmentFolderPath": "./attachments"
+  "attachmentFolderPath": "./attachments",
+  "readableLineLength": false,
+  "showLineNumber": true
 }
