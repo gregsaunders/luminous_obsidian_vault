@@ -216,6 +216,8 @@ After reviewing our existing communications materials (website, investor deck, m
 3. **Missing Government Alignment:** No explicit connection to OSMWSC Recommendation 5 in public messaging
 4. **Absent Field-Deployable Vision:** The compelling automated monitoring roadmap isn't communicated
 5. **Competition Messaging:** Still positioned as competing with treatment methods rather than enabling them
+6. **Data Platform Undervalued:** The game-changing "single source of truth" capability isn't highlighted
+7. **Spreadsheet Problem Not Articulated:** Missing the pain point of fragmented CSV/Excel chaos that operators face daily
 
 ### Priority Communications Updates Required
 
@@ -272,11 +274,16 @@ After reviewing our existing communications materials (website, investor deck, m
 - Immediate ROI through monitoring cost reduction
 - Field-deployable roadmap eliminates lab dependency
 - Real-time operational control and decision making
+- **Single Source of Truth:** End the spreadsheet nightmare - unified data platform for all stakeholders
+- **Mass Testing Capability:** Handle 100-1000x more data points without drowning in CSV files
+- **Cross-functional Visibility:** Same data serves operations, compliance, ESG reporting, and community relations
 
 **Proof Points:**
 - $1M CNRL commitment validates monitoring need
 - Clear path to autonomous monitoring systems
 - Integration with existing SCADA/control systems
+- **Current Reality:** Major operators managing 1000s of spreadsheets with no unified view
+- **Platform Solution:** AI-native database designed for pattern recognition across massive datasets
 
 #### For Investors
 **Key Messages:**
@@ -371,6 +378,12 @@ A: "No - it's recognition that monitoring is the essential foundation. Any treat
 
 **Q: "What about competitors in monitoring?"**
 A: "We're the only solution combining field-validated biosensors with a complete data platform designed specifically for regulatory compliance and operational optimization."
+
+**Q: "Why is the data platform important if we're just doing monitoring?"**
+A: "Mass testing generates 100-1000x more data than current methods. Today's spreadsheet approach can't handle this volume or provide the real-time insights needed. Our AI-native platform transforms this data flood into actionable intelligence, creating the single source of truth that regulators, Indigenous communities, and operators can all trust."
+
+**Q: "How does this help with community trust?"**
+A: "Transparency builds trust. Our platform provides real-time, immutable data access to all stakeholders - operators, regulators, Indigenous groups, and local communities. Everyone sees the same verified data, eliminating disputes about what's actually happening with remediation progress."
 
 ## Conclusion
 
