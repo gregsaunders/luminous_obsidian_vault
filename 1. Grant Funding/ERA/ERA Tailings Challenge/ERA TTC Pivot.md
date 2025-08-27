@@ -66,10 +66,14 @@
    - Peer-reviewed in ACS Synthetic Biology
    - Field-validated at Imperial Oil Kearl Wetland
 
-2. **Tier 2 (TRL 5-6, Platform Integration):** Confluent data platform
-   - Real-time analytics and regulatory reporting
-   - Enables optimization of any treatment method
-   - Direct regulatory compliance framework
+2. **Tier 2 (TRL 5-6, Platform Integration):** Confluent data platform - The Hidden Game-Changer
+   - **Single Source of Truth:** Replaces fragmented spreadsheets and CSV chaos with unified data architecture
+   - **AI-Native Database:** Modern platform designed for pattern recognition and predictive analytics
+   - **Mass Testing Scale:** Handles 100-1000x data volume increase from high-frequency monitoring
+   - **Multi-stakeholder Transparency:** Single platform serves operators, regulators, communities, and Indigenous groups
+   - **Audit Trail:** Immutable record of all testing data for regulatory compliance and legal protection
+   - **Real-time Analytics:** Transforms static reports into dynamic operational intelligence
+   - **API Integration:** Connects with existing SCADA, LIMS, and ERP systems
 
 3. **Tier 3 (TRL 3-4, Exploratory Research):** Bioaugmentation research
    - Scientific investigation, not commercial promise
@@ -117,6 +121,7 @@ Phase 3 (Future): Automated sampling/testing → Continuous monitoring → Proce
 - "Essential infrastructure" vs. "competing treatment method"
 - Enables all existing solutions rather than replacing them
 - Obvious and urgent need vs. uncertain biological treatment market
+- Transforms fragmented spreadsheet chaos into unified data intelligence
 
 ### 4. **Reduced Regulatory Risk**
 - Monitoring technology requires validation, not new treatment approvals
@@ -218,9 +223,12 @@ After reviewing our existing communications materials (website, investor deck, m
 **Critical Changes:**
 - **Homepage Hero:** Change from "integrated biological treatment" to "Essential NA Monitoring Infrastructure"
 - **Platform Page:** Restructure to emphasize monitoring/analytics with bioaugmentation as "exploratory research"
+  - **New Focus:** Highlight Confluent as the industry's first "Single Source of Truth" for tailings data
+  - **Key Message:** "From Spreadsheet Chaos to Operational Intelligence"
 - **Science Page:** Lead with peer-reviewed biosensor validation, move bioaugmentation to secondary research section
 - **Industry Validation Page:** Highlight how we solve the "monitoring gap" identified by Kearl study
 - **New Section:** Add dedicated OSMWSC Recommendation 5 alignment page
+- **New Section:** "Data Platform" page showcasing transformation from fragmented CSV files to unified intelligence
 
 #### 2. Investor Communications
 **Pitch Deck Updates:**
