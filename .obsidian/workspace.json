@@ -4,19 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "c5278d3412d11cbd",
+        "id": "5859f44bed49af6e",
         "type": "tabs",
         "children": [
           {
-            "id": "cef5c35f9f0defd8",
+            "id": "ba11c775785f333f",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.9.12"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.9.12"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -207,8 +205,9 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "cef5c35f9f0defd8",
+  "active": "ba11c775785f333f",
   "lastOpenFiles": [
+    "1. Grant Funding/ERA/ERA Tailings Challenge/02 Stakeholder Communications/Industry Partners/CNR/CNRL Communication Strategy - Revised.md",
     "0. Things To Do/Pivot/CNRL Communication Strategy - Revised.md",
     "1. Grant Funding/ERA/ERA Tailings Challenge/02 Stakeholder Communications/Industry Partners/CNR/First ERA Proposal to CNR 2 pager.md",
     "1. Grant Funding/ERA/ERA Tailings Challenge/02 Stakeholder Communications/Industry Partners/CNR/Untitled.md",
@@ -244,7 +243,6 @@
     "1. Grant Funding/ERA/ERA Tailings Challenge/00 Response submission/Gemini Version 2.md",
     "1. Grant Funding/ERA/ERA Tailings Challenge/00 Response submission/Pivot Claude Code Repo Prompt Test.md",
     "1. Grant Funding/ERA/ERA Tailings Challenge/2. Stakeholder Communications/Industry Partners/CNR/NSERC bioaugmentation Discovery Grant application.md",
-    "1. Grant Funding/ERA/ERA Tailings Challenge/0. Response submission/00 ERA TTC Pivot.md",
     "Business Development/Ardoq/Meta Model/1. High Level Metamodel Concepts/attachments/Pasted image 20231122211815.png",
     "Business Development/Ardoq/Meta Model/1. High Level Metamodel Concepts/attachments/Pasted image 20231122202820.png",
     "Business Development/Ardoq/Meta Model/1. High Level Metamodel Concepts/attachments/Pasted image 20231122211453.png",
