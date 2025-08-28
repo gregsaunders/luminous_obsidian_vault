@@ -16,12 +16,16 @@
 - **Community trust building** - Transparent data platform and portal for AER/ECCC, Indigenous and local stakeholders
 - **OSMWSC Recommendation 5 compliance** - Meeting government mandate for standardized measurement
 
+**Critical Partnership Requirement:** We require an industry partner for a successful ERA submission - deadline September 22, 2025. Early commitment strengthens our application and secures CNRL's priority position.
+
 **Key Insight:** We're not just reducing costs, we're delivering operational intelligence infrastructure that transforms how CNRL manages its NA tailings liability.
 
 ## 2. THE INTEGRATED SOLUTION - Biosensor + Data Platform = Complete Intelligence System
 
 ### What We're Delivering (One Unified Package):
 **Not just a biosensor. Not just software. But a complete Monitoring Intelligence Platform.**
+
+**The Question Every CNRL Board Member Asks:** "How do we know our treatments are working?" Our platform is the only system that can answer this in real-time, with data every stakeholder trusts.
 
 #### The Hardware-Software Integration:
 1. **Biosensor Technology** (Field-proven at Kearl)
@@ -40,7 +44,7 @@
 **Current Reality at CNRL:**
 - $500-1000 per NA test
 - 2-4 week wait for results
-- Data scattered across departments in spreadsheets
+- Data scattered across departments in spreadsheet hell
 - No real-time visibility into treatment performance
 - multi month delays in recognizing trends
 
@@ -66,17 +70,19 @@
 - Working with AER/ECCC for biosensor recognition as supplementary monitoring tool to provide comprehensive intelligence on NA landscape. 
 - Building trust through transparent, accessible data platform
 - Addressing OSMWSC Recommendation 5 for "accurate, consistent, affordable" measurement
-- Creating shared data infrastructure for all stakeholders ( eliminating spreadsheet hell)
+- Creating shared data infrastructure for all stakeholders (eliminating spreadsheet hell)
 
 ## 4. IMMEDIATE & LONG-TERM VALUE DELIVERY
 
 ### Year 1 Deliverables (Immediate ROI):
 **The Integrated Platform Launch:**
 - Biosensor deployment for rapid NA screening
-- Confluent platform eliminating spreadsheet chaos
+- Confluent platform eliminating spreadsheet hell
 - Increase in monitoring, significant monitoring cost reduction
 - Near real-time visibility into all operations
 - Regulatory reporting automation
+
+**Current Reality Decision Delays:** Operations teams need NA data to optimize treatment systems, but waiting 2-4 weeks for HRMS results means decisions are based on month-old information. How many wetland adjustments, discharge decisions, or treatment optimizations are delayed or made blindly while waiting for lab results? This means missed opportunities to optimize performance during peak treatment seasons, delayed responses to problem conditions, and conservative decision-making due to data uncertainty.
 
 **Quantified Year 1 Value:**
 - Significant reduction in monitoring costs
@@ -85,6 +91,8 @@
 - Reduce data analysis time by 90%
 - Enable weekly optimization decisions vs quarterly
 - Provide transparent stakeholder reporting
+
+**Hidden Cost of Delay:** Each quarter without integrated monitoring represents missed optimization opportunities and continued inefficiencies in data management.
 
 ### Years 2-4 Enhancement Path:
 1. **Field-deployable units** - On-site testing in minutes
@@ -106,16 +114,28 @@
 - **Traditional approach:** $10M+ to build internal solution over 5 years
 - **Our approach:** $400-600K for complete platform in Year 1
 - **ROI:** Break-even in 6 months through monitoring savings alone
+- **Milestone-Based Deployment:** Prove value at one facility before scaling - payment tied to demonstrated performance
+- **Self-Funding Platform:** Monitoring cost savings alone justify the investment, making the data platform essentially free
+- **Regulatory-Independent Value:** Even without biosensor regulatory approval, platform delivers immediate value by organizing existing HRMS data into actionable intelligence
 
 ## Key Messages for Theo
 
 ### The Core Pitch:
-**"After evaluating our ERA Tailings Technology Challenge submission strategy, we have decided to realign our focus on just our NA monitoring infrastructure as this is the most mature TRL and greatest need for the industry. Our revised strategy is to delivering a complete monitoring intelligence system (biosensor plus data platform) that would provide CNRL with unprecedented visibility into your NA concentrations in your tailings operations. This pivot is significantly lower cost than originally asked, with value being delivered in Year 1. We believe this is the operational intelligence infrastructure CNRL needs regardless of which treatment methods you pursue."**
+**"We're delivering a complete monitoring intelligence system that gives CNRL unprecedented NA visibility. Based on market feedback, we've focused our ERA submission on this proven infrastructure at significantly lower cost."**
 
 ### Three Critical Points:
 1. **It's ONE integrated solution** - biosensor + platform = complete system
 2. **Value is immediate** - Year 1 deployment
 3. **Cost-to-value ratio is unbeatable** - $500K for what would cost $10M to build
+
+## CNRL LEAD PARTNER ADVANTAGES
+
+### As Our Primary Industry Partner, CNRL Receives:
+- **Priority Deployment** - First access to platform rollout across operations
+- **Free Monitoring Services** - No additional costs during entire 12-24 month pilot period  
+- **Platform Development Input** - Direct influence on feature development and priorities
+- **Preferred Partner Pricing** - Exclusive rates on future system expansions
+- **Industry Co-Branding** - Joint presentation opportunities at conferences and with regulators
 
 ## The Ask
 
