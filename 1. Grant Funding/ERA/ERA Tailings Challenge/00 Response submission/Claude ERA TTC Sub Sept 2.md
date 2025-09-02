@@ -33,7 +33,7 @@ The Oil Sands Mining Waste Steering Committee (OSMWSC) identified this critical 
 
 **Field-Validated Solution with Proven Performance**
 
-Our biosensor technology was validated during Imperial Oil's 2022 Kearl Wetland pilot, achieving R² = 0.76 correlation with HRMS (published in peer-reviewed literature). However, despite our capability to process **1,000+ samples daily**, we received the same 9 samples as HRMS over 98 days, perfectly validating our accuracy but dramatically underutilizing our mass testing capability. During this period, the wetland's treatment efficiency declined 53% and stated monitoring blind spots that daily testing could have addressed.
+Our biosensor technology was validated during Imperial Oil's 2022 Kearl Wetland pilot, achieving R² = 0.76 correlation with HRMS (published in peer-reviewed literature). However, despite our capability to process **1,000+ samples daily**, we received the same 9 samples as HRMS over 98 days—perfectly validating our accuracy but dramatically underutilizing our mass testing capability. During this period, the wetland's treatment efficiency declined 53% during monitoring blind spots that daily insights could have illuminated, enabling rapid response strategies impossible with traditional monitoring.
 
 **The Breakthrough: Mass Testing Meets AI-Native Intelligence**
 
@@ -49,8 +49,8 @@ Luminous BioSolutions delivers what the industry desperately needs: **unlimited 
 
 - Industry partners committed to providing OSPW samples in exchange for free biosensor AND HRMS testing
 - Direct alignment with OSMWSC technical liaison for regulatory pathway
-- $1M ERA investment with milestone-based disbursement = minimal risk, maximum impact
-- Potentially highest ROI environmental project in Alberta history: $1M catalyzing solutions for $30B challenge
+- $1.25M ERA investment with milestone-based disbursement = minimal risk, maximum impact
+- NA monitoring for safe water release represents a critical pathway within the broader $30-130B remediation challenge
 
 **The moment when unlimited mass testing becomes possible is the moment when effective tailings management begins.**
 
@@ -62,7 +62,7 @@ Luminous BioSolutions delivers what the industry desperately needs: **unlimited 
 
 The Luminous platform represents a fundamental transformation in environmental monitoring, not through incremental improvement, but through enabling what was previously impossible: **unlimited mass rapid naphthenic acid testing**.
 
-Consider the current reality demonstrated at Imperial Oil's Kearl Wetland: A 98-day treatment pilot achieved only 36% NA reduction while treatment efficiency declined 53% (from 0.53 to 0.25 mg/L/day). With only 9 HRMS tests over 98 days, operators couldn't identify why performance dropped or optimize treatment.  This is like trying to navigate a highway while only opening your eyes once every mile.**
+Consider the current reality demonstrated at Imperial Oil's Kearl Wetland: A 98-day treatment pilot achieved 36% NA reduction while treatment efficiency declined 53% (from 0.53 to 0.25 mg/L/day). With only 9 HRMS tests over 98 days, operators couldn't identify why performance dropped or respond with optimization strategies. **This is like trying to navigate a highway while only opening your eyes once every mile.**
 
 ### Real-World Evidence: The Kearl Wetland Case Study
 
@@ -77,12 +77,12 @@ What Actually Happened:
 
 What Could Have Happened with Mass Testing:
 - 98+ daily samples providing continuous insights
-- IMMEDIATE detection of performance decline  
-- Potential to perform REAL-TIME optimization to maintain peak efficiency
-- Potential 70%+ NA reduction instead of 36%
+- IMMEDIATE detection of performance decline enabling rapid response
+- Real-time optimization opportunities through evidence-based interventions
+- Enhanced treatment outcomes through informed decision-making
 
-**THE LESSON: Validation is complete. Education is needed.**
-The industry must understand mass testing isn't just "faster HRMS", it's a completely different capability enabling active management.
+**THE LESSON: Validation is complete. Industry education is critical.**
+Operators have never had real-time NA insights. This breakthrough monitoring capability enables response strategies impossible with traditional methods—we provide the data, operators capture the value through informed decisions.
 
 ### Our Revolutionary Platform: Three Integrated Components
 
@@ -272,17 +272,17 @@ Current State: Operators make treatment decisions with weeks-old data, leading t
 
 **Quantified Environmental Impact:**
 
-**Direct Treatment Enhancement:**
-- Significant improvement in treatment efficiency (i.e. 36% at Kearl with sparse monitoring)
-- Reduced chemical over-treatment through precision dosing
-- Early detection of treatment failures preventing environmental releases
-- Better path to safe water release capabilities
-- Accelerated closure timelines through optimized processes
+**Treatment Optimization Opportunities:**
+- Real-time performance feedback enables evidence-based treatment adjustments (Kearl achieved 36% reduction despite 53% efficiency decline going undetected)
+- Precision dosing opportunities through continuous monitoring reducing over-treatment potential
+- Early detection of treatment performance changes enabling rapid intervention strategies
+- Enhanced confidence in safe water release decisions through continuous validation
+- Potential for accelerated closure timelines through optimized treatment strategies
 
-**Data-Driven Ecosystem Protection:**
-As our dataset matures, the platform will provide predictive insights for evaluating new treatment technologies, enabling evidence-based selection of optimal approaches for specific conditions. Better informed decisions may avoid costly guessing mistakes.
+**Data-Driven Decision Support:**
+As our dataset matures, the platform will provide predictive insights for evaluating treatment technologies, enabling evidence-based selection of optimal approaches for specific conditions. Real-time monitoring provides the confidence needed for responsible discharge decisions, ensuring water meets safety standards protecting fish, wildlife, and human health.
 
-**GHG Emission Reductions:** Accelerated tailings treatment and closure reduces fugitive methane emissions from active ponds. Optimizing current treatments can accelerate pond closure by several years, eliminating many tonnes CO₂e annually across the sector.
+**GHG Emission Reduction Potential:** Enhanced treatment optimization through real-time feedback can accelerate pond closure timelines, reducing fugitive methane emissions from active tailings areas. Improved treatment efficiency represents significant opportunities for methane reduction across the sector.
 
 ---
 
@@ -290,11 +290,11 @@ As our dataset matures, the platform will provide predictive insights for evalua
 
 ### Economic Impact and Industry Transformation
 
-**Direct Cost Benefits:**
-- **Monitoring Revolution**: 1000x more data at 20x lower cost per test
-- **Treatment Optimization**: increased efficiency saving operators remediation costs 
-- **Risk Reduction**: Early failure detection preventing costly remediation costs
-- **Liability Reduction**: Accelerated closure reducing carrying costs
+**Economic Optimization Opportunities:**
+- **Monitoring Transformation**: 1000x more data at 20x lower cost per test creates unprecedented insights
+- **Treatment Decision Support**: Real-time feedback enables evidence-based optimization strategies
+- **Risk Mitigation**: Early detection of performance changes enables preventive interventions
+- **Closure Timeline Enhancement**: Optimized treatment strategies can reduce extended closure carrying costs
 
 **Job Creation (All Alberta-Based):**
 - **Laboratory Operations**: 6-8 technical positions
