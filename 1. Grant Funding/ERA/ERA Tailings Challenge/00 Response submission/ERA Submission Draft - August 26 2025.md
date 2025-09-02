@@ -31,7 +31,7 @@ Alberta faces an unprecedented convergence of regulatory, economic, and operatio
 
 **Massive Financial Liability:** Industry estimates place total remediation costs between $30-130 billion, making this the largest environmental liability in Alberta's history. Every year of accelerated treatment saves operators tens of millions in carrying costs.
 
-**The Critical Bottleneck - Management Capability:** The fundamental barrier isn't treatment technology—it's management capability. Current HRMS monitoring ($500-1000/test, 2-4 weeks turnaround) makes frequent monitoring economically impossible, creating a management paradox: **operators cannot effectively manage what they cannot affordably and rapidly measure.**
+**The Critical Bottleneck - Management Capability:** One of the fundamental barriers to addressing this problem is visibility and  it's management capability. Current HRMS monitoring ($500-1000/test, 2-4 weeks turnaround) makes frequent monitoring economically impossible, creating a management paradox: **operators cannot effectively manage what they cannot affordably and rapidly measure.**
 
 ### Technology Description: The Luminous Integrated Platform
 
