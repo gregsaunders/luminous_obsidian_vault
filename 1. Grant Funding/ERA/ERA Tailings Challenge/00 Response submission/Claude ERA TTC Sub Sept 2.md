@@ -60,9 +60,9 @@ Luminous BioSolutions delivers what the industry desperately needs: **unlimited 
 
 ### The Paradigm Shift: From Snapshot Monitoring to Continuous Intelligence
 
-The Luminous platform represents a fundamental transformation in environmental monitoring—not through incremental improvement, but through enabling what was previously impossible: **unlimited mass rapid naphthenic acid testing**.
+The Luminous platform represents a fundamental transformation in environmental monitoring, not through incremental improvement, but through enabling what was previously impossible: **unlimited mass rapid naphthenic acid testing**.
 
-Consider the current reality demonstrated at Imperial Oil's Kearl Wetland: A 98-day treatment pilot achieved only 36% NA reduction while treatment efficiency declined 53% (from 0.53 to 0.25 mg/L/day). With only 9 HRMS tests over 98 days, operators couldn't identify why performance dropped or optimize treatment. **It's like trying to navigate a highway while only opening your eyes once every mile.**
+Consider the current reality demonstrated at Imperial Oil's Kearl Wetland: A 98-day treatment pilot achieved only 36% NA reduction while treatment efficiency declined 53% (from 0.53 to 0.25 mg/L/day). With only 9 HRMS tests over 98 days, operators couldn't identify why performance dropped or optimize treatment.  This is like trying to navigate a highway while only opening your eyes once every mile.**
 
 ### Real-World Evidence: The Kearl Wetland Case Study
 
