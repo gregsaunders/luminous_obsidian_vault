@@ -11,9 +11,9 @@
 
 **Project Completion Date:** December 31, 2027
 
-**Total Project Budget:** $2,000,000 CAD
+**Total Project Budget:** $2,500,000 CAD
 
-**Requested ERA Funding:** $1,000,000 CAD
+**Requested ERA Funding:** $1,250,000 CAD
 
 **Applicant Contact Name:** Jeff Violo, Chief Operating Officer
 
@@ -72,17 +72,17 @@ What Actually Happened:
 - 98-day treatment pilot with ONLY 9 sampling events
 - Treatment rate DECLINED 53% (0.53 to 0.25 mg/L/day)  
 - Luminous biosensor PARTICIPATED - achieved R² = 0.76 with HRMS
-- BUT received same 9 samples despite 1,000+ daily capacity
+- BUT received same 9 samples despite our 1,000+ daily capacity
 - Result: 36% NA reduction with massive optimization gaps
 
 What Could Have Happened with Mass Testing:
 - 98+ daily samples providing continuous insights
 - IMMEDIATE detection of performance decline  
-- REAL-TIME optimization maintaining peak efficiency
+- Potential to perform REAL-TIME optimization to maintain peak efficiency
 - Potential 70%+ NA reduction instead of 36%
 
 **THE LESSON: Validation is complete. Education is needed.**
-The industry must understand mass testing isn't just "faster HRMS"—it's a completely different capability enabling active management.
+The industry must understand mass testing isn't just "faster HRMS", it's a completely different capability enabling active management.
 
 ### Our Revolutionary Platform: Three Integrated Components
 
@@ -93,17 +93,17 @@ Our peer-reviewed biosensor technology (*ACS Synthetic Biology*, Bookout et al.,
 **Unlimited Scalability:**
 - **Testing Capacity**: 1,000+ samples per day per facility
 - **Frequency Control**: Limited only by operator sampling capacity, not our technology
-- **Turnaround**: Results in <24 hours from sample receipt
-- **Cost**: <$50 per test (including HRMS validation through Vogon Labs)
+- **Turnaround**: Results in ~24 hours from sample receipt
+- **Cost**: <$100 per test 
 - **Skills**: Technical certificate level operation vs. PhD requirements for HRMS
 - **Validation**: R² = 0.76 with HRMS, field-proven at Kearl Wetland
 
 **Complete Solution Through Partnership:**
-Our collaboration with Vogon Labs (Cochrane, Alberta) provides BOTH biosensor screening AND HRMS validation in every pilot, eliminating any concerns about biosensor-only data. Operators receive gold-standard confirmation alongside mass rapid insights.
+Our collaboration with Vogon Labs (Cochrane, Alberta) provides both biosensor screening and HRMS validation in every pilot, eliminating any concerns about biosensor-only data. Operators receive gold-standard confirmation alongside mass rapid insights.
 
 **2. Platform Expandability - Beyond NA Testing**
 
-Luminous has developed rapid biosensor development capabilities, enabling new organic contaminant sensors within **30 days**. We're currently developing a **NA toxicity biosensor**—directly addressing industry discussions about correlating analytical results with biological impacts.
+Luminous has developed rapid biosensor development capabilities, enabling new organic contaminant sensors within **60 days**. We're currently developing a **NA toxicity biosensor** that directly addressing industry discussions about correlating analytical results with biological impacts.
 
 **Platform Approach Benefits:**
 - Any organic contaminant can be added to monitoring suite
@@ -123,14 +123,14 @@ Mass testing without intelligent processing creates data overload. The Confluent
 
 ### The Data Revolution in Numbers
 
-| Monitoring Aspect | Current State (HRMS) | Luminous Platform | Improvement Factor |
-|------------------|---------------------|-------------------|-------------------|
-| **Daily Capacity** | 1-2 tests | 1,000+ tests | 500-1000x |
-| **Annual Capacity** | 365-730 tests | 365,000+ tests | 1000x |
-| **Time to Results** | 2-4 weeks | <24 hours | 20x faster |
-| **Cost per Test** | $500-1,000 | <$50 | 20x cheaper |
-| **Operator Control** | Limited by lab capacity | Unlimited - operator sets frequency | Total control |
-| **Data Integration** | Manual Excel | Automated AI analysis | Transformational |
+| Monitoring Aspect    | Current State (HRMS)    | Luminous Platform                   | Improvement Factor |
+| -------------------- | ----------------------- | ----------------------------------- | ------------------ |
+| **Daily Capacity**   | 1-2 tests               | 1,000+ tests                        | 500-1000x          |
+| **Annual Capacity**  | 365-730 tests           | 365,000+ tests                      | 1000x              |
+| **Time to Results**  | 2-4 weeks               | ~24 hours                           | 20x faster         |
+| **Cost per Test**    | $500-1,000              | <$100                               | 20x cheaper        |
+| **Operator Control** | Limited by lab capacity | Unlimited - operator sets frequency | Total control      |
+| **Data Integration** | Manual Excel            | DB Automated AI analysis            | Transformational   |
 
 ### Process Flow and System Integration
 
@@ -172,14 +172,14 @@ graph LR
 
 ### Success Metrics and Experimental Design
 
-| Category | Description | Relevant Metrics |
-|----------|-------------|-----------------|
-| **Scalability Demonstration** | Prove unlimited testing capacity | Process 10,000+ samples over 24 months; Support 3+ operators simultaneously |
-| **Treatment Optimization** | Enable real-time process improvement | Document 50%+ efficiency gains through continuous monitoring |
-| **Data Intelligence** | Transform data into insights | Deploy AI models with >85% accuracy for treatment prediction |
-| **Cost Transformation** | Demonstrate economic breakthrough | Achieve <$50/test including HRMS validation |
-| **Platform Expansion** | Prove biosensor development speed | Deploy 2+ additional biosensors within project timeline |
-| **Industry Education** | Change monitoring paradigm | Train 10+ operators in mass testing utilization |
+| Category                      | Description                          | Relevant Metrics                                                            |
+| ----------------------------- | ------------------------------------ | --------------------------------------------------------------------------- |
+| **Scalability Demonstration** | Prove unlimited testing capacity     | Process 10,000+ samples over 24 months; Support 3+ operators simultaneously |
+| **Treatment Optimization**    | Enable real-time process improvement | Document 50%+ efficiency gains through continuous monitoring                |
+| **Data Intelligence**         | Transform data into insights         | Deploy AI models with >85% accuracy for treatment prediction                |
+| **Cost Transformation**       | Demonstrate economic breakthrough    | Achieve <$100/test                                                          |
+| **Platform Expansion**        | Prove biosensor development speed    | Deploy 2+ additional biosensors within project timeline                     |
+| **Industry Education**        | Change monitoring paradigm           | Train 3 operators in mass testing utilization                               |
 
 ---
 
@@ -187,15 +187,15 @@ graph LR
 
 ### Project Objectives and Scope
 
-**Primary Objective:** Establish North America's first unlimited-capacity mass NA testing facility, demonstrating how continuous monitoring transforms tailings management from reactive observation to predictive optimization.
+**Primary Objective:** Establish North America's first high capacity mass NA testing facility, demonstrating how continuous monitoring transforms tailings management from reactive observation to predictive optimization.
 
 **Revolutionary Scope:**
-This project will prove that monitoring frequency limitations are now entirely under operator control. With 1,000+ daily testing capacity, we eliminate technology constraints and put sampling frequency decisions where they belong—with the operators managing their treatments.
+This project will prove that monitoring frequency limitations are now entirely under operator control. With 1,000+ daily testing capacity, we eliminate technology constraints and put sampling frequency decisions where they belong - with the operators managing their treatments.
 
 ### Project Timeline: 24-Month Focused Execution
 
 **Phase 1: Infrastructure and Market Education (Months 1-12)**
-- Establish unlimited-capacity testing facility in Calgary
+- Establish high-capacity testing facility in Calgary
 - Deploy Confluent platform with initial AI models  
 - Launch pilot programs with 1-3 industry partners
 - Begin operator education on mass testing paradigm
@@ -210,20 +210,19 @@ This project will prove that monitoring frequency limitations are now entirely u
 
 ### Budget and Financing
 
-| Contributor | Amount | Status |
-|------------|--------|---------|
-| **ERA (Requested)** | **$1,000,000** | **Applied For** |
-| **Industry Partners** | **$500,000** | **In Advanced Discussion** |
-| **Luminous BioSolutions** | **$500,000** | **Committed** |
-| **Total Project Budget** | **$2,000,000** |  |
+| Contributor              | Amount         | Status                     |
+| ------------------------ | -------------- | -------------------------- |
+| **ERA (Requested)**      | **$1,250,000** | **Applied For**            |
+| **Industry Partners**    | **$1,250,000** | **In Advanced Discussion** |
+| **Total Project Budget** | **$2,500,000** |                            |
 
 **Milestone-Based ERA Disbursement:**
-- Month 6: $250,000 (Infrastructure completion)
-- Month 12: $250,000 (5,000+ samples processed)  
-- Month 18: $250,000 (Treatment optimization demonstrated)
-- Month 24: $250,000 (Regulatory submission complete)
+- Month 6: $745,000 (Infrastructure completion)
+- Month 12: $585,000 (5,000+ samples processed)  
+- Month 18: $585,000 (Treatment optimization demonstrated)
+- Month 24: $585,000 (Regulatory submission complete)
 
-**Unprecedented Value:** $1M investment potentially unlocking solutions for $30B challenge represents highest ROI environmental project in Alberta history.
+**Unprecedented Value:** $2.5M investment potentially unlocking solutions for a challenge of this scale could represents one of the highest ROI environmental project in Alberta history.
 
 ### Partnership Structure
 
@@ -261,12 +260,12 @@ This project will prove that monitoring frequency limitations are now entirely u
 **The Treatment Optimization Revolution:**
 
 Current State: Operators make treatment decisions with weeks-old data, leading to:
-- Suboptimal chemical dosing (over/under treatment)
+- Suboptimal dosing (over/under treatment)
 - Inability to respond to changing conditions  
 - Performance declines that can't be detected until too late
 
 **With Luminous Platform:**
-- **Real-time feedback** enables precise treatment adjustments
+- **Near Real-time feedback** enables precise treatment adjustments
 - **Predictive analytics** anticipate optimal treatment timing
 - **Continuous validation** ensures treatment targets are met
 - **Pattern recognition** identifies optimization opportunities invisible to humans
@@ -274,15 +273,16 @@ Current State: Operators make treatment decisions with weeks-old data, leading t
 **Quantified Environmental Impact:**
 
 **Direct Treatment Enhancement:**
-- 50-70% improvement in treatment efficiency (vs. 36% at Kearl with sparse monitoring)
+- Significant improvement in treatment efficiency (i.e. 36% at Kearl with sparse monitoring)
 - Reduced chemical over-treatment through precision dosing
 - Early detection of treatment failures preventing environmental releases
+- Better path to safe water release capabilities
 - Accelerated closure timelines through optimized processes
 
 **Data-Driven Ecosystem Protection:**
-As our dataset matures, the platform will provide predictive insights for evaluating new treatment technologies, enabling evidence-based selection of optimal approaches for specific conditions.
+As our dataset matures, the platform will provide predictive insights for evaluating new treatment technologies, enabling evidence-based selection of optimal approaches for specific conditions. Better informed decisions may avoid costly guessing mistakes.
 
-**GHG Emission Reductions:** Accelerated tailings treatment and closure reduces fugitive methane emissions from active ponds. Optimizing current treatments to achieve 70% NA reduction (vs. typical 36%) can accelerate pond closure by 5-10 years, eliminating 50,000-100,000 tonnes CO₂e annually across the sector.
+**GHG Emission Reductions:** Accelerated tailings treatment and closure reduces fugitive methane emissions from active ponds. Optimizing current treatments can accelerate pond closure by several years, eliminating many tonnes CO₂e annually across the sector.
 
 ---
 
@@ -292,8 +292,8 @@ As our dataset matures, the platform will provide predictive insights for evalua
 
 **Direct Cost Benefits:**
 - **Monitoring Revolution**: 1000x more data at 20x lower cost per test
-- **Treatment Optimization**: 50%+ efficiency improvements saving $10-20M per operator annually
-- **Risk Reduction**: Early failure detection preventing costly environmental releases
+- **Treatment Optimization**: increased efficiency saving operators remediation costs 
+- **Risk Reduction**: Early failure detection preventing costly remediation costs
 - **Liability Reduction**: Accelerated closure reducing carrying costs
 
 **Job Creation (All Alberta-Based):**
@@ -371,31 +371,31 @@ The Kearl Wetland experience demonstrates our education challenge: despite valid
 
 **Commercial Platform Vision:**
 - One facility serving multiple operators simultaneously
-- Expandable biosensor suite for any organic contaminant (30-day development)
+- Expandable biosensor suite for any organic contaminant (30-60 day development)
 - AI insights improving with dataset size across all operators
 - Export potential to global mining and industrial sectors
 
 ### Commercial Pathway
 
 **Phase 1 (Current Project):** Establish unlimited capacity, prove optimization value
-**Phase 2 (Years 2-3):** Commercial launch with 3-5 operator contracts
-**Phase 3 (Years 3-5):** Scale across Alberta, expand to other jurisdictions  
-**Phase 4 (Years 5+):** Global platform deployment
+**Phase 2 (Years 2-3):** Commercial launch with 2-3 operator contracts
+**Phase 3 (Years 3-5):** Scale across all Oil Sands Operations  
+**Phase 4 (Years 5+):** Global platform deployment into other mining applications
 
 ---
 
 ## Conclusion
 
-The Luminous platform represents the monitoring infrastructure breakthrough that transforms Alberta's $30B challenge from an impossible liability into a manageable, optimizable process. Field-validated at Kearl Wetland, proven in peer-reviewed research, and aligned with OSMWSC recommendations, our technology eliminates the monitoring bottleneck that has constrained effective tailings management.
+The Luminous platform represents the monitoring infrastructure breakthrough that transforms Alberta's massive naphthenic acid challenge from an impossible liability into a manageable, optimizable process. Field-validated at Kearl Wetland, proven in peer-reviewed research, and aligned with OSMWSC recommendations, our technology eliminates the monitoring bottleneck that has constrained effective tailings management.
 
 **The Game-Changing Reality:**
 - **Unlimited scalability**: 1,000+ tests/day puts frequency control in operators' hands
 - **Complete solution**: Free biosensor + HRMS validation eliminates adoption risk  
-- **Minimal investment**: $1M ERA funding with milestone-based disbursement
+- **Minimal investment**: $1.25M ERA funding with milestone-based disbursement
 - **Maximum impact**: Potentially highest ROI environmental project in Alberta history
 
 **The Strategic Transformation:**
-This isn't about better monitoring—it's about making monitoring so abundant and affordable that optimization becomes inevitable. When operators can see what's happening hourly instead of monthly, when AI can detect patterns invisible to humans, when communities access real-time environmental data—Alberta's greatest environmental challenge becomes its greatest innovation showcase.
+This isn't about better monitoring, it's about making monitoring so abundant and affordable that optimization becomes inevitable. When operators can see what's happening hourly instead of monthly, when AI can detect patterns invisible to humans, when communities access real-time environmental data, Alberta's greatest environmental challenge becomes its greatest innovation showcase.
 
 **The technology is proven. The capacity is unlimited. The moment for transformation is now.**
 
@@ -408,8 +408,8 @@ This isn't about better monitoring—it's about making monitoring so abundant an
 **Completion Date:** June 30, 2026
 
 **Milestone Costs:**
-- Total milestone cost: $500,000
-- ERA contribution: $250,000
+- Total milestone cost: $745,000
+- ERA contribution: $372,500
 
 **Milestone tasks and completion deliverables:**
 Establish unlimited-capacity biosensor testing laboratory at Luminous Calgary facility with 1,000+ samples/day capability. Deploy initial Confluent data platform with core AI models and real-time dashboard functionality. Formalize partnership with Vogon Labs for HRMS validation services. Initiate pilot programs with 1-3 industry partners including sample collection protocols and data sharing agreements. Deliverables include: operational testing facility with documented capacity, functional data platform with operator/regulator dashboards, signed agreements with Vogon Labs and industry partners, and initial 500+ samples processed demonstrating system integration.
@@ -419,8 +419,8 @@ Establish unlimited-capacity biosensor testing laboratory at Luminous Calgary fa
 **Completion Date:** December 31, 2026
 
 **Milestone Costs:**
-- Total milestone cost: $500,000  
-- ERA contribution: $250,000
+- Total milestone cost: $585,000  
+- ERA contribution: $292,500
 
 **Milestone tasks and completion deliverables:**
 Scale operations to process 5,000+ samples demonstrating unlimited capacity capability. Deploy comprehensive operator education program including training materials, workshops, and optimization case studies. Begin development of additional biosensor capabilities (NA toxicity, other contaminants as requested by partners). Conduct systematic comparison studies between high-frequency biosensor monitoring and traditional sparse HRMS approaches. Deliverables include: 5,000+ samples processed with <24hr turnaround maintained, comprehensive education program delivered to 10+ operators, development of 2+ additional biosensor types, and documented case studies showing 20%+ treatment improvements through continuous monitoring.
@@ -430,8 +430,8 @@ Scale operations to process 5,000+ samples demonstrating unlimited capacity capa
 **Completion Date:** June 30, 2027
 
 **Milestone Costs:**
-- Total milestone cost: $500,000
-- ERA contribution: $250,000  
+- Total milestone cost: $585,000
+- ERA contribution: $292,500  
 
 **Milestone tasks and completion deliverables:**
 Execute full-scale treatment optimization pilots demonstrating how continuous monitoring transforms treatment effectiveness. Deploy advanced AI models for predictive analytics and treatment recommendations. Integrate multiple data streams (biosensor, HRMS, operational, environmental) for comprehensive optimization insights. Generate preliminary regulatory datasets demonstrating biosensor correlation and reliability. Deliverables include: documented 50%+ improvement in treatment efficiency through optimization, deployed AI models with >85% prediction accuracy, integrated multi-stream data platform serving 3+ operators simultaneously, and comprehensive datasets supporting regulatory submission preparation.
@@ -441,8 +441,8 @@ Execute full-scale treatment optimization pilots demonstrating how continuous mo
 **Completion Date:** December 31, 2027
 
 **Milestone Costs:**
-- Total milestone cost: $500,000
-- ERA contribution: $250,000
+- Total milestone cost: $585,000
+- ERA contribution: $292,500
 
 **Milestone tasks and completion deliverables:**
 Complete regulatory submission package for AER biosensor monitoring acceptance. Finalize commercial service frameworks including pricing models, quality guarantees, and service level agreements. Establish quality management systems supporting laboratory accreditation (ISO/IEC 17025 readiness). Document platform expansion capabilities and develop commercial deployment strategy for additional biosensors. Deliverables include: comprehensive regulatory submission with 10,000+ data point validation, commercial service framework ready for launch, laboratory systems meeting accreditation standards, biosensor platform capable of 30-day development cycles for new contaminants, and business plan for post-project commercial operations serving Alberta oil sands sector.
