@@ -47,11 +47,9 @@
 
 **Alberta faces a $30-130 billion environmental liability with a 10-year regulatory deadline.** Under AER Directive 085, oil sands operators must return 300+ km² of tailings ponds to natural state within 10 years of mine closure, while government commitments to double oil production create urgent capacity constraints across 1.4 trillion litres of stored tailings water.
 
-**The critical bottleneck isn't treatment technology - it's management capability.** While HRMS provides the "gold standard" for accuracy, its $500-1000 cost and 2-4 week turnaround makes the frequent monitoring essential for active process control economically impossible. This creates a management paradox: operators cannot effectively manage what they cannot affordably and rapidly measure.
+**The critical bottleneck isn't treatment technology, it's management capability and scalability.** While HRMS provides the "gold standard" for accuracy, it requires very expensive and complex equipment and graduate level skills to perform the tests, at a cost of $700-1000per test, and 2-4 week turnaround. This makes the frequent high volume monitoring essential for active process control practically and economically impossible. This creates a management paradox: operators cannot effectively manage what they cannot affordably and rapidly measure.
 
-**Luminous BioSolutions, in partnership with Canadian Natural Resources Limited (CNRL), provides the breakthrough solution**: independently validated biosensor technology (R² = 0.76 correlation with HRMS, peer-reviewed in _ACS Synthetic Biology_) that delivers actionable NA data in <24 hours at <$100/test. Combined with Kearl Wetland-validated bioaugmentation, our platform enables the first viable pathway to active, data-driven water management at the scale and speed required.
-
-**This $8M industry-supported project will validate a complete commercial platform** using "Contained-by-Design" methodology that eliminates environmental risk while generating regulatory-grade performance data. Success delivers Alberta operators the first scalable solution to a $30-130 billion challenge with a legally mandated 10-year timeline.
+**Luminous BioSolutions, provides the breakthrough solution**: independently validated biosensor technology (R² = 0.76 correlation with HRMS, peer-reviewed in _ACS Synthetic Biology_) that delivers actionable NA data in ~24 hours at <$100/test. Combined with our knowledge data platform, we enables the first viable pathway to active, data-driven water management at the scale and speed required.
 
 ---
 
