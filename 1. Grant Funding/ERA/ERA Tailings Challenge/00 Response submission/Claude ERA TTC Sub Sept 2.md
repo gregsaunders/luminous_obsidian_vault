@@ -23,17 +23,17 @@
 
 ## Executive Summary
 
-### Transforming Blind Operations into Data-Driven Management: Mass Rapid NA Testing for Alberta's $30B Tailings Challenge
+### Transforming Blind Operations into Data-Driven Management: Mass Rapid NA Testing for Alberta's Tailings Challenge
 
 **The Impossible Problem Now Solvable**
 
-Alberta's oil sands operators face an unprecedented challenge: managing 1.4 trillion litres of tailings water requiring treatment within 10 years (AER Directive 085) while operating essentially blind. Current HRMS testing—at $500-1,000 per test with 2-4 week delays—makes frequent monitoring economically impossible. **Operators cannot effectively manage what they cannot affordably measure.**
+Alberta's oil sands operators face an unprecedented challenge: managing 1.4 trillion litres of tailings water requiring treatment within 10 years (AER Directive 085) while operating essentially blind. Current HRMS testing at $500-1,000 per test with 2-4 week delays, makes frequent monitoring economically impossible. **Operators cannot effectively manage what they cannot affordably measure.**
 
 The Oil Sands Mining Waste Steering Committee (OSMWSC) identified this critical gap, recommending development of "standardized methods for measuring naphthenic acids that are accurate, consistent and **affordable**" (Recommendation 5). Until now, no technology could deliver this capability at the scale and speed required.
 
 **Field-Validated Solution with Proven Performance**
 
-Our biosensor technology was validated during Imperial Oil's 2022 Kearl Wetland pilot, achieving R² = 0.76 correlation with HRMS (published in peer-reviewed literature). However, despite our capability to process **1,000+ samples daily**, we received the same 9 samples as HRMS over 98 days—perfectly validating our accuracy but dramatically underutilizing our mass testing capability. During this period, the wetland's treatment efficiency declined 53% during monitoring blind spots that daily testing could have prevented.
+Our biosensor technology was validated during Imperial Oil's 2022 Kearl Wetland pilot, achieving R² = 0.76 correlation with HRMS (published in peer-reviewed literature). However, despite our capability to process **1,000+ samples daily**, we received the same 9 samples as HRMS over 98 days, perfectly validating our accuracy but dramatically underutilizing our mass testing capability. During this period, the wetland's treatment efficiency declined 53% and stated monitoring blind spots that daily testing could have addressed.
 
 **The Breakthrough: Mass Testing Meets AI-Native Intelligence**
 
@@ -42,7 +42,7 @@ Luminous BioSolutions delivers what the industry desperately needs: **unlimited 
 - **Unlimited Scalability**: 1,000+ tests per day capability, with frequency limited only by operator sampling capacity, not our technology
 - **Complete Solution**: Free pilot testing includes both biosensor results AND HRMS validation through Vogon Labs partnership (Cochrane, Alberta)
 - **Confluent AI-Native Data Platform**: Purpose-built to handle 100-1000x data volume increases with real-time pattern recognition
-- **Platform Expandability**: Rapid development of new biosensors (30 days) for any organic contaminant—currently developing NA toxicity biosensor
+- **Platform Expandability**: Rapid development of new biosensors (30 - 60 days) for other organic contaminants. We are currently developing an NA toxicity biosensor
 - **Operational Simplicity**: Technical-level staff operation, eliminating PhD-level skill requirements
 
 **Market Validation and Unprecedented Value**
