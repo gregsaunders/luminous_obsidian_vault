@@ -31,7 +31,7 @@ Alberta faces an unprecedented convergence of regulatory, economic, and operatio
 
 **Massive Financial Liability:** Industry estimates place total remediation costs between $30-130 billion, making this the largest environmental liability in Alberta's history. Every year of accelerated treatment saves operators tens of millions in carrying costs.
 
-**The Critical Bottleneck - Management Capability:** One of the fundamental barriers to addressing this problem is visibility and  it's management capability. Current HRMS monitoring ($500-1000/test, 2-4 weeks turnaround) makes frequent monitoring economically impossible, creating a management paradox: **operators cannot effectively manage what they cannot affordably and rapidly measure.**
+**The Critical Bottleneck - Management Capability:** One of the fundamental barriers to addressing this problem is visibility and management capabilities. Current HRMS monitoring ($500-1000/test, 2-4 weeks turnaround) makes frequent monitoring economically impossible, creating a management paradox: **operators cannot effectively manage what they cannot affordably and rapidly measure.**
 
 ### Technology Description: The Luminous Integrated Platform
 
@@ -42,12 +42,12 @@ The Luminous BioSolutions platform provides the breakthrough capability needed: 
 Our laboratory-validated biosensor technology, published in *ACS Synthetic Biology* (Bookout et al., 2024), represents a paradigm shift in naphthenic acid monitoring:
 
 - **Strong correlation (R² = 0.76)** with HRMS maintains scientific accuracy
-- **<24 hour results** vs. 2-4 weeks for HRMS enables real-time process control
+- **~24 hour results** vs. 2-4 weeks for HRMS enables real-time process control
 - **<$100/test** vs. $500-1000 for HRMS makes frequent monitoring economically feasible
 - **Mass rapid testing capability** enables monitoring at required scale and frequency
 - **Peer-reviewed validation** with independent field testing at Imperial Oil's Kearl Wetland
 
-This technology doesn't replace HRMS—it enables HRMS-based solutions by providing the operational monitoring capability that makes confident water treatment and release decisions possible.
+This technology doesn't replace HRMS, it enables HRMS-based solutions by providing the operational monitoring capability that makes confident water treatment and release decisions possible.
 
 **2. Targeted Biological Remediation for Water Release Applications (TRL 4→7)**
 
