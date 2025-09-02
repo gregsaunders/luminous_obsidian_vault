@@ -47,7 +47,7 @@ The fundamental question for operations is: "How do we know our treatments are w
 - **Slow Turnaround:** 2-4 week wait for results.
 - **Fragmented Data:** Data scattered across departments, hindering analysis and decision-making.
 - **Limited Visibility:** Lack of real-time insight into treatment performance.
-- **Delayed Decisions:** Operational adjustments are often made based on outdated information, leading to missed optimization opportunities.
+- **Delayed Decisions:** Operational adjustments are often made based on outdated information, leading to missed opportunities for optimizing treatment systems, delayed responses to emerging issues, and conservative decision-making due to data uncertainty.
 
 **With Our Integrated Platform:**
 - **Reduced Cost:** <$100 per test, with potential for further reduction through automation.
