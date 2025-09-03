@@ -135,22 +135,27 @@ Mass testing without intelligent processing creates data overload. The Confluent
 ### Process Flow and System Integration
 
 ```mermaid
-graph LR
-    A[Field Site Sampling] -->|Operator Controlled Frequency| B[Sample Shipping]
+graph TB
+    A[Field Site Sampling]
+    A -->|Operator Controlled Frequency| B[Sample Shipping]
     B -->|Overnight Courier| C[Luminous Calgary Lab]
+    
     C -->|Biosensor Testing| D[Results <24hrs]
     C -->|Select Samples| E[Vogon Labs HRMS]
+    
     D -->|Automated Upload| F[Confluent Data Platform]
     E -->|Validation Data| F
-    F -->|Real-Time Processing| G[AI Pattern Analysis]
-    G --> H[Operator Dashboard]
-    G --> I[Regulator Dashboard]
-    G --> J[Community Dashboard]
     
     K[Weather Data] -->|Environmental Context| F
     L[Treatment Data] -->|Process Parameters| F
     M[SCADA/OT Systems] -->|Operational Data| F
     N[Additional Biosensors] -->|Expandable Monitoring| F
+    
+    F -->|Real-Time Processing| G[AI Pattern Analysis]
+    
+    G --> H[Operator Dashboard]
+    G --> I[Regulator Dashboard]
+    G --> J[Community Dashboard]
     
     style C fill:#f9f,stroke:#333,stroke-width:2px
     style E fill:#bbf,stroke:#333,stroke-width:2px
