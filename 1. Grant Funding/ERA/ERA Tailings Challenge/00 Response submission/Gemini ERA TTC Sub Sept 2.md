@@ -35,7 +35,7 @@ Luminous BioSolutions offers a paradigm shift through its integrated Biosensor a
 *   **Mass Screening Capability:** Biosensors provide the real-time visibility needed to understand NA behavior across operations.
 *   **Cost-Effective Screening:** Projected cost reduction of >75% per NA test.
 *   **Rapid Results:** ~24-hour turnaround for actionable data.
-*   **Simplified Operation:** Designed for ease of use by field technicians.
+*   **Simplified Operation:** Designed for ease of use by technicians not graduate level analysts.
 *   **Unified Data Management:** The Confluent Data Platform consolidates all NA data into a single, intelligent system.
 *   **Enhanced Operational Visibility:** Near real-time dashboards and advanced analytics offer unprecedented insights.
 
