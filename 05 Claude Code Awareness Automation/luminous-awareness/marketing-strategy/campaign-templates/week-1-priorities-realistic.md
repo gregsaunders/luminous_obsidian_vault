@@ -59,29 +59,29 @@
 
 ## Daily Time Allocation (4 hours/day)
 
-**Monday (4 hours)**:
+**Wednesday, September 17 (4 hours)**:
 - LinkedIn post #1 + engagement (1 hour)
 - Regulatory contact research (2 hours)
 - Tracking system setup (1 hour)
 
-**Tuesday (4 hours)**:
+**Thursday, September 18 (4 hours)**:
 - Regulatory compliance document creation (2 hours)
 - LinkedIn networking and engagement (1 hour)
 - Email template customization (1 hour)
 
-**Wednesday (4 hours)**:
+**Friday, September 19 (4 hours)**:
 - LinkedIn post #2 + engagement (1 hour)
 - Send regulatory emails (1 hour)
 - Whitepaper outline development (2 hours)
 
-**Thursday (4 hours)**:
-- LinkedIn networking and engagement (1 hour)
+**Monday, September 22 (4 hours)**:
+- LinkedIn post #3 + engagement (1 hour)
 - Response management and follow-ups (1 hour)
 - Week 2 planning (1 hour)
 - Whitepaper outline completion (1 hour)
 
-**Friday (4 hours)**:
-- LinkedIn post #3 + engagement (1 hour)
+**Tuesday, September 23 (4 hours)**:
+- LinkedIn networking and engagement (1 hour)
 - Week 1 results analysis (1 hour)
 - Content preparation for Week 2 (2 hours)
 
