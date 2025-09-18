@@ -61,8 +61,8 @@ This session produced a breakthrough strategic framework by synthesizing three c
 **Secondary Audience - Indigenous Communities & Local Residents**:
 - Pain Point: Decades of broken promises, environmental damage to traditional lands, health concerns from contamination
 - Motivation: Genuine protection of water, land, and community health for current and future generations
-- Message: "Independent, transparent monitoring that you can trust - with data you can access and verify"
-- Critical Need: Community control over environmental data, not industry-controlled information
+- Message: "Additional monitoring data that communities can access and verify independently"
+- Critical Need: Access to transparent environmental data, not control claims
 
 **Secondary Audience - Regulators**:
 - Pain Point: Need confidence to create science-based release standards
@@ -78,8 +78,10 @@ This session produced a breakthrough strategic framework by synthesizing three c
 
 ## Strategic Framework
 
-### Core Value Proposition
-**"Luminous BioSolutions provides the trusted, independent monitoring that gives communities the power to protect their lands, operators a pathway to liability reduction, and regulators the confidence to create science-based standards."**
+### Core Value Proposition (REVISED)
+**"Luminous BioSolutions provides complementary monitoring that helps fill gaps in current approaches - giving all stakeholders better data for better decisions about tailings management."**
+
+**Note**: Previous version was overly grandiose, positioning Luminous as transformational solution rather than helpful monitoring tool.
 
 ### Three Strategic Pillars
 
@@ -102,21 +104,21 @@ This session produced a breakthrough strategic framework by synthesizing three c
 
 ## Critical Messaging Transformations
 
-### Homepage Messaging
+### Homepage Messaging (REVISED)
 **From**: "Revolutionary Real-Time Environmental Monitoring"  
-**To**: "The Independent Monitoring That Gives Communities Control Over Their Environmental Data"
+**To**: "Complementary monitoring that helps fill data gaps in tailings management"
 
-### Technology Positioning
+### Technology Positioning (REVISED)
 **From**: "99.7% field-validated accuracy" (technical spec)  
-**To**: "24-hour community-accessible data vs. 8-week industry delays" (transparency breakthrough)
+**To**: "24-hour results complement 8-week HRMS analysis" (practical benefit)
 
-### Business Case
+### Business Case (REVISED)
 **From**: "70% cost reduction in monitoring"  
-**To**: "Transform liability into community-trusted transition pathway"
+**To**: "Better data for stakeholder decision-making"
 
-### Competitive Position
+### Competitive Position (REVISED)
 **From**: "Faster than HRMS" (competing)  
-**To**: "Enables what HRMS can't: community-controlled, real-time verification" (complementary)
+**To**: "Complements HRMS with high-frequency operational data" (supportive)
 
 ---
 
@@ -258,4 +260,32 @@ This session produced a breakthrough strategic framework by synthesizing three c
 
 ---
 
-*Session Notes: Critical correction identified - Indigenous communities and local residents must be elevated to secondary audience status with community control and data sovereignty as central themes. The breakthrough insight: community trust is the bottleneck for any water release pathway, making community-first strategy essential for success.*
+---
+
+## STRATEGIC COURSE CORRECTION (Added September 18, 2025)
+
+### Key Insight: Avoid Over-Correction and Grandiose Claims
+
+**Problem Identified**: When Indigenous communities were added to strategy, positioning became overly grandiose and positioned Luminous as environmental saviour rather than helpful monitoring tool.
+
+**Course Correction Applied**:
+- **Humble Positioning**: "Important part of the solution" not "the breakthrough"
+- **Canadian Approach**: Conservative claims, respectful engagement
+- **Realistic Scope**: Better monitoring data, not transformational change
+- **Community Engagement**: Access to data, not control over environmental decisions
+
+### Corrected Community Messaging
+**Instead of**: "Give communities control over their environmental data" (too grandiose)
+**Corrected to**: "Provide additional monitoring data that communities can access and verify independently" (humble, practical)
+
+### Corrected Core Approach
+**Canadian Humility**: 
+- "We think our technology might be helpful as one piece of the monitoring puzzle"
+- "We'd appreciate guidance on how to contribute appropriately"  
+- "We're not claiming to solve everything, just offering better data"
+
+**Key Learning**: Maintain conservative, humble positioning while including all stakeholders respectfully. Avoid positioning as transformational solution.
+
+---
+
+*Session Notes: Critical correction identified and applied - Indigenous communities are important stakeholders deserving respectful engagement and data access, but positioning must remain humble and realistic about Luminous' role as complementary monitoring tool, not environmental saviour.*
