@@ -1,63 +1,66 @@
-# DRAFT: A New Capability in Water Monitoring: A Data Framework for the Next Phase of Tailings Management
+# Technical Brief: A Field-Validated Platform for High-Frequency Monitoring of Naphthenic Acids in Oil Sands Process Water
 
 ---
 
-## **Section 1: The Evolving Regulatory Landscape and the Data Challenge**
+## **1. Abstract**
 
-For decades, the management of oil sands tailings has been defined by a single, overarching principle: containment. However, the regulatory landscape is now changing. On September 5, 2025, the Alberta government announced its intention to create standards for the release of treated tailings water into the environment, signaling a clear policy direction for the future of reclamation.
-
-This move is supported by the recommendations of the Oil Sands Mine Water Steering Committee (OSMWSC), which has described the eventual treatment and release of tailings water as "essential" for managing the growing volumes and enabling sustainable closure of mine sites.
-
-This new policy direction—moving from long-term containment to a framework of active treatment and regulated release—raises a critical question for all stakeholders: How can we ensure this process is safe, verifiable, and worthy of public and community trust?
-
-This new paradigm requires proof that water treatment technologies are effective. This requires a density and frequency of water quality data that has not been previously achievable. To manage a treatment system and provide regulators with the confidence needed to approve a release, operators must be able to track performance in near real-time.
-
-This creates a data gap. Traditional lab-based monitoring methods, while essential for detailed forensic analysis, were not designed for the operational cadence or cost structure required to generate high-frequency data. Relying on results that take weeks to arrive makes proactive process control and transparent verification difficult. A new capability is needed to provide data at the speed and scale required for this new phase of tailings management.
+This brief presents performance data for a new, peer-reviewed biosensor platform (*ACS Synthetic Biology*, 2024) designed to address the operational need for high-frequency monitoring of naphthenic acids (NAs) in oil sands process water (OSPW). In controlled mesocosm studies, the platform demonstrated a strong correlation (R values between -0.97 and -0.99, p < 0.00) with Orbitrap MS for tracking NA degradation. In a subsequent large-scale field pilot, the platform showed strong qualitative agreement with HRMS trends. The system provides quantitative results from raw OSPW samples within 24 hours, with detection limits ranging from 2-30 mg/L depending on the specific biosensor used.
 
 ---
 
-## **Section 2: A New Monitoring Capability: High-Frequency Biosensing**
+## **2. The Operational Need for High-Frequency Data**
 
-Addressing the data gap in tailings management requires a tool that is not only scientifically robust but also operationally practical. The Luminous BioSolutions platform is a new, commercially-available capability designed to meet this need. It combines two integrated components: a panel of proprietary biosensors for rapid field analysis and the Confluent data platform for turning that analysis into actionable intelligence.
-
-Our approach is centered on a panel of whole-cell biosensors—engineered microorganisms that produce a measurable light-based signal in the presence of specific classes of Naphthenic Acids (NAs). This technology, validated in peer-reviewed journals including *ACS Synthetic Biology*, moves the analysis from a remote laboratory to a near-field environment, enabling a faster, more efficient monitoring cadence.
-
-The key technical advantages of this platform include:
-
-*   **Timeliness:** The biosensor platform provides quantitative results within 24 hours, a significant acceleration compared to the multi-week turnaround common for traditional lab-based methods. This allows operators to understand their water quality on an operational timescale.
-
-*   **Specificity:** The platform utilizes a panel of distinct biosensors, each tailored to different classes of NAs (e.g., acyclic vs. complex ringed structures). This provides compositional insight that non-specific methods like FTIR cannot, helping to identify the nature of the contaminants being treated.
-
-*   **Operational Viability:** The system is designed for high-throughput analysis with minimal sample preparation. This reduces logistical complexity and lowers the overall cost-per-sample, making frequent monitoring economically feasible for the first time.
-
-*   **Field-Validated Performance:** Beyond academic journals, the platform has been deployed in a large-scale, multi-season validation study at an oil sands constructed wetland pilot. In this real-world environment, the biosensor data demonstrated a strong correlation with results from conventional HRMS analysis. These findings are currently being prepared for peer-reviewed publication.
-
-By providing a reliable, rapid, and specific stream of data, this new capability offers a practical way to generate the evidence needed to track treatment efficacy, optimize processes, and build the comprehensive data package required for regulatory review.
+The evolving regulatory landscape, including the Alberta government's stated intention to create standards for releasing treated tailings, requires proof that water treatment technologies are effective. This necessitates a frequency of water quality data that traditional lab-based methods, with their multi-week turnaround times, were not designed to provide. This data gap makes proactive management of treatment systems difficult and creates operational "blind spots." A new capability is needed to provide data at the speed and scale required for this next phase of tailings management.
 
 ---
 
-## **Section 3: Application: A Data Framework for Treatment Optimization**
+## **3. Platform Performance & Validation Data**
 
-The value of a new monitoring capability lies in the decisions it enables. High-frequency monitoring provides a near real-time view of treatment performance, allowing operators to shift from a reactive to a proactive management style.
+The following performance data was summarized in a technical presentation by Dr. Shawn Lewenza (Athabasca University/University of Calgary).
 
-This addresses a key challenge in the industry. For example, the methodology described in the published Kearl Wetland report involved collecting grab samples on-site and shipping them to an off-site laboratory for complex analysis via high-resolution Orbitrap mass spectrometry. This logistical chain, combined with the multi-week turnaround for HRMS results, creates operational "blind spots" where a treatment process may become less effective without the operators' knowledge. Key performance indicators may not be discovered until weeks later, by which point a significant amount of off-spec water may have been processed.
+**3.1. Biosensor Panel & Detection Limits**
 
-High-frequency biosensing closes this data-time gap. By providing data on a daily basis, operators can build a high-resolution picture of their treatment process. This enables several key operational advantages:
+The platform utilizes a panel of three distinct biosensors, each with a defined sensitivity for different classes of NAs:
 
-*   **Rapid Process Optimization:** Operators can see the impact of operational adjustments within 24-48 hours, allowing for rapid iteration and optimization of the treatment system.
-*   **Early Anomaly Detection:** Deviations from expected performance are identified immediately, allowing for prompt corrective action before a minor issue becomes a major problem.
-*   **A More Defensible Dataset:** A continuous stream of performance data provides a much more robust and comprehensive body of evidence for regulatory review.
+*   **p3680-lux (Classic NAs):** 2-4 mg/L
+*   **marR-lux (Complex NAs):** 7-15 mg/L
+*   **atuA-lux (Acyclic NAs):** 15-30 mg/L
 
-This challenge of data timeliness is compounded by the issue of data volume. The coming regulations will require a significant increase in testing frequency across numerous locations, generating a volume of data that traditional tools like spreadsheets are ill-equipped to handle. As data volume scales, spreadsheets become unwieldy, error-prone, and make trend analysis nearly impossible.
+**3.2. Performance in Oil Sands Process Water (OSPW)**
+
+A key challenge for any monitoring tool is performance in the complex OSPW matrix. In validation studies, the biosensor panel demonstrated a high success rate with minimal sample preparation:
+
+*   **Raw OSPW Samples:** Successfully detected NAs in 22 out of 24 unique raw OSPW samples.
+
+**3.3. Correlation with Mass Spectrometry**
+
+The platform's performance has been rigorously compared against "gold standard" Orbitrap Mass Spectrometry.
+
+*   **Controlled Mesocosm Studies:** In greenhouse mesocosm studies tracking NA degradation, the biosensor data showed an extremely strong and statistically significant correlation with Orbitrap MS results, with correlation coefficients (R) ranging from **-0.97 to -0.99 (p < 0.00)**.
+
+*   **Large-Scale Field Pilot:** In a subsequent multi-season study at a large-scale constructed wetland, the platform demonstrated strong **qualitative agreement and visual concordance** with mass spectrometry. The biosensors successfully tracked the reduction of total NAs from ~70 mg/L to below the platform's signal loss threshold of ~32-36 mg/L, mirroring the trend data obtained from MS analysis.
+
+**3.4. Summary of Demonstrated Capabilities**
+
+*   **Turnaround Time:** 24 hours for quantitative screening results.
+*   **Matrix Compatibility:** Proven to work directly in raw OSPW with minimal sample preparation.
+*   **Validation:** Performance trends show strong correlation and qualitative agreement with HRMS.
+*   **Format:** Scalable from single tubes to 96-well plates for high-throughput analysis.
+
+---
+
+## **4. Application: The Confluent Data Platform**
+
+The challenge of data timeliness is compounded by the issue of data volume. The coming regulations will require a significant increase in testing frequency across numerous locations, generating a volume of data that traditional tools like spreadsheets are ill-equipped to handle. 
 
 The Luminous platform is designed to solve this data management problem. Our **Confluent data platform** is an open and integrated hub that moves beyond spreadsheets. It not only visualizes the high-frequency biosensor data but also allows for the seamless integration of other relevant datasets, including results from periodic HRMS analysis or data from other process sensors. This consolidates monitoring data into a single, auditable system designed for the scale of the challenge ahead.
 
 ---
 
-## **Section 4: A Collaborative Path Forward**
+## **5. A Collaborative Path Forward**
 
 The transition from containment to regulated release is a complex challenge that no single technology can solve alone. Success will require a collaborative effort between operators, regulators, community stakeholders, and technology providers.
 
-Established analytical methods like HRMS will always be essential for their precision and forensic capabilities. The new capability offered by high-frequency biosensing is not a replacement for these methods, but a complementary tool designed to fill a specific, critical data gap. By providing a dense, operational-scale dataset, the Luminous platform can help validate and optimize the treatment systems that are ultimately certified by conventional methods. It is an important part of an integrated monitoring toolkit.
+Established analytical methods like HRMS will always be essential for their precision and forensic capabilities. The new capability offered by high-frequency biosensing is not a replacement for these methods, but a complementary tool designed to fill a specific, critical data gap. It is an important part of an integrated monitoring toolkit.
 
 We believe the path forward is one of partnership and shared learning. We invite technical and strategic leaders for a confidential technical briefing. In this session, we can share our full validation data and discuss how this new monitoring capability can be integrated into your specific tailings management and reclamation strategies.
