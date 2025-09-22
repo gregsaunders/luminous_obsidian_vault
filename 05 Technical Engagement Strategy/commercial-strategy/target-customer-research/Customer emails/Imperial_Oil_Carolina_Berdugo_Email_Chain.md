@@ -1,77 +1,120 @@
-# Canadian Natural Resources Limited (CNR) Email Chain - Jayne Rattray
+# Imperial Oil Email Chain - Carolina Berdugo-Clavijo
 
-**Contact:** Jayne Rattray (Jayne.Rattray@cnrl.com)  
-**Role:** Technical Contact for NA Biosensor Project  
-**Previous Contact:** Christine Brown (now on long-term leave)  
-**Referral Source:** Theo Paradis
+**Contact:** Carolina Berdugo-Clavijo (carolina.berdugo-clavijo@esso.ca)  
+**Role:** Environmental Researcher, Technology & Surface Engineering, Imperial  
+**Phone:** (587) 962 1457
 
 ## Email Chain Timeline
 
-### Email 1: September 8, 2025 - Pre-Meeting Preparation
+### Email 1: September 4, 2025 - Strategic Pivot to Monitoring
 **From:** Jeff Violo  
-**Subject:** RE: Introductory Call & Update on CNR-Funded Biosensor Technology  
-
-**Attached Documents:**
-- bookout-et-al-2024 Paper (foundational work for NA Biosensor)
-- Kearl Wetland Report (biosensor field testing, direct comparison to Mass Spec)
-
-**Meeting Agenda:**
-1. Relationship background: Athabasca University, Shawn Lewenza, CNR, and NA Biosensor development
-2. Luminous BioSolutions creation and biosensor commercialization 
-3. ERA Tailings Technology Challenge funding call requiring Industry Partner
-4. Establish new working relationship (engagement protocols, mutual needs)
+**Subject:** ERA Funding Partnership Opportunity  
 
 **Key Points:**
-- Preparing own publications of biosensor vs Mass Spec comparison
-- Meeting availability: daily after 1:30pm
+- Strategic pivot after analyzing published Kearl data
+- Treatment efficiency decline over season highlighted need for real-time monitoring
+- Refocused ERA proposal to 2-year targeted project
+- Half the time and cost of original proposal
+- ERA deadline less than 3 weeks away
+- Requesting 15-minute chat or introduction to right person
+
+**Context:** After Kearl pilot showed treatment efficiency decline, Luminous pivoted from bioaugmentation to focus on high-frequency monitoring gap using biosensor and data platform.
 
 ---
 
-### Email 2: September 8, 2025 - Jayne's Response
-**From:** Jayne Rattray  
+### Email 2: July 22, 2025 - Bioaugmentation Research Proposal
+**From:** Jeff Violo  
+**Subject:** ERA Funding Partnership Opportunity  
 
 **Key Points:**
-- Apology for late response
-- Requests pre-read information
-- Available every day after 1:30pm this week
+- Congratulations on Kearl engineered wetland study completion/publication
+- Biosensor showed strong correlation with mass spectrometry during Kearl pilot
+- Observed phenomenon: decline in NA degradation rates as season progressed
+- Hypothesis: bioaugmentation with naturally-occurring NA-degrading bacteria
+- Dr. Doug Muench from U of C collaboration (GROW project expertise)
+- ERA Tailings Technology Challenge proposal
+- Low-risk approach: ERA 50% funding, ~17% project costs per operator
+- Minimal operator commitment: OSPW samples and technical input
+- September 24 deadline approaching
+- Requesting connection to Imperial grant funding partnerships contact
+
+**Research Opportunity:** First systematic evaluation of bioaugmentation for NA treatment at pilot scale.
 
 ---
 
-### Email 3: September 3, 2025 - Initial Introduction
+### Email 3: May 12, 2025 - Complementary Technology Clarification
 **From:** Jeff Violo  
-**Subject:** Introductory Call & Update on CNR-Funded Biosensor Technology  
+**Subject:** ERA Funding Partnership Opportunity  
 
 **Key Points:**
-- Introduction as Luminous BioSolutions co-founder
-- Theo Paradis suggested Jayne as new technical contact (Christine Brown on leave)
-- CNR supported Dr. Shawn Lewenza's foundational research for over a decade
-- Long-term investment resulted in significant breakthrough
-- Peer-reviewed, field-validated NA biosensor successfully tested at Kearl Wetland pilot
-- Technology successfully commercialized through Luminous BioSolutions
-- Time-sensitive ERA Tailings Technology Challenge opportunity
-- Upcoming deadline makes CNR briefing crucial
-- Requesting 30-minute introductory call
-- Wants to provide full update and discuss ERA proposal positioning
+- Clarification: complementary to BE-SPME, not competitive
+- Focus on NA monitoring using biosensors + bioaugmentation technology
+- Belief that bioaugmentation will improve Imperial's constructed wetland results
+- ERA funding opportunity for scaling bioaugmentation solution
+- Targets: optimized NA-degrading bacterial communities, bioreactor infrastructure, field testing integration
+- Enthusiastic response from another Oil Sands Operator
+- Tyler Veness from COSIA/Pathways support
+- Urgent request due to June 12 submission deadline
+- ERA looking for "expression of interest" for novel solutions
+- Feedback indicates solution is "ticking all the boxes"
+- Requesting short Teams meeting
 
-**Context:** CNR's support directly led to development of commercially-ready biosensor technology, now at critical juncture with ERA funding opportunity.
+---
+
+### Email 4: May 2, 2025 - Carolina's Response
+**From:** Carolina Berdugo-Clavijo  
+
+**Key Points:**
+- Excited about biosensor technology commercialization progress
+- Imperial collaborating with ExxonMobil on BE-SPME device for NA detection/toxicity testing
+- BE-SPME remains Imperial priority
+- Open to discussing technology advancements
+- Encourages outreach to COSIA water director and technical lead
+- Offers to facilitate e-introductions with COSIA Water area technical advisors
+- Potential opportunity to present technology to COSIA members
+
+---
+
+### Email 5: May 1, 2025 - Initial Partnership Outreach
+**From:** Jeff Violo  
+**Subject:** ERA Funding Partnership Opportunity  
+
+**Key Points:**
+- Following up on previous email
+- Co-founded Luminous BioSolutions with Shawn Lewenza
+- Advanced integrated NA solution with targeted bioaugmentation
+- ERA Industrial Transformation Challenge 2025 application (June 12 deadline)
+- Seeking Imperial Oil as project partner
+- Carolina's unique position due to involvement with Shawn's wetlands project pilot
+- Requesting 30-minute conversation
+
+---
+
+### Email 6: April 4, 2025 - Initial Introduction
+**From:** Jeff Violo  
+**Subject:** Introduction & Update: Luminous (Shawn Lewenza's) NA BioSolutions Project  
+
+**Key Points:**
+- Introduction of Jeff Violo as Shawn Lewenza's co-founder
+- Acknowledgment of Imperial's support during academic development
+- Luminous BioSolutions established to commercialize bacterial biosensor technology
+- Focus on NA detection and management in tailings ponds
+- Making exciting progress toward commercial deployment
+- Website: www.luminousbiosolutions.com
+- Requesting brief meeting to share vision and discuss technology evolution
 
 ## Analysis Summary
 
-**Relationship Status:** New relationship building phase - transitioning from Christine Brown to Jayne Rattray as primary technical contact.
+**Relationship Evolution:** Started with general introduction, evolved through multiple funding opportunities, ultimately pivoted from bioaugmentation focus to monitoring-focused approach.
 
-**Key Objectives:**
-- Establish working relationship with new contact
-- Provide comprehensive technology update
-- Position for ERA funding partnership
-- Leverage decade of CNR investment history
+**Key Challenges:**
+- Imperial has competing priority with BE-SPME device
+- Multiple funding deadline pressures
+- Need for clearer differentiation between technologies
+- Shifting technical approach (bioaugmentation → monitoring focus)
 
-**Strategic Position:**
-- Strong foundation through long-term CNR support
-- Proven field validation at Kearl
-- Commercial readiness achieved
-- Time-sensitive funding opportunity requiring partnership
-
-**Documents Provided:**
-- Peer-reviewed scientific publication
-- Field testing report with Mass Spec comparisons
-- Future publications in development
+**Opportunities:**
+- Carolina's expertise with Kearl project
+- COSIA connections offered
+- Recognition of biosensor validation success
+- Potential for complementary rather than competitive positioning
