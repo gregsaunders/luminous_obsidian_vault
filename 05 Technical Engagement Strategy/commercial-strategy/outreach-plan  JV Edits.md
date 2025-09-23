@@ -37,7 +37,8 @@
 
 #### **C. Suncor - Re-engagement Required (Week 2 Priority)**
 5. **Suncor Environmental Team** - Need contact identification
-   - ~~Background: $500K past investment, primary contact on leave~~
+   - ~~Background: $500K past investment, primary contact on leave~~(*$500K investment was CNRL not Suncor)
+   - Read the email exchange with Ashkan for different context, I don't think he is the right person to speak to but we should also reach out to him.
    - Strategy: Warm re-engagement requesting proper contact
    - Pilot Opportunity: $25K-$50K major operator pilot
 
@@ -69,6 +70,8 @@
 ---
 
 ## 2. Draft Outreach Email to Suncor - Warm Re-engagement
+
+*** JV Note - This needs changing base on Mistake on $500K investment and emails with Ashkan. I still consider this a cold introduction.
 
 **Subject:** Re-engaging Suncor's Environmental Innovation Team - Operationalizing Biosensor Technology
 
