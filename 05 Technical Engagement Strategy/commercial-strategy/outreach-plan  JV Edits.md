@@ -13,7 +13,7 @@
 #### **A. CNRL - Strong Relationships (Week 1 Priority)**
 1. **Theo Paradis** (theo.paradis@cnrl.com) ⭐ WARM RELATIONSHIP
    - Background: $500K past investment, primary contact on leave
-   - Role: Leader of the Technical team, contact with remediation focus, been with CNR for a long time
+   - Role: Leader of the Technical team, contact with remediation focus, been at CNR for a long time
    - Strategy: Re-introduce Luminous in commercial context
    - Pilot Opportunity: $15K-$25K operational monitoring pilot
 
@@ -25,7 +25,7 @@
 
 3. **Joy Romero** (joy.romero@cnrl.com) ⭐ WARM RELATIONSHIP
    - Background: Was the person responsible for getting CNR to provide the academic funding for Biosensor development.  
-   - Role: Execitive Advisor of Innovation at CNRL 
+   - Role: Executive Advisor of Innovation at CNRL 
    - Strategy: Strategic relationship for broader CNRL engagement
    - Timeline: Week 1 outreach
 
