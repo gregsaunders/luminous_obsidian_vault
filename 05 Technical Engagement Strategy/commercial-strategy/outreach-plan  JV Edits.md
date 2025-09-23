@@ -18,13 +18,14 @@
    - Pilot Opportunity: $15K-$25K operational monitoring pilot
 
 2. **Jayne Rattray** (jayne.rattray@cnrl.com) ⭐ WARM RELATIONSHIP  
-   - NEw to role, just getting to know about Luminous
+   - New to role, just getting to know about Luminous
    - Role: Environmental operations
    - Strategy: Leverage existing relationship for internal introduction
    - Timeline: Week 1 outreach
 
 3. **Joy Romero** (joy.romero@cnrl.com) ⭐ WARM RELATIONSHIP
-   - Role: Environmental management
+   - Background: Was the person responsible for getting CNR to provide the academic funding for Biosensor development.  
+   - Role: Execitive Advisor of Innovation at CNRL 
    - Strategy: Strategic relationship for broader CNRL engagement
    - Timeline: Week 1 outreach
 
