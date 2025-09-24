@@ -1,0 +1,36 @@
+NSERC Discovery Grant application, full deadline in Oct.
+
+It is a second source of small academic funding to conduct the greenhouse mesocosm experiments, even if the ERA doesn’t happen, the project will move forward.
+
+40-50 K a year, 5 years
+
+**--**
+
+**Treatment of naphthenic acids in oil sands mining wastewater with bioaugmentation** 
+
+Oil sands mining produces large volumes of oil sands process-affected water (OSPW) that is stored indefinitely within large tailings ponds. The industry is exploring passive, low energy strategies to treat this water, with the aim of reducing the toxicity and concentrations of naphthenic acids (NA) before returning the water to the environment. NAs are a complex family of acyclic and cyclic carboxylic acids and are the most abundant and primary pollutant of concern that accumulate in OSPW after repeated extractions of bitumen from the oil sands. Bioremediation is a passive, low-cost, and scalable strategy that has the potential to decrease the NA concentrations to non-toxic levels. In this proposal, we explore the use of NA degrading isolates recovered from OSPW for bioaugmentation in a mesocosm water treatment system to improve NA bioremediation.
+
+**Objectives**
+
+1. Culturing and screening of diverse bacterial species from OSPW for NA degradation phenotypes
+2. Identifying optimal, minimal communities of NA degraders.
+3. Mesocosm water treatment systems to assess bioaugmentation to treat NA
+4. Genetic screening for NA degradation genes.
+
+**Approach**
+
+**Obj 1**      Multiple labs have performed basic microbiological culturing of bacterial isolates from OSPW, using selective and non-selective conditions. My recent collaborators have cultured ~100 bacterial isolates, but less than 10% have been identified as NA degraders due to the bottleneck in using low throughput analytical chemistry approaches to confirm NA degradation. 
+
+   We have developed a novel NA biosensor technology that is rapid, simple and high throughput for detection of NA in water. This approach is based the on the bacterial sensing of NA and dose-dependent induction of three different NA-induced promoters, permitting semi-quantitative detection of NA. These biosensors are being commercialized by our startup company, Luminous BioSolutions, for use in routine NA monitoring by the oils sand industry. 
+
+   In this proposal, we are using the NA biosensor technology for a novel application in monitoring NA degradation in bacterial cultures grown in low volume, microplate cultures. To date, we’ve identified ~40/80 bacterial strains using biosensor detection and validated the NA degradation phenotypes using LC-QTOF-MS, demonstrating that rapid biosensor methods are effective and high throughput.
+
+   We propose to carry out an extensive microbiological culturing of 500-1000 new bacterial isolates OSPW, which harbours diverse bacterial communities. OSPW (provided by our industry partners) will be inoculated onto a diverse collection of rich and minimal growth media, incubated for various times and temperatures, and all colonies will be isolated and screened in biosensor assays and MS to identify a large panel of NA degraders. Their genomes will be sequenced.
+
+**Obj 2**  These native OSPW strains are candidates to be tested in bioaugmentation pilot studies. The goal is to identify minimal, bacterial communities with enhanced NA degradation phenotypes. Individual NA degraders will be  grown in combinations of 5 members (or more) and screened using the high throughput NA biosensor methods developed here, for bacterial combinations with maximal NA degradation. We will use quantitative PCR methods to assess the relative abundance of each microbe in each community, to assess stability. We will also perform high throughput growth condition testing to identify nutrient supplements that can improve remediation. Together, this aim will identify bacterial communities to be tested for their ability to enhance NA degradation in experimental mesocosms.  
+
+**Obj 3** Mesocosms are greenhouse scale, low energy, passive systems used to treat wastewater like OSPW through the combined effects of microbial degradation, plant uptake and soil adsorption of NA. This system involves tanks filled with a peat-mineral mix similar to a constructed wetland treatment system (CWTS), planted with _Carex aquatilis_ (sedge) or other plants, and supplemented with OSPW that flows over the soil surface. This approach has been shown to significantly reduce NAFC concentrations over short time frames. We will test the additional step of adding exogenous bacterial cultures of proven NA degraders and monitor NA concentrations in mesocosms with and without bioaugmentation. We will also use 16S rRNA gene sequencing to monitor the bacterial community in the water and sediment, before, during and after the bioaugmentation event, to track the survival of the bioaugmented cultures and study the impact on the native water and soil bacterial communities.
+
+**Obj 4** There is very little known about the specific genes required to degrade NA. A recent review identified potential NA degrading genes, but direct evidence to support their function is limited. We and others have used transcriptomics to identify NA-induced bioremediation genes, in addition to other, non-metabolic genes. Multiple studies have identified genes involved in beta-oxidation, but there is no concrete link to NA degradation. We hypothesize that naphthenic acids are first subjected to ring cleavage which produces linear, branched fatty acids that are degraded by conventional beta-oxidation pathways. The fatty acid degradation (_fad_) pathways of _Pseudomonas aeruginosa_ PAO1 have been well studied. Multiple _fad_ gene have been shown to have specialized functions to metabolize short or long/medium chain fatty acids, which explains the gene redundancy. The pattern of redundant beta-oxidation genes extends to many Pseudomonas strains that degrade NA.  We propose multiple approaches to identify the NA degradation genes in _Pseudomonas_ species, which are great model species due to their prolific capacity to degrade organic pollutants. We will screen mini-Tn5 mutant libraries for NA degrading mutants, using a high throughput, 96 well format, biosensor method. The Tn insertion sites will be mapped to identify specific NA degradation genes. Mutants in all _fad_ genes of _P. aeruginosa_ will be tested for growth defects in sole NA carbon source minimal media, to test their role in NA degradation.
+
+In summary, we will cultivate, screen and identify NA degrading bacterial isolates from oil sands mining wastewater. Next, simple communities with maximal NA degradation will be grown and used in bioaugmentation pilot studies of a greenhouse mesocosm water treatment system. The ultimate goal is to show proof-of-concept for bioaugmentation treatment of NA in water, which might improve the existing CWTS strategies being explored by the main oil sands mining companies. This research builds upon the success of my previous NSERC DG, and has generated an NA biosensor start-up company that aims to commercialize biosensor-based monitoring and water treatment technologies.
