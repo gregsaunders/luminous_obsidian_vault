@@ -138,3 +138,38 @@
 - Quick meeting scheduling
 - Proactive resource sharing
 - Professional relationship establishment
+
+---
+
+### Draft Re-engagement Email - September 2025
+
+**To:** Mark.Donner@albertainnovates.ca  
+**From:** Jeff Violo  
+**Subject:** Luminous Update - Ready to Move Forward with Alberta Innovates
+
+Hi Mark,
+
+Hope you're doing well! I've been thinking about our great conversation back in May and wanted to circle back with you. Your insights were incredibly valuable, and I really appreciated you connecting us with Suncor - that opened some important doors for us.
+
+Since we last spoke, quite a bit has happened that I thought you'd find interesting:
+
+**The big news:** We were accepted into the CDL-Rockies Energy Stream this fall, which has been fantastic for sharpening our commercial focus. More importantly though, the regulatory landscape has shifted significantly with the OSMWSC September recommendations. The timing couldn't be better for what we're doing.
+
+**Being completely transparent:** We made a strategic decision not to submit to the ERA Tailings Technology Challenge, even though we had the technical capability. Here's the thing - we realized that while our technology is solid, we're still pretty new to the industry side of things. ERA represents a significant opportunity, but frankly, we don't yet have the deep industry relationships and operational deployment experience to make the most of it.
+
+That's actually where I think Alberta Innovates could be incredibly valuable for us. We need that bridge - someone who can help us build the industry credibility and deployment experience that will set us up for success with larger opportunities down the road. We've got proven technology and clear market timing, but we need Alberta's ecosystem support to get from validation to real industry integration.
+
+**What's changed since May:**
+- CDL acceptance (third-party validation of our commercial potential)
+- OSMWSC recommendations creating urgent regulatory drivers
+- Enhanced field deployment data showing operational effectiveness
+- Clearer understanding of what we need to succeed long-term
+
+I'd love to catch up with you and explore how Alberta Innovates might help us build that foundation. Would you have 30 minutes in the coming weeks for a quick call? I think the Clean Resources Continuous Intake Program might be a perfect fit for where we are right now.
+
+Thanks again for all your support, Mark. Looking forward to hearing from you.
+
+Best,
+Jeff
+
+**Status:** Draft ready for review and sending
