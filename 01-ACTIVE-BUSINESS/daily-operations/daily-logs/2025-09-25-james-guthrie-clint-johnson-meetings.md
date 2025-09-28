@@ -28,10 +28,18 @@
 - Specific contact recommendations for warm introductions?
 
 ### **MEETING NOTES:**
-Great meeting with James. At first James was skeptical and did not quite understand the value of Luminous BioSolutions
+Great meeting with James. At first James was skeptical and did not quite understand the value of Luminous BioSolutions solution or fit. It took a while to get him to link the changes in the Tailings Ponds "current state" to what the changes from the OSMWSC recommendations and the September Government of Alberta announcement on committing to establish water release guidelines to Oil Sands Tailings Ponds. Once James started to understand how this should move the Oil Sands Operators from "Containment mode" to "water release mode", I could see him connect the need for rapid screening. I share with him the challenges of current monitoring tech and how it is not designed for mass testing that is required for water release preparations. Some of his comments included:
 
+1. The Oil Sands Operators need a Water specification target to start preparing for water release. If they are not provided a target, they will most likely stay in containment mode until they have a target.
+2. They do not want to be told how to get to the water specification target, they just need to know what the target is.
+3. Once they have a water release target, they will see great value on the confluent data platform providing visibility and transparency of the water being moved to the ready to release area's. Also the frequent and mass testing will be helpful with remediation techniques to prove effectiveness. 
+4. The Oil Sands Operators will want to know how Luminous BioSolutions Biosensor Testing and Confluent Data Platform would integrate into their operations. The less friction the better.
+5. On site testing would be a huge value to the Oil Sands Operators so we should seriously consider having our testing onsite.
+6. James told us that a guy named Rodney Guest at Suncor is someone we need to introduce Luminous BioSolutions to. This is a great lead as we do not know many people at Suncor. Make note for me to connect with Rdney Guest at Suncor!
+7. James told me that Imperial Oil donated their Research Lab to SAIT, and there is great opportunities for us to leverage SAIT for operational developement. We could get MITACS and Capstone project Grants there. 
+8. James connected me with Megan Thompson who presenting with Mandy Olsgard the Water Quality Criteria for Indigenous Use as a part of the Mikisew Cree First Nation seminar at the University of Calgary this Wednesday. I will be attending.
 
-
+I have committed to providing James with a follow up email that will bring James up to speed on Luminous, the current changing regulatory climate, and how this may change the industry. and the opportunity. A asked James what his plans were. He stated that he is in a leadership role which he wanted to try. He does miss the Science part, and I told hime we are always looking for consultants to help our cause. I also want him to think about our conversation, and I welcomed him to challenge our technology and solutions. I also am planning to follow up to gain any feedback from him after he has digested much of our conversation. 
 
 ### **POST-MEETING QUICK CAPTURE:**
 **Outcome:** [Positive/Neutral/Negative]  
@@ -64,7 +72,12 @@ Great meeting with James. At first James was skeptical and did not quite underst
 - Partnership structure preferences?
 
 ### **MEETING NOTES:**
-[Type your meeting notes here - capture Stantec insights, client feedback, partnership interests, etc.]
+Great meeting with Clint, great opportunity to catch up as Clint and my son were friends when we lived in the community of Tuscany in Calgary. After catching up, I had the opportunity to share with him what we are doing with Luminous, and why I was interested in meeting with him. Here are the notes from the discussion:
+
+1. I share with him the regulatory changes coming from the OSMWSC and Regulations to release like I did for James. 
+2. I share with him the challenges of current monitoring tech and how it is not designed for mass testing that is required for water release preparations.
+3. I share the opportunities for Luminous and environmental engineering firms like Stantec as these changes come.
+4. I shared how if we are successful we need a firm like Stantec to help us operationaliz
 
 
 
