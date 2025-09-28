@@ -42,7 +42,7 @@ Great meeting with James. At first James was skeptical and did not quite underst
 I have committed to providing James with a follow up email that will bring James up to speed on Luminous, the current changing regulatory climate, and how this may change the industry. and the opportunity. A asked James what his plans were. He stated that he is in a leadership role which he wanted to try. He does miss the Science part, and I told hime we are always looking for consultants to help our cause. I also want him to think about our conversation, and I welcomed him to challenge our technology and solutions. I also am planning to follow up to gain any feedback from him after he has digested much of our conversation. 
 
 ### **POST-MEETING QUICK CAPTURE:**
-**Outcome:** [Positive/Neutral/Negative]  
+**Outcome:** Positive
 **Key Insights:** [What I learned about Imperial needs/challenges]  
 **Surprises:** [What I didn't expect from James]  
 **Next Steps:** [What was agreed to - introductions, follow-ups, etc.]  
@@ -77,13 +77,17 @@ Great meeting with Clint, great opportunity to catch up as Clint and my son were
 1. I share with him the regulatory changes coming from the OSMWSC and Regulations to release like I did for James. 
 2. I share with him the challenges of current monitoring tech and how it is not designed for mass testing that is required for water release preparations.
 3. I share the opportunities for Luminous and environmental engineering firms like Stantec as these changes come.
-4. I shared how if we are successful we need a firm like Stantec to help us operationaliz
-
-
-
+4. I shared how if we are successful we need a firm like Stantec to help us operationalize Luminous's solution.
+5. Clint was excited to hear about this opportunity. he did give me an understanding of where Stantec is at. Stantec is one of the big three engineering firms in Canada and have engineers at the Oil Sands Operations already. 
+6. Stantec has an innovation centre that has never been successful, he stated that engineers are not very good at innovation, and think that working with innovators like Luminous is a better strategy. There have been several layoffs at Stantec recently (I think due to the lack of success with the innovation team).
+7. Stantech has applications runningat the Oil sands Operators and was interested in the Confluent data platform. Clint Believes that if you own the data at the company, you never leave there.
+8. Cleint was going to find the right person for me to meet at Stantec. he believes taht if I meet the right person there, we will not be stuck in the formal partner process that will never get going.
+9. Clint agreed the best way to start out a relationship is with a deal at a clients that pays.
+10. We are committed to get together. I need to provide him with an email that equips him to socialized this opportunity internally at Stantec. 
+11. I told him that I was not looking for favors, this needs to be equally beneficial to Stantec and Luminous. Clint agrees. 
 
 ### **POST-MEETING QUICK CAPTURE:**
-**Outcome:** [Positive/Neutral/Negative]  
+**Outcome:** Positive
 **Key Insights:** [What I learned about consulting market needs]  
 **Surprises:** [What I didn't expect from Clint/Stantec perspective]  
 **Next Steps:** [What was agreed to - introductions, pilot discussions, etc.]  
