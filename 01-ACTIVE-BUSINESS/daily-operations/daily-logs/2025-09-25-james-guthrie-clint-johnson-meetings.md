@@ -28,7 +28,7 @@
 - Specific contact recommendations for warm introductions?
 
 ### **MEETING NOTES:**
-[Type your meeting notes here - capture key insights, surprises, James's feedback, etc.]
+Great meeting with James. At first James was skeptical and did not quite understand the value of Luminous BioSolutions
 
 
 
