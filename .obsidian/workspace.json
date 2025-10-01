@@ -11,10 +11,12 @@
             "id": "ba11c775785f333f",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "type": "pdf",
+              "state": {
+                "file": "02-COMPANY-ASSETS/legal/Agreements/2025-01-30a Agreement in principle v1 2.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "2025-01-30a Agreement in principle v1 2"
             }
           }
         ]
@@ -205,8 +207,12 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "588cb12a155ad9aa",
+  "active": "ba11c775785f333f",
   "lastOpenFiles": [
+    "02-COMPANY-ASSETS/technical-docs/validation-studies/Untitled.md",
+    "20250930_Luminous_Technical_Brief_V7.md",
+    "02-COMPANY-ASSETS/legal/Agreements/2025-01-30a Agreement in principle v1.pdf",
+    "02-COMPANY-ASSETS/legal/Agreements/2025-01-30a Agreement in principle v1 2.pdf",
     "02-COMPANY-ASSETS/technical-docs/validation-studies/20250930 Technical Brief V2.md",
     "02-COMPANY-ASSETS/technical-docs/validation-studies/20250918 Technical Brief.md",
     "02-COMPANY-ASSETS/technical-docs/validation-studies/Executive Technical Brief Shawns Comments.md",
@@ -237,12 +243,8 @@
     "02-COMPANY-ASSETS/technical-docs/validation-studies/20250918_draft_wp_data_framework_for_release.md",
     "02-COMPANY-ASSETS/technical-docs/validation-studies/white-paper-1-hrms-scalability-challenge-20250917.md",
     "02-COMPANY-ASSETS/technical-docs/validation-studies",
-    "01-ACTIVE-BUSINESS/outreach/commercial-strategy/core-messaging-and-pitch-content.md",
-    "01-ACTIVE-BUSINESS/daily-operations/daily-logs/2025-09-25-integrated-sustainability-follow-up-email.md",
     "01-ACTIVE-BUSINESS/outreach/stakeholder-engagement/government-regulatory-briefings",
     "01-ACTIVE-BUSINESS/outreach/stakeholder-engagement/academic-research-partnerships",
-    "01-ACTIVE-BUSINESS/outreach/stakeholder-engagement/indigenous-community-materials",
-    "01-ACTIVE-BUSINESS/outreach/integrated-campaigns/regulatory-advantage-narratives",
     "99-ARCHIVE/legacy-folders/Random stuff/Artifacts/attachments/IMG_0212.jpg",
     "99-ARCHIVE/legacy-folders/Random stuff/Artifacts/attachments/IMG_0213.jpg",
     "02-COMPANY-ASSETS/presentations/attachments/Pasted image 20250815113850.png",
