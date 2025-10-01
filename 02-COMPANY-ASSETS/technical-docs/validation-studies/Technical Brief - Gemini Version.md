@@ -19,12 +19,16 @@ The shift toward active treatment requires a different approach to monitoring. E
 	**Time-Lag:** Sample turnaround times of several weeks deliver historical data, making it difficult to use for proactive process control. 
 
 This gap between the need for real-time data and the capabilities of the standard compliance tool can make proactive management of treatment systems challenging. 
+
+---
 ### **2. A Tier 2 Monitoring Technology** 
 
 This brief outlines a peer-reviewed, field-validated **Tier 2 monitoring technology** intended to complement, not replace, HRMS. 	
 
 **Positioning:** A high-frequency screening and process optimization tool.        **Operational Design:** In contrast to the specialized requirements of HRMS, the biosensor platform is designed for operational simplicity. The testing protocol is a repeatable process that can be reliably executed by a trained technician with a diploma.
 **Primary Use Case:** To provide accessible, operational data for process monitoring between HRMS compliance sampling events. 
+
+---
 ### **3. Technology and Validation Data**
 #### **3.1. Scientific Foundation** 
 The technology consists of a panel of whole-cell bacterial biosensors developed at **Athabasca University and the University of Calgary**, and validated in the peer-reviewed journal ***ACS Synthetic Biology*** (Bookout et al., 2024). This multi-sensor approach provides a more nuanced "fingerprint" of the NA composition, rather than a single bulk  measurement. 
@@ -42,49 +46,31 @@ For an operational tool, the primary objective is to provide reliable trend data
 **Large-Scale Field Pilot:** In a multi-season deployment at a large-scale constructed wetland, the platform demonstrated **strong qualitative agreement and visual concordance** with HRMS. It successfully tracked the reduction of total NAs from ~70 mg/L to below the platform's signal loss threshold, mirroring the trend identified by concurrent MS analysis. 
 
 This validation suggests the platform can be a useful tool for tracking the efficacy of remediation processes.  
+
+---
 ### **4. The Confluent Data Platform: An Integrated Intelligence Hub**
 
-An increase in monitoring frequency creates a high-volume data stream that is challenging to manage with traditional tools. The Confluent data platform is designed to serve as an         │
- │       integrated intelligence hub, contextualizing this new data by correlating it with other       │
- │       critical operational inputs.                                                                  │
- │    68                                                                                               │
- │    69 **Key Capabilities:**                                                                         │
- │    70                                                                                               │
- │    71 *   **Multi-Source Integration:** The platform is designed to ingest and harmonize data from  │
- │       multiple sources, including the biosensor panel, periodic HRMS results, treatment process     │
- │       inputs (e.g., chemical dosing, flow rates), SCADA system data, and external feeds like        │
- │       weather.                                                                                      │
- │    72 *   **Holistic Process Analysis:** By correlating high-frequency NA data with other           │
- │       operational variables, the platform enables a more complete understanding of the treatment    │
- │       system, helping to identify key performance drivers and optimization opportunities.           │
- │    73 *   **Advanced Analytics:** The platform's architecture is designed to leverage modern data   │
- │       science, including pattern recognition and predictive modeling algorithms, to provide deeper  │
- │       operational insights from the integrated data set.                                            │
- │    74 *   **Auditable Data Log:** Provides a timestamped, immutable data log for all integrated     │
- │       data streams to support transparent regulatory reporting and facilitate stakeholder           │
- │       communication.                                                                                │
- │    75                                                                                               │
- │    76 ---                                                                                           │
- │    77                                                                                               │
- │    78 ### **5. An Integrated Monitoring Framework**                                                 │
- │    79                                                                                               │
- │    80 A multi-tiered monitoring strategy can be an effective and pragmatic approach for OSPW        │
- │       management. By using the right tool for the right application, operators can gain             │
- │       operational control while maintaining regulatory certainty.                                   │
- │    81                                                                                               │
- │    82 *   **Tier 1 (Operational Monitoring):** High-frequency screening with a tool like the        │
- │       Luminous biosensor platform provides timely, cost-effective data. This enables active         │
- │       process control, allows for rapid assessment of treatment efficacy, and helps prioritize      │
- │       which samples require more intensive analysis.                                                │
- │    83 *   **Tier 2 (Compliance & Forensic Analysis):** Definitive, low-frequency analysis using     │
- │       HRMS remains the essential tool for regulatory compliance reporting, final validation of      │
- │       water quality, and in-depth scientific investigation.                                         │
- │    84                                                                                               │
- │    85 This integrated framework offers a practical path forward. It addresses the need for          │
- │       high-confidence operational data without challenging the role of the established reference    │
- │       method. It provides a mechanism for operators to optimize their systems and de-risk the       │
- │       transition to release, while also generating a more robust and transparent data set to share  │
- │       with regulators and community stakeholders.                                                   │
- │    86                                                                                               │
- │    87 **Further information, including the full validation data set, is available upon request for  │
- │       technical and strategic review.**  
+An increase in monitoring frequency creates a high-volume data stream that is challenging to manage with traditional tools. The Confluent data platform is designed to serve as an integrated intelligence hub, contextualizing this new data by correlating it with other critical operational inputs.  
+
+**Key Capabilities:** 
+
+**Multi-Source Integration:** The platform is designed to ingest and harmonize data from multiple sources, including the biosensor panel, periodic HRMS results, treatment process inputs (e.g., chemical dosing, flow rates), SCADA system data, and external feeds like weather.   
+
+**Holistic Process Analysis:** By correlating high-frequency NA data with other operational variables, the platform enables a more complete understanding of the treatment system, helping to identify key performance drivers and optimization opportunities. 
+
+**Advanced Analytics:** The platform's architecture is designed to leverage modern data science, including pattern recognition and predictive modeling algorithms, to provide deeper operational insights from the integrated data set.
+
+**Auditable Data Log:** Provides a timestamped, immutable data log for all integrated data streams to support transparent regulatory reporting and facilitate stakeholder communication. 
+
+---
+### **5. An Integrated Monitoring Framework**  
+
+A multi-tiered monitoring strategy can be an effective and pragmatic approach for OSPW management. By using the right tool for the right application, operators can gain operational control while maintaining regulatory certainty. 
+
+**Tier 1 (Operational Monitoring):** High-frequency screening with a tool like the Luminous biosensor platform provides timely, cost-effective data. This enables active process control, allows for rapid assessment of treatment efficacy, and helps prioritize which samples require more intensive analysis.
+
+**Tier 2 (Compliance & Forensic Analysis):** Definitive, low-frequency analysis using HRMS remains the essential tool for regulatory compliance reporting, final validation of water quality, and in-depth scientific investigation. 
+
+This integrated framework offers a practical path forward. It addresses the need for high confidence operational data without challenging the role of the established reference method. It provides a mechanism for operators to optimize their systems and de-risk the transition to release, while also generating a more robust and transparent data set to share with regulators and community stakeholders. 
+
+**Further information, including the full validation data set, is available upon request for technical and strategic review.**  
