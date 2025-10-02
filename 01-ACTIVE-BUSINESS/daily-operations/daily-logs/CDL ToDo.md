@@ -2,49 +2,49 @@
 
 Here are the key things you need to do to prepare for your CDL journey:
 
-- **Connect with Your Venture Leader:** This is your main point of contact1. Schedule regular check-ins and be open to their feedback to prepare for the sessions222.
+- **Connect with Your Venture Leader:** This is your main point of contact. Schedule regular check-ins and be open to their feedback to prepare for the sessions.
     
-- **Complete Your Legal Snapshot:** As you are in the **Energy Stream**, you will meet with **Borden Ladner Gervais LLP (BLG)**3333. They will reach out to schedule a 30-minute call44. This is a mandatory, high-level overview of your business and legal health5555. The deadline to complete this is  **October 17**.
+- **Complete Your Legal Snapshot:** As you are in the **Energy Stream**, you will meet with **Borden Ladner Gervais LLP (BLG)**. They will reach out to schedule a 30-minute call. This is a mandatory, high-level overview of your business and legal health. The deadline to complete this is  **October 17**.
     
 - **Prepare for Session 1:**
     
-    - **Practice Your 60-Second Pitch:** Focus on the problem, your solution, and why your team is the best to solve it7. You'll have to repeat it multiple times8.
+    - **Practice Your 60-Second Pitch:** Focus on the problem, your solution, and why your team is the best to solve it. You'll have to repeat it multiple times.
         
-    - **Research Your Mentors:** Before session day, review your schedule and research the mentors you'll be meeting9.
+    - **Research Your Mentors:** Before session day, review your schedule and research the mentors you'll be meeting.
         
-    - **Adopt the Right Mindset:** Be prepared for honest, direct feedback101010. Be transparent, listen more than you talk, and be open to tough questions111111111111111111.
+    - **Adopt the Right Mindset:** Be prepared for honest, direct feedback. Be transparent, listen more than you talk, and be open to tough questions.
         
 
 ---
 
 ### Key Deadlines 🗓️
 
-- **September 29:** Venture Overview form due12.
+- **September 29:** Venture Overview form due.
     
-- **October 6:** Venture Update form due13.
+- **October 6:** Venture Update form due.
     
-- **October 10:** Session registration deadline 14AND company pitch deck & marketing materials due15.
+- **October 10:** Session registration deadline AND company pitch deck & marketing materials due.
     
-- **October 17:** Legal snapshot due1616.
+- **October 17:** Legal snapshot due.
     
-- **October 29:** Session 0 [VIRTUAL]17.
+- **October 29:** Session 0 [VIRTUAL].
     
-- **November 3-7:** Session week18.
+- **November 3-7:** Session week.
     
 
 ---
 
-## CDL-Rockies 2025/26 Process Manual for AI Agent
+## CDL-Rockies 2025/26 Process Manual
 
 This document contains a comprehensive overview of the Creative Destruction Lab (CDL) Rockies 2025/26 program, designed to be parsed and managed by an AI agent.
 
 ### 1. Program Overview
 
-- **Core Mission:** CDL is designed for early-stage founders building science and technology-based ventures19. Its goal is to connect founders with experienced mentors to unlock commercial potential2020202020.
+- **Core Mission:** CDL is designed for early-stage founders building science and technology-based ventures. Its goal is to connect founders with experienced mentors to unlock commercial potential.
     
-- **Structure:** The program is a nine-month, performance-driven mentorship program21212121212121. It consists of four full-day, objective-setting sessions, with eight-week sprints between each22222222.
+- **Structure:** The program is a nine-month, performance-driven mentorship program. It consists of four full-day, objective-setting sessions, with eight-week sprints between each.
     
-- **Selectivity:** The user's cohort was selected from over 200 applicants and 90 interviews23. The graduation rate at CDL-Rockies is 34%24. Only ventures that progress through all four sessions are considered graduates25.
+- **Selectivity:** The user's cohort was selected from over 200 applicants and 90 interviews. The graduation rate at CDL-Rockies is 34%. Only ventures that progress through all four sessions are considered graduates.
     
 
 ---
@@ -55,49 +55,47 @@ This section outlines all critical deadlines.
 
 - **September 29, 2025:**
     
-    - **Task:** Submit the **Venture Overview form**26.
+    - **Task:** Submit the **Venture Overview form**.
         
-    - **Description:** A two-page document outlining the company, technology, and team27. It remains consistent throughout the program28.
+    - **Description:** A two-page document outlining the company, technology, and team. It remains consistent throughout the program.
         
 - **October 6, 2025:**
     
-    - **Task:** Submit the **Venture Update form**29.
+    - **Task:** Submit the **Venture Update form**.
         
-    - **Description:** A one-page document updated before each session detailing progress, challenges, and objectives30.
+    - **Description:** A one-page document updated before each session detailing progress, challenges, and objectives.
         
 - **October 10, 2025:**
     
-    - **Task:** Session registration deadline31.
+    - **Task:** Session registration deadline.
         
-    - **Task:** Submit company pitch deck (if available) and marketing materials32.
+    - **Task:** Submit company pitch deck (if available) and marketing materials.
         
     - **Marketing Materials Checklist:**
         
-        - High-resolution company logo (transparent background, png/jpg/eps)33.
+        - High-resolution company logo (transparent background, png/jpg/eps).
             
-        - Links to company website, company LinkedIn, and founder(s)' LinkedIn pages34.
+        - Links to company website, company LinkedIn, and founder(s)' LinkedIn pages.
             
-        - High-resolution founder headshots (at least `
+        - High-resolution founder headshots (at least px).
             
-            ![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAyKADAAQAAAABAAAAyAAAAACbWz2VAAAC0UlEQVR4Ae3QgQAAAADDoPlTH+SFUGHAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgIGvgQFx5gABkajORgAAAABJRU5ErkJggg==) px)35.
-            
-        - A 90-second venture video36.
+        - A 90-second venture video.
             
 - **October 17, 2025:**
     
-    - **Task:** **Legal snapshot due**37373737.
+    - **Task:** **Legal snapshot due**.
         
 - **October 29, 2025:**
     
-    - **Event:** Session 0 (Virtual)38.
+    - **Event:** Session 0 (Virtual).
         
 - **November 3-7, 2025:**
     
-    - **Event:** Session week39.
+    - **Event:** Session week.
         
 - **November 10, 2025:**
     
-    - **Event:** Session 1 outcomes are shared and mentor introductions are made40.
+    - **Event:** Session 1 outcomes are shared and mentor introductions are made.
         
 
 ---
@@ -106,22 +104,22 @@ This section outlines all critical deadlines.
 
 #### Before Session 1
 
-- **Venture Leader Engagement:** Maintain regular check-ins, complete documents on time, and be open to feedback41.
+- **Venture Leader Engagement:** Maintain regular check-ins, complete documents on time, and be open to feedback.
     
-- **CDL Documents:** These documents are critical for communicating with mentors and are prepared with your Venture Leader42. They introduce the venture, outline progress, and propose three key objectives43. They are sent to mentors one week before each session44. 
+- **CDL Documents:** These documents are critical for communicating with mentors and are prepared with your Venture Leader. They introduce the venture, outline progress, and propose three key objectives. They are sent to mentors one week before each session. 
     
-    **Avoid technical jargon and buzzwords**45.
+    **Avoid technical jargon and buzzwords**.
     
-- **Fundraising:** **Do not solicit investment at Session 1**46. Wait until at least Session 247. Focus first on building credibility and trust with mentors through execution48.
+- **Fundraising:** **Do not solicit investment at Session 1**. Wait until at least Session 2. Focus first on building credibility and trust with mentors through execution.
     
 
 #### On Session Day
 
-- **Attendance:** A minimum of one founder must attend49.
+- **Attendance:** A minimum of one founder must attend.
     
-- **Preparation:** Review the schedule, research mentors, and practice your 60-second pitch50.
+- **Preparation:** Review the schedule, research mentors, and practice your 60-second pitch.
     
-- **Engagement:** Ask questions, listen, take notes, and be open to all forms of feedback51. Be prepared for tough questions and be honest about your challenges52.
+- **Engagement:** Ask questions, listen, take notes, and be open to all forms of feedback. Be prepared for tough questions and be honest about your challenges.
     
 
 ---
