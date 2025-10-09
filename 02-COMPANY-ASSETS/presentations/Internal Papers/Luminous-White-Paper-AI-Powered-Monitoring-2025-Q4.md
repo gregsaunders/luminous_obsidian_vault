@@ -46,7 +46,7 @@ The **Luminous Intelligence Platform** is the brain that translates the biosenso
 
 2.  **Resurrecting Historical Data:** The platform addresses the 'data chaos' challenge by ingesting and structuring historical information currently locked in inert formats like PDFs and spreadsheets. Using modern AI-driven tools, the platform makes this entire historical record searchable and analyzable, providing an invaluable baseline for trend analysis and forecasting.
 
-3.  **Enabling Strategic Planning:** By combining the historical baseline with real-time data, the platform becomes a strategic tool for managing the entire water release initiative. It provides the clarity to answer the full cycle of operational questions—*What is our current state? What should we change? And how do we cause that change effectively?*, while mapping dependencies, tracking progress against regulatory milestones, and model the impact of different treatment strategies to de-risk compliance.
+	1.  **Enabling Strategic Planning:** By combining the historical baseline with real-time data, the platform becomes a strategic tool for managing the entire water release initiative. It provides the clarity to answer the full cycle of operational questions—*What is our current state? What should we change? And how do we cause that change effectively?*, while mapping dependencies, tracking progress against regulatory milestones, and model the impact of different treatment strategies to de-risk compliance.
 
 ### 4. Conclusion
 
