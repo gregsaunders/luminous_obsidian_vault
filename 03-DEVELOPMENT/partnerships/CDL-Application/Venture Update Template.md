@@ -1,7 +1,7 @@
-# CDL-Rockies Session #1: [Venture Name] ([Location of HQ])
+# CDL-Rockies Session #1: [Luminous BioSolutions Inc. ] ([Calgary, Alberta])
 
-**CO-FOUNDERS:** [Name 1], [Name 2], ...  
-**STREAM:** [Prime / Energy / Ag]
+**CO-FOUNDERS:** [Shawn Lewenza], [Jeff Violo], [Greg Saunders]
+**STREAM:** [Energy]
 
 _This document updates the Venture's progress since applying to CDL. [limited to 1 page: Twentieth Century Font, Size 9 for everything]_
 
