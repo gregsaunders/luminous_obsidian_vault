@@ -5,7 +5,7 @@
 
 ## VENTURE OVERVIEW
 
-### VENTURE DESCRIPTION
+### [[Venture Update Template]]VENTURE DESCRIPTION
 
 - Sentence 1: Summary of what company does, starting with name of venture.
 - Sentence 2: Most notable point of differentiation captures venture's gist for an unfamiliar audience.

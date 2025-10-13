@@ -9,7 +9,9 @@ _This document updates the Venture's progress since applying to CDL. [limited to
 
 ## VENTURE DESCRIPTION
 
-[Venture description from the Venture Overview Document]
+[Venture description from the Venture Overview Document] 
+
+Luminous BioSolutions gives oil sands operators the process control they currently lack for tailings water treatment. Our peer-reviewed biosensor platform delivers naphthenic acid quantification in 24 hours (versus 6-8 week lab waits), generating the high-frequency data required to optimize remediation performance and de-risk the industry's $30B-$130B liability. This monitoring service creates immediate revenue while building the proprietary dataset to deploy our future bioaugmentation technology—the industry's first adaptive, data-driven treatment platform.
 
 ---
 
