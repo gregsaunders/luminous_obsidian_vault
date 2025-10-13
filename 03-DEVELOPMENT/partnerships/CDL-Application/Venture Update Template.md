@@ -9,9 +9,7 @@ _This document updates the Venture's progress since applying to CDL. [limited to
 
 ## VENTURE DESCRIPTION
 
-[Venture description from the Venture Overview Document] 
-
-Oil sands operators need both HRMS accuracy AND high-frequency operational monitoring, but until now, they only had the former. Luminous BioSolutions provides the missing capability: rapid, affordable biosensor screening (24 hours vs. 6-8 weeks) integrated with a data platform that delivers real-time remediation visibility. As the industry shifts from containment to water release, we transform expensive, infrequent data into continuous process control.
+Oil sands operators need both HRMS accuracy AND high-frequency operational monitoring—but until now, only had the former. Luminous BioSolutions provides the missing capability: rapid, affordable biosensor screening (24 hours vs. 6-8 weeks) integrated with a data platform that delivers real-time remediation visibility. As the industry shifts from containment to water release, Luminous transforms expensive, infrequent data into continuous process control.
 
 ---
 
