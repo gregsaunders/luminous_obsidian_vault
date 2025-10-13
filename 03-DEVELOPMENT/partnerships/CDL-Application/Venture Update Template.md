@@ -11,7 +11,7 @@ _This document updates the Venture's progress since applying to CDL. [limited to
 
 [Venture description from the Venture Overview Document] 
 
-Luminous BioSolutions gives oil sands operators the process control they currently lack for tailings water treatment. Our peer-reviewed biosensor platform delivers naphthenic acid quantification in 24 hours (versus 6-8 week lab waits), generating the high-frequency data required to optimize remediation performance and de-risk the industry's $30B-$130B liability. This monitoring service creates immediate revenue while building the proprietary dataset to deploy our future bioaugmentation technology—the industry's first adaptive, data-driven treatment platform.
+Oil sands operators need both HRMS accuracy AND high-frequency operational monitoring, but until now, they only had the former. Luminous BioSolutions provides the missing capability: rapid, affordable biosensor screening (24 hours vs. 6-8 weeks) integrated with a data platform that delivers real-time remediation visibility. As the industry shifts from containment to water release, we transform expensive, infrequent data into continuous process control.
 
 ---
 
