@@ -20,7 +20,7 @@ Luminous BioSolutions gives oil sands operators the process control they current
 ### Session 1
 
 - [VL to fill out]
-
+ 
 ### Session 2
 
 ### Session 3
