@@ -27,25 +27,43 @@ Oil sands operators need both HRMS accuracy AND high-frequency operational monit
  
 ### Session 2
 
-**Milestone 1:** Secure signed LOI or pilot agreement with at least one major operator (CNRL, Imperial, or Suncor) for field deployment
+**Milestone 1:** Secure committed paid pilot with at least one major operator (CNRL, Imperial, or Suncor) for field deployment
 
 **Milestone 2:** Close first $500K of pre-seed funding (targeting energy-focused angels and strategic investors from CDL network)
 
- 
-
 **Milestone 3:** Complete Kearl Wetland validation paper submission demonstrating biosensor correlation to Orbitrap Mass Spec
-
 ### Session 3
 
+**Milestone 1:** Deploy pilot at first customer site with active data collection and weekly reporting through Confluent platform
+
+**Milestone 2:** Close remaining $1M of $1.5M pre-seed round, achieving 18-24 month runway
+
+**Milestone 3:** Establish partnership framework with Stantec or similar engineering consultant for technology integration into remediation projects
 ### Session 4
+
+**Milestone 1:** Demonstrate quantifiable pilot results (X% improvement in monitoring frequency, Y% cost reduction vs. HRMS, documented remediation optimization)
+
+**Milestone 2:** Secure second paid customer or expand pilot scope with initial customer, validating repeatable sales motion
+
+**Milestone 3:** Complete Series A readiness package (data room, financial model, pitch deck) positioning Luminous for $5-8M raise to scale operations across multiple sites
 
 ---
 
 ## PROPOSED 3 OBJECTIVES
 
-1. **Objective 1:** [Description]
-2. **Objective 2:** [Description]
-3. **Objective 3:** [Description]
+1. **Objective 1:** Execute 2 paid pilot deployments with major oil sands operators (minimum $150K combined revenue) by CDL graduation (June 2026), with at least one operator committing to expanded deployment or annual monitoring contract. **Why Critical:** Pilots with CNRL, Imperial, or Suncor validate product-market fit in a risk-averse industry and create reference customers that unlock broader market access. Early revenue demonstrates commercial viability to investors.
+2. **Objective 2:** Demonstrate operational reliability across 500+ field samples during pilot deployments, achieving consistent results within 24-48 hours and documented correlation to HRMS, with published Kearl Wetland validation study by April 2026. **Why Critical:** Oil sands operators will only adopt technology proven under harsh field conditions (extreme salinity, complex matrices, temperature variability). Field performance data de-risks technology for broader adoption and strengthens regulatory positioning with AER.
+   **CDL Resources Needed:**
+   - Technical mentors with oil sands operations experience to refine deployment protocols
+- Connections to environmental engineering consultants (beyond Stantec) for validation partnerships
+- Guidance on regulatory pathways for biosensor acceptance as compliance monitoring tool
+
+1. **Objective 3:** Close $1.5M pre-seed round by March 2026 (SAFE structure) from combination of angel investors, energy-focused VCs, and ideally strategic investment from oil sands operator or engineering firm, plus secure non-dilutive funding (minimum $200K from Alberta Innovates/ERA). **Why Critical:** 18-24 month runway enables pilot execution, team expansion (microbiologist, developers), and Series A preparation without fundraising distraction. Strategic investor brings credibility, customer access, and industry expertise.
+   **CDL Resources Needed:**
+- Introductions to energy-focused investors (Anthropocene Ventures/Matthew McGraw, cleantech angels)
+- Mentor guidance on SAFE structuring, valuation positioning for pre-revenue deeptech
+- Support navigating Alberta Innovates and ERA grant processes
+- Facilitation of strategic investment conversations with operators or Pathways Alliance
 
 ---
 
