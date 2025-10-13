@@ -70,7 +70,14 @@ Oil sands operators need both HRMS accuracy AND high-frequency operational monit
 ## CEO UPDATE
 
 ### What is going well? (in 3 bullet points)
+ 
+ **Field validation exceeding expectations:** Kearl Wetland pilot demonstrates high correlation between our biosensor and Orbitrap Mass Spec on real OSPW samples. This third-party validation at Imperial's site proves our technology works under actual field conditions, with results publication expected by year end, providing the scientific credibility needed for conservative oil sands operators.
 
+• **Strategic conversations progressing with all three target customers:** Discussions with CNRL, Pathways Alliance, and preliminary engagement with Suncor and  Imperial, plus productive partnership conversations with Stantec for technology integration into remediation projects. Former Imperial tailings water specialist providing insider perspective on operator decision-making processes.
+
+ 
+
+• **Regulatory tailwind strengthening our market timing:** September 2025 OSMWSC recommendations explicitly require operators to demonstrate technology transparency and monitoring innovation to stakeholders and Indigenous communities—positioning our platform as essential compliance infrastructure, not optional technology, as industry shifts from containment to water release.
 ### What are the biggest challenges? (in 3 bullet points)
 
 ---
