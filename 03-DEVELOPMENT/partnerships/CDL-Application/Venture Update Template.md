@@ -19,9 +19,21 @@ Oil sands operators need both HRMS accuracy AND high-frequency operational monit
 
 ### Session 1
 
-- [VL to fill out]
+**Milestone 1:** Secure warm introductions to decision-makers at CNRL, Imperial, and Suncor through CDL mentor network (targeting VP-level Environmental/Tailings Management)
+
+**Milestone 2:** Complete pre-seed fundraising strategy with CDL mentor guidance, finalize SAFE terms, valuation framework, and investor target list for $1.5M raise
+
+**Milestone 3:** Validate go-to-market positioning through 3 structured customer discovery interviews with oil sands operators to refine value proposition and identify pilot entry points
  
 ### Session 2
+
+**Milestone 1:** Secure signed LOI or pilot agreement with at least one major operator (CNRL, Imperial, or Suncor) for field deployment
+
+**Milestone 2:** Close first $500K of pre-seed funding (targeting energy-focused angels and strategic investors from CDL network)
+
+ 
+
+**Milestone 3:** Complete Kearl Wetland validation paper submission demonstrating biosensor correlation to Orbitrap Mass Spec
 
 ### Session 3
 
