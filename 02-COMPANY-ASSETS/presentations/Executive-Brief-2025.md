@@ -187,4 +187,4 @@ Luminous BioSolutions
 - Detailed technical specifications and detection methodologies
 - University of Calgary independent validation data
 - OSMWSC compliance framework documentation
- 
+  
