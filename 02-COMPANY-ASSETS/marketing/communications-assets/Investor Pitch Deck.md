@@ -1,194 +1,265 @@
-# Luminous BioSolutions Investor Pitch Deck
+# Luminous BioSolutions - Presentation Deck Structure
 
-## Bringing Scientific Certainty to Oil Sands Tailings Reclamation
+## SLIDE 1: Title Slide
 
-**Contact Info:** Jeff Violo, COO | jeff.violo@luminousbiosolutions.com | 403 813 8529
+**Layout:** Centered logo and title with contact info at bottom
 
-**Talk Track:** Good morning. I'm Jeff Violo, COO of Luminous BioSolutions. We're bringing scientific certainty to one of Alberta's biggest environmental challenges - oil sands tailings reclamation. Today I'll show you how our integrated biological platform is transforming a multi-billion dollar liability into a manageable, profitable opportunity.
+### Visual Elements:
 
----
+- **Logo:** Luminous BioSolutions logo (circular blue design with yellow accent)
+- **Company Name:** "Luminous BioSolutions" in large blue text
 
-## A Multi-Billion Dollar Liability in Our Backyard
+### Content:
 
-- **Over 1.4 trillion litres of toxic tailings water are held in ponds covering more than 300 km²**
-    
-- **This represents an unfunded environmental liability estimated at $30B - $130B+ for Alberta's top energy producers.**
-    
-- **Existing monitoring is too slow and expensive for effective management, and current remediation methods struggle to meet the scale and efficacy required, stalling land reclamation indefinitely.**
-    
+```
+Bringing Scientific Certainty to 
+Oil Sands Tailings Reclamation
 
-**Talk Track:** Let's start with the problem. Right here in Alberta, we have 1.4 trillion litres of toxic tailings water sitting in ponds larger than most cities. This represents a $30-130 billion unfunded liability for our major energy producers. The current approach isn't working - monitoring takes weeks, costs are astronomical, and remediation methods can't handle the scale. Land reclamation is stalled indefinitely.
-
----
-
-## The Luminous Platform: A Complete, Integrated Solution
-
-**We integrate three core functions into a seamless, intelligent loop:**
-
-### 1. Assess (Rapid Detection):
-
-We use our peer-reviewed biosensors to create a high-resolution map of Naphthenic Acid (NA) contamination in minutes, not weeks.
-
-### 2. Remediate (Targeted Bioaugmentation):
-
-Guided by the data, we deploy teams of selected, native microbes to accelerate the natural breakdown of NAs.
-
-### 3. Analyze (Real-Time Validation):
-
-Our Confluent data platform tracks remediation progress in near real-time, providing verifiable proof of success for operators and regulators.
-
-**Talk Track:** Our solution is a complete, integrated platform that closes the loop on tailings management. First, we assess contamination using our patented biosensors - getting results in minutes instead of weeks. Second, we remediate using targeted bioaugmentation with Alberta's own native bacteria to accelerate natural breakdown. Third, we analyze progress in real-time, giving operators and regulators the transparency they need. This isn't just monitoring or just treatment - it's an intelligent system that learns and optimizes.
+Contact Info: Jeff Violo, COO | jeff.violo@luminousbiosolutions.com | 403 813 8529
+```
 
 ---
 
-## A Clear Path to Revenue
+## SLIDE 2: The Problem
 
-### Assessment & Monitoring Services
+**Title:** The $30B+ Liability Meets a Regulatory Bottleneck
 
-- Initial engagement through a paid pilot project.
-- Project-based fees for initial site assessment and baseline NA mapping.
-- Offer rapid biosensor testing as a standalone service to other remediation providers who need faster, cheaper monitoring.
+**Layout:** Three-column table on left, large aerial photo of oil sands on right
 
-### Remediation Services
+### Table Structure:
 
-- Service contracts for bioaugmentation projects, priced based on the volume of microbes, water treated or area managed.
+|The Scale & Cost|The New Regulatory Reality|The Operational Bottleneck|
+|---|---|---|
+|**1.4 Trillion Litres** of toxic tailings in the Athabasca Oil Sands Region.|**OSMWSC Mandate:** Alberta is moving from "containment" to "treat and release" of Oil Sands Mine Water (OSMW).|**Expensive Monitoring:** Current HRMS compliance testing costs $700-$1,000 per sample.|
+|**$30B - $130B+** Unfunded environmental liability.|**Urgent Shift:** This mandates a move from static forensic reporting to dynamic process control capabilities.|**Slow Monitoring:** Turnaround time of 6-8 weeks renders data useless for operational adjustments.|
+|**Problem:** No scalable, cost-effective method for high-frequency monitoring of Naphthenic Acids required to manage treatment and achieve release compliance.|**Opportunity:** Operators have a 12-18 month timeline to establish the intelligence systems required to de-risk their water release strategy.|**Need for something new:** Operators will require 10-50x more data points to effectively optimize treatment and track progress.|
 
-### Data Platform (SaaS)
+### Visual Element:
 
-- Long-term recurring revenue contracts.
-- Annual recurring revenue (ARR) from subscriptions to our Confluent data platform for ongoing monitoring, predictive analytics, and regulatory reporting.
-
-**Talk Track:** We have three clear revenue streams. Assessment services get us in the door with project-based fees and can serve the broader remediation market. Remediation services provide substantial contract values based on treatment volume. But the real value is our SaaS platform - long-term recurring revenue for monitoring, analytics, and regulatory reporting. This model creates sticky customer relationships and predictable cash flow.
-
----
-
-## A Defensible, Science-First Advantage
-
-### Peer-Reviewed & Published:
-
-Our core biosensor technology isn't just a claim; it's validated and published in **ACS Synthetic Biology**.
-
-The market need for our approach is validated by independent research like the **Kearl Wetland Report**, which identified key performance gaps in current methods.
-
-### Multi-Layered IP:
-
-Our innovation is protected by filed patents in Canada, the US, and under the PCT (WO/2023/039675), with a roadmap to patent our entire integrated process.
-
-### Proprietary Data & Know-How:
-
-Our trade secrets include our microbial growth formulas, deployment protocols, and the unparalleled data set we will build, creating a powerful data moat over time.
-
-**Talk Track:** This isn't lab bench science - it's peer-reviewed, published technology validated in ACS Synthetic Biology. Independent research, including the recent Kearl Wetland Report, confirms the market need for our approach. We have multi-layered IP protection with filed patents across North America and internationally. But our real competitive advantage is our proprietary data and know-how - microbial formulas, deployment protocols, and the data moat we're building with every deployment.
+- Large aerial photograph of oil sands mining operations showing tailings ponds
 
 ---
 
-## A Concentrated, Multi-Billion Dollar Market
+## SLIDE 3: The Solution
 
-### Total & Serviceable Addressable Market (TAM/SAM):
+**Title:** Tier 2 Operational Monitoring: The Missing Link for Process Control
 
-The $30B+ tailings liability held by Alberta's three largest oil sands operators. Our focused strategy is to provide a complete solution to this core group.
+**Layout:** Two-column layout with biosensor details on left, data platform details on right, connected with plus symbol
 
-### Serviceable Obtainable Market (SOM):
+### Left Section: The Biosensor Panel (Rapid, High-Frequency Data)
 
-Our initial goal is to secure 1-2 of these operators for pilot projects, leading to long-term service contracts. We project this initial market represents **$6M - $20M in annual recurring revenue**.
+- Peer-reviewed panel of engineered **bacterial biosensors**.
+- **Speed:** Quantitative results in <24 hours; qualitative within days.
+- **Cost:** <$100 per test vs. $700-$1,000 for HRMS.
+- **Specificity:** Targets and differentiates key classes of Naphthenic Acids (NAs) and Complex multi-ring NAs.
+- **Detection Range:** 2 mg/L - 30 mg/L, crucial for operational treatment control.
 
-### Future Growth:
+**Visual:** Diagram of bacterial cell with promoter and luxCDABE genes, showing luminescence
 
-Success here establishes the global standard, creating expansion opportunities into other industrial wastewater challenges worldwide.
+### Right Section: The Confluent Intelligence Platform
 
-**Target Companies:**
+Unifies high-frequency biosensor results with operational data (SCADA, flow meters, HRMS reports, etc.).
+
+- **Actionable Insights:** Provides predictive modeling and trend analysis to correlate treatment adjustments with NA degradation rates.
+- **Unlocks Transparency:** Delivers auditable, immutable audit trails for regulatory reporting and stakeholder transparency.
+- **History:** Uses AI to restructure historical reports (PDFs, spreadsheets) to water treatment history.
+
+**Visual:** Abstract tech/network graphic showing connectivity and data flows
+
+---
+
+## SLIDE 4: Technology Validation
+
+**Title:** De-Risked Technology: Science First, Field Tested
+
+**Layout:** Three-column table with peer-reviewed publication preview on right
+
+### Table Structure:
+
+|Scientific Credibility|Field Validation (Kearl Pilot)|The Technical Moat|
+|---|---|---|
+|**Peer-Reviewed:** Core biosensor technology published in ACS Synthetic Biology (2024).|**Field Correlation:** Demonstrated strong qualitative agreement with Orbitrap Mass Spectrometry (HRMS) data over a multi-season field pilot.|**IP Protection:** Multi-layered IP including patents filed in Canada, US, and under the PCT (WO/2023/039675).|
+|**High Correlation:** Shows high correlation with gold-standard HRMS in controlled studies.|**Raw Water Tested:** Successfully detected NAs in 22/24 unique raw OSPW samples with minimal preparation.|**Proprietary Data Moat:** Building an unparalleled, structured dataset of NA degradation kinetics for predictive modeling.|
+|**Accuracy:** Multiple sensor designs validated against known NA classes for high specificity and reliable response.|**Proven Tracking:** Effectively tracked NA reduction in the constructed wetland from ~70 mg/L down to the 32-36 mg/L signal threshold.|**Identified Need:** High frequency, rapid and cost-effective NA monitoring has been identified as a gap for decades. Our Biosensor fills this Gap!|
+
+### Visual Elements:
+
+- ACS Synthetic Biology journal publication preview (top right)
+- Journal of Environmental Chemical Engineering publication preview (bottom right)
+
+---
+
+## SLIDE 5: Business Model
+
+**Title:** High-Margin, Recurring Revenue from Service & Software (SaaS)
+
+**Layout:** Four revenue streams with icons on left, three-column table on right
+
+### Revenue Streams (with icons):
+
+1. **Testing tube icon** - Biosensor Testing
+2. **Dashboard icon** - Confluent Data Platform
+3. **Integration gears icon** - Integration & Professional Services
+4. **Bioaugmentation icon** - Future Opportunity: Bioaugmentation
+
+### Table Structure:
+
+|Revenue Stream|Description|Business Drivers|
+|---|---|---|
+|**1. Biosensor Testing** (Primary Entry Point)|Project-based and high-volume contracts for operational screening service|Solves the data scarcity problem. Provides a must-have operational tool for optimizing expensive treatment systems.|
+|**2. Confluent Data Platform** (SaaS Subscription)|Annual Recurring Revenue (ARR) from platform subscriptions for real-time dashboards, regulatory reporting, and predictive analytics.|High-margin, sticky software that becomes the system of record for water release compliance (auditable proof). Value grows the more it's used.|
+|**3. Integration & Professional Services**|High-margin services for custom API integration, historical data structuring, initial on-site validation, and training.|Accelerates platform adoption and deepens integration with operator's existing infrastructure.|
+|**Future Opportunity: Bioaugmentation**|Bioaugmentation services (TRL 3-4) will be deployed as a premium NA treatment optimization add-on, informed by the platform data.|A high-potential revenue stream built on top of an already established and profitable monitoring foundation.|
+
+---
+
+## SLIDE 6: Market Opportunity
+
+**Title:** Concentrated, Multi-Billion Dollar Market with Regulatory Tailwinds
+
+**Layout:** Text content on left, company logos arranged on right
+
+### Market Description:
+
+**Total Addressable Market (TAM/SAM):** Alberta's top three oil sands operators face a $30B+ tailings liability. We're targeting this core group with a complete, needed, and novel NA solution.
+
+**Serviceable Obtainable Market (SOM):** Our initial goal is 1-2 pilot projects with these operators, aiming for $6M - $20M in annual recurring revenue from long-term contracts.
+
+**Future Growth:** This success will set a global standard, opening doors to other industrial wastewater challenges worldwide.
+
+### Company Logos (arranged on right side):
 
 - Suncor Energy
 - Pathways Alliance
 - Imperial
 - Canadian Natural
 
-**Talk Track:** We're targeting a concentrated, multi-billion dollar market. Alberta's top three oil sands operators hold this entire liability. Our focused strategy means we don't need to boil the ocean - just secure 1-2 of these operators for pilots, leading to long-term contracts worth $6-20 million in annual recurring revenue. Success here establishes the global standard and opens opportunities in industrial wastewater worldwide.
+---
+
+## SLIDE 7: Competitive Positioning
+
+**Title:** Luminous Biosensor: Real-time Visibility for Remediation
+
+**Layout:** Text description on left, 2x2 positioning matrix on right
+
+### Key Messages:
+
+Our biosensor offers crucial, unprecedented visibility for significant remediation projects, such as constructed wetlands, enabling near real-time decision-making and modifications.
+
+When combined with the Confluent Intelligence platform, we provide insights that guide true process optimization.
+
+**We are a complementary enhancement, not a competitor.**
+
+### Positioning Matrix:
+
+**Axes:**
+
+- X-axis: Speed & Cost Effectiveness (Slow → Fast, High cost → Low cost)
+- Y-axis: Specificity (Low → High)
+
+**Quadrants:**
+
+- Bottom Left: FTIR (low specificity, slow, high cost)
+- Bottom Right: [empty]
+- Top Left: HRMS (High Resolution Mass Spectrometry), SRMS (Standard Resolution Mass Spectrometry)
+- Top Right: **Luminous BioSolutions** (high specificity, fast, low cost)
 
 ---
 
-## The Right Team to Solve a Formidable Challenge
+## SLIDE 8: Team
 
-### Dr. Shawn Lewenza | CSO: _The Scientific Visionary_
+**Title:** The Right Team to Solve a Formidable Challenge
 
-30+ years in microbiology, pivoted his career to dedicate a decade to solving this specific problem.
+**Layout:** Three team member descriptions on left, three professional photos on right
 
-### Greg Saunders | CTO: _The Master Architect_
+### Team Members:
 
-30+ years building robust software. The inventor of our Confluent platform, turning complex science into reliable technology.
+**Dr. Shawn Lewenza | CSO:** _The Scientific Visionary._ Inventor of the biosensor technology. 10+ years dedicated to NA research, 30+ years in microbiology.
 
-### Jeff Violo | COO: _The Execution Champion_
+**Greg Saunders | CTO:** _The Software Architect._ Architect of the Confluent Data Platform. 30+ years building enterprise software.
 
-A former World Cup athlete with a champion's mindset, bringing 30+ years of experience to transform our technology strategy into commercial reality.
+**Jeff Violo | COO:** _The Execution Champion._ Commercialization and Execution Champion. 30+ years transforming technology into commercial reality.
 
-**Talk Track:** This challenge requires the right team. Dr. Shawn Lewenza, our CSO, has 30+ years in microbiology and pivoted his entire career to spend a decade solving this specific problem. Greg Saunders, our CTO, brings 30+ years building robust software and invented our Confluent platform. I'm Jeff Violo - former World Cup athlete bringing a champion's mindset and 30+ years experience transforming technology into commercial reality. We're not just scientists or just business people - we're a complete team positioned to solve this formidable challenge.
+### Visual:
 
----
-
-## We Don't Compete; We Enhance
-
-**Our platform makes a significant investment like a constructed wetland smarter, faster, and verifiably successful.**
-
-Luminous is the only solution that integrates real-time insight with effective, sustainable treatment.
-
-We are not just a competitor; we are a complementary enhancement.
-
-### Competitive Positioning Matrix:
-
-- **Speed & Clarity of Insight (Low → High)**
-- **Sustainability & Efficacy of Treatment (Low → High)**
-
-**Competitors:**
-
-- Status Quo / Do Nothing
-- Traditional Labs / Mass Spec
-- Standalone Remediation Tech (e.g., Chemicals)
-
-**Luminous:** Positioned in the high quadrant for both speed/clarity and sustainability/efficacy
-
-**Talk Track:** Here's what's critical - we don't compete with existing investments like constructed wetlands. We enhance them. Companies have already invested billions in treatment infrastructure. We make those investments smarter, faster, and verifiably successful. We're the only solution that combines real-time insight with effective, sustainable treatment. While others force you to choose between speed and sustainability, we deliver both.
+- Three professional headshot photos arranged on right side of slide
 
 ---
 
-## Our 36-Month Strategic Roadmap
+## SLIDE 9: Roadmap
+
+**Title:** Our 36-Month Strategic Roadmap
+
+**Layout:** Three phases arranged horizontally showing progression
 
 ### Phase 1: Foundation (First 6 Months)
 
-- **Business Goal:** Secure Anchor Partner LOI & Close $1.5M Seed Round
-- **Tech Goal:** Initiate TRL 5 Greenhouse Mesocosm Pilot (Enabled by funding)
-- **Milestone:** Fully funded company with a committed industry partner
+**Business Goal:** Secure Anchor Partner LOI & Close $1.5M Seed Round. **Milestone:** Fully Funded company with a committed pilot partner.
 
-### Phase 2: Validation (Months 7-18)
+### Phase 2: Validation (Months 7-12)
 
-- **Business Goal:** Convert LOI to first paid pilot contract
-- **Tech Goal:** Achieve TRL 6 with successful outdoor mesocosm pilot at InnoTech
-- **Milestone:** First revenue and validation of technology at scale
+**Business Goal:** Convert LOI to first paid pilot contract. **Tech Goal:** Achieve TRL 7 with successful field deployment at a partner's facility. **Milestone:** First revenue and field-validated operational performance.
 
-### Phase 3: Commercialize (Months 19-24)
+### Phase 3: Commercialize (Months 13-18)
 
-- **Business Goal:** Secure first multi-year, full-scale service agreement
-- **Tech Goal:** Achieve TRL 7 with first onsite deployment at partner facility
-- **Milestone:** Commercially de-risked platform with recurring revenue
-
-**Talk Track:** Our roadmap is aggressive but achievable. In the first 6 months, we secure an anchor partner and close our seed round, enabling our greenhouse pilot. Months 7-18, we convert that LOI to our first paid contract and validate the technology at InnoTech's outdoor facility. Months 19-24, we deploy onsite at our partner's facility and secure our first multi-year service agreement. Each phase reduces risk and increases value.
+**Business Goal:** Secure first multi-year, full-scale monitoring contract. **Tech Goal:** Multi-site deployment and API integration at scale. **Milestone:** Recurring Revenue model validated and clear expansion pipeline.
 
 ---
 
-## The Ask: $1,500,000
+## SLIDE 10: The Ask
 
-**This pre-seed investment will provide 18-24 months of runway to achieve key milestones.**
+**Title:** The Ask: $1,500,000 Pre-Seed Investment **Subtitle:** This investment will provide 18-24 months of runway to achieve key milestones.
 
-### Use of Funds:
+**Layout:** Milestone table on left, pie chart on right
 
-- **Team Expansion:** Hiring Lab Technicians and Software Developers
-- **Capital Purchases:** Securing necessary lab and computer equipment
-- **Pilot Operations:** Funding the execution of our Phased Roadmap, advancing our Bioaugmentation tech from TRL 4 to TRL 6
-- **IP Protection:** Filing new process patents and covering ongoing costs
+### Milestone Table:
 
-**Talk Track:** We're raising $1.5 million to provide 18-24 months of runway to hit these critical milestones. The funds go directly to execution: expanding our team with the lab technicians and developers we need, purchasing essential equipment, funding our pilot operations to advance from TRL 4 to TRL 6, and protecting our IP portfolio. This investment takes us from proven science to commercial validation with a major industry partner.
+|Milestone|Target Date|
+|---|---|
+|2 Anchor Operator Pilots launched.|6 Months|
+|First Commercial Deployment secured and running.|12 Months|
+|Recurring Revenue model validated, and expansion pipeline defined|18 Months|
+
+### Use of Funds Pie Chart:
+
+- **Commercial Scaling:** 40.0%
+- **Market Development:** 30.0%
+- **Technology Optimization:** 20.0%
+- **Operations & Working Capital:** 10.0%
+
+### Contact:
+
+**Contact: Jeff Violo | COO |** **jeff.violo@luminousbiosolutions.com | 403 813 8529**
 
 ---
 
-**Contact:** Jeff Violo | COO | jeff.violo@luminousbiosolutions.com | 403 813 8529
+## Design Notes for Consistency:
 
-**Talk Track:** Thank you. We're solving one of Alberta's biggest environmental challenges with peer-reviewed science, proven technology, and the right team. The market is concentrated, the need is urgent, and we have a clear path to revenue. I'm excited to discuss how you can be part of transforming this multi-billion dollar liability into sustainable value. Let's talk about making this happen together.
+### Color Palette:
+
+- Primary Blue: Used for main headings and Luminous branding
+- Yellow/Gold: Accent color in logo
+- Dark text on white background for body content
+
+### Typography:
+
+- Large, bold sans-serif for slide titles
+- Clean, professional sans-serif for body text
+- Consistent hierarchy: Title > Subtitle > Body
+
+### Layout Patterns:
+
+- Generous white space
+- Left-aligned text blocks
+- Supporting visuals on right side
+- Tables used for structured comparison data
+- Icons used to represent concepts visually
+
+### Visual Elements:
+
+- Professional photography (aerial oil sands)
+- Scientific diagrams (biosensor mechanism)
+- Abstract tech graphics (data platform)
+- Company logos
+- Team headshots
+- Charts/graphs (pie chart, positioning matrix)
