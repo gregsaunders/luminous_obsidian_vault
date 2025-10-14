@@ -9,21 +9,24 @@
 
 ## Executive Summary
 
-The shift from containment to active treatment of Oil Sands Process-Affected Water (OSPW) requires a fundamental change in Naphthenic Acid (NA) monitoring strategy. Relying solely on High-Resolution Mass Spectrometry (HRMS)—designed for forensic NA analysis, not operational control—creates an NA data scarcity problem that prevents effective process management. This white paper introduces a three-tier NA monitoring approach that complements HRMS accuracy with operational frequency and AI-native intelligence, enabling operators to finally answer the critical question: *"Is NA treatment working right now, and what should we adjust?"*
+The shift from "containment" to active treatment of Oil Sands Process-Affected Water (OSPW) requires a fundamental change in Naphthenic Acid (NA) monitoring strategy. 
 
-**Important Context:** Tailings water contains multiple contaminants requiring monitoring—metals (arsenic, selenium), salts, suspended solids, other organic compounds. However, **Naphthenic Acids are one of the principal contaminants of concern holding back regulatory approval for water release.** This white paper focuses on solving the NA bottleneck through targeted monitoring and intelligence.
+Relying solely on High-Resolution Mass Spectrometry (HRMS) which is designed for forensic NA analysis, not operational control and creates an NA data scarcity problem that prevents effective process management. This white paper introduces a three-tier NA monitoring approach that complements HRMS accuracy with operational frequency and AI-native intelligence, enabling operators to finally answer the critical question: 
 
-Luminous BioSolutions addresses the NA challenge through an integrated platform combining rapid biosensor screening specifically for NA detection (24-hour turnaround), high correlation to HRMS for NA characterization, and Confluent—an AI-native data intelligence platform currently focused on NA data that transforms high-frequency NA monitoring into actionable operational insights while providing multi-stakeholder transparency on NA reduction.
+*"Is NA treatment working right now, and what should we adjust?"*
+
+**Important Context:** Tailings water contains multiple contaminants requiring monitoring - metals (arsenic, selenium), salts, suspended solids, other organic compounds., however, **Naphthenic Acids are one of the principal contaminants of concern holding back regulatory approval for water release.** This white paper focuses on solving the NA bottleneck through targeted monitoring and intelligence.
+
+Luminous BioSolutions addresses the NA challenge through an integrated platform combining rapid biosensor screening specifically for NA detection (24-hour turnaround), high correlation to HRMS for NA characterization, and Confluent - an AI-native data intelligence platform currently focused on NA data that transforms high-frequency NA monitoring into actionable operational insights while providing multi-stakeholder transparency on NA reduction.
 
 ---
-
 ## 1. The NA Monitoring Gap: Why HRMS Alone Cannot Scale
 
 ### 1.1 From Static Containment to Dynamic NA Treatment
 
-The oil sands industry is undergoing a fundamental operational shift. For decades, tailings management meant containment—storing process-affected water in engineered ponds while recycling what could be reused. This static approach required minimal NA monitoring: quarterly or semi-annual compliance testing was sufficient.
+The oil sands industry is undergoing a fundamental operational shift. For decades, tailings management meant containment - storing process-affected water in engineered ponds while recycling what could be reused. This static approach required minimal NA monitoring: quarterly or semi-annual compliance testing was sufficient.
 
-The September 2025 Oil Sands Mine Water Steering Committee (OSMWSC) recommendations formalize what operators already know: containment is not a long-term solution. The industry must transition to active NA treatment and eventual water release. This shift transforms NA management from a static liability into a dynamic process control challenge.
+The September 2025 Oil Sands Mine Water Steering Committee (OSMWSC) recommendations formalize what operators already know; containment is not a long-term solution. The industry must transition to active NA treatment and eventual water release. This shift transforms NA management from a static liability into a dynamic process control challenge.
 
 **The core operational question changes:**
 - **Containment era:** "Are NA levels staying contained?" (answer quarterly)
@@ -31,7 +34,7 @@ The September 2025 Oil Sands Mine Water Steering Committee (OSMWSC) recommendati
 
 ### 1.2 HRMS: Forensic Tool for NA Analysis, Not Operational NA Monitor
 
-HRMS is the gold standard for naphthenic acid (NA) analysis—and for good reason. Its molecular-level precision for NA characterization makes it indispensable for regulatory NA compliance, forensic investigations of NA levels, and validating new NA analytical methods. However, using HRMS as the primary operational NA monitoring tool creates three critical bottlenecks:
+HRMS is the gold standard for naphthenic acid (NA) analysis, and for good reason. Its molecular-level precision for NA characterization makes it indispensable for regulatory NA compliance, forensic investigations of NA levels, and validating new NA analytical methods. However, using HRMS as the primary operational NA monitoring tool creates three critical bottlenecks:
 
 **Time-Lag Bottleneck for NA Data:**
 - 6-8 week turnaround from sample collection to NA results
@@ -51,7 +54,7 @@ HRMS is the gold standard for naphthenic acid (NA) analysis—and for good reaso
 - No unified view of NA trends across time, space, or treatment approaches
 - Institutional knowledge about NA treatment trapped in documents, not queryable systems
 
-**Real-world example:** A recent multi-season engineered wetland study collected 9 NA samples over two field seasons. With 6-8 week HRMS turnaround times for NA analysis, operators were making NA treatment decisions based on data that was 2-6 months old. When natural NA degradation rates declined mid-season, this wasn't discovered until the following year's data analysis—too late to adjust or optimize.
+**Real-world example:** The recent recent multi-season engineered wetland study collected 9 NA samples over two field seasons. With 6-8 week HRMS turnaround times for NA analysis, operators were making NA treatment decisions based on data that was 2-6 months old. When natural NA degradation rates declined mid-season, this wasn't discovered until the following year's data analysis—too late to adjust or optimize.
 
 ### 1.3 The Business Case for Change: "You Can't Manage the NA Bottleneck When You Can't See It"
 
