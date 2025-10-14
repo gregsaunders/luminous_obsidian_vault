@@ -54,20 +54,20 @@ HRMS is the gold standard for naphthenic acid (NA) analysis, and for good reason
 - No unified view of NA trends across time, space, or treatment approaches
 - Institutional knowledge about NA treatment trapped in documents, not queryable systems
 
-**Real-world example:** The recent recent multi-season engineered wetland study collected 9 NA samples over two field seasons. With 6-8 week HRMS turnaround times for NA analysis, operators were making NA treatment decisions based on data that was 2-6 months old. When natural NA degradation rates declined mid-season, this wasn't discovered until the following year's data analysis—too late to adjust or optimize.
+**Real-world example:** The recent recent multi-season Kearl engineered wetland study collected 9 NA samples over two field seasons. With 6-8 week HRMS turnaround times for NA analysis, operators were making NA treatment decisions based on data that was 2-6 months old. When natural NA degradation rates declined mid-season, this wasn't discovered until the following year's data analysis - too late to adjust or optimize.
 
 ### 1.3 The Business Case for Change: "You Can't Manage the NA Bottleneck When You Can't See It"
 
-Managing multi-billion dollar remediation programs with quarterly NA data points is analogous to flying an aircraft with instruments that update once per hour. The consequences for NA management:
+Managing multi-million to billion dollar remediation programs with quarterly NA data points is analogous to flying an aircraft with instruments that update once per hour. The consequences for NA management:
 
 **Operational Risk:**
 - NA treatment failures detected months after they occur
-- No ability to optimize NA degradation processes in real-time
+- No ability to optimize NA degradation processes in near real-time
 - Seasonal variations (temperature, flow rates, biological activity) affecting NA degradation invisible between sampling events
 - Expensive NA remediation strategies deployed blindly
 
 **Financial Risk:**
-- Over-treatment of NAs (unnecessary chemical/energy inputs) goes undetected
+- Over-treatment of NAs (over engineering) goes undetected
 - Under-treatment of NAs discovered too late, requiring expensive interventions
 - Pilot programs generate insufficient NA data to validate at scale
 - Regulatory approval delays due to NA data gaps
@@ -79,7 +79,6 @@ Managing multi-billion dollar remediation programs with quarterly NA data points
 - NA data scarcity undermines confidence in treatment approaches
 
 ---
-
 ## 2. The Three-Tier NA Monitoring Strategy
 
 Effective NA management in OSPW requires a complementary monitoring approach where different tools serve different purposes:
@@ -106,10 +105,9 @@ Effective NA management in OSPW requires a complementary monitoring approach whe
 - **Strength:** Unified view across all NA monitoring tiers, historical NA context, AI-native querying
 - **Role:** Decision support system for NA treatment optimization and multi-stakeholder transparency
 
-**This is not a replacement strategy—it's an integration strategy focused on the NA bottleneck.** HRMS remains essential for NA compliance. The biosensor and intelligence platform make HRMS NA data more valuable by providing operational context and validating NA screening results against the gold standard at strategic intervals.
+**This is not a replacement strategy, it's an integration strategy focused on the NA bottleneck.** HRMS remains essential for NA compliance. The biosensor and intelligence platform make HRMS NA data more valuable by providing operational context and validating NA screening results against the gold standard at strategic intervals.
 
 ---
-
 ## 3. Tier 2: The Luminous Biosensor Platform for NA Detection
 
 ### 3.1 Technology Overview
@@ -121,7 +119,7 @@ The Luminous biosensor platform is a peer-reviewed (*ACS Synthetic Biology*, 202
 - **Panel 2:** Complex/aromatic NAs (detection range: 2-16 mg/L)
 - **Panel 3:** Classical NAs (detection range: 1.5-30 mg/L)
 
-This panel approach provides compound-class specificity beyond simple total NA quantification, giving operators insight into which NA fractions are responding to treatment—critical for optimizing NA remediation strategies.
+This panel approach provides compound-class specificity beyond simple total NA quantification, giving operators insight into which NA fractions are responding to treatment - critical for optimizing NA remediation strategies.
 
 ### 3.2 Field Validation: Real OSPW Performance for NA Detection
 
@@ -162,16 +160,16 @@ The biosensor is explicitly designed to complement HRMS for NA monitoring, not c
 
 ---
 
-## 4. Tier 3: Confluent—The AI-Native Intelligence Platform for NA Data
+## 4. Tier 3: Confluent - The AI-Native Intelligence Platform for NA Data
 
 ### 4.1 Beyond Data Storage: AI-Native Architecture for NA Intelligence
 
-Most environmental data systems are databases with visualization layers—digital filing cabinets that store structured data for later retrieval. Confluent is fundamentally different. Built from inception in the era of large language models and graph databases, it is architected as an AI-native intelligence platform where NA data relationships are explicit, unstructured NA information is queryable, and natural language becomes the interface for NA analysis.
+Most environmental data systems are databases with visualization layers, essentially digital filing cabinets that store structured data for later retrieval. Confluent is fundamentally different. Built from inception in the era of large language models and graph databases, it is architected as an AI-native intelligence platform where NA data relationships are explicit, unstructured NA information is queryable, and natural language becomes the interface for NA analysis.
 
 **What makes Confluent "AI-Native" for NA Intelligence?**
 
 **1. Model-Agnostic Orchestration:**
-Confluent's architecture is designed with AI-model agnostic orchestration, enabling operators to leverage multiple LLMs (Claude, GPT-4, Gemini) and adapt as AI capabilities evolve—avoiding vendor lock-in while ensuring access to cutting-edge AI advances for NA intelligence. Different NA query types route to optimal models: NA pattern recognition to one LLM, natural language summarization of NA trends to another, predictive NA forecasting to specialized models.
+Confluent's architecture is designed with AI-model agnostic orchestration, enabling operators to leverage multiple LLMs (Claude, GPT-4, Gemini) and adapt as AI capabilities evolve, avoiding vendor lock-in while ensuring access to cutting-edge AI advances for NA intelligence. Different NA query types route to optimal models: NA pattern recognition to one LLM, natural language summarization of NA trends to another, predictive NA forecasting to specialized models.
 
 **2. Graph Database Foundation for NA Data:**
 Built on TerminusDB, a graph database specifically designed for complex data relationships. Unlike traditional relational databases where relationships are implicit (foreign keys), graph databases make relationships explicit and queryable. This architecture enables Confluent to automatically discover connections across NA datasets that would require extensive manual SQL joins in traditional systems.
@@ -208,7 +206,7 @@ Confluent's AI-native architecture for NA intelligence is operational, with back
 
 ### 4.3 The Compounding Value of NA Data Integration
 
-Confluent becomes more powerful with every NA dataset added—a compounding intelligence effect:
+Confluent becomes more powerful with every NA dataset added - a compounding intelligence effect:
 
 **Day 1: Biosensor NA Data Alone**
 - Spatial visualization: NA levels across sampling points
@@ -235,7 +233,7 @@ Confluent becomes more powerful with every NA dataset added—a compounding inte
 - Site-specific NA optimization: "What factors differentiate high-performing vs. low-performing NA treatment systems?"
 - Industry benchmarking: Anonymous aggregate NA data across operators
 
-**Future Expansion:** While currently focused on NA intelligence—the bottleneck preventing water release—Confluent's architecture is designed to eventually integrate monitoring data from other contaminant systems (metals, salts, other organics) as operators expand their comprehensive water treatment programs.
+**Future Expansion:** While currently focused on NA intelligence, the bottleneck preventing water release, Confluent's architecture is designed to eventually integrate monitoring data from other contaminant systems (metals, salts, other organics) as operators expand their comprehensive water treatment programs.
 
 ### 4.4 Natural Language Querying for NA Intelligence: Making Data Accessible
 
