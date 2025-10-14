@@ -24,19 +24,19 @@ The Oil Sands Mine Water Steering Committee released critical recommendations re
 - Result: Operators are "stingy" with testing frequency
 
 **Regulatory Requirement:**
-- Biological treatment systems need near real-time feedback
+-Water treatment systems need near real-time feedback
 - Effective remediation requires frequent, high-confidence data
 - New standards will require 10-50x increase in monitoring frequency
 
 **The Bottleneck:**
-HRMS was designed for forensic analysis, not operational monitoring. Relying solely on HRMS creates a critical data gap that will delay reclamation efforts and undermine treatment optimization.
+HRMS was designed for forensic analysis, not high frequency operational monitoring. Relying solely on HRMS creates a critical data gap that will delay reclamation efforts and undermine treatment optimization.
 
 ---
 
 ## The Luminous Solution: Tier 2 Operational Monitoring
 
 ### Technology Overview
-**Biosensor Platform** for 24-hour naphthenic acid quantification:
+**Biosensor Platform** for 24-hour naphthenic acid qualitative results, and quantitative results in a few days:
 - **Detection range:** 2-30 mg/L across three biosensor panel
 - **Validation:** High correlation with Orbitrap Mass Spectrometry (peer-reviewed, *ACS Synthetic Biology*, 2024)
 - **Performance:** 22/24 raw OSPW samples successfully analyzed with minimal preparation
@@ -45,7 +45,7 @@ HRMS was designed for forensic analysis, not operational monitoring. Relying sol
 ### Strategic Positioning: Complement HRMS, Don't Replace
 **Tier 2 = Operational Intelligence Between Compliance Events**
 
-- **HRMS remains gold standard** for regulatory compliance reporting and forensic analysis
+- **HRMS remains the gold standard** for regulatory compliance reporting and forensic analysis
 - **Biosensor enables operational screening** for treatment system optimization
 - **Cost-effective frequency** allows real-time process management impossible with HRMS alone
 
@@ -58,6 +58,7 @@ When monitoring frequency increases 10-50x, spreadsheets become unmanageable:
 - Treatment optimization intelligence through comprehensive datasets
 - Regulatory reporting automation with immutable audit trails
 - REST API integration with existing LIMS systems
+- Open for other sensor data feeds, HRMS results, SCADA, etc. to enrich dataset
 
 ---
 
@@ -66,12 +67,13 @@ When monitoring frequency increases 10-50x, spreadsheets become unmanageable:
 ### What Makes Luminous Different
 
 **Most Technology Providers:**
-Monitoring solution only (operator handles stakeholder engagement separately)
+Monitoring solution only with ineffective monitoring technologies operator handles stakeholder engagement separately)
 
 **Luminous Offering:**
 Integrated package addressing both operational and regulatory needs:
 
 ✅ **Technical Performance:** 24-hour monitoring with high HRMS correlation
+✅ **Specificity:** NA Specificity ensures confidence of treatment efficacy 
 ✅ **Regulatory Compliance:** Built-in OSMWSC transparency support
 ✅ **Stakeholder Engagement:** Community consultation frameworks included
 ✅ **Operational Intelligence:** Treatment optimization through high-frequency data
@@ -115,7 +117,7 @@ Integrated package addressing both operational and regulatory needs:
 ### Success Metrics
 
 **Technical Performance:**
-- Maintain R > 0.95 correlation with HRMS validation samples
+- Maintain High correlation with HRMS validation samples
 - Demonstrate treatment optimization through high-frequency datasets
 - Achieve <24-hour turnaround time consistently
 
@@ -146,7 +148,7 @@ Integrated package addressing both operational and regulatory needs:
 **Luminous Readiness:**
 - Peer-reviewed validation published (*ACS Synthetic Biology*, 2024)
 - Field pilot data demonstrates operational effectiveness
-- University of Calgary partnership provides independent credibility
+- Athabasca University, and U of C partnership provides independent credibility
 - OSMWSC compliance frameworks ready for deployment
 
 ---
