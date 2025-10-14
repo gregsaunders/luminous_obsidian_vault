@@ -26,13 +26,14 @@ The Oil Sands Mine Water Steering Committee released critical recommendations fu
 - **Treatment and release standards** for OSPW (to be established urgently by Government of Alberta)
 - **Pilot programs** for active and passive treatment technologies requiring operational monitoring
 - **Stakeholder transparency** explicitly required: "Operators should strive to share relevant information about technologies they are piloting with Indigenous communities, public and stakeholders"
-- **Operational monitoring** emphasized—not just quarterly compliance snapshots
+- **Operational monitoring** emphasized, not just quarterly compliance snapshots
+- **Establishing standardized measurement** methods for **naphthenic acids**
 
 **Timeline Impact:** Operators who establish comprehensive monitoring capabilities now gain 12-18 month compliance leadership advantage before release standards are finalized.
 
 ### The HRMS Scalability Bottleneck
 
-HRMS remains the gold standard for regulatory compliance—and rightly so. Its molecular-level precision is indispensable for forensic analysis and final release authorization. However, using HRMS as the primary operational monitoring tool creates three critical bottlenecks:
+HRMS remains the gold standard for regulatory compliance, and rightly so. Its molecular-level precision is indispensable for forensic analysis and final release authorization. However, using HRMS as the primary operational monitoring tool creates three critical bottlenecks:
 
 **Time-Lag Bottleneck:**
 - 6-8 week turnaround from sample collection to results
