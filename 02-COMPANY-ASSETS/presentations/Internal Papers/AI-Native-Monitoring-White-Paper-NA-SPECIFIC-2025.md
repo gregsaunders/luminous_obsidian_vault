@@ -299,7 +299,6 @@ One platform, multiple dashboards tailored to stakeholder needs for NA transpare
 **This multi-view capability directly addresses OSMWSC September 2025 recommendations requiring operators to demonstrate technology transparency to Indigenous communities and stakeholders on key contaminants including NAs.** Rather than producing separate reports for different audiences, Confluent provides real-time access to the same trusted NA dataset, presented appropriately for each stakeholder group.
 
 ---
-
 ## 5. Integrated Business Value for NA Management: Beyond Monitoring
 
 The combination of biosensor + Confluent delivers value for NA management that neither technology provides alone:
@@ -317,7 +316,7 @@ Daily biosensor screening detects anomalous NA increase within 72 hours. Conflue
 ### 5.2 Cost Optimization: Strategic HRMS Deployment for NA Monitoring
 
 **Current state:**
-Operators must choose: either comprehensive spatial coverage (many NA sampling points, high cost) or frequent temporal NA monitoring (many time points, high cost). Budget constraints force compromise—neither adequate spatial nor temporal resolution for NA management.
+Operators must choose: either comprehensive spatial coverage (many NA sampling points, high cost) or frequent temporal NA monitoring (many time points, high cost). Budget constraints force compromise, neither adequate spatial nor temporal resolution for NA management.
 
 **With Luminous integrated platform:**
 Biosensor provides cost-effective high-frequency NA screening across all relevant sampling points. HRMS budget strategically deployed for:
@@ -371,7 +370,6 @@ Operators establish comprehensive NA monitoring programs before release standard
 **Value:** First-mover advantage for release authorization, reduced regulatory approval timelines, defensible NA data packages eliminating "demonstrate NA compliance" delays.
 
 ---
-
 ## 6. Implementation: Pilot to Production for NA Monitoring
 
 ### Phase 1: Technical Validation & Baseline (Months 1-6)
