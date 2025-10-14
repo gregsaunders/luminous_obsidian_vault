@@ -431,12 +431,11 @@ Operators establish comprehensive NA monitoring programs before release standard
 - Regulatory approval readiness for water release authorization (NA criteria met)
 
 ---
-
 ## 7. Conclusion: Transforming the NA Bottleneck from Liability into Managed Challenge
 
-The oil sands industry faces a defining challenge: demonstrating that Naphthenic Acids—one of the principal contaminants preventing regulatory approval—can be safely reduced to enable water release. This requires more than engineering innovation—it requires an NA monitoring revolution.
+The oil sands industry faces a defining challenge: demonstrating that Naphthenic Acids, one of the principal contaminants preventing regulatory approval, can be safely reduced to enable water release. This requires more than engineering innovation, it requires an NA monitoring revolution.
 
-HRMS will always be essential for NA regulatory compliance and forensic analysis. But HRMS alone cannot provide the operational NA intelligence needed to actively manage multi-billion dollar remediation programs. The NA data scarcity paradigm—quarterly snapshots with 6-8 week delays—is incompatible with dynamic NA treatment optimization.
+HRMS will always be essential for NA regulatory compliance and forensic analysis. But HRMS alone cannot provide the operational NA intelligence needed to actively manage multi-billion dollar remediation programs. The NA data scarcity paradigm, quarterly snapshots with 6-8 week delays is incompatible with dynamic NA treatment optimization.
 
 **Luminous BioSolutions provides the missing pieces for NA management:**
 
@@ -446,14 +445,13 @@ HRMS will always be essential for NA regulatory compliance and forensic analysis
 
 **Together with Tier 1 (HRMS):** A three-tier NA monitoring strategy that complements gold-standard accuracy with operational frequency and AI-native intelligence.
 
-This integrated approach doesn't just solve an NA monitoring problem—it fundamentally changes what's possible in addressing the NA bottleneck. Operators gain the visibility to manage NA remediation proactively, not reactively. Regulators gain confidence through transparent, auditable NA data. Indigenous communities gain trust through continuous access to verifiable NA reduction progress.
+This integrated approach doesn't just solve an NA monitoring problem, it fundamentally changes what's possible in addressing the NA bottleneck. Operators gain the visibility to manage NA remediation proactively, not reactively. Regulators gain confidence through transparent, auditable NA data. Indigenous communities gain trust through continuous access to verifiable NA reduction progress.
 
 **The result: The NA bottleneck transforms from an insurmountable barrier into a manageable challenge on a path to water release.**
 
-**Note on Scope:** While this white paper focuses on the NA bottleneck, Confluent's architecture is designed to eventually integrate monitoring data from other contaminant systems (metals, salts, other organics) as operators expand their comprehensive water treatment programs. Solving the NA bottleneck first enables water release authorization—other contaminants require separate monitoring solutions.
+**Note on Scope:** While this white paper focuses on the NA bottleneck, Confluent's architecture is designed to eventually integrate monitoring data from other contaminant systems (metals, salts, other organics) as operators expand their comprehensive water treatment programs. Solving the NA bottleneck first enables water release authorization. Other contaminants require separate monitoring solutions.
 
 ---
-
 ## Next Steps
 
 **Technical Briefing:**
