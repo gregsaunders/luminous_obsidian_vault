@@ -193,7 +193,7 @@ Confluent becomes more powerful with every NA dataset added:
 - Site-specific NA optimization: "What factors differentiate high-performing vs. low-performing NA treatment systems?"
 - Industry benchmarking using anonymous aggregate NA data
 
-**Future Expansion:** While currently focused on NA intelligence—the bottleneck preventing water release—Confluent's architecture is designed to eventually integrate monitoring data from other contaminant systems (metals, salts, other organics) as operators expand their comprehensive water treatment programs.
+**Future Expansion:** While currently focused on NA intelligence, the bottleneck preventing water release, Confluent's architecture is designed to eventually integrate monitoring data from other contaminant systems (metals, salts, other organics) as operators expand their comprehensive water treatment programs.
 
 ### Multi-Stakeholder Transparency: One Platform, Multiple Views
 
@@ -220,7 +220,9 @@ Confluent provides different dashboard views for different stakeholders—same t
 - Real-time transparency ("NA data last updated 24 hours ago" timestamps)
 - Educational context ("What do these NA numbers mean?" explanations)
 
-**This multi-view capability directly addresses OSMWSC September 2025 recommendations requiring technology transparency with Indigenous communities and stakeholders on key contaminants including NAs.** Rather than producing separate reports for different audiences, Confluent provides real-time access to the same NA dataset, appropriately presented for each stakeholder group.
+**This multi-view capability directly addresses OSMWSC September 2025 recommendations requiring technology transparency with Indigenous communities and stakeholders on key contaminants including NAs.** 
+
+Rather than producing separate reports for different audiences, Confluent provides real-time access to the same NA dataset, appropriately presented for each stakeholder group.
 
 **Status:** Confluent's AI-native architecture for NA intelligence is operational, with backend data services fully deployed and frontend interfaces currently being finalized for Q4 2025 deployment.
 
@@ -231,7 +233,7 @@ Confluent provides different dashboard views for different stakeholders—same t
 ### What Makes Luminous Different for NA Monitoring
 
 **Most Technology Providers:**
-Monitoring solution only—operator handles stakeholder engagement separately, faces integration challenges with existing systems, limited to basic data storage and reporting.
+Monitoring solution only, operator handles stakeholder engagement separately, faces integration challenges with existing systems, limited to basic data storage and reporting.
 
 **Luminous Integrated Platform for NA Management:**
 
@@ -245,7 +247,7 @@ Monitoring solution only—operator handles stakeholder engagement separately, f
 
 ✅ **Operational Intelligence:** NA treatment optimization recommendations, early warning system for NA exceedances, cross-site NA comparative analysis
 
-✅ **System Integration:** REST/GraphQL APIs for LIMS, SCADA, GIS systems—works with your existing infrastructure for NA data
+✅ **System Integration:** REST/GraphQL APIs for LIMS, SCADA, GIS systems - works with your existing infrastructure for NA data
 
 ### Value Proposition by Stakeholder for NA Management
 
@@ -277,7 +279,7 @@ Monitoring solution only—operator handles stakeholder engagement separately, f
 ### Risk Reduction: Early NA Detection Prevents Millions in Losses
 
 **Current State (HRMS alone for NA monitoring):**
-NA treatment system begins failing in May. Next HRMS NA sample collected July, NA results returned September. NA failure detected 4 months late. Corrective action October—too late to salvage seasonal NA treatment window. Result: $2-5M in wasted treatment costs, 12-month delay in remediation timeline.
+NA treatment system begins failing in May. Next HRMS NA sample collected July, NA results returned September. NA failure detected 4 months late. Corrective action October (just before things freeze) too late to salvage seasonal NA treatment window. Result: $2-5M in wasted treatment costs, 12-month delay in remediation timeline.
 
 **With Luminous Integrated Platform for NA Monitoring:**
 Daily biosensor screening detects anomalous NA increase within 72 hours. Confluent flags NA pattern as similar to 2019 incident documented in historical PDF. Operator investigates, discovers wetland flow obstruction affecting NA degradation. Issue corrected within one week. Seasonal NA treatment effectiveness preserved.
@@ -323,7 +325,7 @@ Quarterly compliance reports on NA levels submitted to regulators. Public access
 
 **Value:** Enhanced social license, reduced regulatory friction, genuine partnership with Indigenous communities on NA concerns, competitive advantage through NA transparency leadership.
 
-**Luminous Example:** Early engagement with Mikisew Cree First Nation consultants, understanding their concerns about regulatory loopholes and operator trust gaps regarding NA levels. Confluent's independent, auditable NA monitoring framework directly addresses these concerns—positioning operators using Luminous as social license leaders on the NA bottleneck.
+**Luminous Example:** Early engagement with Mikisew Cree First Nation consultants, understanding their concerns about regulatory loopholes and operator trust gaps regarding NA levels. Confluent's independent, auditable NA monitoring framework directly addresses these concerns, operators using Luminous as social license leaders on the NA bottleneck.
 
 ---
 
