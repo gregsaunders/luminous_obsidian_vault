@@ -7,15 +7,19 @@
 
 ## The NA Monitoring Challenge: You Can't Manage What You Can't See
 
-The oil sands industry faces a defining operational shift: transitioning from containment to active treatment of 1.4 trillion liters of process-affected water. This transformation requires answering a question that current NA monitoring approaches cannot address: *"Is NA treatment working right now, and what should we adjust?"*
+The oil sands industry faces a defining operational shift: transitioning from containment to active treatment of 1.4 trillion liters of process-affected water. This transformation requires answering a question that current NA monitoring approaches cannot address: 
 
-**The fundamental problem:** HRMS analysis for NAs takes 6-8 weeks and costs $700-$1,000 per sample. Operators managing multi-billion dollar remediation programs are making critical NA management decisions based on data that is weeks to months old—flying blind on one of the principal contaminants preventing regulatory approval for water release.
+*"Is NA treatment working right now, and what should we adjust?"*
 
-A recent multi-season engineered wetland study collected only 9 NA samples over two field seasons. With 6-8 week HRMS turnaround times for NA analysis, operators were making NA treatment decisions based on data that was 2-6 months old. When natural NA degradation rates declined mid-season, this wasn't discovered until the following year's data analysis—too late to optimize or course-correct.
+**The fundamental problem:** HRMS, the current NA monitoring technology for NA analysis takes 6-8 weeks and costs $700-$1,000 per sample. Operators managing multi-billion dollar remediation programs are making critical NA management decisions based on data that is weeks to months old, and flying blind on one of the principal contaminants preventing regulatory approval for water release.
 
-**The business impact:** You can't manage the NA bottleneck when you can't see it. NA treatment failures detected months after they occur. Over-treatment of NAs going undetected. Pilot programs generating insufficient NA data to validate at scale. Regulatory approval delays due to NA data gaps. Stakeholder skepticism about NA reduction effectiveness.
+The recent multi-season Kearl engineered wetland study collected only 9 NA samples over two field seasons. With 6-8 week HRMS turnaround times for NA analysis, operators were making NA treatment decisions based on data that was 2-6 months old. When natural NA degradation rates declined mid-season, this wasn't discovered until the following year's data analysis. Too late to optimize or course-correct.
 
-**Important Context:** Tailings water contains multiple contaminants requiring monitoring—metals (arsenic, selenium), salts, suspended solids, other organic compounds. However, **Naphthenic Acids are one of the principal contaminants of concern holding back regulatory approval for water release.** You cannot get release approval—even if everything else is clean—if NA levels aren't demonstrated to be safe. Luminous specifically addresses this NA bottleneck through targeted monitoring and intelligence.
+**The business impact:** "You can't manage the NA bottleneck when you can't see it". NA treatment failures detected months after they occur. Over-treatment of NAs going undetected. Pilot programs generating insufficient NA data to validate at scale. Regulatory approval delays due to NA data gaps. Stakeholder skepticism about NA reduction effectiveness.
+
+**Important Context:** Tailings water contains multiple contaminants requiring monitoring - metals (arsenic, selenium), salts, suspended solids, other organic compounds. However, **Naphthenic Acids are one of the principal contaminants of concern holding back regulatory approval for water release.** You cannot get release approval, even if everything else is clean, if NA levels aren't demonstrated to be safe. 
+
+Luminous specifically addresses this NA bottleneck through targeted monitoring and intelligence.
 
 ---
 
@@ -23,7 +27,7 @@ A recent multi-season engineered wetland study collected only 9 NA samples over 
 
 ### OSMWSC September 2025 Recommendations
 
-The Oil Sands Mine Water Steering Committee released critical recommendations fundamentally changing NA monitoring requirements:
+The Oil Sands Mine Water Steering Committee (OSMWSC) released critical recommendations fundamentally changing NA monitoring requirements:
 
 - **Treatment and release standards** for OSPW (to be established urgently by Government of Alberta)
 - **Pilot programs** for active and passive NA treatment technologies requiring operational monitoring
@@ -37,19 +41,19 @@ The Oil Sands Mine Water Steering Committee released critical recommendations fu
 
 HRMS remains the gold standard for NA regulatory compliance, and rightly so. Its molecular-level precision for NA characterization is indispensable for forensic analysis and final release authorization. However, using HRMS as the primary operational NA monitoring tool creates three critical bottlenecks:
 
-**Time-Lag Bottleneck for NA Data:**
+**1. Time-Lag Bottleneck for NA Data:**
 - 6-8 week turnaround from sample collection to NA results
 - By the time NA data arrives, treatment conditions have changed
 - Operators adjust NA degradation processes based on historical data, not current state
 - Impossible to validate if NA treatment adjustments worked until weeks later
 
-**Cost Bottleneck for NA Testing:**
+**2. Cost Bottleneck for NA Testing:**
 - $700-$1,000 per sample for NA analysis forces operators to be "stingy" with testing
 - High cost creates critical blind spots between NA sampling events
 - Budget constraints limit spatial coverage of NA monitoring across remediation sites
-- New treatment standards will require 10-50x increase in NA monitoring frequency—financially untenable with HRMS alone
+- New treatment standards will require 10-50x increase in NA monitoring frequency, financially untenable with HRMS alone
 
-**Data Chaos Bottleneck for NA Intelligence:**
+**3. Data Chaos Bottleneck for NA Intelligence:**
 - Decades of HRMS NA results locked in unstructured PDFs and spreadsheets
 - Historical NA data stored across multiple repositories (operator archives, consultant reports, regulatory submissions)
 - No unified view of NA trends across time, space, or treatment approaches
@@ -85,7 +89,7 @@ Effective NA management in OSPW requires a complementary monitoring approach whe
 - **Strength:** Unified view across all NA monitoring tiers, historical NA context, natural language querying
 - **Role:** Decision support system for NA treatment optimization and multi-stakeholder transparency
 
-**This is not a replacement strategy—it's an integration strategy focused on the NA bottleneck.** HRMS remains essential for NA compliance. The biosensor and intelligence platform make HRMS NA data more valuable by providing operational context and validating NA screening results against the gold standard at strategic intervals.
+**This is not a replacement strategy, it's an integration strategy focused on the NA bottleneck.** HRMS remains essential for NA compliance. The biosensor and intelligence platform make HRMS NA data more valuable by providing operational context and validating NA screening results against the gold standard at strategic intervals.
 
 ---
 
@@ -100,7 +104,7 @@ The Luminous biosensor platform is a peer-reviewed (*ACS Synthetic Biology*, 202
 - **Panel 2:** Complex/aromatic NAs (detection range: 2-16 mg/L)
 - **Panel 3:** Classical NAs (detection range: 1.5-30 mg/L)
 
-This panel approach provides compound-class specificity beyond simple total NA quantification, giving operators insight into which NA fractions are responding to treatment—critical for optimizing NA remediation strategies.
+This panel approach provides compound-class specificity beyond simple total NA quantification, giving operators insight into which NA fractions are responding to treatment, critical for optimizing NA remediation strategies.
 
 **Operational Capability:**
 - 96 NA samples processed simultaneously per batch
@@ -137,18 +141,20 @@ The biosensor is explicitly designed to complement HRMS for NA monitoring, not c
 
 ### Beyond Data Storage: AI-Native Architecture for NA Intelligence
 
-Most environmental data systems are databases with visualization layers—digital filing cabinets that store structured data for later retrieval. Confluent is fundamentally different. Built from inception in the era of large language models and graph databases, it is architected as an AI-native intelligence platform where NA data relationships are explicit, unstructured NA information is queryable, and natural language becomes the interface for NA analysis.
+Most environmental data systems are databases with visualization layers, essentially digital filing cabinets that store structured data for later retrieval. 
+
+Confluent is fundamentally different. Built from inception in the era of large language models and graph databases, it is architected as an AI-native intelligence platform where NA data relationships are explicit, unstructured NA information is queryable, and natural language becomes the interface for NA analysis.
 
 **What Makes Confluent "AI-Native" for NA Intelligence?**
 
 **Model-Agnostic AI Orchestration:**
-Confluent's architecture is designed with AI-model agnostic orchestration, enabling operators to leverage multiple LLMs (Claude, GPT-4, Gemini) and adapt as AI capabilities evolve—avoiding vendor lock-in while ensuring access to cutting-edge AI advances for NA intelligence. Different NA query types route to optimal models automatically.
+Confluent's architecture is designed with AI-model agnostic orchestration, enabling operators to leverage multiple LLMs (Claude, GPT-4, Gemini) and adapt as AI capabilities evolve, avoiding vendor lock-in while ensuring access to cutting-edge AI advances for NA intelligence. Different NA query types route to optimal models automatically.
 
 **Graph Database Foundation for NA Data:**
 Built on TerminusDB, a graph database where NA relationships are explicit and queryable. This enables Confluent to automatically discover connections across NA datasets: "Sample #4523 taken at GPS X,Y on Date Z during 15mm rainfall event shows NA level increase, correlates with increased flow in SCADA data, similar to NA pattern documented in 2019 consultant PDF report."
 
 **Unified Structured + Unstructured NA Data:**
-Confluent ingests both structured NA data (biosensor NA results, HRMS NA data, SCADA outputs) and unstructured NA information (PDF reports on NA treatment, consultant studies on NA degradation, regulatory submissions on NA levels), creating a unified knowledge graph where current biosensor NA results automatically link to historical reports describing similar NA conditions.
+Confluent ingests both structured NA data (biosensor NA results, HRMS NA data, SCADA outputs) and unstructured NA information (PDF and excel reports on NA treatment, consultant studies on NA degradation, regulatory submissions on NA levels), creating a unified knowledge graph where current biosensor NA results automatically link to historical reports describing similar NA conditions.
 
 **Natural Language Querying for NA Intelligence:**
 Operators query complex NA relationships using natural language, not SQL:
