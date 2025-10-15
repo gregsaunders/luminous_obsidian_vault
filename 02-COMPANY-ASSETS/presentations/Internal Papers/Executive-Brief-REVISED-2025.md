@@ -12,7 +12,7 @@ The oil sands industry is facing a significant operational transition. After yea
 This transition surfaces a critical operational challenge: managing the Naphthenic Acid (NA) bottleneck that's preventing regulatory approval for water release.
 
 **The context:**
-- 1.4 trillion liters of process-affected water requiring treatment
+- 1.4 trillion litres of process-affected water requiring treatment
 - $30-130 billion unfunded liability across the industry
 - Regulatory release standards expected within 12-18 months
 - Indigenous community and stakeholder transparency requirements now explicit

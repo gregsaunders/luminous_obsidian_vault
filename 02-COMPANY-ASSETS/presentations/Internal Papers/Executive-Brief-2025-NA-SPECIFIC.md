@@ -7,7 +7,7 @@
 
 ## The NA Monitoring Challenge: You Can't Manage What You Can't See
 
-The oil sands industry faces a defining operational shift: transitioning from containment to active treatment of 1.4 trillion liters of process-affected water. This transformation requires answering a question that current NA monitoring approaches cannot address: 
+The oil sands industry faces a defining operational shift: transitioning from containment to active treatment of 1.4 trillion litres of process-affected water. This transformation requires answering a question that current NA monitoring approaches cannot address: 
 
 *"Is NA treatment working right now, and what should we adjust?"*
 
