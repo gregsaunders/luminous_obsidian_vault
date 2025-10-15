@@ -18,7 +18,7 @@ This transition surfaces a critical operational challenge: managing the Naphthen
 - Indigenous community and stakeholder transparency requirements now explicit
 - Operators who establish NA monitoring capabilities before standards are finalized gain positioning advantages
 
-**The challenge:** You cannot get release approval—even if every other contaminant is clean—if Naphthenic Acid levels aren't demonstrated to be safe. NAs are one of the principal contaminants of concern holding back regulatory approval. And current monitoring approaches weren't designed for the operational control this transition requires.
+**The challenge:** You cannot get release approval, even if every other contaminant is clean, if naphthenic acid levels aren't demonstrated to be safe. NAs are one of the principal contaminants of concern holding back regulatory approval. And current monitoring approaches weren't designed for the operational control this transition requires.
 
 ---
 
@@ -32,7 +32,7 @@ Today's NA monitoring reality creates a difficult operational situation:
 - **Quarterly snapshots** of a dynamic biological treatment process
 - **By the time NA data arrives, treatment conditions have already changed**
 
-**Real-world example:** The recent multi-season Kearl engineered wetland study collected 9 NA samples over two field seasons. When natural NA degradation rates declined mid-season, this wasn't discovered until the following year's data analysis—too late to optimize or course-correct. Operators were making decisions based on data that was 2-6 months old.
+**Real-world example:** The recent multi-season Kearl engineered wetland study collected 9 NA samples over two field seasons. When natural NA degradation rates declined mid-season, this wasn't discovered until the following year's data analysis - too late to optimize or course correct. Operators were making decisions based on data that was 2-6 months old.
 
 **The operational impact:**
 - NA treatment failures detected months after they occur
@@ -43,7 +43,11 @@ Today's NA monitoring reality creates a difficult operational situation:
 
 **Important context:** HRMS is the gold standard for NA regulatory compliance, and rightly so. Its molecular-level precision is indispensable for forensic analysis and final release authorization. But HRMS was designed for forensic NA analysis, not high-frequency operational monitoring. Using it as the sole monitoring tool creates a data scarcity problem that prevents effective process control.
 
-**What's needed:** The ability to ask and answer the question *"Is NA treatment working right now, and what should we adjust?"* daily, not quarterly.
+**What's needed:** The ability to ask and answer the question: 
+
+*"Is NA treatment working right now, and what should we adjust?"* 
+
+Daily, not quarterly.
 
 ---
 
@@ -69,8 +73,8 @@ Luminous BioSolutions has developed an integrated platform that addresses the op
 
 **TIER 3: AI-Native Intelligence Platform (Confluent)**
 - **Natural language querying:** Ask questions in plain English, get answers from decades of data
-- **Unified structured + unstructured data:** Current biosensor results automatically linked to historical PDF reports describing similar NA conditions
-- **Multi-stakeholder transparency:** One platform, three dashboards (operators/regulators/communities)
+- **Unified structured + unstructured data:** Current biosensor results automatically linked to historical PDF/excel reports describing similar NA conditions
+- **Multi-stakeholder transparency:** One platform, multiple dashboards (operators/regulators/communities/etc.)
 - **Compounding intelligence:** System gets smarter with every dataset added
 - **Role:** Decision support system transforming NA data into actionable insights
 
@@ -78,13 +82,13 @@ Luminous BioSolutions has developed an integrated platform that addresses the op
 
 **The capability:**
 1. **Operational frequency:** Daily NA screening at a fraction of HRMS cost enables near real-time process control
-2. **Accessible institutional knowledge:** Decades of NA reports locked in PDFs become queryable—"Show me all wetland areas where NA levels increased after heavy rain in the last 3 years"
+2. **Accessible institutional knowledge:** Decades of NA reports locked in PDFs and excel spreadsheets become queryable - "Show me all wetland areas where NA levels increased after heavy rain in the last 3 years"
 3. **Data-driven treatment optimization:** High-frequency monitoring enables A/B testing of NA approaches with statistical significance
 4. **Integrated transparency:** Same trusted data, appropriate presentation for operators/regulators/communities
-5. **Strategic HRMS deployment:** Reserve gold-standard validation for quarterly biosensor correlation and regulatory milestones—comprehensive coverage within existing budgets
+5. **Strategic HRMS deployment:** Reserve gold-standard validation for quarterly biosensor correlation and regulatory milestones, comprehensive coverage within existing budgets
 
 **The validation:**
-- Peer-reviewed publication (*ACS Synthetic Biology*, 2024; additional papers expected year-end 2025)
+- Peer-reviewed publication (*ACS Synthetic Biology*, 2024; additional papers from Kearl Engineered Wetland expected year-end 2025)
 - Field-tested under real operational conditions at Kearl multi-season engineered wetland study
 - University partnerships (Athabasca, Calgary) providing independent validation
 - Demonstrated high correlation with industry gold-standard Orbitrap Mass Spectrometry on real OSPW samples
@@ -100,10 +104,10 @@ The Luminous platform creates value across multiple dimensions:
 ### 1. Risk Reduction: Early Detection Prevents Costly Failures
 
 **Without operational monitoring:**
-NA treatment system begins failing in May. Next HRMS sample collected July, results returned September. Failure detected 4 months late. Corrective action in October too late to salvage seasonal treatment window. **Result: $2-5M in wasted treatment costs, 12-month remediation delay.**
+NA treatment system begins failing in May, next HRMS sample collected July, results returned September. Failure detected 4 months late. Corrective action in October too late to salvage seasonal treatment window. **Result: $2-5M in wasted treatment costs, 12-month remediation delay.**
 
-**With operational monitoring:**
-Daily biosensor screening detects anomalous NA increase within 72 hours. Confluent flags pattern as similar to 2019 incident documented in historical PDF. Operator investigates, discovers wetland flow obstruction. Issue corrected within one week. Seasonal treatment effectiveness preserved.
+**With Luminous operational monitoring:**
+Daily biosensor screening detects anomalous NA increase within 72 hours. Confluent flags pattern as similar to 2019 incident documented in historical PDF/excel spreadsheets. Operator investigates, discovers wetland flow obstruction. Issue corrected within one week. Seasonal treatment effectiveness preserved.
 
 **Value:** Avoided costs, maintained regulatory timeline, prevented environmental exceedance, preserved stakeholder confidence.
 
@@ -112,17 +116,17 @@ Daily biosensor screening detects anomalous NA increase within 72 hours. Conflue
 **Current constraint:**
 Operators choose between comprehensive spatial coverage (many sampling points, high cost) OR frequent temporal monitoring (many time points, high cost). Budget constraints force compromise—adequate coverage in neither dimension.
 
-**With integrated monitoring:**
+**With Luminous integrated monitoring:**
 Cost-effective biosensor screening provides daily NA monitoring across all sampling points. HRMS budget strategically deployed for quarterly biosensor validation and regulatory compliance milestones.
 
-**Value:** Comprehensive spatial + temporal coverage without budget increase. Better NA data for the same cost.
+**Value:** Comprehensive spatial + temporal coverage within budget tolerances, better NA data for the similar cost.
 
 ### 3. Treatment Optimization: Evidence-Based Adjustments
 
 **Current approach:**
 NA remediation strategies based on sparse pilot data. Treatment adjustments made on engineering judgment, not empirical validation. Performance variability attributed to "site-specific conditions" without quantitative analysis.
 
-**With high-frequency monitoring:**
+**With Luminous high-frequency monitoring:**
 Sufficient datasets enable correlation analysis (which parameters drive NA degradation?), A/B testing of treatment approaches, predictive modeling (forecast outcomes under different scenarios), continuous improvement through systematic optimization.
 
 **Value:** Higher treatment effectiveness, faster remediation timelines, defensible scale-up decisions, reduced trial-and-error costs.
@@ -137,7 +141,7 @@ Real-time community dashboard provides continuous visibility into NA trends. Tra
 
 **Value:** Enhanced social license, reduced regulatory friction, genuine partnership with Indigenous communities, differentiation through transparency leadership.
 
-**Example:** Early engagement with Mikisew Cree First Nation consultants revealed concerns about regulatory loopholes and operator trust gaps. Confluent's independent, auditable monitoring framework directly addresses these concerns—positioning operators using this approach as social license leaders.
+**Example:** Early engagement with Mikisew Cree First Nation consultants revealed concerns about regulatory loopholes and operator trust gaps. Confluent's independent, auditable monitoring framework directly addresses these concerns, positioning operators using this approach as social license leaders.
 
 ### 5. Regulatory Preparedness: Early Positioning Advantage
 
@@ -168,7 +172,7 @@ Monitoring solution only. Operator handles stakeholder engagement separately. Li
 
 ✅ **Operational Intelligence:** Treatment optimization recommendations, early warning system, cross-site comparative analysis
 
-✅ **System Integration:** REST/GraphQL APIs for LIMS, SCADA, GIS systems—works with existing infrastructure
+✅ **System Integration:** REST/GraphQL APIs for LIMS, SCADA, GIS systems works with existing infrastructure
 
 **The result:** Not just a monitoring service, but a complete NA intelligence platform addressing technical, regulatory, and social license challenges in an integrated way.
 
