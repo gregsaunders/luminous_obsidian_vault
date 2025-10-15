@@ -169,7 +169,7 @@ Most environmental data systems are databases with visualization layers, essenti
 **What makes Confluent "AI-Native" for NA Intelligence?**
 
 **1. Model-Agnostic Orchestration:**
-Confluent's architecture is designed with AI-model agnostic orchestration, enabling operators to leverage multiple LLMs (Claude, GPT-4, Gemini) and adapt as AI capabilities evolve, avoiding vendor lock-in while ensuring access to cutting-edge AI advances for NA intelligence. Different NA query types route to optimal models: NA pattern recognition to one LLM, natural language summarization of NA trends to another, predictive NA forecasting to specialized models.
+Confluent's architecture is designed with AI-model agnostic orchestration, enabling operators to leverage multiple LLMs (Claude, GPT5, Gemini) and adapt as AI capabilities evolve, avoiding vendor lock-in while ensuring access to cutting-edge AI advances for NA intelligence. Different NA query types route to optimal models: NA pattern recognition to one LLM, natural language summarization of NA trends to another, predictive NA forecasting to specialized models.
 
 **2. Graph Database Foundation for NA Data:**
 Built on TerminusDB, a graph database specifically designed for complex data relationships. Unlike traditional relational databases where relationships are implicit (foreign keys), graph databases make relationships explicit and queryable. This architecture enables Confluent to automatically discover connections across NA datasets that would require extensive manual SQL joins in traditional systems.

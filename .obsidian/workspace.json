@@ -4,19 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "5859f44bed49af6e",
+        "id": "d902c8dc477364d0",
         "type": "tabs",
         "children": [
           {
-            "id": "ba11c775785f333f",
+            "id": "62750cc74e0b3e31",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "02-COMPANY-ASSETS/legal/Agreements/2025-01-30a Agreement in principle v1 2.pdf"
+                "file": "02-COMPANY-ASSETS/presentations/Luminous-Presentation.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "2025-01-30a Agreement in principle v1 2"
+              "icon": "lucide-file",
+              "title": "Luminous-Presentation"
             }
           }
         ]
@@ -207,18 +209,19 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "ba11c775785f333f",
+  "active": "62750cc74e0b3e31",
   "lastOpenFiles": [
+    "02-COMPANY-ASSETS/presentations/Internal Papers/Investor-Pitch-Deck.md",
+    "02-COMPANY-ASSETS/presentations/Internal Papers/Solution-Overview.md",
+    "02-COMPANY-ASSETS/presentations/Internal Papers/White-Paper-AI-Native-Monitoring.md",
+    "02-COMPANY-ASSETS/presentations/Internal Papers/Executive-Brief.md",
+    "02-COMPANY-ASSETS/legal/Agreements/2025-01-30a Agreement in principle v1 2.pdf",
     "02-COMPANY-ASSETS/presentations/_archive/Luminous-Presentation-11-Slides-NA-SPECIFIC.md",
     "02-COMPANY-ASSETS/presentations/Luminous-Presentation.md",
     "02-COMPANY-ASSETS/presentations/_archive/Luminous-Presentation-11-Slides-CONTENT.md",
-    "02-COMPANY-ASSETS/presentations/Internal Papers/White-Paper-AI-Native-Monitoring.md",
-    "02-COMPANY-ASSETS/presentations/Internal Papers/Investor-Pitch-Deck.md",
-    "02-COMPANY-ASSETS/presentations/Internal Papers/Solution-Overview.md",
     "02-COMPANY-ASSETS/presentations/Elevator-Pitches.md",
     "02-COMPANY-ASSETS/presentations/_archive/Elevator-Pitches-2025.md",
     "02-COMPANY-ASSETS/presentations/Internal Papers/_archive/Executive-Brief-2025-NA-SPECIFIC.md",
-    "02-COMPANY-ASSETS/presentations/Internal Papers/Executive-Brief.md",
     "02-COMPANY-ASSETS/presentations/_archive",
     "02-COMPANY-ASSETS/presentations/Internal Papers/_archive",
     "02-COMPANY-ASSETS/presentations/Luminous-Presentation-11-Slides-REVISED-2025.md",
@@ -240,9 +243,7 @@
     "Untitled",
     "02-COMPANY-ASSETS/presentations/Luminous-Presentation-PowerPoint-Build-Guide.md",
     "02-COMPANY-ASSETS/presentations/Luminous-Presentation-11-Slides-CONTENT.md",
-    "02-COMPANY-ASSETS/presentations/Internal Papers/Executive-Brief-2025-REVISED.md",
     "02-COMPANY-ASSETS/legal/Agreements/2025-01-30a Agreement in principle v1.pdf",
-    "02-COMPANY-ASSETS/legal/Agreements/2025-01-30a Agreement in principle v1 2.pdf",
     "01-ACTIVE-BUSINESS/outreach/email-templates",
     "02-COMPANY-ASSETS/funding-and-investment",
     "03-DEVELOPMENT/partnerships/Alberta Innovates",
