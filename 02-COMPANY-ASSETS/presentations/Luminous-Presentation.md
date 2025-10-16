@@ -457,7 +457,7 @@ The Scale of the Challenge
 = 560,000 Olympic-sized swimming pools
 = Enough to fill Lake Louise 28 times
 
-**300 Square Kilometers**
+**300 Square Kilometres**
 = Size of City of Calgary
 = Significant land footprint
 
