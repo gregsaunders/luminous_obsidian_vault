@@ -46,9 +46,14 @@ This file is a **living document**. It should feel like "muscle memory" - the fo
 **Key Decision:** All documents aligned to "humble Canadian confidence" tone and NA-scoping for North America market.
 
 ### Current Positioning Statement
-**"Luminous BioSolutions provides complementary monitoring that helps fill gaps in current approaches - giving all stakeholders better data for better decisions about tailings management."**
+**"Luminous BioSolutions provides an integrated NA intelligence platform combining rapid biosensor screening (24-hour operational data) with AI-native Confluent platform (transforming data into actionable insights and stakeholder transparency)."**
 
-**NOT:** "Revolutionary breakthrough" or "transformational solution" - we're an important part of the solution, not the savior.
+**Three-Tier Integrated Approach:**
+- **Tier 1 (HRMS):** Compliance & validation - gold standard for regulatory reporting
+- **Tier 2 (Biosensor):** Operational screening - 24-hour NA results for treatment optimization
+- **Tier 3 (Confluent):** AI-native intelligence - transforms monitoring data into operational insights and multi-stakeholder transparency
+
+**NOT:** "Revolutionary breakthrough" or "transformational solution" - we're an important part of the solution, not the savior. But we're the ONLY integrated platform that combines biosensor + AI-native intelligence for the NA bottleneck.
 
 ### Strategic Focus Areas
 - **Primary:** Oil sands operators (pathway from containment to release)
@@ -64,34 +69,58 @@ This file is a **living document**. It should feel like "muscle memory" - the fo
 
 **CRITICAL CONTEXT:** Oil sands operators have been in containment mode since 1964. They are NOT motivated by disaster prevention or catastrophe avoidance. Their pain point is:
 - 60+ years of expensive, indefinite containment with no end in sight
+- **Tailings ponds are approaching capacity while Alberta Government wants to double oil production** - containment is becoming physically impossible
+- **The Alberta Government is pushing for Water Release guidelines that will move Oil Sands Operators from Containment to ready to release** - regulatory momentum creating urgent timeline (12-18 months for standards)
 - Massive environmental liability sitting on balance sheets
-- No regulatory pathway for water release due to NAFC toxicity
+- No regulatory pathway for water release due to NAFC toxicity (NAs are principal contaminant preventing approval)
+- **Indigenous communities are justifiably skeptical that release guidelines will truly address their environmental health concerns** - stakeholder trust is essential, not optional
 - Government dependent on oil sands revenue (regulatory balance challenge)
 
-**Real Motivation:** Finding a pathway from containment to regulated release - reducing liability, not avoiding disaster.
+**Real Motivation:** Finding a pathway from containment to regulated release - reducing liability, not avoiding disaster. This is urgent due to capacity constraints and imminent regulatory standards.
 
-**Strategic Implication:** Message around "enablement and hope" (pathway to closure) NOT "fear and risk" (preventing catastrophe).
+**Strategic Implication:** Message around "enablement and hope" (pathway to closure) NOT "fear and risk" (preventing catastrophe). Emphasize early positioning advantage for operators who establish monitoring capabilities before release standards finalized. Confluent's multi-stakeholder transparency directly addresses Indigenous skepticism through accessible, auditable data.
 
 ### 2.2 Core Messaging Framework
 
 #### Strategic Positioning
 **Primary Message:**
-"Luminous provides the trusted, high-frequency data required to finally move from costly containment to regulated release. We de-risk the transition for operators and give regulators the confidence to say 'yes'."
+"Luminous provides an integrated NA intelligence platform that finally moves operators from costly containment to regulated release - combining rapid biosensor screening (24-hour operational data) with AI-native Confluent platform (actionable insights + stakeholder transparency)."
 
 **Key Themes:**
 1. **Enablement** - Making the pathway possible (not preventing disaster)
-2. **Complementary** - Filling gaps in current approaches (not replacing HRMS)
-3. **Transparency** - Data that all stakeholders can access and verify
-4. **Practical** - 24-hour results enable operational optimization
+2. **Integrated Intelligence** - Biosensor + Confluent together > sum of parts (monitoring becomes intelligence)
+3. **Transparency** - Multi-stakeholder dashboards with auditable data addressing Indigenous skepticism
+4. **Operational** - 24-hour biosensor results + AI-driven treatment recommendations
+5. **AI-Native Differentiation** - Natural language querying, unified structured + unstructured data, compounding intelligence
 
-#### Three-Tier Strategy (NA-Specific Positioning)
-1. **Market Education Authority** - Industry doesn't know 24-hour NA monitoring is possible
-2. **Pathway Enabling** - Technology that enables transition from containment to release
-3. **Scientific Credibility** - Peer-reviewed foundation, honest limitations discussion
+#### Three-Tier Monitoring Strategy (Core Positioning Framework)
+**This is the foundational framework for all messaging:**
+
+**Tier 1: Compliance & Validation (HRMS)**
+- Gold standard for regulatory reporting
+- 6-8 week turnaround, $700-$1,000 per sample
+- Required for final compliance - we acknowledge this openly
+- Role: Validation standard that all other methods must correlate against
+
+**Tier 2: Operational Screening (Luminous Biosensor)**
+- Rapid NA detection (24-hour results)
+- Cost-effective frequency enabling daily monitoring
+- Three-panel detection system (compound-class specificity)
+- Role: Bridge the gap between compliance events with operational intelligence
+
+**Tier 3: AI-Native Intelligence (Confluent Platform)**
+- Transforms monitoring data into actionable operational insights
+- Natural language querying (ask questions in plain English)
+- Unified structured + unstructured data (biosensor results + historical PDFs)
+- Multi-stakeholder transparency (operator/regulator/community dashboards)
+- Role: Decision support system + stakeholder transparency platform
+
+**Integrated Value:** Biosensor provides operational frequency, Confluent provides intelligence. Together they enable data-driven treatment optimization + stakeholder trust. Neither delivers full value alone.
 
 #### Value Proposition Evolution
-- ❌ **OLD:** "Revolutionary real-time environmental monitoring"
-- ✅ **NEW:** "Complementary monitoring that helps fill gaps in tailings management"
+- ❌ **OLD (Sept 2025):** "Revolutionary real-time environmental monitoring"
+- ✅ **CURRENT (Oct 2025):** "Integrated NA intelligence platform - biosensor + AI-native Confluent"
+- ✅ **POSITIONING:** Not just monitoring (data collection), but intelligence (data → insights → action + transparency)
 
 ### 2.3 Tone & Communication Standards: "Humble Canadian Confidence"
 
@@ -123,108 +152,379 @@ We're offering better monitoring data (important contribution), not transformati
 - **Authenticity valued** - Industry veterans approached as advisors, not prospects
 - **Startup support** - David vs. Goliath appeal, community likes supporting local tech
 
-### 2.4 Technical Specifications
+### 2.4 Integrated Platform Technical Specifications
 
-#### Biosensor Performance
-- **Detection Limits:**
-  - p3680-lux: 2-4 mg/L
-  - marR-lux: 7-15 mg/L
-  - atuA-lux: 15-30 mg/L
-- **OSPW Success Rate:** 22/24 samples detected (92% reliability)
-- **MS Correlation:** R = -0.97 to -0.99 (p < 0.00) in controlled mesocosm studies
-- **Signal Loss Threshold:** 32-36 mg/L (correlates with MS low-detection limits)
-- **Response Time:** 24-hour incubation for quantitative results
-- **Format:** 96-well plates for high-throughput screening
+#### 2.4A: Tier 2 - Biosensor Technology (Operational Screening)
 
-#### Confluent Platform Capabilities
-- **Data Architecture:** CSV export, REST API, LIMS integration
-- **Sample Volume:** 0.1-100 mL (scalable formats)
-- **Sample Preparation:** Minimal to moderate (concentration may be required)
-- **Matrix Compatibility:** Direct application to raw OSPW demonstrated
-- **Throughput:** 96-well format enables operational monitoring frequency
+**Detection Performance:**
+- **Three-Panel Detection System:**
+  - Panel 1 (Acyclic NAs): 2-15 mg/L detection range
+  - Panel 2 (Complex/Aromatic NAs): 2-16 mg/L detection range
+  - Panel 3 (Classical NAs): 1.5-30 mg/L detection range
+- **Compound-Class Specificity:** Goes beyond simple total NA quantification - provides insight into which NA fractions are responding to treatment
+- **OSPW Success Rate:** 92% reliability in raw OSPW samples (22/24 samples detected)
+- **MS Correlation:** High correlation (R > 0.9) in controlled mesocosm studies, with specific correlation coefficients to be published in peer-reviewed validation paper (expected year-end 2025)
 
-#### Peer-Reviewed Foundation
-- **Publication:** ACS Synthetic Biology (real peer-reviewed science, not marketing)
-- **Field Validation:** Kearl wetland project (head-to-head biosensor vs. mass spectrometry)
-- **Independent Validation:** Third-party testing sought to build credibility
+**Operational Capability:**
+- **Response Time:** 24-hour turnaround from sample collection to results
+- **Sample Requirements:**
+  - Volume: 0.1-100 mL (scalable formats)
+  - Preparation: Minimal to moderate (concentration may be required for low NA levels)
+  - Matrix: Direct application to raw OSPW demonstrated
+- **Throughput:** 96-well format enables simultaneous processing of 96 samples per batch
+- **Scalability:** Hundreds to thousands of tests per day capacity
+- **Integration:** Results delivered to Confluent platform within 24 hours of receipt
+
+**Peer-Reviewed Foundation:**
+- **Publication:** ACS Synthetic Biology, 2024 (establishes credibility as real science, not marketing)
+- **Field Validation:** Kearl wetland project (head-to-head biosensor vs. Orbitrap Mass Spectrometry on real OSPW)
+- **Additional Publications:** Multiple peer-reviewed papers expected year-end 2025
+- **Independent Validation:** Third-party testing sought to build additional credibility
+
+**Strategic Positioning:**
+Explicitly designed to complement HRMS, not compete. HRMS provides molecular-level precision for compliance. Biosensor provides operational frequency for process control. Together: strategic HRMS deployment (quarterly validation) + cost-effective daily biosensor screening.
+
+---
+
+#### 2.4B: Tier 3 - Confluent Platform (AI-Native Intelligence)
+
+**What Makes Confluent "AI-Native":**
+Most environmental data systems are databases with visualization layers - digital filing cabinets. Confluent is fundamentally different: built from inception in the era of large language models and graph databases where data relationships are explicit, unstructured information is queryable, and natural language becomes the interface.
+
+**Core AI-Native Capabilities:**
+
+**1. Model-Agnostic AI Orchestration:**
+- Leverages multiple AI models (Claude, GPT-4, Gemini) based on task requirements
+- Avoids vendor lock-in while accessing cutting-edge AI advances
+- Routes pattern recognition, forecasting, and natural language queries to optimal models
+- Adapts as AI capabilities evolve without platform redesign
+
+**2. Graph Database Foundation (TerminusDB):**
+- Makes data relationships explicit and queryable (vs. implicit foreign keys in relational databases)
+- Automatically discovers connections across datasets: "Sample #4523 taken at GPS X,Y on Date Z during 15mm rainfall, correlates with increased flow in SCADA data, similar to 2019 PDF-documented pattern"
+- Complex relationships queryable without manual data wrangling
+
+**3. Unified Structured + Unstructured Data:**
+- **Structured:** Biosensor results, HRMS data, SCADA outputs, sensor readings, flow meters
+- **Unstructured:** PDF reports, consultant studies, regulatory submissions, spreadsheets, internal memos
+- **Result:** Current biosensor results automatically link to historical consultant reports describing similar NA conditions from years ago
+- **Value:** Decades of institutional knowledge trapped in PDFs becomes queryable alongside real-time monitoring data
+
+**4. Natural Language Querying:**
+Operators ask questions in plain English, not SQL:
+- *"Show me all wetland areas where NA levels increased after heavy rain events in last 3 years"*
+- *"Compare NA degradation rates between shallow vegetated cells and deep open water cells"*
+- *"What treatment adjustments worked when NA levels exceeded 25 mg/L for three consecutive weeks?"*
+
+Confluent queries graph database, retrieves relevant historical PDFs, correlates with weather/SCADA data, returns map visualizations + trend charts + historical context + evidence-based recommendations.
+
+**5. Compounding Intelligence Effect:**
+Platform becomes more valuable with every dataset added:
+- **Day 1:** Biosensor data alone → spatial visualization, temporal trends, basic reporting
+- **Month 3:** + Historical HRMS data → automatic correlation validation, 5-year baseline context, anomaly detection
+- **Month 6:** + SCADA & weather data → environmental correlation, treatment effectiveness analysis, predictive modeling
+- **Month 12:** + Historical PDF reports → institutional memory, lessons learned, regulatory precedent
+- **Year 2:** + Multiple sites → cross-site comparison, site-specific optimization, industry benchmarking
+
+This is **compounding intelligence**: each dataset makes previous data more valuable by providing context, validation, and comparative analysis.
+
+**6. Multi-Stakeholder Transparency:**
+One platform, three dashboard views - same trusted data, appropriate presentation:
+
+- **Operator Dashboard:** Real-time biosensor results, HRMS validation status, treatment optimization recommendations, operational alerts, predictive forecasting, full data access/export
+- **Regulator Dashboard:** Compliance metrics, trend analysis, immutable audit trail (no retroactive changes), automated reporting, threshold comparisons
+- **Community/Indigenous Stakeholder Dashboard:** Public-friendly visualizations (color-coded maps, plain language), NA levels relative to safety thresholds, treatment progress, transparency timestamps, educational context
+
+**This multi-view capability directly addresses OSMWSC September 2025 recommendations requiring technology transparency with Indigenous communities and stakeholders.** Rather than producing separate reports for different audiences, Confluent provides real-time access to same dataset, presented appropriately for each stakeholder group.
+
+**Technical Architecture:**
+
+**Data Ingestion Layer:**
+- MinIO object storage (PDFs, spreadsheets, images, SCADA exports)
+- Automated pipeline (OCR, table extraction, metadata tagging)
+- Simple operator interface (point to folder, data automatically ingests)
+
+**Storage & Relationship Layer:**
+- TerminusDB (graph database): Explicit relationship mapping across all data nodes
+- PostgreSQL: Structured data (sensor readings, lab results, time-series)
+- Qdrant (vector database): Semantic search across unstructured text
+- Meilisearch: Fast full-text search for operator queries
+
+**Intelligence Layer:**
+- Chunking & vectorization (text broken into semantic units, embedded for AI querying)
+- Relationship inference (system discovers implied connections)
+- AI query orchestration (routes natural language questions to appropriate models and data sources)
+
+**Interface Layer:**
+- REST API: Programmatic access for integrations
+- GraphQL API: Flexible querying for custom dashboards
+- Frontend (Q4 2025): User interfaces for operators, regulators, community stakeholders
+
+**Integration with Existing Systems:**
+- LIMS systems: API integration for automated data exchange
+- SCADA systems: Real-time operational data ingestion
+- Laboratory systems: HRMS results, water chemistry, toxicology
+- GIS platforms: Spatial data visualization and analysis
+- Regulatory portals: Automated compliance reporting exports
+- Document repositories: PDF ingestion from SharePoint, network drives, consultant deliverables
+
+**Deployment Status:**
+Confluent's AI-native architecture is operational, with backend data services fully deployed and frontend interfaces currently being finalized for Q4 2025 deployment.
+
+**Future Expansion:**
+While currently focused on NA intelligence (the bottleneck preventing water release), Confluent's architecture is designed to eventually integrate monitoring data from other contaminant systems (metals, salts, other organics) as operators expand their comprehensive water treatment programs.
+
+---
+
+#### 2.4C: Integrated Value - Why Biosensor + Confluent Together
+
+**The Value Multiplication:**
+
+**Biosensor Alone:**
+- Gives you 24-hour NA results
+- Still just "more data" without context
+- Operator drowns in spreadsheets
+- Can't discover patterns across years of data
+- Manual correlation with historical information
+
+**Confluent Alone:**
+- Intelligence platform with no operational frequency data to analyze
+- Historical context without current visibility
+- Can't provide near-real-time treatment recommendations
+- Limited value without high-frequency inputs
+
+**Biosensor + Confluent Together:**
+- 24-hour NA results **automatically linked** to 5 years of historical context
+- Anomaly detected **with** similar historical incident flagged from PDF archives
+- Treatment adjustment **with** evidence from past successful interventions surfaced automatically
+- Stakeholder transparency **with** real-time operational data + auditable historical record
+- Natural language queries: "Is this NA pattern normal?" answered with: biosensor data + historical comparisons + weather correlations + treatment recommendations
+
+**Competitive Differentiation:**
+- Competitors offer monitoring solutions OR data platforms
+- Luminous offers **integrated NA intelligence**: monitoring becomes actionable through AI-native intelligence
+- This is not incremental improvement, it's architectural differentiation
+- AI-native design (graph database, model-agnostic orchestration, unified structured + unstructured data) is cutting-edge, not standard industry practice
+
+**Business Value Integration:**
+- **Risk Reduction:** Early detection (biosensor) + pattern recognition from historical data (Confluent) = prevent treatment failures months earlier
+- **Cost Optimization:** High-frequency biosensor data + strategic HRMS validation guided by Confluent insights = 10-50x monitoring frequency increase within budget
+- **Treatment Optimization:** Operational data (biosensor) + AI-driven recommendations (Confluent analyzing past successes) = data-driven adjustments, not guesswork
+- **Social License:** Transparent monitoring (biosensor) + accessible stakeholder dashboards (Confluent) = trust through visibility
+- **Regulatory Preparedness:** Comprehensive datasets (biosensor) + auditable documentation (Confluent) = first-mover advantage for release authorization
 
 ### 2.5 Competitive Positioning Logic
 
-#### What We Are (Complementary Tool)
-- **Tier 2 monitoring solution** - Fills gap between FTIR speed and HRMS accuracy
-- **Operational intelligence** - Enables real-time treatment optimization
-- **Screening tool** - High-frequency data for decision-making between HRMS analyses
+#### What We Are (Integrated NA Intelligence Platform)
+- **Tier 2 + Tier 3 integrated solution** - Biosensor (operational screening) + Confluent (AI-native intelligence)
+- **Not just monitoring** - Transform data into operational insights and stakeholder transparency
+- **Architectural differentiation** - AI-native design (graph database, model-agnostic orchestration, unified structured + unstructured data)
+- **Compounding value** - Platform gets more valuable with every dataset added (Day 1 < Month 3 < Year 2)
 
-#### What We Are NOT (Not a Replacement)
-- **NOT competing with HRMS** - HRMS remains required for final compliance reporting
+#### What We Are NOT (Humble Positioning Maintained)
+- **NOT competing with HRMS** - HRMS remains required for final compliance reporting (we acknowledge this openly)
 - **NOT replacing FTIR** - Different use case and application
-- **NOT claiming perfection** - Every monitoring system has constraints
+- **NOT claiming to solve everything** - We address the NA bottleneck specifically (other contaminants need separate solutions)
+- **NOT traditional monitoring vendor** - We're not selling sensors + dashboards, we're selling integrated intelligence
 
-#### The Monitoring Landscape
-**FTIR Problem:**
+#### The Monitoring Landscape & Our Position
+
+**FTIR:**
 - Fast but non-specific
 - "Cannot distinguish NAs from any other acid, including humic/fulvic acids"
-- "Complete lack of specificity"
+- Problem: False positives from natural organic acids
 
-**HRMS Reality:**
-- Gold standard for accuracy
-- "Prohibitively slow and expensive for frequent monitoring" (6-8 week turnaround)
-- Required for regulatory compliance
+**HRMS (Tier 1):**
+- Gold standard for accuracy and regulatory compliance
+- "Prohibitively slow and expensive for frequent monitoring" (6-8 week turnaround, $700-$1,000/sample)
+- Required for regulatory compliance - we position with this, not against it
 
-**Luminous Position:**
-- Bridges the gap with 24-hour NA-specific results
+**Luminous Biosensor (Tier 2):**
+- Bridges gap with 24-hour NA-specific results
+- Engineered specificity addresses FTIR interference problem
+- Cost-effective frequency enables daily monitoring ($<100/test)
 - Complements HRMS with high-frequency operational data
-- Engineered specificity for NA molecular structures (addresses FTIR interference problem)
+
+**Luminous Confluent (Tier 3):**
+- Transforms monitoring results into actionable intelligence
+- Natural language querying (ask in plain English, get insights)
+- Unified structured + unstructured data (biosensor + historical PDFs)
+- Multi-stakeholder transparency (operator/regulator/community dashboards)
+
+**Integrated Luminous Position:**
+Not "better monitoring" but "monitoring + intelligence + transparency" addressing technical, operational, and stakeholder challenges simultaneously.
 
 #### Key Regulatory Context
-- **AER Compliance:** HRMS remains required standard - we acknowledge this openly
-- **OSMWSC Recommendation 5:** "Standardized method to be developed for measuring naphthenic acids"
-- **Government Pilot Emphasis:** Specifically recommending "pilots on promising active and passive OSMW treatment technologies"
+- **AER Compliance:** HRMS remains required standard - we acknowledge this openly in all communications
+- **OSMWSC September 2025 Recommendations:**
+  - "Standardized method to be developed for measuring naphthenic acids"
+  - "Pilots on promising active and passive OSMW treatment technologies" requiring operational monitoring
+  - **"Operators should strive to share relevant information about technologies they are piloting with Indigenous communities, public and stakeholders"** - Confluent's multi-stakeholder dashboards directly address this requirement
+- **Release Standards Timeline:** 12-18 months for finalization - early adopters gain positioning advantage
+- **Capacity Urgency:** Tailings ponds approaching capacity while government wants to double oil production - containment becoming impossible
 
 ### 2.6 Authority Building Formula
 
 **Technical Credibility + Humble Positioning + Honest Limitations = Stakeholder Trust**
 
 #### What Works for Technical Credibility:
-1. **Real numbers over descriptions** - Correlation coefficients (R = -0.97 to -0.99), detection ranges, success rates
-2. **Honest limitations discussion** - "HRMS remains required standard for compliance" stated explicitly
-3. **Peer-reviewed foundation** - ACS Synthetic Biology citation builds credibility
-4. **Operational understanding** - Interference studies, matrix considerations addressed
-5. **Professional humility** - "Complementary tool" positioning vs. "revolutionary" claims
+1. **Real numbers over descriptions** - "High correlation (R > 0.9)" not vague "strong correlation", detection ranges, success rates (92% in raw OSPW)
+2. **Honest limitations discussion** - "HRMS remains required standard for compliance" stated explicitly in all materials
+3. **Peer-reviewed foundation** - ACS Synthetic Biology citation builds credibility (real science, not marketing)
+4. **Operational understanding** - Interference studies, matrix considerations addressed transparently
+5. **Professional humility** - "Integrated NA intelligence platform" vs. "revolutionary breakthrough" claims
+6. **AI-native differentiation** - Specific technical details (graph database, model-agnostic orchestration) not buzzwords
 
 #### The Technical Brief A+ Standard
 **This is the gold standard for all technical content going forward:**
-- Data-first approach (performance specs in abstract)
-- Honest limitations section (when to use HRMS instead)
-- Professional positioning (complementary, not replacement)
-- Technical architecture details (CSV export, REST API integration)
-- Regulatory reality acknowledgment (AER compliance requirements)
+
+**For Biosensor Content:**
+- Data-first approach (performance specs, high correlation stated clearly)
+- Honest limitations section (when to use HRMS instead, detection range constraints)
+- Professional positioning (complementary to HRMS, not competing)
+- Regulatory reality acknowledgment (AER compliance requirements explicit)
+
+**For Confluent Content:**
+- Architecture details that demonstrate AI-native differentiation (TerminusDB graph database, model-agnostic orchestration, unified structured + unstructured data)
+- Compounding intelligence effect explained with concrete progression (Day 1 → Month 12 → Year 2)
+- Multi-stakeholder transparency capability tied directly to OSMWSC requirements
+- Integration specifications (REST/GraphQL APIs, LIMS/SCADA/GIS connectivity)
+
+**For Integrated Platform Content:**
+- Value multiplication clearly explained (biosensor alone < Confluent alone < biosensor + Confluent together)
+- Competitive differentiation: "monitoring + intelligence + transparency" not "better monitoring"
+- Real-world scenarios showing integration value (anomaly detected WITH historical context surfaced automatically)
 
 **Scientist Response to A+ Standard:** "Would I take a technical briefing? Absolutely, and I'd recommend colleagues attend."
 
+**CTO/Data Leader Response to Confluent:** "This is actually AI-native architecture, not just buzzwords slapped on a traditional database."
+
 ---
+
+### 2.7 Foundational Documents (Reference Sources)
+
+**Purpose of this section:** Capture exact quotes, data, and context from foundational regulatory and scientific documents that underpin Luminous positioning. This prevents AI from misrepresenting or guessing at regulatory requirements and technical claims.
+
+**File Locations:**
+- Regulatory: `02-COMPANY-ASSETS/regulatory/`
+- Scientific: `02-COMPANY-ASSETS/technical-docs/scientific-foundation/`
+
+#### 2.7A: Regulatory Foundation (OSMWSC September 2025)
+
+**Source:** OSMWSC Sept 25 Recommendations.md
+
+**KEY QUOTE - Technology Transparency Requirement:**
+> "Operators should strive to share the relevant information about the technologies they are piloting with the Indigenous communities, public and stakeholders to ensure awareness and build trust."
+
+**This is THE quote that makes Confluent's multi-stakeholder transparency a regulatory advantage.**
+
+**Release Standards Urgency:**
+> "Government of Alberta expedite the establishment of release standards for treated OSMW"
+- Timeline: 12-18 months expected for finalization
+- Creates urgency for operators to establish monitoring capabilities now
+
+**Pilot Program Emphasis:**
+> "The Government of Alberta continue to work with the oil sands industry, technology providers and research organizations to develop and conduct pilots on promising active and passive OSMW treatment technologies."
+
+**Indigenous Concerns (Official Context):**
+> "Many Indigenous communities oppose treated OSMW release... concerned about cumulative effects, impacts on aquatic habitat, human health, and Indigenous rights."
+- This justifies Confluent's multi-stakeholder dashboard as addressing documented regulatory concern
+
+**Water Monitoring Transparency:**
+> "Enhance transparency in data analysis and dissemination... accelerating timelines for release of water monitoring data in accessible and user-friendly formats."
+> "Quick data turnaround is crucial for making timely decisions, implementing effective mitigation efforts, and building trust with local communities."
+
+**Scale Context:**
+- 1.5 billion m³ fluid tailings accumulated
+- 400 million m³ mine water
+- No current release guidelines
+- Ponds approaching capacity while government wants to double oil production
+
+---
+
+#### 2.7B: Scientific Foundation (Bookout et al. ACS Synthetic Biology 2024)
+
+**Citation:** https://doi.org/10.1021/acssynbio.4c00260
+
+**Three-Panel Biosensor Detection Limits:**
+- p3680: 1.5 mg/L (simple "classic" NAs)
+- atuA: 15 mg/L (acyclic NAs)
+- marR: 16 mg/L (complex/aromatic NAs)
+
+**OSPW Performance:**
+- 22/24 samples (92%) induced significant response
+- Minimal sample preparation required
+- Raw OSPW analysis demonstrated
+
+**Specificity Profiles:**
+- atuA: Acyclic naphthenic acids
+- marR: Complex multiringed NAs
+- p3680: Classic NAs (cyclopentane, cyclohexane carboxylic acids)
+
+**Organism:** _Pseudomonas_ sp. OST1909 (tailings pond-derived, environmentally relevant)
+
+**Peer-Review:** Published ACS Synthetic Biology 2024 (establishes scientific credibility)
+
+---
+
+#### 2.7C: Field Validation (Kearl Wetland Study)
+
+**Source:** Summary Kearl Wetland.md
+
+**Study Scale:**
+- 1 hectare pilot wetland
+- 6,400-10,800 m³ OSPW capacity
+- 98-day field season (2022)
+- Orbitrap MS validation (high-resolution)
+
+**Treatment Performance:**
+- 36% total NAFC reduction over 98 days
+- NA removal rates: 0.25-0.53 mg/L/day
+- Initial: 57-72 mg/L → Final: 40.5 ± 2.7 mg/L
+
+**Molecular Findings:**
+- O₂-NAFCs (most toxic) declined 65% → 45%
+- Selective removal of highest MW compounds
+- 80% of attenuation from O₂-NAFC removal
+
+**Biosensor-MS Correlation:**
+- High correlation demonstrated on real OSPW
+- Field conditions validation (not just lab)
+- Enables near-real-time treatment adjustments
+
+**Strategic Value:**
+- Demonstrates WHY operational frequency matters
+- Seasonal variations require adaptive management
+- Biosensor frequency + Confluent intelligence = optimized outcomes
+
 
 ## SECTION 3: STANDARD Q&A RESPONSES
 
 ### Anticipated Questions & Approved Answers
 
 **Q1: How does this compare to HRMS?**
-**A:** "HRMS is the gold standard for accuracy and regulatory compliance - we're not replacing that. What we offer is complementary high-frequency screening (24-hour results) between HRMS analyses. Think of it as operational intelligence that helps you optimize treatment between compliance checkpoints."
+**A:** "HRMS is the gold standard for accuracy and regulatory compliance - we're not replacing that. Our integrated platform works with HRMS: the biosensor provides complementary high-frequency screening (24-hour results) between HRMS analyses, and Confluent transforms all your monitoring data - biosensor, HRMS, SCADA - into actionable intelligence. Think of it as operational intelligence that helps you optimize treatment between compliance checkpoints."
 
 **Q2: What about FTIR - isn't that already fast?**
-**A:** "FTIR is fast, but it lacks specificity - it picks up all carboxyl groups including humic and fulvic acids. Our biosensors are engineered for NA-specific detection, so you're getting speed with specificity. We see this as bridging the gap between FTIR's speed and HRMS's accuracy."
+**A:** "FTIR is fast, but it lacks specificity - it picks up all carboxyl groups including humic and fulvic acids. Our biosensors are engineered for NA-specific detection, so you're getting speed with specificity. We see this as bridging the gap between FTIR's speed and HRMS's accuracy. And Confluent helps you understand the patterns in that data over time."
 
 **Q3: Why should we trust biosensor data?**
-**A:** "Great question. Our biosensors showed R = -0.97 to -0.99 correlation with mass spectrometry in controlled studies, and 92% success rate in raw OSPW samples. The technology is published in ACS Synthetic Biology and validated through the Kearl wetland project. We're also seeking independent third-party validation to build additional credibility."
+**A:** "Great question. Our biosensors showed high correlation (R > 0.9) with mass spectrometry in controlled studies, and 92% success rate in raw OSPW samples. The technology is published in ACS Synthetic Biology and validated through the Kearl wetland project. Specific correlation coefficients will be published in our peer-reviewed validation paper expected year-end 2025. We're also seeking independent third-party validation to build additional credibility."
 
-**Q4: What's the business case? Why would we pay for this?**
-**A:** "The value is in operational optimization and risk reduction. High-frequency data lets you adjust treatment processes in near-real-time rather than waiting 6-8 weeks for HRMS results. You can catch treatment failures early, optimize bioaugmentation dosing, and have better data for stakeholder conversations. It's about making better decisions faster."
+**Q4: What makes Confluent different from other data platforms?**
+**A:** "Most environmental data systems are databases with dashboards - digital filing cabinets. Confluent is AI-native: built on graph databases where data relationships are explicit and queryable, with model-agnostic AI orchestration that lets you ask questions in plain English. It unifies structured data (biosensor results, SCADA) with unstructured data (decades of PDF reports), so current results automatically link to historical context. The platform gets more valuable with every dataset you add - that's the compounding intelligence effect."
 
-**Q5: This sounds too good to be true - what are the limitations?**
-**A:** "Honest answer: HRMS is still required for regulatory compliance - we're not replacing that. Our detection works best in the 2-30 mg/L range, and some sample concentration may be required. We're complementary, not comprehensive. Think of us as one tool in a multi-tiered monitoring strategy, not the only tool you need."
+**Q5: What's the business case? Why would we pay for this?**
+**A:** "The value is in operational optimization, risk reduction, and stakeholder trust. The biosensor gives you 24-hour results so you can catch treatment failures early and optimize processes in near-real-time. Confluent transforms that data into insights: 'Is this NA pattern normal?' answered automatically with historical comparisons and treatment recommendations. Plus multi-stakeholder dashboards address OSMWSC transparency requirements - operators, regulators, and communities all see the same trusted data. It's about making better decisions faster while building social license."
 
-**Q6: How does this help with the pathway to water release?**
-**A:** "Regulated release requires stakeholder confidence - operators, regulators, and communities all need to trust the data. High-frequency, transparent monitoring gives everyone better visibility into treatment effectiveness. For operators, it de-risks the transition. For regulators, it provides confidence for science-based policy. For communities, it's accessible data they can verify independently."
+**Q6: This sounds too good to be true - what are the limitations?**
+**A:** "Honest answer: HRMS is still required for regulatory compliance - we're not replacing that. Our biosensor detection works best in the 2-30 mg/L range, and some sample concentration may be required. We're addressing the NA bottleneck specifically - other contaminants need separate monitoring solutions. We're complementary, not comprehensive. Think of us as one integrated tool in a multi-tiered monitoring strategy, not the only tool you need."
+
+**Q7: How does this help with the pathway to water release?**
+**A:** "Regulated release requires three things: technical capability (NA treatment that works), operational confidence (data showing it's working), and stakeholder trust (communities believe the data). Our integrated platform addresses all three: biosensor provides operational monitoring frequency, Confluent transforms data into evidence of treatment effectiveness, and multi-stakeholder dashboards give communities transparent access to verify progress independently. For operators, this de-risks the transition. For regulators, it provides confidence for science-based policy. For communities, it's accessible, auditable data they can trust."
+
+**Q8: How does this address Indigenous concerns about water release?**
+**A:** "Indigenous communities are justifiably skeptical that release guidelines will truly protect their environmental health - decades of broken promises create that skepticism. Confluent's multi-stakeholder dashboard provides transparent, real-time access to the same NA monitoring data operators see, presented in plain language with educational context. It's auditable (immutable data trail, no retroactive changes) and accessible. This doesn't solve all concerns, but it's a step toward genuine transparency rather than quarterly reports they have to trust blindly. Communities can verify treatment progress independently, not just take industry's word for it."
 
 ---
 
@@ -384,11 +684,30 @@ This is the **staging area** for updates before they get integrated into core se
 - Monthly review prompt added to Prompt Library
 - User approved "learn as we go" philosophy
 
+**[2025-10-18] Major Update: Confluent Elevated to Equal Prominence**
+- Rewrote Section 2.4 to properly separate Biosensor (2.4A) and Confluent (2.4B) with integrated value explanation (2.4C)
+- Updated positioning statement to "Integrated NA intelligence platform" (biosensor + AI-native Confluent)
+- Elevated Three-Tier Strategy to primary positioning framework in Section 2.2
+- Changed MS correlation wording from specific R values to "High correlation (R > 0.9)" with note about year-end 2025 publication
+- Added 3 critical context bullets to Section 2.1: capacity urgency, regulatory momentum, Indigenous skepticism
+- Updated all Q&As (now 8 total) to reflect integrated platform positioning
+- Added Confluent-specific Q&A (Q4) and Indigenous concerns Q&A (Q8)
+- Emphasize AI-native differentiation (graph database, model-agnostic orchestration, compounding intelligence)
+- Updated Quick Reference to show both Biosensor and Confluent specs equally
+
+**[2025-10-18] Key Learning from This Update:**
+- Original Master Context draft under-sold Confluent dramatically
+- Biosensor + Confluent = integrated intelligence, not just better monitoring
+- Value proposition is "monitoring + intelligence + transparency" not "complementary monitoring"
+- Confluent's multi-stakeholder transparency directly addresses Indigenous skepticism (critical for social license)
+- "High correlation" protects unpublished data while maintaining credibility
+
 **[2025-10-18] Should Add (Future):**
 - Pilot program pricing tiers when finalized
 - Specific consultant discoveries when relevant (from Sept 22 file)
 - Subscription pricing model details when operational
 - CDL Rockies status updates when decisions made
+- Specific correlation coefficients when published (year-end 2025)
 
 ---
 
@@ -457,11 +776,20 @@ This preserves institutional knowledge about what didn't work and why. Prevents 
 - Make immediate sales asks
 
 ### Technical Specs Quick Reference
-- **Detection:** 2-30 mg/L range across three biosensors
-- **Correlation:** R = -0.97 to -0.99 vs. MS
+
+**Biosensor (Tier 2):**
+- **Detection:** 2-30 mg/L range across three biosensor panels
+- **Correlation:** High correlation (R > 0.9) vs. MS (specific values in year-end 2025 publication)
 - **Success Rate:** 92% in raw OSPW
 - **Speed:** 24 hours vs. 6-8 week HRMS
-- **Platform:** 96-well, CSV export, REST API
+- **Throughput:** 96-well format, hundreds to thousands tests/day
+
+**Confluent (Tier 3):**
+- **Architecture:** Graph database (TerminusDB), AI-model agnostic orchestration
+- **Data:** Unified structured + unstructured (biosensor + PDFs + SCADA + HRMS)
+- **Interface:** Natural language querying, REST/GraphQL APIs
+- **Dashboards:** Multi-stakeholder (operator/regulator/community)
+- **Intelligence:** Compounding value (Day 1 < Month 3 < Year 2)
 
 ### Authority Building Checklist
 - [ ] Real numbers included (correlation coefficients, detection limits)
