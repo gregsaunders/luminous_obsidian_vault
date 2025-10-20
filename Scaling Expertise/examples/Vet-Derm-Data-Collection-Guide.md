@@ -1,255 +1,222 @@
-# How to Get This Information from a Busy Vet (Without Making Them Hate You)
+# Quick Guide: Getting Info from Tara (For Jeff)
 
-**Reality check:** Vets are slammed. They won't fill out a 10-page form. Here's how to actually get this information.
+**The Real Problem:** Tara spends 2-5 hours on her DAY OFF doing medical records, unpaid. This is the bottleneck.
 
----
-
-## STRATEGY 1: The "Shadow & Observe" Method (Best Option)
-
-**What you do:** Spend 3-4 hours shadowing the vet during a clinic day.
-
-**When to do it:**
-- Pick a typical day with dermatology appointments
-- Ask to observe 3-4 patient exams
-- Stay through post-appointment documentation time
-
-**What to watch for:**
-1. **During the exam (15-20 min):**
-   - How fast does she reach diagnosis?
-   - What does she tell the client verbally?
-   - What notes does she jot down?
-
-2. **After the exam (45-60 min):**
-   - When does she start writing?
-   - What does she reference? (Notes, memory, previous records?)
-   - What does she type first? Last?
-   - How many times does she delete and rewrite?
-   - What makes her pause or slow down?
-
-3. **Ask in the moment:**
-   - "What information is already in your head right now?"
-   - "What's the hardest part about writing this?"
-   - "If you could just say what you want and have it magically written, what would you say?"
-
-**Fill out Parts 1, 2, and 6 of the data collection form based on observation.**
-
-**Time required:** 3-4 hours (one clinic session)
+**The Solution:** 2-3 AI prompt templates that let her capture case details in 2-3 minutes and review/edit output in 5-10 minutes instead of writing from scratch for 30-45 minutes.
 
 ---
 
-## STRATEGY 2: The "Screen Share Recording" Method (If You Can't Shadow)
+## What You Actually Need from Her:
 
-**What the vet does:** Screen record herself writing 2-3 medical records with voice-over narration.
+### 1. Sample Medical Records (CRITICAL)
+**Get 5-10 EzyVet medical records:**
+- De-identified (remove client personal info)
+- Mix of common dermatology cases
+- Shows her actual writing style, structure, tone
 
-**Setup:**
-- Use Loom, Zoom recording, or built-in screen recording
-- 20-30 minutes total recording time
-- She talks through what she's doing: "Okay, I know the diagnosis is atopic dermatitis, now I need to explain this to the owner in simple terms..."
+**How to ask:**
+"Can you export 5-10 recent case records from EzyVet? Just remove client names/addresses. I need to see your actual writing to build prompts that sound like you."
 
-**What you get:**
-- Real-time view of her workflow
-- Verbalized thought process
-- Actual time spent on each section
-- What she struggles with
+**What to look for when you get them:**
+- What structure does she use? (SOAP? Custom format?)
+- What information is always included?
+- What's her tone? (Clinical and terse? Detailed?)
+- What medications/treatments appear frequently?
+- How long are they? (1 paragraph? 1 page?)
 
-**Fill out Parts 1, 2, and 6 based on the recordings.**
+### 2. Treatment Protocols (Quick Reference)
+**Ask her to list:**
+- Top 10 oral medications she prescribes (drug name, typical dose, conditions)
+- Top 5-8 topical treatments (products, application instructions)
+- Top 3-5 prescription foods (brands, conditions)
 
-**Time required (vet):** 30 minutes to record, you analyze later
+**Why:** This becomes the AI's knowledge base. Instead of generic veterinary info, it knows HER preferred treatments.
 
----
+**How to ask:**
+"What are your go-to medications, topicals, and foods? Just a quick list with typical dosages. This helps AI suggest the right treatments for each condition."
 
-## STRATEGY 3: The "Structured Interview" Method (30-Minute Phone Call)
+### 3. Top Conditions She Treats
+**Ask her to list 5-8 most common cases:**
+- Examples: Atopic dermatitis, food allergies, hot spots, yeast infections, etc.
 
-**If the vet won't fill out the form herself, YOU fill it out during a call.**
+**Why:** AI can recognize patterns and apply appropriate protocols.
 
-**Script:**
+### 4. How She Wants to Capture Input
+**Ask:**
+"When you're ready to document a case, would you rather:
+- Talk through it (voice notes)?
+- Type quick bullets?
+- Fill in a structured form?"
 
-"I need 30 minutes to understand your workflow so I can build AI that actually saves you time. I'll ask questions, you give short answers, I'll fill out the form. Deal?"
+**Why:** This determines the input format for the prompts.
 
-**Questions to ask (in order):**
+### 5. Success Criteria
+**Ask:**
+"What would make this worth using? What would make you stop using it?"
 
-**First 5 minutes - Document Inventory:**
-1. "What are the top 3 types of documents you write every week?"
-2. "How long does each take you?"
-3. "Which one do you hate the most?"
-
-**Next 10 minutes - Workflow for #1 hated document:**
-1. "Walk me through the last time you wrote one of these. When did you sit down to write it?"
-2. "At that moment, what information did you already know vs. what did you have to look up?"
-3. "What part takes the longest? Formatting? Finding words? Typing?"
-4. "If I could magically give you back 30 minutes per document, would that matter?"
-
-**Next 10 minutes - Sample review:**
-1. "Can you send me 3-5 examples of [that document type] with patient names removed?"
-2. "When you write these, is there a template you follow, or do you create from scratch each time?"
-3. "What parts stay the same every time vs. what's custom per patient?"
-
-**Last 5 minutes - Success criteria:**
-1. "If AI drafts this for you, what are the 1-2 things you'll ALWAYS need to fix manually?"
-2. "What would make you not trust it?"
-3. "What would make you actually use it?"
-
-**Fill out Parts 1, 2, 5, and 7 during the call.**
-
-**Time required (vet):** 30 minutes, one-time
+**Why:** Understand her tolerance for editing and what "good enough" looks like.
 
 ---
 
-## STRATEGY 4: The "You Build It First, She Refines" Method (Fastest)
+## What You Do Once You Have Samples:
 
-**What you do:** Make educated guesses, build a draft prompt, test it, iterate.
+### Step 1: Analyze the Samples (1-2 hours)
+- Read through 5-10 records
+- Note patterns:
+  - Structure (sections, headers)
+  - Tone (clinical terseness vs. detailed narrative)
+  - What's always included (signalment, diagnosis, meds, follow-up, etc.)
+  - Length (avg word count)
+  - Technical level (for other vets, so technical is fine)
 
-**Step 1: Get samples (5 min from vet)**
-- "Send me 5 examples of [document type] with names removed"
+### Step 2: Build First Prompt (30 minutes)
+- Use [healthcare-prompts.md](healthcare-prompts.md) as starting template
+- Customize based on her samples:
+  - Structure: Match her format
+  - Tone: Match her writing style
+  - Content: Include fields she always fills out
+  - Knowledge base: Include her common medications/treatments
 
-**Step 2: You analyze (1 hour, your time)**
-- Read the samples
-- Identify patterns (what's always included, tone, structure)
-- Note what varies (patient-specific info)
-- Draft initial prompt based on samples
+### Step 3: Test with Her (15 minutes)
+- Ask for details of ONE recent case (not from samples)
+- Run through your prompt
+- Send her the output
+- Ask: "What would you change?"
 
-**Step 3: Test with vet (15 min from vet)**
-- "I built a first version. Give me the details for one of your recent cases, I'll generate a draft, you tell me what's wrong."
-- She gives you diagnosis, treatment, etc.
-- You run it through AI
-- She edits the output
-
-**Step 4: Refine (your time)**
-- Track what she changed
+### Step 4: Refine (30 minutes)
+- Track what she edited
 - Update prompt to address those issues
-- Repeat 2-3 times
+- Test again with 2-3 more cases
 
-**Fill out form based on samples + iteration learnings.**
-
-**Time required (vet):** 5 min (samples) + 15 min (testing) = 20 minutes total
-
----
-
-## STRATEGY 5: The "Existing Records Analysis" Method (You Do the Work)
-
-**What the vet does:** Export 20-30 recent medical records from EzyVet (anonymized)
-
-**What you do:**
-1. **Analyze document types:**
-   - Categorize records by type
-   - Count frequency of each type
-   - Estimate length/complexity
-
-2. **Analyze structure:**
-   - What sections appear in every record?
-   - What language is consistent?
-   - What varies patient-to-patient?
-
-3. **Build initial domain expertise map:**
-   - What conditions appear most often?
-   - What medications are prescribed frequently?
-   - What's the typical treatment pattern?
-
-4. **Create first draft prompt from patterns**
-
-**Then ask vet:** "I built this based on 30 of your records. Test it once and tell me what's wrong."
-
-**Time required (vet):** 10 minutes (export records) + 15 minutes (test) = 25 minutes total
+### Step 5: Deploy
+- Give her the working prompt
+- She uses for 1 week on all cases
+- Check in: "What still needs adjustment?"
 
 ---
 
-## GETTING THE DOMAIN EXPERTISE (Part 4) - Special Approach
+## The 3 Prompts You'll Probably Build:
 
-**This is the hardest part. Here's the shortcut:**
+### Prompt #1: Dermatology Case Medical Record
+**Purpose:** Daily case documentation for EzyVet
 
-### Option A: Record Existing Client Consultations (5 min each)
+**Input format:**
+- Quick bullets or voice note with:
+  - Patient info (species, breed, age, weight)
+  - Diagnosis
+  - Findings (exam, diagnostics)
+  - Treatment prescribed (meds, topicals, food)
+  - Follow-up plan
 
-"Next time you explain atopic dermatitis to a client, record yourself (with client permission). I'll transcribe it and use that as the 'standard explanation' for AI."
+**Output:** Clean SOAP-style (or her preferred format) medical record, ready to paste into EzyVet
 
-**You get:**
-- Her exact language and phrasing
-- How she explains complex concepts
-- What she emphasizes
-- Her natural tone
+**Time savings:** 30-45 min → 5-10 min = **20-35 min per case**
 
-**Do this for top 5 conditions.**
+### Prompt #2: Treatment Plan for Pet Owner (If Relevant)
+**Purpose:** Educational letter explaining condition and treatment to client
 
-**Time required (vet):** Already doing it, just hit record
+**Input format:**
+- Diagnosis
+- Treatment protocol
+- Prognosis
 
-### Option B: "Brain Dump" Voice Memos (15 min total)
+**Output:** 1-page letter in accessible language
 
-"For each of your top 5 conditions, record a 2-3 minute voice memo:
-- What it is
-- How you diagnose it
-- How you treat it
-- What you tell clients to expect"
+**Time savings:** 30 min → 10 min = **20 min per letter**
 
-You transcribe and structure it.
+### Prompt #3: Referral Summary Back to Primary Vet (If Relevant)
+**Purpose:** Professional summary of her findings and recommendations
 
-**Time required (vet):** 15 minutes, she can do while driving
+**Input format:**
+- What referring vet sent
+- Her findings
+- Her treatment plan
+- Recommendations for ongoing care
 
-### Option C: Pull from Existing Treatment Plans (You analyze)
+**Output:** Professional letter to referring vet
 
-If you have sample documents, extract the patterns:
-- What does she say about atopic dermatitis every time?
-- What medications appear together?
-- What's the prognosis language?
-
-Build domain expertise map from samples.
-
-**Time required (vet):** 0 minutes
-
----
-
-## RECOMMENDED HYBRID APPROACH (90 minutes total from vet)
-
-Combine strategies to minimize vet time:
-
-**Week 1:**
-- Vet exports 20-30 recent records from EzyVet (10 min)
-- Vet sends 5 examples of top 3 document types (5 min)
-- **Total vet time: 15 minutes**
-
-**Week 2:**
-- YOU analyze samples and build first draft prompt (your time: 2-3 hours)
-- Vet does 30-min phone interview to fill gaps in workflow understanding (30 min)
-- **Total vet time: 30 minutes**
-
-**Week 3:**
-- Vet tests first draft prompt with 3 real cases (15 min each = 45 min)
-- Vet records voice notes explaining top 5 conditions while commuting (15 min)
-- **Total vet time: 60 minutes**
-
-**Week 4:**
-- You refine based on her edits
-- Vet does final test on refined version (15 min)
-- **Total vet time: 15 minutes**
-
-**GRAND TOTAL VET TIME: 2 hours over 4 weeks**
-
-For someone spending 2-4 hours/week on medical records, this is a 1-2 week payback period.
+**Time savings:** 20-30 min → 5-10 min = **15-20 min per referral**
 
 ---
 
-## RED FLAGS (When to Stop and Reassess)
+## Time Savings Math:
 
-**Stop if:**
-- Vet says "I don't have time for this" → Use Strategy 4 or 5 (you do the work)
-- Vet won't provide sample records → Can't build accurate prompts, will fail
-- Vet wants perfection on first try → Manage expectations: iteration is required
-- Vet doesn't see the time burden → Validate the problem exists first
+**Current state:**
+- 2-5 hours/week on medical records = 8-20 cases taking 15-45 min each
 
-**Success requires:**
-- ✅ Vet acknowledges the time burden
-- ✅ Vet is willing to test 3-5 times to refine
-- ✅ Vet provides real samples or access to records
-- ✅ Vet commits to 1-2 hours total over 2-4 weeks
+**Target state:**
+- Same 8-20 cases taking 5-10 min each = 40-200 min/week = 0.7-3.3 hours
+
+**Time savings: 1.3-4.3 hours per week**
+
+**Result:** She doesn't work on her day off anymore.
 
 ---
 
-## FINAL TIP: Frame It as "Building Your Clone"
+## Red Flags to Watch For:
 
-**Instead of:** "Fill out this form so I can build AI prompts"
+**If she says:**
+- "I don't have time to provide samples" → **Offer to extract from EzyVet yourself or shadow her for 2 hours**
+- "AI won't understand dermatology" → **That's why you're building custom prompts with her treatment protocols**
+- "I need it perfect" → **Manage expectations: AI gets to 80-90%, she refines the last 10-20%**
+- "This seems complicated" → **Simplify: Just send me 5 records, I'll build the first version, you test once**
 
-**Say:** "I'm building a system that writes like you, so you can spend 15 minutes reviewing instead of 60 minutes writing from scratch. I need examples of your best work and 30 minutes of your time to understand how you think."
+**If you notice:**
+- Her records are very short (2-3 sentences) → Prompt should generate concise output
+- Her records are very long (1+ pages) → Prompt needs to match that detail level
+- She uses lots of abbreviations → Include common abbreviations in prompt
+- She has a very specific format → Match it exactly
 
-People protect their time. But they'll invest time to get MASSIVE time back.
+---
 
-**The 2-hour investment to save 2-4 hours per week = 100-200 hours per year.**
+## Quick Start (Minimum Viable Data Collection):
 
-That's the pitch.
+**Can't get all 5 sections filled out? Do this:**
+
+1. "Send me 5 recent case records from EzyVet" → **Analyze yourself**
+2. "What are your top 5 medications?" → **Quick list**
+3. Build first prompt from samples
+4. Test with her on 1 case
+5. Iterate
+
+**Total time from her: 15 minutes**
+
+You do the rest.
+
+---
+
+## Success = She Uses It Every Week
+
+**The only metric that matters:**
+- Does she use it for every case after week 2?
+- If yes → Success
+- If no → Ask why, fix that issue
+
+**Most common failure modes:**
+- Output is too generic (didn't use her samples)
+- Takes too long to edit (prompt needs refinement)
+- Doesn't match her style (analyze samples better)
+- Too many steps (simplify input capture)
+
+**Fix:** Iterate quickly. 3-5 test cases should get you to 90% accuracy.
+
+---
+
+## Bottom Line:
+
+**You need:**
+- 5-10 sample medical records (her actual writing)
+- List of common treatments (her protocols)
+- 2-3 test cases to refine
+
+**You build:**
+- 1-3 working prompts (based on her samples)
+- Fast input capture method (bullets or voice)
+- 80-90% accurate output
+
+**She gets:**
+- 2-5 hours per week back
+- Her day off back
+- Paid for expertise, not typing
+
+**Timeline: 2-3 weeks from samples to deployment.**
