@@ -2,17 +2,13 @@
 tags: [core-concepts, implementation, how-to]
 created: 2025-10-19
 ---
-
-
 # How to Actually Do This: Five-Step Implementation
 
 The framework is universal. The implementation is domain-specific. Here's how to start.
 
-
 ## Step One: Pick Your Bottleneck
 
 Identify the one repetitive task where you spend hours translating expertise into deliverables.
-
 
 ### Common Candidates
 
@@ -30,7 +26,6 @@ Identify the one repetitive task where you spend hours translating expertise int
 
 **Consulting:** Client reports and proposals, executive summaries
 
-
 ### Selection Criteria
 
 Choose the task you do weekly that:
@@ -42,7 +37,6 @@ Choose the task you do weekly that:
 5. Would free significant time if automated
 
 **Pro tip:** Start with something you do at least weekly. The ROI compounds faster with frequent tasks.
-
 
 ## Step Two: Learn the Context Formula
 
@@ -140,7 +134,6 @@ Each element serves a purpose:
 
 Professional output rarely comes from one prompt. Think of this as a conversation, not a command.
 
-
 ### The Process
 
 1. **Generate first draft** with your initial prompt
@@ -152,7 +145,6 @@ Professional output rarely comes from one prompt. Think of this as a conversatio
    - "Shorten this by 20% without losing key points"
 4. **Repeat** until you hit the 80% threshold
 5. **Apply your expertise** to the final 20%
-
 
 ### Common Refinement Patterns
 
@@ -179,7 +171,6 @@ Professional output rarely comes from one prompt. Think of this as a conversatio
 
 Every domain has critical elements that you must check yourself. AI can draft, but you're still the professional.
 
-
 ### Universal Verification Items
 
 - Factual accuracy for this specific case/client
@@ -187,7 +178,6 @@ Every domain has critical elements that you must check yourself. AI can draft, b
 - Numbers, dates, names are accurate
 - Tone is appropriate for this relationship
 - Nothing confidential or privileged is exposed
-
 
 ### Domain-Specific Checks
 
@@ -233,7 +223,6 @@ Every domain has critical elements that you must check yourself. AI can draft, b
 
 Don't try to automate everything at once. Build confidence with one workflow.
 
-
 ### Week 1-2: Single Task, Low Stakes
 
 - Choose one deliverable type you do frequently
@@ -244,7 +233,6 @@ Don't try to automate everything at once. Build confidence with one workflow.
 
 **Example:** HVAC contractor uses AI for estimates only. Completes 10 estimates in week 1-2. Notes that AI always needs pricing adjusted and timeline clarified. Updates prompt.
 
-
 ### Week 3-4: Expand Volume
 
 - Use refined prompt for all instances of this task
@@ -254,7 +242,6 @@ Don't try to automate everything at once. Build confidence with one workflow.
 
 **Example:** HVAC contractor now does all estimates with AI. Time per estimate drops from 2.5 hours to 25 minutes. Completes 20 estimates per week instead of 5.
 
-
 ### Month 2: Add Second Task
 
 - Choose next bottleneck from your list
@@ -262,14 +249,12 @@ Don't try to automate everything at once. Build confidence with one workflow.
 - Build second prompt using same framework
 - Run same process: Small test, refine, scale
 
-
 ### Month 3: Optimize and Compound
 
 - Refine both workflows based on cumulative learning
 - Measure total impact: Hours saved per week/month
 - Reinvest time: More clients? Better service? Life balance?
 - Plan next automation if applicable
-
 
 ### Scaling Decision Tree
 
@@ -284,7 +269,6 @@ After 2-3 months, decide:
 **Option D: Some combination** → 50% more volume + leave 1 hour earlier
 
 All are valid. You choose based on your goals.
-
 
 ## Measuring Success
 

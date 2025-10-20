@@ -2,8 +2,6 @@
 tags: [core-concepts, introduction, problem-statement]
 created: 2025-10-19
 ---
-
-
 # Introduction: The Expertise Scaling Problem
 
 ## The Problem Nobody Talks About

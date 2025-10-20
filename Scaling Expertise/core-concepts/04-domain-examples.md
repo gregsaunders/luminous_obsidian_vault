@@ -2,8 +2,6 @@
 tags: [core-concepts, examples, case-studies]
 created: 2025-10-19
 ---
-
-
 # The Pattern Across Every Domain
 
 Once you see the pattern, you recognize it in every field where expertise is the product. The bottleneck is always the same: translating expertise into deliverables. The workflow is always the same: you provide judgment and facts, AI provides structure and polish.
