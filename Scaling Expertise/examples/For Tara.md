@@ -318,3 +318,456 @@ Don't see your field? Here's how to map it:
 - Expertise time: X minutes
 - Documentation time: Y minutes
 - Potential scaling: Y/X multiple
+
+# Skill Analysis Prompt
+
+## Purpose
+
+Use this prompt to analyze any professional role and identify where AI can scale expertise. This is your starting point before building automation.
+
+## When to Use This
+
+- You want to scale a new role not in the prompt library
+- You're unsure which tasks should be automated
+- You need to articulate the bottleneck to others
+- You're consulting with someone about their scaling opportunities
+
+## The Analysis Prompt
+
+```markdown
+I need help analyzing the [ROLE] workflow to identify documentation bottlenecks where AI can scale expertise.
+
+Role Description:
+[Brief description of the professional role - what they do, who they serve]
+
+Typical Work Activities:
+[List the main tasks this role performs daily/weekly]
+
+Current Workflow for Key Deliverables:
+[For each major deliverable type, describe:
+- How long the thinking/diagnosis takes
+- How long the documentation takes
+- Who reads the deliverable
+- What format it requires]
+
+Help me identify:
+
+1. **The Bottleneck Tasks**
+- Which deliverables take hours to write but minutes to know?
+- Where is documentation time disproportionate to expertise time?
+- What prevents taking on more clients/projects?
+
+2. **The Expertise vs. Translation Ratio**
+- For each bottleneck task, what's the ratio of thinking time to writing time?
+- What makes the writing slow? (Format complexity? Technical translation? Length?)
+
+3. **What Must Stay Human**
+- What requires professional judgment that cannot be delegated?
+- What decisions need this person's expertise specifically?
+- What quality control must they personally verify?
+
+4. **Quick Wins**
+- Which task, if automated first, would have biggest impact?
+- What's the simplest prompt to start with?
+- What can be tested this week?
+
+Based on the four principles, analyze this role and recommend:
+- The #1 bottleneck to automate first
+- Draft prompt structure following the 4-part formula (role, audience, goal, constraints)
+- What this person should still own vs. what AI handles
+- Expected time savings and scaling multiple
+```
+
+## Example: Veterinary Dermatologist
+
+```markdown
+I need help analyzing a Veterinary Dermatologist's workflow to identify documentation bottlenecks.
+
+Role Description:
+Specialty veterinarian focused on diagnosing and treating complex skin conditions, allergies, and dermatological diseases in pets. Sees referred cases from general practice vets and directly from pet owners. Mix of acute issues and chronic condition management.
+
+Typical Work Activities:
+- Patient examinations and diagnostic workups (skin scrapings, cultures, biopsies)
+- Developing treatment protocols for complex cases
+- Follow-up appointments to assess treatment progress
+- Communication with referring veterinarians
+- Client education about chronic conditions
+- Photo documentation of conditions and progress
+
+Current Workflow for Key Deliverables:
+
+**Treatment Plans for Pet Owners:**
+- Diagnosis/thinking time: 15-20 minutes during exam
+- Documentation time: 45-60 minutes after
+- Reader: Pet owner (needs accessible language)
+- Format: 2-3 page letter explaining condition, treatment, costs, timeline
+
+**Referral Letters to General Practice Vets:**
+- Diagnosis/thinking time: Same as above (already done)
+- Documentation time: 30-40 minutes
+- Reader: Referring veterinarian (wants technical detail)
+- Format: Professional letter with clinical findings, diagnosis, treatment protocol
+
+[Continue with analysis questions...]
+```
+
+## What You'll Learn
+
+After running this analysis, you'll have:
+1. Clear bottleneck identification
+2. Scaling potential (5-20x improvement)
+3. Starting point (which prompt to build first)
+4. ROI estimate (hours saved per week/month)
+5. Implementation priority
+
+## Next Steps
+
+After completing this analysis:
+1. Review similar prompts using reference-review-prompt
+2. Build your first prompt following prompt-builder-guide
+3. Plan implementation using workflow-strategy-prompt
+4. Start small - test with one real case before scaling
+
+# Workflow Strategy Prompt
+
+## Purpose
+
+After building a prompt, use this to design the complete workflow for scaling your expertise. This turns a prompt into a systematic process.
+
+## When to Use This
+
+- You have a working prompt and want to implement it systematically
+- You need to train someone else on the workflow
+- You want to optimize the iteration and review process
+- You're planning how this fits into your existing work
+
+## The Strategy Prompt
+
+```markdown
+I need help designing an implementation workflow for scaling [ROLE] expertise using AI.
+
+Context:
+[Brief description of the role and what you're automating]
+
+Current Bottleneck:
+[The specific task you're addressing]
+
+Prompt Created:
+[Paste or link to the prompt you built]
+
+Help me design:
+
+## 1. Input Workflow
+
+How should I capture my expertise for each case?
+
+Consider:
+- When in my process do I have the information needed?
+- What's the fastest capture method? (voice notes, bullet points, photos, etc.)
+- What's the minimum information the AI needs?
+- What can I capture during the work vs. after?
+
+Recommend:
+- Optimal capture moment in my workflow
+- Best capture method for this role
+- Template/checklist for inputs
+
+## 2. Iteration Pattern
+
+How should I refine outputs efficiently?
+
+Consider:
+- What typically needs adjustment? (tone, length, technical detail, etc.)
+- Common patterns in my revisions
+- How many iterations until acceptable?
+
+Recommend:
+- Pre-built refinement prompts for common adjustments
+- Checklist of what to review first
+- When to start over vs. iterate
+
+## 3. Verification Checklist
+
+What must I personally verify before sending?
+
+Based on this domain, create a checklist for:
+- Technical accuracy items
+- Compliance/legal requirements
+- Professional judgment points
+- Client-specific details
+- Safety or risk items
+
+## 4. Time Allocation
+
+How should I budget time for this workflow?
+
+Estimate:
+- Input capture: X minutes
+- Initial AI generation: X minutes (including wait time)
+- Review and iteration: X minutes
+- Final verification: X minutes
+- Total time vs. old workflow time
+
+## 5. Integration Points
+
+How does this fit my existing workflow?
+
+Consider:
+- What triggers the need for this deliverable?
+- What tools/systems am I already using?
+- Who else touches this process?
+- What happens with the output?
+
+Recommend:
+- Where this fits in my current process
+- Any tools/templates to prepare in advance
+- Handoff procedures if applicable
+
+## 6. Scaling Plan
+
+How do I ramp from first test to full implementation?
+
+Create a 4-week plan:
+- Week 1: Test with how many cases? What to learn?
+- Week 2: Refine based on learnings, expand volume
+- Week 3: Full implementation on this task type
+- Week 4: Measure impact, identify next automation opportunity
+
+## 7. Quality Metrics
+
+How do I know this is working?
+
+Define:
+- Time savings per deliverable
+- Quality indicators (client feedback, revision rate, accuracy)
+- Volume increase capacity
+- Stress/workload reduction indicators
+```
+
+
+## Example Output Structure
+
+When you run this prompt, the AI will provide:
+
+**1. Input Workflow Design**
+
+"After the exam, while the client checks out, spend 3 minutes recording voice notes: diagnosis, key findings, treatment protocol, prognosis. Include any photo references."
+
+**2. Iteration Pattern**
+
+"Common adjustments:
+- First review: Check technical accuracy and add pricing
+- Second review: Adjust tone if too clinical or too casual
+- Third review: Verify timeline expectations are realistic"
+
+**3. Verification Checklist**
+
+- [ ] Drug names, dosages, and frequencies correct
+- [ ] Prognosis is realistic
+- [ ] Cost estimate matches your pricing
+- [ ] Follow-up timeline specified
+- [ ] Home care instructions are safe and clear
+
+**4. Time Allocation**
+
+- Input capture: 3 min
+- AI generation: 2 min
+- Review iteration: 8 min
+- Final verification: 5 min
+- **Total: 18 minutes vs. 60 minutes previously = 3.3x faster**
+
+**5. Integration Points**
+
+"Capture notes right after exam while client is checking out. Have your prompt ready on a second monitor. Generate while doing final exam room cleanup."
+
+**6. Scaling Plan**
+
+- Week 1: Use for 3 complex cases, note adjustments needed
+- Week 2: Refine prompt, use for 6-8 cases
+- Week 3: Use for all new cases requiring treatment plans
+- Week 4: Measure time savings, plan to expand to referral letters
+
+**7. Quality Metrics**
+
+- Treatment plan completion time drops to 15-20 minutes
+- Client comprehension improves (fewer follow-up calls)
+- Can handle 2-3 more cases per day
+- Leave clinic on time
+
+## Optimizing Over Time
+
+After 2-4 weeks of using the workflow:
+
+**What to Track:**
+
+- Which parts of the prompt consistently need editing
+- What verification catches most often
+- Where you're spending review time
+- Patterns in iterations
+
+**Common Optimizations:**
+
+- Tighten the prompt - Add common constraints you keep adding manually
+- Expand verification checklist - Add items you kept catching
+- Batch processing - Can you generate multiple at once?
+- Pre-built variations - Create sub-prompts for common case types
+
+# Healthcare Prompts
+
+These prompts help healthcare professionals scale their clinical documentation.
+
+**Critical:** Always verify clinical accuracy, patient safety, and treatment appropriateness. **Use HIPAA-compliant systems only.**
+
+
+## Family Physician - SOAP Notes
+
+**Use case:** Patient visit documentation for medical records and insurance.
+
+```markdown
+I'm a family physician documenting a patient visit. This needs SOAP note format for insurance purposes.
+
+Patient Information:
+[Age, gender, relevant medical history]
+
+Chief Complaint:
+[Why they came in today]
+
+Subjective Notes:
+[Patient's description of symptoms, timeline, what makes it better/worse]
+
+Objective Findings:
+[Vitals, exam findings, test results]
+
+Assessment:
+[Your diagnosis or differential]
+
+Plan:
+[Treatment, prescriptions, follow-up, patient education provided]
+
+Make this complete and insurance-friendly while staying clinically accurate. Include relevant ICD-10 codes.
+
+Tone: clinical, precise, thorough.
+
+Structure: standard SOAP format.
+```
+
+**What you own:** Diagnosis, treatment decisions, clinical judgment, patient safety, prescription decisions
+
+**What AI handles:** SOAP format structure, insurance-friendly language, complete documentation
+
+**Critical verification:**
+
+- [ ] Diagnosis clinically accurate
+- [ ] Treatment appropriate for this patient
+- [ ] Drug interactions checked
+- [ ] Dosages correct
+- [ ] Patient-specific history accurate
+- [ ] ICD-10 codes appropriate
+
+**Important:** Use HIPAA-compliant AI systems only.
+
+---
+
+
+## Dentist - Treatment Plan Letter
+
+**Use case:** Treatment plan explanations for patients.
+
+```markdown
+I'm a dentist writing a treatment plan letter to a patient.
+
+Patient Situation:
+[Current oral health status]
+
+Issues Identified:
+[Cavities, gum disease, other problems and their severity]
+
+Recommended Treatment Sequence:
+[What needs to happen, in what order, and why]
+
+What Happens If Untreated:
+[Consequences of delaying care]
+
+Investment and Options:
+[Cost, insurance coverage, payment plans if applicable]
+
+Explain the sequence and why each step matters. Address cost concerns by explaining outcomes.
+
+Tone: caring, educational, not judgmental.
+
+Structure: current situation, recommended treatment with rationale, timeline, investment, next steps.
+```
+
+**What you own:** Clinical diagnosis, treatment planning, timeline recommendations
+
+**What AI handles:** Patient education, treatment sequence explanation, accessible language
+
+**Critical verification:**
+
+- [ ] Treatment plan clinically appropriate
+- [ ] Sequence makes clinical sense
+- [ ] Costs match your pricing
+- [ ] Insurance information accurate
+- [ ] Timeline realistic
+
+---
+
+
+## Veterinarian - Surgery Recommendation
+
+**Use case:** Surgery recommendation letters for pet owners.
+
+```markdown
+I'm a veterinarian writing a surgery recommendation letter for a pet owner.
+
+Pet Information:
+[Species, breed, age, relevant history]
+
+Diagnosis:
+[What's wrong, how you diagnosed it]
+
+Recommended Treatment:
+[Surgery type, why you recommend it over alternatives]
+
+Recovery Timeline:
+[What to expect post-surgery, restrictions, follow-up]
+
+Prognosis:
+[Expected outcome with vs. without surgery]
+
+Investment:
+[Cost range, what's included]
+
+Explain this honestly including risks. Address cost concerns by explaining long-term outcomes.
+
+Tone: compassionate, thorough, realistic.
+
+Structure: diagnosis, recommendation with rationale, recovery, prognosis, alternatives, investment.
+```
+
+**What you own:** Medical diagnosis, surgical recommendation, risk assessment, prognosis
+
+**What AI handles:** Client communication, accessible medical explanation, cost discussion framework
+
+**Critical verification:**
+
+- [ ] Diagnosis accurate
+- [ ] Surgical recommendation appropriate
+- [ ] Risks explained honestly
+- [ ] Prognosis realistic
+- [ ] Cost estimate matches your pricing
+- [ ] Alternative options presented fairly
+
+**Extension for Dermatology Specialist:**
+
+For veterinary dermatologists creating treatment plans for chronic skin conditions:
+
+**Adapt this prompt by:**
+
+- Adding photo documentation section
+- Emphasizing ongoing management vs. one-time procedure
+- Including detailed home care instructions
+- Addressing medication schedules and follow-up timelines
+- Creating separate versions for pet owners vs. referring veterinarians
+
+See the [[skill-analysis-prompt]] and [[reference-review-prompt]] for complete example of building a veterinary dermatology automation.

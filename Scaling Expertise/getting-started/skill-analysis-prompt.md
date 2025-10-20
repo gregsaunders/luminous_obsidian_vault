@@ -2,7 +2,6 @@
 tags: [meta-prompt, analysis, bottleneck-identification]
 created: 2025-10-19
 ---
-
 # Skill Analysis Prompt
 
 ## Purpose

@@ -2,15 +2,11 @@
 tags: [meta-prompt, implementation, workflow-design]
 created: 2025-10-19
 ---
-
-
 # Workflow Strategy Prompt
-
 
 ## Purpose
 
 After building a prompt, use this to design the complete workflow for scaling your expertise. This turns a prompt into a systematic process.
-
 
 ## When to Use This
 
@@ -18,7 +14,6 @@ After building a prompt, use this to design the complete workflow for scaling yo
 - You need to train someone else on the workflow
 - You want to optimize the iteration and review process
 - You're planning how this fits into your existing work
-
 
 ## The Strategy Prompt
 

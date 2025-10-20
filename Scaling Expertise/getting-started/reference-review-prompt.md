@@ -2,15 +2,11 @@
 tags: [meta-prompt, research, prompt-library]
 created: 2025-10-19
 ---
-
-
 # Reference Review Prompt
-
 
 ## Purpose
 
 Use this to have Claude Code (or any AI) search the prompt library and identify the most relevant examples for building a new automation. This saves you from reading all 27+ prompts manually.
-
 
 ## When to Use This
 
@@ -18,7 +14,6 @@ Use this to have Claude Code (or any AI) search the prompt library and identify 
 - You need inspiration from similar roles
 - You want to understand pattern variations across industries
 - You're comparing approaches before building
-
 
 ## The Review Prompt
 
@@ -64,7 +59,6 @@ Available prompt categories to search:
 - personal-services-prompts - Service providers, consultants
 ```
 
-
 ## Example: Veterinary Dermatology Specialist
 
 ```markdown
@@ -81,7 +75,6 @@ Key Characteristics:
 - Tone requirements: Compassionate, educational, realistic about outcomes and costs
 - Documentation complexity: Complex (clinical findings + owner education + cost justification + photos)
 ```
-
 
 ### Expected AI Response
 
@@ -166,9 +159,7 @@ After getting this analysis:
 4. **Build your prompt** - Using [[prompt-builder-guide]] with these insights
 5. **Test and iterate** - Start with the closest match, then adapt
 
-
 ## Advanced Usage
-
 
 ### For Complex Roles
 
@@ -183,7 +174,6 @@ I'm building automations for a [ROLE] who creates three different deliverable ty
 
 For each deliverable type, identify the most relevant reference prompts.
 ```
-
 
 ### For Hybrid Roles
 

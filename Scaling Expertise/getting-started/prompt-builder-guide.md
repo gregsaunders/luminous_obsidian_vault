@@ -6,16 +6,13 @@ created: 2025-10-19
 
 # Prompt Builder Guide
 
-
 ## Purpose
 
 This guide helps you build new domain-specific prompts using the universal framework. Use when you need to create automation for a role not covered in the existing prompt library.
 
-
 ## The Universal Formula
 
 Every effective expertise-scaling prompt has these four elements:
-
 
 ### 1. Your Role
 
@@ -23,13 +20,11 @@ Who you are professionally. This sets context for the AI about expertise level a
 
 **Example:** "I'm a veterinary dermatologist with 12 years of experience..."
 
-
 ### 2. Your Audience
 
 Who will read this deliverable. This shapes tone, technical level, and what to emphasize.
 
 **Example:** "...writing a treatment plan for a pet owner who's concerned about costs..."
-
 
 ### 3. Your Goal
 
@@ -37,16 +32,13 @@ What you're trying to accomplish with this document.
 
 **Example:** "...to explain a complex diagnostic process and treatment options in accessible language..."
 
-
 ### 4. Your Constraints
 
 Formatting, tone, length, what to include/exclude, special requirements.
 
 **Example:** "...keeping it under 2 pages, reassuring but honest about prognosis, include cost estimates."
 
-
 ## How to Build a New Prompt
-
 
 ### Step 1: Review Similar Prompts
 
@@ -55,7 +47,6 @@ Look at existing prompts in related domains. For a veterinary dermatologist, rev
 - Base vet template (in healthcare-prompts)
 - Dentist (similar treatment planning structure)
 - Family Physician (clinical documentation approach)
-
 
 ### Step 2: Identify Your Specific Bottleneck
 
@@ -67,7 +58,6 @@ For a vet dermatologist, this might be:
 - Treatment plans for complex allergy cases
 - Follow-up progress reports with photo documentation
 - Client education materials about chronic conditions
-
 
 ### Step 3: Map the Four Elements
 
@@ -118,13 +108,11 @@ Prognosis & Expected Timeline:
 [Realistic outcomes, when they'll see improvement]
 ```
 
-
 ### Step 5: Specify Output Format
 
 Tell the AI what structure you want:
 
 "Structure: clinical summary, diagnosis explanation, treatment protocol, home care instructions, follow-up plan, cost estimate."
-
 
 ## Complete Example: Veterinary Dermatologist
 
@@ -159,7 +147,6 @@ Tone: compassionate, educational, realistic about timeline.
 Structure: condition explanation, treatment protocol with rationale, home care instructions, expected timeline, cost breakdown, follow-up plan.
 ```
 
-
 ## Testing Your New Prompt
 
 1. **First test:** Use it with a recent real case. Does it get you 80% there?
@@ -167,7 +154,6 @@ Structure: condition explanation, treatment protocol with rationale, home care i
 3. **Second test:** Try a different case type. Does it still work?
 4. **Iterate:** Add constraints or examples where AI struggles
 5. **Document:** Save the refined version to your prompt library
-
 
 ## Common Issues & Fixes
 

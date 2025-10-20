@@ -2,8 +2,6 @@
 tags: [prompts, healthcare, medical, veterinary]
 created: 2025-10-19
 ---
-
-
 # Healthcare Prompts
 
 These prompts help healthcare professionals scale their clinical documentation.
