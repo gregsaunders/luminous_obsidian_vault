@@ -19,7 +19,7 @@ Every time you start a new Claude Code session where you want to maintain contin
 ### Prompt:
 ```
 Read the Master Context file at:
-01-ACTIVE-BUSINESS/daily-operations/context-management/Luminous-Master-Context.md
+01-ACTIVE-BUSINESS/daily-operations/Luminous-Master-Context.md
 
 Confirm you're ready to work and flag any contradictions you notice between Master Context and current state.
 ```
@@ -38,8 +38,11 @@ When continuing from a previous session that ran out of context or was interrupt
 
 ### Prompt:
 ```
-Read the Master Context file and the most recent session file in:
-01-ACTIVE-BUSINESS/daily-operations/context-management/session-archives/
+Read the Master Context file at:
+01-ACTIVE-BUSINESS/daily-operations/Luminous-Master-Context.md
+
+And the most recent session file in:
+01-ACTIVE-BUSINESS/daily-operations/archive/
 
 I'm continuing from the previous session. Confirm you have context and are ready to pick up where we left off.
 ```
@@ -61,7 +64,7 @@ At the end of every significant work session (document creation, strategic work,
 ```
 Session complete. Please:
 
-1. Create a session capture file in: 01-ACTIVE-BUSINESS/daily-operations/context-management/session-archives/
+1. Create a session capture file in: 01-ACTIVE-BUSINESS/daily-operations/archive/
    - File name: [YYYY-MM-DD-session-topic].md
    - Include: What we worked on, decisions made, files created/modified, key learnings, next steps
 
@@ -142,8 +145,8 @@ When you need to quickly rebuild context after system issues, or when working wi
 ```
 Emergency context recovery needed:
 
-1. Read Master Context file
-2. Read the 3 most recent session files in session-archives/
+1. Read Master Context file at: 01-ACTIVE-BUSINESS/daily-operations/Luminous-Master-Context.md
+2. Read the 3 most recent session files in: 01-ACTIVE-BUSINESS/daily-operations/archive/
 3. Summarize current state, active priorities, and any blockers
 4. Confirm you're ready to continue work
 5. Flag any context gaps you notice
