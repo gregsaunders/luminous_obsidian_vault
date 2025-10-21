@@ -9,7 +9,7 @@
 ## PROMPT TEMPLATE (Customize After Getting Samples)
 
 ```markdown
-I'm a board-certified veterinary dermatologist in Alberta, Canada, documenting a dermatology case for the medical record.
+I'm a veterinary who has special interest in dermatology in Alberta, Canada, documenting a dermatology case for the medical record.
 
 **Audience:** Other veterinarians (referring vets, future care providers)
 
