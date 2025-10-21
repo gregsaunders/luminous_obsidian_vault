@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02-COMPANY-ASSETS/presentations/Internal Papers/Executive-Brief.md",
+                "file": "Journal/Greg/2025-10/2025-10-21a.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Executive-Brief"
+              "title": "2025-10-21a"
             }
           }
         ]
@@ -211,6 +211,9 @@
   },
   "active": "62750cc74e0b3e31",
   "lastOpenFiles": [
+    "02-COMPANY-ASSETS/presentations/Internal Papers/Executive-Brief.md",
+    "Journal/Greg/2025-10/2025-10-21a.md",
+    "Journal/Greg/2025-10",
     "Scaling Expertise/examples/Referral Form Example.md",
     "Scaling Expertise/examples/Clinical Summary - Referral Update For Stripe   example.md",
     "Scaling Expertise/examples/Client discharge instructions example.md",
@@ -235,8 +238,6 @@
     "Scaling Expertise/getting-started/prompt-builder-guide.md",
     "Scaling Expertise/getting-started/workflow-strategy-prompt.md",
     "Scaling Expertise/core-concepts/01-introduction.md",
-    "Scaling Expertise/getting-started/skill-analysis-prompt.md",
-    "Scaling Expertise/00-index.md",
     "Scaling Expertise/getting-started",
     "Scaling Expertise/core-concepts",
     "Scaling Expertise/examples",
@@ -246,7 +247,6 @@
     "01-ACTIVE-BUSINESS/daily-operations/archive",
     "01-ACTIVE-BUSINESS/daily-operations/BACKUP-2025-10-15-pre-master-context/weekly-archives/week-2025-09-16-to-2025-09-22",
     "01-ACTIVE-BUSINESS/daily-operations/BACKUP-2025-10-15-pre-master-context/weekly-archives",
-    "01-ACTIVE-BUSINESS/daily-operations/BACKUP-2025-10-15-pre-master-context",
     "02-COMPANY-ASSETS/marketing/communications-assets/attachments/Pasted image 20251014135647.png",
     "99-ARCHIVE/legacy-folders/Random stuff/Artifacts/attachments/IMG_0212.jpg",
     "99-ARCHIVE/legacy-folders/Random stuff/Artifacts/attachments/IMG_0213.jpg",
