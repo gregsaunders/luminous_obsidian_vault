@@ -9,6 +9,83 @@
 
 ---
 
+## DESIGN PRINCIPLES (CRITICAL - Read First)
+
+### 1. Keep It Simple (Anti-Over-Engineering)
+**The failure mode:** Building complex systems with multiple tools, compliance frameworks, and 50-step workflows that the professional never uses.
+
+**The success mode:**
+- Professional provides raw expertise in fastest format (bullets, voice notes)
+- AI generates 80-90% accurate draft
+- Professional reviews/edits in 10-20% of original time
+- Copy-paste into existing workflow (no new tools to learn)
+
+**Simple = Adopted. Complex = Abandoned.**
+
+### 2. Mirror the Professional's Existing Process
+**Don't redesign their workflow. Slot AI into the existing process.**
+
+**Tara's current process:**
+1. See patient (exam, diagnosis, treatment decisions) - 15-30 min
+2. *[Gap: Hours pass, she batches documentation]*
+3. Sit down to write medical record from memory - 30-60 min
+4. Paste into EzyVet
+
+**AI-enhanced process:**
+1. See patient (exam, diagnosis, treatment decisions) - 15-30 min
+2. Capture key details (2-3 min: bullets or voice note)
+3. AI generates draft (30 seconds)
+4. Review and refine draft - 5-10 min
+5. Paste into EzyVet
+
+**What changed:** Step 2 (quick capture) and Step 3 (AI draft) replace Step 3 (write from scratch).
+**What stayed the same:** Her expertise, her review, her EzyVet workflow.
+
+### 3. Match the Professional's Expertise, Not Generic AI Output
+**Bad prompt:** "Write a veterinary dermatology record"
+→ Result: Generic, textbook language that doesn't sound like Tara
+
+**Good prompt:** Includes Tara's medications, dosing, diagnostic procedures, terminology, abbreviations, structure
+→ Result: Sounds like Tara wrote it, minimal editing needed
+
+**The context in this file exists to make AI sound like Tara, not like Wikipedia.**
+
+### 4. Absolutely Simple to Use
+**If it takes more than 3 steps, it won't get used.**
+
+**Tara's workflow:**
+1. **Input:** Type bullets or record voice note (2-3 min)
+2. **Generate:** Paste into AI prompt, run (30 sec)
+3. **Refine:** Edit output (5-10 min)
+
+**That's it. No apps. No integrations. No API keys. No complexity.**
+
+Copy-paste is fine if it saves 70% of the time.
+
+### 5. Transferable Framework (For Scaling to Other Professions)
+
+**This project is a template for ANY expertise-based professional with documentation bottleneck.**
+
+**Universal pattern:**
+- Expertise time << Documentation time (the bottleneck)
+- Professional has consistent patterns (medications, procedures, structure)
+- Output has clear audience (clients vs. professionals)
+- Professional maintains quality control (reviews AI output)
+
+**To replicate for another professional:**
+1. **Collect samples** (their actual work, 5-10 examples)
+2. **Identify patterns** (structure, tone, common protocols)
+3. **Map document types** (prioritize by time burden)
+4. **Build context file** (use this file as template)
+5. **Create prompts** (match their voice + domain knowledge)
+6. **Test and refine** (3-5 real cases, track edits)
+7. **Deploy** (simple workflow, measure adoption)
+
+**See:** `Scaling Expertise/core-concepts/` for universal framework
+**See:** This file as domain-specific implementation
+
+---
+
 ## THE PROBLEM TO SOLVE
 
 **Current state:** Tara spends 2-5 hours on her day off (unpaid) writing medical records that accumulated during the week.
