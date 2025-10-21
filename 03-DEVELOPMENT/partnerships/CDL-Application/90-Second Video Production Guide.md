@@ -41,7 +41,9 @@ CDL mentors will watch this 90-second video **before** Session 1 (November 7) to
 **Word Count:** ~75 words = 30 seconds at conversational pace
 
 **JEFF SCRIPT:**
-*"Alberta's oil sands operators manage 1.4 trillion litres of toxic tailings. The government is finalizing water release standards within 12-18 months, forcing a shift from containment to preparing for regulated release. Current monitoring technologies takes 6-8 weeks to produce test results. You can't manage billion-dollar reclamation projects flying blind for two months. Luminous BioSolutions gives operators the integrated intelligence platform they need. I'm Jeff Violo, Luminous's COO."*
+*"Alberta's oil sands operators manage 1.4 trillion litres of toxic tailings. The government is finalizing water release standards within 12-18 months, forcing a shift from containment to preparing for regulated release. Naphthenic Acid is one of the contaminants that has restricted water release guidelines for over 50 years. 
+
+Current NA monitoring technologies takes 6-8 weeks to produce test results. Moving from containment to ready to release requires multi million dollar reclamation projects You can't manage billion-dollar reclamation projects flying blind for two months. Luminous BioSolutions gives operators the integrated intelligence platform they need. I'm Jeff Violo, Luminous's COO."*
 
 **Key phrases to emphasize:**
 - "1.4 trillion litres"
@@ -78,7 +80,7 @@ CDL mentors will watch this 90-second video **before** Session 1 (November 7) to
 **Word Count:** ~75 words = 30 seconds
 
 **GREG SCRIPT:**
-*"I'm Greg Saunders, Luminous bioSolutions Chief Technology Officer. Our Confluent platform is designed to transform biosensor data into operational intelligence.  using graph database architecture that links results with historical reports, SCADA data, and environmental patterns. Operators query in plain English—every data point compounds the system's intelligence. We're in active conversations with CNRL, Imperial, and Pathways Alliance. We need CDL mentors to help navigate these organizations and connect us with strategic investors who see this regulatory timeline as urgent opportunity."*
+*"I'm Greg Saunders, Luminous bioSolutions Chief Technology Officer. Our Confluent platform is designed to transform biosensor data into operational intelligence.  Using graph database architecture that links results with historical reports, operational data, and environmental patterns, operators can query Confluent in plain English. Every new data point compounds the system's intelligence. We're in active conversations with CNRL, Imperial, and Pathways Alliance., and would love CDL mentors to help us navigate these organizations and connect us with strategic investors who see this regulatory timeline as urgent opportunity."*
 
 **Key phrases to emphasize:**
 - "operational intelligence"
