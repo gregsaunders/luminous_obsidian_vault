@@ -24,113 +24,68 @@ CDL mentors will watch this 90-second video **before** Session 1 (November 7) to
 **Tone:** Confident, urgent, data-driven (not hype, not corporate)
 **Key Message:** Integrated NA intelligence platform solving billion-dollar problem with 12-18 month regulatory forcing function
 
-### Speaking Breakdown:
-- **Jeff:** 50 seconds (primary voice - commercial urgency + traction)
-- **Shawn:** 10 seconds (scientific credibility - peer-reviewed validation)
-- **Greg:** 20 seconds (technical depth - Confluent platform intelligence)
+### Speaking Breakdown (Equal Team Contributions):
+- **Jeff:** 30 seconds (commercial urgency + traction)
+- **Shawn:** 30 seconds (scientific credibility + biosensor technology)
+- **Greg:** 30 seconds (platform intelligence + integrated value)
 
 ---
 
-## COMPLETE SCRIPT (90 SECONDS)
+## COMPLETE SCRIPT (90 SECONDS - TIMED)
 
-### **SCENE 1: THE FORCING FUNCTION (0:00 - 0:20) - JEFF**
+### **SCENE 1: THE PROBLEM & URGENCY (0:00 - 0:30) - JEFF**
 
 **Setting:** Clean office background (bookshelf or whiteboard visible)
 **Camera:** Medium shot, Jeff speaking directly to camera
 **Energy:** Confident, establishing urgency
+**Word Count:** ~75 words = 30 seconds at conversational pace
 
 **JEFF SCRIPT:**
-*"Alberta's oil sands operators are managing 1.4 trillion litres of toxic tailings water, and they're running out of time and space. The Alberta Government is finalizing water release guidelines within 12-18 months, forcing operators to move from indefinite containment to preparing water for regulated release. But here's the problem: current monitoring takes 6-8 weeks per test. You can't manage a billion-dollar reclamation project when you're flying blind for two months between data points."*
+*"Alberta's oil sands operators manage 1.4 trillion litres of toxic tailings. The government is finalizing water release standards within 12-18 months, forcing a shift from containment to preparing for regulated release. Current monitoring technologies takes 6-8 weeks to produce test results. You can't manage billion-dollar reclamation projects flying blind for two months. Luminous BioSolutions gives operators the integrated intelligence platform they need. I'm Jeff Violo, Luminous's COO."*
 
 **Key phrases to emphasize:**
 - "1.4 trillion litres"
 - "12-18 months"
-- "6-8 weeks per test"
-- "flying blind for two months"
+- "6-8 weeks"
+- "integrated intelligence platform"
 
 ---
 
-### **SCENE 2: THE SOLUTION (0:20 - 0:45) - JEFF → SHAWN → JEFF**
+### **SCENE 2: THE SCIENCE & CREDIBILITY (0:30 - 1:00) - SHAWN**
 
-**JEFF (0:20 - 0:25):**
-**Setting:** Same as Scene 1
-**Camera:** Medium shot
-
-**JEFF SCRIPT:**
-*"Luminous BioSolutions gives operators the operational intelligence they need. We've built an integrated NA monitoring platform combining two breakthroughs:"*
-
----
-
-**SHAWN (0:25 - 0:35):**
-**Setting:** Lab bench OR field setting (establishes scientific credibility)
+**Setting:** Office with lab equipment visible OR clean office background
 **Camera:** Medium shot, Shawn speaking to camera
-**Energy:** Authoritative, matter-of-fact (scientist explaining proven tech)
+**Energy:** Authoritative scientist, confident but not salesy
+**Word Count:** ~75 words = 30 seconds
 
 **SHAWN SCRIPT:**
-*"Our peer-reviewed biosensors deliver 24-hour naphthenic acid results. Our Technology has been published in ACS Synthetic Biology and field-validated at Imperial's Kearl wetland pilot that just wrapped up in June. We've compressed weeks into hours with engineered specificity that mass spec labs can't match for operational screening."*
+*"I'm Dr. Shawn Lewenza, Chief Science Officer at Luminous BioSolutions. Our novel biosensor technology delivers naphthenic acid test results within 24-hour, at a fraction of the cost of current testing methods. Our technology has beed published in ACS Synthetic Biology and recently field-validated at Imperial's Kearl wetland pilot. We've compressed weeks into hours with engineered specificity that mass spec labs can't match for operational screening. This isn't lab science, it's peer-reviewed technology proven in real tailings water, giving operators the frequency they need for process control."*
 
 **Key phrases to emphasize:**
-- "peer-reviewed"
+- "24-hour results"
 - "ACS Synthetic Biology"
 - "Imperial's Kearl wetland"
-- "24-hour results"
+- "peer-reviewed technology"
+- "real tailings water"
 
 ---
 
-**JEFF (0:35 - 0:45):**
-**Setting:** Back to office
-**Camera:** Medium shot
+### **SCENE 3: THE PLATFORM & TRACTION (1:00 - 1:30) - GREG**
 
-**JEFF SCRIPT:**
-*"That rapid data feeds our Confluent AI-native intelligence platform -"*
-
-**[Transition to Greg]**
-
----
-
-### **SCENE 3: THE INTEGRATION ADVANTAGE (0:45 - 1:05) - GREG**
-
-**Setting:** Desk with dual monitors showing Confluent dashboard behind him OR standing with dashboard visible
-**Camera:** Medium shot
-**Energy:** Technical confidence, showing platform depth
+**Setting:** Office with computer/monitors visible (Confluent dashboard on screen if possible)
+**Camera:** Medium shot, Greg speaking to camera
+**Energy:** Technical confidence, showing integrated value
+**Word Count:** ~75 words = 30 seconds
 
 **GREG SCRIPT:**
-*"Confluent transforms that monitoring data into operational intelligence. Operators ask questions in plain English: 'Which wetland cells are underperforming?' 'Where should we focus treatment?' Our graph database links biosensor results with years of historical PDFs, spreadsheets, SCADA data, weather patterns, so every new data point compounds the platform's intelligence. It's not just faster monitoring; it's decision support operators have never had."*
+*"I'm Greg Saunders, Luminous bioSolutions Chief Technology Officer. Our Confluent platform is designed to transform biosensor data into operational intelligence.  using graph database architecture that links results with historical reports, SCADA data, and environmental patterns. Operators query in plain English—every data point compounds the system's intelligence. We're in active conversations with CNRL, Imperial, and Pathways Alliance. We need CDL mentors to help navigate these organizations and connect us with strategic investors who see this regulatory timeline as urgent opportunity."*
 
 **Key phrases to emphasize:**
-- "plain English"
+- "operational intelligence"
 - "graph database"
-- "compounds the platform's intelligence"
-- "decision support operators have never had"
-
----
-
-### **SCENE 4: THE ASK & TRACTION (1:05 - 1:28) - JEFF**
-
-**Setting:** Back to office, leaning slightly forward (engagement energy)
-**Camera:** Medium shot
-**Energy:** Direct, clear ask for mentor support
-
-**JEFF SCRIPT:**
-*"We're in active conversations with CNRL, Imperial, and Pathways Alliance two operators managing 2/3rds of Alberta's tailings inventory. We're not selling a science experiment. We're offering the operational monitoring platform they'll need to move from containment to meeting new release standards. 
-
-Our ask from CDL mentors: help us navigate these complex organizations to accelerate pilot commitments, and connect us to the strategic investors who understand why this regulatory forcing function makes Luminous an urgent opportunity, not a nice-to-have."*
-
-**Key phrases to emphasize:**
-- "CNRL, Imperial, and Suncor"
-- "not selling a science experiment"
-- "navigate these complex organizations"
-- "urgent opportunity, not a nice-to-have"
-
----
-
-### **SCENE 5: THE CLOSER (1:28 - 1:30) - JEFF OR ALL THREE**
-
-**Setting:** Quick 3-shot of team together OR back to Jeff solo
-**Camera:** Medium/wide shot if all three, medium if Jeff solo
-
-**SCRIPT (JEFF or ALL THREE):**
-*"Luminous BioSolutions: the integrated NA intelligence platform for addressing Alberta's Tailings challenge."*
+- "plain English"
+- "CNRL, Imperial, and Pathways Alliance"
+- "urgent opportunity"
 
 ---
 
@@ -153,10 +108,10 @@ Our ask from CDL mentors: help us navigate these complex organizations to accele
 - OR AirPods Pro (surprisingly good quality)
 - Record in quiet room (turn off AC/fans, close windows)
 
-**Background:**
-- **Jeff:** Clean office (bookshelf, whiteboard with strategic notes, company logo)
-- **Shawn:** Lab bench OR field setting (outdoors at wetland/pond if accessible)
-- **Greg:** Desk with dual monitors (Confluent dashboard visible on screen behind him)
+**Background (Office-Only for Speed):**
+- **Jeff:** Clean office (bookshelf, whiteboard, or company logo visible)
+- **Shawn:** Office with lab equipment visible OR clean office background
+- **Greg:** Office with computer/monitors visible (Confluent dashboard on screen if possible)
 
 ### **Camera Framing:**
 - Medium shot: Head to mid-chest visible
@@ -168,84 +123,86 @@ Our ask from CDL mentors: help us navigate these complex organizations to accele
 
 ## FILMING INSTRUCTIONS (By Person)
 
-### **JEFF - 3 Scenes to Film**
+### **JEFF - Scene 1 (0:00-0:30)**
 
 **What to film:**
-1. Scene 1 (0:00-0:20): The Forcing Function
-2. Scene 2a (0:20-0:25): Transition to Shawn
-3. Scene 4 (1:05-1:28): The Ask & Traction
-4. Scene 5 (1:28-1:30): The Closer
+- The Problem & Urgency (30-second segment)
 
 **Setup:**
-- Office background (clean, professional but not corporate)
+- Office background (bookshelf, whiteboard, or company logo visible)
 - iPhone on tripod at eye level, 4-5 feet away
 - Window light OR two desk lamps at 45° angles
 - Wired earbuds clipped to collar for audio
 
 **Filming Tips:**
-- Do 3-5 takes of each scene (pick best in editing)
-- Speak with energy and urgency (this is a forcing function, not a nice-to-have)
-- Memorize script (don't read off paper - eye contact with camera is critical)
-- Pause 2 seconds before/after each take (easier to edit)
+- Do 3-5 takes (pick best in editing)
+- Speak at normal conversational pace (not rushed—75 words = 30 seconds)
+- Introduce yourself at the end: "I'm Jeff Violo, CEO"
+- Memorize script for natural eye contact with camera
+- Pause 2 seconds before/after each take
 
-**Energy Level:** 7/10 - Confident and urgent, but not over-the-top
+**Energy Level:** 7/10 - Confident and urgent
 
----
-
-### **SHAWN - 1 Scene to Film**
-
-**What to film:**
-1. Scene 2b (0:25-0:35): Scientific Credibility
-
-**Setup:**
-- Lab bench OR field setting (establishes scientific authority)
-- Same iPhone/tripod setup as Jeff
-- Natural light if outdoors, soft overhead light if lab
-
-**Filming Tips:**
-- Authority tone (matter-of-fact scientist, not salesperson)
-- Emphasize: "peer-reviewed", "ACS Synthetic Biology", "Imperial's Kearl wetland"
-- Do 3-5 takes
-- Memorize script for natural delivery
-
-**Energy Level:** 6/10 - Authoritative but calm (credible scientist)
+**Timing Check:** Read aloud with stopwatch—should be 28-32 seconds
 
 ---
 
-### **GREG - 1 Scene to Film**
+### **SHAWN - Scene 2 (0:30-1:00)**
 
 **What to film:**
-1. Scene 3 (0:45-1:05): The Integration Advantage
+- The Science & Credibility (30-second segment)
 
 **Setup:**
-- Desk with dual monitors showing Confluent dashboard in background
-- OR standing with dashboard visible on screen behind you
+- Office with lab equipment visible OR clean office background
 - Same iPhone/tripod setup as Jeff
+- Window light OR soft desk lamps
 
 **Filming Tips:**
-- Technical confidence (you built this platform, you know it inside-out)
-- Emphasize: "plain English", "graph database", "compounds the platform's intelligence"
+- Authority tone (credible scientist, not salesperson)
+- Introduce yourself: "I'm Dr. Shawn Lewenza, Chief Science Officer"
+- Emphasize: "ACS Synthetic Biology", "Imperial's Kearl", "peer-reviewed"
 - Do 3-5 takes
 - Memorize script for natural delivery
-- If possible, have Confluent dashboard visible on monitor behind you (subtle but powerful)
+
+**Energy Level:** 7/10 - Authoritative and confident
+
+**Timing Check:** Read aloud with stopwatch—should be 28-32 seconds
+
+---
+
+### **GREG - Scene 3 (1:00-1:30)**
+
+**What to film:**
+- The Platform & Traction (30-second segment)
+
+**Setup:**
+- Office with computer/monitors visible (Confluent dashboard on screen if possible)
+- Same iPhone/tripod setup as Jeff and Shawn
+- Window light OR soft desk lamps
+
+**Filming Tips:**
+- Introduce yourself: "I'm Greg Saunders, Chief Technology Officer"
+- Technical confidence (you built this platform)
+- Emphasize: "graph database", "plain English", "CNRL, Imperial, and Pathways Alliance"
+- Do 3-5 takes
+- Memorize script for natural delivery
+- If possible: Have Confluent dashboard visible on monitor behind you
 
 **Energy Level:** 7/10 - Technical depth with commercial clarity
 
+**Timing Check:** Read aloud with stopwatch—should be 28-32 seconds
+
 ---
 
-## OPTIONAL B-ROLL (If Time Permits)
+## OPTIONAL B-ROLL (Skip for Speed - Not Required)
 
-If you want to elevate beyond talking heads, film these 3-5 second clips:
+Given the tight timeline (filming tomorrow), **skip B-roll entirely**. The three-founder talking-head format is professional and CDL-appropriate.
 
-1. **Biosensor glow** - Time-lapse of bacterial biosensor lighting up (if accessible)
-2. **Field deployment** - Person collecting water sample at pond/wetland (if accessible)
-3. **Dashboard screen recording** - Confluent interface showing:
-   - Heat map visualization
-   - Natural language query being typed and answered
-   - Data streaming in real-time
-4. **Aerial tailings pond** - Stock footage OR drone footage (if accessible)
+**If you have extra time and want to add polish:**
+- **Greg's background:** Have Confluent dashboard visible on monitor behind you during filming
+- **Simple graphics:** Add text overlays in iMovie for key stats ("1.4 trillion litres", "24-hour results", "12-18 months")
 
-**Note:** B-roll is OPTIONAL. Talking-head format is perfectly acceptable if time is tight.
+**Note:** Talking-head format with lower thirds is perfectly professional and time-efficient.
 
 ---
 
@@ -258,14 +215,11 @@ If you want to elevate beyond talking heads, film these 3-5 second clips:
 
 ### **Step 2: Assemble Timeline**
 1. Drag clips to timeline in order:
-   - Jeff Scene 1 (0:00-0:20)
-   - Jeff Scene 2a (0:20-0:25)
-   - Shawn Scene 2b (0:25-0:35)
-   - Jeff transition (0:35-0:45)
-   - Greg Scene 3 (0:45-1:05)
-   - Jeff Scene 4 (1:05-1:28)
-   - Jeff/All Scene 5 (1:28-1:30)
+   - Jeff Scene 1 (0:00-0:30)
+   - Shawn Scene 2 (0:30-1:00)
+   - Greg Scene 3 (1:00-1:30)
 2. Trim each clip to exact timing (use iMovie's "Clip Trimmer")
+3. Total runtime should be exactly 90 seconds (±2 seconds acceptable)
 
 ### **Step 3: Add Transitions**
 1. Between scenes, add "Cross Dissolve" transition (0.5 seconds)
@@ -334,27 +288,29 @@ After watching, mentors should retain these 7 phrases:
 
 ---
 
-## PRODUCTION TIMELINE
+## PRODUCTION TIMELINE (ACCELERATED - ONE DAY)
 
-**Day 1 (October 22):**
-- Review this script with team
-- Test filming setup (lighting, audio, framing)
-- Film Jeff's scenes (3 scenes total)
-- Film Shawn's scene (1 scene)
-- Film Greg's scene (1 scene)
-- Total filming time: 2-3 hours
+**Today (October 22) - Morning:**
+- [ ] Each person reads script aloud with stopwatch (confirm 30 seconds each)
+- [ ] Test filming setup (lighting, audio, framing) - 15 minutes per person
+- [ ] Film all three segments (Jeff, Shawn, Greg) - 3-5 takes each
+- [ ] Total filming time: 1-2 hours
 
-**Day 2 (October 23):**
-- Edit in iMovie (assembly, transitions, lower thirds)
-- Add B-roll if available (optional)
-- Review as team
-- Make any final tweaks
+**Today (October 22) - Afternoon:**
+- [ ] Import clips to iMovie
+- [ ] Assemble timeline (Jeff → Shawn → Greg)
+- [ ] Add transitions (0.5 second cross-dissolve between people)
+- [ ] Add lower thirds (names/titles for each person)
+- [ ] Normalize audio levels
+- [ ] Review total runtime (should be 90 seconds ±2 seconds)
+- [ ] Team review and final tweaks
+- [ ] Total editing time: 2-3 hours
 
-**Day 3 (October 24):**
-- Export final MP4
-- Upload to Google Drive
-- Send link to Natasha Tippett
-- Submit before end of day
+**Today (October 22) - Evening:**
+- [ ] Export final MP4 (1080p, high quality)
+- [ ] Upload to Google Drive (set to "Anyone with link can download")
+- [ ] Email Natasha Tippett with link
+- [ ] Done before end of day
 
 ---
 
