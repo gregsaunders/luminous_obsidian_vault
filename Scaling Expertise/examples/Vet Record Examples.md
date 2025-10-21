@@ -295,3 +295,39 @@ _Lymph nodes_: All peripheral lymph nodes palpate normally
 
 _Integument_: Haircoat is healthy, skin appears healthy except for new mass reported by owner - **1.5cm diameter soft slightly moveable SQ mass on lateral left abdomen just behind rib cage. FNA: lipocytes only, Dx: Lipoma**
 
+---
+### Physical Exam 
+
+**Dr. Tara Dixon**  
+
+**Sisko will not tolerate full PE due to aggression/facial pain. Owner agreed to short-acting anesthesia ("fab four" - see anesthetic record for details) to facilitate exam**
+
+_Body Condition Score_: 3/5
+
+_Pain Score_: Could not be assessed due to sedation although O says she is not able to touch Sisko's face and he seems painful when trying to eat
+
+_Hydration_: MM moist, normal skin tent, assessed hydration - euhydrated
+
+_Eyes_: Corneal and conjunctival examination is normal. Pupils are isocoric and pupillary light responses are normal. **mild enophthalmos OD relative to OS. Corneas/sclera/conjunctiva appear normal. IOP OU normal (13, 14)**
+
+_Ears_: AS normal, no discharge, swelling or erythema externally noted. **AD canal with excess ceruminous discharge throughout. _Cytology: occasional cocci/yeast_** .The patient behaviourally seems to hear normally.
+
+_Nose_: The nostrils and nasal planum are normal and air passage is normal bilaterally.
+
+_Oral cavity_: Teeth are in good health, no lacerations or foreign material noted in the oral cavity. All teeth probed and found to be normal. Pharyngeal exam unremarkable. **trismus present - jaw cannot be opening > 10cm**
+
+_Respiratory_: Tracheal and lung sounds are normal bilaterally. Normal respiratory rate and effort. Cough cannot be elicited on tracheal palpation.
+
+_Cardiovascular_: Normal heart sounds bilaterally. Rhythm is regular. Peripheral pulses are strong and synchronous. The jugular veins are normal.
+
+_Abdomen_: Soft on palpation, no masses or organomegaly palpated, no pain appreciated on palpation, no fluid wave noted on palpation
+
+_Urogenital_: No abnormalities noted
+
+_Neurologic_: Appropriate mentation, normal cranial nerves. Gait is normal. Normal proprioception x4. No evidence of resting nystagmus or strabismus. Normal facial symmetry
+
+_Musculoskeletal_: Normal gait x 4 and normal ROM. **Asymmetry noted in musculature above orbits (temporalis), right side atrophied. Orbits, zygomatic arches, nasal bones palpate normally**.
+
+_Lymph nodes_: All peripheral lymph nodes palpate normally
+
+_Integument_: Haircoat is healthy, no masses noted on exam or reported by owner, skin appears healthy
