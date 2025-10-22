@@ -7,15 +7,15 @@
 
 ## The Challenge: Managing What You Can't See
 
-The oil sands industry is transitioning from containment to active treatment and release of 1.4 trillion liters of process-affected water. This shift requires answering a question that current monitoring approaches weren't designed to address:
+The oil sands industry is transitioning from tailings ponds containment to active treatment and release of process-affected water—addressing one of the industry's largest environmental challenges. This shift requires answering a question that current monitoring approaches weren't designed to address:
 
 **"Is Naphthenic Acid treatment working right now, and what should we adjust?"**
 
 **Why Naphthenic Acids matter:** NAs are one of the principal contaminants of concern preventing regulatory approval for water release. You cannot get release approval—even if everything else is clean—if NA levels aren't demonstrated to be safe.
 
-**The monitoring gap:** Current NA analysis relies on High-Resolution Mass Spectrometry (HRMS)—the gold standard for regulatory compliance. HRMS provides molecular-level precision, but with 6-8 week turnaround times and $700-$1,000 per sample, it creates a data scarcity problem. Operators manage multi-billion dollar remediation programs with quarterly snapshots of a dynamic biological process, making decisions based on data that's weeks to months old.
+**The monitoring gap:** Current NA analysis relies on High-Resolution Mass Spectrometry (HRMS)—the gold standard for regulatory compliance. HRMS provides molecular-level precision, but with 6-8 week turnaround times and $700-$1,000 per sample, it creates a data scarcity problem. Operators managing multi-million dollar remediation programs with quarterly snapshots of a dynamic biological process—making decisions based on data that's weeks to months old—face an untenable situation.
 
-**Real-world example:** The recent multi-season Kearl engineered wetland study collected 9 NA samples over two field seasons. When natural degradation rates declined mid-season, this wasn't discovered until the following year's analysis—too late to optimize treatment approaches.
+**Real-world example:** The recent multi-season Kearl engineered wetland study collected 9 NA samples over two field seasons. When degradation rates declined mid-season, this wasn't discovered until the following year's analysis—too late to optimize treatment approaches.
 
 **What's needed:** A complementary monitoring approach that preserves HRMS accuracy for regulatory compliance while enabling operational frequency for process control.
 
@@ -34,10 +34,10 @@ Luminous BioSolutions has developed an integrated platform that addresses the op
 **Status:** Already established industry-wide
 
 ### **TIER 2: Operational Screening (Luminous Biosensor)**
-**What it is:** Peer-reviewed biosensor technology (*ACS Synthetic Biology*, 2024) specifically targeting Naphthenic Acids
+**What it is:** Peer-reviewed (*ACS Synthetic Biology*, 2024) and field-tested (Kearl Wetland Pilot, 2024/25) biosensor technology specifically targeting Naphthenic Acids
 **Frequency:** Daily to weekly across multiple sampling points
 **Turnaround:** 24 hours
-**Cost:** <$100 per test
+**Cost:** Monthly/quarterly service fee (not per-test charges—test as frequently as needed)
 **Role:** Bridge the gap between compliance events with operational intelligence
 
 **How it works:**
@@ -49,7 +49,7 @@ The biosensor uses genetically engineered bacteria that produce a bioluminescent
 This panel approach goes beyond simple total NA quantification, providing insight into which NA fractions are responding to treatment—critical for optimizing remediation strategies.
 
 **Field validation:**
-Recent field trials at a multi-season engineered wetland study (completed June 2025) demonstrated high correlation between Luminous biosensors and industry gold-standard Orbitrap Mass Spectrometry on real OSPW samples. The technology performs under actual operational conditions, not just controlled laboratory settings.
+Recent field trials at the Kearl engineered wetland study (completed June 2025) demonstrated high correlation between Luminous biosensors and industry gold-standard Orbitrap Mass Spectrometry on real OSPW samples. The technology performs under actual operational conditions, not just controlled laboratory settings.
 
 **Operational capacity:**
 - 96 samples processed simultaneously per batch
@@ -58,7 +58,7 @@ Recent field trials at a multi-season engineered wetland study (completed June 2
 - Results delivered to Confluent platform within 24 hours
 
 **Strategic positioning:**
-The biosensor is designed to complement HRMS, not replace it. HRMS provides molecular-level precision for regulatory compliance and forensic analysis. The biosensor provides operational frequency for process control and treatment optimization. Together, they enable strategic HRMS deployment—reserve gold-standard validation for quarterly biosensor correlation and regulatory milestones while achieving comprehensive spatial and temporal coverage within existing budgets.
+The biosensor complements HRMS, not replaces it—enabling strategic deployment where HRMS provides molecular-level precision for regulatory compliance while biosensors provide operational frequency for process control. This preserves gold-standard validation for quarterly correlation and regulatory milestones while achieving comprehensive spatial and temporal coverage within existing budgets.
 
 ### **TIER 3: AI-Native Intelligence (Confluent Platform)**
 **What it is:** AI-native data intelligence platform currently focused on NA data, designed to transform monitoring results into actionable operational insights
@@ -74,7 +74,7 @@ Most environmental data systems are databases with visualization layers—digita
 Operators ask questions in plain English, not SQL:
 - *"Show me all wetland areas where NA levels increased after heavy rain events in last 3 years"*
 - *"Compare NA degradation rates between shallow vegetated cells and deep open water cells"*
-- *"What treatment adjustments worked when NA levels exceeded 25 mg/L for three consecutive weeks?"*
+- *"What treatment adjustments worked when NA levels exceeded thresholds for three consecutive weeks?"*
 
 Confluent queries the graph database, retrieves relevant historical PDFs, correlates with weather and SCADA data, and returns map visualizations, trend charts, historical context, and evidence-based recommendations.
 
@@ -96,7 +96,7 @@ One platform, three dashboard views—same trusted data, appropriate presentatio
 - **Regulator Dashboard:** Compliance metrics, trend analysis, immutable audit trail, automated reporting, threshold comparisons
 - **Community/Indigenous Stakeholder Dashboard:** Public-friendly visualizations (color-coded maps, plain language), NA levels relative to safety thresholds, treatment progress, transparency timestamps
 
-This multi-view capability directly addresses OSMWSC September 2025 recommendations requiring operators to demonstrate technology transparency to Indigenous communities and stakeholders. Rather than producing separate reports for different audiences, Confluent provides real-time access to the same dataset, presented appropriately for each stakeholder group.
+This multi-view capability directly addresses OSMWSC September 2025 recommendations requiring operators to demonstrate technology transparency to Indigenous communities and stakeholders. Rather than producing separate reports for different audiences, Confluent provides real-time access to the same trusted data, presented appropriately for each stakeholder group.
 
 **Technical architecture:**
 Built on graph database foundation (TerminusDB) with model-agnostic AI orchestration (Claude, GPT-4, Gemini). REST/GraphQL APIs enable integration with existing LIMS, SCADA, and GIS systems. Backend services operational, frontend interfaces finalizing for Q4 2025 deployment.
@@ -114,7 +114,7 @@ While currently focused on NA intelligence (the bottleneck preventing water rele
 **With operational monitoring:** Daily biosensor detects anomaly within 72 hours. Confluent flags similar historical pattern. Operator investigates, discovers flow obstruction, corrects within one week. Seasonal effectiveness preserved.
 
 ### **2. Cost Optimization: Strategic HRMS Deployment**
-Biosensor enables 10-50x increase in monitoring frequency within existing budgets. Comprehensive spatial coverage (multiple sampling points) AND temporal coverage (daily monitoring) without budget increase. HRMS reserved for quarterly validation and regulatory milestones.
+Biosensor enables 10-50x increase in monitoring frequency cost-effectively. Comprehensive spatial coverage (multiple sampling points) AND temporal coverage (daily monitoring) within existing budgets. HRMS reserved for quarterly validation and regulatory milestones.
 
 ### **3. Treatment Optimization: Data-Driven Decisions**
 High-frequency datasets enable correlation analysis (which parameters drive NA degradation?), A/B testing of treatment approaches with statistical significance, predictive modeling, and continuous improvement through systematic optimization.
@@ -216,7 +216,7 @@ Long-term relationship: multi-year monitoring program, technology integration wi
 **Contact:**
 Jeff Violo, COO
 Luminous BioSolutions
-[Contact Information]
+jeff.violo@luminousbiosolutions.com
 
 **Additional Materials:**
 - Peer-reviewed publications (*ACS Synthetic Biology*, 2024; additional papers year-end 2025)
