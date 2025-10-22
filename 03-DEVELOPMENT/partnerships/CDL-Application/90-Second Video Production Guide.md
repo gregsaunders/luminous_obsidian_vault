@@ -41,11 +41,7 @@ CDL mentors will watch this 90-second video **before** Session 1 (November 7) to
 **Word Count:** ~75 words = 30 seconds at conversational pace
 
 **JEFF SCRIPT:**
-*"Alberta's oil sands operators manage 1.4 trillion litres of toxic tailings. The government is finalizing water release standards within 12-18 months, forcing a shift from containment to preparing for regulated release. Naphthenic Acid is one of the contaminants that has restricted water release guidelines for over 50 years.* 
-
-*Current NA monitoring technologies takes 6-8 weeks to produce test results. Moving from "containment" to "ready to release" requires multi million dollar reclamation projects. You can't manage these reclamation projects flying blind for two months.* 
-
-*Luminous BioSolutions gives operators the integrated intelligence platform they need. I'm Jeff Violo, Luminous BioSolutions COO."*
+*"Alberta's oil sands operators manage 1.4 trillion litres of toxic tailings. The government is finalizing water release standards within 12-18 months, forcing a shift from containment to regulated release. But current monitoring takes 6-8 weeks per test, you can't manage multi million-dollar reclamation flying blind for two months. We've built the integrated platform operators need to make this transition. I'm Jeff Violo, and this is Luminous BioSolutions."*
 
 **Key phrases to emphasize:**
 - "1.4 trillion litres"
@@ -63,9 +59,7 @@ CDL mentors will watch this 90-second video **before** Session 1 (November 7) to
 **Word Count:** ~75 words = 30 seconds
 
 **SHAWN SCRIPT:**
-*"I'm Dr. Shawn Lewenza, Chief Science Officer at Luminous BioSolutions. Our novel biosensor technology delivers naphthenic acid test results within 24-hour, at a fraction of the cost of current testing methods. Our technology has been published in ACS Synthetic Biology and recently field-validated at Imperial's Kearl wetland pilot.* 
-
-*We've compressed weeks into hours with engineered specificity that mass spec labs can't match for operational screening. This isn't lab science, it's peer-reviewed technology proven in real tailings water, giving operators the frequency they need for process control."*
+*"I'm Dr. Shawn Lewenza, Chief Science Officer. Our biosensor delivers naphthenic acid results in 24 hours at a fraction of current costs and weeks compressed into just over 24 hours. Published in ACS Synthetic Biology and field-validated at Imperial's Kearl wetland, this is peer-reviewed technology proven in real tailings water. We give operators the monitoring frequency they've never had for process control."*
 
 **Key phrases to emphasize:**
 - "24-hour results"
@@ -84,11 +78,7 @@ CDL mentors will watch this 90-second video **before** Session 1 (November 7) to
 **Word Count:** ~75 words = 30 seconds
 
 **GREG SCRIPT:**
-*"I'm Greg Saunders, Luminous bioSolutions Chief Technology Officer. We designed our Confluent platform to transform biosensor data into operational intelligence.*  
-
-*Using graph database architecture that links results with historical reports, operational data, and environmental patterns, operators can query Confluent in plain english. Every new data point compounds the system's intelligence.* 
-
-*We're in active conversations with CNRL, Imperial, and Pathways Alliance., and would love CDL mentors to help us navigate these organizations and connect us with strategic investors who see this regulatory timeline as urgent opportunity."*
+*"I'm Greg Saunders, Chief Technology Officer. That biosensor data flows into our Confluent platform transforming raw numbers into intelligence using graph database architecture. Operators query in plain English, linking current results with historical reports, environmental patterns, and operational data. Every data point makes the system smarter. We're talking with CNRL, Imperial, and Pathways Alliance, and we need CDL mentors to help us navigate these organizations and connect with strategic investors who see this timeline as urgent opportunity."*
 
 **Key phrases to emphasize:**
 - "operational intelligence"
