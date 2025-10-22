@@ -298,7 +298,7 @@ One platform, multiple dashboards tailored to stakeholder needs:
 - Transparency: "Data last updated 24 hours ago" timestamps
 - Context: "What do these numbers mean?" educational content
 
-**This multi-view capability directly addresses OSMWSC September 2025 recommendations** requiring operators to demonstrate technology transparency to Indigenous communities and stakeholders on key contaminants. Rather than producing separate reports for different audiences, Confluent provides real-time access to the same trusted dataset, presented appropriately for each stakeholder group.
+**Technical implementation of OSMWSC transparency requirements:** Confluent's dashboard architecture enables role-based data access meeting September 2025 OSMWSC mandates while maintaining data integrity. Operators access operational detail and predictive analytics. Regulators receive compliance-focused views with immutable audit trails. Indigenous communities and stakeholders see public-friendly visualizations with plain-language context—all querying the same underlying dataset, eliminating data fragmentation and "version control" issues common in multi-stakeholder reporting.
 
 ---
 ## 5. Integrated Business Value: Beyond Monitoring

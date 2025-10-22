@@ -122,9 +122,9 @@ The Luminous platform creates value across multiple dimensions:
 
 **Current challenge:** Indigenous communities express skepticism. Operators struggle to demonstrate good-faith effort. Quarterly reports feel like "trust us" rather than "see for yourself."
 
-**With Luminous:** Real-time community dashboard provides continuous visibility. Transparent demonstration with auditable data trail. Plain-language explanations. Proactive engagement addressing OSMWSC requirements.
+**With Luminous:** Confluent's multi-view dashboards address OSMWSC transparency requirements—operators, regulators, and Indigenous communities access the same data through tailored interfaces. This eliminates the cost and risk of maintaining separate reporting systems while demonstrating good-faith transparency that builds stakeholder confidence. Real-time updates, auditable data trails, plain-language explanations.
 
-**Value:** Enhanced social license, reduced regulatory friction, genuine partnership, differentiation through transparency leadership.
+**Value:** Enhanced social license, reduced regulatory friction, genuine partnership, competitive differentiation through transparency leadership.
 
 ### 5. Regulatory Preparedness
 

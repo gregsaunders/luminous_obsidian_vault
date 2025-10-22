@@ -96,7 +96,7 @@ One platform, three dashboard views—same trusted data, appropriate presentatio
 - **Regulator Dashboard:** Compliance metrics, trend analysis, immutable audit trail, automated reporting, threshold comparisons
 - **Community/Indigenous Stakeholder Dashboard:** Public-friendly visualizations (color-coded maps, plain language), NA levels relative to safety thresholds, treatment progress, transparency timestamps
 
-This multi-view capability directly addresses OSMWSC September 2025 recommendations requiring operators to demonstrate technology transparency to Indigenous communities and stakeholders. Rather than producing separate reports for different audiences, Confluent provides real-time access to the same trusted data, presented appropriately for each stakeholder group.
+This multi-view capability directly addresses OSMWSC September 2025 recommendations requiring operators to demonstrate technology transparency to Indigenous communities and stakeholders. Rather than producing separate reports for different audiences—each with potential version control issues and inconsistencies—Confluent provides real-time access to a single source of truth, presented appropriately for each stakeholder group.
 
 **Technical architecture:**
 Built on graph database foundation (TerminusDB) with model-agnostic AI orchestration (Claude, GPT-4, Gemini). REST/GraphQL APIs enable integration with existing LIMS, SCADA, and GIS systems. Backend services operational, frontend interfaces finalizing for Q4 2025 deployment.
