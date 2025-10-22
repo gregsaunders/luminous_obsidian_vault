@@ -6,7 +6,7 @@
 
 ## 1. TWO-SENTENCE PITCH (Written)
 
-Oil sands operators can't optimize NA treatment because HRMS takes 6-8 weeks and costs $1,000 per sample—forcing them to manage the NA bottleneck blindly while billion-dollar liabilities grow. Luminous delivers 24-hour NA screening at a fraction of the cost, giving operators the real-time NA visibility they need to solve the principal contaminant preventing water release.
+Oil sands operators can't optimize NA treatment because HRMS takes 6-8 weeks and costs $1,000 per sample—forcing them to manage the NA bottleneck blindly while billion-dollar liabilities grow. Luminous delivers 24-hour NA screening at a fraction of the cost, giving operators the real-time visibility they need to solve the key contaminant preventing water release.
 
 ---
 
@@ -72,7 +72,7 @@ Hi [Name],
 
 With OSMWSC pushing operators toward active treatment and water release, the NA monitoring challenge has fundamentally changed: HRMS turnaround times (6-8 weeks) are too slow for operational NA process control.
 
-Luminous BioSolutions provides 24-hour NA screening that complements HRMS accuracy with operational frequency. Our peer-reviewed biosensor platform specifically targets Naphthenic Acids—one of the principal contaminants preventing regulatory approval—plus our AI-native Confluent data intelligence platform gives you the real-time NA visibility needed to optimize treatment, demonstrate NA reduction progress to stakeholders, and establish regulatory compliance leadership.
+Luminous BioSolutions provides 24-hour NA screening that complements HRMS accuracy with operational frequency. Our peer-reviewed biosensor platform specifically targets Naphthenic Acids—one of the principal contaminants preventing regulatory approval—plus our AI-native Confluent data intelligence platform gives you the real-time visibility needed to optimize treatment, demonstrate reduction progress to stakeholders, and establish regulatory compliance leadership.
 
 Recent field validation at a multi-season engineered wetland pilot demonstrated high correlation with Orbitrap Mass Spec for NA detection on real OSPW samples.
 
@@ -86,7 +86,7 @@ Luminous BioSolutions
 
 ## 6. INVESTOR PITCH (One Paragraph)
 
-Luminous BioSolutions addresses the $30B oil sands tailings liability by solving the Naphthenic Acid bottleneck—one of the principal contaminants preventing regulatory approval for water release—through a three-tier NA monitoring platform that enables operators to transition from containment to active NA treatment. Our peer-reviewed biosensor technology (ACS Synthetic Biology, 2024) specifically targets NAs and delivers 24-hour NA results versus 6-8 week HRMS turnaround, while our AI-native Confluent platform (currently focused on NA intelligence) transforms high-frequency NA monitoring data into operational intelligence and stakeholder transparency. With OSMWSC September 2025 recommendations requiring treatment and release standards including NA transparency, operators face a 12-18 month window to establish NA monitoring capabilities—creating immediate demand for our technology. We have active conversations with CNRL, Suncor, and Imperial (representing majority of tailings inventory) about NA monitoring solutions, partnership discussions with Stantec, and proactive Indigenous community engagement with Mikisew Cree First Nation on NA transparency. Seeking $1.5M pre-seed (SAFE) to execute 2 paid pilot deployments for NA monitoring and scale to Series A within 18 months.
+Luminous BioSolutions addresses the $30B oil sands tailings liability by solving the Naphthenic Acid bottleneck through a three-tier monitoring platform that enables operators to transition from containment to active treatment. Our peer-reviewed biosensor technology (ACS Synthetic Biology, 2024) specifically targets NAs and delivers 24-hour NA results versus 6-8 week HRMS turnaround, while our AI-native Confluent platform (currently focused on NA intelligence) transforms high-frequency NA monitoring data into operational intelligence and stakeholder transparency. With OSMWSC September 2025 recommendations requiring treatment and release standards including NA transparency, operators face a 12-18 month window to establish NA monitoring capabilities—creating immediate demand for our technology. We have active conversations with CNRL, Suncor, and Imperial (representing majority of tailings inventory) about NA monitoring solutions, partnership discussions with Stantec, and proactive Indigenous community engagement with Mikisew Cree First Nation on NA transparency. Seeking $1.5M pre-seed (SAFE) to execute 2 paid pilot deployments for NA monitoring and scale to Series A within 18 months.
 
 ---
 

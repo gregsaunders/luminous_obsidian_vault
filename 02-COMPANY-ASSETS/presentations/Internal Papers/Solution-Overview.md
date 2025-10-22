@@ -7,13 +7,13 @@
 
 ## The Challenge: Managing What You Can't See
 
-The oil sands industry is transitioning from tailings ponds containment to active treatment and release of process-affected water—addressing one of the industry's largest environmental challenges. This shift requires answering a question that current monitoring approaches weren't designed to address:
+The oil sands industry is transitioning from tailings ponds containment to active treatment and release of process-affected water, addressing one of the industry's largest environmental challenges. This shift requires answering a question that current monitoring approaches weren't designed to address:
 
 **"Is Naphthenic Acid treatment working right now, and what should we adjust?"**
 
-**Why Naphthenic Acids matter:** NAs are one of the principal contaminants of concern preventing regulatory approval for water release. You cannot get release approval—even if everything else is clean—if NA levels aren't demonstrated to be safe.
+**Why Naphthenic Acids (NA) matter:** NAs are one of the principal contaminants of concern preventing regulatory approval for water release. You cannot get release approval - even if everything else is clean - if NA levels aren't demonstrated to be safe.
 
-**The monitoring gap:** Current NA analysis relies on High-Resolution Mass Spectrometry (HRMS)—the gold standard for regulatory compliance. HRMS provides molecular-level precision, but with 6-8 week turnaround times and $700-$1,000 per sample, it creates a data scarcity problem. Operators managing multi-million dollar remediation programs with quarterly snapshots of a dynamic biological process—making decisions based on data that's weeks to months old—face an untenable situation.
+**The monitoring gap:** Current NA analysis relies on High-Resolution Mass Spectrometry (HRMS), the gold standard for regulatory compliance. HRMS provides molecular-level precision, but with 6-8 week turnaround times and $700-$1,000 per sample, it creates a data scarcity problem. Operators managing multi-million dollar remediation programs with quarterly snapshots of a dynamic biological process, making decisions based on data that's weeks to months old, face an untenable situation.
 
 **Real-world example:** The recent multi-season Kearl engineered wetland study collected 9 NA samples over two field seasons. When degradation rates declined mid-season, this wasn't discovered until the following year's analysis—too late to optimize treatment approaches.
 
@@ -37,7 +37,7 @@ Luminous BioSolutions has developed an integrated platform that addresses the op
 **What it is:** Peer-reviewed (*ACS Synthetic Biology*, 2024) and field-tested (Kearl Wetland Pilot, 2024/25) biosensor technology specifically targeting Naphthenic Acids
 **Frequency:** Daily to weekly across multiple sampling points
 **Turnaround:** 24 hours
-**Cost:** Monthly/quarterly service fee (not per-test charges—test as frequently as needed)
+**Cost:** Monthly/quarterly service fee (not per-test charges, test as frequently as needed)
 **Role:** Bridge the gap between compliance events with operational intelligence
 
 **How it works:**
@@ -46,7 +46,7 @@ The biosensor uses genetically engineered bacteria that produce a bioluminescent
 - **Panel 2:** Complex/aromatic NAs
 - **Panel 3:** Classical NAs
 
-This panel approach goes beyond simple total NA quantification, providing insight into which NA fractions are responding to treatment—critical for optimizing remediation strategies.
+This panel approach goes beyond simple total NA quantification, providing insight into which NA fractions are responding to treatment - critical for optimizing remediation strategies.
 
 **Field validation:**
 Recent field trials at the Kearl engineered wetland study (completed June 2025) demonstrated high correlation between Luminous biosensors and industry gold-standard Orbitrap Mass Spectrometry on real OSPW samples. The technology performs under actual operational conditions, not just controlled laboratory settings.
@@ -58,7 +58,7 @@ Recent field trials at the Kearl engineered wetland study (completed June 2025) 
 - Results delivered to Confluent platform within 24 hours
 
 **Strategic positioning:**
-The biosensor complements HRMS, not replaces it—enabling strategic deployment where HRMS provides molecular-level precision for regulatory compliance while biosensors provide operational frequency for process control. This preserves gold-standard validation for quarterly correlation and regulatory milestones while achieving comprehensive spatial and temporal coverage within existing budgets.
+The biosensor complements HRMS, not replaces it, enabling strategic deployment where HRMS provides molecular-level precision for regulatory compliance while biosensors provide operational frequency for process control. This preserves gold-standard validation for quarterly correlation and regulatory milestones while achieving comprehensive spatial and temporal coverage within existing budgets.
 
 ### **TIER 3: AI-Native Intelligence (Confluent Platform)**
 **What it is:** AI-native data intelligence platform currently focused on NA data, designed to transform monitoring results into actionable operational insights
@@ -66,7 +66,7 @@ The biosensor complements HRMS, not replaces it—enabling strategic deployment 
 **Role:** Decision support system enabling natural language querying, multi-stakeholder transparency, and predictive analytics
 
 **What makes it "AI-native":**
-Most environmental data systems are databases with visualization layers—digital filing cabinets. Confluent was built from inception in the era of large language models and graph databases. NA data relationships are explicit and queryable. Unstructured information (decades of PDF reports) becomes searchable alongside structured data (biosensor results, HRMS data, SCADA outputs).
+Most environmental data systems are databases with visualization layers - digital filing cabinets. Confluent was built from inception in the era of large language models and graph databases. NA data relationships are explicit and queryable. Unstructured information (decades of PDF reports) becomes searchable alongside structured data (biosensor results, HRMS data, SCADA outputs).
 
 **Key capabilities:**
 
@@ -90,13 +90,13 @@ The platform becomes more valuable with every dataset added:
 - **Year 2:** + Multiple sites enables cross-site comparison and industry benchmarking
 
 **4. Multi-Stakeholder Transparency**
-One platform, three dashboard views—same trusted data, appropriate presentation:
+One platform, three dashboard views, same trusted data, appropriate presentation:
 
 - **Operator Dashboard:** Real-time biosensor results, treatment optimization recommendations, operational alerts, predictive forecasting, full data access
 - **Regulator Dashboard:** Compliance metrics, trend analysis, immutable audit trail, automated reporting, threshold comparisons
 - **Community/Indigenous Stakeholder Dashboard:** Public-friendly visualizations (color-coded maps, plain language), NA levels relative to safety thresholds, treatment progress, transparency timestamps
 
-This multi-view capability directly addresses OSMWSC September 2025 recommendations requiring operators to demonstrate technology transparency to Indigenous communities and stakeholders. Rather than producing separate reports for different audiences—each with potential version control issues and inconsistencies—Confluent provides real-time access to a single source of truth, presented appropriately for each stakeholder group.
+This multi-view capability directly addresses OSMWSC September 2025 recommendations requiring operators to demonstrate technology transparency to Indigenous communities and stakeholders. Rather than producing separate reports for different audiences, each with potential version control issues and inconsistencies. Confluent provides real-time access to a single source of truth, presented appropriately for each stakeholder group.
 
 **Technical architecture:**
 Built on graph database foundation (TerminusDB) with model-agnostic AI orchestration (Claude, GPT-4, Gemini). REST/GraphQL APIs enable integration with existing LIMS, SCADA, and GIS systems. Backend services operational, frontend interfaces finalizing for Q4 2025 deployment.
@@ -145,7 +145,7 @@ Operators who establish comprehensive NA monitoring before release standards are
 - Indigenous community consultation (Mikisew Cree First Nation)
 
 **Industry Engagement:**
-- Active conversations with CNRL, Suncor, Imperial (majority of tailings inventory)
+- Active conversations with CNRL, Imperial (majority of tailings inventory) and Pathways Alliance
 - OSMWSC compliance frameworks ready for deployment
 
 This is operational technology solving real problems today, not theoretical concepts.

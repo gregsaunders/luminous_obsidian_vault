@@ -17,7 +17,7 @@ Relying solely on High-Resolution Mass Spectrometry (HRMS) - designed for forens
 
 **Important Context:** Tailings water contains multiple contaminants requiring monitoring - metals (arsenic, selenium), salts, suspended solids, other organic compounds. 
 
-However, **Naphthenic Acids (NAs) are one of the principal contaminants of concern holding back regulatory approval for water release.** This white paper focuses on solving this bottleneck through targeted monitoring and intelligence.
+However, **Naphthenic Acids (NAs) are one of the principal contaminants of concern holding back regulatory approval for water release.** This white paper focuses on solving this challenge through targeted monitoring and intelligence.
 
 Luminous BioSolutions addresses this challenge through an integrated platform combining rapid biosensor screening (24-hour turnaround), high correlation to HRMS for characterization, and Confluent - an AI-native data intelligence platform that transforms high-frequency monitoring into actionable operational insights while providing multi-stakeholder transparency on reduction progress.
 
@@ -235,7 +235,7 @@ Confluent becomes more powerful with every dataset added - a compounding intelli
 - Site-specific optimization: "What factors differentiate high-performing vs. low-performing treatment systems?"
 - Industry benchmarking: Anonymous aggregate data across operators
 
-**Future Expansion:** While currently focused on naphthenic acid intelligence (the bottleneck preventing water release), Confluent's architecture is designed to eventually integrate monitoring data from other contaminant systems (metals, salts, other organics) as operators expand their comprehensive water treatment programs.
+**Future Expansion:** While currently focused on naphthenic acid intelligence (the primary contaminant preventing water release), Confluent's architecture is designed to eventually integrate monitoring data from other contaminant systems (metals, salts, other organics) as operators expand their comprehensive water treatment programs.
 
 ### 4.4 Natural Language Querying: Making Data Accessible
 
@@ -433,7 +433,7 @@ Operators establish comprehensive monitoring programs before release standards f
 - Regulatory approval readiness for water release authorization
 
 ---
-## 7. Conclusion: Transforming the Bottleneck from Liability into Managed Challenge
+## 7. Conclusion: Transforming the Challenge from Liability to Managed Solution
 
 The oil sands industry faces a defining challenge: demonstrating that Naphthenic Acids can be safely reduced to enable water release. This requires more than engineering innovation - it requires a monitoring revolution.
 
@@ -449,9 +449,9 @@ HRMS will always be essential for regulatory compliance and forensic analysis. B
 
 This integrated approach doesn't just solve a monitoring problem - it fundamentally changes what's possible. Operators gain the visibility to manage remediation proactively, not reactively. Regulators gain confidence through transparent, auditable data. Indigenous communities gain trust through continuous access to verifiable reduction progress.
 
-**The result: The bottleneck transforms from an insurmountable barrier into a manageable challenge on a path to water release.**
+**The result: Naphthenic Acids transform from an insurmountable barrier into a manageable challenge on a path to water release.**
 
-**Note on Scope:** While this white paper focuses on the naphthenic acid bottleneck (one of the principal contaminants preventing regulatory approval), Confluent's architecture is designed to eventually integrate monitoring data from other contaminant systems (metals, salts, other organics) as operators expand their comprehensive water treatment programs. Solving this bottleneck first enables water release authorization. Other contaminants require separate monitoring solutions.
+**Note on Scope:** While this white paper focuses on naphthenic acids (the key contaminant preventing regulatory approval), Confluent's architecture is designed to eventually integrate monitoring data from other contaminant systems (metals, salts, other organics) as operators expand their comprehensive water treatment programs. Solving this challenge first enables water release authorization. Other contaminants require separate monitoring solutions.
 
 ---
 ## Next Steps

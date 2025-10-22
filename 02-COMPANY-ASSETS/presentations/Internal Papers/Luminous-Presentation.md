@@ -85,7 +85,7 @@ How We Got Here: A Unique Challenge
 
 📍 **300 km²** tailings footprint
 
-⚠️ **The NA Bottleneck:** NAs are one of the principal contaminants preventing regulatory approval
+⚠️ **The Challenge:** NAs are one of the principal contaminants preventing regulatory approval
 
 🔒 **Containment Era:** Minimal operational NA monitoring required
 
@@ -95,7 +95,7 @@ How We Got Here: A Unique Challenge
 
 > "Oil sands operations face something unique. Traditional mines have regulatory approval to release treated water. Oil sands never had that approval.
 >
-> Why? **Naphthenic acids.** Toxic, recalcitrant compounds that don't break down predictably. One of the principal contaminants preventing release approval.
+> Why? **Naphthenic acids.** Toxic, recalcitrant compounds that don't break down predictably, preventing release approval.
 >
 > To be clear: operators must address multiple contaminants—metals, salts, organics. But NAs are the specific bottleneck. You can't get approval if NA levels aren't demonstrated safe, regardless of other contaminants.
 >
@@ -131,7 +131,7 @@ Convergence of Pressures
 **SOCIAL LICENSE:** Indigenous communities demand verifiable NA proof
 
 **CENTER:**
-**The NA Bottleneck Must Be Addressed**
+**Naphthenic Acids Must Be Addressed**
 
 ---
 
@@ -307,7 +307,7 @@ The Scale of the Challenge
 **300 km²**
 = Size of Calgary
 
-**The NA Bottleneck:** One of the principal contaminants preventing regulatory approval
+**The Challenge:** A key contaminant preventing regulatory approval
 
 **One of Alberta's most significant environmental management challenges.**
 
@@ -323,7 +323,7 @@ The Scale of the Challenge
 >
 > This water contains multiple contaminants—metals, salts, organics. Operators need monitoring for all.
 >
-> But **NAs are the principal contaminant preventing release approval.** Can't get approval even if everything else is clean, if NA levels aren't demonstrated safe.
+> But **NAs prevent release approval.** Can't get approval even if everything else is clean, if NA levels aren't demonstrated safe.
 >
 > Encouraging news: pathways forward exist. Engineered wetlands showing promise. End pit lake strategies being piloted. Active treatment advancing. University research demonstrating biological NA degradation is possible.
 >
@@ -379,7 +379,7 @@ AI-native (currently focused on NA data)
 
 > "We don't claim to solve the entire tailings challenge. What we address is the NA monitoring gap through a three-tier strategy.
 >
-> To be clear: **tailings water has multiple contaminants operators must monitor.** Our biosensor specifically targets NAs because they're the principal contaminant preventing approval. Addressing the NA bottleneck first.
+> To be clear: **tailings water has multiple contaminants operators must monitor.** Our biosensor specifically targets NAs because they're the regulatory blocker preventing approval. Addressing this challenge first.
 >
 > **Tier 1—HRMS remains essential.** Gold standard for compliance, forensic analysis, method validation. We're not replacing it.
 >
@@ -582,9 +582,9 @@ FTIR tells you 'there's acidity.' Our biosensor tells you 'there are NAs of this
 **Response:**
 "Absolutely correct—operators must monitor multiple contaminants: metals, salts, suspended solids, other organics.
 
-Our biosensor specifically targets NAs because **they're one of the principal contaminants preventing regulatory approval.** Can't get approval if NA levels aren't demonstrated safe, regardless of how clean everything else is.
+Our biosensor specifically targets NAs because **they're the regulatory blocker.** Can't get approval if NA levels aren't demonstrated safe, regardless of how clean everything else is.
 
-Addressing the NA bottleneck first because that's blocking progress now.
+Addressing this challenge first because that's blocking progress now.
 
 Confluent's architecture is designed to eventually integrate monitoring data from other contaminant systems. As operators expand comprehensive treatment programs, Confluent can incorporate that data.
 
