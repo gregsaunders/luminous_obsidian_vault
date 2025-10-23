@@ -28,7 +28,9 @@
 **OSMWSC September 2025 recommendation:**
 *"Operators should strive to share relevant information about technologies they are piloting with Indigenous communities, public and stakeholders to ensure awareness and build trust."*
 
-**The challenge:** Indigenous communities are justifiably skeptical. Quarterly reports feel like "trust us," not "see for yourself." Maintaining separate reporting systems for different audiences creates version control issues and delays transparency.
+**The challenge:** Indigenous communities whose lands and waters have been impacted by oil sands operations are justifiably skeptical. Quarterly reports feel like "trust us," not "see for yourself." Maintaining separate reporting systems for different audiences creates version control issues and delays transparency.
+
+**Genuine stakeholder transparency:** We've built multi-view dashboard capability to address OSMWSC requirements—but we recognize that meaningful transparency requires genuine engagement, not just technology deployment. We're committed to consulting with affected communities to ensure transparency tools address their information needs, presented in ways that build trust through actions, not promises.
 
 ---
 

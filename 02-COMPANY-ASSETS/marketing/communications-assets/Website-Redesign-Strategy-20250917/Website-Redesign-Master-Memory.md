@@ -526,6 +526,132 @@
 
 ---
 
+## CRITICAL GAP IDENTIFIED: Indigenous Community Engagement Strategy
+
+**Date Identified:** October 23, 2025
+**Status:** Not yet addressed - requires priority development
+
+### The Opportunity
+Confluent's multi-stakeholder transparency capability is an architectural differentiator that directly addresses OSMWSC September 2025 requirements for technology transparency with Indigenous communities. This is a competitive positioning advantage—most operators will struggle with this requirement.
+
+### Current Reality (Honest Assessment)
+**Engagement status:** None yet. We have built the technical capability (multi-view dashboards, plain language presentation, immutable audit trails) but have NOT conducted meaningful engagement with affected Indigenous communities.
+
+**What we've done:**
+- Mentioned Mikisew Cree First Nation in strategic documents
+- Designed dashboard mockups with community accessibility in mind
+- Built technical architecture supporting multi-stakeholder transparency
+
+**What we HAVEN'T done:**
+- Formal consultation sessions with affected communities
+- Community partnership agreements or MOUs
+- Co-design process incorporating community-identified information needs
+- Permission to reference specific communities in marketing materials
+
+### The Risk
+Creating a dedicated "Indigenous Communities" website page before meaningful engagement would be **exactly the kind of empty promise that creates justified skepticism.** It would position as savior ("we've solved transparency") when we should position as humble listener ("we've built tools, do they serve your needs?").
+
+### Website Strategy Decision (October 23, 2025)
+**Decision:** Do NOT create standalone Indigenous Communities page until meaningful engagement is underway.
+
+**Instead:** Integrate respectful acknowledgment into existing pages (Homepage, Regulators, About) that:
+- Acknowledges harm and justified skepticism honestly
+- Positions transparency tools as offering, not solution
+- Invites engagement without overpromising
+- Demonstrates respect by NOT claiming engagement we haven't done
+
+**Phased Approach:**
+
+**Phase 1 (Current - No Dedicated Page):**
+- Homepage: Add community transparency acknowledgment to "Why This Matters" section
+- Regulators page: Reference OSMWSC requirement for genuine community engagement
+- About page: State commitment to respectful engagement as ongoing work
+- Tone: "We want to engage" not "We have engaged"
+
+**Phase 2 (When Engagement Begins):**
+Update existing mentions to reflect:
+- Specific communities in consultation (if permissioned)
+- Dashboard design evolving based on community feedback
+- Ongoing engagement commitment
+
+**Phase 3 (When Engagement Matures):**
+Launch dedicated "Community Transparency" page when:
+- [ ] Formal consultation sessions conducted
+- [ ] Community partners established (with permission to reference)
+- [ ] Dashboard design reflects community-identified needs
+- [ ] Ongoing engagement commitment operational
+
+### Action Items Required
+
+**Immediate (Before Website Launch):**
+- [ ] Add community acknowledgment language to Homepage-Content.md
+- [ ] Add OSMWSC genuine engagement paragraph to Solutions-Regulators.md
+- [ ] Add respectful engagement commitment to About-Purpose.md
+- [ ] Ensure tone is invitation ("we want to engage") not claim ("we have engaged")
+
+**Short-Term (Next 3-6 Months - PRIORITY):**
+- [ ] **Develop Indigenous Community Engagement Strategy** (this is the critical missing piece)
+  - Research best practices for free, prior, and informed consent (FPIC) protocols
+  - Identify affected communities in OSPW treatment areas (Athabasca region)
+  - Develop engagement approach (consultation sessions, co-design workshops, ongoing liaison)
+  - Seek guidance from Indigenous relations consultants/advisors
+  - Establish respectful engagement protocols before outreach
+- [ ] Initial outreach to affected communities (with humility and listening approach)
+- [ ] Community consultation sessions focused on information needs assessment
+- [ ] Dashboard co-design workshops incorporating community feedback
+
+**Medium-Term (Months 6-12):**
+- [ ] Formalize community partnerships (MOUs, ongoing engagement agreements)
+- [ ] Pilot community dashboard access with partner communities
+- [ ] Gather feedback and iterate on design/presentation
+- [ ] Obtain permission to reference partnerships in marketing materials
+- [ ] Update website to reflect engagement progress (Phase 2 updates)
+
+**Long-Term (Year 2+):**
+- [ ] Launch dedicated Community Transparency page (Phase 3)
+- [ ] Ongoing community liaison and feedback cycles
+- [ ] Case studies demonstrating transparency value (with community permission)
+- [ ] Industry leadership positioning through genuine engagement practice
+
+### Reminder Triggers
+
+**When Jeff asks about:**
+- Indigenous community engagement
+- OSMWSC transparency requirements
+- Multi-stakeholder dashboard deployment
+- Community partnerships
+- Social license building
+
+**Remind him:**
+"We identified Indigenous engagement as a critical gap (Oct 23, 2025). We have the technical capability but need to develop engagement strategy BEFORE creating dedicated website page or claiming community partnerships. Phase 1 website approach = acknowledgment without overpromising. Engagement strategy development = priority action item."
+
+### Resources & Best Practices to Consult
+
+**Regulatory:**
+- OSMWSC September 2025 recommendations (transparency requirements)
+- UNDRIP (United Nations Declaration on Rights of Indigenous Peoples)
+- FPIC protocols (Free, Prior, and Informed Consent)
+
+**Industry Examples:**
+- Research how other oil sands operators approach Indigenous engagement
+- Consult Indigenous relations advisors/consultants
+- Pathways Alliance Indigenous engagement practices (learn from established approaches)
+
+**Community-Specific:**
+- Mikisew Cree First Nation (already mentioned in strategic docs - formalize outreach)
+- Athabasca Chipewyan First Nation
+- Fort McKay First Nation
+- Other affected communities in OSPW treatment areas
+
+**Tone & Approach Standards:**
+- Listening > telling
+- Respect > efficiency
+- Long-term relationship > transactional engagement
+- Community-defined needs > our assumptions about what they need
+- Actions > promises
+
+---
+
 **End of Website Redesign Master Memory File**
 
 *This document is the single source of truth for website strategy, decisions, and continuous improvement. Update regularly. Reference frequently. Trust the process.*

@@ -65,8 +65,8 @@ Kearl wetland study: 9 samples over 2 seasons, degradation slowdown discovered t
 **2. Optimize Based on Data, Not Guesswork**
 High-frequency monitoring enables A/B testing, correlation analysis, predictive modeling—treatment decisions backed by statistical significance.
 
-**3. Build Social License Through Transparency**
-OSMWSC 2025 requires stakeholder transparency. Confluent's multi-view dashboards give communities real-time access to the same data you see, presented appropriately.
+**3. Build Trust Through Transparency**
+Oil sands operations have impacted Indigenous lands and waters for decades. As operators move toward water release, affected communities have every right to verify that treatment is actually working—not just accept promises. Confluent's multi-view dashboards were designed to provide real-time access to monitoring data, presented in plain language. But technology alone doesn't build trust. **We're seeking to engage with affected Indigenous communities to understand what transparency tools would actually serve their needs.**
 
 ---
 

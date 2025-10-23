@@ -18,6 +18,8 @@ Oil sands operators are transitioning from 60 years of containment to regulated 
 
 **Luminous BioSolutions provides the answer:** An integrated NA intelligence platform combining rapid biosensor screening (24-hour results) with AI-native Confluent platform (transforming data into operational insights and multi-stakeholder transparency). Not just better monitoring—integrated intelligence that enables data-driven treatment optimization, early failure detection, and genuine stakeholder engagement.
 
+**Our commitment to respectful engagement:** Oil sands water treatment affects Indigenous communities whose lands and waters have borne the impact of decades of operations. We've designed transparency tools to provide accessible, real-time monitoring data—but we know technology is only one piece of building trust. We're seeking to engage meaningfully with affected communities to understand what information access would genuinely serve their needs. This is ongoing work that requires listening, not just offering solutions.
+
 ---
 
 ## Our Strategic Focus (Clear Positioning)
