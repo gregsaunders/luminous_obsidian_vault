@@ -1,124 +1,102 @@
-# Homepage Content - LEAN VERSION
+# Homepage Content
 
 **Page:** luminousbiosolutions.com (Homepage)
 **Last Updated:** October 23, 2025
-**Word Count Target:** ~500 words max (visuals carry the weight)
-**Strategy:** Validate → Intrigue → Direct to depth
+**Word Count Target:** ~400 words max
+**Strategy:** Validate credibility → Show the problem → Offer engagement
 
 ---
 
 ## Hero Section
 
 ### Headline
-**"Operational Intelligence for the NA Bottleneck"**
+**"The NA Monitoring Bottleneck Has a Solution"**
 
 ### Subheadline
-**"24-hour biosensor screening + AI-native platform = data-driven treatment optimization and stakeholder transparency"**
+**"24-hour biosensor + AI intelligence platform = operational monitoring for oil sands water treatment"**
 
-### Hero Visual (Does Heavy Lifting)
-**Three-Tier Strategy Diagram:**
-- **Tier 1:** HRMS (Compliance - Quarterly - 6-8 weeks)
-- **Tier 2:** Luminous Biosensor (Screening - Daily - 24 hours)
-- **Tier 3:** Confluent AI (Intelligence - Real-time insights)
+### Hero Visual
+**Simple 3-Tier Diagram:**
+- HRMS (Compliance) → Luminous Biosensor (Daily Screening) → Confluent AI (Intelligence)
+- Caption: "Don't replace the gold standard—complement it with operational frequency"
 
-*Visual shows integration with arrows: Data → Intelligence → Action*
-
-### Three Persona CTAs (Large Buttons, Side-by-Side)
-**[For Operators]** | **[For Regulators]** | **[For Scientists]**
+### Primary CTA
+**[Schedule a Technical Briefing]**
 
 ---
 
-## The Challenge (One Paragraph)
+## The Story (Three Short Sections)
 
-Oil sands operators are transitioning from 60 years of containment to regulated release—1.4 trillion litres of OSPW requiring treatment, with release standards expected in 12-18 months. **The bottleneck: Naphthenic Acids.** You can't get release approval if NA levels aren't demonstrated safe, but HRMS alone can't scale (6-8 weeks, $700-$1,000/sample = quarterly snapshots of dynamic biological processes). **The question operators need to answer:** *"Is treatment working right now, and what should we adjust?"*
+### The Challenge
+Oil sands operators are transitioning from 60 years of containment to regulated water release—but you can't get approval without demonstrating safe NA levels. **HRMS is the gold standard, but it can't scale** (6-8 weeks, $700-$1,000/sample). Treatment programs need to answer: *"Is this working right now, and what should we adjust?"*
 
----
+### The Solution
+**Luminous provides operational intelligence between HRMS compliance checkpoints:**
+- **Biosensor:** 24-hour NA screening, high correlation (R > 0.9) with HRMS
+- **Confluent AI:** Transforms data into insights—natural language queries, multi-stakeholder dashboards, predictive analytics
 
-## The Luminous Approach (Visual + Minimal Text)
+We don't replace HRMS. We enable daily monitoring within existing budgets while HRMS validates quarterly.
 
-### Three-Tier Strategy Cards
-
-**TIER 1: HRMS**
-Gold standard for compliance
-We acknowledge it. We don't replace it.
-
-**TIER 2: Biosensor**
-24-hour NA results, daily monitoring
-Peer-reviewed (*ACS Synthetic Biology*, 2024)
-High correlation (R > 0.9) with HRMS on real OSPW
-
-**TIER 3: Confluent AI**
-Natural language querying of years of data
-Multi-stakeholder dashboards (Operator/Regulator/Community)
-Gets smarter with every dataset added
-
-### Value Statement (One Sentence)
-**Biosensor alone = more data. Confluent alone = no operational frequency. Together = integrated intelligence.**
+### Why This Matters
+**For Operators:** Detect treatment failures in days (not months), optimize based on data (not guesswork)
+**For Regulators:** Multi-stakeholder transparency addressing OSMWSC requirements
+**For Scientists:** Peer-reviewed validation (*ACS Synthetic Biology*, 2024), field-tested at Kearl wetland
+**For Indigenous Communities:** Real-time monitoring access with plain language presentation—built for transparency, refined through engagement
 
 ---
 
-## Why This Matters (Three Value Cards - Expandable/Collapsible)
+## Validation
 
-**1. Detect Failures in Days, Not Months**
-Kearl wetland study: 9 samples over 2 seasons, degradation slowdown discovered too late. With daily biosensor data, you catch problems while you can still fix them.
+**Peer-Reviewed Science:** *ACS Synthetic Biology* (2024)
+**Field-Tested:** Multi-season Kearl wetland validation (36% NA reduction, biosensor vs. Orbitrap MS)
+**Industry Engagement:** CNRL, Suncor, Imperial, Pathways Alliance
+**Regulatory Alignment:** OSMWSC compliance frameworks ready
 
-**2. Optimize Based on Data, Not Guesswork**
-High-frequency monitoring enables A/B testing, correlation analysis, predictive modeling—treatment decisions backed by statistical significance.
-
-**3. Build Trust Through Transparency**
-Oil sands operations have impacted Indigenous lands and waters for decades. As operators move toward water release, affected communities have every right to verify that treatment is actually working—not just accept promises. Confluent's multi-view dashboards were designed to provide real-time access to monitoring data, presented in plain language. But technology alone doesn't build trust. **We're seeking to engage with affected Indigenous communities to understand what transparency tools would actually serve their needs.**
+*"Operational technology solving real problems today, not theoretical concepts."*
 
 ---
 
-## Validation (Logos + One-Liners)
+## Engagement CTAs
 
-**Peer-Reviewed:** *ACS Synthetic Biology* (2024)
-**Field-Tested:** Kearl multi-season wetland validation
-**Industry-Engaged:** CNRL, Suncor, Imperial conversations
-**Regulatory-Aligned:** OSMWSC compliance frameworks ready
-
-*"This is operational technology solving real problems today, not theoretical concepts."*
-
----
-
-## Primary CTA Section
-
-### Download the Executive Brief
-**"The Operational Intelligence Platform for Naphthenic Acid Management"**
-5 pages. Containment → release transition. Three-Tier strategy. Business value. Implementation pathway.
-
-**[Download Executive Brief]** (gated)
-
-### Or Schedule a Technical Briefing
-45-60 min. Biosensor validation data. Live Confluent demo. Q&A with Dr. Shawn Lewenza (CSO) and Greg Saunders (CTO).
+### Primary: Schedule a Technical Briefing
+**45-60 minutes with our science and technology leads**
+- Biosensor validation data on real OSPW samples
+- Live Confluent demo (ask questions in plain language, get insights in seconds)
+- Pilot program design tailored to your treatment system
+- Q&A with Dr. Shawn Lewenza (CSO) and Greg Saunders (CTO)
 
 **[Schedule Briefing]**
 
+### Secondary: Download Technical Resources
+- Executive Brief (5 pages - business case and implementation)
+- Kearl Case Study (field validation results)
+- White Paper (technical deep-dive for scientists)
+
+**[Explore Resources]**
+
 ---
 
-## Explore by Role (Footer Teaser)
+## Footer Navigation
 
-**Operators:** Daily monitoring optimizes treatment
-**Regulators:** Multi-stakeholder transparency addresses OSMWSC
-**Scientists:** Peer-reviewed validation + AI-native architecture
+**[Solutions]** - What we offer each audience
+**[Resources]** - Download technical content
+**[About]** - Team, mission, partnerships
 
 ---
 
 ## Technical Notes
 
-**SEO Meta Description (155 char):**
-"24-hour NA biosensor + AI platform = operational intelligence for OSPW treatment. Peer-reviewed. Field-tested. Download executive brief."
+**SEO Meta (155 char):**
+"24-hour NA biosensor + AI platform for oil sands water treatment. Peer-reviewed, field-tested. Complements HRMS with operational monitoring."
 
-**Key Conversion Points:**
-- Executive Brief download (primary lead gen)
-- Technical briefing request (high-intent)
-- Persona pathway selection (journey mapping)
+**Conversion Goals:**
+1. Technical briefing request (primary)
+2. Executive brief download (secondary)
 
-**Visual Priority:**
-Three-Tier diagram does 50% of the communication work. Keep text minimal.
+**Tone:** Credible, humble, focused. We solve one problem well.
 
 ---
 
-**End of Homepage - Lean Version**
+**End of Homepage**
 
-*Strategy: Intrigue in 500 words → Download brief for depth → Briefing to convert*
+*Strategy: Establish legitimacy → Tell story once → Drive to conversation*

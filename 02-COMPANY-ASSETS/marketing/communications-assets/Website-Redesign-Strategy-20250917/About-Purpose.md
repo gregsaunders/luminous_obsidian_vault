@@ -1,112 +1,92 @@
-# About & Purpose - LEAN VERSION
+# About
 
 **Page:** luminousbiosolutions.com/about
 **Last Updated:** October 23, 2025
-**Word Count Target:** ~400 words max
-**Strategy:** Mission → Team credibility → Strategic focus → No fluff
+**Word Count Target:** ~300 words max
+**Strategy:** Mission → Team → Validation → Engage
 
 ---
 
 ## Page Headline
-**"Transforming the NA Bottleneck from Barrier to Manageable Challenge"**
+**"Making the NA Bottleneck Manageable"**
 
 ---
 
-## Our Mission (Two Paragraphs)
+## Our Mission
 
-Oil sands operators are transitioning from 60 years of containment to regulated release—a necessary shift that depends entirely on solving the Naphthenic Acid monitoring challenge. HRMS can't scale to meet operational needs. Sparse quarterly data can't optimize dynamic biological treatment systems. **The question operators need to answer:** *"Is treatment working right now, and what should we adjust?"*
+Oil sands operators are transitioning from 60 years of containment to regulated water release—but this depends entirely on solving the Naphthenic Acid monitoring challenge. HRMS can't scale to operational needs. Sparse quarterly data can't optimize dynamic biological treatment.
 
-**Luminous BioSolutions provides the answer:** An integrated NA intelligence platform combining rapid biosensor screening (24-hour results) with AI-native Confluent platform (transforming data into operational insights and multi-stakeholder transparency). Not just better monitoring—integrated intelligence that enables data-driven treatment optimization, early failure detection, and genuine stakeholder engagement.
+**Luminous BioSolutions provides NA operational intelligence:** 24-hour biosensor screening + AI-native Confluent platform = data-driven treatment optimization and multi-stakeholder transparency.
 
-**Our commitment to respectful engagement:** Oil sands water treatment affects Indigenous communities whose lands and waters have borne the impact of decades of operations. We've designed transparency tools to provide accessible, real-time monitoring data—but we know technology is only one piece of building trust. We're seeking to engage meaningfully with affected communities to understand what information access would genuinely serve their needs. This is ongoing work that requires listening, not just offering solutions.
-
----
-
-## Our Strategic Focus (Clear Positioning)
-
-**Current Focus (Next 18-24 Months):**
-100% monitoring and data intelligence company. We're addressing the NA bottleneck that prevents water release approval.
-
-**What We Offer Today:**
-- **Tier 2:** Biosensor operational screening (peer-reviewed, field-validated)
-- **Tier 3:** Confluent AI-native intelligence platform (multi-stakeholder transparency, natural language querying)
-
-**What We Acknowledge:**
-- **Tier 1:** HRMS remains the gold standard for compliance—we complement it, we don't replace it
-- **Scope:** We're solving NA monitoring specifically. Other contaminants need separate solutions.
-- **Future R&D:** Bioaugmentation research underway, not a current commercial offering
-
-**Why This Matters:**
-We're enabling a pathway from containment to regulated release through operational intelligence. This is about enablement and hope (closure is possible), not fear and risk (preventing catastrophe).
+We're enabling a pathway from containment to release through actionable monitoring. This is about enablement (closure is possible), not fear (preventing catastrophe).
 
 ---
 
-## The Team (Credibility Without Bios)
+## What We Do
+
+**We're a monitoring and data intelligence company focused on one problem:**
+- **Biosensor:** Peer-reviewed (*ACS Synthetic Biology*, 2024), field-tested at Kearl wetland
+- **Confluent AI:** Multi-stakeholder dashboards, natural language querying, predictive analytics
+
+**What we acknowledge:**
+- HRMS remains the compliance gold standard—we complement it, we don't replace it
+- We solve NA monitoring specifically; other contaminants need separate solutions
+- Future bioaugmentation R&D underway, not a current offering
+
+---
+
+## The Team
 
 **Dr. Shawn Lewenza, Chief Science Officer**
-10+ years NA research. Published in *ACS Synthetic Biology* (2024). Multi-season Kearl wetland field validation leadership.
+10+ years NA research. Published author. Kearl wetland field validation lead.
 
 **Greg Saunders, Chief Technology Officer**
-AI-native architecture design. Graph database implementation. Environmental data platform expertise.
+AI-native platform architecture. Graph database implementation. Environmental data expertise.
 
 **Jeff Violo, Chief Operating Officer**
-Commercial strategy. Oil & gas industry engagement. Stakeholder relationship management.
+Commercial strategy. Industry engagement. Stakeholder relationship management.
 
-**Scientific Advisory & Partnerships:**
-- Athabasca University
-- University of Calgary
+**Partnerships:**
+- Athabasca University, University of Calgary
 - Indigenous community consultation (Mikisew Cree First Nation)
 - Industry engagement (CNRL, Suncor, Imperial, Pathways Alliance)
 
 ---
 
-## Our Foundation (Validation)
+## Our Foundation
 
-**Peer-Reviewed Science:**
-*ACS Synthetic Biology* (2024). Additional papers expected year-end 2025.
-
-**Field Validation:**
-Multi-season Kearl engineered wetland study. Head-to-head biosensor vs. Orbitrap MS on real OSPW samples.
-
-**Regulatory Alignment:**
-OSMWSC September 2025 compliance frameworks ready for deployment.
-
-**Technology Maturity:**
-Operational platform with backend services deployed, frontend interfaces Q4 2025.
+**Peer-Reviewed Science:** *ACS Synthetic Biology* (2024), additional papers expected year-end 2025
+**Field Validation:** Multi-season Kearl wetland study, biosensor vs. Orbitrap MS correlation
+**Regulatory Alignment:** OSMWSC September 2025 compliance frameworks ready
+**Technology Status:** Backend operational, frontend dashboards Q4 2025
 
 ---
 
-## Why "Luminous"? (Optional - Story Element)
+## Our Commitment to Respectful Engagement
 
-The name reflects our approach: bringing clarity to complex environmental challenges through data-driven intelligence. **Making the invisible visible**—whether that's NAs in OSPW or patterns hidden in decades of historical data.
+Oil sands operations have impacted Indigenous lands and waters for decades. We've built real-time monitoring tools to provide transparent data access—but we know technology is only part of building trust. We're committed to engaging meaningfully with affected communities to ensure transparency tools serve their actual information needs.
 
 ---
 
-## Primary CTA
+## Engage With Us
 
-**Want to Learn More?**
+**[Schedule a Technical Briefing]**
+60 min with our science and technology leads
 
-**Technical Briefing:** Biosensor validation, Confluent demo, Q&A with team
-**[Schedule Briefing]**
-
-**Resources:** Executive brief, white paper, peer-reviewed publications
 **[Explore Resources]**
+Executive brief, case studies, white papers
 
 ---
 
 ## Technical Notes
 
 **SEO Meta:**
-"Luminous BioSolutions: NA intelligence platform for oil sands. Biosensor + AI = operational monitoring. Peer-reviewed. Field-tested. Calgary-based."
+"Luminous BioSolutions: NA monitoring intelligence for oil sands. Biosensor + AI platform. Peer-reviewed, field-tested. Calgary-based."
 
-**Tone Calibration:**
-Humble confidence. No grandiose claims. Clear about scope and limitations. Mission-focused without being preachy.
-
-**Visual Priority:**
-Team photos (credibility). University/industry logos (validation). Simple, professional.
+**Tone:** Humble confidence. Mission-focused. Clear about scope and limitations.
 
 ---
 
-**End of About Page - Lean Version**
+**End of About Page**
 
-*Strategy: Mission clarity → Team credibility → Honest positioning → No fluff*
+*Strategy: Mission clarity → Team credibility → Validation → Engagement*

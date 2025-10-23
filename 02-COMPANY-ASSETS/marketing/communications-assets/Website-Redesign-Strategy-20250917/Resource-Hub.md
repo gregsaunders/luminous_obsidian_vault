@@ -1,87 +1,51 @@
-# Resource Hub - LEAN VERSION
+# Resources
 
 **Page:** luminousbiosolutions.com/resources
 **Last Updated:** October 23, 2025
-**Word Count Target:** ~200 words total (mostly resource cards with 2-sentence teasers)
-**Strategy:** Categorized downloads + minimal friction gating
+**Word Count Target:** ~150 words (resource cards only)
+**Strategy:** Simple list + low-friction gating
 
 ---
 
 ## Page Headline
-**"Technical Resources & Validation Data"**
+**"Technical Resources"**
 
 ### Subheadline
-**"Deep-dive documentation for operators, regulators, and scientists"**
+**"Download validation data, case studies, and documentation"**
 
 ---
 
-## Resource Categories
-
-### For Operators & Engineers
+## Available Resources
 
 **Executive Brief: The Operational Intelligence Platform for Naphthenic Acid Management**
-5 pages. Containment → release transition, Three-Tier strategy, business value, 18-month implementation pathway.
-**[Download PDF]** (gated: email)
+5 pages. Business case, Three-Tier strategy, implementation pathway.
+**[Download PDF]** (email gate)
 
 **Kearl Wetland Case Study**
-Field validation results. 36% NA reduction over 98 days. Biosensor vs. Orbitrap MS correlation data.
-**[Download PDF]** (gated: email)
-
-**Pilot Program Overview**
-Typical pilot structure, timelines, success metrics, pricing considerations.
-**[Download PDF]** (gated: email)
-
----
-
-### For Regulators & Policy Makers
-
-**OSMWSC Compliance Framework Alignment**
-How Luminous addresses September 2025 transparency recommendations. Multi-stakeholder dashboard capabilities. Auditable data trail.
-**[Download PDF]** (gated: email)
-
-**Confluent Platform One-Pager**
-AI-native architecture, multi-view dashboards, regulatory reporting automation.
-**[Download PDF]** (gated: email)
-
----
-
-### For Scientists & Researchers
+Field validation results. 36% NA reduction over 98 days. Biosensor vs. HRMS correlation data.
+**[Download PDF]** (email gate)
 
 **White Paper: AI-Native Monitoring for Naphthenic Acid Intelligence**
-10 pages. Technical specifications, biosensor validation methodology, Confluent architecture, honest limitations, field data.
-**[Download PDF]** (gated: email)
+10 pages. Technical specifications, biosensor validation, Confluent architecture, limitations.
+**[Download PDF]** (email gate)
 
-**"A Clear Path to Clean Water"**
-Comparative analysis: FTIR vs. Biosensor vs. HRMS. Specificity, interference, use cases.
-**[Download PDF]** (gated: email)
+**OSMWSC Compliance Framework**
+How Luminous addresses September 2025 transparency recommendations. Multi-stakeholder dashboards.
+**[Download PDF]** (email gate)
 
 **Peer-Reviewed Publications**
 *ACS Synthetic Biology* (2024) - Biosensor validation. Additional papers expected year-end 2025.
-**[Access Publications]** (external links, no gate)
+**[Access Publications]** (no gate)
 
 ---
 
-### Industry Insights (Authority Content - Future)
+## Primary CTA
 
-**Q1 2026:**
-- "The Three-Tier NA Monitoring Strategy: Why HRMS Alone Can't Scale"
-- "Confluent Deep Dive: What AI-Native Actually Means for Environmental Data"
-
-**Q2 2026:**
-- "Containment to Release: The Operational Transition Oil Sands Operators Face"
-- "Multi-Stakeholder Transparency: Addressing Indigenous Community Skepticism"
-
-*[Subscribe for Updates]* (email capture for future content)
-
----
-
-## Primary CTA (Bottom of Page)
-
-### Still Have Questions?
+**Have Questions?**
 
 **Schedule a Technical Briefing**
-45-60 min with Dr. Shawn Lewenza (CSO) and Greg Saunders (CTO).
-Biosensor validation, Confluent demo, Q&A.
+60 min with Dr. Shawn Lewenza (CSO) and Greg Saunders (CTO)
+Biosensor validation, Confluent demo, pilot program design
 
 **[Schedule Briefing]**
 
@@ -89,21 +53,12 @@ Biosensor validation, Confluent demo, Q&A.
 
 ## Technical Notes
 
-**Gating Strategy:**
-- Email only (low friction)
-- Same email auto-populates for subsequent downloads
-- Track download patterns (which resources by which personas?)
-
-**Lead Scoring:**
-- Executive Brief download = warm lead
-- White Paper download = technical evaluation
-- Multiple downloads = hot lead (trigger sales follow-up)
-
-**SEO Meta:**
-"Technical resources for NA monitoring: Executive brief, white paper, peer-reviewed publications, OSMWSC compliance framework. Download validation data."
+**Gating:** Email only (auto-populate for subsequent downloads)
+**Lead Scoring:** Executive Brief = warm, White Paper = technical eval, Multiple = hot lead
+**SEO Meta:** "NA monitoring resources: executive brief, case study, white paper, peer-reviewed publications. Download technical validation data."
 
 ---
 
-**End of Resource Hub - Lean Version**
+**End of Resources Page**
 
-*Strategy: Categorized by persona → 2-sentence teasers → Low-friction download → Track engagement*
+*Strategy: Simple access → Track engagement → Convert to briefing*
