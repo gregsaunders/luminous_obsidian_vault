@@ -26,9 +26,13 @@
 ---
 
 ## The Story (Three Short Sections)
-
 ### The Challenge
-Oil sands operators are transitioning from 60 years of containment to regulated water release—but you can't get approval without demonstrating safe NA levels. **HRMS is the gold standard, but it can't scale** (6-8 weeks, $700-$1,000/sample). Treatment programs need to answer: *"Is this working right now, and what should we adjust?"*
+
+**12-18 months.** That's the timeline Alberta's OSMWSC set for water release guidelines—meaning operators must prepare to transition from 60 years of containment to regulated release of 1.4 trillion litres of OSPW.
+
+**The bottleneck: Naphthenic Acids.** No safe NA levels = no release approval. But HRMS can't scale (6-8 weeks, $700-$1,000/sample). Quarterly snapshots can't optimize dynamic biological treatment.
+
+**The question:** *"Is treatment working right now, and what should we adjust?"*
 
 ### The Solution
 **Luminous provides operational intelligence between HRMS compliance checkpoints:**
@@ -36,6 +40,7 @@ Oil sands operators are transitioning from 60 years of containment to regulated 
 - **Confluent AI:** Transforms data into insights—natural language queries, multi-stakeholder dashboards, predictive analytics
 
 We don't replace HRMS. We enable daily monitoring within existing budgets while HRMS validates quarterly.
+
 
 ### Why This Matters
 **For Operators:** Detect treatment failures in days (not months), optimize based on data (not guesswork)
