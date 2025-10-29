@@ -3,9 +3,9 @@ A Three-Tier Intelligence System for Oil Sands Water Management
 October 2025
 
 **Key takeaways from this document:**
-* **Solve the Trust Deficit:** We provide a "single source of truth" with separate, real-time dashboards for Operators, Regulators, and Community stakeholders, directly addressing OSMWSC transparency requirements. [cite: 200]
-* **24-Hour NA Results:** Our field-proven biosensor (Tier 2) replaces 6-8 week lab waits, enabling you to manage NA treatment operations in real-time. [cite: 201]
-* **Credible, Unified Data:** Our Confluent intelligence hub (Tier 3) is the back-end engine that unifies sensor data, SCADA, and even historical PDFs, allowing for powerful, auditable queries. [cite: 202]
+* **Solve the Trust Deficit:** We provide a "single source of truth" with separate, real-time dashboards for Operators, Regulators, and Community stakeholders, directly addressing OSMWSC transparency requirements. 
+* **24-Hour NA Results:** Our field-proven biosensor (Tier 2) replaces 6-8 week lab waits, enabling you to manage NA treatment operations in real-time. 
+* **Credible, Unified Data:** Our Confluent intelligence hub (Tier 3) is the back-end engine that unifies sensor data, SCADA, and even historical PDFs, allowing for powerful, auditable queries. 
 
 ---
 
@@ -22,7 +22,7 @@ You cannot solve the technical problem without simultaneously solving the trust 
 
 ### Our Solution: A Holistic System for Technical Control & Stakeholder Trust
 
-We provide a three-tier system that connects a novel, high-speed sensor directly to a transparent, auditable, multi-stakeholder platform. [cite: 213]
+We provide a three-tier system that connects a novel, high-speed sensor directly to a transparent, auditable, multi-stakeholder platform. 
 
 **[Visual Placeholder: The detailed technical diagram with the SCADA cloud and new color-coding (from source: 174, 213)]**
 
@@ -74,7 +74,7 @@ This is the data and intelligence hub that makes the sensor data trustworthy and
 
 This document provides the technical overview for our system. We propose a clear, two-track process to move forward:
 
-1.  **Executive Briefing (30 Min):** A direct, executive-level discussion on the business case, risk-reduction ROI, and pilot program structure. [cite: 49]
-2.  **Technical Validation (60 Min):** A technical deep-dive for your engineering and science teams. [cite: 50] We will present the full validation data, the three-panel sensor system, and a live demo of the Confluent data architecture. [cite: 51]
+1.  **Executive Briefing (30 Min):** A direct, executive-level discussion on the business case, risk-reduction ROI, and pilot program structure. 
+2.  **Technical Validation (60 Min):** A technical deep-dive for your engineering and science teams. We will present the full validation data, the three-panel sensor system, and a live demo of the Confluent data architecture. 
 
 Contact us to schedule the 60-minute Technical Validation session.
