@@ -40,33 +40,33 @@ This is our high-speed *screening tool*. Its power comes from its speed, cost-ef
 
 * **What it is:** A proprietary **three-panel detection system** that provides qualitative and quantitative insights into NA concentrations and treatment efficacy. 
 * **The Output:** Actionable, 24-hour NA results. 
-* **The Proof:** The biosensor demonstrates a **strong, high-confidence correlation** (both quantitative and qualitative) with HRMS, confirmed in head-to-head trials at Kearl. [cite: 158, 159] This makes it a credible, reliable, high-speed proxy. [cite: 160] (Full data pending peer-review). [cite: 161]
-* **Game-Changing Economics:** Our subscription model means you pay a flat service fee, not a per-test charge. [cite: 225] This empowers you to **test as frequently as needed** to gain operational control, all within a predictable budget. [cite: 226]
+* **The Proof:** The biosensor demonstrates a **strong, high-confidence correlation** (both quantitative and qualitative) with HRMS, confirmed in head-to-head trials at Kearl. This makes it a credible, reliable, high-speed proxy. (Full data pending peer-review). 
+* **Game-Changing Economics:** Our subscription model means you pay a flat service fee, not a per-test charge. This empowers you to **test as frequently as needed** to gain operational control, all within a predictable budget. 
 
 #### Tier 3: Confluent (The Platform for Trust & Transparency)
 
-This is the data and intelligence hub that makes the sensor data trustworthy and useful to everyone. [cite: 228] It is the **antidote** to the "spreadsheet/PDF" model. [cite: 229]
+This is the data and intelligence hub that makes the sensor data trustworthy and useful to everyone. It is the **antidote** to the "spreadsheet/PDF" model. 
 
 **Key Capabilities:**
 
 1.  **A Single, Verifiable Source of Truth (The Output):**
-    The Confluent hub ingests all data and presents it in three distinct, secure dashboards.  This *is* the solution to the trust problem. [cite: 232]
-    * **For Operators:** A detailed dashboard integrating Tier 2 sensor data with your existing SCADA and process data for high-resolution operational control. [cite: 233]
-    * **For Regulators:** A dedicated, auditable dashboard showing compliance metrics, historical trends, and real-time monitoring data. [cite: 234]
-    * **For Communities:** A public-facing transparency dashboard showing the same validated data in an accessible, understandable format. [cite: 235]
+    The Confluent hub ingests all data and presents it in three distinct, secure dashboards.  This *is* the solution to the trust problem. 
+    * **For Operators:** A detailed dashboard integrating Tier 2 sensor data with your existing SCADA and process data for high-resolution operational control. 
+    * **For Regulators:** A dedicated, auditable dashboard showing compliance metrics, historical trends, and real-time monitoring data. 
+    * **For Communities:** A public-facing transparency dashboard showing the same validated data in an accessible, understandable format. 
 
 2.  **Unified Data & Query Engine (The Plumbing):**
-    This is the core engineering.  It's a modern data platform built to ingest, clean, and unify every data source you have. [cite: 237]
-    * Connects Tier 1 (HRMS) and Tier 2 (Biosensor) data. [cite: 238]
-    * Integrates your existing SCADA and process data. [cite: 239]
-    * Ingests and structures unstructured historical data (PDFs, spreadsheets) to provide long-term context. [cite: 240]
+    This is the core engineering.  It's a modern data platform built to ingest, clean, and unify every data source you have. 
+    * Connects Tier 1 (HRMS) and Tier 2 (Biosensor) data. 
+    * Integrates your existing SCADA and process data. 
+    * Ingests and structures unstructured historical data (PDFs, spreadsheets) to provide long-term context. 
 
 3.  **Advanced Analysis & Querying:**
-    Because all data is unified, you can ask questions that were previously impossible. [cite: 241]
-    * *"Show me the correlation between our Tier 2 sensor readings and the last 5 years of HRMS reports for Site B."* [cite: 242]
-    * *"What was the impact on NA levels 24 hours after the last process adjustment?"* [cite: 243]
+    Because all data is unified, you can ask questions that were previously impossible. 
+    * *"Show me the correlation between our Tier 2 sensor readings and the last 5 years of HRMS reports for Site B."* 
+    * *"What was the impact on NA levels 24 hours after the last process adjustment?"* 
 
-**Development Status:** The back-end data engine, ingestion pipelines, and query system are complete. [cite: 245] The front-end dashboards (the three UIs) are being finalized for Q4 2025 deployment, in time for pilot programs. [cite: 246]
+**Development Status:** The back-end data engine, ingestion pipelines, and query system are complete.  The front-end dashboards (the three UIs) are being finalized for Q4 2025 deployment, in time for pilot programs. 
 
 ---
 
