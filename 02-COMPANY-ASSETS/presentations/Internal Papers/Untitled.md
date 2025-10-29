@@ -36,7 +36,7 @@ The solution is not to *replace* the HRMS gold standard, but to *integrate* it i
 
 * **Tier 1: HRMS (The Forensic Standard):** Remains the gold standard for final compliance and legal validation. We use it to calibrate and validate Tier 2.
 
-* **Tier 2: Luminous Biosensor (The Operational Monitor):** A rapid, field-deployable sensor providing **24-hour, high-frequency NA screening** for real-time operational control.
+* **Tier 2: Luminous Biosensor (The Operational Monitor):** A rapid, sensor providing quantitative results 24-hour and qualitative results in a few days, high-frequency NA screening for real-time operational control**.
 
 * **Tier 3: Confluent (The Intelligence Hub):** The AI-native platform that ingests and unifies *all* data—Tier 1, Tier 2, SCADA, historical reports—into a single, queryable source of truth for operators, regulators, and communities.
 
