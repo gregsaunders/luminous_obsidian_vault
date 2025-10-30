@@ -75,6 +75,6 @@ This is the data and intelligence hub that makes the sensor data trustworthy and
 This document provides the technical overview for our system. We propose a clear, two-track process to move forward:
 
 1.  **Executive Briefing (30 Min):** A direct, executive-level discussion on the business case, risk-reduction ROI, and pilot program structure. 
-2.  **Technical Validation (60 Min):** A technical deep-dive for your engineering and science teams.  We will present the full validation data, the three-panel sensor system, and a live demo of the Confluent data architecture. 
+2.  **Technical Validation (60 Min):** A technical deep-dive for your engineering and science teams. We will present the full validation data, the three-panel sensor system, and a live demo of the Confluent data architecture. 
 
 Contact us to schedule the 60-minute Technical Validation session.
