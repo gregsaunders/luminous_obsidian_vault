@@ -1,65 +1,38 @@
-**Subject:** CDL Rockies update + partnership opportunity
+**Subject:** CDL Rockies intro - Luminous BioSolutions (NA monitoring + AI platform)
 
  
 
-Hey Yves,
+Hi Monique,
 
  
 
-Apologies for the radio silence since our call—I've been heads-down getting our customer-facing materials properly aligned. But a lot has happened on our end, and I wanted to reconnect.
+I'm Jeff Violo, co-founder of Luminous BioSolutions. We were accepted into CDL Rockies' energy cohort starting next week, and I saw you're one of the mentors which has me pretty excited given your expertise in water treatment for mining and your work with Maven (and now Integrated Sustainability).
 
  
 
-**Big news: We were accepted into Creative Destruction Lab's energy cohort.** Cohort work starts next week. I noticed Monique Simair is one of the CDL mentors—given Maven's recent partnership with Integrated Sustainability, I'm hoping we get a chance to connect with her during the program.
+**Quick context on Luminous:**  
+We've developed an integrated NA monitoring platform for oil sands tailings management, 24-hour biosensor screening results plus an AI-native data intelligence platform (Confluent) that transforms monitoring data into operational insights and multi-stakeholder transparency.
 
  
 
-**Quick context on what's changed since we last spoke:**
+**Why I think this might interest you:**
+
+- Our Kearl field validation just wrapped (head-to-head biosensor vs. HRMS, strong correlation)
+- OSMWSC September recommendations align perfectly with what we've built (operational monitoring + stakeholder transparency)
+- We're addressing both the technical bottleneck (HRMS delays) and the trust gap (communities demanding verifiable data)
+- Confluent's approach to integrating structured + unstructured data (PDFs, spreadsheets, historical reports) into queryable intelligence might align with Integrated Sustainability's treatment strategy work
+
+**Would you have any interest meeting us nets week at the event?** I'd value your perspective on water treatment integration and how monitoring intelligence fits into operators' treatment programs.
 
  
 
-**1. Field Validation Complete**  
-Head-to-head biosensor vs. HRMS trials at Imperial's Kearl wetland pilot showed strong correlation in real operational conditions. Peer-reviewed papers publishing by year-end.
+I'm happy to connect beforehand if you'd like more context. I can share our Executive Brief and Solution Overview.
 
  
 
-**2. OSMWSC Regulatory Alignment**  
-September 2025 OSMWSC recommendations explicitly call for operational monitoring on treatment pilots and technology transparency with Indigenous communities—basically describing exactly what we've built.
+Thanks for considering this, Monique.
 
  
 
-**3. Release Timeline Creates Urgency**  
-Alberta's 12-18 month commitment to establish tailings water release standards means operators need monitoring capabilities in place before those standards finalize.
-
- 
-
-**4. Confluent Platform**  
-We've moved beyond just sensors to an integrated intelligence platform—AI-native data system that transforms monitoring into operational insights and multi-stakeholder transparency dashboards.
-
- 
-
-**Why this fits Integrated Sustainability:** You're already embedded in operators' treatment programs and water management projects. We're not competing with engineering services—we're the monitoring intelligence layer that makes those programs auditable, optimizable, and transparent to regulators and communities.
-
- 
-
-Our Confluent platform integrates with existing SCADA systems, LIMS, and historical data (including all those PDF reports), turning fragmented information into queryable operational intelligence.
-
- 
-
-**I've cleaned up our documentation** if you want context for internal discussions:
-
-- [Executive Brief](https://docs.google.com/document/d/e/2PACX-1vQKcM7m2oXzqYAOfUiVIZaihj8ZijegyimQm1sUEahPaau0byNRbq7dd8tGC1pFKs9Ca-dKNAXKlIqE/pub) - Business case and market timing (5 pages, good for decision-makers)
-- [Solution Overview](https://docs.google.com/document/d/e/2PACX-1vRcnv4qlwnOsNHeqExymxMLInlmVhpRSHI1e9pCMDbfNzpJE0EEciIoxfT9QDg_vj-5KFSYXNgnFvvj/pub) - Technical approach and three-tier strategy (4 pages, good for technical teams)
-
-**No rush—week after next works better anyway.** But if you see a fit with Integrated Sustainability's treatment and water management portfolio, I'd appreciate the opportunity to reconnect when timing makes sense.
-
- 
-
-Thanks for being a sounding board on this.
-
- 
-
-Cheers,  
-Jeff
-
----
+Best regards,  
+Jeff Violo
