@@ -70,15 +70,37 @@ This is the "why" behind our new objectives.
 2.  **OBJECTIVE 2 (Messaging):** Develop an operational execution strategy and "playbook" that reframes our solution as an "Operational Intelligence Platform," proving it can save operational costs in near-real-time.
 3.  **OBJECTIVE 3 (Capital):** Finalize a 24-month pro-forma budget and technical-commercial roadmap to support a \$1.5M pre-seed round, and secure \$250k in non-dilutive matching funds.
 
+### MBA Student Pairing
+
+* **Student:** Max Zhang (Haskayne MBA, University of Calgary)
+* **LinkedIn:** [linkedin.com/in/maxzhang1706](https://www.linkedin.com/in/maxzhang1706/)
+* **Background Highlights:**
+    * **Kearl Oil Sands Project experience** (2013-2014, Thermon) - Project coordination/designer with data analytics focus
+    * **Energy & Environmental Law expertise** (7+ years as lecturer at Dalian Maritime University)
+    * **Regulatory/policy specialist** - Cross-jurisdictional legal support (North America, East Asia, Middle East)
+    * **Stakeholder engagement** - Multi-stakeholder engagement across infrastructure/environmental sectors
+    * **Data analytics** - Google Advanced Data Analytics certified (July 2025), Excel VBA background
+    * **Bar admission** - Oregon State Bar (active since 2017)
+* **Strategic Value for Luminous:**
+    * Firsthand oil sands operational knowledge (Kearl site where we completed field validation)
+    * Perfect fit for AER engagement strategy (Patrick Elliott's mandate)
+    * Regulatory compliance & policy navigation expertise
+    * International expansion knowledge (Offshore Europe market research)
+* **Project Assignment:** TBD (intro call scheduled)
+* **Time Commitment:** Up to 10 hours/week
+* **Deliverable Deadline:** In time for Session 2 preparation
+
 ### Immediate Action Items (from Denis & LRD)
 
-| Deadline         | Task                                                                                                           | Status    |
-| :--------------- | :------------------------------------------------------------------------------------------------------------- | :-------- |
-| **Nov 17, 2025** | Reach out to Lead Mentor ([Jocelyn McMinn][m-jocelyn]) to finalize objectives.                                 | `Pending` |
-| **Nov 21, 2025** | Post finalized objectives to CDL Slack channel.                                                                | `Pending` |
-| **ASAP**         | Schedule kick-off meeting with all mentors (use Doodle, cc [Denis][p-denis]).                                  | `Pending` |
-| **ASAP**         | Email [Denis][p-denis] to **confirm** we want an MBA student pairing.                                          | Done      |
-| **Sprint 2**     | **(New)** Per [Patrick Elliott][m-patrick], schedule initial call with AER, co-hosted with our pilot customer. | `Pending` |
+| Deadline         | Task                                                                                                           | Status      |
+| :--------------- | :------------------------------------------------------------------------------------------------------------- | :---------- |
+| **Nov 17, 2025** | Reach out to Lead Mentor ([Jocelyn McMinn][m-jocelyn]) to finalize objectives.                                 | `Done`      |
+| **Nov 21, 2025** | Sign and return Max Zhang NDA to [Denis][p-denis].                                                              | `Pending`   |
+| **Nov 21, 2025** | Post finalized objectives to CDL Slack channel.                                                                | `Pending`   |
+| **Nov 27, 2025** | Call with [Jocelyn McMinn][m-jocelyn] to review Session 2 objectives.                                          | `Scheduled` |
+| **ASAP**         | Schedule introductory call with Max Zhang to scope first project.                                              | `Pending`   |
+| **ASAP**         | Schedule kick-off meeting with all mentors (use Doodle, cc [Denis][p-denis]) - *After Jocelyn call Nov 27*.   | `Pending`   |
+| **Sprint 2**     | **(New)** Per [Patrick Elliott][m-patrick], schedule initial call with AER, co-hosted with our pilot customer. | `Pending`   |
 
 ## 5. Linked Resources
 
