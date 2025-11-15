@@ -58,7 +58,7 @@ This is the "why" behind our new objectives.
 
 1.  **Extreme Validation:** The tech is considered "well advanced and proven." [Mike Lipsett][m-michael] ("former head of Tailings Research for Suncor") called it **"extremely exciting"** and "crucial for acceptance by both the regulator and operators."
 2.  **Refined Sales Message:** Our pitch is **"an and, not an either or"** ([Steve Lau][m-steve]). We sell both regulatory compliance AND operational efficiency. The operational angle "will get you in the door faster."
-3.  **Powerful ROI Statement:** Our 24-hour result (vs. 3 months) is the core value. As mentors noted, **"7 to 12 hours. That's enough time to change things. It's better than three months."**
+3.  **Powerful ROI Statement:** Our 24-hour result (vs. 3 months) is the core value. As mentors noted, **"12 to 72 hours. That's enough time to change things. It's better than three months."**
 4.  **"Technically Massive" Market:** The Alberta oil sands "beachhead" has been confirmed as "technically massive" by CDL standards. The mentor consensus ([Mike Backus][m-mike]) is to **"hyper-focus on that"** before expanding.
 5.  **Proactive Regulator Strategy:** We have a new mandate from [Patrick Elliott][m-patrick]: **"Get into their kitchen and start talking right away... do it in partnership with your customer."** We must not wait for regulations to happen *to* us.
 
