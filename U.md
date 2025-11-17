@@ -22,22 +22,16 @@ Thanks for the feedback - several good catches here. Adjustments below.
 
 **OBJECTIVE 3 (Deployment Playbook):** Develop operational deployment playbook validated by mentors, covering integration workflows (SCADA/LIMS/GIS), field support protocols, data systems architecture, and pilot success metrics.
 
- 
-
 **Rationale:** Agreed that post-pilot messaging refinement is premature. This shifts focus to HOW we execute pilots successfully - repeatable process for Pilot 1, 2, 3. We'll learn what operators value during deployment, but we need execution framework to deliver well.
 
 ---
 
 **Doug's MTA offer:** Agreed - will engage when we reach agreement stage with CNRL (likely Weeks 5-8). I've negotiated O&G agreements before, but your experience with predatory IP terms would be valuable.
 
- 
-
 **Slack transition:** Agreed. Propose single **#luminous-sprint2** channel for all discussions unless you prefer separate channels by objective. What's CDL standard?
 
 ---
 
 These adjusted objectives work for Nov 21 Slack post? Happy to iterate further, but most details can wait for Nov 27 kickoff (9:30 AM).
-
- 
 
 Jeff
