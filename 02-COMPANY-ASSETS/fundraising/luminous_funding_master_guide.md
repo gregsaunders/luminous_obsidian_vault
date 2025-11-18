@@ -1,6 +1,6 @@
 # Luminous BioSolutions: Core Narrative for Funding and Investment
 
-**Document Purpose:** This guide serves as the central repository for Luminous BioSolutions' core narrative, value proposition, and key validation points. It is designed to ensure a consistent, technically credible, and confident tone across all grant applications, investor pitches, and external communications.
+**Document Purpose:** This guide serves as the central repository for Luminous BioSolutions' core narrative, value proposition, and key validation points.
 
 ---
 
@@ -12,26 +12,16 @@ Luminous BioSolutions is an Alberta-based technology company commercializing a n
 
 ## 2. The Challenge & Opportunity
 
-*   **The Regulatory Driver:** The Government of Alberta, guided by the OSMWSC, is establishing a regulatory framework for the release of treated oil sands tailings water. This policy shift creates a non-negotiable requirement for operators to implement robust, high-frequency monitoring to validate the efficacy of their water treatment processes.
-*   **The Analytical Bottleneck:** High-Resolution Mass Spectrometry (HRMS) is the established reference method for detailed NA characterization. However, its high cost ($700-$1,000/sample) and long turnaround time (6-8 weeks) make it unsuitable for the operational cadence required for process control and optimization.
-*   **The Opportunity:** This creates a clear market opening for a complementary analytical tier—a validated, high-throughput screening tool that provides reliable, operational data in a timely and economical manner.
+* **The Regulatory Driver:** AER is establishing a water release framework. This shift creates a **non-negotiable, imminent requirement** for operators to build a multi-year, robust monitoring baseline to validate treatment effectiveness and achieve release authorization. 
+* **The Analytical Bottleneck:** HRMS is too slow and expensive for operational process control. 
+* **The Opportunity:** The market needs an **Integrated Readiness Infrastructure** that provides operational efficiency (Tier 1) while strategically securing a first-mover advantage for regulatory compliance (Tier 3).
 
 ---
 
 ## 3. The Luminous BioSolutions Platform
-
-Our solution is a two-part platform that integrates seamlessly into existing water management workflows.
-
-*   **Part 1: The Biosensor Array:**
-    *   **Technology:** A panel of three proprietary, whole-cell bacterial biosensors engineered to quantify distinct classes of naphthenic acids. The core intellectual property is patent-pending.
-    *   **Performance:** Delivers quantitative NA concentration data within **24 hours - 72 hours**.
-    *   **Validation:** The platform's output demonstrates a high degree of correlation with HRMS analysis in peer-reviewed, published studies.
-    *   **Robustness:** Designed for performance and stability in complex matrices, including raw Oil Sands Process-Affected Water (OSPW).
-
-*   **Part 2: The Confluent Data Platform:**
-    *   **Purpose:** An enterprise-grade software tool that aggregates, analyzes, and visualizes high-frequency monitoring data.
-    *   **Function:** It provides operators and environmental teams with actionable intelligence for process optimization and generates auditable data trails for transparent regulatory reporting.
-
+Our solution is an integrated platform that addresses the technical, operational, and regulatory challenge simultaneously. * 
+Part 1: The Biosensor Array (The Headlights):
+Purpose:** High-frequency operational screening (24-72 hours). Provides the daily data stream required for process control. * **Part 2: The Confluent Intelligence Engine (The Institutional Memory):** * **Purpose:** An enterprise-grade software tool that aggregates, correlates, and visualizes high-frequency monitoring data. * **Function:** Delivers **Actionable Intelligence for Regulatory Readiness** by linking current sensor data to historical context (PDFs, SCADA).
 ---
 
 ## 4. Core Validation Pillars
