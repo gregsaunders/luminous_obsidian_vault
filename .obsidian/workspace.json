@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "99-ARCHIVE/2025-grant-applications/01 Grant Funding/ERA/ERA Industrial Transformation Challenge 2025/1. V1 Submission Attempt.md",
+                "file": "02-COMPANY-ASSETS/fundraising/valuation-framework.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1. V1 Submission Attempt"
+              "title": "valuation-framework"
             }
           }
         ]
@@ -88,7 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 465.5
+    "width": 348.5
   },
   "right": {
     "id": "c61c2be9af22c590",
@@ -211,13 +211,14 @@
   },
   "active": "62750cc74e0b3e31",
   "lastOpenFiles": [
-    "02-COMPANY-ASSETS/fundraising/24-month-budget-DRAFT.md",
-    "02-COMPANY-ASSETS/fundraising/valuation-framework.md",
     "02-COMPANY-ASSETS/fundraising/luminous_funding_master_guide.md",
-    "02-COMPANY-ASSETS/stakeholders",
+    "02-COMPANY-ASSETS/fundraising/24-month-budget-DRAFT.md",
+    "02-COMPANY-ASSETS/strategy-development/operational-intelligence/research-sprints/sprint-04-confluent-value-map.md",
     "02-COMPANY-ASSETS/strategy-development/operational-intelligence/research-sprints/sprint-02-remediation-landscape.md",
     "02-COMPANY-ASSETS/strategy-development/operational-intelligence/research-sprints/sprint-01-upstream-optimization.md",
-    "02-COMPANY-ASSETS/strategy-development/operational-intelligence/research-sprints/sprint-04-confluent-value-map.md",
+    "99-ARCHIVE/2025-grant-applications/01 Grant Funding/ERA/ERA Industrial Transformation Challenge 2025/1. V1 Submission Attempt.md",
+    "02-COMPANY-ASSETS/fundraising/valuation-framework.md",
+    "02-COMPANY-ASSETS/stakeholders",
     "02-COMPANY-ASSETS/strategy-development/operational-intelligence/frameworks/pilot-proposal-template.md",
     "02-COMPANY-ASSETS/strategy-development/operational-intelligence/_MASTER-CONTEXT.md",
     "02-COMPANY-ASSETS/strategy-development/operational-intelligence/mba-student-project-brief.md",
@@ -245,7 +246,6 @@
     "01-ACTIVE-BUSINESS/strategy-development/operational-intelligence/_MASTER-CONTEXT.md",
     "01-ACTIVE-BUSINESS/strategy-development/operational-intelligence/frameworks/critical-assumptions-audit.md",
     "01-ACTIVE-BUSINESS/strategy-development/operational-intelligence/research-sprints/sprint-01-upstream-optimization.md",
-    "03-DEVELOPMENT/partnerships/CDL-Application/Luminous - Session 2 Objectives.md",
     "01-ACTIVE-BUSINESS/strategy-development/operational-intelligence/research-sprints",
     "02-COMPANY-ASSETS/presentations/Internal Papers/attachments/Pasted image 20251030081615.png",
     "02-COMPANY-ASSETS/marketing/communications-assets/attachments/Pasted image 20251014135647.png",
