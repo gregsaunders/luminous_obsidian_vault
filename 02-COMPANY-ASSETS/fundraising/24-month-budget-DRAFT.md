@@ -338,7 +338,8 @@ With 4 active pilots in Year 2, personnel split shifts as pilot workload increas
 5. **Revenue:** Is $48K-$75K/year subscription post-pilot realistic, or price higher?
 
 ---
-## 
+## Defending the Fundraise Amount
+The core defence for the $2.5 Million target is risk mitigation and securing a strong 24-month runway, avoiding the projected shortfall of the $2M scenario.
 
 **Risk Mitigation Defence**
 
@@ -348,6 +349,34 @@ With 4 active pilots in Year 2, personnel split shifts as pilot workload increas
 |                                                                | **1. Pilot Matching Delay:** If ERA/Alberta Innovates funding is delayed (a 3–6 month decision cycle), we need capital to float the pilot personnel costs. | Protects the core budget from relying on uncertain grant timelines, allowing us to start the Q2 2026 pilot on time. |
 |                                                                | **2. Revenue Timing Risk:** The buffer absorbs the risk of conversion delays on Pilots 1 & 2 before Year 2 revenue flows in.                               | Ensures we hit our **$500K ARR target** by Year 2 without critical runway risk.                                     |
 |                                                                | **3. Strategic Headcount:** The cushion allows us to hire the Sales/BD role in Year 2 when pilot success is proven.                                        | Secures a **strong 24-month runway** with a healthy buffer over minimal dilution.                                   |
+
+---
+## Defending the Pilot Matching Strategy (The $780K Challenge)
+Our model relies on successfully securing **$780K–$967K** in matching funds over 24 months for 4 planned pilots.
+
+**Co-Funding Defence**
+
+|**Mentor Question**|**Your Defense (Key Talking Points)**|**Rationale**|
+|---|---|---|
+|**"Is ERA/Alberta Innovates (AI) matching realistic for 4 pilots at that scale ($780K+ in total pilot costs)?"**|**"Yes, because we use a Leveraged Co-Funding Model."**|We minimize risk to the grant agencies while maximizing leverage:|
+||**1. Low Risk to Grants:** ERA/AI only pay **50% of the cost**. The other 50% is paid directly by the **Operator (CNRL/Imperial)**, proving market demand.|Operators co-funding TRL 8 technology is a strong validation signal.|
+||**2. High Strategic Value:** We are providing a **TRL 8 solution** to a **mandatory regulatory requirement (2027)**. Our project is an ideal fit for the **Technology Development & Demonstration** streams.|Grant applications are focused on **solving the industry-wide compliance bottleneck** (NA monitoring).|
+||**3. Contingency:** We are aggressively pursuing **COSIA** (industry-funded) and **IRAP** (federal) as secondary matching sources, minimizing dependence on a single program.|We have multiple paths to secure the matching funds.|
+
+---
+## Defending Headcount & Personnel Allocation
+The defence must prove operational leverage and maintain a lean core team while scaling pilot delivery.
+
+**Personnel Leverage Defence**
+
+|**Mentor Question**|**Your Defense (Key Talking Points)**|**Rationale**|
+|---|---|---|
+|**"How can you scale to support 4 active pilots in Year 2 (11-12 FTEs/contractors) without inflating your core burn rate?"**|**"We maintain Capital Efficiency by pushing 80%–100% of the execution costs onto the matched pilot budget."**|This is the core defense of your capital efficiency model:|
+||**1. Core Team Focus:** Jeff, Greg, and Justin focus on **Core Operations/Platform Development** (100% funded by the raise).|Ensures R&D and platform integration (the competitive moat) continue uninterrupted.|
+||**2. Pilot Team Model:** Key execution staff (Lab Manager Tyson, Field Engineers) are funded **80%–100% by the pilot matching**.|This structure allows us to scale project delivery (4 pilots) without increasing the core Luminous burn rate, proving our **capital efficiency**.|
+||**3. Strategic Contract Use:** We utilize contractors (Field Engineer #2, PM) in Year 1 for flexibility, transitioning to FTEs in Year 2 only when pilot success and matching funds are confirmed.|De-risks headcount commitment during the initial pilot phase.|
+
+---
 ## Next Steps
 
 1. **Validate Pilot Matching** (URGENT - Week 1)

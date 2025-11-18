@@ -1,37 +1,59 @@
-## Draft Response (Tight, Real, Appreciative, Not Kiss-Ass)
 
-**Subject:** Re: Luminous Sprint 2 Objectives - Adjusted
+## 👋 Welcome & Introduction (15 Minutes)
 
-Jocelyn, Doug, Terence, team,
+The goal here is to establish a **friendly, collaborative tone** and acknowledge Max's unique value.
 
-Thanks for the feedback - several good catches here. Adjustments below.
-
----
-
-**OBJECTIVE 1 (Pilot Program):** Secure one paid pilot agreement signed (CNRL, Suncor, or Imperial) for Q2 2026 deployment, AND advance discussions with 2 additional operators to build pipeline.
-
-**Rationale:** Agreed on crawl-walk-run. First deployment will teach us what operators actually need. Goal is they like it so much it never leaves - if the pilot ends and they don't want to keep it, we've failed to prove value. Building multi-operator pipeline gives us better learning and de-risks single-customer dependency.
-
----
-
-**OBJECTIVE 2 (Fundraising Readiness):** Finalize 24-month pro-forma budget with mentor validation (Weeks 1-4 priority), and secure ~$250K in non-dilutive matching funds to support ~$1.5M pre-seed round.
-
-**Rationale:** You're right that stating $1.5M without finalized budget was premature. Budget work happens Weeks 1-4, THEN we'll know if $1.5M is correct or we need to adjust. This is now a top priority alongside pilot advancement - can't raise without credible budget + pilot traction.
+- **Icebreaker (5 min):** Start with casual small talk (e.g., "How's the MBA program going?", "How was the CDL selection process?"). Ask Jeff to share a **brief, personal highlight** from his background (e.g., the competitive nature of being a former athlete).
+    
+- **Max’s Story & Kearl Connection (10 min):** Ask Max to share his journey and what he learned during his time at the **Kearl site (2013-2014)**.
+    
+    - _Prompt:_ "We know you were at Kearl. That site is where we validated our biosensor. We'd love to hear your perspective on the **operational context**—what were the big challenges with tailings and water back then?"
+        
+    - _Goal:_ Confirm his operational knowledge and make him feel valued for his specific site experience, which directly feeds **Project 1 (Economics)**.
+        
 
 ---
 
-**OBJECTIVE 3 (Deployment Playbook):** Develop operational deployment playbook validated by mentors, covering integration workflows (SCADA/LIMS/GIS), field support protocols, data systems architecture, and pilot success metrics.
+## 💡 Luminous Story & Strategy Alignment (15 Minutes)
 
-**Rationale:** Agreed that post-pilot messaging refinement is premature. This shifts focus to HOW we execute pilots successfully - repeatable process for Pilot 1, 2, 3. We'll learn what operators value during deployment, but we need execution framework to deliver well.
+The goal is to provide Max with the **aligned strategic context** and introduce the **Trojan Horse** strategy (without the buzzwords).
+
+- **Our Pivot (5 min):** Jeff, share the Luminous story briefly. Emphasize that you've moved past selling a sensor to selling **Readiness Infrastructure**.
+    
+    - _Key Message:_ "We validated **$260K of operational savings** at Kearl (the 'Wedge'). Now, we're building the strategic asset that uses that ROI to justify securing a **12-month head start on 2027 regulatory compliance** (the 'Driver')."
+        
+- **The Big Questions (10 min):** Introduce the three core unknowns that Max is here to solve, linking them back to his skills.
+    
+    - _Economics (G4):_ "We know the operational value is $260K, but Max, your data background is needed to tell us if that's **meaningful** or **trivial** in the context of a VP of Operations' $500M budget."
+        
+    - _Regulation (G8):_ "Your policy background is critical here. **Patrick Elliott** (our mentor) needs to know who at the **AER** we should be talking to right now."
+        
+    - _Authority (G3):_ "We need your help figuring out where the budget for **'Readiness Infrastructure'** resides. Is it OPEX or CAPEX, and who signs off?"
+        
 
 ---
 
-**Doug's MTA offer:** Agreed - will engage when we reach agreement stage with CNRL (likely Weeks 5-8). I've negotiated O&G agreements before, but your experience with predatory IP terms would be valuable.
+## 🎯 Project Alignment & Next Steps (30 Minutes)
 
-**Slack transition:** Agreed. Propose single **#luminous-sprint2** channel for all discussions unless you prefer separate channels by objective. What's CDL standard?
+The final section shifts to business, confirming Max understands the deliverables and setting him up for Week 1 success.
+
+- **Review Project Brief (10 min):** Briefly walk through the **Executive Summary** and **Expected Deliverables** in the `mba-student-project-brief.md` file. Ask Max: "Based on your background, which of these three projects (**G4 Economics, G3 Authority, G8 AER Strategy**) are you most excited to start on?"
+    
+    - _Note:_ Confirm Max has read the brief and the key files (Sprint 2/4).
+        
+- **Week 1 Deliverables (15 min):** Define the immediate, non-intimidating tasks for Max:
+    
+    - **Phase 1: Research Sources:** Identify key public filing data (SEDAR) and reports for Project 1 (G4).
+        
+    - **Phase 2: Discovery Prep:** Draft an initial list of **discovery questions** for the CNRL contacts (G3) to validate the budget authority hypothesis.
+        
+    - **Schedule:** Confirm a **1-hour check-in** for the following week.
+        
+- **Q&A and Mentor Leverage (5 min):** Open the floor for any questions Max has. Offer immediate access to the **CDL mentor network** for context validation (e.g., offer to facilitate an email introduction to **Jocelyn McMinn** for initial G3 insights).
+    
 
 ---
 
-These adjusted objectives work for Nov 21 Slack post? Happy to iterate further, but most details can wait for Nov 27 kickoff (9:30 AM).
+### Total Time: 60 Minutes
 
-Jeff
+This structure prioritizes making Max feel comfortable and aligning his research with your high-stakes commercial strategy.
