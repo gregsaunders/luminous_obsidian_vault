@@ -34,18 +34,18 @@
 
 ## Budget Summary
 
-| Category | Year 1 (2026) | Year 2 (2027) | Total 24 Months |
-|----------|---------------|---------------|-----------------|
-| **Personnel (Core Ops)** | $644K-$782K | $821K-$1,006K | $1,465K-$1,788K |
-| **Personnel (Pilot - Matched)** | $302K-$375K | $478K-$592K | $780K-$967K |
-| **Pilot Deployment Costs** | $0 (matched 100%) | $0 (matched 100%) | $0 |
-| **CAPEX** | $80K-$130K | $50K-$80K | $130K-$210K |
-| **Operations & Overhead** | $88K-$105K | $90K-$110K | $178K-$215K |
-| **Marketing & Sales** | $30K-$50K | $40K-$60K | $70K-$110K |
-| **R&D (Product Hardening)** | $0 (built into personnel) | $15K-$25K | $15K-$25K |
-| **TOTAL BURN (Luminous)** | $842K-$1,067K | $1,016K-$1,281K | $1,858K-$2,348K |
-| **Less: Year 2 Revenue** | $0 | ($132K-$206K) | ($132K-$206K) |
-| **NET BURN (Luminous)** | $842K-$1,067K | $884K-$1,075K | **$1,726K-$2,142K** |
+| Category                        | Year 1 (2026)             | Year 2 (2027)     | Total 24 Months     |
+| ------------------------------- | ------------------------- | ----------------- | ------------------- |
+| **Personnel (Core Ops)**        | $644K-$782K               | $821K-$1,006K     | $1,465K-$1,788K     |
+| **Personnel (Pilot - Matched)** | $302K-$375K               | $478K-$592K       | $780K-$967K         |
+| **Pilot Deployment Costs**      | $0 (matched 100%)         | $0 (matched 100%) | $0                  |
+| **CAPEX**                       | $80K-$130K                | $50K-$80K         | $130K-$210K         |
+| **Operations & Overhead**       | $88K-$105K                | $90K-$110K        | $178K-$215K         |
+| **Marketing & Sales**           | $30K-$50K                 | $40K-$60K         | $70K-$110K          |
+| **R&D (Product Hardening)**     | $0 (built into personnel) | $15K-$25K         | $15K-$25K           |
+| **TOTAL BURN (Luminous)**       | $842K-$1,067K             | $1,016K-$1,281K   | $1,858K-$2,348K     |
+| **Less: Year 2 Revenue**        | $0                        | ($132K-$206K)     | ($132K-$206K)       |
+| **NET BURN (Luminous)**         | $842K-$1,067K             | $884K-$1,075K     | **$1,726K-$2,142K** |
 
 **CORRECTED ALLOCATION:** Pilot personnel costs ($780K-$967K over 24 months) covered 100% by ERA/Alberta Innovates + operator matching. Only core operations personnel ($1,465K-$1,788K) funded by Luminous raise.
 
