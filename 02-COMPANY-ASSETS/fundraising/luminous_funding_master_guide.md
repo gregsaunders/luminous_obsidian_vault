@@ -19,9 +19,14 @@ Luminous BioSolutions is an Alberta-based technology company commercializing a n
 ---
 
 ## 3. The Luminous BioSolutions Platform
-Our solution is an integrated platform that addresses the technical, operational, and regulatory challenge simultaneously. * 
-Part 1: The Biosensor Array (The Headlights):
-Purpose:** High-frequency operational screening (24-72 hours). Provides the daily data stream required for process control. * **Part 2: The Confluent Intelligence Engine (The Institutional Memory):** * **Purpose:** An enterprise-grade software tool that aggregates, correlates, and visualizes high-frequency monitoring data. * **Function:** Delivers **Actionable Intelligence for Regulatory Readiness** by linking current sensor data to historical context (PDFs, SCADA).
+Our solution is an integrated platform that addresses the technical, operational, and regulatory challenge simultaneously.
+
+**Part 1**: The Biosensor Array (The Headlights):
+**Purpose:** High-frequency operational screening (24-72 hours). Provides the daily data stream required for process control. 
+
+**Part 2:** The Confluent Intelligence Engine (The Institutional Memory):
+**Purpose:** An enterprise-grade software tool that aggregates, correlates, and visualizes high-frequency monitoring data. ***Function:** Delivers **Actionable Intelligence for Regulatory Readiness** by linking current sensor data to historical context (PDFs, SCADA).
+
 ---
 
 ## 4. Core Validation Pillars
