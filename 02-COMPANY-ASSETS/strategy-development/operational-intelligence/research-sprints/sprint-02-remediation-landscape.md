@@ -889,9 +889,9 @@ Operations teams don't adopt new monitoring because:
 ## Files/Data Referenced
 
 - **Primary Source:** [Kearl Wetland Report.pdf](../../02-COMPANY-ASSETS/technical-docs/publications/Kearl Wetland/Journal of Environmental Chemical Engineering/Kearl Wetland Report.pdf)
-- **Master Context:** [_MASTER-CONTEXT.md](../_MASTER-CONTEXT.md)
+- **Master Context:** [_MASTER-CONTEXT.md](02-COMPANY-ASSETS/strategy-development/operational-intelligence/_MASTER-CONTEXT.md)
 - **Confluent Technical Details:** [Confluent-Platform.md](../../02-COMPANY-ASSETS/presentations/Internal Papers/Confluent-Platform.md)
-- **Session Log:** [2025-11-15-initial-strategy-session.md](../session-logs/2025-11-15-initial-strategy-session.md)
+- **Session Log:** [2025-11-15-initial-strategy-session.md](2025-11-15-initial-strategy-session.md)
 
 ---
 

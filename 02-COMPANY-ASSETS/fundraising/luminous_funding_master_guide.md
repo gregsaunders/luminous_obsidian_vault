@@ -24,8 +24,8 @@ Our solution is a two-part platform that integrates seamlessly into existing wat
 
 *   **Part 1: The Biosensor Array:**
     *   **Technology:** A panel of three proprietary, whole-cell bacterial biosensors engineered to quantify distinct classes of naphthenic acids. The core intellectual property is patent-pending.
-    *   **Performance:** Delivers quantitative NA concentration data within **24 hours**.
-    *   **Validation:** The platform's output demonstrates a high degree of correlation (R: -0.97 to -0.99) with HRMS analysis in peer-reviewed, published studies.
+    *   **Performance:** Delivers quantitative NA concentration data within **24 hours - 72 hours**.
+    *   **Validation:** The platform's output demonstrates a high degree of correlation with HRMS analysis in peer-reviewed, published studies.
     *   **Robustness:** Designed for performance and stability in complex matrices, including raw Oil Sands Process-Affected Water (OSPW).
 
 *   **Part 2: The Confluent Data Platform:**
@@ -39,16 +39,22 @@ Our solution is a two-part platform that integrates seamlessly into existing wat
 The credibility of our technology and business model is supported by the following key validations:
 
 *   **1. Venture & Commercialization Support:**
-    *   **Creative Destruction Lab (CDL):** Luminous was accepted into the CDL-Rockies Energy Stream (2025 Cohort), a competitive, objective-based mentorship program for science- and technology-based companies. This provides third-party validation of our commercial potential.
+    *   **Creative Destruction Lab (CDL):** Luminous was accepted into the CDL-Rockies Energy Stream (2025 Cohort), a competitive, objective-based mentorship program for science- and technology-based companies. This provides third-party validation of our commercial potential. Luminous successfully advanced to the second sprint of The 4 Sprint CDL Program, showing further validation
 
 *   **2. Industry-Funded Research & Validation:**
-    *   **Canadian Natural Resources (CNRL):** Foundational academic research for the biosensor technology received financial support from CNRL, demonstrating direct industry interest in the solution.
+    *   **Canadian Natural Resources (CNRL):** Foundational academic research for the biosensor technology received financial support from CNRL, demonstrating direct industry interest in the solution. CNRL has committed to the second phase of academic funding.
 
 *   **3. Scientific Rigor & Alberta-Based Innovation:**
     *   **Academic Foundation:** The technology is the product of research conducted at the **University of Calgary** and **Athabasca University**.
     *   **Peer-Reviewed Science:** Core findings have been published in reputable scientific journals, including *ACS Synthetic Biology*, ensuring the technology has been vetted by the scientific community.
 
-*   **4. Alignment with Regulatory Momentum:**
+*   **4. Multi-Season Field Validation (Imperial Kearl Wetland Pilot):**
+    *   **Operational Environment Testing:** Biosensor platform validated with field samples from Imperial Oil's Kearl wetland pilot across multiple operational seasons
+    *   **Technology Readiness:** Demonstrated performance in real-world oil sands process water conditions (not just laboratory samples)
+    *   **Proven Correlation:** R > 0.9 correlation with gold standard Orbitrap HRMS analysis
+    *   **TRL Status:** Field-validated technology (TRL 8), ready for commercial deployment
+
+*   **5. Alignment with Regulatory Momentum:**
     *   **Market Timeliness:** The government's stated commitment to creating a water release framework provides regulatory certainty and a clear, imminent market need for our monitoring solution.
 
 ---
