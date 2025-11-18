@@ -338,7 +338,16 @@ With 4 active pilots in Year 2, personnel split shifts as pilot workload increas
 5. **Revenue:** Is $48K-$75K/year subscription post-pilot realistic, or price higher?
 
 ---
+## 
 
+**Risk Mitigation Defence**
+
+| **Mentor Question**                                            | **Your Defense (Key Talking Points)**                                                                                                                      | **Rationale**                                                                                                       |
+| -------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| **"Your net burn is ~$2.1M. Why raise $2.5M (20% dilution)?"** | **"The $2.5M buys a 13%–29% buffer to absorb high-impact, external risks."**                                                                               | We are mitigating critical risks that are outside our control:                                                      |
+|                                                                | **1. Pilot Matching Delay:** If ERA/Alberta Innovates funding is delayed (a 3–6 month decision cycle), we need capital to float the pilot personnel costs. | Protects the core budget from relying on uncertain grant timelines, allowing us to start the Q2 2026 pilot on time. |
+|                                                                | **2. Revenue Timing Risk:** The buffer absorbs the risk of conversion delays on Pilots 1 & 2 before Year 2 revenue flows in.                               | Ensures we hit our **$500K ARR target** by Year 2 without critical runway risk.                                     |
+|                                                                | **3. Strategic Headcount:** The cushion allows us to hire the Sales/BD role in Year 2 when pilot success is proven.                                        | Secures a **strong 24-month runway** with a healthy buffer over minimal dilution.                                   |
 ## Next Steps
 
 1. **Validate Pilot Matching** (URGENT - Week 1)
