@@ -7,7 +7,6 @@
 ---
 
 ## 1. The Core Thesis: Why We Command a Premium
-
 Most pre-seed startups ask investors to fund **R&D Risk** (Will it work?).
 Luminous is asking investors to fund **Market Expansion** of a proven platform.
 
@@ -33,20 +32,18 @@ We are not searching for a business model. We have validated it.
 ---
 
 ## 2. Investment to Date (The Foundation)
-
 *We successfully bootstrapped to Field Validation.*
 
 | Asset                  | Status                      | Value Driver                                                                                                                                    |
 | :--------------------- | :-------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Biosensor Tech**     | **TRL 8 (Field Validated)** | 3-Panel System validated across multiple operational seasons at Imperial Kearl. High correlation with HRMS.                                     |
 | **Confluent Platform** | **Deployed (MVP)**          | Infrastructure operational. Ingests Biosensor + SCADA + Historical PDFs. Integration thesis validated.                                          |
-| **Customer Traction**  | **Advanced Pipeline**       | Imperial Kearl (Completed Pilot). CNRL Albian (Q2 2026 Planned). Suncor (Engagement initiated).                                                 |
+| **Customer Traction**  | **Advanced Pipeline**       | Imperial Kearl (Completed Pilot). CNRL Albian (Q2 2026 Planned). Suncor (Engagement initiated). Pathways Alliance (Engagement Initiated)        |
 | **Founder Equity**     | **Full Commitment**         | Founders have invested 18 months of full-time/part-time effort (>$300k opportunity cost) to de-risk the tech before asking for outside capital. |
 
 ---
 
 ## 3. Valuation Benchmarks & Scenarios
-
 *Positioning Luminous as a "Late-Seed" asset in a "Pre-Seed" round.*
 
 ### Scenario A: The "De-Risked Tech" Play (Current Status)
@@ -70,7 +67,6 @@ We are not searching for a business model. We have validated it.
 ---
 
 ## 4. Use of Funds: Market Expansion (Not R&D)
-
 *Investors prefer funding Sales over Science.*
 
 **Total Raise:** $2.0M CAD
@@ -87,7 +83,6 @@ We are not searching for a business model. We have validated it.
 ---
 
 ## 5. Cap Table Strategy (Clean & Founder-Friendly)
-
 **Current Structure:**
 * **Founders:** ~90% Ownership (Lewenza Labs + Confluent).
 * **Debt:** ~$40k (Confluent Expenses).
