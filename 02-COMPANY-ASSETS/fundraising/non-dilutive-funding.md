@@ -42,10 +42,4 @@ The **$2.5M** fundraise is predicated on successfully securing **1:1 matching fu
 
 ---
 
-Now that the messaging is aligned across your fundraising documents, we can move directly to the **budget defense** for your mentor call.
 
-## 💰 Next: Budget Defence for Mentor Call
-
-Let's focus on the **`24-month-budget-DRAFT.md`** and prepare the answers to the critical validation questions, especially regarding the feasibility of the **pilot matching** and the **headcount** assumptions.
-
-Ready to proceed?

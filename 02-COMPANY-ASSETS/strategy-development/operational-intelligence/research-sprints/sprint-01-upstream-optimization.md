@@ -2,7 +2,7 @@
 
 **Sprint ID:** Sprint-02
 **Status:** ✅ VALIDATED (Kearl Data)
-**Owner:** AI Research
+**Owner:** Jeff Violo
 **Context:** This is our primary commercial asset. The "Safe Bet."
 
 ---

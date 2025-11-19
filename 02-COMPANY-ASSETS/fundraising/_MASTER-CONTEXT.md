@@ -31,7 +31,7 @@ Finalize 24-month pro-forma budget with mentor validation (Weeks 1-4 priority), 
 
 ## Key Strategic Questions for Nov 27 Mentor Call
 
-### Valuation Defense (TRL 7-8 Positioning)
+### Valuation Defence (TRL 7-8 Positioning)
 
 **Core Thesis:**
 We're not asking investors to fund R&D risk. We're asking them to fund **market expansion of proven technology** (TRL 7-8). This fundamentally changes valuation.

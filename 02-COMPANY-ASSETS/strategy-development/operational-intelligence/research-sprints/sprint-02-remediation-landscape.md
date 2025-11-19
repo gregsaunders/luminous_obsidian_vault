@@ -2,7 +2,7 @@
 
 **Sprint ID:** G2 - Remediation Monitoring Needs
 **Status:** 🟢 Complete (Kearl Analysis with Confluent Integration)
-**Owner:** AI Research
+**Owner:** Jeff Violo
 **Completed:** 2025-11-15
 **Last Updated:** 2025-11-15 (Full rewrite with integrated biosensor + Confluent positioning)
 
