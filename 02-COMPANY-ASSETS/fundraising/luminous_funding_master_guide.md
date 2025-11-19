@@ -34,7 +34,7 @@ Our solution is an integrated platform that addresses the technical, operational
 The credibility of our technology and business model is supported by the following key validations:
 
 *   **1. Venture & Commercialization Support:**
-    *   **Creative Destruction Lab (CDL):** Luminous was accepted into the CDL-Rockies Energy Stream (2025 Cohort), a competitive, objective-based mentorship program for science- and technology-based companies. This provides third-party validation of our commercial potential. Luminous successfully advanced to the second sprint of The 4 Sprint CDL Program, showing further validation
+    *   **Creative Destruction Lab (CDL):** Luminous was accepted into the CDL-Rockies Energy Stream (2025 Cohort), a competitive, objective-based mentorship program for science-and technology-based companies. This provides third-party validation of our commercial potential. Luminous successfully advanced to the second sprint of The 4 Sprint CDL Program, showing further validation
 
 *   **2. Industry-Funded Research & Validation:**
     *   **Canadian Natural Resources (CNRL):** Foundational academic research for the biosensor technology received financial support from CNRL, demonstrating direct industry interest in the solution. CNRL has committed to the second phase of academic funding.
@@ -46,11 +46,11 @@ The credibility of our technology and business model is supported by the followi
 *   **4. Multi-Season Field Validation (Imperial Kearl Wetland Pilot):**
     *   **Operational Environment Testing:** Biosensor platform validated with field samples from Imperial Oil's Kearl wetland pilot across multiple operational seasons
     *   **Technology Readiness:** Demonstrated performance in real-world oil sands process water conditions (not just laboratory samples)
-    *   **Proven Correlation:** R > 0.9 correlation with gold standard Orbitrap HRMS analysis
+    *   **Proven Correlation:** High correlation with gold standard Orbitrap HRMS analysis
     *   **TRL Status:** Field-validated technology (TRL 8), ready for commercial deployment
 
 *   **5. Alignment with Regulatory Momentum:**
-    *   **Market Timeliness:** The government's stated commitment to creating a water release framework provides regulatory certainty and a clear, imminent market need for our monitoring solution.
+    *   **Market Timeliness:** The government's stated commitment of 12 to 18 months from September 2025 to creating a water release framework provides regulatory certainty and a clear, imminent market need for our monitoring solution.
 
 ---
 

@@ -20,7 +20,7 @@ Luminous provides an **Integrated Operational Intelligence Platform** combining 
 Validated **$260K/year** operational value from Imperial Kearl wetland data analysis, justifying a **5-month payback period** on pilot deployment. This value funds the deployment of the strategic readiness infrastructure.
 
 **Technology Advantage:**
-- **Biosensor:** 3-panel system, R > 0.9 correlation with gold standard HRMS (TRL 8).
+- **Biosensor:** 3-panel system, high correlation with gold standard HRMS (TRL 8).
 - **Confluent Platform:** Compounding Intelligence architecture with **2-3 year competitive moat** (no one else can unify biosensor data, SCADA, and historical PDFs).
 
 **Traction:**
