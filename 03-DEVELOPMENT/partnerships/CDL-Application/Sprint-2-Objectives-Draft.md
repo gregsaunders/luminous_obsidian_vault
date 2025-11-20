@@ -10,11 +10,11 @@
 
 Before defining Sprint 2 deliverables, here's where we stand on each objective:
 
-| Objective | Progress | Key Assets Complete |
-|-----------|----------|---------------------|
-| **Pilot Acquisition** | 60-70% | CNRL target identified, COSIA relationship (Ty Veness), TRL 8 validation, Lipsett test planning offer |
-| **Commercial Infrastructure** | 85-90% | Strategic positioning framework, discovery scripts, Confluent value map, pilot proposal v1.4, zero-friction deployment model |
-| **Fundraise Readiness** | 85-90% | Pitch deck near-complete, 24-month budget (needs tightening), valuation framework ($8M-$10M), cap table strategy |
+| Objective                     | Progress | Key Assets Complete                                                                                                          |
+| ----------------------------- | -------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| **Pilot Acquisition**         | 60-70%   | CNRL target identified, COSIA relationship (Ty Veness), TRL 8 validation, Lipsett test planning offer                        |
+| **Commercial Infrastructure** | 85-90%   | Strategic positioning framework, discovery scripts, Confluent value map, pilot proposal v1.4, zero-friction deployment model |
+| **Fundraise Readiness**       | 85-90%   | Pitch deck near-complete, 24-month budget (needs tightening), valuation framework ($8M-$10M), cap table strategy             |
 
 **Key Insight:** We're not starting from zero. Sprint 2 is about **closing gaps and securing commitments**, not building from scratch.
 
@@ -41,13 +41,13 @@ Before defining Sprint 2 deliverables, here's where we stand on each objective:
 
 #### Priority B: Pilot Documentation & Commitment (Weeks 4-10)
 
-| # | Task | Owner | Target Date | Status |
-|---|------|-------|-------------|--------|
-| 1.7 | Schedule Mike Lipsett test planning session | Jeff | Week 2 | 🔴 Not started |
-| 1.8 | Finalize pilot scope document (timeline, deliverables, budget) | Jeff/Greg | Week 4 | 🔴 Not started |
-| 1.9 | Submit ERA/AI grant applications for 50% matching ($120K-$150K) | Jeff | Week 6 | 🔴 Not started |
-| 1.10 | Submit formal pilot proposal to CNRL | Jeff | Week 8 | 🔴 Not started |
-| 1.11 | Secure LOI or verbal commitment from CNRL | Jeff | Week 10 | 🔴 Not started |
+| #    | Task                                                           | Owner     | Target Date | Status         |
+| ---- | -------------------------------------------------------------- | --------- | ----------- | -------------- |
+| 1.7  | Schedule Mike Lipsett test planning session                    | Jeff      | Week 2      | 🔴 Not started |
+| 1.8  | Finalize pilot scope document (timeline, deliverables, budget) | Jeff/Greg | Week 4      | 🔴 Not started |
+| 1.9  | Develop and Submit ERA/AI grant applications for 50% matching  | Jeff      | Week 6      | 🔴 Not started |
+| 1.10 | Submit formal pilot proposal to CNRL                           | Jeff      | Week 8      | 🔴 Not started |
+| 1.11 | Secure LOI or verbal commitment from CNRL                      | Jeff      | Week 10     | 🔴 Not started |
 
 #### Priority C: Pilot Implementation Execution Strategy
 

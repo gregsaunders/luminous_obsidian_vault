@@ -146,7 +146,7 @@
 
 ## Related Documents
 
-- [Sprint-2-Objectives-FINAL.md](Sprint-2-Objectives-FINAL.md) - Mentor discussion document
+- [Sprint-2-Objectives-FINAL.md](Sprint-2-Objectives-Draft.md) - Mentor discussion document
 - [24-month-budget-DRAFT.md](../../02-COMPANY-ASSETS/fundraising/24-month-budget-DRAFT.md) - Budget (needs tightening)
 - [valuation-framework-V2.md](../../02-COMPANY-ASSETS/fundraising/valuation-framework-V2.md) - Valuation defense
 - [investor-materials.md](../../02-COMPANY-ASSETS/fundraising/investor-materials.md) - Pitch deck outline
