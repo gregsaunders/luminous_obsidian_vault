@@ -2,7 +2,7 @@
 
 **Document Purpose:** Prevents us from making unproven claims that destroy credibility with Ops Engineers.
 **Date Created:** 2025-11-15
-**Version:** 2.1 (Trojan Horse Update)
+**Version:** 3.0 (Humble Confident Update)
 **Status:** ✅ Active Guideline
 
 ---
@@ -10,21 +10,17 @@
 ## The Guardrails
 
 **Rule #1: Kill the "Vendor Math" ($10M Claims)**
-- We previously claimed $10M in savings based on "3-5% Caustic Reduction" and "15% Fresh Water Substitution."
-- **Verdict:** This is dangerous. We have zero data to support these magnitudes. Claiming them makes us look naive.
-- **Correction:** Move these to **"Discovery Hypotheses"** (Tier 3 Value). We invite them to *test* this, we do not *promise* it.
+- **Verdict:** Claims of "15% Fresh Water Substitution" without site-specific data make us look naive.
+- **Correction:** Move these to **"Joint Discovery Hypotheses"** (Tier 3). "We have a hypothesis that X is possible; let's test it together."
 
-**Rule #2: The "AI" Trap**
-- Engineers are cynical about "AI." They hear "Black Box."
-- **Verdict:** Stop selling "AI Orchestration" and "Graph Databases."
-- **Correction:** Sell **"Automated Correlation"** and **"Institutional Memory."**
-    - *Bad:* "Our AI queries the graph to find insights."
-    - *Good:* "The system automatically links today's spike to the weather event from Tuesday."
+**Rule #2: The "AI" Trap -> The Complexity Solution**
+- Engineers hate "AI" (Black Box). They respect "Correlation" (Math).
+- **Verdict:** Stop selling "AI Orchestration."
+- **Correction:** Sell **"Multivariate Correlation."** "The system handles the complexity of linking Bio + Chem + Physics that is too fast for manual analysis."
 
-**Rule #3: The Multi-Contaminant Reality**
-- Operators care about **Integrated Water Quality** (Chlorides, Metals, TDS), not just NAs.
-- **Verdict:** Selling an "NA Platform" is insufficient for fresh water substitution.
-- **Correction:** Confluent MUST be positioned to ingest *their existing* LIMS/SCADA data for Chlorides/Metals. We provide the NA piece; we integrate the rest.
+**Rule #3: The "Saviour" Trap (Respect the Expert)**
+- **Verdict:** Never imply they are "flying blind" because they are incompetent. They are flying blind because the tools don't exist.
+- **Correction:** "You have brilliant scientists and pilots. We provide the **Infrastructure** to scale that science to daily operations."
 
 ---
 
@@ -32,20 +28,20 @@
 
 ### ✅ Validated (The "Safe Bet")
 *Lead with this.*
-1.  **Treatment Optimization:** $260k/year (Kearl Data).
-2.  **Time-to-Decision:** Reduction from 8 weeks to 24 Hours.
-3.  **Regulatory Baseline:** 12-month head start on 2027 guidelines.
+1.  **Speed of Learning:** Compressed recovery validation from 14 days to 7 days.
+2.  **Time-to-Decision:** Reduction from 3 weeks (manual) to 10 minutes (automated).
+3.  **Operational Efficiency:** $260k/year in specific optimizations (Kearl Data).
 
 ### 🟡 Hypothesized (The "Upside")
 *Mention this as "Exploration."*
-1.  **Caustic Savings ($200k+):** Literature suggests it, but magnitude is unknown.
-2.  **Fresh Water Substitution ($500k+):** Depends entirely on Chloride/Metal limits.
-3.  **Tailings Flocculation ($100k+):** Does NA reduction actually help settling? Unproven.
+1.  **Caustic Savings:** Can we reduce dosing based on real-time toxicity? (Hypothesis).
+2.  **Fresh Water Substitution:** Is Toxicity the limiting factor, or is it Chlorides? (Hypothesis).
+3.  **Regulatory Trust:** Will the "Glass Box" audit trail actually speed up approval? (Hypothesis).
 
 ---
 
 ## Immediate Action Items
-1.  **Validate Caustic Hypothesis:** Ask Michael Lipsett (CDL) specifically about Suncor's experience with caustic vs. water quality.
-2.  **Confirm Chloride Limits:** In Discovery Interviews, ask: "What is the *actual* limiting factor for fresh water substitution?"
+1.  **Validate Complexity Load:** Ask: "How many screens do you have open when making a release decision?"
+2.  **Confirm Trust Deficit:** Ask: "How much time is spent just *proving* data to stakeholders?"
 
 ---
