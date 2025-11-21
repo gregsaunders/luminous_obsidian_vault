@@ -1,7 +1,7 @@
 # Fundraising Master Context
 
-**Status:** Active - Pre-Seed Round Planning (Target: $1.5M CAD)
-**Last Updated:** 2025-11-17
+**Status:** Active - Pre-Seed Round Planning (Target: $2.5M CAD)
+**Last Updated:** 2025-11-21
 **Next Review:** Post-Nov 27 mentor call (budget validation)
 
 ---
@@ -10,86 +10,89 @@
 
 **Capital Raised to Date:** $0 (bootstrapped)
 **Current Runway:** ~9 months (as of Nov 2025, $7.5K/month burn rate)
-**Funding Target:** $1.5M CAD pre-seed + $250K non-dilutive
+**Funding Target:** $2.5M CAD (Scenario B) + Non-dilutive matching
 **Timeline:** Budget finalized Week 1-4, pilot signed Q2 2026, close Q2 2026
+
+**Strategic Pivot (Nov 21):**
+We have shifted from a "Clean Tech Tool" pitch to an "Operational Intelligence Infrastructure" pitch. The ask has increased from $1.5M to $2.5M to secure the runway needed to capture the 18-month "Release Readiness" window before 2027 regulations drop.
 
 ---
 
 ## Fundraising Objectives (CDL Sprint 2 - Objective 2)
 
 **OBJECTIVE 2 (Fundraising Readiness):**
-Finalize 24-month pro-forma budget with mentor validation (Weeks 1-4 priority), and secure ~$250K in non-dilutive matching funds to support ~$1.5M pre-seed round.
+Finalize 24-month pro-forma budget validating the $2.5M ask (Weeks 1-4 priority), positioned as "Infrastructure for Regulatory Release."
 
 **Success Criteria:**
 - [ ] 24-month budget finalized with mentor validation (Week 4)
-- [ ] Valuation framework documented (TRL 7-8 positioning, dilution scenarios)
+- [ ] Valuation framework documented (Infrastructure Premium + TRL 7-8)
 - [ ] Non-dilutive funding applications submitted ($250K target)
-- [ ] Investor pitch deck updated with validated budget + valuation
-- [ ] Pre-seed strategy finalized (timing, dilution targets, investor outreach plan)
+- [ ] Investor pitch deck updated with "Accelerated Learning" & "Glass Box" narrative
+- [ ] Pre-seed strategy finalized (Lead investor targeting: Data Infra vs. Clean Tech)
 
 ---
 
 ## Key Strategic Questions for Nov 27 Mentor Call
 
-### Valuation Defence (TRL 7-8 Positioning)
+### Valuation Defence (The "Infrastructure Premium")
 
 **Core Thesis:**
-We're not asking investors to fund R&D risk. We're asking them to fund **market expansion of proven technology** (TRL 7-8). This fundamentally changes valuation.
+We are not asking investors to fund R&D risk (TRL 7-8 is proven). We are asking them to fund the **deployment of critical compliance infrastructure** for a massive regulatory shift (2027 Release).
+* *Old Pitch:* Efficiency Tool ($1.5M ask).
+* *New Pitch:* The "Operating System" for Water Release ($2.5M ask).
 
 **Questions for Mentors (Terence/Dave):**
-1. What's realistic pre-money valuation for TRL 7-8 clean tech with customer validation but pre-revenue?
-2. Should we raise NOW at $5M-$7M pre-money, or wait for pilot success and raise at $10M+?
-3. How do we defend higher valuation based on capital efficiency and de-risked technology?
+1. Does the "Release Readiness" narrative justify a higher pre-money valuation ($8M-$10M) compared to a standard hardware play?
+2. We increased the ask to $2.5M to buffer against grant delays and accelerate platform scaling. Is this too aggressive for a pre-revenue seed in Alberta, or appropriate for the scale of the problem?
+3. How do we position the "Offsite Lab" model to investors as a CAPEX-light scaling advantage?
 
-### Budget & Use of Funds
+### Budget & Use of Funds ($2.5M Scenario)
 
-**Critical Decision:** Where does $1.5M go?
-- **Market expansion** (pilot deployments, commercial scale-up) → supports higher valuation
-- **Technology completion** (biosensor improvements, platform features) → suggests lower valuation
+**Critical Decision:** Allocating the extra $1M capital.
+- **Data Engineering (The Moat):** Investing heavily in the "Relational Context Engine" (Platform) to secure the data moat before competitors wake up.
+- **Pilot Velocity (The Wedge):** Funding the "Offsite Lab" operations to handle 3-5 concurrent pilots without needing site access.
 
 **Questions for Mentors (Jocelyn/Doug/Terence):**
-1. Are we under-resourced or over-hiring? (Year 1: +1-2 FTEs, Year 2: +2-3 FTEs)
-2. Can we actually run 2-3 pilots with current team + 1-2 FTEs?
-3. Should we outsource (field support, integration) instead of hiring?
+1. Does the budget reflect enough "Software/Data" talent vs. "Field/Bio" talent? (Investors need to see we are building the Platform, not just selling sensors).
+2. Is the "Offsite Lab" model credible to investors as a way to bypass site access delays?
 
 ### Timing Strategy
 
-**Options:**
-- **A.** Raise NOW (pre-pilot) at $5M-$7M pre-money → 21-30% dilution, capital to execute confidently
-- **B.** Raise POST-pilot signature (Q2 2026) at $8M-$12M → 12-18% dilution, but burns 6 months runway
-- **C.** Raise POST-pilot success (Q4 2026) at $12M-$20M → 7-12% dilution, but runway critically low
+**The "18-Month Window" Urgency:**
+- **The Market Reality:** Operators have 18 months to figure out release before 2027.
+- **The Fundraising Implication:** We cannot afford to wait for pilot success to raise. We need capital NOW to be installed *before* the guidelines drop.
 
-**Question:** What's our runway reality? Can we bootstrap to higher valuation or do we need capital NOW?
+**Question:**
+Does the "18-Month Regulatory Countdown" create enough FOMO to close a round pre-revenue?
 
 ---
 
 ## Week 1-4 Priorities (Before Budget Finalization)
 
 **Tasks:**
-1. Document investment to date (capital, sweat equity, IP) → `valuation-framework.md`
-2. Draft 24-month budget with realistic assumptions → `24-month-budget-DRAFT.md`
-3. Map non-dilutive funding opportunities → `non-dilutive-funding.md`
-4. Prepare mentor validation questions (above) for Nov 27 call
+1. **Update Valuation Framework:** Shift from standard TRL 7-8 defense to "Infrastructure Play" defense. → `valuation-framework.md`
+2. **Revise 24-month budget:** Scale up to $2.5M Scenario B (More engineering, Offsite Lab costs). → `24-month-budget-DRAFT.md`
+3. **Refine Pitch Deck Narrative:** Incorporate the "Complexity Gap" and "Accelerated Learning" story. → `investor-materials.md`
+4. **Prepare Mentor Questions:** Focus on the leap from $1.5M to $2.5M validity.
 
 **Owner:** Jeff Violo
-**Support:** MBA Student (Max Zhang - economic benchmarks), Mentors (budget validation)
+**Support:** MBA Student (Max Zhang - SaaS/Infra multiples), Mentors (budget validation)
 
 ---
 
 ## Version History
 
-### v1.0 (2025-11-17) - Initial Setup
-- Created fundraising folder structure (lean start - 5 files)
-- Established valuation defense framework (TRL 7-8 positioning)
-- Identified key mentor validation questions for Nov 27 call
-- Priority: Budget finalization (Week 1-4) to validate $1.5M target
+### v2.0 (2025-11-21) - The Infrastructure Pivot
+- **Target Increased:** $1.5M → $2.5M to support "Scenario B" (Aggressive capture of Release Window).
+- **Thesis Updated:** Shifted from "Market Expansion" to "Critical Infrastructure/Trust Layer."
+- **Focus:** Added "Offsite Lab" and "Data Platform" as key use-of-funds drivers.
 
-**Key Insight:** Fundraising is NOW Objective #2 priority (moved from #3) - can't raise without credible budget + pilot traction.
+### v1.0 (2025-11-17) - Initial Setup
+- Created fundraising folder structure.
+- Established TRL 7-8 positioning.
 
 ---
 
 **Next Actions:**
-1. Complete `valuation-framework.md` - TRL 7-8 positioning, investment to date, dilution scenarios
-2. Complete `24-month-budget-DRAFT.md` - Initial budget for mentor validation
-3. Complete `non-dilutive-funding.md` - Grant opportunities and application tracker
-4. Update `investor-materials.md` - Pitch deck outline incorporating $260K ROI validation
+1. Update `24-month-budget-DRAFT.md` to reflect the $2.5M spend (Headcount: Add Data Engineer + Lab Tech).
+2. Update `investor-materials.md` to replace "Efficiency" hook with "Release Readiness" hook.

@@ -50,7 +50,7 @@ We prioritize Commercial Execution over R&D.
     - Working capital/Office.
         
 
-## 3. The Strategic Buffer Defense
+## 3. The Strategic Buffer Defence
 
 Investors will ask: "Why $2.5M? Why not lean out at $1.5M?"
 
