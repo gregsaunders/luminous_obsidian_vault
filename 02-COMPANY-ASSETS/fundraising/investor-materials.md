@@ -1,84 +1,66 @@
 # Investor Materials
 
 **Status:** Draft - For mentor validation and investor outreach
-**Last Updated:** 2025-11-18
+**Last Updated:** 2025-11-21
 **Purpose:** Pitch deck outline, executive summary, and key messaging for pre-seed round
 
 ---
 
 ## Executive Summary (1-Page)
 
-### Luminous BioSolutions: Readiness Infrastructure for Water Release
+### Luminous BioSolutions: The Operating System for Water Release
 
 **The Problem:**
-Oil sands operators face a 1.4 trillion litre tailings water challenge with 12-18 months until AER water release guidelines. They lack the **Operational Intelligence Infrastructure** required to build the necessary compliance baseline and optimize treatment systems. Current monitoring (quarterly HRMS lab analysis) leaves operators flying blind.
+Oil sands operators have 12-18 months to transition from Containment to Release. They are running massive treatment pilots but lack the feedback loops to validate them in time. Relying on slow lab data (HRMS) means they are **learning too slowly** to meet the 2027 regulatory deadline.
 
 **The Solution:**
-Luminous provides an **Integrated Operational Intelligence Platform** combining rapid biosensor monitoring (the "Headlights") with the **Confluent Compounding Intelligence Engine** (the "Institutional Memory"). We deliver 95-99% time-to-decision reduction, enabling operators to secure a **12-month head start on regulatory readiness**.
+Luminous provides the **Operational Intelligence Infrastructure** that compresses 5 years of learning into 18 months. We combine **High-Frequency Biological Feedback** (The Eyes) with a **Relational Context Engine** (The Brain) to validate treatment performance in real-time.
 
 **Proven Value (The Trojan Horse):**
-Validated **$260K/year** operational value from Imperial Kearl wetland data analysis, justifying a **5-month payback period** on pilot deployment. This value funds the deployment of the strategic readiness infrastructure.
+Validated **$260K/year** operational efficiency at Imperial Kearl (payback < 6 months). This "Efficiency Wedge" pays for the system, while the platform builds the critical regulatory baseline.
 
 **Technology Advantage:**
-- **Biosensor:** 3-panel system, high correlation with gold standard HRMS (TRL 8).
-- **Confluent Platform:** Compounding Intelligence architecture with **2-3 year competitive moat** (no one else can unify biosensor data, SCADA, and historical PDFs).
-
-**Traction:**
-- Imperial Kearl: Field data validation (1-hectare wetland, 98-day pilot).
-- CNRL Albian: Pilot discussions advanced (Q2 2026 deployment target).
+- **Biosensor:** TRL 8, field-proven, 3-panel toxicity screening.
+- **Context Engine:** Proprietary "Multivariate Correlation" architecture that links Bio + Chem + Physics data (The Moat).
+- **Trust Layer:** Immutable audit trails for regulatory verification.
 
 **The Ask:**
-**$2.5M CAD** pre-seed round to fund 24-month market expansion (4 pilot deployments, commercial team scaling, product hardening). Investor capital funds commercial scale-up, not technology development.
+**$2.5M CAD** pre-seed round.
+**Use of Funds:** 70% Market Expansion (Deploying 4 pilots via Offsite Lab), 20% Product Hardening, 10% Ops.
 
-**Why Now (The Regulatory Scarcity):**
-- AER water release guidelines in 12-18 months create urgency.
-- Operators deploying treatment technologies NOW need **Readiness Infrastructure**.
-- First-mover advantage: 2-3 year competitive moat for early adopters.
+**Why Now (The 18-Month Window):**
+The regulatory clock is ticking. Operators *must* have a validated baseline before 2027. Luminous is the only infrastructure ready to deploy Q2 2026.
 
 ---
 
 ## Pitch Deck Outline (Selected Slides Updated)
 
-### Slide 2: Solution
-**Visual:** Biosensor + Confluent platform integration diagram
+### Slide 2: The "Complexity Gap"
+**Visual:** Chaos of "Bio + Chem + Physics" variables vs. The Luminous "Central Nervous System."
 **Key Points:**
-- **Integrated Operational Intelligence Infrastructure**
-- Rapid biosensor (24-72 hours) + **Compounding Intelligence Engine** (Confluent)
-- **95-99% time-to-decision reduction** (weeks → minutes)
-- **Primary Goal:** Secure 12-month baseline *before* 2027 regulations.
+- Operators are moving from Static Containment to Dynamic Release.
+- Managing a living ecosystem requires correlating thousands of variables.
+- Humans can't do it. Excel can't do it. **We do it.**
 
----
-
-### Slide 5: Technology - Confluent Platform
-**Visual:** Confluent architecture diagram (Institutional Memory, Automated Correlation)
+### Slide 5: The Technology (Bridge to Operations)
+**Visual:** "Academic Pilots" (Left) -> "Luminous Bridge" -> "Daily Operations" (Right).
 **Key Points:**
-- **Institutional Memory:** Unified structured + unstructured data (biosensor + PDFs + SCADA + weather).
-- **Automated Correlation:** Links downstream treatment results to upstream process data.
-- **Plain Language Interface:** Operators ask questions in English, get data-backed answers in 2 minutes.
+- **We Scale Your Science:** We operationalize decades of research.
+- **Relational Context Engine:** Instantly links live sensor data to historical pilot reports.
+- **Automated Correlation:** Finds the "Golden Recipe" for treatment optimization.
 
----
-
-### Slide 7: Validated ROI ($260K/year)
-**Visual:** 5 operational scenarios from Kearl wetland analysis
-**Key Points (The Trojan Horse Wedge):**
-- $260K/year in validated, defensible savings.
-- **This ROI pays for the Infrastructure.**
-- **The Upside:** The infrastructure enables Tier 2 discovery (e.g., Caustic Optimization, Fresh Water Substitution).
-
----
-
-### Slide 12: The Ask
-**Visual:** Use of funds breakdown (pie chart)
+### Slide 7: Validated ROI (The Wedge)
+**Visual:** 5 Operational Scenarios (Kearl Data).
 **Key Points:**
-- **Raising:** **$2.5M CAD** pre-seed
-- **Use of Funds:**
-  - **70% Market Expansion:** Deploy 4 pilots, commercial team scaling.
-  - 15% Product Hardening: Biosensor ruggedization, Confluent features.
-  - 15% Operations & Overhead.
+- **$260K/year savings** (The Safe Bet).
+- **Real Value:** Speed. We proved recovery in 7 days vs. 14 days.
+- **Result:** Faster learning cycles for the critical 18-month experiment.
 
-**Milestones (End of 24 Months):**
-- **4 active pilots** with major operators.
-- **$500K ARR** target.
-- Regulatory engagement with AER established.
+### Slide 12: The Ask ($2.5M Strategic Buffer)
+**Visual:** Timeline showing Pilot Deployment *independent* of Grant Cycles.
+**Key Points:**
+- **Raising:** **$2.5M CAD** (Scenario B).
+- **Why $2.5M?:** To secure the "Offsite Lab" model. We bypass site access delays and scale immediately.
+- **Milestone:** 4 Active Pilots + Regulatory Baseline secured before 2027.
 
 ---
