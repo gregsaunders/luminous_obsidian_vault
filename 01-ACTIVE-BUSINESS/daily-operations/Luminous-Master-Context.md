@@ -18,7 +18,7 @@ Status: ✅ Active Master Context
 ### Company Focus (Last Updated: Nov 21, 2025)
 - **100% Monitoring & Intelligence Company**
 - **Core Product:** Operational Intelligence Infrastructure for Water Release.
-- **Commercial Strategy:** The "Trojan Horse" - Sell the $260k efficiency win to fund the Regulatory Readiness infrastructure.
+- **Commercial Strategy:** **Velocity First** - Sell the $260k efficiency win to fund the Regulatory Readiness infrastructure.
 - **Deployment Model:** Zero-Friction Offsite Lab (No site access required).
 - **Fundraising Target:** $2.5M (Scenario B).
 
