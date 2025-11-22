@@ -1,38 +1,40 @@
-# Confluent: AI-Native Intelligence Platform
+# Relational Context Engine: 
+**Operational Intelligence Platform**
 
-**Transforming Monitoring Data into Operational Intelligence**
+**Transforming Monitoring Data into Decision-Grade Intelligence**
 
 ---
 ## The Challenge
 
 Oil sands operators transitioning to active treatment face a data problem: high-frequency biosensor monitoring generates valuable data, but decades of historical reports sit locked in PDFs. Critical decisions made with incomplete information. Treatment systems optimized through guesswork.
 
-**Confluent transforms data chaos into operational intelligence.**
+Our Relational Context Engine transforms this data firehose into operational clarity.***
 
 ---
 ## What Makes Confluent Different
 
-Confluent isn't a database with visualization—it's an intelligence platform built from inception to leverage AI. Environmental data relationships are explicit, unstructured information is queryable, and natural language is the interface.
+This is not a "Black Box" AI. It is a **Relational Context Engine** designed for engineering transparency. Environmental data relationships are explicit, unstructured information is indexed, and plain text is the interface.
 ### Core Capabilities
 
 **1. Unified Structured + Unstructured Data**
-- Structured: Biosensor results, HRMS data, SCADA outputs
-- Unstructured: PDF reports, consultant studies, regulatory submissions
-- Result: 2025 biosensor results automatically link to 2018 consultant reports describing similar conditions
+- **Structured:** Biosensor results, HRMS data, SCADA outputs (Flow/Temp).
+- **Unstructured:** PDF reports, consultant studies, regulatory submissions
+- **Result:** 2025 biosensor results automatically link to 2018 consultant reports describing similar conditions
 
-**2. AI-Model Agnostic**
-- Leverage multiple AI models (Claude, GPT-4, Gemini) based on task requirements
-- Avoid vendor lock-in, adapt as AI capabilities evolve
+**2. Multivariate Correlation (The "Brain")**
+- - **Function:** Automated overlay of Bio + Chem + Physics data.
+- **Ops Value:** It moves from "What happened?" to "Why it happened."
+- **Example:** "Panel 2 spiked **because** Flow Rate dropped below 500m³/hr."
 
-**3. Graph Database Foundation**
-- Built on TerminusDB: explicit relationship mapping across all data
-- Automatic discovery of connections across time, space, datasets
-- Example: "Sample #4523 at GPS X,Y during 15mm rainfall correlates with increased SCADA flow, similar to 2019 PDF-documented pattern"
+**3. Context-Aware Mapping**
+- **Tech:** Relational Knowledge Graph (TerminusDB).
+- **Function:** Automatic discovery of connections across time and space.
+- **Example:** "Sample #4523 at GPS X,Y during 15mm rainfall correlates with increased SCADA flow, similar to 2019 PDF-documented pattern."
 
-**4. Natural Language Querying**
-- Operator asks: "Show me wetland areas where levels increased after heavy rain in last 3 years"
-- Confluent delivers: Map visualization, trend charts, historical context, case studies
-- No SQL required—just ask questions
+**4. Plain Text Analytics (The "Search Bar")**
+- **Function:** No SQL coding required.
+- **Operator Query:** "Show me wetland areas where levels increased after heavy rain in last 3 years."
+- **Result:** Map visualization, trend charts, historical context.
 
 ---
 ## Technical Architecture
