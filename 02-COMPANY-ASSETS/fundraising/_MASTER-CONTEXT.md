@@ -80,7 +80,27 @@ Does the "18-Month Regulatory Countdown" create enough FOMO to close a round pre
 
 ---
 
+## Session Insights
+
+### 2025-11-22: Pilot Pricing as Revenue Proof Point
+**Key Realizations:**
+1. **Cost Recovery Pricing for Pilots:** Pilot priced at cost recovery (zero margin) to prove value. This makes the 50% grant matching even more compelling for operators.
+2. **Pilot Deliverables = Revenue Template:** The 4 deliverable categories (Readiness Baseline, Operational Intelligence, ROI Validation, Future Project Intelligence) become the template for annual contract pricing.
+3. **Expansion ROI Projections:** Including "if we deploy to Sites B, C, D" projections in pilot deliverables primes the conversation for multi-site contracts.
+
+**Fundraising Implications:**
+- Pilot cost structure informs 24-month budget (lab costs, labor, platform setup)
+- Grant matching (ERA/AI) reduces operator cost and validates non-dilutive funding thesis
+- Risk reversal guarantee demonstrates confidence to investors
+
+---
+
 ## Version History
+
+### v2.1 (2025-11-22) - Pilot Economics Integration
+- **Pilot Pricing Strategy:** Cost recovery + 50% grant matching documented
+- **Deliverables as Revenue Template:** 4 asset categories defined for annual contract pricing
+- **Related Document:** `pilot-Proposal-integrated-water-readiness-infrastructure-V1.4.md` (Section 8-9)
 
 ### v2.0 (2025-11-21) - The Infrastructure Pivot
 - **Target Increased:** $1.5M → $2.5M to support "Scenario B" (Aggressive capture of Release Window).
@@ -94,5 +114,9 @@ Does the "18-Month Regulatory Countdown" create enough FOMO to close a round pre
 ---
 
 **Next Actions:**
-1. Update `24-month-budget-DRAFT.md` to reflect the $2.5M spend (Headcount: Add Data Engineer + Lab Tech).
-2. Update `investor-materials.md` to replace "Efficiency" hook with "Release Readiness" hook.
+1. **Fill Pilot Cost Placeholders** (with Greg/Shawn) - Informs 24-month budget accuracy
+2. Update `24-month-budget-DRAFT.md` to reflect the $2.5M spend (Headcount: Add Data Engineer + Lab Tech).
+3. Update `investor-materials.md` to replace "Efficiency" hook with "Release Readiness" hook.
+4. **Post-Nov 27:** Integrate mentor feedback on pricing strategy and valuation
+
+**Last Updated:** 2025-11-22

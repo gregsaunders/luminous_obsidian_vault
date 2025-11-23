@@ -61,18 +61,49 @@ To get the pilot signed, we must align our value tiers to the psychological need
 
 ## What We've Learned (Session Insights)
 
+### 2025-11-22 Session: Dave Lee's "Make It Easy" & Pilot Proposal Polish
+**Key Realizations:**
+1.  **"Make It Easy for Them to Take the Medicine"** (Dave Lee): Operators will dictate unfavorable terms or slow-roll if you don't come with specific financial and operational metrics. Pre-answer objections, minimize their work.
+2.  **Cost Recovery as Sales Strategy:** Pricing at cost recovery (zero profit margin) removes "vendor margin" negotiation entirely. Signals relationship investment, makes grant matching even more compelling.
+3.  **Deliverables = Lasting Assets:** Frame pilot outputs as permanent operational assets (Readiness Baseline, Operational Intelligence Package, ROI Validation, Future Project Intelligence). Creates stickiness and justifies internal budget.
+4.  **Volume-Based Sampling:** "More samples = higher resolution insights" aligns incentives. Removes "how few tests can we get away with" mindset.
+5.  **Risk Reversal Guarantee:** "3/5 scenarios validated by Month 6 or free extension" de-risks commitment for operator.
+6.  **Competitive Urgency:** "Suncor and Imperial are evaluating solutions" + "First-mover advantage = expedited release authorization."
+
 ### 2025-11-21 Session: The "Humble" Pivot
 **Key Realizations:**
 1.  **Respect the Legacy:** We must acknowledge the decades of good research. We don't replace it; we *scale* it.
 2.  **The 18-Month Crunch:** The "Experiment Phase" is the leverage point. They are desperate for data to validate their pilots before the release window opens.
 3.  **Complexity is the Enemy:** The "Black Box" isn't just lack of data; it's the inability to correlate the massive amount of data they already have.
 
+## Pilot Proposal: "No-Brainer" Elements (v1.4)
+
+**Pricing Strategy:**
+- Cost recovery only (zero profit margin)
+- ERA/Alberta Innovates 50% grant matching → Operator pays half
+- Volume-based sampling (not per-test)
+
+**Deliverables (4 Asset Categories):**
+1. **Readiness Baseline Report** - Regulatory asset for 2027 release
+2. **Operational Intelligence Package** - Site-specific insights (seasonal windows, spatial maps, recovery curves)
+3. **ROI Validation Report** - Business case for expansion
+4. **Future Project Intelligence** - Treatment recommendations, monitoring optimization
+
+**Risk Mitigation:**
+- Risk reversal guarantee (3/5 scenarios by Month 6)
+- Pilot-to-contract conversion credits
+- Data ownership explicit (operator owns all data)
+
+**Location:** `frameworks/pilot-Proposal-integrated-water-readiness-infrastructure-V1.4.md`
+
 ## Next Actions (Immediate)
 | Action | Owner | Status |
 | :--- | :--- | :--- |
+| **Fill Pilot Cost Placeholders** (with Greg/Shawn) | Jeff | 🔴 Pending |
+| **Nov 27 Mentor Meeting** (Validate pricing strategy) | Jeff | 🟡 Scheduled |
 | **Update Investor Deck** (Focus on "The Bridge to Release") | AI | 🔴 Pending |
 | **Discovery Interviews** (Test the "Glass Box" pitch) | Jeff | 🔴 Pending |
 | **Naming Strategy** (Finalize replacement for "Confluent") | Team | 🔴 Pending |
 
-**Last Updated:** 2025-11-21 (v3.1 - Humble Confident Pivot)
+**Last Updated:** 2025-11-22 (v3.2 - Pilot Proposal Polish)
 **Status:** 🟢 Active - Strategy Locked

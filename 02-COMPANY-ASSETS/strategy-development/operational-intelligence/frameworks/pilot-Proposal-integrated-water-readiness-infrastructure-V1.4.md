@@ -126,21 +126,127 @@ We understand that Operational Technology (OT) networks are critical infrastruct
 - **Months 3-8:** **Operational Pilot.** Weekly reporting, active optimization recommendations (Flow, Seasonal), and validation of the $260k ROI.
     
 - **Month 9:** **Readiness Report.** Delivery of the 2027 Readiness Baseline (Toxicity Trends) and Final ROI Audit.
-    
 
-## 8. Investment & Next Steps
 
-Pilot Investment: [Insert Cost] (Eligible for ERA/Alberta Innovates Matching)
+## 8. Pilot Deliverables: What You Get
 
-Term: 9 Months
+At the end of the 9-month pilot, you receive a comprehensive intelligence package that becomes a permanent operational asset. This isn't just data—it's actionable insight that informs all future remediation projects.
 
-The "Cost of Waiting" Analysis:
+### A. Readiness Baseline Report (The Regulatory Asset)
 
-Operators who delay NAFC baseline data collection until the 2027 guidelines are released will face a 12-18 month lag to build the required history. By starting now, you secure the Readiness Infrastructure required for release authorization while the system pays for itself through operational efficiencies.
+**Purpose:** The 12-month toxicity trend documentation required for 2027 release authorization.
 
-Next Action:
+| Deliverable | Description | Value |
+|-------------|-------------|-------|
+| **Toxicity Trend Analysis** | 9-month Panel 2 (O2-NAFC) trajectory with seasonal correlations | Proves treatment effectiveness to AER |
+| **Compliance-Ready Documentation** | Immutable audit trail, chain of custody, methodology validation | Eliminates "data trust" friction with regulator |
+| **Benchmark Dataset** | Your site's toxicity profile vs. industry benchmarks (anonymized) | Positions you as leader vs. peers |
 
-Technical Discovery Meeting (30 Mins) to review historical data availability.
+### B. Operational Intelligence Package (The Efficiency Asset)
+
+**Purpose:** Site-specific insights you've never had access to before—each one informs future projects and compounds savings.
+
+| Deliverable | Description | Value |
+|-------------|-------------|-------|
+| **Seasonal Operating Window Analysis** | Exact temperature correlations for treatment effectiveness | Extend operating season 2-4 weeks/year |
+| **Spatial Performance Map** | Cell-by-cell treatment efficiency (shallow vs. deep, vegetated vs. open) | Route flow to highest-performing zones |
+| **Refill Recovery Curves** | Site-specific recovery times after each event type | Reduce conservative buffer days by 50% |
+| **Treatment Response Profiles** | How your system responds to chemical dosing, flow changes, weather events | Optimize interventions in real-time |
+| **Anomaly Detection Library** | Documented "what happened when" correlations | Institutional memory that survives staff turnover |
+
+### C. ROI Validation Report (The Business Case Asset)
+
+**Purpose:** Quantified proof of operational savings to justify ongoing investment and expansion.
+
+| Deliverable | Description | Value |
+|-------------|-------------|-------|
+| **Validated Savings by Scenario** | Actual $ captured vs. the 5 operational scenarios ($260k target) | Budget justification for annual contract |
+| **Payback Analysis** | Pilot cost vs. savings delivered | CFO-ready documentation |
+| **Expansion ROI Projections** | "If we deploy to Sites B, C, D, here's the expected return" | Business case for multi-site rollout |
+
+### D. Future Project Intelligence (The Strategic Asset)
+
+**Purpose:** Insights that inform remediation investments beyond this pilot.
+
+| Deliverable | Description | Value |
+|-------------|-------------|-------|
+| **Treatment Technology Recommendations** | Based on your specific NAFC profile, which remediation approaches will work best | De-risk future capital investments |
+| **Monitoring Protocol Optimization** | Recommended sampling frequency, locations, and timing for ongoing operations | Reduce monitoring costs while improving coverage |
+| **Regulatory Submission Roadmap** | Step-by-step path to 2027 release authorization using your baseline data | Accelerate approval timeline |
+
+### The Lasting Value
+
+These deliverables don't expire when the pilot ends. They become:
+- **Your baseline** for all future water release applications
+- **Your playbook** for optimizing treatment operations across all sites
+- **Your competitive advantage** over operators who started later
+
+---
+
+## 9. Investment & Next Steps
+
+### Pilot Investment Model: Cost Recovery + Grant Matching
+
+**Our Philosophy:** This pilot is an investment in the partnership, not a revenue opportunity. We're pricing at **cost recovery only** (zero profit margin) to prove the system's value before commercial terms.
+
+**Sampling Strategy:** More samples = higher resolution insights. We recommend maximum practical sampling frequency to capture seasonal variations, treatment responses, and operational correlations. This isn't a per-test model—it's about building the most complete picture possible.
+
+### Cost Structure (9-Month Pilot)
+
+| Cost Category | Description | Amount |
+|---------------|-------------|--------|
+| **Lab Consumables & Materials** | Biosensor reagents, sample processing, calibration standards | $[TBD] |
+| **Labor** | Analysis, data integration, weekly reporting, optimization recommendations | $[TBD] |
+| **Confluent Platform Setup** | Data ingestion, SCADA/weather correlation, dashboard configuration | $[TBD] |
+| **Readiness Report** | Final 2027 baseline documentation, ROI audit, regulatory submission support | $[TBD] |
+| **Total Pilot Cost** | | **$[TBD]** |
+
+### Grant Matching: The "No-Brainer" Structure
+
+| Funding Source | Contribution | Net Investment |
+|----------------|--------------|----------------|
+| ERA / Alberta Innovates (50%) | $[TBD] | — |
+| **CNRL Net Investment** | | **$[TBD]** |
+
+**The Math:**
+- **Your Investment:** $[TBD] (after grant matching)
+- **Validated Annual ROI:** $260,000
+- **Payback Period:** [X] months
+- **Cost of Waiting:** 12-18 month regulatory baseline lag if you start after 2027 guidelines release
+
+### Risk Reversal Guarantee
+
+If the system does not validate at least **3 of the 5 operational scenarios** (Seasonal Strategy, Flow Optimization, Toxicity Proxy, Refill Management, Auto-Reporting) by Month 6, we will extend the pilot at no additional cost until validation is achieved.
+
+### Pilot-to-Contract Conversion
+
+Pilot investment credits toward Year 1 annual monitoring contract. Early commitment (LOI by [Date]) guarantees Q2 2026 deployment slot.
+
+### Data Ownership & Confidentiality
+
+- **Your Data:** CNRL retains full ownership of all site-specific data generated
+- **Luminous Use:** Anonymized, aggregated insights for product improvement only (with written approval)
+- **No Co-mingling:** Single-tenant, encrypted instance—your data is never mixed with other operators
+
+### The "Cost of Waiting" Analysis
+
+Operators who delay NAFC baseline data collection until the 2027 guidelines are released will face a **12-18 month lag** to build the required toxicity history.
+
+**The Strategic Risk:**
+- Suncor and Imperial are actively evaluating monitoring solutions
+- First-mover advantage: Operators with validated baselines will receive expedited release authorization
+- The $260k/year operational efficiency compounds—waiting costs real money
+
+By starting now, you secure the Readiness Infrastructure required for release authorization while the system pays for itself through operational efficiencies.
+
+### Next Steps
+
+1. **Technical Discovery Meeting (30 Mins)** - Review historical data availability, site selection, sampling logistics
+2. **Grant Application Coordination** - Luminous prepares ERA/AI applications; CNRL provides support letter
+3. **Pilot Agreement** - Scope, timeline, deliverables, success metrics
+4. **Q2 2026 Deployment** - Operational pilot begins with spring thaw
+
+**Timeline to Commitment:** [X weeks] to secure Q2 2026 deployment slot
 
 Wiki Links:
 

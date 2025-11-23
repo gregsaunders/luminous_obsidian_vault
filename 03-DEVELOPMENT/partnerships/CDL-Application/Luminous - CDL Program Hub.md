@@ -1,7 +1,7 @@
 ---
 title: Luminous - CDL Program Hub
 status: active
-last_updated: 2025-11-13
+last_updated: 2025-11-22
 tags:
 related:
   - Luminous - Mentor Profiles.md
@@ -95,12 +95,26 @@ This is the "why" behind our new objectives.
 | Deadline         | Task                                                                                                           | Status      |
 | :--------------- | :------------------------------------------------------------------------------------------------------------- | :---------- |
 | **Nov 17, 2025** | Reach out to Lead Mentor ([Jocelyn McMinn][m-jocelyn]) to finalize objectives.                                 | `Done`      |
-| **Nov 21, 2025** | Sign and return Max Zhang NDA to [Denis][p-denis].                                                              | `Pending`   |
-| **Nov 21, 2025** | Post finalized objectives to CDL Slack channel.                                                                | `Pending`   |
+| **Nov 21, 2025** | Sign and return Max Zhang NDA to [Denis][p-denis].                                                              | `Done`      |
+| **Nov 21, 2025** | Post finalized objectives to CDL Slack channel.                                                                | `Done`      |
 | **Nov 27, 2025** | Call with [Jocelyn McMinn][m-jocelyn] to review Session 2 objectives.                                          | `Scheduled` |
-| **ASAP**         | Schedule introductory call with Max Zhang to scope first project.                                              | `Pending`   |
-| **ASAP**         | Schedule kick-off meeting with all mentors (use Doodle, cc [Denis][p-denis]) - *After Jocelyn call Nov 27*.   | `Pending`   |
+| **Nov 27, 2025** | Fill pilot cost placeholders with Greg/Shawn for mentor discussion.                                            | `Pending`   |
+| **ASAP**         | Schedule introductory call with Max Zhang to scope first project.                                              | `Done`      |
+| **ASAP**         | Schedule kick-off meeting with all mentors (use Doodle, cc [Denis][p-denis]) - *After Jocelyn call Nov 27*.   | `In Progress` |
 | **Sprint 2**     | **(New)** Per [Patrick Elliott][m-patrick], schedule initial call with AER, co-hosted with our pilot customer. | `Pending`   |
+
+### Key Mentor Feedback (Nov 22)
+
+**Dave Lee Guidance (Slack):**
+> "If you come in with the intention but no financial and operational metrics they tend to either dictate those terms and/or slow roll the discussion... Make it as easy as you can for them to take the medicine they need."
+
+**Response:** Pilot Proposal V1.4 updated with:
+- **Pricing Strategy:** Cost recovery + 50% ERA/AI grant matching
+- **Deliverables:** 4 tangible asset categories (Readiness Baseline, Operational Intelligence, ROI Validation, Future Project Intelligence)
+- **Risk Mitigation:** 3/5 scenarios validated by Month 6 or free extension
+- **Meeting Agenda:** Created tight Nov 27 agenda addressing Dave's feedback
+
+**Location:** `Nov-27-Mentor-Meeting-Agenda.md`
 
 ## 5. Linked Resources
 
