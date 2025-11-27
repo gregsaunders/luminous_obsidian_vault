@@ -4,3 +4,10 @@ Paid pilot
 
 pilot agreement
 
+
+"TECOP" to remember risk categories, technical, economic, commercial, operational, political
+
+---
+
+transcript
+
