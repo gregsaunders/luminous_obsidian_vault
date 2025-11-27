@@ -2,7 +2,13 @@
 
 **Date:** November 27, 2025
 **Duration:** 45-60 minutes
-**Attendees:** Jeff Violo, Jocelyn McMinn
+**Attendees:** Jeff Violo, 
+- Jocelyn McMinn
+- Terence Tham
+- Doug Beach
+- Dave Lee
+- Michael Lipsett (Could not attend)
+- Max Zhang
 **Format:** Video call or phone
 
 ---
