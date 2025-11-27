@@ -19,15 +19,17 @@
 
 ## Agenda
 
-### 1. Sprint 2 Objectives Check (10 min)
+### 1. Meeting Attendee Introductions
+
+### 2. Sprint 2 Objectives Check (10 min)
 
 **Confirm these are right:**
 
-| Objective | Target | On Track? |
-|-----------|--------|-----------|
-| **1. Pilot** | CNRL LOI for Q2 2026 deployment | 🟡 Needs acceleration |
-| **2. Fundraising** | Strategy aligning capital with milestones | 🟢 On track |
-| **3. Operations** | Execution strategy for real-time feedback | 🟢 On track |
+| Objective          | Target                                    | On Track?             |
+| ------------------ | ----------------------------------------- | --------------------- |
+| **1. Pilot**       | CNRL LOI for Q2 2026 deployment           | 🟡 Needs acceleration |
+| **2. Fundraising** | Strategy aligning capital with milestones | 🟡 Needs acceleration |
+| **3. Operations**  | Execution strategy for real-time feedback | 🟢 On track           |
 
 **Questions:**
 - Are these measurable enough for Session 2?
