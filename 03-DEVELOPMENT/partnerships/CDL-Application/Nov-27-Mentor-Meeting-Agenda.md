@@ -1,7 +1,6 @@
 # Nov 27 Mentor Meeting Agenda
 
 **Date:** November 27, 2025
-**Time:** [TBD - Confirm with Jocelyn]
 **Duration:** 45-60 minutes
 **Attendees:** Jeff Violo, Jocelyn McMinn
 **Format:** Video call or phone
@@ -62,7 +61,7 @@
 | ERA/AI Grant Match (50%) | -$[TBD] |
 | **CNRL Net Investment** | **$[TBD]** |
 
-**Questions for Jocelyn:**
+**Questions:**
 - Does cost recovery + grant matching make sense as positioning?
 - What's a pilot price point that signals commitment but doesn't require VP approval?
 - Should we include risk reversal ("3/5 scenarios validated by Month 6 or we extend")?
