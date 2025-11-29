@@ -8,9 +8,9 @@
 
 ## How to Use This Package
 
-We've created three versions of our elevator pitch for different contexts. Feel free to modify language to match your voice—the key points remain the same across all versions:
+We've created three versions of our elevator pitch for different contexts. Feel free to modify language to match your voice, the key points remain the same across all versions:
 
-1. **HRMS lag creates blind spot** (4-8 weeks too slow for process control)
+1. **HRMS lag creates blind spot** (8-10 weeks too slow for process control)
 2. **Our biosensor is the "fuel gauge"** (24-72 hour toxicity feedback)
 3. **$260K validated ROI** (Imperial Kearl pilot data)
 4. **Cost-recovery pilots with grant matching** (available now for 2027 baseline)
@@ -23,7 +23,7 @@ We've created three versions of our elevator pitch for different contexts. Feel 
 
 **Length:** 3 sentences
 
-> Oil sands operators are managing billion-dollar water release strategies with Naphthenic Acid toxicity data that arrives 4-8 weeks too late, forcing expensive "safety factor" operations instead of real-time optimization. Luminous provides the industry's only high-frequency NAFC biosensor—a "fuel gauge" that updates every 24-72 hours instead of 48 days—plus automated data correlation that eliminates manual spreadsheet work. We've validated $260K/year in operational efficiencies at Imperial Kearl with 5-month payback, and we're offering cost-recovery pilots with 50% ERA matching for operators building their 2027 release baseline now.
+> Oil sands operators are managing billion-dollar water release strategies with Naphthenic Acid toxicity data that arrives 8 - 10 weeks too late, forcing expensive "safety factor" operations instead of real-time optimization. Luminous provides the industry's only high-frequency NAFC biosensor, a "fuel gauge" that updates every 24-72 hours instead of 48 days, plus automated data correlation that eliminates manual spreadsheet work. We've validated $260K/year in operational efficiencies at Imperial Kearl with 5-month payback, and we're offering cost-recovery pilots with 50% ERA matching for operators building their 2027 release baseline now.
 
 ---
 
@@ -33,11 +33,11 @@ We've created three versions of our elevator pitch for different contexts. Feel 
 
 **Length:** ~150 words (still tight, but adds operational context)
 
-> Right now, you're managing wetland flow rates and retention times with HRMS toxicity feedback that's 4-8 weeks old. That lag forces you to run conservative "safety factors" and over-dose treatments because you don't have a fuel gauge for NAFCs—you're driving blind through a minefield.
+> Right now, you're managing wetland flow rates and retention times with HRMS toxicity feedback that's 8-10 weeks old. That lag forces you to run conservative "safety factors" and over-dose treatments because you don't have a fuel gauge for NAFCs, you're driving blind through a minefield.
 >
-> Luminous solves this with a 3-panel biosensor that isolates the toxic fraction (O2-NAFCs) with 24-72 hour turnaround, plus a Relational Context Engine that automatically overlays those results against your flow, temperature, and weather data. No manual spreadsheets, no digging through PDFs to figure out why toxicity spiked. We use secure file transfer during pilots—zero network integration, no firewall exceptions, no IT headaches.
+> Luminous solves this with a 3-panel biosensor that isolates the toxic fraction (O2-NAFCs) with 24-72 hour turnaround, plus a Relational Context Engine that automatically overlays those results against your flow, temperature, and weather data. No manual spreadsheets, no digging through PDFs to figure out why toxicity spiked. We use secure file transfer during pilots, zero network integration, no firewall exceptions, no IT headaches.
 >
-> We analyzed the publicly reported data from Imperial Kearl and calculated the operational efficiencies that high-frequency monitoring would have enabled: $260K/year with 5-month payback. That's the conservative floor—we believe the discovery value (chemical optimization, fresh water substitution, capex de-risking) is 3-5X that baseline. We're offering 9-month pilots at cost recovery because we're a startup that needs referenced case studies before 2027 release standards publish—we're buying your endorsement by proving value first. 50% ERA grant matching available. The pilot delivers four permanent operational assets: your regulatory baseline, site-specific operational intelligence, ROI validation, and a future project roadmap.
+> We analyzed the publicly reported data from Imperial Kearl and calculated the operational efficiencies that high-frequency monitoring would have enabled: $260K/year with 5-month payback. That's the conservative floor, as we believe the discovery value (chemical optimization, fresh water substitution, capex de-risking) is 3-5X that baseline. We're offering 9-month pilots at cost recovery because we're a startup that needs referenced case studies before 2027 release standards publish—we're buying your endorsement by proving value first. 50% ERA grant matching available. The pilot delivers four permanent operational assets: your regulatory baseline, site-specific operational intelligence, ROI validation, and a future project roadmap.
 
 ---
 
