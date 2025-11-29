@@ -16,7 +16,7 @@ For 60 years, the oil sands industry has managed water through containment, stor
 
 **The challenge you now face:** Moving from research pilots (9 samples per season, calendar-based decisions) to **24/7 operational treatment systems** that require real-time process control.
 
-Your current High Resolution Mass Spectrometry (HRMS) monitoring (6-10 week turnaround) was never designed for this. You're managing billion-dollar treatment infrastructure with toxicity feedback that arrives too late to steer the process. It's like having amazing headlights on your vehicle—but they only turn on once a month to show you where you *were*, not where you're *going*.
+Your current High Resolution Mass Spectrometry (HRMS) monitoring (6-10 week turnaround) was never designed for this. You're managing billion-dollar treatment infrastructure with toxicity feedback that arrives too late to steer the process. It's like having amazing headlights on your vehicle, but they only turn on once a month to show you where you *were*, not where you're *going*.
 
 ### What We're Proposing: The Missing Operational Piece
 
@@ -24,13 +24,14 @@ Luminous BioSolutions provides the **high-frequency NAFC monitoring infrastructu
 
 **The System:**
 1. **3-Panel Biosensor** (24-72 hour turnaround): Isolates the toxic O2-NAFC fraction your teams have identified as the regulatory key
-2. **Relational Context Engine**: Automatically correlates biosensor data with your existing SCADA, weather, and chemistry streams—answering "why did toxicity spike?" in minutes, not weeks of manual spreadsheet work
+2. **Relational Context Engine**: Automatically correlates biosensor data with your existing SCADA, weather, and chemistry streams, answering "why did toxicity spike?" in minutes, not weeks of manual spreadsheet work
 
 **The Conservative Baseline:**
-At Imperial Kearl, we reverse-engineered the existing pilot approach (9 samples, conservative buffers, calendar shutdowns) and validated **$260,000/year in operational efficiencies** with 5-month payback. That's the floor—the "safe bet" that pays for the system while you build your regulatory baseline.
+At Imperial Kearl, we reverse-engineered the existing pilot approach (9 samples, conservative buffers, calendar shutdowns) and validated at least **$260,000/year in operational efficiencies** with 5-month payback. That's the floor, the "safe bet" that pays for the system while you build your regulatory baseline.
 
 **The Discovery Upside:**
 The $260K assumes you keep operating the "old way" with faster data. The real value emerges when you use daily toxicity feedback to discover insights you've never had access to:
+
 - Which chemical dosing strategies actually reduce Panel 2 toxicity vs. just diluting Total NAs?
 - How does salt concentration interact with NAFC removal rates across different temperature ranges?
 - Can you prove recycled water (with optimized treatment) substitutes for fresh water withdrawals?
@@ -45,7 +46,7 @@ We believe the discovery value is **3-5X the conservative baseline**, but we pri
 - First operators with validated toxicity baselines will receive expedited release authorization
 
 **Operational Timeline:**
-- Ice melts Q2 2026—ideal pilot start for full-season data capture at CNRL Albian
+- Ice melts Q2 2026, ideal pilot start for full-season data capture at CNRL Albian Wetland 
 - 9-month pilot delivers the toxicity trend documentation AER will require
 - Operators who wait until guidelines release face 12-18 month baseline lag
 
@@ -57,7 +58,7 @@ We believe the discovery value is **3-5X the conservative baseline**, but we pri
 
 **Investment:** Cost recovery pricing (zero margin) + 50% ERA/Alberta Innovates grant matching = [X]/month net operator investment
 
-This isn't vendor procurement. It's a joint discovery partnership to unlock the operational intelligence trapped in your brilliant research—at the speed required for continuous release operations.
+This isn't vendor procurement. It's a joint discovery partnership to unlock the operational intelligence trapped in your current research, at the speed required for continuous release operations.
 
 ---
 
@@ -65,34 +66,33 @@ This isn't vendor procurement. It's a joint discovery partnership to unlock the 
 
 ### What You've Already Proven (And It's Impressive)
 
-Your teams have accomplished what many thought impossible:
+Your industry have accomplished what many thought impossible:
 - Demonstrated that passive wetland systems can reduce NAFC toxicity through biological processes
 - Identified temperature correlations, seasonal dynamics, and treatment pathways
 - Built full-scale demonstration projects (like Kearl Wetland) with years of monitoring data
 - Proven that O2-NAFCs (the toxic fraction) can be targeted through optimized design
 
 This research is the foundation. Without it, there would be no pathway to release.
-
 ### The Gap: Research Cadence vs. Operational Speed
 
 Here's the challenge you're facing now that the OSMWSC has confirmed "the technology exists" and regulators are moving toward release standards:
 
-**Research Pilot Cadence (What Got You Here):**
+**Kearl Research Pilot Cadence (What Got You Here):**
 - 9 samples per season, manually collected
 - Lab results arrive 4-8 weeks later
 - Decisions made on calendar dates ("Shut down Sept 15") because you can't see biology in real-time
 - Monthly reports compiled manually from spreadsheets
 - Conservative "safety factors" everywhere because data lags force you to over-engineer
 
-**What Worked:** You gathered enough data to prove the concept and build the science case.
+**What Worked:** We gathered enough data to prove the concept and build the science case.
 
-**What Doesn't Scale:** You can't operate a 24/7 treatment system feeding into release authorization with monthly toxicity feedback. When the regulator asks "How do you know Cell 3 was compliant on October 12th?", you can't answer with data from September 1st.
+**What Doesn't Scale:** You can't operate a 24/7 treatment system feeding into release authorization with single point quarterly toxicity feedback. When the regulator asks "How do you know Cell 3 was compliant on October 12th?", you can't answer with data from September 1st.
 
 ### The Three Blind Spots This Creates
 
 **Blind Spot #1: The NAFC Paradox**
 
-Standard HRMS testing gives you "Total NAFCs"—but that number includes:
+Standard HRMS testing gives you "Total NAFCs", but that number includes:
 - Harmless background organics (Panel 1: Surrogates)
 - **The toxic fraction regulators care about** (Panel 2: O2-NAFCs)
 - Complex recalcitrant structures (Panel 3)
@@ -120,7 +120,7 @@ Your best operators know things like:
 - "When we dose caustic above X, we see toxicity rebound 10 days later"
 - "Temperature below 8°C is when we start losing biological activity"
 
-**The problem:** That knowledge isn't documented in a searchable, correlative system. When senior staff retire or move to other projects, the insights walk out the door. New operators start from scratch.
+**The problem:** That knowledge isn't documented in a searchable, correlative system. When senior staff retire or move to other projects, the insights walk out the door. New operators start from scratch, their files are a disaster to search throught to find the losst data.
 
 ### Why This Matters NOW: The Containment → Release Shift
 
@@ -130,8 +130,8 @@ Your best operators know things like:
 
 **What this means operationally:**
 
-- **Research pilots** could tolerate data lags and conservative buffers—you were building the science case.
-- **Operational release systems** require real-time steering and compliance documentation—you're now running critical infrastructure under regulatory oversight.
+- **Research pilots** could tolerate data lags and conservative buffers, you were building the science case.
+- **Operational release systems** require real-time steering and compliance documentation, you're now running critical infrastructure under regulatory oversight.
 
 The brilliant research you've done has proven *what's possible*. Now you need the monitoring infrastructure that makes it *operationally reliable and defensible*.
 
@@ -151,19 +151,19 @@ We reverse-engineered the Imperial Kearl Wetland Pilot using the **"old way" ass
 
 Even with those constraints, we identified **$260,000/year in validated operational efficiencies** with a 5-month payback. Here's how:
 
-| Operational Scenario | The Inefficiency (Old Way) | The Luminous Fix | Annual Value |
-|---|---|---|---|
-| **1. Seasonal Strategy** | Shutting down Sept 15 based on calendar because lab turnaround too slow to confirm biological activity | **Temperature Correlation:** Proved treatment effective to 5°C, extending season by 3 weeks | **$104,000** |
-| **2. Flow Optimization** | Running equal flow to all cells (can't see spatial performance differences) | **Spatial Resolution:** Proved shallow vegetated cells treat NAFCs 18% better; route 60% more flow to high performers | **$78,000** |
-| **3. Toxicity Proxy** | Running expensive Microtox bio-assays ($8k) quarterly to validate toxicity | **Panel 2 Correlation:** Validated biosensor Panel 2 (R²=0.89) as leading indicator for O2-NAFC toxicity | **$36,000** |
-| **4. Refill Management** | Pausing outflow for 14 days post-refill "just to be safe" | **Recovery Tracking:** Continuous monitoring proved recovery in 7 days—regained 1 week of capacity per event | **$14,000** |
-| **5. Auto-Reporting** | Manual aggregation of PDFs and SCADA exports for regulatory submissions | **Automated Audit Trail:** Glass Box generates compliance-ready reports, eliminates 90% of manual labor | **$28,000** |
-| **TOTAL CONSERVATIVE BASELINE** | | | **$260,000** |
+| Operational Scenario            | The Inefficiency (Old Way)                                                                             | The Luminous Fix                                                                                                      | Annual Value |
+| ------------------------------- | ------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------- | ------------ |
+| **1. Seasonal Strategy**        | Shutting down Sept 15 based on calendar because lab turnaround too slow to confirm biological activity | **Temperature Correlation:** Proved treatment effective to 5°C, extending season by 3 weeks                           | **$104,000** |
+| **2. Flow Optimization**        | Running equal flow to all cells (can't see spatial performance differences)                            | **Spatial Resolution:** Proved shallow vegetated cells treat NAFCs 18% better; route 60% more flow to high performers | **$78,000**  |
+| **3. Toxicity Proxy**           | Running expensive Microtox bio-assays ($8k) quarterly to validate toxicity                             | **Panel 2 Correlation:** Validated biosensor Panel 2 (R²=0.89) as leading indicator for O2-NAFC toxicity              | **$36,000**  |
+| **4. Refill Management**        | Pausing outflow for 14 days post-refill "just to be safe"                                              | **Recovery Tracking:** Continuous monitoring proved recovery in 7 days, regained 1 week of capacity per event         | **$14,000**  |
+| **5. Auto-Reporting**           | Manual aggregation of PDFs and SCADA exports for regulatory submissions                                | **Automated Audit Trail:** Glass Box generates compliance-ready reports, eliminates 90% of manual labor               | **$28,000**  |
+| **TOTAL CONSERVATIVE BASELINE** |                                                                                                        |                                                                                                                       | **$260,000** |
 
 ### Why This is the "Safe Bet" (Not the Real Value)
 
 **What this $260K represents:**
-The efficiency gains you capture *even if you keep running the system the same way you do now*—just with faster toxicity feedback and automated reporting.
+The efficiency gains you capture *even if you keep running the system the same way you do now*, just with faster toxicity feedback and automated reporting.
 
 **What it does NOT include:**
 
@@ -178,7 +178,7 @@ The efficiency gains you capture *even if you keep running the system the same w
 *Conservative estimate:* Fresh water costs vary by site, but proving 10% substitution at $2-5/m³ withdrawal costs = **$50K-$125K/year potential savings**.
 
 **Discovery Scenario #3: Treatment Technology Selection**
-*Hypothesis:* You're evaluating active treatment technologies (RO, ozonation, etc.) without knowing *which contaminants are actually limiting your release potential*. The Biosensor + integrated chemistry data could prove "it's the salt, not the acid" or vice versa—de-risking a multi-million-dollar capital decision.
+*Hypothesis:* You're evaluating active treatment technologies (RO, ozonation, etc.) without knowing *which contaminants are actually limiting your release potential*. The Biosensor + integrated chemistry data could prove "it's the salt, not the acid" or vice versa, de-risking a multi-million-dollar capital decision.
 
 *Value:* Avoiding a $5M-$10M investment in the wrong technology? **Priceless.** (Not quantified in $260K baseline.)
 
@@ -191,7 +191,7 @@ $260,000/year operational efficiencies even if you change nothing else.
 Chemical savings, fresh water substitution, capital investment de-risking, plus insights we *can't predict yet* because you've never had Panel 2 data correlated with your full operational context.
 
 **Why we price at cost recovery:**
-We don't need you to bet on the 3-5X upside to justify the pilot. The $260K baseline pays for itself in 5 months. The discovery value is the partnership prize—and it compounds every year you operate the system.
+We don't need you to bet on the 3-5X upside to justify the pilot. The $260K baseline pays for itself in 5 months. The discovery value is the partnership prize, and it compounds every year you operate the system.
 
 ---
 
@@ -201,7 +201,7 @@ We don't need you to bet on the 3-5X upside to justify the pilot. The $260K base
 
 The $260K validated baseline (Section 4) proves the system pays for itself. But here's what makes this pilot fundamentally different from vendor procurement:
 
-**You have questions we can't answer yet—because the data doesn't exist.**
+**You have questions we can't answer yet, because the data doesn't exist.**
 
 Your teams have been brilliant at designing wetland systems, optimizing flow, and proving biological treatment works. But you've been working with:
 - Monthly NAFC snapshots (not daily toxicity trends)
@@ -213,14 +213,14 @@ Your teams have been brilliant at designing wetland systems, optimizing flow, an
 2. **Your existing operational data** (SCADA flow/temp, weather, chemistry, dosing logs)
 3. **Automated correlation** (the Relational Context Engine connecting the dots in real-time)
 
-This creates a **feedback loop you've never had before**—and it reveals insights that even the best operators can't predict without the data.
+This creates a **feedback loop you've never had before**, and it reveals insights that even the best operators can't predict without the data.
 
 ### The Three Discovery Layers (Biosensor → Chemistry → Fresh Water)
 
 **Layer 1: The Biosensor Foundation (What You're Buying)**
 
 **What it does:**
-Tracks Panel 2 (O2-NAFC toxicity) at operational speed—this is the regulatory key for release authorization.
+Tracks Panel 2 (O2-NAFC toxicity) at operational speed, this is the regulatory key for release authorization.
 
 **Immediate operational value:**
 - "Is Cell 3 treating the toxic fraction or just moving water?" (Answer in 48 hours, not 6 weeks)
@@ -244,7 +244,7 @@ We ingest your existing chemistry data streams (Chlorides, Metals, Sulfates, Pro
 - **"Which remediation technology should we invest in for our specific NAFC profile?"**
   *Why this matters:* Ozonation works great on some NAFC structures, terrible on others. Wetlands treat O2-NAFCs well but struggle with recalcitrants (Panel 3). Without Panel 2 + Panel 3 resolution, you're guessing on a $5M-$10M decision.
 
-**This layer is where the 3-5X upside lives—because you're optimizing decisions worth millions, not thousands.**
+**This layer is where the 3-5X upside lives, because you're optimizing decisions worth millions, not thousands.**
 
 **Layer 3: Fresh Water Substitution (The Long Game)**
 
@@ -261,7 +261,7 @@ Uses the integrated toxicity + chemistry view to prove when recycled water is "c
 - **Confidence to push recycling boundaries:** Prove 10-20% fresh water substitution with compliance documentation
 - **Regulatory/community proof point:** "We're reducing watershed withdrawal by X million m³/year with validated water quality"
 
-**This layer isn't just operational savings—it's social license and regulatory goodwill.**
+**This layer isn't just operational savings, it's social license and regulatory goodwill.**
 
 ### Why We Don't Charge for Discovery Modules Upfront
 
@@ -271,7 +271,7 @@ We're not going to invoice you for "Integrated Chemistry Module" or "Fresh Water
 1. **We don't know which discoveries matter most to your site yet.**
    Maybe caustic dosing is your biggest win. Maybe it's spatial optimization. Maybe it's proving recycled water substitution. The data will tell us.
 
-2. **Discovery value compounds—it's not a one-time deliverable.**
+2. **Discovery value compounds, it's not a one-time deliverable.**
    When you learn "Cell 2 always spikes after June rain because of poor mixing," that insight informs operations *forever*. It's institutional memory that survives staff turnover. We don't nickel-and-dime you for building your own intelligence.
 
 3. **Partnership pricing = shared upside.**
@@ -287,7 +287,7 @@ We're not going to invoice you for "Integrated Chemistry Module" or "Fresh Water
 - Monthly "anomaly explanation" reports ("Here's why Panel 2 spiked on Oct 3rd")
 - Quarterly discovery reviews ("Here are three new insights we found this quarter")
 
-You get the full Discovery Engine—because that's how we prove the value together.
+You get the full Discovery Engine, because that's how we prove the value together.
 
 ### The Real Deliverable: Institutional Memory at the Speed of Thought
 
@@ -320,7 +320,7 @@ It's codified, correlated, and accessible in plain English queries. A new operat
 
 Let's be crystal clear on data rights:
 - **You own 100% of your site-specific data:** All biosensor results, correlations, operational insights, and deliverables are yours. Forever. Exportable format. No restrictions.
-- **We retain our methodology:** The biosensor technology (how we isolate Panel 2), the RCE algorithms (how we correlate data), the analysis protocols—those remain Luminous IP. You get the *insights*, we keep the *how*.
+- **We retain our methodology:** The biosensor technology (how we isolate Panel 2), the RCE algorithms (how we correlate data), the analysis protocols, those remain Luminous IP. You get the *insights*, we keep the *how*.
 - **Single-tenant, encrypted instance:** Your data is never co-mingled with other operators. SOC 2 Type II hosting, TLS 1.3 encryption, access controls.
 
 **Why Data Sharing Strengthens Everyone (With Your Permission)**
