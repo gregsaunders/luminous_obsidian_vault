@@ -35,9 +35,9 @@ We've created three versions of our elevator pitch for different contexts. Feel 
 
 > Right now, you're managing wetland flow rates and retention times with HRMS toxicity feedback that's 4-8 weeks old. That lag forces you to run conservative "safety factors" and over-dose treatments because you don't have a fuel gauge for NAFCs—you're driving blind through a minefield.
 >
-> Luminous solves this with a 3-panel biosensor that isolates the toxic fraction (O2-NAFCs) with 24-72 hour turnaround, plus a Relational Context Engine that automatically overlays those results against your flow, temperature, and weather data. No manual spreadsheets, no digging through PDFs to figure out why toxicity spiked.
+> Luminous solves this with a 3-panel biosensor that isolates the toxic fraction (O2-NAFCs) with 24-72 hour turnaround, plus a Relational Context Engine that automatically overlays those results against your flow, temperature, and weather data. No manual spreadsheets, no digging through PDFs to figure out why toxicity spiked. We use secure file transfer during pilots—zero network integration, no firewall exceptions, no IT headaches.
 >
-> At Imperial Kearl, this infrastructure generated $260K/year in validated savings—extending operating seasons, optimizing flow routing, and eliminating unnecessary testing—with a 5-month payback. We're offering 9-month pilots at cost recovery (zero margin) with 50% ERA grant matching, specifically for operators who need the 12-month toxicity baseline required for 2027 AER release authorization. The pilot delivers four permanent operational assets: your regulatory baseline, site-specific operational intelligence, ROI validation, and a future project roadmap.
+> We analyzed the publicly reported data from Imperial Kearl and calculated the operational efficiencies that high-frequency monitoring would have enabled: $260K/year with 5-month payback. That's the conservative floor—we believe the discovery value (chemical optimization, fresh water substitution, capex de-risking) is 3-5X that baseline. We're offering 9-month pilots at cost recovery because we're a startup that needs referenced case studies before 2027 release standards publish—we're buying your endorsement by proving value first. 50% ERA grant matching available. The pilot delivers four permanent operational assets: your regulatory baseline, site-specific operational intelligence, ROI validation, and a future project roadmap.
 
 ---
 
@@ -91,10 +91,11 @@ Thanks,
 - $14K: Refill recovery tracking (reduces conservative buffer days)
 - $28K: Auto-reporting (compliance-ready audit trails)
 
-**Competitive Urgency:**
-- Suncor and Imperial actively evaluating solutions
-- First-mover advantage: operators with validated baselines get expedited release authorization
-- 12-18 month lag if operators wait until 2027 guidelines release
+**Regulatory Timeline:**
+- Alberta committed to release standards within 12-18 months (OSMWSC Sept 2025)
+- Operators need 12-18 months of baseline toxicity data for release authorization applications
+- Starting now means regulatory-ready baseline when standards publish
+- Waiting until 2027 creates 12-18 month delay in authorization eligibility
 
 **Deployment Model:**
 - Zero site access friction (offsite lab model for pilots)
@@ -148,7 +149,7 @@ Contents:
 A: Standard HRMS testing takes 4-8 weeks and gives one number (Total NAFCs). Our 3-panel biosensor gives you the toxic fraction (O2-NAFCs) in 24-72 hours, so you can actually steer the treatment process instead of guessing.
 
 **Q: "What's the catch with cost recovery pricing?"**
-A: No catch. We price pilots at zero margin to prove the value before asking for commercial rates. We also help coordinate 50% ERA/Alberta Innovates grant matching to reduce operator cash outlay. This is about getting the technology deployed, not maximizing pilot revenue.
+A: We're a startup. We need referenced case studies to secure commercial contracts when release standards publish in 2027. The pilot is our investment in validation—we're buying your endorsement by proving value first. What we get: a referenced operator deployment and your conversion to an annual monitoring contract (that's where we make margin). What you get: the infrastructure at our cost, the regulatory baseline you need, and the discovery insights that de-risk your 2027-2028 capital decisions. We both win if this works. That's aligned incentives, not charity.
 
 **Q: "Why should we start now vs. waiting for 2027 guidelines?"**
 A: You need 12-18 months of baseline toxicity data to apply for release authorization. If you wait until guidelines drop, you're 12-18 months behind operators who started building their baseline now. Plus, the operational efficiencies ($260K/year) start accruing immediately.
@@ -193,7 +194,7 @@ jeff@luminousbiosolutions.com
 ---
 
 **Related Documents:**
-- Pilot Proposal (V1.5): Full technical and commercial proposal
+- Pilot Proposal (V1.7): Full technical and commercial proposal
 - Agreement Addendum: Legal terms for pilot execution
 - Discovery Scripts: Jeff's conversation framework for operator calls
 

@@ -1,6 +1,6 @@
 # Pilot Agreement: Terms & Conditions Addendum
 
-**This Agreement Addendum** is attached to and forms part of the **Pilot Proposal: Integrated Water Readiness Infrastructure** (V1.5) entered into between Luminous BioSolutions Inc. ("Luminous") and [Operator Legal Name] ("Operator") for deployment of the Readiness Infrastructure as described in the Proposal.
+**This Agreement Addendum** is attached to and forms part of the **Pilot Proposal: Integrated Water Readiness Infrastructure** (V1.7) entered into between Luminous BioSolutions Inc. ("Luminous") and [Operator Legal Name] ("Operator") for deployment of the Readiness Infrastructure as described in the Proposal.
 
 **Execution Date:** [Date]
 **Pilot Duration:** 9 Months
@@ -35,8 +35,10 @@ Luminous will provide the services and deliverables outlined in **Section 8** of
 - Underage credit: Applied to following month's retainer
 
 **Grant Matching:**
-- ERA / Alberta Innovates 50% funding application coordinated by Luminous
-- Grant funding reduces Operator monthly retainer by [X]%
+- Luminous will coordinate 50% ERA / Alberta Innovates grant matching application
+- Operator provides proof of budgeted and approved pilot funding for grant application
+- Pilot can commence prior to grant approval (Luminous has established relationships with funding agencies and high confidence in alignment)
+- Grant funding applied retroactively once approved, reducing Operator monthly retainer by 50%
 - If grant delayed or denied, Operator responsible for full monthly retainer
 
 **Payment Terms:**
@@ -88,9 +90,9 @@ Operator retains full ownership of:
 - Upon contract termination: Luminous will securely destroy or transfer Operator data per Operator's written instruction (within 30 days)
 
 **Security Standards:**
-- SOC 2 Type II compliant hosting infrastructure
 - Encrypted data transmission (TLS 1.3)
 - Access controls limited to authorized Luminous personnel
+- Industry-standard cloud hosting infrastructure with encryption at rest and in transit
 
 ---
 
@@ -116,7 +118,7 @@ Both parties will conduct root cause analysis to determine:
 - If technical performance issue: Luminous provides additional optimization at cost recovery (no markup)
 - If data/access issue: Operator provides required data streams or agrees to timeline extension
 - If force majeure/site conditions: Both parties negotiate scope adjustment or timeline extension
-- Either party may terminate with 30 days notice if targets cannot be met (see Section 7)
+- Either party may terminate with 60 days notice if targets cannot be met (see Section 7)
 
 **Success Incentive:**
 - Early validation (3+ scenarios by Month 4): Operator receives priority scheduling for multi-site expansion discussions
@@ -195,7 +197,7 @@ Prevailing party in dispute entitled to reasonable legal fees.
 ## 10. General Provisions
 
 **Entire Agreement:**
-This Addendum and the Pilot Proposal (V1.5) constitute the entire agreement. No oral modifications.
+This Addendum and the Pilot Proposal (V1.7) constitute the entire agreement. No oral modifications.
 
 **Amendments:**
 Must be in writing, signed by both parties.
@@ -232,7 +234,7 @@ Date: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 ---
 
 **Attachments:**
-- Pilot Proposal: Integrated Water Readiness Infrastructure (V1.5)
+- Pilot Proposal: Integrated Water Readiness Infrastructure (V1.7)
 
 ---
 

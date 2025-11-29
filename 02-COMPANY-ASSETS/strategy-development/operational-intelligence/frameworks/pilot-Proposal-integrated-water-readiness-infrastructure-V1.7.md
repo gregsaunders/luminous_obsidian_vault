@@ -257,7 +257,7 @@ The pilot is priced at cost recovery for the **complete operational intelligence
 - Weekly sampling cadence for full-season data capture
 
 **2. Data Integration & Correlation (The Intelligence Layer)**
-- Automated ingestion of your SCADA streams (flow, temp, level)
+- Automated ingestion of your SCADA streams (flow, temp, level from your site's data historian)
 - Weather data correlation (precipitation, temperature, wind)
 - Chemistry data integration (chlorides, metals, sulfates, process chemicals)
 - Automated "what happened when" correlation engine
@@ -415,7 +415,7 @@ We understand that Operational Technology (OT) networks are critical infrastruct
 The platform is designed to respect air-gapped OT environments. You choose the integration method based on your IT security policies:
 
 **Option 1: Secure File Transfer (Most Common for Pilots)**
-- Weekly CSV exports from your Historian via secure portal upload
+- Weekly CSV exports from your Historian (SCADA data historian) via secure portal upload
 - Weather data pulled from public sources (Environment Canada)
 - Chemistry data (Chlorides, Metals) via manual upload or existing lab data feeds
 - **Zero network integration required during pilot phase**
@@ -452,7 +452,7 @@ At the end of the 9-month pilot, you receive a comprehensive intelligence packag
 
 ### A. Readiness Baseline Report (The Regulatory Asset)
 
-**Purpose:** The 12-month toxicity trend documentation required for 2027 release authorization.
+**Purpose:** The 9-12 month toxicity trend documentation required for 2027 release authorization.
 
 | Deliverable | Description | Value |
 |-------------|-------------|-------|
