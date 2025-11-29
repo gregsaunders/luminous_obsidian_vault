@@ -95,7 +95,94 @@ Does the "18-Month Regulatory Countdown" create enough FOMO to close a round pre
 
 ---
 
+## Session Insights
+
+### 2025-11-29: CDL Mentor Session 1 - Critical Integration
+
+**Attendees:** Dave, Doug, Jocelyn, Terence, Dennis, Max (MBA)
+
+**High-Value Feedback (Integrated into Strategy):**
+
+1. **Benefits-Focused Materials Urgency** ✅
+   - **Mentor message:** "Spoon feed us. 2-3 sentence elevator pitch + one-pager. We won't dig through docs."
+   - **Luminous response:** Create tiered pitch materials (Tier 1: mentor forwarding, Tier 2: operator one-pager, Tier 3: technical validation)
+   - **Action:** One-paragraph pitch + one-pager by Dec 13 (committed in follow-up email)
+
+2. **IP Resolution is Pre-Requisite** ✅
+   - **Mentor consensus:** "No investor will write a check until IP is resolved. Not an objective - it's table stakes."
+   - **Luminous response:** Accelerate AU timeline from "early 2026" to Q1 2026 with business urgency
+   - **Action:** IP timeline document with AU commitments by Dec 13
+
+3. **CNRL Diversification Warning** ✅
+   - **Jocelyn (direct CNRL experience):** "Hardest company to get money from. Bar none. Get everything in writing. Don't count on verbal commitments."
+   - **Luminous response:** Keep CNRL warm but prioritize Suncor (Base Plant urgency) and Imperial (validation leverage)
+   - **Action:** Pathways intro (Dave/Kendall Dilling), Suncor materials (Jocelyn network)
+
+4. **Data Ownership in Pilot Agreements** ✅
+   - **Doug warning:** MTAs/MSAs can auto-assign derivative IP to operators. Get legal review.
+   - **Luminous response:** BLG legal review of pilot agreement template
+   - **Action:** Simple pilot agreement template by Dec 20 (3 weeks per follow-up email)
+
+**Feedback to Validate (Not Automatic Integration):**
+
+5. **"Stop Publishing Papers"** ⚠️
+   - **Mentor position:** "Zero more effort on publications. Operators don't read them."
+   - **Luminous position:** Finish Kearl paper (defensive IP + regulatory credibility), but don't add new publication work
+   - **Decision:** Complete in-flight publication, use strategically for AER/Indigenous validation (not sales pitch)
+
+6. **"$260K Savings is THE Pitch"** ⚠️
+   - **Mentor position:** Lead with ROI, bury environmental story
+   - **Luminous position:** $260K is one scenario (Kearl configuration). Real value is "Release Readiness" (license to operate)
+   - **Decision:** Reframe as "Operators at Kearl achieved $260K efficiencies. Your savings depend on configuration, but Release Readiness path is guaranteed."
+
+7. **"Elevator Pitch Must Be 2-3 Sentences MAX"** ⚠️
+   - **Mentor position:** Extreme brevity for CEO/forwarding
+   - **Luminous position:** Different audiences need different depths (CEO ≠ Wetland Ops ≠ AER)
+   - **Decision:** Tiered structure prevents oversimplification/commoditization
+
+**Feedback to Question:**
+
+8. **"Pathways Alliance Priority"** ❓
+   - **Mentor offer:** Dave intro to Kendall Dilling (Pathways CEO)
+   - **Luminous reality:** Pathways = policy consortium (don't run wetlands). Ty Van Ness (water monitoring) already a fan.
+   - **Decision:** Accept intro for relationship-building, but don't divert from direct operator pilots
+
+9. **"Software as Necessary Evil"** ❌
+   - **Jocelyn framing:** O&G sees software as cost center
+   - **Luminous reality:** We're selling regulatory compliance infrastructure (safety system), not IT software
+   - **Decision:** Position as "Operational Intelligence Platform" not "monitoring software"
+
+**Strategic Commitments (Follow-Up Email):**
+
+**2-Week Deliverables:**
+- One-paragraph pitch + one-pager (benefits-focused) - Jeff
+- IP timeline document with AU commitments - Jeff/Shawn
+
+**3-Week Deliverables:**
+- Pro forma financials draft - Jeff/Dave
+- Pilot agreement template - Jeff
+- Engage BLG legal - Jeff (this week)
+
+**Communication Protocol:**
+- Group updates: Email only (bi-weekly or milestone-based)
+- Individual conversations: Topic-specific asks
+- Text: Quick questions (where mentor approved)
+
+**Mentor Network Activation (Pending Materials):**
+- Dave: Pathways intro (Kendall Dilling)
+- Jocelyn: Suncor operations contacts
+- Doug: Pilot agreement review
+- Terence: Implementation strategy input
+
+---
+
 ## Version History
+
+### v2.2 (2025-11-29) - CDL Mentor Session 1 Integration
+- **Critical feedback integrated:** Benefits-focused materials, IP urgency, CNRL diversification, data ownership
+- **Strategic filtering applied:** Validated mentor input against Luminous reality (publishing strategy, pitch complexity, Pathways priority)
+- **Commitments documented:** 2-week and 3-week deliverables from follow-up email
+- **Related:** CDL mentor session transcript + critical analysis
 
 ### v2.1 (2025-11-22) - Pilot Economics Integration
 - **Pilot Pricing Strategy:** Cost recovery + 50% grant matching documented
@@ -114,9 +201,10 @@ Does the "18-Month Regulatory Countdown" create enough FOMO to close a round pre
 ---
 
 **Next Actions:**
-1. **Fill Pilot Cost Placeholders** (with Greg/Shawn) - Informs 24-month budget accuracy
-2. Update `24-month-budget-DRAFT.md` to reflect the $2.5M spend (Headcount: Add Data Engineer + Lab Tech).
-3. Update `investor-materials.md` to replace "Efficiency" hook with "Release Readiness" hook.
-4. **Post-Nov 27:** Integrate mentor feedback on pricing strategy and valuation
+1. **One-Paragraph Pitch + One-Pager** (Jeff) - Due Dec 13 (2 weeks)
+2. **IP Timeline Document** (Jeff/Shawn) - Due Dec 13 (2 weeks)
+3. **Pro Forma Financials** (Jeff/Dave) - Due Dec 20 (3 weeks)
+4. **Pilot Agreement Template** (Jeff → Doug review) - Due Dec 20 (3 weeks)
+5. **BLG Legal Engagement** (Jeff) - This week
 
-**Last Updated:** 2025-11-22
+**Last Updated:** 2025-11-29
