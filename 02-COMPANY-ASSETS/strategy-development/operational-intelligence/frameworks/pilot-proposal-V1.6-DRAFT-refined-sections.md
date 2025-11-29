@@ -10,13 +10,13 @@
 
 ### The Industry Transformation You've Been Preparing For
 
-For 60 years, the oil sands industry has managed water through containment—storing over 1.36 billion cubic metres in tailings ponds because there was no alternative. Your teams have done brilliant science proving that passive wetland systems can detoxify Naphthenic Acids. You've built demonstration projects. You've collected years of valuable data.
+For 60 years, the oil sands industry has managed water through containment, storing over 1.36 billion cubic metres in tailings ponds because there was no alternative. Your teams have done brilliant science proving that passive wetland systems can detoxify Naphthenic Acids. You've built demonstration projects. You've collected years of valuable data.
 
 **Here's what's changed:** In September 2025, the Government of Alberta's Oil Sands Mine Water Steering Committee declared that "**the technology to treat and release OSMW exists today**" and urged the province to "**expedite the establishment of release standards with a sense of urgency.**" The era of containment is ending. The era of **Release** is beginning.
 
 **The challenge you now face:** Moving from research pilots (9 samples per season, calendar-based decisions) to **24/7 operational treatment systems** that require real-time process control.
 
-Your current HRMS monitoring (4-8 week turnaround) was never designed for this. You're managing billion-dollar treatment infrastructure with toxicity feedback that arrives too late to steer the process. It's like having amazing headlights on your vehicle—but they only turn on once a month to show you where you *were*, not where you're *going*.
+Your current High Resolution Mass Spectrometry (HRMS) monitoring (6-10 week turnaround) was never designed for this. You're managing billion-dollar treatment infrastructure with toxicity feedback that arrives too late to steer the process. It's like having amazing headlights on your vehicle—but they only turn on once a month to show you where you *were*, not where you're *going*.
 
 ### What We're Proposing: The Missing Operational Piece
 
