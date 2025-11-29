@@ -342,7 +342,7 @@ Here's an important context: **This is an environmental challenge that all three
   *(Strengthens the case for release standards by showing technology reliability at scale)*
 
 - **Technology validation:** "Biosensor Panel 2 correlation with HRMS confirmed across diverse NAFC matrices (R²=0.85-0.92)"
-  *(Proves the method works across different site conditions—helps everyone including you)*
+  *(Proves the method works across different site conditions, helps everyone including you)*
 
 **What we will NEVER do:**
 - Share your data with competitors without explicit written permission
@@ -399,7 +399,7 @@ And it starts with operators like you taking the first step.
 
 **The Humble Truth:**
 
-We're not claiming the sky is falling or that "you must act NOW or fail." You've been managing this water for 60 years—you'll manage it for another year if needed.
+We're not claiming the sky is falling or that "you must act NOW or fail." You've been managing this water for 60 years, you'll manage it for another year if needed.
 
 But here's the opportunity cost framing:
 
@@ -409,7 +409,7 @@ But here's the opportunity cost framing:
 - Discovering the 3-5X upside in chemical savings, fresh water substitution, and capital de-risking
 - Creating the institutional memory that survives when senior operators retire
 
-**We have Q2 2026 deployment slots available now.** If this makes strategic sense for CNRL Albian, let's lock in the timeline. If you need more time to evaluate, we respect that—but we want to be transparent about the opportunity window.
+**We have Q2 2026 deployment slots available now.** If this makes strategic sense for CNRL Albian, let's lock in the timeline. 
 
 ### Revised Next Steps
 
