@@ -263,12 +263,15 @@ The pilot is priced at cost recovery for the **complete operational intelligence
 - Automated "what happened when" correlation engine
 
 **3. Engineering Analysis & Insights (The High-Value Labor)**
-- Weekly operational reporting with optimization recommendations (reviewed by Principal Process Engineers with oil sands remediation experience)
+- Weekly operational reporting with optimization recommendations
 - Monthly "anomaly explanation" analysis ("Here's why Panel 2 spiked on Oct 3rd")
 - Quarterly discovery reviews ("Here are three new insights this quarter")
 - Site-specific treatment response profiling (how your system responds to dosing, flow changes, weather events)
 
-**Team credentials:** Our analysis team includes Jeff Violo (Principal Process Engineer with 15+ years oil sands operations experience) and Dr. Stephanie Collins (PhD in environmental biotechnology specializing in NAFC remediation). You're not getting lab techs—you're getting senior engineering review.
+**Team Structure:**
+- Lab analysis conducted by trained technicians using validated biosensor protocols
+- Data correlation and engineering insights reviewed by senior process engineers and water quality specialists (relationships established with oil sands remediation experts)
+- We're assembling the right expertise for your site-specific conditions—not pre-packaging a team
 
 **4. Platform Infrastructure (The Knowledge Base)**
 - Single-tenant, encrypted data instance
@@ -725,7 +728,7 @@ Every month you delay starting the pilot is a month you're not:
 
 1. **Discovery Call (30 minutes)** - Review historical data availability, site selection, sampling logistics, grant eligibility
 2. **Pilot Proposal Refinement** - Customize scope, pricing, deliverables based on your specific site needs
-3. **Grant Application Coordination** - Luminous prepares ERA/Alberta Innovates applications (50% matching); you provide support letter. **Pilot can commence prior to grant approval**—grant funding applied retroactively once approved (typical approval timeline: 8-12 weeks).
+3. **Grant Application Coordination** - Luminous has established relationships with ERA and Alberta Innovates who are aware of our commercial pilot intent. We'll coordinate the 50% matching application; Operator provides proof of budgeted and approved pilot funding. **Pilot can commence prior to grant approval**—we have high confidence in alignment with target pilot start based on ongoing discussions with funding agencies. Grant funding applied retroactively once approved.
 4. **Agreement Execution** - Pilot Agreement + Terms Addendum (reviewed by your procurement/legal)
 5. **Q2 2026 Deployment** - Operational pilot begins with spring thaw (April-May target)
 
@@ -744,7 +747,7 @@ Every month you delay starting the pilot is a month you're not:
 ---
 
 **Version History:**
-- **V1.7 (Nov 29, 2025):** Implemented Gemini cynical engineer fixes: Secure file transfer option (no OT network access required), changed "reverse-engineered" to "analyzed publicly reported data", added sample logistics clarity, added "Why We Price at Cost Recovery (Our Motive)" transparency, reframed fresh water value as risk mitigation, added team credentials, bolded data sharing legal protections, clarified grant timing (pilot can start before approval).
+- **V1.7 (Nov 29, 2025):** Implemented Gemini cynical engineer fixes: Secure file transfer option (no OT network access required), changed "reverse-engineered" to "analyzed publicly reported data", added sample logistics clarity, added "Why We Price at Cost Recovery (Our Motive)" transparency, reframed fresh water value as risk mitigation, revised team structure to be truthful (assembling expertise, not pre-packaged team), bolded data sharing legal protections, clarified grant timing with established relationships and proof of budgeted funding requirement.
 - **V1.6 (Nov 29, 2025):** Removed sales language, clarified cost recovery includes all analysis work, expanded data architecture transparency (non-proprietary formats, open architecture, immutable audit trail, automated regulatory dashboards).
 - **V1.5 (Nov 29, 2025):** Updated Section 9 with retainer payment model, IP protection language, and deliverables-focused contract transition. Removed risk reversal guarantee and pilot credit language.
 - **V1.4 (Nov 19, 2025):** Added detailed deliverables breakdown (Section 8) and cost recovery pilot economics.
