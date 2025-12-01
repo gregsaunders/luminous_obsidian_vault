@@ -8,19 +8,19 @@
 
 ## The "No-Ghost" Guarantee
 
-**To our Mentors:** We know your social capital is valuable. If you make an introduction, we promise:
+**To our Mentors:** We know social capital is valuable. If you make an introduction, we promise:
 
-1. **Respond within 24 hours** to every introduction (you'll be BCC'd)
-2. **Provide monthly status updates** on active conversations
+1. **Respond within 24 hours** to every introduction 
+2. **Provide status updates** on active conversations
 3. **Give clear "yes/no" outcomes** within 30 days
 
-You will never be left wondering if we followed up.
+You will not be left wondering if we followed up.
 
 ---
 
-## Email Templates (Copy & Paste)
+## Email Templates
 
-### OPTION 1: For Executives (VP/C-Suite)
+### For Executives (VP/C-Suite)
 
 **Subject:** Intro: $260K/year validated at Kearl (2027 water release baseline)
 
@@ -28,9 +28,9 @@ You will never be left wondering if we followed up.
 
 Hi [Name],
 
-I wanted to introduce you to Jeff Violo at Luminous BioSolutions. They're solving the 8-week toxicity data lag that's forcing operators to run expensive "safety factor" operations on wetland discharge.
+I wanted to introduce you to Jeff Violo at Luminous BioSolutions. They're solving the NA 8-week toxicity data lag that has operators running expensive "safety factor" operations on tailings management and remediation programs.
 
-Their biosensor cuts NAFC testing from 8 weeks to 48 hours. They analyzed the Imperial Kearl pilot data and validated **$260K/year in operational efficiencies** with 5-month payback.
+Their new biosensor technology cuts NAFC testing from 8 weeks to 48 hours. They analyzed the Imperial Kearl pilot data and validated **$260K/year in operational efficiencies** with 5-month payback.
 
 Jeff is offering **funded pilot programs (50% Alberta Innovates/ERA grant matching)** for operators who need to build their 2027 release baseline now. Given [Company]'s focus on [tailings management / water release], I thought this might be timely.
 
