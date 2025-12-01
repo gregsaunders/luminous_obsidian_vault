@@ -7,11 +7,11 @@
 > Always read these files at the start of a session to align with the current business reality.
 
 *   **Daily Operations & Tone:**
-    *   `01-ACTIVE-BUSINESS/daily-operations/Luminous-Master-Context.md`
+    *   `02-STRATEGY/0-MASTER-CONTEXT/Luminous-Master-Context.md`
 *   **Operational Intelligence Strategy:**
-    *   `02-COMPANY-ASSETS/strategy-development/operational-intelligence/MASTER-CONTEXT.md`
+    *   `02-STRATEGY/0-MASTER-CONTEXT/Operational-Intelligence-Master-Context.md`
 *   **Fundraising Strategy:**
-    *   `02-COMPANY-ASSETS/fundraising/_MASTER-CONTEXT.md`
+    *   `02-STRATEGY/0-MASTER-CONTEXT/Fundraising-Master-Context.md`
 
 ## 2. Key Constraints (The "Rules of Engagement")
 *   **Tone:** "Humble Confident Canadian." (See `Luminous-Master-Context.md`)
@@ -20,6 +20,7 @@
 
 ## 3. Directory Map
 *   `00-AGENT-INTERFACE/`: Your workspace.
-    *   `1-New-Tickets/`: Look here for new tasks assigned to you.
-    *   `2-Session-Memory/`: Save your session logs here.
-    *   `3-Prompt-Templates/`: Reusable patterns for common tasks.
+*   `01-OPERATIONS/`: Daily execution, prospects, outreach.
+*   `02-STRATEGY/`: Fundraising, partnerships, master context.
+*   `03-PRODUCTS/`: Squarehead Foundry & Luminous services.
+*   `04-KNOWLEDGE/`: Technical docs & regulatory.
