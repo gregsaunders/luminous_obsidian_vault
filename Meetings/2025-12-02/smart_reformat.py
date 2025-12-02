@@ -1,0 +1,342 @@
+import os
+
+input_path = "2025-12-02 Jeff Shawn Greg transcript.md"
+output_path = "2025-12-02 Jeff Shawn Greg transcript_reformatted.md"
+
+split_phrases = [
+    "English, rock was like mainstream",
+    "Yeah. Go on, Link.",
+    "OK, I actually met with the MyCDL professors this weekend.",
+    "I did comb over only two companies so far.",
+    "So, for example, they could say like energy has been down",
+    "But I think slightly positive news because I was thinking about a lot of what you guys said",
+    "So I think it's quite clear that for sorry, I just need to get the correct terminology here.",
+    "So these closure obligations related to these oil and gas companies",
+    "But that's kind of like early thought so far.",
+    "But I think this will give you a more comprehensive understanding",
+    "So the closest one you should look at is going to be Suncor.",
+    "Oh, sorry. Suncor, okay.",
+    "Suncor base plant.",
+    "Like so unfortunately they don't really break it down",
+    "But I think we can find like fair or comparable procedures",
+    "So, so far I've looked at Synovus in specific detail",
+    "Is it per unit per barrel? Is that what that means?",
+    "Yeah. Yeah. Sometimes they use per BOE",
+    "And then I also looked at CNRL because they have the most comprehensive discussion",
+    "I think, I think my plan is to have that because the phase one",
+    "Sorry, Greg, I wasn't looking yet. I'm not sure if I heard you correctly",
+    "The, the new, the most recent family of models are like, are extraordinary",
+    "Just to save you some time. I can, just to save you some time.",
+    "I think like, so my, my issue is. What's that?",
+    "It's the new imaging from. Yeah. You have to have a paid version",
+    "I just fed a lot of these statements in, in the chat.",
+    "Yeah. But, yeah. Hopefully. I'm not trying to, I should probably have a table for you guys.",
+    "But I was thinking with this OPEX table, I was going to look at some service providers",
+    "So then we can then generalize, like, these are comparables for Luminous.",
+    "Yeah. And so there's other operations like Tech Resources",
+    "No, no. So that was something I was thinking about too.",
+    "Yeah. Our primary focus with Luminous is oil sands tailings, right?",
+    "Yeah. So even talking to like a Cenobus, they have to test water",
+    "So like if we look at the trajectory, like, so I totally understand that there is that water steering committee.",
+    "So I would imagine that I want to see what the annual statements are looking like.",
+    "That's right, I see. Yeah. For comparables, I posted just a company called Bureau Veritas.",
+    "Yeah. I was just looking at their website and they talk about how they support",
+    "Yeah, that might be really helpful. Let me get back to you next Tuesday with an ask.",
+    "Cool. Cool. Do you guys have any comments for me?",
+    "Oh, sorry. Go for it. I just was, so it looks like you presented to the CDL folks",
+    "Yeah. Yeah. Okay. Yeah. So we, we have, um, uh, like a changing of the guard.",
+    "Okay. And you have short term timelines, right?",
+    "That'll be my requirement. So, uh, I have to, I essentially have to write this like report",
+    "So just for clarification, you're looking at the asset retirement obligations",
+    "Ideally. Yes. But I think realistically, we can only use the asset retirement obligations",
+    "So for example, if they have like $1 billion project.",
+    "So like the life of that project value is blah.",
+    "Yeah. A hundred percent. Yeah. I think, and then what we're trying to do is stimulate thought",
+    "Yeah. That'd be great. I love it.",
+    "Yeah. My own, my own parting thought was we're putting a, or you're putting this effort in",
+    "Right. Yeah. Yeah. They're going to create some thought.",
+    "Yeah. Yeah. So I think like, I, I don't think they would know it at a per unit level",
+    "Yeah. And actually, Sean, if we even give Theo this, right?",
+    "That's what you're thinking, Max. Yeah. I think we need to, you know, stroke the egos of the executives.",
+    "So, I mean, it's valuable. It's definitely much easier if they just tell us",
+    "That's cool, Max. Yeah. Awesome. Thanks. You're showing up Friday?",
+    "Yeah. I'll see you Friday. Have a good one guys.",
+    "You freaked me out with that email. I was like, Oh my God",
+    "So it's a virtual online thing. And I think they want to be playing music",
+    "Yeah. There's a song on my mind that's really corny.",
+    "Yeah. It would be cheesy, lyrified. I kind of like, I kind of like Rage Against the Machine.",
+    "That's actually a good one. Yeah. It's definitely got the energy.",
+    "Was that your pick, Greg?",
+    "Yeah. I don't know. I was just, I was making coffee and I was just thinking",
+    "Why do you know, no jazzy standards, I think are going to fit the bill here.",
+    "I think it's good. It might be a little too, like, you know, yeah.",
+    "Well, you know, right now the, the only options Rage Against the Machine",
+    "So, sorry, we, between the three of us, we just have to have one, one song submission",
+    "I don't know. I was applying and it asked for a song.",
+    "What did you, what did you put in?",
+    "Well, I didn't put anything in because I'm the old metal head, right?",
+    "I thought that it would offend Sean, right?",
+    "I'm like, Oh, there we go. Yeah. I was thinking about you, Jeff, but yeah.",
+    "Yeah. I mean, I, I will think about it, but I don't, I'm a, I like the rage against the machine",
+    "Oh my God. Did anybody notice my new ski boots?",
+    "No, we didn't because they were under your God damn desk",
+    "Hey, just bought them. Nice. What'd you end up getting?",
+    "Well, you know, it was interesting. Cause I, I, I've given myself permission.",
+    "Cause I got old race boots. So these are actually a top of the line Nordica",
+    "So top of the line boot. It's going to meet all my objectives.",
+    "I kind of freaked out this morning. I was, I was like, fuck the session two is a month away",
+    "Yeah, but we're pretty much done. I've got pretty much everything stuffed.",
+    "Wait, you got what stubbed out? All the session two requirements?",
+    "Oh, no, no, no. Sorry. Just the objectives that we were talking about.",
+    "And then it's going to be accelerate getting the patent moved over.",
+    "Like, I, I don't know if I'm going to say that right away, but these are the things I want to do.",
+    "So do you want me to stop talking right now and ask you what you want to know, Greg",
+    "I guess if I was just going to interrupt you, I'd just interrupt you.",
+    "Right. Yep. And it would be nice to maybe let the AU people know",
+    "You know what's interesting? It's January 27th.",
+    "I think we want AU to have a similar sense of urgency that we have.",
+    "No, no, no. That's fucking brilliant. Like we, now we have to say that we",
+    "Right. Significant progress. I think like, you know, like near, near the, near the finish line.",
+    "Yeah. Yeah. I need a, I need a buyer. Yeah. Yeah. Take your time.",
+    "Yeah. So I'm going to send out the meeting for tomorrow at 10.",
+    "Sorry. What for, for tomorrow?",
+    "Yeah. What time is nine o'clock tomorrow? Your time.",
+    "Good. Nine o'clock tomorrow. My time. Nine o'clock tomorrow. My time is fine.",
+    "Yeah. Um, I, um, um, Max kind of threw me, he didn't throw me off",
+    "Right. Yeah. Well, he's got his idea of what he wants to do",
+    "Yeah. Like, cause I keep going back and go, well, what do you know?",
+    "Yeah. Well, I think, you know, you probably know that better than anything, Sean, right?",
+    "Or not. I mean, he maybe, yeah, he probably would be thinking differently",
+    "So the other, so remind me then, um, the objectives, which one was",
+    "Operational thing. So it's IP strategy. Get a pilot. Make progress in getting funding.",
+    "Hold on a second. Hold on. When is that CDL session?",
+    "27th of January.",
+    "Wow. Okay. I thought, well, I don't know why I had January 8th in my head.",
+    "I, I, I might still be in the fucking hospital.",
+    "Well, it's okay. I don't think everyone needs to be there.",
+    "Fuck do I put it? Yeah. I think. I hope it's the end of January.",
+    "It is. Oh, it's the 28th of January. Okay.",
+    "There's, there's a social session. If we're in Calgary on the 27th.",
+    "Okay. And it says, submit your walk up song.",
+    "That week. That week they had was the first time they've ever had that.",
+    "Yeah. All right. That's okay. I'll, yeah, I'll be, I'll be, I'll be there.",
+    "What the hell else are we here? I don't know.",
+    "Well, so dropping the, we're not really dropping it.",
+    "So is there something we can do? Is there something we can do on that front?",
+    "So, I kind of tie that into the pilot piece, Sean.",
+    "So if we have a major project we want to do, it's under his wheelhouse.",
+    "So if I get them with secured money, that they'll frickin' bolt on.",
+    "So I'm going to start the application process fairly soon.",
+    "But, you know, the one thing I want to do is I want to actually come up with a budget.",
+    "Are we doing daily tests? We have to set it up so they ship it to us.",
+    "So if we're putting a budget together, you know, cost recovery",
+    "Assembly. Assembly, for fuck's sakes.",
+    "Will the University of Calgary need something if we're doing kind of like a commercial cost pilot?",
+    "Because this is just cost recovery. But we want to give them an estimate",
+    "So, I think it's going to be like around $750,000 to go from May to the end of December.",
+    "Maybe we roll into a second season. Is that valuable for us to have multi-season",
+    "So, how many people, how much per month do we want to pay them to do this?",
+    "Okay. First thoughts. This is really good that you're spending all this time with Alberta Innovates",
+    "Well, you know what's also nice is he said he'll come in on some meetings with us, too.",
+    "Well, that would be. We'll join you in meetings with CNRL or Suncor.",
+    "Yeah. So, you got that sort of angle of the leveraged funding",
+    "Can you say that again? I didn't follow up.",
+    "Okay, so, say, for example, the budget cost is $750,000.",
+    "So, I'm going sort of May to end in December kind of time frame.",
+    "Why is it? Because it's a two-season pilot? No. No. We do the pilot.",
+    "This is interesting as to how things are working. I'm just wondering how you",
+    "I came up with a number where I went $10,000 a month per person.",
+    "No, no, no. Not how did you get to $750,000. How did you get to $375,000 for one company?",
+    "Oh, Alberta Innovates gives half of the total project.",
+    "Sorry, yeah, the Alberta Innovates. So it's $375,000.",
+    "What you're suggesting is that two operators partner on a pilot?",
+    "Yeah. That'd be interesting if you pull that off.",
+    "But no, no, no, no, no, no. So we'll get samples from Suncor.",
+    "Oh, okay. Okay. Okay. And then we'll get samples from CNRL.",
+    "Sorry, sorry. I want to be in both operations so they actually have visibility to us, right?",
+    "Yeah, yeah, yeah, yeah. More importantly, we got really tight relationships",
+    "Yeah, yeah. And we can maybe cross-pollinate if it makes sense, but yeah.",
+    "Yeah, that's good. Focus on Suncor and CNRL because we already did this with Imperial and",
+    "Well, Imperial's fucked right now because they just whacked their whole Calgary office.",
+    "So we'll get back in the form. I had this guy at my house, Catherine's girlfriend's husband",
+    "And he's a big-time developer. So he's hobnobbing around with, you know, guys with money",
+    "Which is a little bit of a problem. But also pro-business, pro-oil and gas.",
+    "How are we positioning ourselves to possibly be in the stream of that flow of money?",
+    "I would think we can tap into it. If you want to double the production",
+    "So I think this is my perspective of how Luminas should position ourselves politically.",
+    "Right? So, do these good things for yourself. Not ultra-realistically like Max says.",
+    "I get our positioning. I'm just wondering if there's like identifiable sources of money",
+    "No, absolutely. We'd love to chat with them. 100%. We're all over it.",
+    "Fucking what it says is if things go sideways, they own it and you don't.",
+    "So we're not like developing it. So I'm more expendable because it's already, the work's been done",
+    "That's because, because, because that's the pattern is they get the science people",
+    "Well, I, I part of, so, I mean, these are all agreements, right?",
+    "Like we are, people are in our network do, but we don't. So it's easy to take advantage of people like us.",
+    "Right. And yeah, I think that happens a lot to advantage in the sense that like",
+    "It's not going to go anywhere. It's like, so then now, now you're like, now you're setting up this",
+    "So, so the best thing that I went through is I had a job for 14 years with a company by the name of Q9 networks.",
+    "The CEO was going, go fucking sell the value. And I'm like, just give me a bit of a fucking break, right?",
+    "So somebody's bringing money and is going to give us a hundred grand, a million, two million",
+    "So there's a value right now where we are. We've got the tech, but we don't have a customer or revenue.",
+    "Yeah, and I would like us at one point. Maybe it's too early, but what do we individually think of what that number is?",
+    "And there's a big payday and we're like, that's fine. Or, you know, and someone would be continuing",
+    "Yeah, but you know what? I have a lifetime left of building new stuff.",
+    "Yeah, yeah. That's exactly the way. Like if he had five or ten million in his bank",
+    "So, yeah. So that'll be a fun conversation when the time comes.",
+    "The other thing is about this, like I feel, I think I feel that the people that are advisors for CDL",
+    "How do you mitigate this conflict of interest? So the guy who recommended us into this",
+    "So these guys, and that also made it very aware why they were anchoring on, you guys don't have the IP?",
+    "So it'd be, it'd be frickin the foundry and, and, and the biosensor, how it gets disseminated out.",
+    "Yeah. It was evident that this is their intention, which is good. So we know that.",
+    "Like 30 years ago, we'd probably, we probably wouldn't see CDL for what it is.",
+    "He already told us he, I would bet you that Doug already has a hundred thousand dollars in mind.",
+    "Yeah. So anyway, I think, I think CDL is fine for fine for what it is.",
+    "Right. Because we've always known that it doesn't matter what we're doing",
+    "They're thinking about keeping their jobs. Right. And not creating, not creating risk.",
+    "So here's the note that I did from my conversation with, with, with George Damien",
+    "But we're not altruistic in the, in going into CDL either. What was our intention?",
+    "So there's all different cities around the world that have CDLs or different universities.",
+    "Yeah. Yeah. And what an exit is, is I put money in and I took it out",
+    "I thought they were advertising all kinds of exits there. That's all.",
+    "Well, they're also saying, showing that to get all of us who are ventures excited.",
+    "Oh, um, shit. Where did I move them all to?",
+    "Like, they were in the billions of dollars. They're some of the numbers.",
+    "Greg, when do you leave again to drive back?",
+    "Uh, so I'm headed back to Calgary on Saturday.",
+    "We'll be done here. Okay. And, okay. Now we got to go to Ontario",
+    "Are you flying from Victoria to Ontario?",
+    "No, from Calgary. On the 15th, we're going to leave Victoria",
+    "How's that new Subaru treating you?",
+    "Oh my God, it's a great little car. Melissa loves that car.",
+    "Oh yeah, of course you're, you're, of course you're up on the island",
+    "The old Subaru, yeah? A Les, what?",
+    "The Lesbaru. Lesbaru. Funny, like, we actually know a couple of lesbian couples",
+    "Well, going from the Tacoma to anything, just like my Frontier, they're fuckin' brutal in it.",
+    "We got reviews back from a paper that we submitted",
+    "There was a lot of issues raised. So the editor said, technically, we have to reject it.",
+    "So we can't, we can't meet that hope, but it's okay.",
+    "So it's more like there's a bio, this is the mechanism of how bacteria do it.",
+    "And I only have three weeks to get both two papers done.",
+    "Fucking you need to engage me or Greg to accelerate this with fucking, um, AI.",
+    "And that works pretty well as a draft. And then you can sort of edit it",
+    "And then it said, would you like me to write a point by point rebuttal letter",
+    "But I think actually there's, there's something, Sean, the next time we're together",
+    "Like structurally. And so that it makes sense to you so that when you're having these interactive sessions",
+    "Um, so yeah, Jeff's huge. Yeah. Jeff's huge because it supports everything after that.",
+    "Um, and there's something I wanted to share with you guys too.",
+    "Like in the previous parts of the conversation that are polluting the context.",
+    "So quick, quick question about that, Greg. So sometimes I compact my conversation. Does that help?",
+    "Compacting might help, but, but there's a different technique.",
+    "This is the way that they're getting over. This is pre, pre, peer review",
+    "There's, um, oh yeah. And here's the, this video, this video, watch this video first.",
+    "I can communicate better with you than I can with the computer science nerds",
+    "Oh, Sean, I got to tell you what Greg's doing right now is fucking blowing my on UI",
+    "You've got to watch it. Oh no, I did. I sent, I sent you the link to it.",
+    "Uh, there we go. There's any resources behind if, uh, there's a school.",
+    "User interfaces are disposable. Like they're becoming, user interfaces are becoming disposable.",
+    "Like you can generate all that stuff. Like if you have, if you have the supporting material",
+    "Um, yeah. So Sean, just think about it. They're doing a query in the oil sands operations",
+    "Right. So, yeah. Like Greg is a huge, Greg's the backend guy.",
+    "Right. But within, within the mullet, as they were calling it, we can actually start to fucking pixel push whatever.",
+    "And so there has been a lot of development in that agentic AI space.",
+    "And it's, it wouldn't be, it become really difficult to maintain.",
+    "That doesn't have a lot of structure. And often these agents, like they're not, they're not deterministic",
+    "BPMN, like you, you define very structured workflows.",
+    "Right. Anyway, I was like, just as I was building this and actually chatting at the same time",
+    "Well, that, that, that part of it, we'll refer to it as the mullet",
+    "Yeah. Yeah. Cause that, that should be fun. So here's the thing.",
+    "Like instead of just like asking the LLM to like, look at a block of text",
+    "I don't even want to see it. Just write the Python code to analyze this data",
+    "So it's not, so there you're breaking free from the LLM.",
+    "So a couple of things, Sean, the way that I think, and Greg's taught me a lot of this over the years",
+    "How do you have it organized there? And code and AI loves that type of structure.",
+    "And I would like it to be human-readable, but I want to have wiki links so AI can read it.",
+    "This is also where I also say this was a great session. I would like to capture this in a master context file",
+    "You have all of your stuff in readable format. And that now becomes an extension of your intelligence",
+    "Right. So if you actually look at how you operate your lab, how you operate your research",
+    "Create like structure all of this hierarchically for me in an organized fashion",
+    "Yeah. You just got to get a Gemini license. And it's good to have a cloud code license.",
+    "So, I mean, my, like I, I spend, I spend too much money on this stuff a month",
+    "I've never freaking had a world subscription. So the subscription I got",
+    "So that's your, anti-gravity? So anti-gravity is a, a software development environment.",
+    "You don't have to go to the internet or anything like that. It can have long running kind of agentic processes.",
+    "And it's just, it's horrible. Yeah, it's going to take some time, but it's going to be a good use of your time going forward.",
+    "Those are my two that I use and it's sufficient. And the reason I like two is because",
+    "Don't fucking lie. And it just goes, Oh, this is really good, but I would fucking add this.",
+    "You're kind of pulling it all together and you don't have enough intelligence.",
+    "And it doesn't mean you have to even do more work. Like you can just do more better in less time.",
+    "And what I've got good at that yet. I've got to still try to, but what I find",
+    "And it just takes that as textual input and it's way more effective.",
+    "Or you know what I mean? Well, right now my funding ends in June.",
+    "What about his sister? Would we get her sort of part-time?",
+    "Is it 80 grand a year equivalent? Is it 100 grand a year equivalent?",
+    "Give me an idea of what's the best fucking camera that you need",
+    "We borrow that thing. So we need to know about that as well because these are things that I want to say",
+    "And if we can get, you know, here's the thing. We're just doing it for costs",
+    "I'm like, fuck off. Like, like, let's see what we can deliver you.",
+    "And what was other really interesting things? So like in my assumptions",
+    "Because that was another thing that they were doing on curl wetland is they were actually doing some dosing",
+    "You know what I mean? Like, and they had that on the curl wetland report, right?",
+    "Yeah, let me just double check my schedule. I have a few meetings.",
+    "Okay, yeah. I have a stupid Christmas party for AU in 11 o'clock my time",
+    "And that was all their family recipes. And it's like, this is fucking ridiculous."
+]
+
+def main():
+    with open(input_path, 'r', encoding='utf-8') as f:
+        content = f.read()
+    
+    # Normalize content (remove existing newlines to treat as stream)
+    # But wait, if we remove newlines we might merge words if they were split across lines.
+    # The previous view_file showed it as one line.
+    # Let's assume it's one line or we just replace \n with space.
+    content_stream = content.replace('\n', ' ')
+    
+    # Reconstruct the text with newlines
+    output_parts = []
+    current_pos = 0
+    
+    for phrase in split_phrases:
+        # Find the phrase starting from current_pos
+        found_pos = content_stream.find(phrase, current_pos)
+        
+        if found_pos == -1:
+            print(f"Warning: Phrase not found: '{phrase}'")
+            continue
+            
+        # Append the text before the phrase
+        # If this is the first phrase (index 0), and found_pos > 0, we append the prefix.
+        # If found_pos == current_pos, we just append nothing (or handle start).
+        
+        segment = content_stream[current_pos:found_pos].strip()
+        if segment:
+            output_parts.append(segment)
+            
+        # Now we are at the start of the phrase.
+        # We want this phrase to start a new paragraph.
+        # But we don't add the phrase yet, we just move current_pos to found_pos.
+        # Actually, the loop logic should be:
+        # 1. content before phrase -> ends previous paragraph
+        # 2. phrase starts new paragraph
+        
+        # So we append the segment (previous paragraph content).
+        # Then we start a new paragraph.
+        
+        current_pos = found_pos
+        
+    # Append the rest of the text
+    output_parts.append(content_stream[current_pos:].strip())
+    
+    # Join with double newlines
+    final_text = "\n\n".join(output_parts)
+    
+    # Clean up any potential triple newlines or leading/trailing whitespace
+    final_text = final_text.strip()
+    
+    with open(output_path, 'w', encoding='utf-8') as f:
+        f.write(final_text)
+        
+    print(f"Smart reformatted text written to {output_path}")
+
+if __name__ == "__main__":
+    main()
