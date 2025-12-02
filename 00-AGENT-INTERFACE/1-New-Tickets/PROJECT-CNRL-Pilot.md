@@ -8,8 +8,8 @@
 Secure a paid commercial pilot at CNRL Albian for Q2 2026 start.
 
 ## Context
-*   **Proposal:** `02-COMPANY-ASSETS/strategy-development/operational-intelligence/frameworks/pilot-Proposal-integrated-water-readiness-infrastructure-V1.7.md`
-*   **Agreement:** `pilot-agreement-terms-addendum.md`
+*   **Proposal:** `03-PRODUCTS/2-Squarehead-Foundry/frameworks/pilot-Proposal-integrated-water-readiness-infrastructure-V1.7.md`
+*   **Agreement:** `03-PRODUCTS/2-Squarehead-Foundry/frameworks/pilot-agreement-terms-addendum.md`
 *   **Strategy:** "Cost Recovery" + "Grant Matching".
 
 ## Tasks

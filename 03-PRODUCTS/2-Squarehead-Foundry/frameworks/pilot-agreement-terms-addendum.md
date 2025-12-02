@@ -1,6 +1,6 @@
 # Pilot Agreement: Terms & Conditions Addendum
 
-**This Agreement Addendum** is attached to and forms part of the **Pilot Proposal: Integrated Water Readiness Infrastructure** (V1.7) entered into between Luminous BioSolutions Inc. ("Luminous") and [Operator Legal Name] ("Operator") for deployment of the Readiness Infrastructure as described in the Proposal.
+**This Agreement Addendum** is attached to and forms part of the **Pilot Proposal: Integrated Water Readiness Infrastructure** (V1.8) entered into between Luminous BioSolutions Inc. ("Luminous") and [Operator Legal Name] ("Operator") for deployment of the Readiness Infrastructure as described in the Proposal.
 
 **Execution Date:** [Date]
 **Pilot Duration:** 9 Months
@@ -197,7 +197,7 @@ Prevailing party in dispute entitled to reasonable legal fees.
 ## 10. General Provisions
 
 **Entire Agreement:**
-This Addendum and the Pilot Proposal (V1.7) constitute the entire agreement. No oral modifications.
+This Addendum and the Pilot Proposal (V1.8) constitute the entire agreement. No oral modifications.
 
 **Amendments:**
 Must be in writing, signed by both parties.
@@ -234,7 +234,7 @@ Date: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 ---
 
 **Attachments:**
-- Pilot Proposal: Integrated Water Readiness Infrastructure (V1.7)
+- Pilot Proposal: Integrated Water Readiness Infrastructure (V1.8)
 
 ---
 
