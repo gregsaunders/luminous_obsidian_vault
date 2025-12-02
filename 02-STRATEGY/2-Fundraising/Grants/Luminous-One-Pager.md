@@ -2,7 +2,6 @@
 **Solving the 8-Week Toxicity Data Lag**
 
 ---
-
 ### The Problem: Operating in the Dark
 Oil sands operators are managing billion-dollar water release strategies with an **8-week blind spot**.
 *   **The Lag:** Standard NAFC toxicity testing takes 6-10 weeks.
@@ -15,7 +14,6 @@ Luminous BioSolutions provides the infrastructure to monitor toxicity at operati
 2.  **Relational Context Engine:** Automatically correlates toxicity spikes with your SCADA (Flow, Temp) and Weather data.
 
 ---
-
 ### Validated Value: $260,000/Year (Conservative Baseline)
 We analyzed publicly reported pilot data from **Imperial Kearl** and calculated the efficiencies enabled by high-frequency monitoring:
 
@@ -30,19 +28,18 @@ We analyzed publicly reported pilot data from **Imperial Kearl** and calculated 
 **The Upside:** This $260K is the *floor*. The discovery value (chemical optimization, fresh water substitution, capital de-risking) is estimated at **3-5X this baseline**.
 
 ---
-
 ### The Offer: Funded Pilot Program (Q2 2026)
-We are selecting 3 operators for our 2026 Commercial Pilot Program to build their **2027 Regulatory Baseline**.
+We are selecting 2 operators for our 2026 Commercial Pilot Program to build their **2027 Regulatory Baseline**.
 
 *   **Investment:** Cost Recovery Only (Zero Profit Margin).
-*   **Funding:** **50% Grant Matching** available via ERA / Alberta Innovates.
+* Cost's shared across 2 operators, splits costs 
+*   **Funding:** **50% Grant Matching** available via Alberta Innovates or ERA.
 *   **Deployment:** **Zero IT Integration.** Offsite lab model (you ship samples, we deliver insights). No site access or OT network connectivity required.
 
 ### Why Start Now?
-Alberta has committed to release standards within 12-18 months. You need **9-12 months of baseline toxicity data** to apply for authorization. Starting in Q2 2026 ensures you are "Regulatory Ready" when the window opens.
+Alberta wants to double Oil production, has committed to release standards within 12-18 months, and has formed the OSMWSC with specific recommendations we address. **9-12 months of baseline toxicity data** goes a long way to release authorization. Starting in Q2 2026 gives you the head start to "Regulatory Ready" when the window opens.
 
 ---
-
 **Contact:**
 Jeff Violo, COO
 jeff@luminousbiosolutions.com
