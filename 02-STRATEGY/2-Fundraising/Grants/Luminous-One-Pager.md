@@ -1,17 +1,18 @@
-# Operational Intelligence for Water Release
-**Solving the 8-Week Toxicity Data Lag**
+# Operational Intelligence: Solving the 8-Week Decision Lag
+**Real-Time Toxicity Intelligence for Water Management**
 
 ---
-### The Problem: Operating in the Dark
+
+### The Problem: The Decision Lag
 Oil sands operators are managing billion-dollar water release strategies with an **8-week blind spot**.
 *   **The Lag:** Standard NAFC toxicity testing takes 6-10 weeks.
-*   **The Risk:** You are making daily treatment decisions based on data from two months ago.
+*   **The Inefficiency:** You can't optimize a process you can't measure. Decisions on treatment, flow, and chemistry are made on data from two months ago.
 *   **The Cost:** Expensive "safety factors," conservative chemical dosing, and delayed release authorization.
 
-### The Solution: A Real-Time "Fuel Gauge"
-Luminous BioSolutions provides the infrastructure to monitor toxicity at operational speed.
-1.  **3-Panel Biosensor:** Cuts feedback time from **8 weeks to 48 hours**.
-2.  **Relational Context Engine:** Automatically correlates toxicity spikes with your SCADA (Flow, Temp) and Weather data.
+### The Solution: The Feedback Loop
+Luminous BioSolutions provides the infrastructure to steer the process in real-time.
+1.  **The Sensor (Speed):** 3-Panel Biosensor cuts feedback from **8 weeks to 48 hours**.
+2.  **The Engine (Insight):** Relational Context Engine automatically correlates toxicity spikes with SCADA (Flow, Temp) to drive immediate operational adjustments.
 
 ---
 ### Validated Value: $260,000/Year (Conservative Baseline)
