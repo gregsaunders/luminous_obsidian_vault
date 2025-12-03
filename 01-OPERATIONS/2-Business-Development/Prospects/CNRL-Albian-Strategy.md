@@ -52,3 +52,43 @@ I'd like to discuss how we can slot Albian into this 2026 program. Do you have 1
 
 Best,
 Jeff
+
+## Draft Email: Theo & Jayne (Follow-up)
+
+**Subject:** Follow-up: Steve Laut's Feedback & Operational Intelligence
+
+Hi Theo & Jayne,
+
+Hope you're having a good week.
+
+Following up on our last chat—we just finished our session at CDL, and the feedback from the mentors (specifically **Steve Laut**) was a bit of a lightbulb moment for us.
+
+Steve was very clear: **"Don't sell environmental monitoring. Sell operational speed."**
+
+He pointed out that the **8-week lag** in toxicity data is an operational bottleneck. You can't optimize what you can't measure in real-time.
+
+We're pivoting our pilot strategy for **2026 (Ice Melt to Winter)** to focus entirely on this "**Operational Intelligence**"—giving you the data in 48 hours so you can actually make decisions.
+
+I'd love to grab 15 mins to share this update and see if it aligns with what you're seeing at Albian.
+
+Best,
+Jeff
+
+## Draft Email: Jean Paul (CDL Follow-up)
+
+**Subject:** CDL Update: 2026 Pilot Strategy
+
+Hi Jean Paul,
+
+I wanted to reach out separately to give you a quick update post-CDL.
+
+We received some pointed feedback from the industry mentors (including **Steve Laut**) about shifting our focus from "compliance" to "**operational efficiency**".
+
+The core value prop is closing the gap between water release decisions and toxicity data (from **8 weeks to 48 hours**).
+
+We are structuring our **2026 Pilot** around this new "Operational Intelligence" model.
+
+Do you have time for a quick chat to discuss how this might fit with your 2026 planning?
+
+Best,
+Jeff
