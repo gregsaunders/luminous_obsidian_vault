@@ -13,7 +13,8 @@ Secure a paid commercial pilot at CNRL Albian for Q2 2026 start.
 *   **Strategy:** "Cost Recovery" + "Grant Matching".
 
 ## Tasks
-- [ ] Schedule meeting to discuss CDL insights.
+- [ ] Schedule meeting with Theo & Jayne (Follow-up on last meeting, CDL update, Steve Laut's comments).
+- [ ] Schedule meeting with Jean Paul (Separate CDL follow-up).
 - [ ] Refine Pilot Proposal (if needed).
 - [ ] Finalize Pilot Agreement (Legal Review).
 - [ ] Secure Grant Matching (ERA/AI).
