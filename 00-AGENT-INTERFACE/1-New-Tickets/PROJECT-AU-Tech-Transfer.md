@@ -36,3 +36,21 @@ Do you have 30 minutes before the Christmas break to discuss these three points?
 
 Best,
 Jeff
+
+## Draft Email (Kai Lamertz)
+**Subject:** Intro: Luminous BioSolutions (AU Spin-out) / DBA Case Study
+
+Hi Kai,
+
+Dr. Ramses Ilarraza suggested I reach out to you.
+
+I’m the COO of Luminous BioSolutions, the first venture to spin out of Athabasca University with a filed patent. We’re commercializing a biosensor developed at AU that solves critical toxicity monitoring lags in the oil sands industry, and we are currently working with AU's Tech Transfer office to finalize our license agreement.
+
+We see a unique opportunity for Luminous to serve as a live case study for your MBA or Doctorate of Business Administration programs—a "homegrown" example of translating AU research into commercial impact.
+
+I’d love to connect briefly to share our story and explore if there is engaging content here for your students.
+
+Do you have 15 minutes before the holiday break?
+
+Best,
+Jeff
