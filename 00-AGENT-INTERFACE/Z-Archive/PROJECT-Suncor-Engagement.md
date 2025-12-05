@@ -13,8 +13,8 @@ Secure engagement with Suncor Base Plant for potential pilot.
 *   **Mentor Support:** Jocelyn has contacts but needs materials.
 
 ## Tasks
-- [ ] Reach out to Dr. Rodney Guest.
-- [ ] Reference James Guthrie relationship.
+- [x] Reach out to Dr. Rodney Guest.
+- [x] Reference James Guthrie relationship.
 - [ ] Prepare materials for Jocelyn to forward.
 
 ## Draft Email (Dr. Rodney Guest)
@@ -29,6 +29,8 @@ We solve the "8-week blind spot" and lag time from HRMS testing. Our platform pa
 We validated this approach at the Imperial Kearl wetland, identifying over $250k/year operational savings by moving to a frequency-based monitoring model.
 
 I’d love to connect to bring you up to speed on our solution and see if this is interesting to Suncor. 
+
+With Oil Sands Tailings looking to move from containment to ready to release and closure this is an important opportunity.
 
 Do you have time before the Christmas break?
 
