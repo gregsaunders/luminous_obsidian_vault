@@ -20,17 +20,17 @@ You will not be left wondering if we followed up.
 ### Option 1: Executive Approach (Strategy Focus)
 *Best for: VPs, Directors, Strategic Contacts (e.g., Pathways, Suncor, CNRL)*
 
-**Subject:** Intro: Optimizing water management decisions (cutting the 8-week lag)
+**Subject:** Info: Optimizing water management decisions (cutting the 8-week lag)
 
 Hi [Name],
 
-I wanted to introduce you to Jeff Violo at Luminous BioSolutions. Their company solves the 8-week toxicity data lag that forces operators to run expensive "safety factor" operations for their tailings management.
+I came across a company called Luminous BioSolutions that I thought might be relevant to your work on [Program/Strategy].
 
-Their innovative biosensor technology (combined with a relational context engine) cuts NAFC testing lag from 8 weeks to 48 hours, creating a high-frequency feedback loop. They analyzed the Imperial Kearl wetland pilot and validated a minimum of $260K/year in operational efficiencies (flow optimization, extended seasons).
+They seem to have solved the 8-week toxicity data lag that forces the industry to operate with large safety buffers. Their biosensor cuts the feedback loop to 48 hours, which allows for real-time process control rather than waiting for lab reports.
 
-Jeff is offering funded pilot programs (50% Alberta Innovates/ERA grant matching) for operators who need to build their 2027 release baseline. Given the timing on water management and release guidelines potentially coming soon, I thought this might be timely.
+They've validated the tech at Imperial Kearl (finding significant efficiencies in flow optimization and season extension), and I understand they have some grant matching (Alberta Innovates/ERA) available for pilots to help operators build their 2027 regulatory baseline.
 
-Are you open to me connecting you two?
+It looks like a credible way to de-risk the release strategy. If you're interested, I can introduce you to their COO, Jeff Violo, to handle the vetting.
 
 Best,
 [Your Name]
@@ -40,19 +40,17 @@ Best,
 ### Option 2: Operations Approach (Process Focus)
 *Best for: Managers, Engineers, Site Leads*
 
-**Subject:** Intro: Real-time process control for water management
+**Subject:** Info: Real-time process control for water management
 
 Hi [Name],
 
-I wanted to introduce you to Jeff Violo at Luminous BioSolutions. They've developed a biosensor that cuts NAFC toxicity testing from 8 weeks to 48 hours. It gives you a daily real-time feedback loop for your wetland treatment instead of a quarterly lab report.
+I know the 8-week lag on NAFC toxicity results is a constant friction point for process control.
 
-They analyzed Imperial's Kearl engineered wetland pilot and calculated at least $260K/year in efficiencies: extended operating seasons, flow optimization, and automated reporting. That's the conservative floor—they believe discovery value (chemical optimization, fresh water substitution) is 3-5X that baseline.
+I met a team (Luminous BioSolutions) who have validated a 48-hour biosensor at Kearl. It effectively gives you a "fuel gauge" for the wetland/treatment system instead of flying blind between lab reports.
 
-The pilot model is zero friction: no IT integration, offsite lab model with secure file transfer. No firewall exceptions, no site access required. You ship samples, they deliver insights.
+It seems like a low-friction way to get better data. Offsite lab model, no IT integration or site access needed. They also mentioned they have ERA grant matching for pilots to help build the 2027 regulatory baseline.
 
-Jeff is offering cost-recovery pilots (50% ERA grant matching) to help operators build their 2027 regulatory baseline. Given your work on tailings management, thought you should connect.
-
-Are you open to me connecting you two?
+Might be worth a look to see if it saves you some "safety factor" headaches. Let me know if you want an intro.
 
 Best,
 [Your Name]
@@ -64,11 +62,11 @@ Best,
 
 Hi [Name],
 
-Quick intro: Jeff Violo at Luminous BioSolutions just validated $260K/year in efficiencies at Imperial Kearl wetland pilot by cutting NAFC testing lag from 8 weeks to 48 hours.
+Ran across a team (Luminous BioSolutions) that validated a 48-hour NAFC biosensor at Imperial Kearl. Solves that 8-week data lag we always deal with.
 
-They're offering grant-funded pilots (50% ERA match) for operators building 2027 release baselines. Zero IT integration—offsite lab model.
+They have some ERA funding for pilots. Zero IT integration/offsite lab model, so low friction to try.
 
-Worth a conversation? Happy to connect you two.
+Worth a conversation for your 2027 baseline?
 
 [Your Name]
 
@@ -77,7 +75,7 @@ Worth a conversation? Happy to connect you two.
 ## 🗣️ Verbal Pitches (For Meetings/Calls)
 
 **The "Hybrid" Pitch (Best All-Rounder)**
-> "Oil sands operators are managing billion-dollar water release strategies with an 8-week blind spot in toxicity data. Luminous provides a real-time fuel gauge for Naphthenic Acids—updating every 48 hours instead of 48 days. They validated $260K/year in efficiencies at Imperial Kearl, and they're offering funded pilots (50% ERA match) for operators building their 2027 release baseline now."
+> "Oil sands operators are managing billion-dollar water release strategies with an 8-week blind spot in toxicity data. Luminous provides a real-time fuel gauge for Naphthenic Acids, updating every 48 hours instead of 48 days. They validated $260K/year in efficiencies at the Imperial Kearl wetland project, and they're offering funded pilots (50% ERA match) for operators building their 2027 release baseline now."
 
 **The "One-Liner" (Cocktail Party)**
 > "Luminous provides a 'fuel gauge' for Naphthenic Acid toxicity, 48-hour feedback instead of the standard 8-week lag. They validated this at Imperial Kearl with $260K/year in savings."
@@ -99,5 +97,6 @@ A: You need 12-18 months of baseline data for release authorization. Starting no
 
 **Contact:**
 Jeff Violo, COO
+403 813 8529
 jeff@luminousbiosolutions.com
 [www.luminousbiosolutions.com](http://www.luminousbiosolutions.com)
