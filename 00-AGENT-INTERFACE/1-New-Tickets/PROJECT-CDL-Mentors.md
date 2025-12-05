@@ -12,9 +12,9 @@ Manage relationships with CDL mentors (Dave, Doug, Jocelyn, Terence, Dennis) and
 *   **Next Deliverable:** One-pager pitch & IP Timeline (Due ~Dec 6).
 
 ## Tasks
-- [ ] Draft follow-up email to Mentors (Summary & Priorities).
-- [ ] Create One-Paragraph Pitch (Benefits Focused).
-- [ ] Create One-Pager (Benefits Focused).
+- [x] Draft follow-up email to Mentors (Summary & Priorities).
+- [x] Create One-Paragraph Pitch (Benefits Focused).
+- [x] Create One-Pager (Benefits Focused).
 - [ ] Track intro requests (Suncor, CNRL, Pathways).
 
 ## Draft Email (Update)
