@@ -32,3 +32,19 @@ Do you have 15 minutes before the holidays to discuss? We’d love to align the 
 
 Best,
 Jeff
+
+## Draft Email (Innovation: JohnPaul & Jason)
+**Subject:** CDL Update: Steve Laut Feedback & Kearl Wetland Savings ($260K/yr)
+
+Hi JohnPaul and Jason,
+
+Following up on our meeting at the CDL session—we had a very successful first week, securing 5 mentors to support our venture! We also received very positive feedback from Steve Laut regarding our approach to operationalizing biological data.
+
+Since we last spoke, we have further quantified the impact of our biosensor technology. Based on data from the Imperial Kearl wetland pilot, we have identified at least $260k/year in direct operational efficiencies by moving from an 8-week testing lag to a 48-hour feedback loop.
+
+I’d love to connect before the break to give you a brief update on where we are at and explore how we might help CNRL drive similar efficiencies in your tailings operations. The Albian Wetland is of particular interest to chat about.
+
+Do you have time in the next few weeks?
+
+Best,
+Jeff
