@@ -19,18 +19,18 @@ Secure exclusive worldwide license or assignment agreement for Luminous IP from 
 ## Draft Email
 **Subject:** Tech Transfer Next Steps / Marketing & MBA Opportunities
 
-Hi [Name],
+Hello ,
 
-Thanks for the meeting earlier. Following up with a brief summary and a request for a quick touchline before the holidays.
+Thanks for the meeting earlier. Following up with a brief summary and a request for a quick meeting before the holidays.
 
 **1. Tech Transfer Urgency:**
-We are moving quickly on the pilot front with CNRL and our fundraising round. Completing the Tech Transfer is now a critical path item to unblock these milestones.
+We want to move quickly on the pilot front with CNRL, Suncor and our fundraising round. Progressing and completing the Tech Transfer is a critical path item to unblock these milestones, so we want to know what you need us to do to advance these conversations. As discussed, we will want to go back and fourth a few times before engaging a lawyer to save on costs.
 
 **2. Marketing Opportunity (CNRL/Joy Romero):**
-I’d like an introduction to your Marketing Manager. There is a strong "Homegrown Innovation" story here involving Luminous, AU, and CNRL—specifically linking back to Joy Romero (AU Board/CNRL Lead). This is a win for all parties, and CNRL may be open to participating in the narrative.
+We would love an introduction to your Marketing Manager. We have a strong "Homegrown Innovation" story to tell involving Luminous, AU, and CNRL, specifically linking Joy Romero (AU Board/CNRL Lead) to the origin story. This would be a win for all parties, and hopefully Joy and CNRL would be open to participating in the narrative.
 
 **3. AU MBA Case Study:**
-We see an opportunity for Luminous to serve as a live case study for the AU MBA program. We’d love to explore this with the business school.
+We also discussed the opportunity for Luminous to serve as a case study for your MBA program. We’d love to explore this with the business school when the time is right .
 
 Do you have 30 minutes before the Christmas break to discuss these three points?
 
