@@ -14,6 +14,7 @@ Secure exclusive worldwide license or assignment agreement for Luminous IP from 
 ## Tasks
 - [x] Follow up re: meeting last week.
 - [x] Update AU on Mentor feedback (business urgency).
+- [x] Email Kai Lamertz (DBA/MBA Case Study).
 - [ ] Draft IP Timeline Document (Due Dec 6).
 
 ## Draft Email
@@ -44,13 +45,15 @@ Hi Kai,
 
 Dr. Ramses Ilarraza suggested I reach out to you.
 
-I’m the COO of Luminous BioSolutions, the first venture to spin out of Athabasca University with a filed patent. We’re commercializing a biosensor developed at AU that solves critical toxicity monitoring lags in the oil sands industry, and we are currently working with AU's Tech Transfer office to finalize our license agreement.
+I’m the COO of Luminous BioSolutions, a startup spun out from the lab of Dr. Shawn Lewenza here at AU. We are commercializing his NAFC biosensor technology to help the oil sands industry solve their toxicity monitoring lag, and have recently gained significant traction through the Creative Destruction Lab (CDL) program.
 
-We see a unique opportunity for Luminous to serve as a live case study for your MBA or Doctorate of Business Administration programs—a "homegrown" example of translating AU research into commercial impact.
+We are currently working with the Tech Transfer office to finalize our license, and we were wondering if there might be merit in exploring a connection with the business school?
 
-I’d love to connect briefly to share our story and explore if there is engaging content here for your students.
+Given that this is a "homegrown" story of translating AU research into a venture, we thought there might be a possibility for an interesting case study for your MBA or DBA students.
 
-Do you have 15 minutes before the holiday break?
+I’d love to briefly connect to share the story and ask your perspective on whether this would be of value to your program.
+
+Do you have time before the holiday break?
 
 Best,
 Jeff

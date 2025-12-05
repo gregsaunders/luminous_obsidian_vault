@@ -13,8 +13,8 @@ Secure 50% grant matching for Pilot deployment.
 *   **Target:** ~$150K-$300K matching.
 
 ## Tasks
-- [ ] Summarize meeting with Mark Donner.
-- [ ] Follow up with Reesa John.
+- [x] Summarize meeting with Mark Donner.
+- [x] Follow up with Reesa John.
 - [ ] Monitor for ERA calls.
 
 ## Draft Email
