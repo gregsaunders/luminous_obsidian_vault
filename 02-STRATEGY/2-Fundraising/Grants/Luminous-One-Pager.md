@@ -1,5 +1,5 @@
 # Operational Intelligence: Solving the 8-Week Decision Lag
-**Real-Time Toxicity Intelligence for Water Management**
+**High-Frequency Biological Feedback for Water Management**
 
 ---
 
@@ -10,7 +10,7 @@ Oil sands operators are managing billion-dollar water release strategies with an
 *   **The Cost:** Expensive "safety factors," conservative chemical dosing, and delayed release authorization.
 
 ### The Solution: The Feedback Loop
-Luminous BioSolutions provides the infrastructure to steer the process in real-time.
+Luminous BioSolutions provides the infrastructure to operationalize your science.
 1.  **The Sensor (Speed):** 3-Panel Biosensor cuts feedback from **8 weeks to 48 hours**.
 2.  **The Engine (Insight):** Relational Context Engine automatically correlates toxicity spikes with SCADA (Flow, Temp) to drive immediate operational adjustments.
 
@@ -33,7 +33,7 @@ We analyzed publicly reported pilot data from **Imperial Kearl** and calculated 
 We are selecting 2 operators for our 2026 Commercial Pilot Program to build their **2027 Regulatory Baseline**.
 
 *   **Investment:** Cost Recovery Only (Zero Profit Margin).
-* Cost's shared across 2 operators, splits costs 
+*   **Scalable:** Pilot infrastructure converts to long-term monitoring grid. 
 *   **Funding:** **50% Grant Matching** available via Alberta Innovates or ERA.
 *   **Deployment:** **Zero IT Integration.** Offsite lab model (you ship samples, we deliver insights). No site access or OT network connectivity required.
 
