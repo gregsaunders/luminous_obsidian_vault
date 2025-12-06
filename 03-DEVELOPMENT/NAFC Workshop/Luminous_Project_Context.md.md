@@ -1,4 +1,4 @@
-# Luminous NAFC Worksh Strategy Context
+# Luminous NAFC Workshop Strategy Context
 
 ## 1. Core Identity
 * **Company:** Luminous BioSolutions.
