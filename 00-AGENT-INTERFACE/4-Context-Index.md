@@ -18,8 +18,17 @@
 *   **Banned Terms:** "AI-Native", "Graph Database", "Prediction".
 *   **Required Terms:** "Relational Context Engine", "Automated Correlation", "Projection".
 
-## 3. Directory Map
-*   `00-AGENT-INTERFACE/`: Your workspace.
+
+## 4. Current Campaigns & Trackers (Active Work)
+*   **Mentor Capital Campaign:** `00-AGENT-INTERFACE/1-New-Tickets/PROJECT-Mentor-Capital-Campaign.md`
+*   **Outreach Tracker:** `00-AGENT-INTERFACE/Follow-Up-Tracker.md`
+
+## 5. Agent Memory (Long-Term Context)
+*   **Mentor Dynamics:** `00-AGENT-INTERFACE/2-Session-Memory/MEMORY-Mentor-Dynamics.md` (Strategy/User Manual for each mentor).
+*   **Archived Tickets:** `00-AGENT-INTERFACE/Z-Archive/` (Reference for completed outreach emails).
+
+## 6. Directory Map
+*   `00-AGENT-INTERFACE/`: Your workspace (Tickets, Memory, Archive).
 *   `01-OPERATIONS/`: Daily execution, prospects, outreach.
 *   `02-STRATEGY/`: Fundraising, partnerships, master context.
 *   `03-PRODUCTS/`: Squarehead Foundry & Luminous services.

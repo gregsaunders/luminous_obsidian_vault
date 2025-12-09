@@ -93,5 +93,22 @@ I’m keen to tap into your experience at Syncrude and discuss the operational d
 Do you have time for a call next week or the week after?
 
 Best,
-Jeff
+
+## Meeting Strategies & Agendas
+
+### Jocelyn (Dec 9 - 10:00 AM / 30 mins)
+**Strategy:** "Insider's Playbook" / Humble Confidence.
+**Goal:** Treat her as a Strategic Partner (Insider), not a prospect.
+
+**Agenda:**
+1.  **0:00 - 0:05 | Trust Building (The "Why Us?"):**
+    *   *Ask:* "What specifically about Luminous made you raise your hand? What did you see that others missed?" (Forces her to articulate your value).
+2.  **0:05 - 0:20 | Account Strategy (The "Operational Headache"):**
+    *   *Premise:* I have the outsider pitch, I need the insider reality.
+    *   *Ask:* "When I walk into a Suncor Ops VP office, what is the *political* headache they are dealing with right now? Closure? Regulatory?"
+    *   *Probe:* "Pathways Alliance: Is Kendal Dilling the front door, or is there a technical committee side door?"
+3.  **0:20 - 0:25 | Pressure Test (The Framing):**
+    *   *Test:* "If I say 'Fuel gauge for tailings so you aren't flying blind', does that land? Or is there a better 'risk management' term?"
+4.  **0:25 - 0:30 | The One Thing (Closing):**
+    *   *Ask:* "If you were me, what is the **single most high-value introduction** you would prioritize before Christmas?"
 
