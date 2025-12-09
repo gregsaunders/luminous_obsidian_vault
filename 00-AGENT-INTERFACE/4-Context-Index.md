@@ -1,25 +1,27 @@
-# Agent Context Index
+# Agent Context Index: The Map
 
-**Purpose:** This file is the "Map" for the AI Agent. Read this file first to locate the active Master Context files.
-
-## 1. Active Master Contexts (The Source of Truth)
 > [!IMPORTANT]
-> Always read these files at the start of a session to align with the current business reality.
+> This file maps the "Master Context" files that drive the AI's understanding.
+> If you move a Master Context file, YOU MUST UPDATE THIS INDEX.
 
-*   **Daily Operations & Tone:**
-    *   `02-STRATEGY/0-MASTER-CONTEXT/Luminous-Master-Context.md`
-*   **Operational Intelligence Strategy:**
-    *   `02-STRATEGY/0-MASTER-CONTEXT/Operational-Intelligence-Master-Context.md`
-*   **Fundraising Strategy:**
-    *   `02-STRATEGY/0-MASTER-CONTEXT/Fundraising-Master-Context.md`
+## 1. Strategy & Vision
+*   **Company Master Context:** `[[02-STRATEGY/0-MASTER-CONTEXT/Luminous-Master-Context]]`
+*   **Operational Intelligence:** `[[02-STRATEGY/0-MASTER-CONTEXT/Operational-Intelligence-Master-Context]]`
+*   **Fundraising Strategy:** `[[02-STRATEGY/0-MASTER-CONTEXT/Fundraising-Master-Context]]`
 
-## 2. Key Constraints (The "Rules of Engagement")
-*   **Tone:** "Humble Confident Canadian." (See `Luminous-Master-Context.md`)
-*   **Banned Terms:** "AI-Native", "Graph Database", "Prediction".
-*   **Required Terms:** "Relational Context Engine", "Automated Correlation", "Projection".
+## 2. Product & Technology
+*   **Squarehead Foundry:** `[[03-PRODUCTS/2-Squarehead-Foundry/MASTER-CONTEXT]]`
+*   **Luminous Services:** `[[03-PRODUCTS/1-Luminous-Services/MASTER-CONTEXT]]`
 
+## 3. Brand & Tone
+*   **Style Guide:** `[[03-PRODUCTS/0-Brand-Identity/_STYLE-GUIDE]]`
+*   **Tone Guidelines:** `[[00-AGENT-INTERFACE/3-Prompt-Templates/TEMPLATE-Tone-Check]]`
 
-## 4. Current Campaigns & Trackers (Active Work)
+## 4. Knowledge Base
+*   **Technical Docs:** `[[04-KNOWLEDGE/1-Technical-Docs/]]`
+*   **Regulatory:** `[[04-KNOWLEDGE/2-Regulatory/]]`
+
+## 5. Current Campaigns & Trackers (Active Work)
 *   **Mentor Capital Campaign:** `00-AGENT-INTERFACE/1-New-Tickets/PROJECT-Mentor-Capital-Campaign.md`
 *   **Outreach Tracker:** `00-AGENT-INTERFACE/Follow-Up-Tracker.md`
 
