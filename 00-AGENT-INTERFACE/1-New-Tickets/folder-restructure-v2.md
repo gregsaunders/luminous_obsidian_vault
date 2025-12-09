@@ -43,13 +43,14 @@ These folders create confusion and should be emptied and deleted/archived:
 ├── 02-STRATEGY/              (Plan)
 │   ├── 0-MASTER-CONTEXT/     (The "Single Source of Truth")
 │   ├── 1-Fundraising/        (Investors, Grants, Decks)
-│   ├── 2-Partnerships/       (CDL, Associations)
+│   ├── 2-Partnerships/       (CDL, Associations, Stakeholders)
 │   └── 3-Legal/              (Agreements, IP)
 ├── 03-PRODUCTS/              (Output)
-│   ├── 1-Luminous-Services/  (Service Offerings)
+│   ├── 0-Brand-Identity/     (Style Guide, Assets)
+│   ├── 1-Luminous-Services/  (Service Offerings, Website Reference)
 │   └── 2-Squarehead-Foundry/ (Product Specs, Pilot Proposals)
 ├── 04-KNOWLEDGE/             (Library)
-│   ├── 1-Technical-Docs/     (Internal Specs, Research)
+│   ├── 1-Technical-Docs/     (Internal Papers, NAFC Workshop)
 │   ├── 2-Regulatory/         (AER, OSMWSC)
 │   └── 3-Market-Research/    (Competitors, Industry Reports)
 └── 99-ARCHIVE/               (Old)
@@ -57,6 +58,22 @@ These folders create confusion and should be emptied and deleted/archived:
     ├── Legacy-Development/
     └── ...
 ```
+
+### 📍 Your Specific Files: Where They Go
+Here is the mapping for the items you flagged (Nothing is deleted):
+
+| Source File/Folder | New Destination | Why? |
+| :--- | :--- | :--- |
+| `02-COMPANY-ASSETS/brand-identity/_STYLE-GUIDE.md` | `03-PRODUCTS/0-Brand-Identity/` | It's a core asset for building products. |
+| `02-COMPANY-ASSETS/legal/Agreements` | `02-STRATEGY/3-Legal/Agreements` | Consolidates strict legal docs. |
+| `02-COMPANY-ASSETS/marketing/Website-Redesign...` | `03-PRODUCTS/1-Luminous-Services/Website/` | Active reference for the redesign project. |
+| `02-COMPANY-ASSETS/presentations/Internal Papers` | `04-KNOWLEDGE/1-Technical-Docs/Internal-Papers/` | Central library for technical reference. |
+| `02-COMPANY-ASSETS/stakeholders` | `02-STRATEGY/2-Partnerships/Stakeholders/` | Groups people strategy together. |
+| `02-STRATEGY/2-Fundraising/Grants` | *No Change* (`02-STRATEGY/1-Fundraising/`) | Stays in Strategy. |
+| `02-STRATEGY/3-Partnerships` | *No Change* (`02-STRATEGY/2-Partnerships/`) | Stays in Strategy. |
+| `03-DEVELOPMENT/NAFC Workshop` | `04-KNOWLEDGE/1-Technical-Docs/NAFC-Workshop/` | Technical reference material. |
+| `04-KNOWLEDGE` | *No Change* | Stays as the Knowledge Base. |
+| `99-ARCHIVE` | *No Change* | Stays as Archive (We only add to it). |
 
 ---
 
