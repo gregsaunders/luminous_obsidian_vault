@@ -11,10 +11,14 @@
             "id": "62750cc74e0b3e31",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Journal/Greg/2025-12/Mark.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Mark"
             }
           }
         ]
@@ -205,8 +209,10 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "588cb12a155ad9aa",
+  "active": "62750cc74e0b3e31",
   "lastOpenFiles": [
+    "Journal/Greg/2025-12/Mark.md",
+    "Journal/Greg/2025-12",
     "Untitled.md",
     "00-AGENT-INTERFACE/1-New-Tickets/PROJECT-CNRL-Pilot.md",
     "99-ARCHIVE/Legacy-Company-Assets/presentations/_archive/Luminous-Presentation-11-Slides-NA-SPECIFIC.md",
@@ -226,7 +232,6 @@
     "99-ARCHIVE/Legacy-Company-Assets/technical-docs",
     "99-ARCHIVE/Legacy-Company-Assets/presentations",
     "99-ARCHIVE/Legacy-Company-Assets/fundraising",
-    "99-ARCHIVE/Legacy-Company-Assets/regulatory",
     "99-ARCHIVE/ERA TTC/CALL FOR PROPOSALS GUIDELINES.md",
     "00-AGENT-INTERFACE/MIGRATION_LOG.md",
     "02-STRATEGY/1-Fundraising/Alberta Innovates Funding Guide.md",
@@ -243,7 +248,6 @@
     "04-KNOWLEDGE/1-Technical-Docs/Internal-Papers/Investor-Pitch-Deck.md",
     "04-KNOWLEDGE/1-Technical-Docs/Internal-Papers/A Clear Path to Clean Water.md",
     "03-PRODUCTS/1-Luminous-Services/Website/Website-Redesign-Strategy-20250917/Website-Strategy-and-Content-Map.md",
-    "04-KNOWLEDGE/1-Technical-Docs/Internal-Papers/Confluent-Platform.md",
     "01-OPERATIONS/meetings/Archive/2025-01-09/attachments/Pasted image 20250114115026.png",
     "02-COMPANY-ASSETS/presentations/Internal Papers/attachments/Pasted image 20251030081615.png",
     "02-COMPANY-ASSETS/marketing/communications-assets/attachments/Pasted image 20251014135647.png",
