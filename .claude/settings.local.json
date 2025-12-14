@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "WebFetch(domain:www.eralberta.ca)"
+      "WebFetch(domain:www.eralberta.ca)",
+      "Bash(find:*)"
     ],
     "deny": []
   }
