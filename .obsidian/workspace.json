@@ -150,30 +150,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "index.md"
+                "file": "Journal/Greg/2025-12/2025-12-16b.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of index"
-            }
-          },
-          {
-            "id": "bd6f072ea5eed083",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
-            }
-          },
-          {
-            "id": "eb88a646bb04dfea",
-            "type": "leaf",
-            "state": {
-              "type": "git-history-view",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
+              "title": "Outline of 2025-12-16b"
             }
           },
           {
@@ -187,7 +170,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -211,6 +194,17 @@
   },
   "active": "62750cc74e0b3e31",
   "lastOpenFiles": [
+    "99-ARCHIVE/Legacy-Company-Assets/presentations/attachments/Pasted image 20250815113850.png",
+    "99-ARCHIVE/Legacy-Company-Assets/presentations/attachments/Pasted image 20250815113957.png",
+    "99-ARCHIVE/Legacy-Company-Assets/presentations/attachments/Pasted image 20250815113923.png",
+    "99-ARCHIVE/Legacy-Company-Assets/presentations/attachments/Pasted image 20250815113305.png",
+    "99-ARCHIVE/Legacy-Company-Assets/presentations/attachments/Pasted image 20250815113340.png",
+    "99-ARCHIVE/Legacy-Company-Assets/presentations/attachments/Pasted image 20250815113715.png",
+    "99-ARCHIVE/Legacy-Company-Assets/presentations/attachments/Pasted image 20250815113755.png",
+    "99-ARCHIVE/Legacy-Company-Assets/presentations/attachments/Pasted image 20250815113323.png",
+    "99-ARCHIVE/Legacy-Company-Assets/presentations/attachments/Pasted image 20250815113433.png",
+    "99-ARCHIVE/Legacy-Company-Assets/presentations/attachments/Pasted image 20250815113156.png",
+    "99-ARCHIVE/Legacy-Company-Assets/presentations/attachments/Pasted image 20250815113822.png",
     "Journal/Greg/2025-12/2025-12-16a.md",
     "Journal/Greg/2025-12/2025-12-16b.md",
     "Journal/Greg/2025-12/Mark.md",
@@ -237,7 +231,6 @@
     "99-ARCHIVE/ERA TTC/CALL FOR PROPOSALS GUIDELINES.md",
     "00-AGENT-INTERFACE/MIGRATION_LOG.md",
     "02-STRATEGY/1-Fundraising/Alberta Innovates Funding Guide.md",
-    "04-KNOWLEDGE/1-Technical-Docs/Internal-Papers/attachments/Pasted image 20251030081615.png",
     "01-OPERATIONS/3-Meetings/2025-12-02/2025-12-02 Jeff Shawn Greg transcript_reformatted.md",
     "01-OPERATIONS/3-Meetings/2025-12-02/2025-12-02 Jeff Shawn Greg transcript.md",
     "04-KNOWLEDGE/1-Technical-Docs/Internal-Papers/Comparative Analysis of Monitoring Technologies for Naphthenic Acids in OSPW.md",
@@ -247,16 +240,6 @@
     "04-KNOWLEDGE/1-Technical-Docs/Internal-Papers/Luminous-Presentation.md",
     "04-KNOWLEDGE/1-Technical-Docs/NAFC-Workshop/Discussion Notes for NAFC Measurement Workshop.md",
     "03-PRODUCTS/1-Luminous-Services/Website/Website-Redesign-Strategy-20250917/Website-Continuous-Improvement-Workflow.md",
-    "04-KNOWLEDGE/1-Technical-Docs/Internal-Papers/Investor-Pitch-Deck.md",
-    "01-OPERATIONS/meetings/Archive/2025-01-09/attachments/Pasted image 20250114115026.png",
-    "02-COMPANY-ASSETS/presentations/Internal Papers/attachments/Pasted image 20251030081615.png",
-    "02-COMPANY-ASSETS/marketing/communications-assets/attachments/Pasted image 20251014135647.png",
-    "99-ARCHIVE/legacy-folders/Random stuff/Artifacts/attachments/IMG_0212.jpg",
-    "99-ARCHIVE/legacy-folders/Random stuff/Artifacts/attachments/IMG_0213.jpg",
-    "02-COMPANY-ASSETS/presentations/attachments/Pasted image 20250815113850.png",
-    "02-COMPANY-ASSETS/presentations/attachments/Pasted image 20250815113957.png",
-    "99-ARCHIVE/business-development-reference/Business Development/1 Luminous Meta Model/01 What is a Meta Model?/Metamodel Explanation/attachments/Pasted image 20250310091414.png",
-    "99-ARCHIVE/business-development-reference/Business Development/Dependencies/attachments/Pasted image 20250305133428.png",
     "99-ARCHIVE/business-development-reference/Business Development/Dependencies/LBS Dependency.canvas",
     "99-ARCHIVE/business-development-reference/Business Development/1 Luminous Meta Model/02 Luminous Domains and Component/Luminous Meta Model.canvas",
     "99-ARCHIVE/business-development-reference/Business Development/1 Luminous Meta Model/01 What is a Meta Model?/Metamodel Explanation/Untitled.canvas",
