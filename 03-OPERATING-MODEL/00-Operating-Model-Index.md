@@ -1,9 +1,10 @@
 # Luminous BioSolutions: Operating Model
 
-**Version:** 1.0
+**Version:** 1.1
 **Created:** 2025-12-23
-**Status:** 🟡 In Development
-**Purpose:** Define how Luminous delivers the NA Biological Monitoring Service
+**Last Updated:** 2025-12-23
+**Status:** 🟢 Active
+**Purpose:** Define how Luminous delivers Operational Intelligence for Water Release
 
 ---
 
@@ -11,22 +12,39 @@
 
 | # | Document | Purpose | Status |
 |---|----------|---------|--------|
-| 01 | [[01-Service-Delivery-Process-Map]] | End-to-end workflow from sample collection to customer delivery | 🟡 Draft |
-| 02 | [[02-Roles-and-Responsibilities]] | Who does what (RACI matrix, role profiles) | 🟡 Draft |
-| 03 | [[03-Technology-Requirements]] | Systems needed, build vs. buy decisions | 🟡 Draft |
-| 04 | [[04-Pilot-Readiness-Scorecard]] | What exists vs. gaps, action plan | 🟡 Draft |
+| 01 | [[01-Service-Delivery-Process-Map]] | End-to-end workflow from sample collection to customer delivery | 🟢 v1.1 |
+| 02 | [[02-Roles-and-Responsibilities]] | Who does what (RACI matrix, role profiles) | 🟢 v1.0 |
+| 03 | [[03-Technology-Requirements]] | Systems needed, build vs. buy decisions | 🟢 v1.0 |
+| 04 | [[04-Pilot-Readiness-Scorecard]] | What exists vs. gaps, action plan | 🟢 v1.1 |
+| 05 | [[05-Pilot-Deliverables-Framework]] | **NEW:** The 5 operational scenarios we deliver | 🟢 v1.0 |
 
 ---
 
-## Quick Reference: Service Overview
+## The Value Proposition
 
-| Attribute | Value |
-|-----------|-------|
-| **Service** | NA Biological Monitoring & Intelligence |
-| **Turnaround** | 24-72 hours from lab receipt |
-| **Sampling** | Daily preferred (customer-dependent) |
-| **Deployment** | Zero-friction offsite lab (Calgary) |
-| **Output** | Dashboard + Reports |
+> **We don't just give you data. We give you decisions you couldn't make before.**
+
+| What They Have Today | What Luminous Delivers |
+|---------------------|----------------------|
+| 4 data points/year (HRMS) | **100+ data points/month** |
+| Feedback in 4 weeks | **Feedback in 24-72 hours** |
+| Calendar-based decisions | **Evidence-based decisions** |
+| "Trust us" to regulators | **"Here's the proof"** (immutable audit trail) |
+
+---
+
+## The Five Operational Scenarios (Validated from Kearl)
+
+| Scenario | Decision Enabled | Annual Value |
+|----------|------------------|--------------|
+| **Seasonal Strategy** | Operate 3 weeks longer (temperature-based shutdown) | $104k |
+| **Spatial Optimization** | Route flow to high-performers (+26% capacity) | $78k |
+| **Toxicity Validation** | Reduce expensive bio-assays by 75% | $36k |
+| **Refill Management** | Resume outflow 7 days earlier per event | $14k |
+| **Regulatory Reporting** | Prove data integrity with Glass Box audit trail | $24k |
+| **TOTAL** | | **$260k/year** |
+
+See [[05-Pilot-Deliverables-Framework]] for full details.
 
 ---
 
@@ -40,28 +58,31 @@ CUSTOMER                    LUMINOUS
  │ Collect │────────────▶ │ Lab     │─────────────▶ │Platform │
  │ Samples │              │ Analysis│               │ Engine  │
  └─────────┘              └─────────┘               └────┬────┘
-     │                                                   │
+     │                         │                         │
+     │                         │ Tyson Bookout           │
+     │                         │ (Biosensor author)      │
      │                    ┌─────────┐                    │
      │                    │Dashboard│◀───────────────────┘
-     │                    │& Reports│
+     │                    │DECISIONS│  (not just data)
      │                    └────┬────┘
      │                         │
      └─────────────────────────┘
-           View Results
+          Operational Intelligence
 ```
 
 ---
 
-## Critical Readiness Items
+## Current Readiness: ~50% 🟡
+
+### ✅ Resolved
+- Lab Technician: **Tyson Bookout** (biosensor paper lead author)
+- Core Science: Peer-reviewed, 22/24 OSPW samples detected
+- Platform Infrastructure: Squarehead Foundry base exists
 
 ### 🔴 Must Resolve Before Pilot
-
-1. **Hire Lab Technician** → Owner: Jeff/Shawn
-2. **Build Customer Dashboard MVP** → Owner: Greg
-3. **Formalize Lab SOPs** → Owner: Shawn
-4. **Sample Metadata Capture Solution** → Owner: Jeff
-
-### Current Readiness: ~45%
+1. **Build Customer Dashboard MVP** → Owner: Greg
+2. **Formalize Lab SOPs** → Owner: Shawn/Tyson
+3. **Sample Metadata Capture Solution** → Owner: Jeff
 
 See [[04-Pilot-Readiness-Scorecard]] for full assessment.
 
@@ -74,25 +95,35 @@ See [[04-Pilot-Readiness-Scorecard]] for full assessment.
 | CEO / Customer Success | Jeff Violo | Commercial, customer relationship |
 | Lab Manager | Shawn Lewenza | Lab operations, biosensor science |
 | Platform Lead | Greg | Data platform, dashboard, integrations |
-| Lab Technician | TBD | Day-to-day lab processing |
+| Lab Technician | **Tyson Bookout** | Day-to-day lab processing (biosensor paper author) |
 
 ---
 
 ## Related Documents
 
+### Master Context
 - [[Luminous-Master-Context]] - Company positioning and messaging
 - [[Squarehead-Foundry-Master-Context]] - Commercial strategy
+
+### Research & Validation
+- [[sprint-01-upstream-optimization]] - $260k ROI analysis
+- [[sprint-02-remediation-landscape]] - Complexity gap analysis
+- [[sprint-04-confluent-value-map]] - Platform capabilities
+- [[Complete Kearl Wetland Report]] - Field validation data
+
+### Technical
 - Biosensor publication: `04-KNOWLEDGE/1-Technical-Docs/publications/Bookout et al/`
 
 ---
 
 ## Next Steps
 
-1. Review these documents with Shawn and Greg
-2. Validate process assumptions
-3. Make technology decisions (dashboard, field app)
-4. Create hiring plan for lab technician
-5. Develop timeline for pilot readiness
+1. ~~Create hiring plan for lab technician~~ ✅ Tyson confirmed
+2. Review these documents with Shawn and Greg
+3. Make technology decisions (dashboard: Metabase vs. custom)
+4. Make technology decisions (field app: Fulcrum vs. paper forms)
+5. Greg to estimate platform development effort
+6. Develop timeline for pilot readiness
 
 ---
 
@@ -101,4 +132,5 @@ See [[04-Pilot-Readiness-Scorecard]] for full assessment.
 | Version | Date | Author | Changes |
 |---------|------|--------|---------|
 | 1.0 | 2025-12-23 | Jeff Violo / Claude | Initial creation |
+| 1.1 | 2025-12-23 | Jeff Violo / Claude | Added Pilot Deliverables Framework, updated for Tyson, added Kearl insights |
 

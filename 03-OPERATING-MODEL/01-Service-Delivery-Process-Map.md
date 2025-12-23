@@ -20,11 +20,37 @@ This document defines the end-to-end service delivery process for Luminous BioSo
 
 | Attribute | Value |
 |-----------|-------|
-| **Service Name** | NA Biological Monitoring & Intelligence Service |
+| **Service Name** | NA Biological Monitoring & Operational Intelligence Service |
 | **Target Turnaround** | 24-72 hours from lab receipt to results in platform |
 | **Sampling Frequency** | Daily preferred (customer-dependent) |
 | **Deployment Model** | Zero-friction offsite lab (Calgary) |
-| **Output** | Dashboard with NA detection, concentration estimates, and trend correlation |
+| **Output** | Operational decisions, not just data (see [[05-Pilot-Deliverables-Framework]]) |
+
+---
+
+## The Value Shift: From "Monitoring" to "Operational Intelligence"
+
+**What we deliver is NOT:**
+- Just data points
+- Just a dashboard
+- Just reports
+
+**What we deliver IS:**
+- **Decisions they couldn't make before** (seasonal shutdown timing, spatial routing, refill recovery)
+- **Evidence for regulators** (immutable audit trail)
+- **Speed of learning** (compress 5 years into 18 months)
+
+### The Five Operational Scenarios (Validated from Kearl)
+
+| Scenario | The Decision Enabled | Annual Value |
+|----------|---------------------|--------------|
+| Seasonal Strategy | Operate 3 weeks longer (temperature-based, not calendar) | $104k |
+| Spatial Optimization | Route flow to high-performing cells (+26% capacity) | $78k |
+| Toxicity Validation | Reduce expensive bio-assays by 75% | $36k |
+| Refill Management | Resume outflow 7 days earlier per event | $14k |
+| Regulatory Reporting | Prove data integrity with immutable audit trail | $24k |
+
+See [[05-Pilot-Deliverables-Framework]] for full details.
 
 ---
 
