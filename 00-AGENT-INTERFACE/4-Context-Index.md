@@ -5,13 +5,13 @@
 > If you move a Master Context file, YOU MUST UPDATE THIS INDEX.
 
 ## 1. Strategy & Vision
-*   **Company Master Context:** `[[02-STRATEGY/0-MASTER-CONTEXT/Luminous-Master-Context]]`
-*   **Operational Intelligence:** `[[02-STRATEGY/0-MASTER-CONTEXT/Operational-Intelligence-Master-Context]]`
-*   **Fundraising Strategy:** `[[02-STRATEGY/0-MASTER-CONTEXT/Fundraising-Master-Context]]`
+*   **Company Master Context:** `[[00-AGENT-INTERFACE/2-Session-Memory/Luminous-Master-Context]]`
+*   **Operational Intelligence:** `[[00-AGENT-INTERFACE/2-Session-Memory/Squarehead-Foundry-Master-Context]]`
+*   **Fundraising Strategy:** `[[00-AGENT-INTERFACE/2-Session-Memory/Fundraising-Master-Context]]`
 
 ## 2. Product & Technology
-*   **Squarehead Foundry:** `[[03-PRODUCTS/2-Squarehead-Foundry/MASTER-CONTEXT]]`
-*   **Luminous Services:** `[[03-PRODUCTS/1-Luminous-Services/MASTER-CONTEXT]]`
+*   **Squarehead Foundry:** `[[00-AGENT-INTERFACE/2-Session-Memory/Squarehead-Foundry-Master-Context]]`
+*   **Luminous Services:** `[[00-AGENT-INTERFACE/2-Session-Memory/Website-Redesign-Master-Memory]]`
 
 ## 3. Brand & Tone
 *   **Style Guide:** `[[03-PRODUCTS/0-Brand-Identity/_STYLE-GUIDE]]`
@@ -27,6 +27,7 @@
 
 ## 5. Agent Memory (Long-Term Context)
 *   **Mentor Dynamics:** `00-AGENT-INTERFACE/2-Session-Memory/MEMORY-Mentor-Dynamics.md` (Strategy/User Manual for each mentor).
+*   **Website Redesign:** `00-AGENT-INTERFACE/2-Session-Memory/Website-Redesign-Master-Memory.md`
 *   **Archived Tickets:** `00-AGENT-INTERFACE/Z-Archive/` (Reference for completed outreach emails).
 
 ## 6. Directory Map

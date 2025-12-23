@@ -93,6 +93,10 @@ A: "We move you from 'Trust us' to 'Here is the proof.' Our infrastructure is bu
 - **Decision:** Pivot to "Operationalize your Science." We are the bridge between their Academic Pilots and Operations.
 - **Decision:** Emphasize "Complexity" over "Efficiency." The problem is the multivariate chaos of biology.
 - **Decision:** Add "The Glass Box" (Transparency) as a key closer for the Release Strategy.
+96: 
+97: **[2025-12-23] Memory Consolidation**
+98: - **Decision:** All "Master Context" and "Memory" files must live in `00-AGENT-INTERFACE/2-Session-Memory/` to facilitate a unified context loading point.
+99: - **Rule:** Never create "Master Context" files in strategy or product folders; keep the engine components centralized.
 
 ## SECTION 9: DEPRECATED APPROACHES
 

@@ -30,6 +30,6 @@ Located in `3-Prompt-Templates/`. Use these for specific recurring checks.
 ## Folder Structure
 *   `0-QUICK-START.md` (This file)
 *   `1-New-Tickets/` (Your Inbox for Agent tasks)
-*   `2-Session-Memory/` (The Agent's Memory)
+*   `2-Session-Memory/` (The Agent's Memory & Master Context files)
 *   `3-Prompt-Templates/` (Reusable tools)
 *   `4-Context-Index.md` (The Map of your Strategy)
