@@ -1,15 +1,38 @@
 # Luminous BioSolutions: Pilot Deliverables Framework
 
-**Version:** 1.0
+**Version:** 1.1
 **Created:** 2025-12-23
+**Updated:** 2025-12-23
 **Status:** 🟢 Active
-**Source:** Validated from Kearl Wetland Study (Vander Meulen et al. 2025)
+**Source:** Validated from Kearl Wetland Study (Vander Meulen et al. 2025), NA Workshop (July 2025)
 
 ---
 
 ## Purpose
 
-This document defines **what the customer actually receives** from a Luminous pilot. The output isn't just "monitoring data" - it's **operational intelligence that drives decisions**.
+This document defines **what the customer actually receives** from a Luminous pilot. The output isn't just "monitoring data" - it's **operational intelligence that drives decisions they couldn't make before**.
+
+---
+
+## The Core Insight: We Measure What Matters
+
+### Why Our Biosensor Data Is Different
+
+Traditional HRMS measures **total naphthenic acids** - everything in the sample. But total NAs are a poor proxy for what operators actually care about: **toxicity**.
+
+**The science:**
+- Toxicity degrades rapidly in wetlands
+- The **most hydrophobic NAs are most toxic** - and they degrade first
+- HRMS can't distinguish between toxic and degraded fractions
+
+**What our biosensor measures:**
+- **Bioavailable compounds** - what microbes can actually interact with
+- **Hydrophobic fraction** - the compounds that correlate with toxicity
+- Not "total NAs" but the **biologically relevant fraction**
+
+> **"We don't just measure NAs. We measure the NAs that matter."**
+
+This has been validated by HRMS specialists at the NA Workshop (July 2025) and aligns with Environment Canada's tiered monitoring recommendations.
 
 ---
 
@@ -27,9 +50,46 @@ This document defines **what the customer actually receives** from a Luminous pi
 
 ---
 
-## The Five Operational Scenarios
+## The Real Deliverable: Operational Intelligence Discovery
 
-These are the **specific decisions** a customer can make with Luminous that they cannot make without it. Each represents a validated use case from the Kearl Wetland Study.
+### What We're NOT Selling
+
+- ❌ A fixed set of 5 reports
+- ❌ A dashboard with pre-defined metrics
+- ❌ Confirmation of what they already know
+
+### What We ARE Selling
+
+- ✅ **All operational insights** enabled by unprecedented data density
+- ✅ **Discovery of unknowns** - patterns they didn't know to look for
+- ✅ **Data-driven decisions** that were previously impossible
+- ✅ **Speed of learning** - compress 5 years of pilots into 18 months
+
+### The Discovery Opportunity
+
+With 100+ data points per month (vs. 4 per year), **we don't know everything the pilot will reveal**. That's the point.
+
+**What we know for certain:**
+- We will see patterns invisible to quarterly sampling
+- We will correlate biosensor response to environmental variables in real-time
+- We will identify optimizations specific to their system
+
+**What we might discover:**
+- Spatial performance variations no one suspected
+- Seasonal windows more nuanced than temperature alone
+- Recovery dynamics unique to their wetland design
+- Correlation with variables they weren't tracking
+- Anomalies that trigger investigation (and prevent costly mistakes)
+
+> **"The pilot isn't just validation. It's exploration. We're turning on headlights in the dark."**
+
+---
+
+## Five Validated Scenarios (Examples, Not Limits)
+
+The following scenarios were validated in the Kearl Wetland Study. They represent **proven value**, not the complete set of possibilities. A pilot with higher-frequency sampling across more locations may reveal insights we can't anticipate today.
+
+These are the **specific decisions** a customer can make with Luminous that they cannot make without it.
 
 ---
 
@@ -145,22 +205,31 @@ These are the **specific decisions** a customer can make with Luminous that they
 
 ## Pilot Deliverables Summary
 
-### Monthly Deliverables
+### Continuous Deliverables
 
 | Deliverable | Format | Purpose |
 |-------------|--------|---------|
-| NA Detection Dashboard | Web dashboard | Real-time access to results |
-| Weekly Trend Report | Dashboard view | Pattern identification |
-| Monthly Summary | PDF + Call | Strategic discussion with stakeholder |
+| **Live Dashboard Access** | Web app | Real-time access to all results + correlations |
+| **Anomaly Alerts** | Email/notification | Immediate flag when something unusual happens |
+| **Weekly Pattern Updates** | Dashboard view | Emerging trends and correlations |
+| **Monthly Review Call** | Video + slides | Strategic discussion, insight synthesis |
 
 ### Pilot Completion Deliverables
 
 | Deliverable | Format | Value |
 |-------------|--------|-------|
-| **Readiness Baseline Report** | PDF | Regulatory asset for 2027 release |
-| **Operational Intelligence Package** | PDF + Data | Seasonal windows, spatial maps, recovery curves |
-| **ROI Validation Report** | PDF | Business case for expansion |
-| **Future Project Intelligence** | PDF | Treatment recommendations, monitoring optimization |
+| **Complete Data Package** | CSV + API | All biosensor results with full metadata |
+| **Operational Intelligence Report** | PDF | **All discovered patterns**, not just the 5 scenarios |
+| **Correlation Analysis** | PDF + Data | What variables drive performance in *their* system |
+| **Regulatory Readiness Package** | PDF + audit trail | Immutable evidence for 2027 release |
+| **Optimization Recommendations** | PDF | Specific, data-driven actions for their wetlands |
+| **ROI Validation** | PDF | Business case for expansion, based on actual findings |
+
+### The Key Difference
+
+Traditional monitoring delivers: **"Here's your data."**
+
+Luminous delivers: **"Here's what your data means, what it reveals about your system, and what you should do about it."**
 
 ---
 
@@ -203,6 +272,24 @@ To deliver these operational scenarios, we need:
 
 ---
 
+## Why Industry Needs This (NA Workshop Validation)
+
+The July 2025 NA Workshop (hosted by NAIT, attended by ECCC, Government of Alberta, InnoTech, university researchers, and commercial labs) identified critical needs that align with Luminous:
+
+| Industry Need | Current Pain | Luminous Solution |
+|---------------|--------------|-------------------|
+| **High-throughput screening** | HRMS can't process thousands of samples | Biosensor designed for scale |
+| **Tiered monitoring approach** | All samples get expensive analysis | Fast screen + targeted deep-dive |
+| **Standardization** | Mass Spec has poor inter-lab consistency | Biosensor is reproducible, simpler |
+| **Faster feedback** | 4+ week turnaround from HRMS labs | 24-72 hour turnaround |
+| **Toxicity indicator** | Total NAs ≠ toxicity | Biosensor measures bioavailable fraction |
+
+> **Workshop consensus:** "Use simple, fast methods for routine detection and advanced techniques for anomalies."
+
+That's exactly what we enable.
+
+---
+
 ## Success Criteria for Pilot
 
 ### Quantitative
@@ -219,9 +306,19 @@ To deliver these operational scenarios, we need:
 | Outcome | Evidence |
 |---------|----------|
 | Customer makes decision they couldn't make before | Documented decision + rationale |
-| Customer identifies optimization opportunity | Spatial, seasonal, or refill insight |
+| Customer discovers unexpected pattern | Insight they didn't anticipate |
+| Customer identifies optimization opportunity | Spatial, seasonal, refill, or novel insight |
 | Customer sees value for regulatory readiness | Feedback in review calls |
 | Customer requests expansion | Verbal or written indication |
+
+### Discovery Metrics
+
+| Outcome | Measurement |
+|---------|-------------|
+| # of correlations identified | Platform analytics |
+| # of anomalies flagged | Alert log |
+| # of novel insights (beyond 5 scenarios) | Monthly review notes |
+| Customer "aha moments" | Qualitative feedback |
 
 ---
 
@@ -243,9 +340,26 @@ For a 1-2 water body pilot, realistic scenario validation:
 
 ---
 
+## The Positioning Statement
+
+For conversations with prospects:
+
+> **"Your wetlands are a black box. You get 4 data points a year, and each one takes a month to come back. By the time you know something's wrong, the season's over.**
+>
+> **We turn on the lights. Our biosensor measures the biologically relevant fraction—the compounds that actually correlate with toxicity—and delivers results in 24-72 hours. But data alone isn't enough.**
+>
+> **Our platform correlates every reading with temperature, flow, depth, dosing, and your operational history. It finds patterns you didn't know to look for.**
+>
+> **The 5 scenarios we've validated from Kearl—seasonal optimization, spatial routing, toxicity targeting, refill recovery, regulatory evidence—those are examples. The real value is what we'll discover together.**
+>
+> **We're not selling you 5 reports. We're selling you the operational intelligence to make decisions you couldn't make before."**
+
+---
+
 ## Document History
 
 | Version | Date | Author | Changes |
 |---------|------|--------|---------|
 | 1.0 | 2025-12-23 | Jeff Violo / Claude | Initial creation from Kearl analysis |
+| 1.1 | 2025-12-23 | Jeff Violo / Claude | Reframed 5 scenarios as examples; added discovery opportunity; incorporated biosensor science (bioavailable fraction); added NA Workshop validation |
 
