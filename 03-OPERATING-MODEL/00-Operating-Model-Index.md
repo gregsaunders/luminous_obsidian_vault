@@ -104,12 +104,12 @@ See [[04-Pilot-Readiness-Scorecard]] for full assessment.
 
 ## Key Contacts
 
-| Role | Person | Responsibility |
-|------|--------|----------------|
-| CEO / Customer Success | Jeff Violo | Commercial, customer relationship |
-| Lab Manager | Shawn Lewenza | Lab operations, biosensor science |
-| Platform Lead | Greg | Data platform, dashboard, integrations |
-| Lab Technician | **Tyson Bookout** | Day-to-day lab processing (biosensor paper author) |
+| Role                   | Person            | Responsibility                                     |
+| ---------------------- | ----------------- | -------------------------------------------------- |
+| COO / Customer Success | Jeff Violo        | Commercial, customer relationship                  |
+| Lab Manager            | Shawn Lewenza     | Lab operations, biosensor science                  |
+| Platform Lead          | Greg              | Data platform, dashboard, integrations             |
+| Lab Technician         | **Tyson Bookout** | Day-to-day lab processing (biosensor paper author) |
 
 ---
 
