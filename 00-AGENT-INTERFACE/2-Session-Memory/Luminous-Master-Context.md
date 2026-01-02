@@ -1,8 +1,8 @@
 # Luminous BioSolutions: Master Context File
 
 Created: 2025-10-18
-Version: 1.5 (The "Discovery & Bioavailable Fraction" Update)
-Last Updated: 2025-12-23
+Version: 1.6 (The "BPMN Process Diagrams" Update)
+Last Updated: 2026-01-02
 Status: ✅ Active Master Context
 
 ## How to Use This Master Context
@@ -159,6 +159,23 @@ A: "We move you from 'Trust us' to 'Here is the proof.' Our infrastructure is bu
   - `05-Pilot-Deliverables-Framework.md` - Customer value definition
   - `06-Session-Summary-Operating-Model-Build.md` - Full session learnings
 
+**[2026-01-02] BPMN Process Diagrams Created** ⭐ MAJOR UPDATE
+- **Accomplished:** Created complete set of BPMN 2.0 XML diagrams for the entire NA Monitoring Service delivery process.
+- **Files Created:**
+  - `BPMN-01-Master-Orchestration.bpmn` - High-level orchestration showing all 6 phases with message flows
+  - `BPMN-02-Phase0-Service-Preparation.bpmn` - Onboarding, account setup, kit shipping
+  - `BPMN-03-Phase1-Sample-Collection.bpmn` - Customer sample collection procedures
+  - `BPMN-04-Phase2-Transport-Receipt.bpmn` - Courier transport, lab receipt, QC inspection
+  - `BPMN-05-Phase3-Lab-Analysis.bpmn` - Biosensor assay, data capture, LIMS processing
+  - `BPMN-06-Phase4-Platform-Processing.bpmn` - Data ingestion, correlation, trend analysis, alerting
+  - `BPMN-07-Phase5-Customer-Delivery.bpmn` - Notifications, reporting, monthly reviews
+- **Technical Decision:** Wiki links placed inside `<documentation>` elements (BPMN-safe, won't break XML parsing)
+- **Cross-Linking:** All BPMN files linked to each other (previous/next phase navigation) and to markdown docs
+- **Tools Validated:**
+  - Camunda Modeler: Views documentation in Properties Panel (links readable but not clickable)
+  - Obsidian: Enable "Detect all file extensions" to see .bpmn files in file explorer
+- **Value:** Complete visual process documentation that can be viewed in any BPMN 2.0 compliant tool
+
 **[2025-12-23] NA Workshop Insights (July 2025 workshop)**
 - Industry needs: High-throughput screening, tiered monitoring, standardization, faster feedback
 - Workshop consensus: "Use simple, fast methods for routine detection and advanced techniques for anomalies"
@@ -191,6 +208,15 @@ A: "We move you from 'Trust us' to 'Here is the proof.' Our infrastructure is bu
 - [[03-OPERATING-MODEL/04-Pilot-Readiness-Scorecard]] - Current gap assessment
 - [[03-OPERATING-MODEL/05-Pilot-Deliverables-Framework]] - Customer value definition
 - [[03-OPERATING-MODEL/06-Session-Summary-Operating-Model-Build]] - Full session learnings
+
+### BPMN Process Diagrams (NEW - Jan 2026)
+- [[03-OPERATING-MODEL/BPMN-01-Master-Orchestration]] - High-level 6-phase orchestration
+- [[03-OPERATING-MODEL/BPMN-02-Phase0-Service-Preparation]] - Onboarding & setup
+- [[03-OPERATING-MODEL/BPMN-03-Phase1-Sample-Collection]] - Customer sample collection
+- [[03-OPERATING-MODEL/BPMN-04-Phase2-Transport-Receipt]] - Transport & lab receipt
+- [[03-OPERATING-MODEL/BPMN-05-Phase3-Lab-Analysis]] - Biosensor analysis
+- [[03-OPERATING-MODEL/BPMN-06-Phase4-Platform-Processing]] - Platform correlation & alerting
+- [[03-OPERATING-MODEL/BPMN-07-Phase5-Customer-Delivery]] - Reporting & reviews
 
 ### Scientific Validation
 - **Bookout et al. 2024** (ACS Synthetic Biology) - Biosensor publication, Tyson is lead author
