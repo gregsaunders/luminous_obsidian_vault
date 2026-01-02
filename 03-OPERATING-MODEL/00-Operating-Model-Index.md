@@ -1,8 +1,8 @@
 # Luminous BioSolutions: Operating Model
 
-**Version:** 1.1
+**Version:** 1.3
 **Created:** 2025-12-23
-**Last Updated:** 2025-12-23
+**Last Updated:** 2025-12-30
 **Status:** 🟢 Active
 **Purpose:** Define how Luminous delivers Operational Intelligence for Water Release
 
@@ -30,6 +30,30 @@
 | Feedback in 4 weeks | **Feedback in 24-72 hours** |
 | Calendar-based decisions | **Evidence-based decisions** |
 | "Trust us" to regulators | **"Here's the proof"** (immutable audit trail) |
+| Manual regulatory reporting | **Auto-generated AER & stakeholder reports** |
+
+---
+
+## Proof from the Field: Kearl Wetland Pilot
+
+The Kearl wetland study validates that high-frequency biosensor monitoring enables decisions that were previously impossible:
+
+### Detection Reliability
+- **22 of 24 OSPW samples** correctly identified as NA-positive (92% accuracy)
+- Biosensor distinguished between OSPW-affected and reference waters with high confidence
+- Detection range: 1.5 - 15 mg/L depending on NA type
+
+### Correlations Discovered
+| Finding | Operational Implication |
+|---------|------------------------|
+| **Temperature-toxicity correlation** | NA bioavailability drops below 15°C → extend operating season by 3 weeks |
+| **Spatial performance variance** | Cell 4 outperformed Cell 3 by 26% → route flow to high performers |
+| **Seasonal patterns** | Predictable NA dynamics across freeze/thaw cycles → proactive management |
+
+### The Key Insight
+> Without high-frequency monitoring, operators make decisions based on calendar dates and gut feel. With Luminous, they make decisions based on **real-time evidence** of what's actually happening in the water.
+
+See [[Complete Kearl Wetland Report]] for full study data.
 
 ---
 
@@ -53,7 +77,9 @@ The following are **proven value** from Kearl, not the complete set of possibili
 | **Toxicity Validation** | Reduce expensive bio-assays by 75% | $36k |
 | **Refill Management** | Resume outflow 7 days earlier per event | $14k |
 | **Regulatory Reporting** | Prove data integrity with Glass Box audit trail | $24k |
-| **TOTAL (validated)** | | **$260k/year** |
+| **AER Compliance** | Auto-generate regulator-ready reports | Staff time savings |
+| **Indigenous Engagement** | Visual reports for community stakeholders | Relationship value |
+| **TOTAL (validated)** | | **$260k/year+** |
 | **+ Unknown insights** | Patterns only visible with high-frequency data | **TBD** |
 
 > **"The pilot isn't just validation. It's exploration. We're turning on headlights in the dark."**
@@ -104,12 +130,12 @@ See [[04-Pilot-Readiness-Scorecard]] for full assessment.
 
 ## Key Contacts
 
-| Role                   | Person            | Responsibility                                     |
-| ---------------------- | ----------------- | -------------------------------------------------- |
-| COO / Customer Success | Jeff Violo        | Commercial, customer relationship                  |
-| Lab Manager            | Shawn Lewenza     | Lab operations, biosensor science                  |
-| Platform Lead          | Greg              | Data platform, dashboard, integrations             |
-| Lab Technician         | **Tyson Bookout** | Day-to-day lab processing (biosensor paper author) |
+| Role             | Person            | Responsibility                                     |
+| ---------------- | ----------------- | -------------------------------------------------- |
+| Customer Success | Jeff Violo        | Commercial, customer relationship                  |
+| Science Lead     | Shawn Lewenza     | Lab operations, biosensor science                  |
+| Platform Lead    | Greg              | Data platform, dashboard, integrations             |
+| Lab Technician   | **Tyson Bookout** | Day-to-day lab processing (biosensor paper author) |
 
 ---
 
@@ -148,4 +174,5 @@ See [[04-Pilot-Readiness-Scorecard]] for full assessment.
 | 1.0 | 2025-12-23 | Jeff Violo / Claude | Initial creation |
 | 1.1 | 2025-12-23 | Jeff Violo / Claude | Added Pilot Deliverables Framework, updated for Tyson, added Kearl insights |
 | 1.2 | 2025-12-23 | Jeff Violo / Claude | Added scientific advantage (bioavailable fraction); reframed 5 scenarios as examples not limits |
+| 1.3 | 2025-12-30 | Jeff Violo / Claude | Added "Proof from the Field" section with Kearl evidence; added AER/Indigenous reporting to value scenarios; enhanced value proposition table |
 
