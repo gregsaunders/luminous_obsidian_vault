@@ -1,6 +1,6 @@
 # Luminous BioSolutions: Operating Model
 
-**Version:** 1.4
+**Version:** 1.5
 **Created:** 2025-12-23
 **Last Updated:** 2026-01-02
 **Status:** 🟢 Active
@@ -19,6 +19,7 @@
 | 05 | [[05-Pilot-Deliverables-Framework]] | Operational intelligence deliverables (5 validated scenarios + discovery) | 🟢 v1.1 |
 | 06 | [[06-Session-Summary-Operating-Model-Build]] | Session learnings and decisions | 🟢 v1.0 |
 | 07 | [[07-Strategic-Capabilities]] | Competitive advantages: Science, Technology, Commercial (investor-facing) | 🟢 v1.0 |
+| 08 | [[08-Operator-Value-Proposition]] | Customer-facing positioning for oil sands operators | 🟢 v1.0 |
 
 ---
 
@@ -178,4 +179,5 @@ See [[04-Pilot-Readiness-Scorecard]] for full assessment.
 | 1.2 | 2025-12-23 | Jeff Violo / Claude | Added scientific advantage (bioavailable fraction); reframed 5 scenarios as examples not limits |
 | 1.3 | 2025-12-30 | Jeff Violo / Claude | Added "Proof from the Field" section with Kearl evidence; added AER/Indigenous reporting to value scenarios; enhanced value proposition table |
 | 1.4 | 2026-01-02 | Jeff Violo / Claude | Added Strategic Capabilities document (07); added Session Summary (06) to index |
+| 1.5 | 2026-01-02 | Jeff Violo / Claude | Added Operator Value Proposition document (08) for customer-facing positioning |
 
