@@ -1,0 +1,231 @@
+Speaker 1  0:04  
+Let me start by claiming what are the purpose? What are the two things that measurements are supposed to do. One is to be the indicators of where we are so we know where to go. It's like the indicators on the panels of the aeroplane on the car. But that's by itself is not enough. We have to realize that we are dealing here with human based organizations and
+
+Unknown Speaker  0:31  
+number one,
+
+Speaker 1  0:35  
+in terms of power to impact behavior, are the measurements. I've already quoted myself when I said tell me how you measure me and I will tell you how will behave. Measure me in an illogical way. Don't complain. On my Illogical Behavior. In other words, measurements must be put in such a way that they induce the parts to do what is good for the company as a whole. This concept I will use all the time in order to evaluate whether or not we are choosing the right measurements. So the most important concept in measure for me is measurements must induce the parts to do what's good for the company as a whole. If I see a measurement that means immediately I'm looking what behavior does it trigger and if it triggers behavior, we jeopardize the performance of the system as a whole. This means the measurement is wrong on the spot. If we're looking in the realm of many measurements, we have to realize the following. We have one set of measurements that are measuring the performance of a company as a whole. This is called the financial measurements. The net profit as measured by the profit and loss statement, the return investment as measured by the balance sheet. And that's quite good. Yes, there are some small distortions, some things that can be fixed. But we don't have a real problem with definitional measurements. The problem starts when we are not measuring the company as a whole, but we start to dive inside. And then there are two sections that we have to measure one section is the section of the policies of making decisions. The other one is a section of the execution. Once the policies are set. How do people execute relative to these measurements? These policies and here we are facing a deserted area? Whatever we have there is based on cost accounting. And cost accounting is the epitome of local optimum. So we don't have good measurements in terms of decisions and we don't have good measurements in terms of execution. I realized that we have to attack this measurements based on local optima of cost accounting already in 83. I came out with a presentation entitled cost accounting public enemy number one productivity. To my amazement, the financial community, the CFOs was cheering. They got zero opposition from them. Oh, that question was, what do we do instead? But zero positions or positions that they've got was from the operational people the one who really believes in cost accounting. It says there is no financial person, controller, CFO that believes in cost accounting. He knows to what extent they can massage the numbers to do whatever he wants.
+
+Unknown Speaker  3:49  
+Thank God that this war
+
+Unknown Speaker  3:52  
+did not last for long due to mainly
+
+Speaker 1  3:56  
+Professor Kaplan and Johnson from Harvard that they've published in 85. If I'm not mistaken, the book called The Rise and Fall of management accounting, and they slotted cost accounting. After that for three years the incidence of management accounting ever ranged conferences, where Bob Kaplan myself has switched every hour on the podium, fighting like mad dogs. We didn't fight over the fact that cost accounting is wrong. We fought on what should replace it and we will talk in terms of decision making. I was talking about throughput accounting. Bob Kaplan was talking about activity based costing. A throughput accounting is known to everyone that they've read the goal and this is you measure every decision based on its impact on throughput on investment or inventory, and operating expense. And there is always a way to see very quick, very quickly and very nicely what is the impact of your decision on each one of these three items. And by that you can make a decision. This is called throughput accounting, even though the name itself was coined. In the early 90s, a captain was talking about activity based costing after about three years. We stopped to debate simply because I think that we've reached a modus vivendi Professor Johnson, for example, have put it in public, in his writing, claiming that activity based costing is like rearranging the chairs on the deck of Titanic. I think that the war is over and throughput accounting is winning big now. Everywhere even though activity based costing was very attractive to the consultants, because we have to do much more work in order to establish activity based costing even though the end result is as wrong as cost accounting itself.
+
+Unknown Speaker  5:53  
+Well, this is only my opinion.
+
+Speaker 1  5:56  
+The problem shifted because of it. To what do you do in terms of the measurements, especially on the execution level? And Bob Kaplan, came, by the way, Bob Kaplan Myers is one of the brightest persons that ever met and talked with and he has a vast amount of experience. That's not something that you expect from a professor. So, he has all my respect.
+
+Unknown Speaker  6:22  
+Even like him.
+
+Speaker 1  6:26  
+He came with a brilliant idea of a suggested solution, which is became known in the market as the balance scorecard. When he showed it to me, I said, Bob, you're wrong. And he said, fine, everything's that I'm saying you are clearly you're claiming that I'm wrong. But why? And besides, I haven't finished yet to show you what I have. And you already claimed that it's wrong. And I said, Bob, I've seen enough and I'm not interested in the details. My problem is that we are dealing with human beings. And as long as we are dealing with human beings, we have to realize that if you are judging a person, by more than five measurements, you are creating anarchy. Simply because if it is more than five measurements, the person can do whatever he wants, and Bisco hired one of them more than his boss, if you just want it can nail him on some measurements that he didn't do correctly. So more than five measurements is conceptually wrong. And it's a balanced scorecard. So he already almost 20 so something must be wrong. So Bob, we've asked, so what is your answer? And I said, I don't have any. But this does not mean that you're right. It took me some more years to realize that the solutions that I was offering for production called the Validate solution, and I dropped it because once you have buffer management you don't need it is actually the generic solution. And it's essential in order to synchronize between different silos, and it's mandatory if we want our supply chains to work. So let's talk a little bit more about that. I'm not talking about decisions, because here I believe that the public domain has all the answers and there is so many books on throughput accounting already, so there is no point in wasting your time about that. And if you read the goal, you have more than a glimpse, much better than a glimpse into it. I wrote more books about it. Many others have wrote about it. I want to talk about the things that there is nothing in the public domain, which is the execution measurements. In other words, how do we judge not the decisions, but the execution versus a given policies.
+
+Unknown Speaker  8:48  
+For that, what we have to realize is the following.
+
+Speaker 1  8:53  
+We are already at the stage where almost all the top managers of all the companies are very well aware that if they do not lead their company on a process of ongoing improvement, it just a matter of time until you don't have a company. This was not the case 20 years ago, I still remember trying to fight 20 years ago on this concept now it's common. Everybody knows it. If we bear in mind, that what we want is to induce people to continuously improve. What we have to ask ourselves is what should we concentrate on measuring when we are talking about execution? Should we concentrate on measuring
+
+Unknown Speaker  9:41  
+what is done properly?
+
+Speaker 1  9:44  
+Or should we concentrate on measuring what is not done properly? Since the initial reaction is let's concentrate on what is done properly, because that's what people likes. If I will come to you and said you've done it very well. You like me very much.
+
+Unknown Speaker  10:01  
+But let's face it,
+
+Speaker 1  10:04  
+if what I want is fast improvements I wanted by measured my measurements, I will trigger actions and the right actions from you. Even telling you what you've done is very nice. didn't trigger any action. Probably a kiss from your wife to you, that's all. So if I really want to trigger the actions in order for people to continue to fast improve, I have to remind myself that that's what I want not to win a popularity contest. And then in spite of our tendency, we have to realize we have to concentrate on what is not done properly on that we have to concentrate. Now how many different things there are that are not done properly. Oh, so many that's exactly where Bob Kaplan took the dive. Because I believe that up until now we've done exactly the same analysis. But then he started to categorize the things that are not done properly and ended up with 20 Plus, that's the balanced scorecard. So what we have to do is to stop here and to tell ourselves, wait a minute, I have to find a way to classify to categorize the things that are not done properly in such a way that I will not get more than five categories. The categories that I'm getting less than five should cover everything that is not done properly, and should have zero overlap. That's what I'm looking for.
+
+Unknown Speaker  11:30  
+Now, this is not a triviality.
+
+Speaker 1  11:34  
+And if you think more and more and more, you will find out that you will have to really dive deep enough to the generic way to get the answer and then of course, once you see the answer, it's so obvious. So let's give you that. But I want us to emphasize it took me years to reach it, simply because it's so simple. There are only two categories. The first one is things that should have been done, and we're not. And the other category is things that should not have been done, but nevertheless will them How do you like that? Only two categories covering everything zero overlap exactly what we want.
+
+Unknown Speaker  12:20  
+I felt,
+
+Unknown Speaker  12:22  
+you know, the first time that the role didn't say that, too trivial.
+
+Unknown Speaker  12:26  
+But then I started to realize, wait a minute.
+
+Speaker 1  12:30  
+This is probably correct. Because you see I have tremendous stress and people intuition and logic. And one of the ways that our logic and intuition experience is coming to fruition is through our language. And I found out Wait a minute, this is probably the correct car theorisation Because each one of them has a word that defined exactly that. What defines things that should have been done and we're not. But let's talk about positive rather than negative. So first of all the negative what things that should not have been done, that should have been done. And we're not if you are doing a lot of that you are unreliable. Correct. So if I'm looking on the positive side, its reliability. You see the word this is categorized by reliability the magnitude to which you are reliable. The more you're doing that, the more you are unreliable, or the less reliable you are. So here's the word Scott, what is that? Exactly? Well, I will tell the one things that should not have been done. But nevertheless, we're this is not laziness because you are doing things. So this has nothing to do with efficiency, because efficiency means how much do you sweat? How much do you work? This has nothing to do with it with what does it have to do with effectiveness? Things that should not have been done but nevertheless where it means you are effective. It's not that you are lazy, what you're doing is ineffective. So, this is measured by the level of effectiveness, the more of those that you do you are less effective. Lovely. So now I understood that my real problem is to six to find a proper mechanism to quantify, to put numbers on this elusive words. How do I put numbers on reliability? How do I put numbers on effectiveness? So because if I cannot put numbers I'm not measuring it. In order to do it, what I've said is the following. Let's look on each one of the categories. And let's ask ourselves, what is the end result? Of doing the things of this category in terms of a system as a whole? And can we express this end result not in a financial terms? Because let's face it, reliability and effectiveness are not things that our intuition immediately tells us that so ask yourself the following question, things that shouldn't have been done. But were not the end result of this category in terms of the whole company. What do you get as an end result?
+
+Unknown Speaker  15:29  
+And the answer is,
+
+Speaker 1  15:30  
+you do not fulfill the commitments to the external world. That would be the end result of it. Or in other words, you don't ship on time. Correct. Do we measure today's shipment on time of course, yes. We call it dudettes performance. We have many names for it. We are measuring how much we don't ship on every company, almost every company.
+
+Speaker 1  16:05  
+But what is the unit of measure that we're using? For example,
+
+Unknown Speaker  16:10  
+what is your due date performance?
+
+Speaker 1  16:15  
+And just notice what is coming out of your mouth. Our company do that performance is 95% 70% That's very bad. Oh, we are 99% It's very good. Even notice the unit of measure is percent is it's a proper Unit of Measure. Remember, what is our way to judge if something is proper or not? What behavior does it trigger? does it trigger behavior that is good for the company as a whole or not? So let's see. Suppose that I have to deliver this monster in orders.
+
+Unknown Speaker  16:54  
+And I've delivered nine
+
+Speaker 1  16:56  
+on time. Only one I missed what is my duty performance? And 2% Lovely oh by the way, the nine orders that they've delivered each one of them is $4,000. The ones that didn't deliver is $4 million.
+
+Unknown Speaker  17:15  
+I'm still 90%
+
+Speaker 1  17:19  
+but as long as this is the measurement, what behavior does it trigger? Which one is much more hard, difficult to meet on time, the biggie. So if I am just judged by percentages, I will sacrifice the big one in order to get higher percentage on this on the small ones. This is a behavior that we want. Definitely not which tells us immediately it must be the dollar value of the sale must be part of the reliability measurement. We cannot ignore it. So percentages wrong. But before we jump into the conclusion, say just dollars let's view to another angle. I was late on two hours. One I was late but one day one I was late May two months. And today's measurements it's the same. I was like the time is not a factor. Because it's percentages only. Is it really the same from the point of view of the impact on the company? The ones that I was liked by one one day the client probably didn't notice it. The ones that I was later on two months I don't have a client anymore. What do you mean that I will not consider the amount of times that I'm late into the measurement? I must be with that in mind. It's quite obvious how to measure reliability
+
+Unknown Speaker  18:46  
+and the equation is
+
+Unknown Speaker  18:48  
+reliability should be measured according to please
+
+Speaker 1  18:55  
+stop SUPL dollardays. This is the name of the measurement. And minute we'll see y equal to what the sales dollars of the orders that are late multiplied by the number of days that we are late and sum it up on all the late orders. That total is a measurement of your unreliability. As I call it, I call it throughput dollardays. Now for those of you who knows a little bit more on TOC, you know why I prefer throughput on sales? But it doesn't matter as long as you are consistent and use only triple dollars only sales dollars is the same. All the orders which are late. Take the sales dollars of the order which is late multiplied by the number of days that is late. Here you have the reliability.
+
+Unknown Speaker  19:50  
+That's your measurement.
+
+Speaker 1  19:54  
+Of course the problem is that we are now using a new unit of measure because this is not dollars and it's not the days it is talent days. And our intuition how much is $2 million days is at this stage zero.
+
+Unknown Speaker  20:13  
+So we'll have to take time to develop this intuition.
+
+Unknown Speaker  20:17  
+For example,
+
+Speaker 1  20:20  
+when I came first time in the States, I was in 32 years old. And of course I came first of all to Minneapolis in the winter. I was told that the temperature will be 20 degrees. I used to centigrade 20 degrees I brought a sweater it took me a long, long time until I stopped to convert through the formula from finally to centigrate in autofill it to know if it's hot or warm or mild. That's the times it takes to develop the intuition when you're switching Units of Measure. So what I'm recommending is at the beginning, calculate it in this way that when you are looking on it divided by some large number in order that the number will come between zero and 10. So it's an indicator people understand very well what is indicators. So you can then realize if you become worse or better from one period to the other, at the same time have the real numbers so that your intuition about what's the meaning of these numbers will start to develop. I believe that within one year, we'll get this intuition and then we can compare different departments or different companies. And we don't understand if it's big or small. So this is the answer for reliability. What about inventory? Let's go back. Let's go back to the definition what what did we say things that should not have been done, but nevertheless were and let's ask ourselves the same question. What is the end result of doing such things in the system as a whole? And give me please the answer not in financial terms. If we are doing things that we shouldn't do now,
+
+Unknown Speaker  22:05  
+what is the end result?
+
+Unknown Speaker  22:08  
+Inventory.
+
+Speaker 1  22:09  
+We are creating inventory because we have done things too early. Now it has to wait. Do we measure inventory? Of course we do. But let's look at how we do it. For example, there are many companies that have finished goods inventories and when you go to such a company you ask how much finished goods inventory Do you have? You're getting two different answers. Some people will tell you we have $6 million finished goods inventory. Other people will tell you we have about 60 days inventory. And by the way, you will hear it many times from the same person even. In other words, intuition is strong. Enough to tell us that when we are talking about effectiveness, when we are talking about these type of things, both dollars and time are important. But how should we measure it correctly? Because let's face it, you know what's the meaning of most companies? We have about 60 days of finished goods inventory. The meaning is that for some products, we don't have anything and from other products we have enough for our grandchildren and this is called about 60 days. And then of course if the pressure is reduced inventory then of course we are using the big bulk which is the things that we need for tomorrow. And then of course by reducing inventory, we jeopardize customer service, because let's face it, the things that we have for our grandchildren, it's very easy, very hard to reduce. So we don't touch it. Even though it's the most important to reduce because we should change the culture so that the things we will not be created anymore. These things that for the grandchildren have been created. Because of what because a foreman wanted to save setup. Oh because a manager wanted to show high efficiencies. That's why we've created this monster of monsters mountains. So what should be the right way to measure things that we know that will induce the right behavior? For each piece of inventory that we're holding, let's look on the dollar value of the inventory. Let's multiply it by the number of days that we are holding it under our authority. The summation on all the inventory that's inventory dollardays And then this is done in this way. A foreman will never save set up on a non bottleneck by doing a large batch because the more the crime that is done, the bigger the inventory delta is that it creates and for the longer period they will have to carry it on his shoulders. So if we want effective measurements for each subsystem, we should use super Valerie's we should use inventory validates MSU use something more, which is local operating expense. That's the least important one because the changes there are the smallest local operating expense means all the expenses which are under the control of the sub unit that I measure, for example, the operating expense which are the salaries of your workers, the overtime, but for heaven's sake, let's not put on a plant. For example, the 6% of the computer department expenses which are in the headquarter Yes, he is a user of it, but what can you do in order to control costs? Nothing. You do not measure somebody on something that is not under his control because you cannot do anything about it. This is local operating expense so scrapped for example, comes under local operating expense. But what I'm interested in is not so much as a scrap I'm interested in something much much worse, which is the point of view of quality, for example, which is not scrap the quality that ruin your image in the client. Do we need it as another measurement? And my answer is no. That's the whole beauty of all this system. Look for example, I have delivered a defected product to my client, my client found about it three weeks down the road. And now he's telling me there is a problem in your in your product. This means what I have not delivered yet. As long as I don't fix it I haven't delivered, which means if I measured by SUPL dollardays I'm now carrying the selling price of this product multiply by all this time until I will correct it. That's a mountain of the holidays on my shoulders. Now, I will jump through hoops that I will find the quality before I'm shipping it rather than the client finding the quality is three weeks later. And a class is measurement give teeth toward them and you've tried to teach us all the time quality at the source. I don't need another measurement for it. The opposite is true if I use these measurements, now the quality is correct and the aspect of the quality which are important are correct. The things that ruins my name in the market becomes much more important than another half a percent scrap and it comes out beautifully in some measurements. And if you think about it, we'll see how these measurements are engulfing everything. So nicely and so simply. But I'm stressing these measurements because of something else.
+
+Unknown Speaker  27:42  
+I'm stressing this measurement
+
+Speaker 1  27:45  
+because I claim that they are the only thing that can really synchronize between silos and much more importantly, they are the only thing we can solve or put us on the right track to solve the problem of the supply chain.
+
+Unknown Speaker  28:06  
+I'm going to dive into it deeper, but I know
+
+Speaker 1  28:09  
+that you will have many questions for it. So I will try to give the last 10 minutes to answer questions. So any ones that have a question, use our connections and our telephone to bring the questions in. What I have about the supply chain is this craziness that goes now in the market that so many vendors are now telling you that if you just connect the computers and the computers of the various companies will be able to talk to each other then the supply chain will start to work. I was so crazy to believe in it. Don't you realize that the problem is the wrong rules. But what wrong rules the situation supply chain is, first of all, a much bigger problem to manage a supply chain than to manage one company and you have to realize it it's an order of magnitude more difficult. Problem.
+
+Unknown Speaker  29:05  
+Let me explain why claim it
+
+Speaker 1  29:08  
+in the company, one company whenever I see a clash between a local optima and the optimum of the company, in other words between local performance and the performance of the company as a whole I don't have any hesitation sacrifice a local performance, who cares? What we really care is only about the performance of the company as a whole. That's the only thing that counts, which means I'm looking for ways to increase the performance of the company as a whole and local performance have don't have any meaning as a standalone, they've only meaning in terms of supporting or not supporting the behavior of the company as a whole. But this is not the case when I'm dealing with a supply chain composed out of different companies. From one hand side. It's very important to improve the performance of the supply chain as a whole. Why?
+
+Unknown Speaker  30:02  
+Because more and more. The
+
+Speaker 1  30:05  
+battle in the market is shifting. And it's not anymore so much between individual companies. It's shifting to be the war, a battle between supply chains. And if you participate in supply chain that its performance are not much better than the opposing supply chain. It's not just that the supply chain will go down you will go down as well. So it's very important to try to improve the performance of the supply chain at the same time. If we see a companies that participate in the supply chain and take actions that just help the whole supply chain they hit their bottom line. The managers of this company should go to jail. You have to look for the bottom line of your own individual company. So the problem of managing the supply chain is a problem where you have to look on the global optimum, the optimum of the supply chain, but at the same time not on the expense of the local optima which is the performance of your own company. Both of them have to be achieved at the same time. That's why I claim this is an order of magnitude bigger problem. Now what we have to realize that in the supply chain, there is something that every top manager understand that it is a must that it is a master it is absolutely correct. Every top manager and at the same time the practice everywhere is the exact opposite. And that's a killer.
+
+Unknown Speaker  31:31  
+Let me show you what I mean.
+
+Unknown Speaker  31:35  
+In the supply chain what we have to realize is
+
+Speaker 1  31:39  
+as long as the end consumer did not buy nobody in the supply chain have actually sold then repeat it. As long as the end consumer did not buy. Nobody in the supply chain actually sold. Every top manager knows it. Some middle manager would say wait a minute, I've shipped to you. You've accepted it. I've sold the fact that you didn't get rid of it or you didn't sell it. It's your problem. That's also the case. Because look, if I sold to you, you are not the end consumer and you didn't sold it after that. What's the chance that he will continue to buy from me these things? Nothing, which means I've just blocked my pipeline into the market. Every top manager knows it as long as the end consumer did not buy nobody in the supply chain actually bought it actually sold. Nevertheless, what is the practice everywhere? One link in the supply chain one company's supply chain ship to the other company that the company accepted it bingo we made the sale
+
+Unknown Speaker  32:45  
+the exact opposite.
+
+Speaker 1  32:47  
+Due to this distortion, these enormous amount of conflict setup pupping these conflicts give rise to enormous distrust. We have to understand when we start with the supply chain we are not starting from heaven. We are not starting even from zero the relationship between the companies participating whether or not you like it is relationship of not exactly flourishing trust. You agree
+
+Speaker 1  33:14  
+Thank you. So what do we do?
+
+Unknown Speaker  33:22  
+You I'm sorry about that. We'll have to quote myself.
+
+Speaker 1  33:26  
+So here's a quote from one of my books. Trust is nice, as long as the measurements that serve as a watchdog. That measurements is serve the watchdog exactly what you do now I trust you.
+
+Unknown Speaker  33:42  
+What are these measurements?
+
+Unknown Speaker  33:44  
+What measurements can we use
+
+Speaker 1  33:46  
+in order to start the improvement in the supply chain because remember, I cannot trust
+
+Unknown Speaker  33:56  
+both measurements let's see.
+
+Unknown Speaker  33:58  
+I'm your supplier
+
+Speaker 1  34:02  
+you are measuring me and you will know very well. That many times when I do not deliver on time the damage that I will create to you is much bigger than if I will give you 2% reduction on my price. Nevertheless, what is number one criteria. In choosing a vendor today
+
+Unknown Speaker  34:21  
+you will know its price.
+
+Speaker 1  34:24  
+Even though we know that in so many places reliability is by far more important than price. By phone because of damage that they can create to you when I'm not reliable is by far bigger than any price reduction. Which means if you want to work with me and I'm your supplier, you actually have to measure my reliability. And as long as you don't measure it of course, the things that you do measure which is price will become dominant as it is now you must measure reliability. What is the meaning of reliability? We know already. Let's look on it. Reliability, how was it measured? Remember, triple dial this okay. Go back to the equation of this triple dollardays Look on it. What was it? It was summation of the sales price. What sells price. What sells price here? I am giving that to you supposed to I didn't deliver on time. Okay. The sales price that goes into this equation when you measure me is not surprised that you have to pay for this but the price of the system that is now jeopardized that is now exposed the one that you might not ship on time. That's the sales dollars multiplied by how many days I didn't supply to you. And if you do measure me in this way, and I know that when I'm exaggerating your replacement, because you know how much damage I've just brought to you. Okay, and you are measuring all those other suppliers in this way. But if you measure me in this way, and you give me the measurement every day, I don't need expediting. I don't need your phone calls anymore. Because look, here are two things that for me looks the same, the metaphoric I'm doing it on the same machines. It takes about the same time. One is going into systems that you sell for $100. Another one is going to systems that you sell for $10,000. And I didn't deliver any one of them on time. If you just measure me by dollardays You don't have to say well, I know which one I should expedite. I know which one is more important for the supply chain. Do you understand how beautiful it is? But wait, that's not enough for me. You're telling me that you need that amount in this day and that amount on that day, and I'm jumping through hoops and I'm delivering you on time and then when I came to visit you What do I find? The things that I jumped through hoops a month ago are still in your place gathering dust. Thank you very much. In other words, it's not just that you have to measure your supplier you have to give something back. You want to supply we'll take your demands and your due dates really seriously. You have to provide the measurement on you to your supplier. What I want to measure you whether or not when you are ordering things and dictate to me quantities and dates. You are really effective in that that you are not just covering your real things by event something. How do you measure it? You tell me everything that I supply to you. Okay, the dollar value of what is supplied to you, which is the selling price between us, multiplied by the number of days until you sold it as a part of a bigger system. But you tell me every piece of inventory that you buy, takes these dollars multiplied by the number of days until you sold it to the next link out to the market. If I see that your inventory dollars are small, I know to really respect your request and I will jump through hoops. But if your inventory doubt is going through the roof, I don't care what you measure means triple down this. Look what is happening. The one company is measuring its suppliers by triple dollardays But in return the suppliers are measuring the company by inventory dial this now we close the loop. Now we can start to talk about trust that's essential in order to synchronize the whole thing.
+
+Unknown Speaker  38:34  
+That's the key to reach much better
+
+Unknown Speaker  38:37  
+supply chain
+
+Speaker 1  38:42  
+this is the central thing. You do that. Now we can move. The joke is unbelievable joke. All the data which is needed to do this calculation is already captured. There isn't any company that doesn't capture the transactions to the company. And from the company. What is missing badly is a software to do it. I am unaware of any commercially available software yet to do it. And I remember that but I am aware is so much hype about the supply chain.
+
+Unknown Speaker  39:13  
+For heaven's sake.
+
+Speaker 1  39:16  
+Let's start to think and let's start to demand the real things from the suppliers
+
+Unknown Speaker  39:22  
+because if you will not demand it who will?
+
+Unknown Speaker  39:30  
+Look
+
+Speaker 1  39:36  
+what we know now is
+
+Speaker 1  39:40  
+that if we want to want if we want to really get benefits from the enormous power that the ERP systems are providing us enormous power. We have at the same time to change the rules the local optima rules into the holistic rules. We know that the change process of even putting in new technology is not simple.
+
+Unknown Speaker  40:10  
+But now we know
+
+Speaker 1  40:12  
+the real change is not to change the culture, but to change the rules. And these rules are not just rules written somewhere in headquarter. These rules are the culture
+

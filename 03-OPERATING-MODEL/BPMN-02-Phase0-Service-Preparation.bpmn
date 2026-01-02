@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
+             xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+             xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC"
+             xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             id="Definitions_Phase0"
+             targetNamespace="http://luminousbiosolutions.com/bpmn/na-monitoring"
+             exporter="Luminous BioSolutions"
+             exporterVersion="1.0">
+
+  <!-- ============================================================ -->
+  <!-- PROCESS: Phase 0 - Service Preparation (Detailed)            -->
+  <!-- ============================================================ -->
+  <process id="Process_Phase0_ServicePreparation" name="Phase 0: Service Preparation" isExecutable="false">
+    <documentation>
+      Luminous BioSolutions NA Monitoring Service
+      Phase 0: Service Preparation - Detailed Process
+
+      This process covers all internal preparation required before samples can be
+      collected, processed, and analyzed. Triggered by customer contract signature.
+
+      Owner: Luminous Operations
+      Location: Calgary Lab / Operations
+
+      Reference: [[01-Service-Delivery-Process-Map]] - Phase 0
+      Master Diagram: [[BPMN-01-Master-Orchestration]]
+      Next Phase: [[BPMN-03-Phase1-Sample-Collection]]
+
+      Related: [[02-Roles-and-Responsibilities]] | [[03-Technology-Requirements]]
+
+      Version 1.1 | Created: 2026-01-01
+    </documentation>
+
+    <!-- Start Event -->
+    <startEvent id="Event_Start" name="Customer Contract Signed">
+      <documentation>Customer has signed contract, triggering service preparation</documentation>
+    </startEvent>
+
+    <!-- Task 0.1: Design Barcode Schema -->
+    <task id="Task_DesignBarcodeSchema" name="Design Barcode Schema">
+      <documentation>
+        Design customer-specific barcode schema.
+
+        Schema format: [CustomerID]-[WaterBodyID]-[KitBatch]-[Container#]-[CheckDigit]
+        Example: KEA-04-0001-001-7
+
+        Input: Customer requirements, water body count
+        Output: Barcode specification document
+        Responsible: Operations
+      </documentation>
+    </task>
+
+    <!-- Task 0.2: Generate Barcodes -->
+    <task id="Task_GenerateBarcodes" name="Generate Unique Barcodes">
+      <documentation>
+        Generate barcodes for sample containers using barcode generator.
+
+        Format options:
+        - Code 128: High density, alphanumeric, widely supported (Primary)
+        - QR Code: More data capacity, smartphone compatible (Backup)
+
+        Input: Barcode spec, quantity needed
+        Output: Printed barcode labels
+        Responsible: Operations
+        Tool: Barcode generator + label printer
+      </documentation>
+    </task>
+
+    <!-- Task 0.3: Procure Containers -->
+    <task id="Task_ProcureContainers" name="Procure Sample Containers">
+      <documentation>
+        Procure/prepare sample containers.
+
+        Specification: 125mL HDPE, sterile, wide-mouth
+        (Minimum 100mL required - confirm with Shawn)
+
+        Input: Container specs, quantity
+        Output: Sterile containers ready
+        Responsible: Lab Tech
+        Tool: Supplier / sterilization
+      </documentation>
+    </task>
+
+    <!-- Task 0.4: Apply Labels -->
+    <task id="Task_ApplyLabels" name="Apply Barcode Labels">
+      <documentation>
+        Apply barcode labels to sample containers.
+
+        Quality requirement: Labels must be scannable, durable, waterproof
+
+        Input: Labels, containers
+        Output: Labeled containers
+        Responsible: Lab Tech
+        Tool: Manual application
+      </documentation>
+    </task>
+
+    <!-- Task 0.5: Pre-Register Barcodes -->
+    <task id="Task_PreRegisterBarcodes" name="Pre-Register Barcodes in Platform">
+      <documentation>
+        Upload barcode manifest to platform.
+
+        Links barcodes to:
+        - Customer account
+        - Expected sample locations (water bodies)
+        - Kit batch information
+
+        Input: Barcode batch list
+        Output: Barcodes active in system
+        Responsible: Operations
+        Tool: Platform admin interface
+      </documentation>
+    </task>
+
+    <!-- Task 0.6: Assemble Kits -->
+    <task id="Task_AssembleKits" name="Assemble Sample Collection Kits">
+      <documentation>
+        Assemble complete sample collection kits.
+
+        Kit contents:
+        - Sample containers (10-20, pre-labeled with barcodes)
+        - Insulated cooler (24hr cold retention, reusable, branded)
+        - Ice packs (2-4, gel-based, reusable)
+        - Sampling instructions (laminated, waterproof)
+        - Chain of custody form (paper + digital option)
+        - Return shipping label (pre-paid, pre-addressed)
+        - Sampling gloves (5 pairs, nitrile, disposable)
+
+        Input: All kit components
+        Output: Complete sample kits
+        Responsible: Operations
+        Tool: Kit assembly SOP
+      </documentation>
+    </task>
+
+    <!-- Task 0.7: QC Check Kits -->
+    <task id="Task_QCKits" name="QC Check Assembled Kits">
+      <documentation>
+        Quality control check on assembled kits.
+
+        Checklist:
+        - [ ] Correct number of containers
+        - [ ] All barcodes scan correctly (100% test)
+        - [ ] Labels readable and secure
+        - [ ] All materials present per checklist
+        - [ ] Cooler integrity verified
+        - [ ] Instructions included
+
+        Input: Assembled kits
+        Output: QC-approved kits
+        Responsible: Lab Tech / Operations
+        Tool: Kit checklist
+      </documentation>
+    </task>
+
+    <!-- Gateway: QC Pass? -->
+    <exclusiveGateway id="Gateway_QCPass" name="QC Pass?">
+      <documentation>Decision point: Did the kit pass QC inspection?</documentation>
+    </exclusiveGateway>
+
+    <!-- Task: Rework Kit -->
+    <task id="Task_ReworkKit" name="Rework Kit">
+      <documentation>
+        Fix issues identified during QC check.
+        Replace missing/defective items and re-assemble.
+      </documentation>
+    </task>
+
+    <!-- Task 0.8: Ship Kits -->
+    <task id="Task_ShipKits" name="Ship Kits to Customer Site">
+      <documentation>
+        Ship QC-approved kits to customer site.
+
+        Courier options: Purolator, FedEx
+        Include tracking number
+
+        Input: Approved kits, shipping address
+        Output: Kits in transit
+        Responsible: Operations
+        Tool: Courier service
+      </documentation>
+    </task>
+
+    <!-- Task 0.9: Confirm Receipt -->
+    <task id="Task_ConfirmReceipt" name="Confirm Kit Receipt with Customer">
+      <documentation>
+        Confirm customer has received the sample collection kit.
+
+        Methods: Email, phone call
+        Document: Date/time received, condition, any issues
+
+        Input: Tracking confirmation
+        Output: Customer acknowledges receipt
+        Responsible: Customer Success
+        Tool: Email / phone
+      </documentation>
+    </task>
+
+    <!-- End Event -->
+    <endEvent id="Event_End" name="Service Preparation Complete">
+      <documentation>Kit received by customer, ready for sample collection (Phase 1)</documentation>
+    </endEvent>
+
+    <!-- Sequence Flows -->
+    <sequenceFlow id="Flow_1" sourceRef="Event_Start" targetRef="Task_DesignBarcodeSchema"/>
+    <sequenceFlow id="Flow_2" sourceRef="Task_DesignBarcodeSchema" targetRef="Task_GenerateBarcodes"/>
+    <sequenceFlow id="Flow_3" sourceRef="Task_GenerateBarcodes" targetRef="Task_ProcureContainers"/>
+    <sequenceFlow id="Flow_4" sourceRef="Task_ProcureContainers" targetRef="Task_ApplyLabels"/>
+    <sequenceFlow id="Flow_5" sourceRef="Task_ApplyLabels" targetRef="Task_PreRegisterBarcodes"/>
+    <sequenceFlow id="Flow_6" sourceRef="Task_PreRegisterBarcodes" targetRef="Task_AssembleKits"/>
+    <sequenceFlow id="Flow_7" sourceRef="Task_AssembleKits" targetRef="Task_QCKits"/>
+    <sequenceFlow id="Flow_8" sourceRef="Task_QCKits" targetRef="Gateway_QCPass"/>
+    <sequenceFlow id="Flow_9" name="Yes" sourceRef="Gateway_QCPass" targetRef="Task_ShipKits"/>
+    <sequenceFlow id="Flow_10" name="No" sourceRef="Gateway_QCPass" targetRef="Task_ReworkKit"/>
+    <sequenceFlow id="Flow_11" sourceRef="Task_ReworkKit" targetRef="Task_QCKits"/>
+    <sequenceFlow id="Flow_12" sourceRef="Task_ShipKits" targetRef="Task_ConfirmReceipt"/>
+    <sequenceFlow id="Flow_13" sourceRef="Task_ConfirmReceipt" targetRef="Event_End"/>
+  </process>
+
+  <!-- ============================================================ -->
+  <!-- BPMN DIAGRAM (Visual Layout)                                 -->
+  <!-- ============================================================ -->
+  <bpmndi:BPMNDiagram id="BPMNDiagram_Phase0">
+    <bpmndi:BPMNPlane id="BPMNPlane_Phase0" bpmnElement="Process_Phase0_ServicePreparation">
+
+      <!-- Start Event -->
+      <bpmndi:BPMNShape id="Shape_Event_Start" bpmnElement="Event_Start">
+        <omgdc:Bounds x="180" y="200" width="36" height="36"/>
+      </bpmndi:BPMNShape>
+
+      <!-- Task 0.1 -->
+      <bpmndi:BPMNShape id="Shape_Task_DesignBarcodeSchema" bpmnElement="Task_DesignBarcodeSchema">
+        <omgdc:Bounds x="270" y="178" width="100" height="80"/>
+      </bpmndi:BPMNShape>
+
+      <!-- Task 0.2 -->
+      <bpmndi:BPMNShape id="Shape_Task_GenerateBarcodes" bpmnElement="Task_GenerateBarcodes">
+        <omgdc:Bounds x="420" y="178" width="100" height="80"/>
+      </bpmndi:BPMNShape>
+
+      <!-- Task 0.3 -->
+      <bpmndi:BPMNShape id="Shape_Task_ProcureContainers" bpmnElement="Task_ProcureContainers">
+        <omgdc:Bounds x="570" y="178" width="100" height="80"/>
+      </bpmndi:BPMNShape>
+
+      <!-- Task 0.4 -->
+      <bpmndi:BPMNShape id="Shape_Task_ApplyLabels" bpmnElement="Task_ApplyLabels">
+        <omgdc:Bounds x="720" y="178" width="100" height="80"/>
+      </bpmndi:BPMNShape>
+
+      <!-- Task 0.5 -->
+      <bpmndi:BPMNShape id="Shape_Task_PreRegisterBarcodes" bpmnElement="Task_PreRegisterBarcodes">
+        <omgdc:Bounds x="870" y="178" width="100" height="80"/>
+      </bpmndi:BPMNShape>
+
+      <!-- Task 0.6 -->
+      <bpmndi:BPMNShape id="Shape_Task_AssembleKits" bpmnElement="Task_AssembleKits">
+        <omgdc:Bounds x="1020" y="178" width="100" height="80"/>
+      </bpmndi:BPMNShape>
+
+      <!-- Task 0.7 -->
+      <bpmndi:BPMNShape id="Shape_Task_QCKits" bpmnElement="Task_QCKits">
+        <omgdc:Bounds x="1170" y="178" width="100" height="80"/>
+      </bpmndi:BPMNShape>
+
+      <!-- Gateway: QC Pass -->
+      <bpmndi:BPMNShape id="Shape_Gateway_QCPass" bpmnElement="Gateway_QCPass" isMarkerVisible="true">
+        <omgdc:Bounds x="1320" y="193" width="50" height="50"/>
+      </bpmndi:BPMNShape>
+
+      <!-- Task: Rework -->
+      <bpmndi:BPMNShape id="Shape_Task_ReworkKit" bpmnElement="Task_ReworkKit">
+        <omgdc:Bounds x="1170" y="320" width="100" height="80"/>
+      </bpmndi:BPMNShape>
+
+      <!-- Task 0.8 -->
+      <bpmndi:BPMNShape id="Shape_Task_ShipKits" bpmnElement="Task_ShipKits">
+        <omgdc:Bounds x="1420" y="178" width="100" height="80"/>
+      </bpmndi:BPMNShape>
+
+      <!-- Task 0.9 -->
+      <bpmndi:BPMNShape id="Shape_Task_ConfirmReceipt" bpmnElement="Task_ConfirmReceipt">
+        <omgdc:Bounds x="1570" y="178" width="100" height="80"/>
+      </bpmndi:BPMNShape>
+
+      <!-- End Event -->
+      <bpmndi:BPMNShape id="Shape_Event_End" bpmnElement="Event_End">
+        <omgdc:Bounds x="1720" y="200" width="36" height="36"/>
+      </bpmndi:BPMNShape>
+
+      <!-- Sequence Flow Edges -->
+      <bpmndi:BPMNEdge id="Edge_Flow_1" bpmnElement="Flow_1">
+        <omgdi:waypoint x="216" y="218"/>
+        <omgdi:waypoint x="270" y="218"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_2" bpmnElement="Flow_2">
+        <omgdi:waypoint x="370" y="218"/>
+        <omgdi:waypoint x="420" y="218"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_3" bpmnElement="Flow_3">
+        <omgdi:waypoint x="520" y="218"/>
+        <omgdi:waypoint x="570" y="218"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_4" bpmnElement="Flow_4">
+        <omgdi:waypoint x="670" y="218"/>
+        <omgdi:waypoint x="720" y="218"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_5" bpmnElement="Flow_5">
+        <omgdi:waypoint x="820" y="218"/>
+        <omgdi:waypoint x="870" y="218"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_6" bpmnElement="Flow_6">
+        <omgdi:waypoint x="970" y="218"/>
+        <omgdi:waypoint x="1020" y="218"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_7" bpmnElement="Flow_7">
+        <omgdi:waypoint x="1120" y="218"/>
+        <omgdi:waypoint x="1170" y="218"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_8" bpmnElement="Flow_8">
+        <omgdi:waypoint x="1270" y="218"/>
+        <omgdi:waypoint x="1320" y="218"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_9" bpmnElement="Flow_9">
+        <omgdi:waypoint x="1370" y="218"/>
+        <omgdi:waypoint x="1420" y="218"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_10" bpmnElement="Flow_10">
+        <omgdi:waypoint x="1345" y="243"/>
+        <omgdi:waypoint x="1345" y="360"/>
+        <omgdi:waypoint x="1270" y="360"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_11" bpmnElement="Flow_11">
+        <omgdi:waypoint x="1170" y="360"/>
+        <omgdi:waypoint x="1120" y="360"/>
+        <omgdi:waypoint x="1120" y="280"/>
+        <omgdi:waypoint x="1195" y="280"/>
+        <omgdi:waypoint x="1195" y="258"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_12" bpmnElement="Flow_12">
+        <omgdi:waypoint x="1520" y="218"/>
+        <omgdi:waypoint x="1570" y="218"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_13" bpmnElement="Flow_13">
+        <omgdi:waypoint x="1670" y="218"/>
+        <omgdi:waypoint x="1720" y="218"/>
+      </bpmndi:BPMNEdge>
+
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+
+</definitions>

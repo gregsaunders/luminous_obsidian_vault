@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
+             xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+             xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC"
+             xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             id="Definitions_Phase3"
+             targetNamespace="http://luminousbiosolutions.com/bpmn/na-monitoring"
+             exporter="Luminous BioSolutions"
+             exporterVersion="1.0">
+
+  <!-- ============================================================ -->
+  <!-- PROCESS: Phase 3 - Lab Analysis (Detailed)                   -->
+  <!-- ============================================================ -->
+  <process id="Process_Phase3_LabAnalysis" name="Phase 3: Lab Analysis" isExecutable="false">
+    <documentation>
+      Luminous BioSolutions NA Monitoring Service
+      Phase 3: Lab Analysis - Detailed Process
+
+      This process covers biosensor testing and analysis at the Calgary lab.
+      Owner: Luminous Lab Operations
+      Location: Calgary Lab
+      Lab Tech: Tyson Bookout (biosensor paper lead author)
+
+      Reference: [[01-Service-Delivery-Process-Map]] - Phase 3
+      Master Diagram: [[BPMN-01-Master-Orchestration]]
+      Previous Phase: [[BPMN-04-Phase2-Transport-Receipt]]
+      Next Phase: [[BPMN-06-Phase4-Platform-Processing]]
+
+      Related: [[02-Roles-and-Responsibilities]] | [[03-Technology-Requirements]]
+
+      Version 1.1 | Created: 2026-01-01
+    </documentation>
+
+    <!-- Start Event -->
+    <startEvent id="Event_Start" name="Samples Ready for Analysis">
+      <documentation>Samples have passed receipt QC and are in storage</documentation>
+    </startEvent>
+
+    <!-- Task 3.1: Retrieve Samples -->
+    <task id="Task_RetrieveSamples" name="Retrieve Samples from Storage">
+      <documentation>
+        Retrieve samples from receiving refrigerator.
+
+        Actions:
+        - Verify sample IDs against work order
+        - Check sample condition (no degradation)
+        - Allow to equilibrate to room temp if needed
+
+        Input: Work order, stored samples
+        Output: Samples at workstation
+        Responsible: Lab Tech (Tyson)
+      </documentation>
+    </task>
+
+    <!-- Task 3.2: Prepare Biosensor Culture -->
+    <task id="Task_PrepareBiosensor" name="Prepare Biosensor Culture">
+      <documentation>
+        Prepare active biosensor culture from frozen stock.
+
+        Procedure:
+        1. Retrieve frozen Pseudomonas sp. OST1909 stock
+        2. Thaw at room temperature
+        3. Inoculate growth medium
+        4. Incubate to log phase (OD600 target)
+        5. Verify culture viability
+
+        Critical: Use correct strain with lux reporter gene
+
+        Input: Frozen biosensor stock
+        Output: Active biosensor culture
+        Responsible: Lab Tech (Tyson)
+        Tool: Incubator, spectrophotometer
+      </documentation>
+    </task>
+
+    <!-- Task 3.3: Prepare Controls -->
+    <task id="Task_PrepareControls" name="Prepare Positive and Negative Controls">
+      <documentation>
+        Prepare QC controls for the assay.
+
+        Positive control: Known NA concentration (e.g., 5 mg/L)
+        Negative control: Clean water (no NA)
+        Blank: Media only (no sample, no biosensor)
+
+        Controls validate assay performance
+
+        Input: Control standards
+        Output: Prepared control wells
+        Responsible: Lab Tech (Tyson)
+      </documentation>
+    </task>
+
+    <!-- Task 3.4: Prepare Assay Plate -->
+    <task id="Task_PrepareAssayPlate" name="Prepare 96-Well Assay Plate">
+      <documentation>
+        Load 96-well plate with samples, biosensor, and media.
+
+        Plate layout:
+        - Columns 1-2: Controls (positive, negative, blank)
+        - Columns 3-12: Samples (up to 80 per plate)
+        - Each sample in duplicate or triplicate
+
+        Volumes (per well):
+        - Sample: 10-50 μL (TBD by SOP)
+        - Biosensor culture: 50 μL
+        - Growth medium: to 200 μL total
+
+        Input: Samples, biosensor, controls, media
+        Output: Loaded assay plate
+        Responsible: Lab Tech (Tyson)
+        Tool: Multichannel pipette, 96-well white plate
+      </documentation>
+    </task>
+
+    <!-- Task 3.5: Scan Plate Barcode Map -->
+    <task id="Task_ScanPlateMap" name="Scan Barcode-to-Well Map">
+      <documentation>
+        Create mapping of sample barcodes to plate well positions.
+
+        Procedure:
+        1. Scan each sample barcode in loading order
+        2. System records barcode → well position (A1, A2, etc.)
+        3. Verify mapping before starting assay
+
+        This enables automatic result linking
+
+        Input: Samples in plate order
+        Output: Plate layout file (barcode-to-well map)
+        Responsible: Lab Tech (Tyson)
+        Tool: Barcode scanner, plate mapping software
+      </documentation>
+    </task>
+
+    <!-- Task 3.6: Load Plate Reader -->
+    <task id="Task_LoadPlateReader" name="Load Plate into Reader">
+      <documentation>
+        Load inoculated plate into PerkinElmer Victor plate reader.
+
+        Settings:
+        - Temperature: 30°C (or per SOP)
+        - Read type: Luminescence
+        - Interval: Every 20 minutes
+        - Duration: 15 hours
+
+        Input: Prepared plate
+        Output: Assay initiated
+        Responsible: Lab Tech (Tyson)
+        Tool: PerkinElmer Victor plate reader
+      </documentation>
+    </task>
+
+    <!-- Timer Event: 15-Hour Assay -->
+    <intermediateCatchEvent id="Event_AssayTimer" name="15-Hour Assay Running">
+      <documentation>
+        Automated bioluminescence assay runs for 15 hours.
+        Plate reader captures luminescence readings every 20 minutes.
+        ~45 time points captured per sample.
+      </documentation>
+      <timerEventDefinition id="TimerDef_Assay">
+        <timeDuration>PT15H</timeDuration>
+      </timerEventDefinition>
+    </intermediateCatchEvent>
+
+    <!-- Task 3.7: Export Raw Data -->
+    <task id="Task_ExportData" name="Export Raw Data from Plate Reader">
+      <documentation>
+        Export assay data from plate reader software.
+
+        Export format: CSV
+        Data includes:
+        - Well positions
+        - CPS (counts per second) values
+        - Timestamps for each read
+        - Plate metadata
+
+        Input: Completed assay run
+        Output: Raw data CSV file
+        Responsible: Lab Tech (Tyson)
+        Tool: Plate reader software
+      </documentation>
+    </task>
+
+    <!-- Task 3.8: Perform Results QC -->
+    <task id="Task_PerformQC" name="Perform Results QC Check">
+      <documentation>
+        Validate results against QC criteria.
+
+        QC checklist:
+        - Positive control shows expected induction (fold change >X)
+        - Negative control shows baseline (no induction)
+        - Blank wells within expected range
+        - Growth curves look normal
+        - No obvious outliers or artifacts
+
+        Input: Raw data
+        Output: QC status (pass/fail)
+        Responsible: Lab Tech (Tyson)
+        Tool: QC checklist, analysis software
+      </documentation>
+    </task>
+
+    <!-- Gateway: QC Pass? -->
+    <exclusiveGateway id="Gateway_QCPass" name="Results QC Pass?">
+      <documentation>Decision: Do results meet QC criteria?</documentation>
+    </exclusiveGateway>
+
+    <!-- Task: Repeat Assay -->
+    <task id="Task_RepeatAssay" name="Flag for Re-Analysis">
+      <documentation>
+        Flag samples that need re-analysis.
+
+        Actions:
+        - Document QC failure reason
+        - Determine if samples can be re-run
+        - Schedule repeat assay if possible
+        - Notify if original sample exhausted
+
+        Input: QC failure details
+        Output: Re-analysis scheduled or exception logged
+        Responsible: Lab Tech (Tyson)
+      </documentation>
+    </task>
+
+    <!-- Task 3.9: Calculate Fold Expression -->
+    <task id="Task_CalculateResults" name="Calculate Fold Gene Expression">
+      <documentation>
+        Calculate fold gene expression and estimate NA concentration.
+
+        Calculations:
+        1. Normalize CPS to negative control
+        2. Calculate fold induction at peak expression
+        3. Apply calibration curve to estimate NA mg/L
+        4. Flag samples with fold change >2 as NA-positive
+
+        Formula: Fold = CPS_sample / CPS_negative_control
+
+        Interpretation:
+        - Fold >2 = biologically significant NA detection
+        - Higher fold = higher NA bioavailability
+
+        Input: Normalized data, calibration curve
+        Output: Fold expression values, NA estimates
+        Responsible: Lab Tech (Tyson)
+        Tool: Analysis spreadsheet/software
+      </documentation>
+    </task>
+
+    <!-- Task 3.10: Link Results to Sample IDs -->
+    <task id="Task_LinkResults" name="Link Results to Sample IDs">
+      <documentation>
+        Apply barcode-to-well mapping to link results to samples.
+
+        Merge:
+        - Well position → Barcode (from plate map)
+        - Barcode → Sample metadata (from platform)
+        - Well position → Results (from calculations)
+
+        Output: Results file with sample IDs, metadata, and NA values
+
+        Input: Calculated results, plate layout
+        Output: Final results file ready for upload
+        Responsible: Lab Tech (Tyson)
+        Tool: Data processing script/spreadsheet
+      </documentation>
+    </task>
+
+    <!-- Task 3.11: Upload Results -->
+    <task id="Task_UploadResults" name="Upload Results to Platform">
+      <documentation>
+        Upload linked results to Relational Context Engine.
+
+        Methods:
+        - API upload (automated preferred)
+        - Manual CSV import (fallback)
+
+        Platform actions:
+        - Ingest results
+        - Link to pre-registered samples
+        - Trigger Phase 4 processing
+
+        Input: Final results file
+        Output: Results in platform
+        Responsible: Lab Tech (Tyson)
+        Tool: Platform API or admin interface
+      </documentation>
+    </task>
+
+    <!-- End Event -->
+    <endEvent id="Event_End" name="Lab Analysis Complete">
+      <documentation>Results uploaded, proceeding to Phase 4 (Platform Processing)</documentation>
+    </endEvent>
+
+    <!-- Sequence Flows -->
+    <sequenceFlow id="Flow_1" sourceRef="Event_Start" targetRef="Task_RetrieveSamples"/>
+    <sequenceFlow id="Flow_2" sourceRef="Task_RetrieveSamples" targetRef="Task_PrepareBiosensor"/>
+    <sequenceFlow id="Flow_3" sourceRef="Task_PrepareBiosensor" targetRef="Task_PrepareControls"/>
+    <sequenceFlow id="Flow_4" sourceRef="Task_PrepareControls" targetRef="Task_PrepareAssayPlate"/>
+    <sequenceFlow id="Flow_5" sourceRef="Task_PrepareAssayPlate" targetRef="Task_ScanPlateMap"/>
+    <sequenceFlow id="Flow_6" sourceRef="Task_ScanPlateMap" targetRef="Task_LoadPlateReader"/>
+    <sequenceFlow id="Flow_7" sourceRef="Task_LoadPlateReader" targetRef="Event_AssayTimer"/>
+    <sequenceFlow id="Flow_8" sourceRef="Event_AssayTimer" targetRef="Task_ExportData"/>
+    <sequenceFlow id="Flow_9" sourceRef="Task_ExportData" targetRef="Task_PerformQC"/>
+    <sequenceFlow id="Flow_10" sourceRef="Task_PerformQC" targetRef="Gateway_QCPass"/>
+    <sequenceFlow id="Flow_11" name="Yes" sourceRef="Gateway_QCPass" targetRef="Task_CalculateResults"/>
+    <sequenceFlow id="Flow_12" name="No" sourceRef="Gateway_QCPass" targetRef="Task_RepeatAssay"/>
+    <sequenceFlow id="Flow_13" sourceRef="Task_RepeatAssay" targetRef="Task_RetrieveSamples"/>
+    <sequenceFlow id="Flow_14" sourceRef="Task_CalculateResults" targetRef="Task_LinkResults"/>
+    <sequenceFlow id="Flow_15" sourceRef="Task_LinkResults" targetRef="Task_UploadResults"/>
+    <sequenceFlow id="Flow_16" sourceRef="Task_UploadResults" targetRef="Event_End"/>
+  </process>
+
+  <!-- ============================================================ -->
+  <!-- BPMN DIAGRAM (Visual Layout)                                 -->
+  <!-- ============================================================ -->
+  <bpmndi:BPMNDiagram id="BPMNDiagram_Phase3">
+    <bpmndi:BPMNPlane id="BPMNPlane_Phase3" bpmnElement="Process_Phase3_LabAnalysis">
+
+      <!-- Row 1: Setup -->
+      <bpmndi:BPMNShape id="Shape_Event_Start" bpmnElement="Event_Start">
+        <omgdc:Bounds x="180" y="100" width="36" height="36"/>
+      </bpmndi:BPMNShape>
+
+      <bpmndi:BPMNShape id="Shape_Task_RetrieveSamples" bpmnElement="Task_RetrieveSamples">
+        <omgdc:Bounds x="270" y="78" width="100" height="80"/>
+      </bpmndi:BPMNShape>
+
+      <bpmndi:BPMNShape id="Shape_Task_PrepareBiosensor" bpmnElement="Task_PrepareBiosensor">
+        <omgdc:Bounds x="420" y="78" width="100" height="80"/>
+      </bpmndi:BPMNShape>
+
+      <bpmndi:BPMNShape id="Shape_Task_PrepareControls" bpmnElement="Task_PrepareControls">
+        <omgdc:Bounds x="570" y="78" width="100" height="80"/>
+      </bpmndi:BPMNShape>
+
+      <bpmndi:BPMNShape id="Shape_Task_PrepareAssayPlate" bpmnElement="Task_PrepareAssayPlate">
+        <omgdc:Bounds x="720" y="78" width="100" height="80"/>
+      </bpmndi:BPMNShape>
+
+      <bpmndi:BPMNShape id="Shape_Task_ScanPlateMap" bpmnElement="Task_ScanPlateMap">
+        <omgdc:Bounds x="870" y="78" width="100" height="80"/>
+      </bpmndi:BPMNShape>
+
+      <bpmndi:BPMNShape id="Shape_Task_LoadPlateReader" bpmnElement="Task_LoadPlateReader">
+        <omgdc:Bounds x="1020" y="78" width="100" height="80"/>
+      </bpmndi:BPMNShape>
+
+      <!-- Row 2: Assay and Analysis -->
+      <bpmndi:BPMNShape id="Shape_Event_AssayTimer" bpmnElement="Event_AssayTimer">
+        <omgdc:Bounds x="1052" y="220" width="36" height="36"/>
+      </bpmndi:BPMNShape>
+
+      <bpmndi:BPMNShape id="Shape_Task_ExportData" bpmnElement="Task_ExportData">
+        <omgdc:Bounds x="870" y="198" width="100" height="80"/>
+      </bpmndi:BPMNShape>
+
+      <bpmndi:BPMNShape id="Shape_Task_PerformQC" bpmnElement="Task_PerformQC">
+        <omgdc:Bounds x="720" y="198" width="100" height="80"/>
+      </bpmndi:BPMNShape>
+
+      <bpmndi:BPMNShape id="Shape_Gateway_QCPass" bpmnElement="Gateway_QCPass" isMarkerVisible="true">
+        <omgdc:Bounds x="595" y="213" width="50" height="50"/>
+      </bpmndi:BPMNShape>
+
+      <bpmndi:BPMNShape id="Shape_Task_RepeatAssay" bpmnElement="Task_RepeatAssay">
+        <omgdc:Bounds x="420" y="198" width="100" height="80"/>
+      </bpmndi:BPMNShape>
+
+      <!-- Row 3: Calculations and Upload -->
+      <bpmndi:BPMNShape id="Shape_Task_CalculateResults" bpmnElement="Task_CalculateResults">
+        <omgdc:Bounds x="570" y="340" width="100" height="80"/>
+      </bpmndi:BPMNShape>
+
+      <bpmndi:BPMNShape id="Shape_Task_LinkResults" bpmnElement="Task_LinkResults">
+        <omgdc:Bounds x="720" y="340" width="100" height="80"/>
+      </bpmndi:BPMNShape>
+
+      <bpmndi:BPMNShape id="Shape_Task_UploadResults" bpmnElement="Task_UploadResults">
+        <omgdc:Bounds x="870" y="340" width="100" height="80"/>
+      </bpmndi:BPMNShape>
+
+      <bpmndi:BPMNShape id="Shape_Event_End" bpmnElement="Event_End">
+        <omgdc:Bounds x="1020" y="362" width="36" height="36"/>
+      </bpmndi:BPMNShape>
+
+      <!-- Sequence Flow Edges -->
+      <bpmndi:BPMNEdge id="Edge_Flow_1" bpmnElement="Flow_1">
+        <omgdi:waypoint x="216" y="118"/>
+        <omgdi:waypoint x="270" y="118"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_2" bpmnElement="Flow_2">
+        <omgdi:waypoint x="370" y="118"/>
+        <omgdi:waypoint x="420" y="118"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_3" bpmnElement="Flow_3">
+        <omgdi:waypoint x="520" y="118"/>
+        <omgdi:waypoint x="570" y="118"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_4" bpmnElement="Flow_4">
+        <omgdi:waypoint x="670" y="118"/>
+        <omgdi:waypoint x="720" y="118"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_5" bpmnElement="Flow_5">
+        <omgdi:waypoint x="820" y="118"/>
+        <omgdi:waypoint x="870" y="118"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_6" bpmnElement="Flow_6">
+        <omgdi:waypoint x="970" y="118"/>
+        <omgdi:waypoint x="1020" y="118"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_7" bpmnElement="Flow_7">
+        <omgdi:waypoint x="1070" y="158"/>
+        <omgdi:waypoint x="1070" y="220"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_8" bpmnElement="Flow_8">
+        <omgdi:waypoint x="1052" y="238"/>
+        <omgdi:waypoint x="970" y="238"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_9" bpmnElement="Flow_9">
+        <omgdi:waypoint x="870" y="238"/>
+        <omgdi:waypoint x="820" y="238"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_10" bpmnElement="Flow_10">
+        <omgdi:waypoint x="720" y="238"/>
+        <omgdi:waypoint x="645" y="238"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_11" bpmnElement="Flow_11">
+        <omgdi:waypoint x="620" y="263"/>
+        <omgdi:waypoint x="620" y="340"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_12" bpmnElement="Flow_12">
+        <omgdi:waypoint x="595" y="238"/>
+        <omgdi:waypoint x="520" y="238"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_13" bpmnElement="Flow_13">
+        <omgdi:waypoint x="420" y="238"/>
+        <omgdi:waypoint x="320" y="238"/>
+        <omgdi:waypoint x="320" y="158"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_14" bpmnElement="Flow_14">
+        <omgdi:waypoint x="670" y="380"/>
+        <omgdi:waypoint x="720" y="380"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_15" bpmnElement="Flow_15">
+        <omgdi:waypoint x="820" y="380"/>
+        <omgdi:waypoint x="870" y="380"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_16" bpmnElement="Flow_16">
+        <omgdi:waypoint x="970" y="380"/>
+        <omgdi:waypoint x="1020" y="380"/>
+      </bpmndi:BPMNEdge>
+
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+
+</definitions>

@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
+             xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+             xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC"
+             xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             id="Definitions_Phase2"
+             targetNamespace="http://luminousbiosolutions.com/bpmn/na-monitoring"
+             exporter="Luminous BioSolutions"
+             exporterVersion="1.0">
+
+  <!-- ============================================================ -->
+  <!-- PROCESS: Phase 2 - Transport & Lab Receipt (Detailed)        -->
+  <!-- ============================================================ -->
+  <process id="Process_Phase2_TransportReceipt" name="Phase 2: Transport &amp; Lab Receipt" isExecutable="false">
+    <documentation>
+      Luminous BioSolutions NA Monitoring Service
+      Phase 2: Transport &amp; Lab Receipt - Detailed Process
+
+      This process covers sample transport and receipt at the Calgary lab.
+      Owner: Shared (Courier, Customer Success, Lab Ops)
+      Location: In transit → Calgary Lab
+
+      Reference: [[01-Service-Delivery-Process-Map]] - Phase 2
+      Master Diagram: [[BPMN-01-Master-Orchestration]]
+      Previous Phase: [[BPMN-03-Phase1-Sample-Collection]]
+      Next Phase: [[BPMN-05-Phase3-Lab-Analysis]]
+
+      Related: [[02-Roles-and-Responsibilities]] | [[03-Technology-Requirements]]
+
+      Version 1.1 | Created: 2026-01-01
+    </documentation>
+
+    <!-- Start Event -->
+    <startEvent id="Event_Start" name="Samples Handed to Courier">
+      <documentation>Samples picked up by courier from customer site</documentation>
+    </startEvent>
+
+    <!-- Task 2.1: Track Shipment -->
+    <task id="Task_TrackShipment" name="Track Shipment in Transit">
+      <documentation>
+        Monitor sample shipment during transit.
+
+        Tracking activities:
+        - Monitor courier tracking updates
+        - Alert if delays detected
+        - Communicate ETA to lab
+
+        Input: Tracking number
+        Output: Shipment status updates
+        Responsible: Customer Success
+        Tool: Courier tracking system
+      </documentation>
+    </task>
+
+    <!-- Task 2.2: Receive at Lab -->
+    <task id="Task_ReceiveAtLab" name="Receive Package at Lab">
+      <documentation>
+        Physically receive sample package at Calgary lab.
+
+        Actions:
+        - Sign for delivery
+        - Note receipt time
+        - Visual inspection of package exterior
+
+        Input: Delivered package
+        Output: Package received, timestamp recorded
+        Responsible: Lab Tech
+        Tool: Receiving log
+      </documentation>
+    </task>
+
+    <!-- Task 2.3: Open and Inspect -->
+    <task id="Task_OpenInspect" name="Open Package and Inspect">
+      <documentation>
+        Open cooler and inspect samples.
+
+        Inspection checklist:
+        - Temperature check (should be 4°C ± 2°C)
+        - Ice packs condition (still cold?)
+        - Visual inspection of each container
+        - Check for leaks or damage
+        - Count samples vs. COC form
+
+        Input: Sealed package
+        Output: Inspection notes
+        Responsible: Lab Tech
+        Tool: Receiving checklist, thermometer
+      </documentation>
+    </task>
+
+    <!-- Task 2.4: Scan Barcodes -->
+    <task id="Task_ScanBarcodes" name="Scan All Sample Barcodes">
+      <documentation>
+        Scan each sample barcode to confirm receipt in LIMS.
+
+        System actions:
+        - Match barcode to pre-registered sample
+        - Update status to "Received at Lab"
+        - Timestamp receipt
+        - Flag any unrecognized barcodes
+
+        Input: Sample containers
+        Output: All samples logged in system
+        Responsible: Lab Tech
+        Tool: Barcode scanner, LIMS/Platform
+      </documentation>
+    </task>
+
+    <!-- Task 2.5: Verify Chain of Custody -->
+    <task id="Task_VerifyCoC" name="Verify Chain of Custody">
+      <documentation>
+        Review and sign chain of custody form.
+
+        Verification:
+        - Sample count matches COC
+        - Barcode IDs match COC list
+        - Collection dates within acceptable range
+        - No anomalies noted
+
+        Sign "Received by" field with date/time
+
+        Input: COC form, scanned samples
+        Output: Signed COC, discrepancies noted
+        Responsible: Lab Tech
+        Tool: Chain of custody form
+      </documentation>
+    </task>
+
+    <!-- Gateway: QC Pass? -->
+    <exclusiveGateway id="Gateway_QCPass" name="Receipt QC Pass?">
+      <documentation>Decision: Do samples pass initial QC inspection?</documentation>
+    </exclusiveGateway>
+
+    <!-- Task: Log Issues -->
+    <task id="Task_LogIssues" name="Log Quality Issues">
+      <documentation>
+        Document any issues found during inspection.
+
+        Issue types:
+        - Temperature excursion
+        - Damaged containers
+        - Missing samples
+        - Illegible barcodes
+        - Late arrival (exceeds hold time)
+
+        Create issue ticket in system
+        Notify Customer Success
+
+        Input: Inspection findings
+        Output: Issue ticket created
+        Responsible: Lab Tech
+        Tool: Issue tracking system
+      </documentation>
+    </task>
+
+    <!-- Gateway: Samples Usable? -->
+    <exclusiveGateway id="Gateway_Usable" name="Samples Still Usable?">
+      <documentation>Decision: Despite issues, are samples still acceptable for analysis?</documentation>
+    </exclusiveGateway>
+
+    <!-- Task: Notify Customer -->
+    <task id="Task_NotifyCustomer" name="Notify Customer of Issues">
+      <documentation>
+        Inform customer of sample issues.
+
+        Communication includes:
+        - What issues were found
+        - Which samples affected
+        - Whether re-collection needed
+        - Impact on timeline
+
+        Input: Issue details
+        Output: Customer notified
+        Responsible: Customer Success
+        Tool: Email, phone
+      </documentation>
+    </task>
+
+    <!-- End Event: Samples Rejected -->
+    <endEvent id="Event_Rejected" name="Samples Rejected">
+      <documentation>Samples not usable, require re-collection</documentation>
+      <errorEventDefinition id="ErrDef_Rejected"/>
+    </endEvent>
+
+    <!-- Task 2.6: Store Samples -->
+    <task id="Task_StoreSamples" name="Store Samples in Receiving Area">
+      <documentation>
+        Place samples in designated storage.
+
+        Storage conditions:
+        - Refrigerator at 4°C
+        - Samples in rack, organized by batch
+        - Maximum hold time: 24 hours before analysis
+
+        Input: QC-passed samples
+        Output: Samples in storage
+        Responsible: Lab Tech
+        Tool: Sample refrigerator
+      </documentation>
+    </task>
+
+    <!-- End Event -->
+    <endEvent id="Event_End" name="Samples Ready for Analysis">
+      <documentation>Samples logged, QC passed, stored - ready for Phase 3 (Lab Analysis)</documentation>
+    </endEvent>
+
+    <!-- Sequence Flows -->
+    <sequenceFlow id="Flow_1" sourceRef="Event_Start" targetRef="Task_TrackShipment"/>
+    <sequenceFlow id="Flow_2" sourceRef="Task_TrackShipment" targetRef="Task_ReceiveAtLab"/>
+    <sequenceFlow id="Flow_3" sourceRef="Task_ReceiveAtLab" targetRef="Task_OpenInspect"/>
+    <sequenceFlow id="Flow_4" sourceRef="Task_OpenInspect" targetRef="Task_ScanBarcodes"/>
+    <sequenceFlow id="Flow_5" sourceRef="Task_ScanBarcodes" targetRef="Task_VerifyCoC"/>
+    <sequenceFlow id="Flow_6" sourceRef="Task_VerifyCoC" targetRef="Gateway_QCPass"/>
+    <sequenceFlow id="Flow_7" name="Yes" sourceRef="Gateway_QCPass" targetRef="Task_StoreSamples"/>
+    <sequenceFlow id="Flow_8" name="No" sourceRef="Gateway_QCPass" targetRef="Task_LogIssues"/>
+    <sequenceFlow id="Flow_9" sourceRef="Task_LogIssues" targetRef="Gateway_Usable"/>
+    <sequenceFlow id="Flow_10" name="Yes - Proceed with caution" sourceRef="Gateway_Usable" targetRef="Task_StoreSamples"/>
+    <sequenceFlow id="Flow_11" name="No - Reject" sourceRef="Gateway_Usable" targetRef="Task_NotifyCustomer"/>
+    <sequenceFlow id="Flow_12" sourceRef="Task_NotifyCustomer" targetRef="Event_Rejected"/>
+    <sequenceFlow id="Flow_13" sourceRef="Task_StoreSamples" targetRef="Event_End"/>
+  </process>
+
+  <!-- ============================================================ -->
+  <!-- BPMN DIAGRAM (Visual Layout)                                 -->
+  <!-- ============================================================ -->
+  <bpmndi:BPMNDiagram id="BPMNDiagram_Phase2">
+    <bpmndi:BPMNPlane id="BPMNPlane_Phase2" bpmnElement="Process_Phase2_TransportReceipt">
+
+      <!-- Start Event -->
+      <bpmndi:BPMNShape id="Shape_Event_Start" bpmnElement="Event_Start">
+        <omgdc:Bounds x="180" y="200" width="36" height="36"/>
+      </bpmndi:BPMNShape>
+
+      <!-- Task 2.1 -->
+      <bpmndi:BPMNShape id="Shape_Task_TrackShipment" bpmnElement="Task_TrackShipment">
+        <omgdc:Bounds x="270" y="178" width="100" height="80"/>
+      </bpmndi:BPMNShape>
+
+      <!-- Task 2.2 -->
+      <bpmndi:BPMNShape id="Shape_Task_ReceiveAtLab" bpmnElement="Task_ReceiveAtLab">
+        <omgdc:Bounds x="420" y="178" width="100" height="80"/>
+      </bpmndi:BPMNShape>
+
+      <!-- Task 2.3 -->
+      <bpmndi:BPMNShape id="Shape_Task_OpenInspect" bpmnElement="Task_OpenInspect">
+        <omgdc:Bounds x="570" y="178" width="100" height="80"/>
+      </bpmndi:BPMNShape>
+
+      <!-- Task 2.4 -->
+      <bpmndi:BPMNShape id="Shape_Task_ScanBarcodes" bpmnElement="Task_ScanBarcodes">
+        <omgdc:Bounds x="720" y="178" width="100" height="80"/>
+      </bpmndi:BPMNShape>
+
+      <!-- Task 2.5 -->
+      <bpmndi:BPMNShape id="Shape_Task_VerifyCoC" bpmnElement="Task_VerifyCoC">
+        <omgdc:Bounds x="870" y="178" width="100" height="80"/>
+      </bpmndi:BPMNShape>
+
+      <!-- Gateway: QC Pass -->
+      <bpmndi:BPMNShape id="Shape_Gateway_QCPass" bpmnElement="Gateway_QCPass" isMarkerVisible="true">
+        <omgdc:Bounds x="1020" y="193" width="50" height="50"/>
+      </bpmndi:BPMNShape>
+
+      <!-- Task: Log Issues -->
+      <bpmndi:BPMNShape id="Shape_Task_LogIssues" bpmnElement="Task_LogIssues">
+        <omgdc:Bounds x="995" y="320" width="100" height="80"/>
+      </bpmndi:BPMNShape>
+
+      <!-- Gateway: Usable -->
+      <bpmndi:BPMNShape id="Shape_Gateway_Usable" bpmnElement="Gateway_Usable" isMarkerVisible="true">
+        <omgdc:Bounds x="1020" y="440" width="50" height="50"/>
+      </bpmndi:BPMNShape>
+
+      <!-- Task: Notify Customer -->
+      <bpmndi:BPMNShape id="Shape_Task_NotifyCustomer" bpmnElement="Task_NotifyCustomer">
+        <omgdc:Bounds x="870" y="425" width="100" height="80"/>
+      </bpmndi:BPMNShape>
+
+      <!-- End Event: Rejected -->
+      <bpmndi:BPMNShape id="Shape_Event_Rejected" bpmnElement="Event_Rejected">
+        <omgdc:Bounds x="752" y="447" width="36" height="36"/>
+      </bpmndi:BPMNShape>
+
+      <!-- Task 2.6 -->
+      <bpmndi:BPMNShape id="Shape_Task_StoreSamples" bpmnElement="Task_StoreSamples">
+        <omgdc:Bounds x="1170" y="178" width="100" height="80"/>
+      </bpmndi:BPMNShape>
+
+      <!-- End Event -->
+      <bpmndi:BPMNShape id="Shape_Event_End" bpmnElement="Event_End">
+        <omgdc:Bounds x="1320" y="200" width="36" height="36"/>
+      </bpmndi:BPMNShape>
+
+      <!-- Sequence Flow Edges -->
+      <bpmndi:BPMNEdge id="Edge_Flow_1" bpmnElement="Flow_1">
+        <omgdi:waypoint x="216" y="218"/>
+        <omgdi:waypoint x="270" y="218"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_2" bpmnElement="Flow_2">
+        <omgdi:waypoint x="370" y="218"/>
+        <omgdi:waypoint x="420" y="218"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_3" bpmnElement="Flow_3">
+        <omgdi:waypoint x="520" y="218"/>
+        <omgdi:waypoint x="570" y="218"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_4" bpmnElement="Flow_4">
+        <omgdi:waypoint x="670" y="218"/>
+        <omgdi:waypoint x="720" y="218"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_5" bpmnElement="Flow_5">
+        <omgdi:waypoint x="820" y="218"/>
+        <omgdi:waypoint x="870" y="218"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_6" bpmnElement="Flow_6">
+        <omgdi:waypoint x="970" y="218"/>
+        <omgdi:waypoint x="1020" y="218"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_7" bpmnElement="Flow_7">
+        <omgdi:waypoint x="1070" y="218"/>
+        <omgdi:waypoint x="1170" y="218"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_8" bpmnElement="Flow_8">
+        <omgdi:waypoint x="1045" y="243"/>
+        <omgdi:waypoint x="1045" y="320"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_9" bpmnElement="Flow_9">
+        <omgdi:waypoint x="1045" y="400"/>
+        <omgdi:waypoint x="1045" y="440"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_10" bpmnElement="Flow_10">
+        <omgdi:waypoint x="1070" y="465"/>
+        <omgdi:waypoint x="1220" y="465"/>
+        <omgdi:waypoint x="1220" y="258"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_11" bpmnElement="Flow_11">
+        <omgdi:waypoint x="1020" y="465"/>
+        <omgdi:waypoint x="970" y="465"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_12" bpmnElement="Flow_12">
+        <omgdi:waypoint x="870" y="465"/>
+        <omgdi:waypoint x="788" y="465"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_13" bpmnElement="Flow_13">
+        <omgdi:waypoint x="1270" y="218"/>
+        <omgdi:waypoint x="1320" y="218"/>
+      </bpmndi:BPMNEdge>
+
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+
+</definitions>

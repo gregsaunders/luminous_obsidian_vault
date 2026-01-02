@@ -1,0 +1,162 @@
+Speaker 1  0:04  
+What we have to realize is it today, our bureaucracy, in our organizations, the bureaucracy are the computer systems. What's the meaning of bureaucracy?
+
+Unknown Speaker  0:14  
+what form do you feel
+
+Speaker 1  0:17  
+when you get the approval and so on today, it's all conducted by the software. The software is a bureaucracy of the organization. If we try to bypass the bureaucracy to do things which are not in line with the bureaucracy, and we tell the bureaucracy You stay put none of your business and sometimes we can do it if the management a are charismatic enough, determined enough can be done, and there are cases where it was done. But let me ask you in the long run, who wins and unfortunately, you know, the answer in the long run, always bureaucracy wins. Which means even if you have the right people to the to the implementation, even if the implementation does work, if you don't change the bureaucracy to fit the new rules, these people will be promoted these people will leave and then everything collapses. Bureaucracy takes over again, we don't have a choice, we must put the bureaucracy in line, which means we must convince the software companies to collaborate. It's a must. But as I said before, it's not just a software company. They're most of the implementation and the focus of the implementation is done by different companies. It's called the integrators. Today's integrators focus is on what on which module do we implement and how we implement it? Do they have the focus on changing the rules in this answer is not at all. So we have to demand from them to broaden the scope as well. Do we stand a chance in convincing them to change? Now we all know that a necessary condition to create a change is a big need. Because let's face it, when you're looking on whether or not to do a change, one of the things that you're looking for is the pot of gold at the horizon.
+
+Unknown Speaker  2:20  
+That's a good incentive.
+
+Speaker 1  2:23  
+The second thing that you're looking for is whether or not you're going to break your leg trying to reach or rise. But the most decisive factor is not what is the plus in doing the change relative to the minus in doing the change? There are another there is another aspect. What is the risk of not doing the change? In other words, is either an alligator near me that is about to chew me. And if there is one, let's run to the horizon. forget to go to the pot of gold you have to get out of the alligator. What is turning out is that if we want to create to have a hope of causing somebody to change will better look of whether or not there is an alligator the bout to chew him and then to show him that's alligator Israel is there and it's already starting to bite is like yes, there is an alligator, huge alligator that is chewing today, the software and the integrator companies. Our problem is it most of them aren't aware of it. So let's go see the analysis. And now we know how to convince them.
+
+Unknown Speaker  3:34  
+When you go into software company,
+
+Speaker 1  3:37  
+you will find out when you talk with the people that are many, many complaints and when you start to dig in you find out that these complaints are not just because people love to be Cimone but because our real conflicts let me give an example of a conflict set. an ERP software company and the integrator company are facing. The objective of these companies is a was to maintain growth rate. This analysis by the way was done in 98, where the Bonanza was in its peak. All the major players in the ERP business were growing at a rate of 40% per year, quarter after quarter year after year since 94. And because of it, they have commanded a very unique position in Wall Street. They were the first companies to cross the multiplier of 100 which means that the value of their company was more than 100 times their net profit enable. And not just one company, every major player in that industry. No wonder you could put a ruler on the rate of growth and doesn't look as if it's going to be close to the capital. And that's why in that environment number one objective was not making money. Number one objective was to maintain the growth rate when you are evaluated in a multiply of more than 100. Why does Wall Street gives you such a huge multiplier because they expect that the rate of growth will continue so God forbid that your rate of growth will start to decline? Because that minute immediately the multiplier goes down dramatically because it will assume Okay, you've reached the saturation to maintain rate of growth, then you that they have to satisfy two different set necessary conditions and each one in the industry knew what one is. You must capture the client environment accurately without the need to tailor the product. Try to imagine that if you're going to every client and every client there is immense amount of tailoring to the client environment. can you maintain a very high rate of growth? It's impossibility. You will need so many programmers and promises that really knows the code. And as you grow you need more and more of them and now the synchronization between them is becoming a huge problem you're dead which means in ultimate 10 rate of growth in you they must capture the client environment accurately without the need to tailor the product that is a must. And that's why we are not talking there about programs we're talking about package. Something that is usable for many, many different clients maybe with some small adaptations, but in order to capture the client's environment accurately without the need to tell the product, what do you must do, you must add more features and more options into the software. And more and more in more and more. And if you look what happened in the period of 94 to 2000 the packages of the ERP have grown exponentially. For example, if I will, quote The sap 94 The code was roughly one and a half million lines of code, which is huge. In 2000 It was 41 million lines of code. This shows you what's the meaning of expansion. At the same time, they will very well aware of the other side of the coin. In order to maintain rate of growth. They must make sure not to complicate the product maintenance not to complicate the implementation and not to complicate the support. That's a must. Because if you complicate these things and now you are in total mud with a client until you finish implementation, you cannot maintain rate of growth. But what does it mean not to complicate product maintenance, implementation and support it means don't add more options and features we have too many already. We don't know any moment to look. As a matter of fact, nobody can read those manuals anymore.
+
+Unknown Speaker  8:18  
+Have you noticed a small tiny conflict
+
+Speaker 1  8:23  
+and none of them were blind to it? And because of it all the major ERP companies from time to time, were stopping and re arranging their entire package in order to simplify it in order to reduce redundancies and so on. Even though it was mammoth effort and investment, each one of this reshaping of the package. Nevertheless, we know what happens if here the clients are shouting add more features and options. And here you know that for the long run it will not be good, who wins the short term declines or screams or the long run. We all know the short term and because of it. The unavoidable result was that the ERP packages became bigger and bigger and more and more complex. Which of course, if you talk with integrators, they will tell you now to to implement is much much more difficult. We have to know much more it takes much more time to upgrade our people and so on the market have noticed this as well, because let's highlight some obvious facts in 94. The vast majority of the implementers will done without integrators to the extent that on average for each dollar paid to the software company, about 10 cent on average was paid to integrate a company that was in 94 in the year 2000. To implement a loan the ERP was almost impossibility it was so complex. We had to know so much and because of it already in the year 2000 On average for each dollar paid to the software company $2 were paid to the integrated companies.
+
+Unknown Speaker  10:19  
+Is it the only conflict?
+
+Speaker 1  10:20  
+No. Their field is full with conflicts. Let me show you three more conflicts. The objective is still to maintain growth rate in order to maintain growth so it's a new very well you must have fast response to market need. This field will is was still is will be extremely competitive. You're talking about major players here. You're talking about the colleges that is moving. Probably one of the fastest moving technologies that existed though. And you're talking about clients are more and more demanding and less and less tolerant and expecting already miracles as given and that's why if you want to maintain growth rate you must have fast response to market need that is obvious in the new it very well. But what does it mean to a fast response to market need? It means for example, and I will say some things that most software companies will not like still I will say it because it's true. It means
+
+Unknown Speaker  11:28  
+we have promised a new release in June
+
+Speaker 1  11:35  
+a competitor have already announced it and already released it in May. Now it's June release it. We haven't finished to debug it. We haven't checked it yet. Doesn't matter release it. Otherwise we lose the market. In other words, if you want fast response to market need, and you look in reality what it translates to is many times do not release a completely Solage check package release what you have right now. And that's reality or the integrators under immense pressure. Package is so huge, so complex. And so on. It takes a long time to implement. And now the client is coming in saying, for heaven's sake, it's a whole year that you are futzing around with this financial module. I
+
+Unknown Speaker  12:28  
+haven't seen anything yet working,
+
+Unknown Speaker  12:30  
+make it work. I don't have any more
+
+Speaker 1  12:32  
+any patients. What is integrated doing you start to cut corners in order to make something work. In other words, if you want fast response to the market means many, many times in that environment. You didn't have a choice, but to cut corners in the implementation. We'll fix it later.
+
+Speaker 1  12:49  
+Let's show that something's working. Or
+
+Speaker 1  12:55  
+if I'm talking about a service, look what's happening. A client calls to complain about a bug and surprise surprise this client did read the manuals, which is not exactly frequent, but still happening. So he's complaining about something the people who are taking the call, did read the manuals. But they don't know to answer now the question of the client, what they have to do is to turn to the people in the development that wrote the code, but when they turn there now the call is so big that in development, nobody knows the entire code. Each one knows only his piece. So you know what happens when you come to a programmer and complain about a bug in his code. His immediate reaction is it's not in my code. It's somebody else's code. And now you start to run in circles until you get the answers and you know, what's the meaning of chasing this prima donnas? So it takes weeks. Now you cannot tell the client sorry, it will take me four weeks to give you an answer. So what is reality? Give him any answer. It will take him a week or two to find out that it doesn't
+
+Unknown Speaker  14:03  
+work. We must have the time.
+
+Speaker 1  14:06  
+Fellas, that's reality. In other words, in order to have fast responses a market need do not give a full thoroughly check down so what can you do? It takes so long to get the real answer. The same time with all of that these companies knew very well if they want to maintain growth rate, you must they must deliver a reliable product and reliable servicing you wish you didn't have to tell it to them and then you very well that to deliver a reliable product and no service means release only a complete thoroughly checked package. Do a thorough implementation. Give a complete thoroughly checked answer then you all of that. But look on the conflict
+
+Unknown Speaker  14:57  
+what is the result?
+
+Unknown Speaker  14:59  
+The result is
+
+Speaker 1  15:02  
+many complaints by whom? By customers, of course, but not just because by the customers. You want to read complaint. You should sit in a meeting between the integrators, the implementer companies and the software companies. Then you'll hear screaming and shouting. And if you want to real the real thing is go and talk with programmers and developers. They are now in a position where they say sorry, I have to work so I'm going home here I cannot work anymore. Everybody's on my back cheering me
+
+Unknown Speaker  15:35  
+in all directions. I cannot do a thing here.
+
+Unknown Speaker  15:36  
+I'm going home to work. I'll be like that
+
+Unknown Speaker  15:39  
+I'm going home to work.
+
+Unknown Speaker  15:42  
+And that's reality.
+
+Speaker 1  15:46  
+If we are looking on all the conflicts that exist, it turns out that of course there is a core conflict something at the bottom. That is the reason for the move. Let me show you what came out to be the core conflict. You can see then that everything's I've showed you before just examples of it or derivatives of it. The objective is to maintain growth rate in order to maintain growth rate from one hand side you must satisfy the customer's perception of value that's a must everybody instance it Yes. In order to satisfy the customer perception of value, it means you must implement changes that will satisfy customers desire as soon as possible. That's a must. On the other hand, in order to maintain growth rate, you must continue to be a reliable ERP supplier, or integrator. And in order to do that, don't implement changes that will jeopardize our ability to deliver.
+
+Unknown Speaker  16:49  
+Have you notice what is happening here?
+
+Speaker 1  16:54  
+What we have to see is that this conflict with every year that passed have intensified. It intensify to the extent that there was no room anymore between a rock and the hard place. So much so that this is not anymore. The objective. None of them is even thinking anymore about maintaining the 40% growth rate the year as a matter of fact, most of them are trying to maintain this air, their size to make some money. Most of them are really in trouble. Now. What happens let's in order to understand that this conflict is not static conflict, but the Namie conflict that becomes worse and worse was every year we have to look on the assumptions behind the conflict. Now what you're going to see is something complicated because I have to serve as so many assumptions, and then we can understand the picture in full. So bear with me. Let's go and highlight the assumptions. What you get now is of course a nightmare.
+
+Unknown Speaker  18:03  
+Nevertheless, let's go over it slowly.
+
+Speaker 1  18:08  
+What we said is that in order to maintain growth rate, you must satisfy the customer perception of value is it always true? And the answer is no. That is a circumstance where you can maintain growth rate without satisfying the customer perception of value. And this is an environment where there is external pressure on the client, external pressure that forced him to buy from you. If there is such a case, then you don't need to satisfy his perception of value. He simply doesn't have a choice. Was it such a case? Yes, so was from 94 to 99. There was an external pressure that forced people to buy new software systems. And you know, what was the name of that pressure? It was called the y2k. This famous banger of you 2000. Who the hell knows if it was not, but if it was not in existence, it was the best invention ever marketing ploy ever. Because look what happens. We are afraid that the year 2000 will come and within a second, all our systems or most of our system will start to stop the function this means the whole company will stop to function. Now we have to do something about it. Because this threat is coming and the risk is much too high. What can we do to go back to our systems and correct it? Who the hell remembers how they were written? Most of them were written in COBOL The problem was that rotate are not with a company anymore. Or if they are with the company they don't remember what they wrote. Huge effort to go and nitpicky, correct all the systems so you know what, let's buy a new system. Now this pressure is gone. As a matter of fact, it disappeared already. 99 Because all the companies that took it seriously already 99 were committing or bought already the soft the new software. So the upper side of the conflict Apple side of the cloud afternoon 99 became much more demanding now it's really much more important to satisfy the customer perception of value much more than before. But that's not the only reason why this became much more demanding. We're saying in order to satisfy customer perception of value, you must implement changes that will satisfy customer customer desires as soon as possible. Why do we claim it? Because we assume here that the existing software do not satisfy the customer perception of value. That's why you have to put changes. Why do we claim it because existing software does not bring enough value? Is it correct for all companies? Well, if you don't analyze it, you find out something amazing. If we are dealing with companies, which are very large and very diverse geographically the existing software without changing the rules at all, if brought benefit enough to justify the investment. For example, suppose that we have a plant here and we are selling all over the world. And here we have a warehouse in Chile. And this warehouse we are selling today our items to the market before the ERP how much time it took until the fact that our warehouse in Chile have sold a particular product. This fact impact the schedule the production of the plant how much time it took. Well, I don't know how many of you know it, but the usual a sequence of events in most large companies was like this. They were reporting it to the country site about once a week. And then it was a concentrated on a country level took another week, continent level I mean, and then it was passed to the headquarters that they've took all this data and it took some time until they've redone the new forecast. And then it arrived to the plant and only now the plant is really starting to react. And this process was minimum four weeks. With the ERP the same day that the sale happened in Chile. The information is already available at the plant and it does impact what the plant is doing. Maybe not formally, but informally itself to impact it immediately. This small thing was enough is enough for this large, very large companies to justify the impact of it on the bottom line is more than the entire cost of the ERP. But this is correct for very, very large, diverse companies. If the company is not so diversed if it's not so big, then of course this residual benefits shrinking rapidly. If you really look on the type of industry and so on, you can say something like that. If the company is above $1 billion, there's a good chance that the residual benefits of implementing ERP without changing the rules will be about equal or bigger than the investment in doing the ERP. If you're below 500 million, the chance that implementing ERP will bring you benefit more than the investment in ERP or close to zero. So, the need that they must do the changes was more for medium and small companies. Not that the changes will not will not help dramatically to the large companies. But without these changes in the rules as the large companies were already benefiting. What was the problem? If you look what happened in the world you will find out that starting from 98 the market of the very large companies regarding purchasing of new ERP software became saturated and became more and more saturated with every year. Most of them already done it. And once you've changed the system, you are not inclined to change it for the next five, six years. This market became so saturated that the market of the large companies were not with any stretch of imagination was sufficient to maintain the growth rate. So we had to do the changes. The changes to increase the perception of value in the large companies to the extent that we will want to buy the change or to put the changes so that we are bringing the value to the small medium sized companies and by the ways a medium sized company market has a total is by far larger than the large company market by far with it's more than order of magnitude bigger than the real market. So you see what happened due to these things. One is that there is no external pressure like the y2k anymore. And the second thing is the saturation of the market in the large companies. The demand to implement changes that will satisfy customer desire as soon as possible became huge. This became totally mandatory. But look what happens on the other hand. In order to maintain growth rate we said we must continue to be a reliable ERP supplier, but in order to continue to be a reliable ERP supplier we must not implement changes that will jeopardize ability to deliver why, why do we claim that we shouldn't implement changes that will jeopardize our ability to deliver because the bigger and more complicated or complex the chain of delivery, the higher the risk that the change can cause huge damage, it can collapse everything. Now what happened to the chain of delivery? We have the software. We have now the integrator inside the client. The integrator is not any more two people. It's a whole heirarchy of maybe 3040 50 people inside the the client. So the chain of delivery of the implementation became much, much more complex. And you know what's happening? The moles it's complex it a change can cause a total collapse. But it's not just a change of the chain of deliveries that became complex. The software itself became much more complex. And is software became more and more complex. Now the chance of doing a change and creating 700 bugs everywhere becomes bigger and bigger. So look what's happening from one inside the demand to put the changes become much much bigger. But on the other hand side, the demand not to put the changes become much, much bigger, the rock and the hard place starting to meet. No wonder tuition becomes such that the objective cannot be reached anymore. And that's what we see today. And we can blame whatever you want. That's the real problem. It is inherent in the way that we've done it.
+
+Speaker 1  27:26  
+Well, there's a way out. Well,
+
+Speaker 1  27:31  
+unfortunately, the European integrated companies are trying to use the same tricks that you've used in 8485 where MRP have reached the wall. Do you remember what was a trick then? It was not to correct the fundamental problem of why MRP did not brought value. It was switch to another technology that's trying to do exactly the same now. But unfortunately, unfortunately, this time, they're not switching to a bigger and better technology, but to residuals of the existing technology. And because of it what you see is new names, new fashions coming up and disappearing at a rate that is unprecedented. For example, two years ago, the new name was ecommerce
+
+Speaker 1  28:21  
+is it
+
+Unknown Speaker  28:25  
+then between
+
+Speaker 1  28:27  
+now and read another fashion before it starts to pick up. It's already dead. No wonder because the core problem is not solved. And the technology of the ERP is the technology that is solving the biggest limitation of the organization and it's about time to find how to bring it to fruition. So how can we break the conflict? Let's look on it. Let's go back without these assumptions, so we can see the conflict in its purity. And let's find which assumption can be challenged.
+
+Unknown Speaker  29:11  
+implement changes that will satisfy
+
+Speaker 1  29:16  
+the customer desire as soon as possible is the opposite of don't implement changes that will jeopardize ability to deliver.
+
+Speaker 1  29:27  
+Is it really opposite? Is it really opposites?
+
+Unknown Speaker  29:35  
+Can we get that and that at the same time?
+
+Speaker 1  29:39  
+Or in other words? Why do we claim that there is a conflict why do we claim that this
+
+Unknown Speaker  29:44  
+is opposite of that? What is the assumption here?
+
+Speaker 1  29:49  
+And the assumption is quite obvious. We assume here that the same changes that will satisfy the customers desire are the changes that we jeopardize our ability to deliver. Because if the changes that are needed for that are totally different than the changes that are made for that there is no conflict. Is it understood again, the assumption under the conflict is the changes that increase customer delight, while at the same time jeopardizing ability to deliver. Is it correct. Let's see. What are the things that will increase the most the customer delight the most.
+
+Speaker 1  30:39  
+In the last year, I was talking with many many software integrated companies and I will ask him this question. And you know what is the most most common answer seems like the more user friendly screens for heaven's sake, where do you live? The thing that intensify customer delight more than anything else is increase in its bottom line. Nothing can be compared to that. Do you agree? Absolutely. We know now what is needed in order to really get the bottom line it's not to change and add more options to the software, but to help the client to change the rules that protected them against the limitation that we are removing. Those type of changes going to jeopardize our ability to deliver and they're going to simplify the code or they're going to come to make the code more complex. Amazingly enough. It's going to simplify the code dramatically. So what is the direction of the solution? Basically, it is on the following. customer delight is achieved mainly not because of better screens and more user visit, visibility and so on customer delight is achieved mainly through selling and implementing value oriented systems. What is the value oriented systems systematically delivering fast and significant bottom line results? Not one time in 10 but in 99 times out of 100 being bottom line results and fast. And these you can do because we know now what's the meaning of changing these rules. We have 1000s of cases where the changing rules have given enormous results within three months, much more than anybody is expected. We know that that's the way to do it. And this will kill the What about the prime there is another part of it which is as long as you are using prudent value selling. Then it eases the burden on the development on the implementation on the service. Why? Because now you don't get this pitiful complaints from the client of I want this field here rather than here. Because all the focus is the bottom line rather than let's make the screen a little bit nicer. It reduces usually the burden of development. It will do doodlee usually is a bit of battle on implementation because everything is not how do we deal with the data and what to put here and wait a minute, this number is a little bit wrong, and so on. But what do we have to do now to get more bottom line? What do we have to do now to get more to bottom line? Does it really important in terms of getting more results or not not leave me Leave it alone. And the service becomes much much easier. Why? Because a logic become apparent. It's not any more a collection of local optima that are conflicting between them. The whole logic became clear and
+
+Unknown Speaker  33:55  
+that's the way out.
+
+Speaker 1  33:58  
+And that's a way not just to bring back the growth rates that we were talking before. But so passive dramatically. Why? Because we were talking about bringing huge bottom line value to the clients so we can demand more. You see, companies do not have a problem in paying more. If they know that once they paid, they've already got much more value, then they don't have a problem. At the same time. Companies have a problem of paying $1 If they don't get the value. You want the donation ask for donation but in business, I have a problem pay $1 for don't get back anyway.
+
+Unknown Speaker  34:37  
+That's the direction of the solution.
+
+Speaker 1  34:41  
+The question is how much time it will take the major players
+
+Unknown Speaker  34:48  
+to digest it
+
+Unknown Speaker  34:51  
+and to go for it.
+
+Speaker 1  34:56  
+Frankly, I didn't have to high hopes upon both very very large companies is enormous inertia and what you're demanding from them is actually to switch the scope of what's in business. You're in business of software. But all your focus has to be on the change of the rules in the clients because what you want is to guarantee that the client will get value.
+
+Unknown Speaker  35:20  
+This is not a small change.
+
+Speaker 1  35:24  
+What I've done is first of all to write the marketing brochure to deliver all this message. And this marketing show is called necessary but not sufficient. This was my first thing. And like the goal, it's a novel so that people will read it by the way people do not read textbooks, but they do read novels. And like not like in the goal. The hero is not the plant manager. What are two heroes. One is a CEO of a software company, and the other one is a CEO of an integrated company of implementation company. And I've tried to deliver all this message. It does work. It does work to the extent that the big players started to move already
+

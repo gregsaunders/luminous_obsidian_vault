@@ -1,0 +1,63 @@
+id,first_name,last_name,title,company,persona,linkedin_url,email,status,owner,notes
+1,Cynthia,McClain,,Alberta Biodiversity Monitoring Institute,Academic,,cmcclain@abmi.ca,Not Contacted,Shawn,
+2,Lysandra,Pyle,,Alberta Biodiversity Monitoring Institute,Academic,,lpyle@abmi.ca,Not Contacted,Shawn,
+3,Monica,Kohler,,Alberta Biodiversity Monitoring Institute,Academic,,mkohler@abmi.ca,Not Contacted,Shawn,
+4,Daniel,Reslan,,Bureau Veritas Consumer Products Services,Consultant,,daniel.reslan@bureauveritas.com,Not Contacted,Jeff,
+5,Aaron,Cyr,,Canadian Natural Resources,Operator,,aaron.cyr@cnrl.com,Not Contacted,Jeff,CNRL contact
+6,Adam,Blair,,Canadian Natural Resources,Operator,,adam.blair@cnrl.com,Not Contacted,Jeff,CNRL contact
+7,Christine,Brown,,Canadian Natural Resources,Operator,,Christine.Brown@cnrl.com,Not Contacted,Jeff,CNRL contact
+8,Devon,Versnick-Brown,,Canadian Natural Resources,Operator,,devon.versnick-brown@cnrl.com,Not Contacted,Jeff,CNRL contact
+9,Jayne,Rattray,,Canadian Natural Resources,Operator,,jayne.rattray@cnrl.com,Not Contacted,Jeff,CNRL contact
+10,Joy,Romero,,Canadian Natural Resources,Operator,,joy.romero@cnrl.com,Not Contacted,Jeff,CNRL contact
+11,Tayler,L,,Canadian Natural Resources,Operator,,tayler.l@cnrl.com,Not Contacted,Jeff,CNRL contact
+12,Theo,Paradis,,Canadian Natural Resources,Operator,,theo.paradis@cnrl.com,Not Contacted,Jeff,CNRL contact
+13,Daniel,Palys,,Coanda Research and Development Corporation,Consultant,,daniel.palys@coanda.ca,Not Contacted,Shawn,R&D consultant
+14,Danuta,Sztukowski,,Coanda Research and Development Corporation,Consultant,,danuta.sztukowski@coanda.ca,Not Contacted,Shawn,R&D consultant
+15,Wayne,Brown,,Coanda Research and Development Corporation,Consultant,,wayne.brown@coanda.ca,Not Contacted,Shawn,R&D consultant
+16,Tammy,Rosner,,Four Elements Consulting Ltd.,Consultant,,tammy.rosner@fourelementsconsulting.ca,Not Contacted,Jeff,Environmental consultant
+17,Frank,Gu,,H2nano Inc,Consultant,,f.gu@utoronto.ca,Not Contacted,Shawn,Technology consultant
+18,Matthew,Kerwin,,H2nano Inc,Consultant,,matt@h2nano.ca,Not Contacted,Shawn,Technology consultant
+19,Tim,Leshuk,,H2nano Inc,Consultant,,tim@h2nano.ca,Not Contacted,Shawn,Technology consultant
+20,Zac,Young,,H2nano Inc,Consultant,,zac@h2nano.ca,Not Contacted,Shawn,Technology consultant
+21,Carolina,Berdugo,,Imperial Oil,Operator,,carolina.berdugo-clavijo@esso.ca,Not Contacted,Jeff,Imperial contact
+22,Lori,Neufeld,,Imperial Oil,Operator,,lori.r.neufeld@esso.ca,Not Contacted,Jeff,Imperial contact
+23,Ariel,Torre,,Impossible Sensing Energy Inc.,Consultant,,atorre@isenergy.ca,Not Contacted,Shawn,Technology consultant
+24,Jennifer,Keturakis,,Integrated Sustainability,Consultant,,jennifer.keturakis@integratedsustainability.ca,Not Contacted,Jeff,Sustainability consultant
+25,Brenda,Leeds Binder,,Pathways Alliance,Operator,,brenda.leedsbinder@pathwaysalliance.ca,Not Contacted,Jeff,Pathways Alliance contact
+26,Chris,Godwaldt,,Pathways Alliance,Operator,,Chris.Godwaldt@pathwaysalliance.ca,Not Contacted,Jeff,Pathways Alliance contact
+27,Lee,Davis,,Pathways Alliance,Operator,,lee.davis@pathwaysalliance.ca,Not Contacted,Jeff,Pathways Alliance contact
+28,Robyn,Jones,,Pathways Alliance,Operator,,robyn.jones@pathwaysalliance.ca,Not Contacted,Jeff,Pathways Alliance contact
+29,Sara,Thiessen,,Pathways Alliance,Operator,,sara.thiessen@pathwaysalliance.ca,Not Contacted,Jeff,Pathways Alliance contact
+30,Tracey,Stephen,,Pathways Alliance,Operator,,Tracey.Stephen@pathwaysalliance.ca,Not Contacted,Jeff,Pathways Alliance contact
+31,Ty,Vaness,,Pathways Alliance,Operator,,tyler.veness@pathwaysalliance.ca,Not Contacted,Jeff,Pathways Alliance contact
+32,Wes,Jickling,,Pathways Alliance,Operator,,Wes.Jickling@pathwaysalliance.ca,Not Contacted,Jeff,Pathways Alliance contact
+33,Angela,Pohl,,Suncor Energy,Operator,,apohl@suncor.com,Not Contacted,Jeff,Suncor contact
+34,Ashkan,Zolfaghari Sharak,,Suncor Energy,Operator,,azolfaghari@suncor.com,Not Contacted,Jeff,Suncor contact
+35,Blair,Penner,,Suncor Energy,Operator,,bjpenner@suncor.com,Not Contacted,Jeff,Suncor contact
+36,Jon,Mitchell,,Suncor Energy,Operator,,jonmitchell@suncor.com,Not Contacted,Jeff,Suncor contact
+37,Kent,Ferguson,,Suncor Energy,Operator,,kentferguson@suncor.com,Not Contacted,Jeff,Suncor contact
+38,Matthew,Ripmeeste,,Suncor Energy,Operator,,mripmeester@suncor.com,Not Contacted,Jeff,Suncor contact
+39,Mitchell,Holte,,Suncor Energy,Operator,,mholte@suncor.com,Not Contacted,Jeff,Suncor contact
+40,Rodney,Guest,,Suncor Energy,Operator,,rguest@suncor.com,Not Contacted,Jeff,Suncor contact
+41,Ralph,Hindle,,Vogon Laboratory Services Ltd.,Consultant,,rhindle@vogonlabs.ca,Not Contacted,Shawn,Laboratory consultant
+42,Chad,Newton,,Alberta Energy Regulator (AER),Regulator,,Chad.Newton@aer.ca,Not Contacted,Jeff,AER contact
+43,Jake,Sherlock,,Alberta Energy Regulator (AER),Regulator,,jake.sherlock@aer.ca,Not Contacted,Jeff,AER contact
+44,Amanda,Schoonmaker,,Northern Alberta Institute Of Technology,Academic,,aschoonmaker@nait.ca,Not Contacted,Shawn,NAIT contact
+45,Heather,Kaminsky,,Northern Alberta Institute Of Technology,Academic,,HKAMINSKY@nait.ca,Not Contacted,Shawn,NAIT contact
+46,Selamawit,Messele,,Northern Alberta Institute Of Technology,Academic,,selamawitm@nait.ca,Not Contacted,Shawn,NAIT contact
+47,Yunhui,Li,,Northern Alberta Institute Of Technology,Academic,,yunhuil@nait.ca,Not Contacted,Shawn,NAIT contact
+48,Lisa,Stein,,University of Alberta,Academic,,stein1@ualberta.ca,Not Contacted,Shawn,U of A contact
+49,Mohamed,El-Din,,University of Alberta,Academic,,mgamalel-din@ualberta.ca,Not Contacted,Shawn,U of A contact
+50,Douglas,Muench,,University of Calgary,Academic,,dmuench@ucalgary.ca,Not Contacted,Shawn,U of C contact
+51,Ian,Gates,,University of Calgary,Academic,,ian.gates@ucalgary.ca,Not Contacted,Shawn,U of C contact
+52,Lisa,Gieg,,University of Calgary,Academic,,lmgieg@ucalgary.ca,Not Contacted,Shawn,U of C contact
+53,Gurjit,Sangha,National Vice President Water and Wastewater - Western Canada,WSP (Golder),Consultant,,[LINKEDIN/APOLLO RESEARCH],Not Contacted,Jeff,High priority - VP level WSP Golder
+54,Ansel,Bather,National Vice President Water and Wastewater,WSP (Golder),Consultant,,[LINKEDIN/APOLLO RESEARCH],Not Contacted,Jeff,High priority - VP level WSP Golder
+55,Scott,Davidson,Senior Principal Environmental Scientist,WSP (Golder),Consultant,,[LINKEDIN/APOLLO RESEARCH],Not Contacted,Shawn,Technical lead - environmental science
+56,Terry,Bullock,Senior Principal Environmental Scientist,WSP (Golder),Consultant,,[LINKEDIN/APOLLO RESEARCH],Not Contacted,Shawn,Technical lead - environmental science
+57,Colin,Buc,Aquatics Technical Lead,Stantec,Consultant,,[LINKEDIN/APOLLO RESEARCH],Not Contacted,Shawn,Oil sands EIA specialist - high priority
+58,Pippy,Warburton,Water Resources Lead Canada,AECOM,Consultant,,[LINKEDIN/APOLLO RESEARCH],Not Contacted,Jeff,High priority - Canadian water resources lead
+59,Giulio,Scarzella,Senior Hydrogeologist,AECOM,Consultant,,[LINKEDIN/APOLLO RESEARCH],Not Contacted,Shawn,Calgary office - oil and gas experience
+60,Sam,Bellamy,Vice President Water Resources,Matrix Solutions (Montrose),Consultant,,[LINKEDIN/APOLLO RESEARCH],Not Contacted,Jeff,VP level - water resources
+61,Brian,Lapos,Senior Vice President Canada Consulting,Montrose Environmental,Consultant,,[LINKEDIN/APOLLO RESEARCH],Not Contacted,Jeff,High priority - SVP level
+62,Andrew,Hinnell,Vice President Water Resources,Waterline Resources,Consultant,,[LINKEDIN/APOLLO RESEARCH],Not Contacted,Jeff,VP level - hydrogeologist

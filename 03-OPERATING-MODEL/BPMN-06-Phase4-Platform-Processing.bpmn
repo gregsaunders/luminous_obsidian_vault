@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
+             xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+             xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC"
+             xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             id="Definitions_Phase4"
+             targetNamespace="http://luminousbiosolutions.com/bpmn/na-monitoring"
+             exporter="Luminous BioSolutions"
+             exporterVersion="1.0">
+
+  <!-- ============================================================ -->
+  <!-- PROCESS: Phase 4 - Platform Processing & Correlation         -->
+  <!-- ============================================================ -->
+  <process id="Process_Phase4_PlatformProcessing" name="Phase 4: Platform Processing &amp; Correlation" isExecutable="false">
+    <documentation>
+      Luminous BioSolutions NA Monitoring Service
+      Phase 4: Platform Processing &amp; Correlation - Detailed Process
+
+      This process covers data ingestion, correlation, and visualization
+      in the Squarehead Foundry Relational Context Engine.
+      Owner: Luminous Platform / Data Team
+      Location: Cloud
+
+      Reference: [[01-Service-Delivery-Process-Map]] - Phase 4
+      Master Diagram: [[BPMN-01-Master-Orchestration]]
+      Previous Phase: [[BPMN-05-Phase3-Lab-Analysis]]
+      Next Phase: [[BPMN-07-Phase5-Customer-Delivery]]
+
+      Related: [[02-Roles-and-Responsibilities]] | [[03-Technology-Requirements]]
+
+      Version 1.1 | Created: 2026-01-01
+    </documentation>
+
+    <!-- Start Event -->
+    <startEvent id="Event_Start" name="Results Uploaded from Lab">
+      <documentation>Lab has uploaded biosensor results to platform (end of Phase 3)</documentation>
+    </startEvent>
+
+    <!-- Task 4.1: Ingest Biosensor Results -->
+    <task id="Task_IngestResults" name="Ingest Biosensor Results">
+      <documentation>
+        Receive and parse uploaded biosensor results.
+
+        Data ingestion:
+        - Validate file format (CSV/JSON)
+        - Parse fold expression values
+        - Extract sample barcodes
+        - Timestamp receipt
+
+        Input: Uploaded results file
+        Output: Data in platform staging
+        Responsible: Platform (automated)
+        Tool: API / Import module
+      </documentation>
+    </task>
+
+    <!-- Task 4.2: Link Results to Sample Metadata -->
+    <task id="Task_LinkResults" name="Link Results to Sample Metadata">
+      <documentation>
+        Match biosensor results to pre-registered sample records.
+
+        Linkage process:
+        - Match barcode to sample ID
+        - Pull collection metadata (time, location, depth)
+        - Pull water body information
+        - Create enriched sample record
+
+        Input: Sample ID, barcode
+        Output: Enriched sample record
+        Responsible: Platform (automated)
+        Tool: Relational Context Engine
+      </documentation>
+    </task>
+
+    <!-- Gateway: Barcode Match? -->
+    <exclusiveGateway id="Gateway_BarcodeMatch" name="Barcode Match Found?">
+      <documentation>Decision: Does the barcode match a pre-registered sample?</documentation>
+    </exclusiveGateway>
+
+    <!-- Task: Flag Unmatched -->
+    <task id="Task_FlagUnmatched" name="Flag Unmatched Barcode">
+      <documentation>
+        Log unmatched barcode for manual review.
+
+        Actions:
+        - Create exception record
+        - Queue for manual resolution
+        - Notify operations team
+
+        Input: Unmatched barcode
+        Output: Exception ticket
+        Responsible: Platform + Operations
+        Tool: Issue tracking
+      </documentation>
+    </task>
+
+    <!-- Task 4.3: Ingest Contextual Data -->
+    <task id="Task_IngestContextual" name="Ingest Contextual Data">
+      <documentation>
+        Pull in external contextual data sources.
+
+        Data sources:
+        - Weather data (Environment Canada API)
+        - Water flow/level (Customer SCADA export)
+        - Chemical dosing logs (Customer input)
+        - Rewatering events (Customer input)
+
+        Input: External data feeds
+        Output: Contextual data in platform
+        Responsible: Platform (automated) + Customer
+        Tool: API / CSV import
+      </documentation>
+    </task>
+
+    <!-- Task 4.4: Correlate NA with Context -->
+    <task id="Task_Correlate" name="Correlate NA Results with Context">
+      <documentation>
+        Run automated correlation analysis.
+
+        Correlation factors:
+        - Temperature vs. NA levels
+        - Flow rate vs. NA levels
+        - Dosing events vs. NA response
+        - Seasonal patterns
+        - Spatial comparisons (cell-to-cell)
+
+        Input: All linked data
+        Output: Correlation insights
+        Responsible: Platform (automated)
+        Tool: Automated correlation engine
+      </documentation>
+    </task>
+
+    <!-- Task 4.5: Generate Trend Analysis -->
+    <task id="Task_TrendAnalysis" name="Generate Trend Analysis">
+      <documentation>
+        Calculate and visualize trends over time.
+
+        Analysis includes:
+        - Time series for each water body
+        - Moving averages (7-day, 30-day)
+        - Seasonal pattern detection
+        - Year-over-year comparison (when data available)
+
+        Input: Historical + current data
+        Output: Trend visualizations
+        Responsible: Platform (automated)
+        Tool: Analytics module
+      </documentation>
+    </task>
+
+    <!-- Task 4.6: Check Thresholds and Flag Anomalies -->
+    <task id="Task_CheckThresholds" name="Check Thresholds &amp; Flag Anomalies">
+      <documentation>
+        Compare results against configured thresholds.
+
+        Alert conditions:
+        - NA exceeds warning threshold
+        - NA exceeds critical threshold
+        - Unexpected pattern detected
+        - Sudden change from baseline
+
+        Input: Results vs. thresholds
+        Output: Alerts generated (if applicable)
+        Responsible: Platform (automated)
+        Tool: Alerting rules engine
+      </documentation>
+    </task>
+
+    <!-- Gateway: Threshold Breach? -->
+    <exclusiveGateway id="Gateway_ThresholdBreach" name="Threshold Breach?">
+      <documentation>Decision: Did any results breach configured thresholds?</documentation>
+    </exclusiveGateway>
+
+    <!-- Task: Generate Alert -->
+    <task id="Task_GenerateAlert" name="Generate Alert Notification">
+      <documentation>
+        Create and send alert for threshold breach.
+
+        Alert details:
+        - Which sample/water body
+        - What threshold was breached
+        - Current value vs. threshold
+        - Recommended action
+
+        Input: Breach details
+        Output: Alert sent to stakeholders
+        Responsible: Platform (automated)
+        Tool: Notification system
+      </documentation>
+    </task>
+
+    <!-- Task 4.7: Update Customer Dashboard -->
+    <task id="Task_UpdateDashboard" name="Update Customer Dashboard">
+      <documentation>
+        Refresh customer-facing dashboard with new data.
+
+        Dashboard views updated:
+        - Time Series (NA trends over time)
+        - Spatial Map (color-coded by location)
+        - Correlation Matrix (NA vs. factors)
+        - Anomaly Alerts (threshold breaches)
+        - Audit Trail (data provenance)
+
+        Input: All processed data
+        Output: Dashboard ready for customer
+        Responsible: Platform (automated)
+        Tool: Dashboard UI
+      </documentation>
+    </task>
+
+    <!-- Task: Store Audit Trail -->
+    <task id="Task_StoreAuditTrail" name="Store Immutable Audit Trail">
+      <documentation>
+        Record all data processing for regulatory compliance.
+
+        Audit trail includes:
+        - Data provenance (sample → result → insight)
+        - All processing timestamps
+        - Any manual interventions
+        - System version information
+
+        Input: Processing history
+        Output: Immutable audit record
+        Responsible: Platform (automated)
+        Tool: Audit logging system
+      </documentation>
+    </task>
+
+    <!-- End Event -->
+    <endEvent id="Event_End" name="Dashboard Ready for Customer">
+      <documentation>Data processed, dashboard updated, ready for Phase 5 (Customer Delivery)</documentation>
+    </endEvent>
+
+    <!-- Sequence Flows -->
+    <sequenceFlow id="Flow_1" sourceRef="Event_Start" targetRef="Task_IngestResults"/>
+    <sequenceFlow id="Flow_2" sourceRef="Task_IngestResults" targetRef="Task_LinkResults"/>
+    <sequenceFlow id="Flow_3" sourceRef="Task_LinkResults" targetRef="Gateway_BarcodeMatch"/>
+    <sequenceFlow id="Flow_4" name="Yes" sourceRef="Gateway_BarcodeMatch" targetRef="Task_IngestContextual"/>
+    <sequenceFlow id="Flow_5" name="No" sourceRef="Gateway_BarcodeMatch" targetRef="Task_FlagUnmatched"/>
+    <sequenceFlow id="Flow_6" sourceRef="Task_FlagUnmatched" targetRef="Task_IngestContextual"/>
+    <sequenceFlow id="Flow_7" sourceRef="Task_IngestContextual" targetRef="Task_Correlate"/>
+    <sequenceFlow id="Flow_8" sourceRef="Task_Correlate" targetRef="Task_TrendAnalysis"/>
+    <sequenceFlow id="Flow_9" sourceRef="Task_TrendAnalysis" targetRef="Task_CheckThresholds"/>
+    <sequenceFlow id="Flow_10" sourceRef="Task_CheckThresholds" targetRef="Gateway_ThresholdBreach"/>
+    <sequenceFlow id="Flow_11" name="Yes" sourceRef="Gateway_ThresholdBreach" targetRef="Task_GenerateAlert"/>
+    <sequenceFlow id="Flow_12" name="No" sourceRef="Gateway_ThresholdBreach" targetRef="Task_UpdateDashboard"/>
+    <sequenceFlow id="Flow_13" sourceRef="Task_GenerateAlert" targetRef="Task_UpdateDashboard"/>
+    <sequenceFlow id="Flow_14" sourceRef="Task_UpdateDashboard" targetRef="Task_StoreAuditTrail"/>
+    <sequenceFlow id="Flow_15" sourceRef="Task_StoreAuditTrail" targetRef="Event_End"/>
+  </process>
+
+  <!-- ============================================================ -->
+  <!-- BPMN DIAGRAM (Visual Layout)                                 -->
+  <!-- ============================================================ -->
+  <bpmndi:BPMNDiagram id="BPMNDiagram_Phase4">
+    <bpmndi:BPMNPlane id="BPMNPlane_Phase4" bpmnElement="Process_Phase4_PlatformProcessing">
+
+      <!-- Start Event -->
+      <bpmndi:BPMNShape id="Shape_Event_Start" bpmnElement="Event_Start">
+        <omgdc:Bounds x="180" y="200" width="36" height="36"/>
+      </bpmndi:BPMNShape>
+
+      <!-- Task 4.1 -->
+      <bpmndi:BPMNShape id="Shape_Task_IngestResults" bpmnElement="Task_IngestResults">
+        <omgdc:Bounds x="270" y="178" width="100" height="80"/>
+      </bpmndi:BPMNShape>
+
+      <!-- Task 4.2 -->
+      <bpmndi:BPMNShape id="Shape_Task_LinkResults" bpmnElement="Task_LinkResults">
+        <omgdc:Bounds x="420" y="178" width="100" height="80"/>
+      </bpmndi:BPMNShape>
+
+      <!-- Gateway: Barcode Match -->
+      <bpmndi:BPMNShape id="Shape_Gateway_BarcodeMatch" bpmnElement="Gateway_BarcodeMatch" isMarkerVisible="true">
+        <omgdc:Bounds x="570" y="193" width="50" height="50"/>
+      </bpmndi:BPMNShape>
+
+      <!-- Task: Flag Unmatched -->
+      <bpmndi:BPMNShape id="Shape_Task_FlagUnmatched" bpmnElement="Task_FlagUnmatched">
+        <omgdc:Bounds x="545" y="320" width="100" height="80"/>
+      </bpmndi:BPMNShape>
+
+      <!-- Task 4.3 -->
+      <bpmndi:BPMNShape id="Shape_Task_IngestContextual" bpmnElement="Task_IngestContextual">
+        <omgdc:Bounds x="720" y="178" width="100" height="80"/>
+      </bpmndi:BPMNShape>
+
+      <!-- Task 4.4 -->
+      <bpmndi:BPMNShape id="Shape_Task_Correlate" bpmnElement="Task_Correlate">
+        <omgdc:Bounds x="870" y="178" width="100" height="80"/>
+      </bpmndi:BPMNShape>
+
+      <!-- Task 4.5 -->
+      <bpmndi:BPMNShape id="Shape_Task_TrendAnalysis" bpmnElement="Task_TrendAnalysis">
+        <omgdc:Bounds x="1020" y="178" width="100" height="80"/>
+      </bpmndi:BPMNShape>
+
+      <!-- Task 4.6 -->
+      <bpmndi:BPMNShape id="Shape_Task_CheckThresholds" bpmnElement="Task_CheckThresholds">
+        <omgdc:Bounds x="1170" y="178" width="100" height="80"/>
+      </bpmndi:BPMNShape>
+
+      <!-- Gateway: Threshold Breach -->
+      <bpmndi:BPMNShape id="Shape_Gateway_ThresholdBreach" bpmnElement="Gateway_ThresholdBreach" isMarkerVisible="true">
+        <omgdc:Bounds x="1320" y="193" width="50" height="50"/>
+      </bpmndi:BPMNShape>
+
+      <!-- Task: Generate Alert -->
+      <bpmndi:BPMNShape id="Shape_Task_GenerateAlert" bpmnElement="Task_GenerateAlert">
+        <omgdc:Bounds x="1295" y="320" width="100" height="80"/>
+      </bpmndi:BPMNShape>
+
+      <!-- Task 4.7 -->
+      <bpmndi:BPMNShape id="Shape_Task_UpdateDashboard" bpmnElement="Task_UpdateDashboard">
+        <omgdc:Bounds x="1470" y="178" width="100" height="80"/>
+      </bpmndi:BPMNShape>
+
+      <!-- Task: Audit Trail -->
+      <bpmndi:BPMNShape id="Shape_Task_StoreAuditTrail" bpmnElement="Task_StoreAuditTrail">
+        <omgdc:Bounds x="1620" y="178" width="100" height="80"/>
+      </bpmndi:BPMNShape>
+
+      <!-- End Event -->
+      <bpmndi:BPMNShape id="Shape_Event_End" bpmnElement="Event_End">
+        <omgdc:Bounds x="1770" y="200" width="36" height="36"/>
+      </bpmndi:BPMNShape>
+
+      <!-- Sequence Flow Edges -->
+      <bpmndi:BPMNEdge id="Edge_Flow_1" bpmnElement="Flow_1">
+        <omgdi:waypoint x="216" y="218"/>
+        <omgdi:waypoint x="270" y="218"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_2" bpmnElement="Flow_2">
+        <omgdi:waypoint x="370" y="218"/>
+        <omgdi:waypoint x="420" y="218"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_3" bpmnElement="Flow_3">
+        <omgdi:waypoint x="520" y="218"/>
+        <omgdi:waypoint x="570" y="218"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_4" bpmnElement="Flow_4">
+        <omgdi:waypoint x="620" y="218"/>
+        <omgdi:waypoint x="720" y="218"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_5" bpmnElement="Flow_5">
+        <omgdi:waypoint x="595" y="243"/>
+        <omgdi:waypoint x="595" y="320"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_6" bpmnElement="Flow_6">
+        <omgdi:waypoint x="645" y="360"/>
+        <omgdi:waypoint x="770" y="360"/>
+        <omgdi:waypoint x="770" y="258"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_7" bpmnElement="Flow_7">
+        <omgdi:waypoint x="820" y="218"/>
+        <omgdi:waypoint x="870" y="218"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_8" bpmnElement="Flow_8">
+        <omgdi:waypoint x="970" y="218"/>
+        <omgdi:waypoint x="1020" y="218"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_9" bpmnElement="Flow_9">
+        <omgdi:waypoint x="1120" y="218"/>
+        <omgdi:waypoint x="1170" y="218"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_10" bpmnElement="Flow_10">
+        <omgdi:waypoint x="1270" y="218"/>
+        <omgdi:waypoint x="1320" y="218"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_11" bpmnElement="Flow_11">
+        <omgdi:waypoint x="1345" y="243"/>
+        <omgdi:waypoint x="1345" y="320"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_12" bpmnElement="Flow_12">
+        <omgdi:waypoint x="1370" y="218"/>
+        <omgdi:waypoint x="1470" y="218"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_13" bpmnElement="Flow_13">
+        <omgdi:waypoint x="1395" y="360"/>
+        <omgdi:waypoint x="1520" y="360"/>
+        <omgdi:waypoint x="1520" y="258"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_14" bpmnElement="Flow_14">
+        <omgdi:waypoint x="1570" y="218"/>
+        <omgdi:waypoint x="1620" y="218"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_15" bpmnElement="Flow_15">
+        <omgdi:waypoint x="1720" y="218"/>
+        <omgdi:waypoint x="1770" y="218"/>
+      </bpmndi:BPMNEdge>
+
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+
+</definitions>

@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
+             xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+             xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC"
+             xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             id="Definitions_Phase5"
+             targetNamespace="http://luminousbiosolutions.com/bpmn/na-monitoring"
+             exporter="Luminous BioSolutions"
+             exporterVersion="1.0">
+
+  <!-- ============================================================ -->
+  <!-- PROCESS: Phase 5 - Customer Delivery & Ongoing Support       -->
+  <!-- ============================================================ -->
+  <process id="Process_Phase5_CustomerDelivery" name="Phase 5: Customer Delivery &amp; Ongoing Support" isExecutable="false">
+    <documentation>
+      Luminous BioSolutions NA Monitoring Service
+      Phase 5: Customer Delivery &amp; Ongoing Support - Detailed Process
+
+      This process covers customer notification, reporting, and ongoing support.
+      Owner: Luminous Customer Success
+      Location: Remote (with periodic on-site visits)
+
+      Reference: [[01-Service-Delivery-Process-Map]] - Phase 5
+      Master Diagram: [[BPMN-01-Master-Orchestration]]
+      Previous Phase: [[BPMN-06-Phase4-Platform-Processing]]
+      Loops back to: [[BPMN-03-Phase1-Sample-Collection]] (next sampling cycle)
+
+      Related: [[02-Roles-and-Responsibilities]] | [[05-Pilot-Deliverables-Framework]]
+
+      Version 1.1 | Created: 2026-01-01
+    </documentation>
+
+    <!-- Start Event -->
+    <startEvent id="Event_Start" name="Dashboard Updated with New Results">
+      <documentation>Platform has processed results and dashboard is ready (end of Phase 4)</documentation>
+    </startEvent>
+
+    <!-- Task 5.1: Notify Customer -->
+    <task id="Task_NotifyCustomer" name="Notify Customer of New Results">
+      <documentation>
+        Send notification that new results are available.
+
+        Notification includes:
+        - Summary of new data
+        - Link to dashboard
+        - Any alerts/anomalies highlighted
+        - Next sampling reminder (if applicable)
+
+        Input: Dashboard updated
+        Output: Email/notification sent
+        Responsible: Customer Success (automated)
+        Tool: Notification system
+      </documentation>
+    </task>
+
+    <!-- Task 5.2: Customer Reviews Dashboard -->
+    <task id="Task_CustomerReview" name="Customer Reviews Dashboard">
+      <documentation>
+        Customer logs in and reviews their data.
+
+        Dashboard provides:
+        - Latest NA results by water body
+        - Trend visualizations
+        - Correlation insights
+        - Alerts and anomalies
+        - Historical comparison
+
+        Input: Dashboard access
+        Output: Customer informed
+        Responsible: Customer
+        Tool: Platform web app
+      </documentation>
+    </task>
+
+    <!-- Gateway: Support Needed? -->
+    <exclusiveGateway id="Gateway_SupportNeeded" name="Interpretation Support Needed?">
+      <documentation>Decision: Does the customer request interpretation support?</documentation>
+    </exclusiveGateway>
+
+    <!-- Task 5.3: Provide Interpretation Support -->
+    <task id="Task_InterpretationSupport" name="Provide Interpretation Support">
+      <documentation>
+        Answer customer questions about their data.
+
+        Support activities:
+        - Explain NA trends
+        - Interpret correlation findings
+        - Discuss operational implications
+        - Recommend actions based on data
+
+        Input: Customer questions
+        Output: Answers / insights provided
+        Responsible: Customer Success
+        Tool: Video call / email
+      </documentation>
+    </task>
+
+    <!-- Gateway: Report Due? -->
+    <exclusiveGateway id="Gateway_ReportDue" name="Periodic Report Due?">
+      <documentation>Decision: Is it time for a scheduled periodic report?</documentation>
+    </exclusiveGateway>
+
+    <!-- Task 5.4: Generate Summary Report -->
+    <task id="Task_GenerateSummaryReport" name="Generate Periodic Summary Report">
+      <documentation>
+        Create summary report for the reporting period.
+
+        Report types:
+        - Weekly summary (dashboard view / PDF)
+        - Monthly review report (PDF + call)
+        - Pilot completion report (PDF + presentation)
+
+        Input: Accumulated data for period
+        Output: Summary report
+        Responsible: Customer Success
+        Tool: Reporting module
+      </documentation>
+    </task>
+
+    <!-- Gateway: Regulatory Report Needed? -->
+    <exclusiveGateway id="Gateway_RegulatoryReport" name="Regulatory Report Needed?">
+      <documentation>Decision: Is a regulatory or stakeholder report required?</documentation>
+    </exclusiveGateway>
+
+    <!-- Task: Generate AER Report -->
+    <task id="Task_GenerateAERReport" name="Generate AER Compliance Report">
+      <documentation>
+        Create Alberta Energy Regulator compliance report.
+
+        Report includes:
+        - NA concentration trends
+        - Sampling frequency compliance
+        - Chain of custody documentation
+        - QC/QA records
+        - Exceedance notifications
+        - Annual summary statistics
+
+        Auto-generated PDF with:
+        - Executive summary
+        - Data tables in AER format
+        - Trend charts
+        - QC documentation
+        - Digital signature/timestamp
+
+        Input: Platform data
+        Output: AER-ready PDF
+        Responsible: Platform (automated) + Customer Success
+        Tool: Reporting module
+      </documentation>
+    </task>
+
+    <!-- Task: Generate Indigenous Community Report -->
+    <task id="Task_GenerateCommunityReport" name="Generate Indigenous Community Report">
+      <documentation>
+        Create accessible report for Indigenous community stakeholders.
+
+        Report design:
+        - Plain language, no jargon
+        - Visual infographics
+        - Color-coded trends (green/yellow/red)
+        - Historical comparison
+        - Seasonal patterns (calendar view)
+        - Site map with sampling locations
+
+        Input: Platform data
+        Output: Visual summary PDF
+        Responsible: Customer Success
+        Tool: Reporting module
+      </documentation>
+    </task>
+
+    <!-- Task 5.5: Conduct Monthly Review Call -->
+    <task id="Task_MonthlyReviewCall" name="Conduct Monthly Review Call">
+      <documentation>
+        Scheduled monthly call with customer.
+
+        Agenda:
+        - Review month's data and trends
+        - Discuss any anomalies or concerns
+        - Gather customer feedback
+        - Identify action items
+        - Plan any strategy adjustments
+
+        Input: Monthly data summary
+        Output: Action items, feedback documented
+        Responsible: Customer Success
+        Tool: Video call
+      </documentation>
+    </task>
+
+    <!-- Gateway: Strategy Adjustment Needed? -->
+    <exclusiveGateway id="Gateway_StrategyAdjust" name="Strategy Adjustment Needed?">
+      <documentation>Decision: Based on learnings, should sampling strategy be adjusted?</documentation>
+    </exclusiveGateway>
+
+    <!-- Task 5.6: Adjust Sampling Strategy -->
+    <task id="Task_AdjustStrategy" name="Adjust Sampling Strategy">
+      <documentation>
+        Modify sampling approach based on pilot learnings.
+
+        Adjustments may include:
+        - Change sampling frequency
+        - Add/remove sampling locations
+        - Adjust thresholds
+        - Modify alert criteria
+
+        Input: Pilot learnings, customer feedback
+        Output: Updated sampling plan
+        Responsible: Customer Success + Customer
+        Tool: Collaborative decision
+      </documentation>
+    </task>
+
+    <!-- Task: Log Customer Interaction -->
+    <task id="Task_LogInteraction" name="Log Customer Interaction">
+      <documentation>
+        Document all customer interactions.
+
+        Record:
+        - Date and type of interaction
+        - Topics discussed
+        - Customer feedback
+        - Action items
+        - Follow-up required
+
+        Input: Interaction details
+        Output: CRM record updated
+        Responsible: Customer Success
+        Tool: CRM system
+      </documentation>
+    </task>
+
+    <!-- End Event -->
+    <endEvent id="Event_End" name="Customer Delivery Cycle Complete">
+      <documentation>Customer has received results and any required reports. Ready for next sample batch.</documentation>
+    </endEvent>
+
+    <!-- Sequence Flows -->
+    <sequenceFlow id="Flow_1" sourceRef="Event_Start" targetRef="Task_NotifyCustomer"/>
+    <sequenceFlow id="Flow_2" sourceRef="Task_NotifyCustomer" targetRef="Task_CustomerReview"/>
+    <sequenceFlow id="Flow_3" sourceRef="Task_CustomerReview" targetRef="Gateway_SupportNeeded"/>
+    <sequenceFlow id="Flow_4" name="Yes" sourceRef="Gateway_SupportNeeded" targetRef="Task_InterpretationSupport"/>
+    <sequenceFlow id="Flow_5" name="No" sourceRef="Gateway_SupportNeeded" targetRef="Gateway_ReportDue"/>
+    <sequenceFlow id="Flow_6" sourceRef="Task_InterpretationSupport" targetRef="Gateway_ReportDue"/>
+    <sequenceFlow id="Flow_7" name="Yes" sourceRef="Gateway_ReportDue" targetRef="Task_GenerateSummaryReport"/>
+    <sequenceFlow id="Flow_8" name="No" sourceRef="Gateway_ReportDue" targetRef="Task_LogInteraction"/>
+    <sequenceFlow id="Flow_9" sourceRef="Task_GenerateSummaryReport" targetRef="Gateway_RegulatoryReport"/>
+    <sequenceFlow id="Flow_10" name="AER Required" sourceRef="Gateway_RegulatoryReport" targetRef="Task_GenerateAERReport"/>
+    <sequenceFlow id="Flow_11" name="Community Required" sourceRef="Gateway_RegulatoryReport" targetRef="Task_GenerateCommunityReport"/>
+    <sequenceFlow id="Flow_12" name="None Required" sourceRef="Gateway_RegulatoryReport" targetRef="Task_MonthlyReviewCall"/>
+    <sequenceFlow id="Flow_13" sourceRef="Task_GenerateAERReport" targetRef="Task_MonthlyReviewCall"/>
+    <sequenceFlow id="Flow_14" sourceRef="Task_GenerateCommunityReport" targetRef="Task_MonthlyReviewCall"/>
+    <sequenceFlow id="Flow_15" sourceRef="Task_MonthlyReviewCall" targetRef="Gateway_StrategyAdjust"/>
+    <sequenceFlow id="Flow_16" name="Yes" sourceRef="Gateway_StrategyAdjust" targetRef="Task_AdjustStrategy"/>
+    <sequenceFlow id="Flow_17" name="No" sourceRef="Gateway_StrategyAdjust" targetRef="Task_LogInteraction"/>
+    <sequenceFlow id="Flow_18" sourceRef="Task_AdjustStrategy" targetRef="Task_LogInteraction"/>
+    <sequenceFlow id="Flow_19" sourceRef="Task_LogInteraction" targetRef="Event_End"/>
+  </process>
+
+  <!-- ============================================================ -->
+  <!-- BPMN DIAGRAM (Visual Layout)                                 -->
+  <!-- ============================================================ -->
+  <bpmndi:BPMNDiagram id="BPMNDiagram_Phase5">
+    <bpmndi:BPMNPlane id="BPMNPlane_Phase5" bpmnElement="Process_Phase5_CustomerDelivery">
+
+      <!-- Start Event -->
+      <bpmndi:BPMNShape id="Shape_Event_Start" bpmnElement="Event_Start">
+        <omgdc:Bounds x="180" y="200" width="36" height="36"/>
+      </bpmndi:BPMNShape>
+
+      <!-- Task 5.1 -->
+      <bpmndi:BPMNShape id="Shape_Task_NotifyCustomer" bpmnElement="Task_NotifyCustomer">
+        <omgdc:Bounds x="270" y="178" width="100" height="80"/>
+      </bpmndi:BPMNShape>
+
+      <!-- Task 5.2 -->
+      <bpmndi:BPMNShape id="Shape_Task_CustomerReview" bpmnElement="Task_CustomerReview">
+        <omgdc:Bounds x="420" y="178" width="100" height="80"/>
+      </bpmndi:BPMNShape>
+
+      <!-- Gateway: Support Needed -->
+      <bpmndi:BPMNShape id="Shape_Gateway_SupportNeeded" bpmnElement="Gateway_SupportNeeded" isMarkerVisible="true">
+        <omgdc:Bounds x="570" y="193" width="50" height="50"/>
+      </bpmndi:BPMNShape>
+
+      <!-- Task 5.3 -->
+      <bpmndi:BPMNShape id="Shape_Task_InterpretationSupport" bpmnElement="Task_InterpretationSupport">
+        <omgdc:Bounds x="545" y="320" width="100" height="80"/>
+      </bpmndi:BPMNShape>
+
+      <!-- Gateway: Report Due -->
+      <bpmndi:BPMNShape id="Shape_Gateway_ReportDue" bpmnElement="Gateway_ReportDue" isMarkerVisible="true">
+        <omgdc:Bounds x="720" y="193" width="50" height="50"/>
+      </bpmndi:BPMNShape>
+
+      <!-- Task 5.4 -->
+      <bpmndi:BPMNShape id="Shape_Task_GenerateSummaryReport" bpmnElement="Task_GenerateSummaryReport">
+        <omgdc:Bounds x="820" y="178" width="100" height="80"/>
+      </bpmndi:BPMNShape>
+
+      <!-- Gateway: Regulatory Report -->
+      <bpmndi:BPMNShape id="Shape_Gateway_RegulatoryReport" bpmnElement="Gateway_RegulatoryReport" isMarkerVisible="true">
+        <omgdc:Bounds x="970" y="193" width="50" height="50"/>
+      </bpmndi:BPMNShape>
+
+      <!-- Task: AER Report -->
+      <bpmndi:BPMNShape id="Shape_Task_GenerateAERReport" bpmnElement="Task_GenerateAERReport">
+        <omgdc:Bounds x="945" y="80" width="100" height="80"/>
+      </bpmndi:BPMNShape>
+
+      <!-- Task: Community Report -->
+      <bpmndi:BPMNShape id="Shape_Task_GenerateCommunityReport" bpmnElement="Task_GenerateCommunityReport">
+        <omgdc:Bounds x="945" y="320" width="100" height="80"/>
+      </bpmndi:BPMNShape>
+
+      <!-- Task 5.5 -->
+      <bpmndi:BPMNShape id="Shape_Task_MonthlyReviewCall" bpmnElement="Task_MonthlyReviewCall">
+        <omgdc:Bounds x="1120" y="178" width="100" height="80"/>
+      </bpmndi:BPMNShape>
+
+      <!-- Gateway: Strategy Adjust -->
+      <bpmndi:BPMNShape id="Shape_Gateway_StrategyAdjust" bpmnElement="Gateway_StrategyAdjust" isMarkerVisible="true">
+        <omgdc:Bounds x="1270" y="193" width="50" height="50"/>
+      </bpmndi:BPMNShape>
+
+      <!-- Task 5.6 -->
+      <bpmndi:BPMNShape id="Shape_Task_AdjustStrategy" bpmnElement="Task_AdjustStrategy">
+        <omgdc:Bounds x="1245" y="320" width="100" height="80"/>
+      </bpmndi:BPMNShape>
+
+      <!-- Task: Log Interaction -->
+      <bpmndi:BPMNShape id="Shape_Task_LogInteraction" bpmnElement="Task_LogInteraction">
+        <omgdc:Bounds x="1420" y="178" width="100" height="80"/>
+      </bpmndi:BPMNShape>
+
+      <!-- End Event -->
+      <bpmndi:BPMNShape id="Shape_Event_End" bpmnElement="Event_End">
+        <omgdc:Bounds x="1570" y="200" width="36" height="36"/>
+      </bpmndi:BPMNShape>
+
+      <!-- Sequence Flow Edges -->
+      <bpmndi:BPMNEdge id="Edge_Flow_1" bpmnElement="Flow_1">
+        <omgdi:waypoint x="216" y="218"/>
+        <omgdi:waypoint x="270" y="218"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_2" bpmnElement="Flow_2">
+        <omgdi:waypoint x="370" y="218"/>
+        <omgdi:waypoint x="420" y="218"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_3" bpmnElement="Flow_3">
+        <omgdi:waypoint x="520" y="218"/>
+        <omgdi:waypoint x="570" y="218"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_4" bpmnElement="Flow_4">
+        <omgdi:waypoint x="595" y="243"/>
+        <omgdi:waypoint x="595" y="320"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_5" bpmnElement="Flow_5">
+        <omgdi:waypoint x="620" y="218"/>
+        <omgdi:waypoint x="720" y="218"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_6" bpmnElement="Flow_6">
+        <omgdi:waypoint x="645" y="360"/>
+        <omgdi:waypoint x="745" y="360"/>
+        <omgdi:waypoint x="745" y="243"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_7" bpmnElement="Flow_7">
+        <omgdi:waypoint x="770" y="218"/>
+        <omgdi:waypoint x="820" y="218"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_8" bpmnElement="Flow_8">
+        <omgdi:waypoint x="745" y="243"/>
+        <omgdi:waypoint x="745" y="480"/>
+        <omgdi:waypoint x="1470" y="480"/>
+        <omgdi:waypoint x="1470" y="258"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_9" bpmnElement="Flow_9">
+        <omgdi:waypoint x="920" y="218"/>
+        <omgdi:waypoint x="970" y="218"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_10" bpmnElement="Flow_10">
+        <omgdi:waypoint x="995" y="193"/>
+        <omgdi:waypoint x="995" y="160"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_11" bpmnElement="Flow_11">
+        <omgdi:waypoint x="995" y="243"/>
+        <omgdi:waypoint x="995" y="320"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_12" bpmnElement="Flow_12">
+        <omgdi:waypoint x="1020" y="218"/>
+        <omgdi:waypoint x="1120" y="218"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_13" bpmnElement="Flow_13">
+        <omgdi:waypoint x="1045" y="120"/>
+        <omgdi:waypoint x="1170" y="120"/>
+        <omgdi:waypoint x="1170" y="178"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_14" bpmnElement="Flow_14">
+        <omgdi:waypoint x="1045" y="360"/>
+        <omgdi:waypoint x="1170" y="360"/>
+        <omgdi:waypoint x="1170" y="258"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_15" bpmnElement="Flow_15">
+        <omgdi:waypoint x="1220" y="218"/>
+        <omgdi:waypoint x="1270" y="218"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_16" bpmnElement="Flow_16">
+        <omgdi:waypoint x="1295" y="243"/>
+        <omgdi:waypoint x="1295" y="320"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_17" bpmnElement="Flow_17">
+        <omgdi:waypoint x="1320" y="218"/>
+        <omgdi:waypoint x="1420" y="218"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_18" bpmnElement="Flow_18">
+        <omgdi:waypoint x="1345" y="360"/>
+        <omgdi:waypoint x="1470" y="360"/>
+        <omgdi:waypoint x="1470" y="258"/>
+      </bpmndi:BPMNEdge>
+
+      <bpmndi:BPMNEdge id="Edge_Flow_19" bpmnElement="Flow_19">
+        <omgdi:waypoint x="1520" y="218"/>
+        <omgdi:waypoint x="1570" y="218"/>
+      </bpmndi:BPMNEdge>
+
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+
+</definitions>

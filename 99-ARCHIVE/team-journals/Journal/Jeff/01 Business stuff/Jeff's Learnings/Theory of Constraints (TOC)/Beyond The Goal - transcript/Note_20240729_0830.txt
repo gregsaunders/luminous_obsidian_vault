@@ -1,0 +1,204 @@
+Speaker 1  0:03  
+What I would like to do next is to go into the detailed description of the process of the production,
+
+Unknown Speaker  0:15  
+the project management.
+
+Unknown Speaker  0:19  
+Part project management
+
+Speaker 1  0:21  
+is applied to hosts should be applied in a very, very vast diversity of cases. For example, making a movie is a project launching a new marketing campaign is a project. Implementing an ERP system is a project but also then tire industries that we call construction that's a project environment. All of engineering
+
+Unknown Speaker  0:52  
+is projects
+
+Speaker 1  0:57  
+and yes, we are right in calling them by the same name because they do have the same undesirable effects. In other words, they suffer from exactly the same symptoms and the analysis of each one of them reveals that the core problem the conflict that leads to the problems to the undesirable effects are the same no matter which project environment we are dealing with. What is the major complaints in projects? I'm not going to talk about the common complaints like resources are never available when promised or we start in too many projects without having handled the specs correctly. And then we have to do everything twice almost everything the real complaints are
+
+Unknown Speaker  1:55  
+regarding the end results.
+
+Speaker 1  1:58  
+For example, the general in charge of the Materiel Command of
+
+Unknown Speaker  2:02  
+the Israeli Air Force
+
+Speaker 1  2:05  
+if declared projects as to the cube, he said that projects never finished on time or budget. And if we are lucky, we are getting half of what was promised. That's why he called it to to The Cube. It will cost twice as much. It will take twice as long. And if we're lucky, we'll get half. This is not what I've heard from general in charge of the Materiel Command of the US Air Force. He said project in the US Air Force always finish on the last date that was promised, which means it never finished on the first date that was promised or the second date or the third date. It's called recovery plans. Same complaints just using different terminologies. How come? My claim is the number one problems that exists today in projects is due to the local optima rule that every project manager is using. Just to remind you, the prevailing rule of project management is the way to ensure that the project will finish on time is to try to make every task finish on time. Then prove to you that that's a problem. That's a core problem. That's the policy, the local optimal policy that leads to a huge conflict. What do I call huge conflict. Placing a person that works in projects into a conflict that jeopardize the most important thing for him. And the most important thing for a person is his own image. If you are using the techniques that put people in such conflicts, conflicts with their own image, don't expect good results. Now after seeing all of that they have to prove what they've said. And for that let me start a little bit early earlier. What typifies projects. What typifies projects is the fact
+
+Unknown Speaker  4:18  
+that
+
+Speaker 1  4:22  
+that we haven't done the same thing 10,000 times before. It's not like in production that the same piece is done 100,000 times this project is done under these circumstances only once and because of it what typifies project projects is a very large level
+
+Unknown Speaker  4:43  
+of unknown.
+
+Unknown Speaker  4:48  
+We don't know exactly.
+
+Speaker 1  4:51  
+So, for example, when the boss come to you and say how much time it will take you to do these projects. He's looking for what he's looking for estimation. There is no precise knowledge of how much time it will take. It's not like this part on this machine takes 2.7 minutes. There isn't such a curacy in projects. It's an estimation about what is the meaning of estimation. Estimation means there is some probability that it will take so much and there is another probability that it will take twice as long. Unfortunately, whenever we are talking about a probabilities
+
+Unknown Speaker  5:33  
+or time related probabilities,
+
+Speaker 1  5:37  
+or any quantity related probabilities, the things that comes to mind is this beautiful bell shapes
+
+Unknown Speaker  5:47  
+simply because most textbooks are using it,
+
+Speaker 1  5:51  
+but it's called In statistics, a Gaussian or normal distribution. Let's look on such a probability. What do you see? You see, for example, that the probability to finish at that time or before is 50%. But the probability to finish at that time before is 80%. The impression as long as we are looking at this beautiful bell shaped either the difference between 50% and 80% is not large. It's almost the same. Oh No big difference. Is it really the case in reality, unfortunately, as long as time or money are concerned, in reality, we don't have this beautiful symmetrical distributions. Reality is much more cruel in this way. Let me prove it to you using an example that is for my day to day life. People are coming to me and say I need two minutes of your time. Now I know that it's not two minutes. I know that on average, the meeting will take about 15 minutes. But I will not be astonished at all if the issue raised is so important and so urgent that the meeting takes a whole hour So a quarter of an hour more than the average. At the same time. I will be astonished if the meeting will take three quarters of an hour less than the average you see I've never had a meeting that lasted half a minus half an hour and neither did you. In other words, there is no minus here, which immediately tells you that the probabilities in reality, regarding time or money are not symmetrical, but they are assymetrical probabilities, things that have long tail,
+
+Unknown Speaker  7:36  
+something like that.
+
+Speaker 1  7:39  
+And when we say that our environment is environment with very high uncertainty, this means that the tail is much longer and much bigger. That's the meaning of uncertainty. Even when we take a relatively certain environment, like the graphs that I've showed here, this is representing more the construction industry where yes, exact same building we haven't done before, but we've done things which are very, very similar. And that's why the unknown is relatively simple, relatively small compared to for example, if we are developing now a new product or compared to r&d, okay. This is relatively known environment nevertheless, look what's happening the difference between 50% and 80% is very large. 80% is twice as large as 50%. Even in this relatively known environment. If you're talking about very unknown environments, like for example, new product developments you're talking about a factor of three or four. Now look what is happening we bear in mind that's reality. That's not Murphy. True. We are here because Murphy hit us. This is not Murphy this environment is full with Murphy. That's the meaning of unknown This is a reality that we have to deal with. And then look what happens when we are using the local optima rule. What is electrical Optima rule that in order to make sure that the project will finish on time, I'm trying to make sure that each tasks will finish on time. What does it mean? It means that they have to have a priori. How much time is supposed to take how much the task is supposed to take? More look what is happening. I'm the project manager. I have to know how much each task will take. Who is the best person to tell me how much time that has to take the person who's supposed to do the task. He is the one who is most experienced. Suppose that you are this person. You're not doing the whole project you're doing only one part of it. And I'm coming to you and asking you how much time it will take I am the project manager. And you say if you notice something, you're extremely reluctant to say any number. Why are you so reluctant to give me a new number? And by the way, I will squeeze it at the end for you. And then we'll start to argue but why are you reluctant to give me a number because you know that the numbers that you give is an estimate. Estimate. So the precise number, but nevertheless I will take the numbers that you say and I'm converting it to your commitment. I am turning your estimate to your commitment. Why? Because that's the mode that I'm operating. I will drive it each task will be the done on time. So the estimate the rough estimates about that you gave me becomes your commitment. Now. What does it what situation does it place you look immediately is to realize that this common procedure of turning estimations into commitments or putting everyone in the projects into a huge personal conflict the objective of every person, if I'm not mistaken, is to be regarded as a reliable person. Regarded as reliable by your boss, regardless is reliable by your peers, regarded as reliable by your people. Is it important for you? Is it important for you as a matter of fact, I don't know so many other things which are more important. Nobody likes to be considered a jerk. We know.
+
+Unknown Speaker  11:34  
+But what's the meaning of being reliable?
+
+Speaker 1  11:38  
+If for example, you give commitment and then you don't fulfill the commitment if it happens once well, but if constantly, many times you give commitments and you don't fulfill them, do you expect to be regarded as reliable? Of course not. Which means one of the necessary conditions to be considered a reliable person is meet your commitments.
+
+Unknown Speaker  12:03  
+But that's not the only thing.
+
+Speaker 1  12:06  
+If you are fighting for something, and then it turns out that you have exaggerated by a mile if it happened once fine, but if it happens quite frequently and you will get the name of somebody we're exaggerating widely. That time kiss goodbye the image of being reliable and alright. Of course. In other words, another necessary condition to be considered as a reliable person is Do not be considered as somebody exaggerate, do not exaggerate. Okay. Now look what is happening when I'm coming in telling you
+
+Unknown Speaker  12:48  
+how much time it will take you this task.
+
+Unknown Speaker  12:51  
+Let's switch back.
+
+Speaker 1  12:53  
+Remember the profile? The profile has a very long tail. Remember it? What percentage what estimate are we going to give me if you it is important for you to make your commitment and you will give me this 50% chance. What does it mean? It means that you are camicazi because there is more well over 50% chance that you will miss your commitment and not by small but by huge amount. happen once twice, three times. The end was your image which means in order to be regarded as reliable person, somebody who meets his commitment you have to give estimations which are over 80% chance of meeting them.
+
+Unknown Speaker  13:41  
+Otherwise you're crazy.
+
+Speaker 1  13:44  
+At the same time what happens if you are giving this 80% chance there is more than 50% chance of meat of finishing much ahead of it and then if that will happen will happen to you. You are exaggerated and you will fighting for that. And you were fighting for four weeks and then you finished in one week happened once happened twice, you're dead. So in order not to be considered as somebody who exaggerate, choose an estimate which is closer to 50% Now look what ever you knew you are doomed
+
+Unknown Speaker  14:20  
+and this is a huge personal conflict.
+
+Speaker 1  14:22  
+How do we in reality, leave with such a conflict? Because let's face it, this conflict is so important that we must find a way to break it. Because the objective is unbelievably important for us. We must be considered as reliable, not just be reliable. That could be considered as reliable is not less important. How do we do it?
+
+Unknown Speaker  14:47  
+What is the way that we are breaking this cloud?
+
+Unknown Speaker  14:56  
+Which it Fine fine fine. Okay, I'll
+
+Speaker 1  14:59  
+go back on my web. So give you an example in order not to provoke you too much. I will take an example not from time but from money. We have the same phenomena with money because in money estimations, once again we are talking about this symmetrical distribution and we will ask to tell what is the money that we need for next year. And we were giving an estimation and we were fighting for it and now we have the budget for the year. Do you know this budget for the year? Yes. And now it is November and we haven't finished the budget. How many of you will go to call Brittany say his $6 million back I didn't need it. Hello. Nobody will even dream on it because then next year we'll cut your budget. So what do we do? We put the money to good use. But we will never ever finish with too much access and we give it back. So the first step, the first of December, we finished the whole budget. And then in budgets it jumped based on pure guesses. We finish it almost always on the nose. Sometimes you need a little bit more. Some strange phenomena. It's called self fulfilling prophecy. Don't you realize that that's exactly what we do here. In time, we are giving the 80% estimation the 90% If we are a little bit experienced, then when we see that there is a danger of finishing too quickly. Then we put some more tests and we do more thorough job and we add another function in and we take our time to check things more thoroughly. But we'll never finish on time before time much before time will finish on the nose. Unless Murphy hit us and then we'll finish after. If you notice what's happening this assumption here
+
+Unknown Speaker  16:46  
+is that
+
+Speaker 1  16:49  
+you we cannot play with the time that if Murphy hits us, then fine we need more time. But if Murphy didn't hit us, the assumption is that we cannot expend the time and yes we can. And that's what we're doing. What is the end result of it the end result of it is something horrible due to the fact that our local optima rule turns any estimation into a commitment. We have developed the habit of what of giving the estimation which includes in it the safety, everyone is giving estimation which is 80% plus, in other words, everyone takes the safety for himself. If Murphy didn't hit us and we didn't need the safety, what do we do? We waste it rather than give it to the next link in the project. Because if we will give it we have declared them as exaggerating, and next time they will not listen to us. Is it understood? So look, what's the horrible situation? Everyone is taking his own safety. If Murthy hits fine if Matthew didn't hit, we waste the safety rather than giving it back to the project. And that's what kills the projects.
+
+Unknown Speaker  18:11  
+Now we understand what we should do.
+
+Speaker 1  18:14  
+Let's move on what are the conclusions? The conclusions are the following. We have to bank abolish immediately the wrong rule that the way to ensure that the project will finish on time is to try to make every task finish on time. This is totally idiotic. It's not idiotic. If the resource is doing it our machines and our computers it is idiotic when the resources are people. Because you see a computer doesn't care whether or not it's considered to be reliable a person does. We have to switch to another mode and look what it means on the spot. First of all, don't turn estimations into commitments. estimations have to be left as estimations. Yes, the two weeks we continue to consider it as about two weeks and the two weeks can take four weeks and we know it upfront. Second thing is once we do that we have to build the procedures so that we do not anymore allocate the safeties to each and every task. But we are allocating the safeties to protect the project as a whole. That's where we should put the safeties. This means immediately that we have to understand where is it places that we need to put the buffers where other places which is essential to put the buffers in order not to protect one single task to finish on time, but to protect the end project to finish on time. And by the way, it's not only at the end of the project. And the third thing is we must use buffer management to set priorities. Why? Because we know that in a project environment there is so many surprises left be so active, that we have all the time to reset the priorities and God forbid that we'll do it by replanting the project. Because if we do the replanting of the project, we are shifting immediately the local disturbance from being local to be global. We are killing ourselves with our own hands. How to exactly do it is something that was developed. I've described it in critical chain. It's something that was used in many, many places. And we know now how well it works simply because it's used in so many environments with so many companies, that testimonies are out there. Some of them from companies that never before that testified for example, two years ago, one half year ago, loosened for the first time they gave a testimony out
+
+Unknown Speaker  20:54  
+so called from what they've put in the public domain.
+
+Speaker 1  20:58  
+Their benchmark, was there a fiber optic division. It was the best. And it was also a benchmark because of another reason which is a type of projects that we're doing in engineering from year to year. We're about the same. It is two huge groups of engineers want to produce the new cables, optical cable for short distances, and one for the long distances. These are very, very complicated things. Very, very complicated if you're looking internally of what is involved in solving this very large unknowns and so on. Very large to engineering groups, hundreds of people, each one of them, engineers and so on. A 98 one have produced five projects, the other one is produced six projects. The 60% of the projects have been finished on time. And that was the best. By the way. I'll give you a rule. If somebody tells you that he's using the conventional ways to manage projects and he is 90% on time it means only one thing is like
+
+Unknown Speaker  22:08  
+60% is superb.
+
+Speaker 1  22:12  
+This is excellent management to reach 60% 99 this switch from 98 to 99 to critical chain
+
+Unknown Speaker  22:21  
+critical chain
+
+Speaker 1  22:23  
+just to give some words about it. I don't want to talk about it too much because that's not the subject here. Critical chain the name come from the fact that everybody's using critical path. Critical Path is the longest path in the project structure that determines the lead time of the project. Here we have introduced a huge distortion because if you read the original work of the people who invented critical path, they defined it as the longest path of dependent tasks. And they have emphasized that the dependency can be structural dependency I have to do that before that or it can be resource dependency, which is this does have to be done by the same resource and I have only one. This is also create dependency. So he has to do that first before he's doing that second, and they've emphasized it unfortunately, the first place is that it was demonstrated was in for example, the Polaris where there was no resource dependencies. You needed more people, you put more people and that's where the wrong notion of the critical path came from. We have to put it in. Because the critical path is the one that we cannot afford. The disturbances will penetrate in because if it penetrates into it, immediately lengthen the entire project. So we have to go back to the original intention. The original Tension is not any more a path through the products of the project structure, because the resources can work in different places. So I call it critical chain. So as the name is really not the name may be new but it is good to go back to the original idea. Then of course how to buffer, what is the measurements and so on. These are all new the they've switched this optical division of loosens have switched from 98 to 99 to the critical chain method, one group have done rather than 515 project, same magnitude of projects, the other one is done rather than 617 Only one project was late by one week, same exact number of engineers. So the engineering department was the bottleneck of that division is now not the bottleneck at all. No one does it now more than half of the engineering of loosen is on critical chain. What I'm still wondering is how come that they've released it to the public domain this results but things probably are changing. There are many many, many testimonials ranging from product development to software packages work to construction to a marketing initial initiatives. Today, more and more implementations of ERP are regarded as a huge project which they are and are managed by critical chain. What I wanted to emphasize here is look if you go systematically you can find the wrong rules. And you have to go systematically to find the local optima rules because otherwise if you look on such a rule, without analysis, you will not notice that it stemmed from the fact that we didn't have all the data you simply take it as a fact of life. More than that if you don't go so the rigorous way of defining precisely the problem and then building the solution. You will not find a new rule because the new rule is not one statement. It is a whole procedure that have to be thought out very carefully. Now what I would like to do is to move to the next part of our supply chain, the one that is relatively easy, probably the easiest to implement. It was hardest to find the solution. Let me show you in a minute why and what I'm talking about now is distribution. Remember the original management, conflict, cloud, manage well and in order to manage well you have to reduce costs for one inside, but you also have to protect sales from the other side. Now in this environment, distribution environment, what is number one factor in cost? It is the amount of inventory held so reduce costs translate directly to what
+
+Unknown Speaker  26:55  
+to reduce inventory for sure.
+
+Speaker 1  26:58  
+How do you protect sales in distribution? What is number one reason for losing sale? The client comes one something you don't have it. It's called shortages. So if you want to protect sales and to always have what the client wants, what do you do? Increase inventory. So in order to reduce costs they must hold less inventory but in order to protect sales I have to hold more inventory Have you noticed a small tiny conflict. Once again, what we're trying to do is to optimize and optimize and optimize never works. This was the hardest to solve simply because when I've looked on every assumption, hiding behind this logical arrows and trying to find which one is false, I found many assumptions hiding behind every arrow, but all of them were correct
+
+Unknown Speaker  27:50  
+until I realize our levels of correctness,
+
+Unknown Speaker  27:54  
+this assumption
+
+Speaker 1  27:56  
+that I'm attacking is assumption between C and D prime. In order to protect sales, you must hold more inventories. Why? What is the assumptions that we make? The assumptions that we make is that we do not know precisely in advance which warehouse will be approached when and demanded to deliver what In other words, we don't know how much will be a demand at region precisely at what time? In other words, there's some assumption here is the forecast is not totally accurate. And as long as the focus is not totally accurate, now I have to hold more inventories if I want to protect all the sales. Makes sense? That's why by the way there is such a flourishing market for modules of ERP that promised more reliable
+
+Unknown Speaker  28:54  
+focused
+
+Speaker 1  28:57  
+and it's about time that somebody will take these better forecasting modules and see Do they give us better forecast? Compare the forecast was actual just to see that's as bad as the previous ones for heaven's sake. You see, now we know some things that we didn't know 20 years ago which is it is theoretically impossible to forecast accurately. at the product level at the regional level. It's theoretically impossible. This is what is called today chaos theory. What Kelsey we have taught us is that there are environments not complicated environments. It's environments that are governed by non linear equations, like the problem of the consumption of the market. And in those environments, a very tiny infinitesimal change can cause a big unpredictable change. Down the road. Popularly it is called the butterfly syndrome. That if one butterfly in China, one time will move his wings like that, rather than like that. This can cause a tornado in Florida three weeks later. And this is a reality also in consumption of the market. So we cannot get a better focused, not much better forget it. There is no crystal balls. So if this assumption of the focus is wrong, is correct, what can we do? And the way out was not to ask whether or not the forecast is bad. But to ask is a focus bed to the same extent throughout the distribution system? That was the key. In order to unleash this problem. Let's look on the distribution system. What do we mean by distribution system? We have a plant that produces the product. Then we have regional warehouses,
+
+Unknown Speaker  31:03  
+and then we have the outlet to shops if you want.
+
+Speaker 1  31:10  
+The focus is lousy. But is it allows you to the same extent. For example, if I'm looking on the shop level, it can be that this week, a shop have sold five items for a particular product and next week is sold zero. Very common. In other words, huge swings. In percentage of consumption at the shop level. Very common. Is it also common when I'm dealing with a regional warehouse? Suppose that this regional warehouse is the one supplying the entire east coast? One week at 6000. Is it common that next week it will be zero? No way it can go to 5000. But it will never swing from almost never from 6000 to zero. In other words, the focus the liability Ed's original warehouse is by far better than the focus on reliability at the outlet. As a matter of fact, we know it for a long, long time from statistics. And what these statistics is saying to us, we know it even in everyday language. It says statistical fluctuations do average out and that's correct whenever we don't have dependencies. If for example, the shops are equal in terms of supplying demand in terms of size, then the rule is that the focus reliability here is better by the square root of the number of the shops that it fits. So if for example, we have a warehouse original warehouses supplies to 400 shops, their focus the liability of the warehouse is 20 times better than the shops than each one of the shops. This is not a small difference. Likewise, when we are looking on the fluctuations in each region, and we ask ourselves can we get the same reliability magnitude of fluctuation relative to the consumption when we are looking on the aggregation on the plants that provided it to the whole country? Once again we talking about the same thing, the focus reliability at the plant level where we are talking about consumption of the whole country is by far better than any one of the regional warehouses. If, for example, in the US, we have something like 16 regional warehouses, then it means that the plant is four times better. This is not 20% better. It's four times better. That's the case. Now let me ask you, where should we hold the inventory? And the common sense answer is let's hold it inventory at the place where we have
+
+Unknown Speaker  33:49  
+the most reliable forecast.
+
+Speaker 1  33:53  
+What does it mean? It seems to hold it here.
+
+Unknown Speaker  33:58  
+What is a common practice today?
+
+Speaker 1  34:00  
+Where do we hold the inventory? We are going out of our way to try as much as we can to push it into the shops, sometimes by giving incentives to the shops. To buy more than they need some time for threatening the shops to buy more than they need. Am I right? This is definitely the case in almost every industry. We are doing the opposite. It's amazing to what extent we understood that in production. The idea is switch from push pull. And we didn't understand that the same concept is valid for distribution. You have to switch from push to pull, but the resulting distribution to switch is by far bigger than in production. Because in production, the focus on reliability might be uniform across the board. In distribution. it deteriorates dramatically as you're going from one step to the other. And nevertheless we are doing super push. But wait, what does it mean? It means that we are now recommending to put a new warehouse at the origin whole idea was to reduce inventory. And now what I'm saying is add a whole new warehouse. Huge one.
+
+Unknown Speaker  35:17  
+And the answer is yes.
+
+Speaker 1  35:19  
+Because it will reduce the inventory in the system. Overall inventory. Why do I claim it? Look how much inventory should they hold in original warehouse what dictates the level that they should hold here? From one hand side is how much is a consumption? Consumption during what period consumption during the period that it takes me to replenish the warehouse. From the time that the warehouse is saying I need something until there I have to protect against the consumption in this period of time. If I don't have this warehouse, what is the replenishment time the replenishment time contains the production time which is very long and unpredictable. If I do have everything here, the replenishment time here is just the transportation time which is much much shorter. And because of it if I'm holding here the inventories here I have in each one of the original warehouse, I have to hold much, much less inventories but not only here. Look what's happening to the shop. If the shop today is missing something they have to order they know that many times it's not in the in the warehouse which means they have to wait until the plant will reproduce it which means kiss it goodbye. That's why the tempted to hold too much more inventory. But if they aren't now in the position where they know that everything is here and everything is here, because everything is here, because of it the unknown factor is much much smaller than what do we get how much inventory should shop hold. The transportation time is one day the amount of dictate now the inventory in the shop is what do I need for proper visual display. Not only that, we are holding much less inventory in the shop. We are holding the correct inventory in the shop because we can afford to hold the proper visual display. So what is happening due to that? And that's what in almost every reality it's happening. The inventory drops in the total system to less than half while you have zero cross shipments between warehouses. You have almost no shortages in the shop and you have a much better visual display which means sales goes up. This is one of the most beautiful implementations. This is a simplest to do. You know, by the way, what is the hardest part here to do? Well, this part of the whole implementation is to convince the managers in charge of the warehouses that there are not any more the kings who decide what will order and who to give the favor. And they have like 300 kilogram gorillas and all of a sudden they don't have any say in what's the order, simply replenishing. Whatever is sold is immediately shipped from here and they have to concentrate on managing the warehouse. You have to convince them otherwise it will sabotage the system. This is the hardest part of the whole implementation. Such implementations on a huge scale was done by very large companies and the whole change took less than one month, including getting the results I would like now to stress another point, the minutes that we are switching the local optima rules in production, in distribution in project management and so on. The real benefits comes when we are re evaluating our strategies. Because now due to this increased performance, we can really build what is called winning strategies, something that was almost impossible to think about before. Let me give an example of it.
+
+Unknown Speaker  39:21  
+Some things that was done.
+
+Speaker 1  39:24  
+I do believe that the name of the company that it was done is known to you maybe to some of you. Did you ever heard about General Motors? And to prove that the concept works, we've done it not on all General Motors we've done just the pilot and the pilot was all of Cadillac. This is considered a small pilot in General Motors. Some people don't know how big it is that he has a following
+
+Speaker 1  39:57  
+Why don't we look on ourselves as citizens as people? Well, this is number one item that we spend money on and talking about in terms of the maximum amount of money per one item and this will be probably our house. But when we buy a house, and this is so expensive. We would like to express our individuality. Me myself now, but my wife certainly yes because let me tell you, we've never moved to a new house without my wife moving some walls in sight and to express individuality. And that's very, very common. What is number two? Cause number three is probably cloth. Especially if I'm looking on my wife. Definitely number three. Sometimes number two. And then of course if my wife will see the same dress on somebody else, she will not like it too much. She wants to show her individuality. So in the houses we want so much to show our individuality and we do in clothes, we definitely to show our individuality. And we do what the Balkans a cause. And it's a cause we don't not much because they don't allow us don't say because let's look on it.
+
+Unknown Speaker  41:17  
+How many configurations
+
+Speaker 1  41:20  
+legitimate configurations exist in the car. If you look on General Motors for example, and the same is for other car companies. And you take configuration Smith's changes that can be downloaded the dealer but must be done at the assembly plant itself. Then we are talking about different colors outside in different transmissions in different engines and different trains, fabric or leather than colors and so you know how many different configurations that are in General Motors. Cars today. Some of them will say millions. Some of you will be courageous and say hundreds of millions. The answer is more than a trillion for it, but when I come to buy a car and I'm going to dealer how many different configurations he offers me whatever's in each slot. And even if we're talking about the big dealer, it's still few hundreds out of the vast amount that is existing. For example, if I just limit myself to Cadillac at the time that we have done it, the biggest Cadillac dealer was holding 300 different configurations on his left. We can look at that time, the number of legitimate configurations, which mean things that they could have done on the same land without adding a cent in the shift and so on was 7.6 million. And Cadillac was the cow with the least amount of configurations. For example, the Chevy Blazer that time had more than 600 million.
+
+Unknown Speaker  42:58  
+Now what is happening?
+
+Unknown Speaker  45:28  
+Initial system as I've just shown
+
+Speaker 1  43:02  
+I'm coming to the dealer is trying to shove down my throat what he has in the lot if I don't agree, and he sees that the I'm going to lose the deal, then he will go on something called the allocator. This means a system that he can see what inventory exists in all the other dealers within 500 mile radius. And then maybe one of them one of the configurations that they hold will be satisfactory to me. You have to realize that he will do it only as a last result because if he has to bring it from another dealer, not only that they have to cover the transportation which is expensive to car he's not driving on the road it goes on vehicle to bring it to you. But he has to share also the profit with the other dealer. So this is last resort. If I don't agree to that, he will start to give me some rebates or say goodbye. Very few of them will accept my order. Even though it's totally legitimate from the eyes of GM to accept a customer order as well as the whole system built for it. Why is will be so reluctant not just because the promise of GM or Ford or Chrysler is oversell to 70 days until it is delivered. That's not his problem because as long as you're willing to wait 70 days What should he care? The problem is that in more than 40% of the cases, the car that is delivered eventually is not the car that was ordered. Now do you want to be a dealer at that stage? So who wants to deal with it? Very few are accepting it what we have done is to put first of all the configurator at the dealer site so he can while you're ordering, immediately check if it is legitimate or not. Before that it was done batch once a week only in the center. But then, if we accept these orders the problem was that we will get to big fluctuations of capacity of the assembly line. Now the assembly line to increase the capacity. Yes, we can increase it by the drummer of rope and we can increase it and we did increase it by more than 20% but the fluctuation can be much higher than that and then to build another plant another assembly plant is not exactly feasible. This is more than $2 billion investments. So the idea is how do you reduce it? So what we've done is we've used the distribution system as I've just shown
+

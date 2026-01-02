@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC" xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" id="Definitions_MasterOrchestration" targetNamespace="http://luminousbiosolutions.com/bpmn/na-monitoring" exporter="Camunda Modeler" exporterVersion="5.42.0">
+  <collaboration id="Collaboration_NAMonitoring">
+    <documentation>
+      Luminous BioSolutions NA Biological Monitoring &amp; Operational Intelligence Service
+      Master Process Orchestration - End-to-End Service Delivery
+      Version 1.1 | Created: 2025-12-30 | Updated: 2026-01-01
+    </documentation>
+    <extensionElements>
+      <camunda:properties>
+        <camunda:property />
+      </camunda:properties>
+    </extensionElements>
+    <participant id="Participant_Customer" name="Customer (Site Operator)" processRef="Process_Customer" />
+    <participant id="Participant_Operations" name="Luminous Operations" processRef="Process_Operations" />
+    <participant id="Participant_LabOps" name="Luminous Lab Operations" processRef="Process_LabOps" />
+    <participant id="Participant_Platform" name="Luminous Platform" processRef="Process_Platform" />
+    <participant id="Participant_CustomerSuccess" name="Luminous Customer Success" processRef="Process_CustomerSuccess" />
+    <messageFlow id="MsgFlow_KitToCustomer" name="Sample Kit Shipped" sourceRef="Task_ShipSampleKit" targetRef="Event_KitReceived" />
+    <messageFlow id="MsgFlow_SamplesToLab" name="Samples Shipped" sourceRef="Task_ShipSamples" targetRef="Event_SamplesReceived" />
+    <messageFlow id="MsgFlow_ResultsToPlatform" name="Results Uploaded" sourceRef="Task_UploadResults" targetRef="Event_ResultsReceived" />
+    <messageFlow id="MsgFlow_DashboardReady" name="Dashboard Updated" sourceRef="Task_PrepareDashboard" targetRef="SubProcess_CustomerDelivery" />
+    <messageFlow id="MsgFlow_NotifyCustomer" name="Results Notification" sourceRef="SubProcess_CustomerDelivery" targetRef="Event_ResultsNotification" />
+    <messageFlow id="MsgFlow_ContextualData" name="Contextual Data" sourceRef="Task_ProvideContextualData" targetRef="SubProcess_PlatformProcessing" />
+    <messageFlow id="MsgFlow_BarcodesToPlatform" name="Barcodes Pre-Registered" sourceRef="SubProcess_ServicePreparation" targetRef="Participant_Platform" />
+    <messageFlow id="MsgFlow_KitsToCS" name="Kits Ready for Shipment" sourceRef="SubProcess_ServicePreparation" targetRef="Task_ShipSampleKit" />
+  </collaboration>
+  <process id="Process_Customer" name="Customer Process" isExecutable="false">
+    <startEvent id="Event_KitReceived" name="Sample Kit Received">
+      <documentation>Customer receives sample collection kit from Luminous</documentation>
+      <messageEventDefinition id="MsgEvtDef_KitReceived" />
+    </startEvent>
+    <subProcess id="SubProcess_SampleCollection" name="Phase 1: Sample Collection">
+      <documentation>
+        Customer collects water samples at designated locations.
+        Steps: Receive kit, collect sample, scan barcode, confirm metadata, store in cooler, arrange pickup.
+        See: BPMN-02-Sample-Collection.bpmn for details.
+      </documentation>
+      <startEvent id="Event_CollectionStart" name="Start Collection" />
+      <task id="Task_CollectSample" name="Collect Water Sample">
+        <documentation>Collect water sample at designated location using Sampling SOP and GPS coordinates</documentation>
+      </task>
+      <task id="Task_ScanBarcode" name="Scan Sample Barcode">
+        <documentation>Scan barcode on sample container to capture metadata (Handheld App TBD)</documentation>
+      </task>
+      <task id="Task_ConfirmMetadata" name="Confirm Metadata">
+        <documentation>Confirm time, location, depth, water body ID</documentation>
+      </task>
+      <task id="Task_StoreSample" name="Store in Cooler">
+        <documentation>Store sample at appropriate temperature for transport</documentation>
+      </task>
+      <endEvent id="Event_CollectionEnd" name="Sample Ready" />
+      <sequenceFlow id="Flow_C1" sourceRef="Event_CollectionStart" targetRef="Task_CollectSample" />
+      <sequenceFlow id="Flow_C2" sourceRef="Task_CollectSample" targetRef="Task_ScanBarcode" />
+      <sequenceFlow id="Flow_C3" sourceRef="Task_ScanBarcode" targetRef="Task_ConfirmMetadata" />
+      <sequenceFlow id="Flow_C4" sourceRef="Task_ConfirmMetadata" targetRef="Task_StoreSample" />
+      <sequenceFlow id="Flow_C5" sourceRef="Task_StoreSample" targetRef="Event_CollectionEnd" />
+    </subProcess>
+    <task id="Task_PackageSamples" name="Package Samples for Shipment">
+      <documentation>Package samples in cooler following Packaging SOP</documentation>
+    </task>
+    <task id="Task_ShipSamples" name="Hand Off to Courier">
+      <documentation>Hand off packaged samples to Purolator/FedEx courier</documentation>
+    </task>
+    <task id="Task_ProvideContextualData" name="Provide Contextual Data">
+      <documentation>Provide SCADA data (water flow/level), chemical dosing logs, rewatering events</documentation>
+    </task>
+    <intermediateCatchEvent id="Event_ResultsNotification" name="Results Notification Received">
+      <documentation>Customer receives notification that new results are available</documentation>
+      <messageEventDefinition id="MsgEvtDef_ResultsNotification" />
+    </intermediateCatchEvent>
+    <task id="Task_ReviewDashboard" name="Review Dashboard">
+      <documentation>Customer reviews results in platform dashboard</documentation>
+    </task>
+    <exclusiveGateway id="Gateway_ContinueMonitoring" name="Continue Monitoring?">
+      <documentation>Decision to continue with next sampling cycle or end pilot</documentation>
+    </exclusiveGateway>
+    <endEvent id="Event_CustomerEnd" name="Pilot Complete">
+      <documentation>Monitoring pilot completed</documentation>
+    </endEvent>
+    <sequenceFlow id="Flow_Cust1" sourceRef="Event_KitReceived" targetRef="SubProcess_SampleCollection" />
+    <sequenceFlow id="Flow_Cust2" sourceRef="SubProcess_SampleCollection" targetRef="Task_PackageSamples" />
+    <sequenceFlow id="Flow_Cust3" sourceRef="Task_PackageSamples" targetRef="Task_ShipSamples" />
+    <sequenceFlow id="Flow_Cust4" sourceRef="Task_ShipSamples" targetRef="Task_ProvideContextualData" />
+    <sequenceFlow id="Flow_Cust5" sourceRef="Task_ProvideContextualData" targetRef="Event_ResultsNotification" />
+    <sequenceFlow id="Flow_Cust6" sourceRef="Event_ResultsNotification" targetRef="Task_ReviewDashboard" />
+    <sequenceFlow id="Flow_Cust7" sourceRef="Task_ReviewDashboard" targetRef="Gateway_ContinueMonitoring" />
+    <sequenceFlow id="Flow_Cust8" name="Yes - Next Cycle" sourceRef="Gateway_ContinueMonitoring" targetRef="SubProcess_SampleCollection" />
+    <sequenceFlow id="Flow_Cust9" name="No - End Pilot" sourceRef="Gateway_ContinueMonitoring" targetRef="Event_CustomerEnd" />
+  </process>
+  <process id="Process_Operations" name="Luminous Operations Process" isExecutable="false">
+    <startEvent id="Event_CustomerOnboarded" name="Customer Onboarded">
+      <documentation>Customer contract signed, ready for service preparation</documentation>
+    </startEvent>
+    <subProcess id="SubProcess_ServicePreparation" name="Phase 0: Service Preparation">
+      <documentation>
+        Pre-pilot preparation: barcode design, kit assembly, platform registration.
+        See: Service-Delivery-Process-Map.md Phase 0 for details.
+      </documentation>
+      <startEvent id="Event_PrepStart" name="Start Preparation" />
+      <task id="Task_DesignBarcodeSchema" name="Design Barcode Schema">
+        <documentation>Design customer-specific barcode schema: KEA-04-0001-001-7 (Customer-WaterBody-Batch-Container-Check)</documentation>
+      </task>
+      <task id="Task_GenerateBarcodes" name="Generate Unique Barcodes">
+        <documentation>Generate barcodes for sample containers using barcode generator</documentation>
+      </task>
+      <task id="Task_ProcureContainers" name="Procure Sample Containers">
+        <documentation>Procure/prepare 50mL falcon tubes or appropriate sample containers</documentation>
+      </task>
+      <task id="Task_ApplyLabels" name="Apply Barcode Labels">
+        <documentation>Apply barcode labels to sample containers</documentation>
+      </task>
+      <task id="Task_PreRegisterBarcodes" name="Pre-Register Barcodes in Platform">
+        <documentation>Upload barcode manifest to platform, linking barcodes to customer and expected sample locations</documentation>
+      </task>
+      <task id="Task_AssembleKits" name="Assemble Sample Collection Kits">
+        <documentation>Assemble kits: labeled containers, cooler with ice packs, sampling SOP, prepaid shipping label</documentation>
+      </task>
+      <task id="Task_QCKits" name="QC Check Assembled Kits">
+        <documentation>Verify kit completeness: correct number of containers, labels readable, materials present</documentation>
+      </task>
+      <endEvent id="Event_PrepEnd" name="Kits Ready" />
+      <sequenceFlow id="Flow_Prep1" sourceRef="Event_PrepStart" targetRef="Task_DesignBarcodeSchema" />
+      <sequenceFlow id="Flow_Prep2" sourceRef="Task_DesignBarcodeSchema" targetRef="Task_GenerateBarcodes" />
+      <sequenceFlow id="Flow_Prep3" sourceRef="Task_GenerateBarcodes" targetRef="Task_ProcureContainers" />
+      <sequenceFlow id="Flow_Prep4" sourceRef="Task_ProcureContainers" targetRef="Task_ApplyLabels" />
+      <sequenceFlow id="Flow_Prep5" sourceRef="Task_ApplyLabels" targetRef="Task_PreRegisterBarcodes" />
+      <sequenceFlow id="Flow_Prep6" sourceRef="Task_PreRegisterBarcodes" targetRef="Task_AssembleKits" />
+      <sequenceFlow id="Flow_Prep7" sourceRef="Task_AssembleKits" targetRef="Task_QCKits" />
+      <sequenceFlow id="Flow_Prep8" sourceRef="Task_QCKits" targetRef="Event_PrepEnd" />
+    </subProcess>
+    <endEvent id="Event_OpsEnd" name="Service Preparation Complete" />
+    <sequenceFlow id="Flow_Ops1" sourceRef="Event_CustomerOnboarded" targetRef="SubProcess_ServicePreparation" />
+    <sequenceFlow id="Flow_Ops2" sourceRef="SubProcess_ServicePreparation" targetRef="Event_OpsEnd" />
+  </process>
+  <process id="Process_LabOps" name="Lab Operations Process" isExecutable="false">
+    <startEvent id="Event_SamplesReceived" name="Samples Received at Lab">
+      <documentation>Physical samples arrive at Calgary lab</documentation>
+      <messageEventDefinition id="MsgEvtDef_SamplesReceived" />
+    </startEvent>
+    <subProcess id="SubProcess_LabReceipt" name="Phase 2: Lab Receipt &#38; QC">
+      <documentation>
+        Receive, log, and QC incoming samples.
+        See: BPMN-03-Transport-Receipt.bpmn for details.
+      </documentation>
+      <startEvent id="Event_ReceiptStart" name="Start Receipt" />
+      <task id="Task_ScanReceiptBarcode" name="Scan Barcodes">
+        <documentation>Scan barcodes to confirm receipt in LIMS</documentation>
+      </task>
+      <task id="Task_InspectSamples" name="Inspect Sample Integrity">
+        <documentation>Visual inspection for contamination or damage</documentation>
+      </task>
+      <exclusiveGateway id="Gateway_QCPass" name="QC Pass?" />
+      <task id="Task_LogIssues" name="Log Issues">
+        <documentation>Create issue ticket for damaged, missing, or late samples</documentation>
+      </task>
+      <endEvent id="Event_ReceiptEnd" name="Samples Logged" />
+      <endEvent id="Event_QCFail" name="QC Failed">
+        <errorEventDefinition id="ErrEvtDef_QCFail" />
+      </endEvent>
+      <sequenceFlow id="Flow_R1" sourceRef="Event_ReceiptStart" targetRef="Task_ScanReceiptBarcode" />
+      <sequenceFlow id="Flow_R2" sourceRef="Task_ScanReceiptBarcode" targetRef="Task_InspectSamples" />
+      <sequenceFlow id="Flow_R3" sourceRef="Task_InspectSamples" targetRef="Gateway_QCPass" />
+      <sequenceFlow id="Flow_R4" name="Yes" sourceRef="Gateway_QCPass" targetRef="Event_ReceiptEnd" />
+      <sequenceFlow id="Flow_R5" name="No" sourceRef="Gateway_QCPass" targetRef="Task_LogIssues" />
+      <sequenceFlow id="Flow_R6" sourceRef="Task_LogIssues" targetRef="Event_QCFail" />
+    </subProcess>
+    <subProcess id="SubProcess_LabAnalysis" name="Phase 3: Lab Analysis">
+      <documentation>
+        Biosensor testing and analysis.
+        See: BPMN-04-Lab-Analysis.bpmn for details.
+      </documentation>
+      <startEvent id="Event_AnalysisStart" name="Start Analysis" />
+      <task id="Task_RetrieveSamples" name="Retrieve Samples">
+        <documentation>Retrieve samples from receiving area to workstation</documentation>
+      </task>
+      <task id="Task_PrepareBiosensor" name="Prepare Biosensor Culture">
+        <documentation>Prepare active biosensor culture from frozen stock</documentation>
+      </task>
+      <task id="Task_PrepareAssayPlate" name="Prepare 96-Well Assay Plate">
+        <documentation>Load sample + biosensor + media into plate</documentation>
+      </task>
+      <task id="Task_LoadPlateReader" name="Load Plate into Reader">
+        <documentation>Load inoculated plate into PerkinElmer Victor plate reader</documentation>
+      </task>
+      <intermediateCatchEvent id="Event_AssayTimer" name="15-Hour Assay">
+        <documentation>Automated bioluminescence assay runs for 15 hours with readings every 20 minutes</documentation>
+        <timerEventDefinition id="TimerEvtDef_Assay">
+          <timeDuration>PT15H</timeDuration>
+        </timerEventDefinition>
+      </intermediateCatchEvent>
+      <task id="Task_ExportData" name="Export Raw Data">
+        <documentation>Export CSV/data file from plate reader software</documentation>
+      </task>
+      <task id="Task_PerformResultsQC" name="Perform QC Check">
+        <documentation>Validate results against QC checklist (positive/negative controls)</documentation>
+      </task>
+      <task id="Task_CalculateResults" name="Calculate Fold Expression">
+        <documentation>Calculate fold gene expression and NA concentration estimates</documentation>
+      </task>
+      <task id="Task_LinkResults" name="Link Results to Sample ID">
+        <documentation>Scan barcode to link processed results to sample ID</documentation>
+      </task>
+      <endEvent id="Event_AnalysisEnd" name="Analysis Complete" />
+      <sequenceFlow id="Flow_A1" sourceRef="Event_AnalysisStart" targetRef="Task_RetrieveSamples" />
+      <sequenceFlow id="Flow_A2" sourceRef="Task_RetrieveSamples" targetRef="Task_PrepareBiosensor" />
+      <sequenceFlow id="Flow_A3" sourceRef="Task_PrepareBiosensor" targetRef="Task_PrepareAssayPlate" />
+      <sequenceFlow id="Flow_A4" sourceRef="Task_PrepareAssayPlate" targetRef="Task_LoadPlateReader" />
+      <sequenceFlow id="Flow_A5" sourceRef="Task_LoadPlateReader" targetRef="Event_AssayTimer" />
+      <sequenceFlow id="Flow_A6" sourceRef="Event_AssayTimer" targetRef="Task_ExportData" />
+      <sequenceFlow id="Flow_A7" sourceRef="Task_ExportData" targetRef="Task_PerformResultsQC" />
+      <sequenceFlow id="Flow_A8" sourceRef="Task_PerformResultsQC" targetRef="Task_CalculateResults" />
+      <sequenceFlow id="Flow_A9" sourceRef="Task_CalculateResults" targetRef="Task_LinkResults" />
+      <sequenceFlow id="Flow_A10" sourceRef="Task_LinkResults" targetRef="Event_AnalysisEnd" />
+    </subProcess>
+    <task id="Task_UploadResults" name="Upload Results to Platform">
+      <documentation>Upload linked results to Relational Context Engine via API/Import</documentation>
+    </task>
+    <endEvent id="Event_LabEnd" name="Lab Processing Complete" />
+    <sequenceFlow id="Flow_Lab1" sourceRef="Event_SamplesReceived" targetRef="SubProcess_LabReceipt" />
+    <sequenceFlow id="Flow_Lab2" sourceRef="SubProcess_LabReceipt" targetRef="SubProcess_LabAnalysis" />
+    <sequenceFlow id="Flow_Lab3" sourceRef="SubProcess_LabAnalysis" targetRef="Task_UploadResults" />
+    <sequenceFlow id="Flow_Lab4" sourceRef="Task_UploadResults" targetRef="Event_LabEnd" />
+  </process>
+  <process id="Process_Platform" name="Platform Process" isExecutable="false">
+    <startEvent id="Event_ResultsReceived" name="Results Received">
+      <documentation>Biosensor results uploaded to platform</documentation>
+      <messageEventDefinition id="MsgEvtDef_ResultsReceived" />
+    </startEvent>
+    <subProcess id="SubProcess_PlatformProcessing" name="Phase 4: Platform Processing">
+      <documentation>
+        Data ingestion, correlation, and visualization.
+        See: BPMN-05-Platform-Processing.bpmn for details.
+      </documentation>
+      <startEvent id="Event_ProcessingStart" name="Start Processing" />
+      <task id="Task_IngestResults" name="Ingest Biosensor Results">
+        <documentation>Ingest uploaded results file into platform</documentation>
+      </task>
+      <task id="Task_LinkMetadata" name="Link to Sample Metadata">
+        <documentation>Link results to sample metadata via barcode/sample ID</documentation>
+      </task>
+      <task id="Task_IngestContextualData" name="Ingest Contextual Data">
+        <documentation>Ingest weather, flow, dosing data from external feeds</documentation>
+      </task>
+      <task id="Task_CorrelateData" name="Correlate NA with Context">
+        <documentation>Run automated correlation engine to identify patterns</documentation>
+      </task>
+      <task id="Task_GenerateTrends" name="Generate Trend Analysis">
+        <documentation>Generate trend visualizations from historical + current data</documentation>
+      </task>
+      <task id="Task_FlagAnomalies" name="Flag Anomalies">
+        <documentation>Flag threshold breaches and generate alerts</documentation>
+      </task>
+      <endEvent id="Event_ProcessingEnd" name="Processing Complete" />
+      <sequenceFlow id="Flow_P1" sourceRef="Event_ProcessingStart" targetRef="Task_IngestResults" />
+      <sequenceFlow id="Flow_P2" sourceRef="Task_IngestResults" targetRef="Task_LinkMetadata" />
+      <sequenceFlow id="Flow_P3" sourceRef="Task_LinkMetadata" targetRef="Task_IngestContextualData" />
+      <sequenceFlow id="Flow_P4" sourceRef="Task_IngestContextualData" targetRef="Task_CorrelateData" />
+      <sequenceFlow id="Flow_P5" sourceRef="Task_CorrelateData" targetRef="Task_GenerateTrends" />
+      <sequenceFlow id="Flow_P6" sourceRef="Task_GenerateTrends" targetRef="Task_FlagAnomalies" />
+      <sequenceFlow id="Flow_P7" sourceRef="Task_FlagAnomalies" targetRef="Event_ProcessingEnd" />
+    </subProcess>
+    <task id="Task_PrepareDashboard" name="Prepare Customer Dashboard">
+      <documentation>Update customer-facing dashboard with all processed data</documentation>
+    </task>
+    <endEvent id="Event_PlatformEnd" name="Dashboard Ready" />
+    <sequenceFlow id="Flow_Plat1" sourceRef="Event_ResultsReceived" targetRef="SubProcess_PlatformProcessing" />
+    <sequenceFlow id="Flow_Plat2" sourceRef="SubProcess_PlatformProcessing" targetRef="Task_PrepareDashboard" />
+    <sequenceFlow id="Flow_Plat3" sourceRef="Task_PrepareDashboard" targetRef="Event_PlatformEnd" />
+  </process>
+  <process id="Process_CustomerSuccess" name="Customer Success Process" isExecutable="false">
+    <startEvent id="Event_PilotStart" name="Pilot Initiated">
+      <documentation>Contract signed, pilot engagement begins</documentation>
+    </startEvent>
+    <task id="Task_OnboardCustomer" name="Onboard Customer">
+      <documentation>Initial setup, training, platform access provisioning</documentation>
+    </task>
+    <task id="Task_ShipSampleKit" name="Ship Sample Kit">
+      <documentation>Ship sample collection kit to customer site</documentation>
+    </task>
+    <task id="Task_TrackShipment" name="Track Sample Shipment">
+      <documentation>Monitor courier tracking for samples in transit</documentation>
+    </task>
+    <intermediateCatchEvent id="Event_DashboardReady" name="Dashboard Updated">
+      <documentation>Platform has updated dashboard with new results</documentation>
+      <messageEventDefinition id="MsgEvtDef_DashboardReady" />
+    </intermediateCatchEvent>
+    <subProcess id="SubProcess_CustomerDelivery" name="Phase 5: Customer Delivery">
+      <documentation>
+        Results delivery and ongoing support.
+        See: BPMN-06-Customer-Delivery.bpmn for details.
+      </documentation>
+      <startEvent id="Event_DeliveryStart" name="Start Delivery" />
+      <task id="Task_NotifyCustomer" name="Notify Customer">
+        <documentation>Send email/notification that new results are available</documentation>
+      </task>
+      <task id="Task_ProvideSupport" name="Provide Interpretation Support">
+        <documentation>Answer customer questions, provide insights via call/email</documentation>
+      </task>
+      <task id="Task_GenerateReport" name="Generate Summary Report">
+        <documentation>Create periodic summary report (weekly/monthly)</documentation>
+      </task>
+      <task id="Task_GenerateAERReport" name="Generate AER Compliance Report">
+        <documentation>Generate regulator-ready AER compliance report with immutable audit trail and data provenance</documentation>
+      </task>
+      <task id="Task_GenerateCommunityReport" name="Generate Indigenous Community Report">
+        <documentation>Generate visual, accessible reports for Indigenous community stakeholders showing water quality trends</documentation>
+      </task>
+      <endEvent id="Event_DeliveryEnd" name="Delivery Complete" />
+      <sequenceFlow id="Flow_D1" sourceRef="Event_DeliveryStart" targetRef="Task_NotifyCustomer" />
+      <sequenceFlow id="Flow_D2" sourceRef="Task_NotifyCustomer" targetRef="Task_ProvideSupport" />
+      <sequenceFlow id="Flow_D3" sourceRef="Task_ProvideSupport" targetRef="Task_GenerateReport" />
+      <sequenceFlow id="Flow_D4" sourceRef="Task_GenerateReport" targetRef="Task_GenerateAERReport" />
+      <sequenceFlow id="Flow_D5" sourceRef="Task_GenerateAERReport" targetRef="Task_GenerateCommunityReport" />
+      <sequenceFlow id="Flow_D6" sourceRef="Task_GenerateCommunityReport" targetRef="Event_DeliveryEnd" />
+    </subProcess>
+    <intermediateCatchEvent id="Event_MonthlyTimer" name="Monthly Review Due">
+      <documentation>Monthly review cycle timer</documentation>
+      <timerEventDefinition id="TimerEvtDef_Monthly">
+        <timeCycle>R/P1M</timeCycle>
+      </timerEventDefinition>
+    </intermediateCatchEvent>
+    <task id="Task_ConductReview" name="Conduct Monthly Review">
+      <documentation>Review accumulated data, capture feedback, identify action items</documentation>
+    </task>
+    <task id="Task_AdjustStrategy" name="Adjust Sampling Strategy">
+      <documentation>Collaborate with customer to adjust sampling plan based on learnings</documentation>
+    </task>
+    <exclusiveGateway id="Gateway_CSContinue" name="Continue Pilot?" />
+    <task id="Task_ShipNextKit" name="Ship Next Sample Kit">
+      <documentation>Ship replacement/additional sample collection kit</documentation>
+    </task>
+    <endEvent id="Event_CSEnd" name="Pilot Concluded">
+      <documentation>Generate pilot completion report and presentation</documentation>
+    </endEvent>
+    <sequenceFlow id="Flow_CS1" sourceRef="Event_PilotStart" targetRef="Task_OnboardCustomer" />
+    <sequenceFlow id="Flow_CS2" sourceRef="Task_OnboardCustomer" targetRef="Task_ShipSampleKit" />
+    <sequenceFlow id="Flow_CS3" sourceRef="Task_ShipSampleKit" targetRef="Task_TrackShipment" />
+    <sequenceFlow id="Flow_CS4" sourceRef="Task_TrackShipment" targetRef="Event_DashboardReady" />
+    <sequenceFlow id="Flow_CS5" sourceRef="Event_DashboardReady" targetRef="SubProcess_CustomerDelivery" />
+    <sequenceFlow id="Flow_CS6" sourceRef="SubProcess_CustomerDelivery" targetRef="Event_MonthlyTimer" />
+    <sequenceFlow id="Flow_CS7" sourceRef="Event_MonthlyTimer" targetRef="Task_ConductReview" />
+    <sequenceFlow id="Flow_CS8" sourceRef="Task_ConductReview" targetRef="Task_AdjustStrategy" />
+    <sequenceFlow id="Flow_CS9" sourceRef="Task_AdjustStrategy" targetRef="Gateway_CSContinue" />
+    <sequenceFlow id="Flow_CS10" name="Yes" sourceRef="Gateway_CSContinue" targetRef="Task_ShipNextKit" />
+    <sequenceFlow id="Flow_CS11" sourceRef="Task_ShipNextKit" targetRef="Task_TrackShipment" />
+    <sequenceFlow id="Flow_CS12" name="No" sourceRef="Gateway_CSContinue" targetRef="Event_CSEnd" />
+  </process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_MasterOrchestration">
+    <bpmndi:BPMNPlane id="BPMNPlane_Collaboration" bpmnElement="Collaboration_NAMonitoring">
+      <bpmndi:BPMNShape id="Shape_Participant_Customer" bpmnElement="Participant_Customer" isHorizontal="true">
+        <omgdc:Bounds x="160" y="80" width="1400" height="200" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Event_KitReceived" bpmnElement="Event_KitReceived">
+        <omgdc:Bounds x="220" y="162" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_SubProcess_SampleCollection" bpmnElement="SubProcess_SampleCollection" isExpanded="false">
+        <omgdc:Bounds x="300" y="140" width="120" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Task_PackageSamples" bpmnElement="Task_PackageSamples">
+        <omgdc:Bounds x="460" y="140" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Task_ShipSamples" bpmnElement="Task_ShipSamples">
+        <omgdc:Bounds x="600" y="140" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Task_ProvideContextualData" bpmnElement="Task_ProvideContextualData">
+        <omgdc:Bounds x="740" y="140" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Event_ResultsNotification" bpmnElement="Event_ResultsNotification">
+        <omgdc:Bounds x="882" y="162" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Task_ReviewDashboard" bpmnElement="Task_ReviewDashboard">
+        <omgdc:Bounds x="960" y="140" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Gateway_ContinueMonitoring" bpmnElement="Gateway_ContinueMonitoring" isMarkerVisible="true">
+        <omgdc:Bounds x="1100" y="155" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Event_CustomerEnd" bpmnElement="Event_CustomerEnd">
+        <omgdc:Bounds x="1200" y="162" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Edge_Flow_Cust1" bpmnElement="Flow_Cust1">
+        <omgdi:waypoint x="256" y="180" />
+        <omgdi:waypoint x="300" y="180" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_Cust2" bpmnElement="Flow_Cust2">
+        <omgdi:waypoint x="420" y="180" />
+        <omgdi:waypoint x="460" y="180" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_Cust3" bpmnElement="Flow_Cust3">
+        <omgdi:waypoint x="560" y="180" />
+        <omgdi:waypoint x="600" y="180" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_Cust4" bpmnElement="Flow_Cust4">
+        <omgdi:waypoint x="700" y="180" />
+        <omgdi:waypoint x="740" y="180" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_Cust5" bpmnElement="Flow_Cust5">
+        <omgdi:waypoint x="840" y="180" />
+        <omgdi:waypoint x="882" y="180" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_Cust6" bpmnElement="Flow_Cust6">
+        <omgdi:waypoint x="918" y="180" />
+        <omgdi:waypoint x="960" y="180" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_Cust7" bpmnElement="Flow_Cust7">
+        <omgdi:waypoint x="1060" y="180" />
+        <omgdi:waypoint x="1100" y="180" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_Cust8" bpmnElement="Flow_Cust8">
+        <omgdi:waypoint x="1125" y="155" />
+        <omgdi:waypoint x="1125" y="100" />
+        <omgdi:waypoint x="360" y="100" />
+        <omgdi:waypoint x="360" y="140" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_Cust9" bpmnElement="Flow_Cust9">
+        <omgdi:waypoint x="1150" y="180" />
+        <omgdi:waypoint x="1200" y="180" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="Shape_Participant_Operations" bpmnElement="Participant_Operations" isHorizontal="true">
+        <omgdc:Bounds x="160" y="300" width="1400" height="150" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Event_CustomerOnboarded" bpmnElement="Event_CustomerOnboarded">
+        <omgdc:Bounds x="220" y="357" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_SubProcess_ServicePreparation" bpmnElement="SubProcess_ServicePreparation" isExpanded="false">
+        <omgdc:Bounds x="300" y="335" width="200" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Event_OpsEnd" bpmnElement="Event_OpsEnd">
+        <omgdc:Bounds x="542" y="357" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Edge_Flow_Ops1" bpmnElement="Flow_Ops1">
+        <omgdi:waypoint x="256" y="375" />
+        <omgdi:waypoint x="300" y="375" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_Ops2" bpmnElement="Flow_Ops2">
+        <omgdi:waypoint x="500" y="375" />
+        <omgdi:waypoint x="542" y="375" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="Shape_Participant_LabOps" bpmnElement="Participant_LabOps" isHorizontal="true">
+        <omgdc:Bounds x="160" y="470" width="1400" height="200" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Event_SamplesReceived" bpmnElement="Event_SamplesReceived">
+        <omgdc:Bounds x="220" y="552" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_SubProcess_LabReceipt" bpmnElement="SubProcess_LabReceipt" isExpanded="false">
+        <omgdc:Bounds x="300" y="530" width="120" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_SubProcess_LabAnalysis" bpmnElement="SubProcess_LabAnalysis" isExpanded="false">
+        <omgdc:Bounds x="460" y="530" width="200" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Task_UploadResults" bpmnElement="Task_UploadResults">
+        <omgdc:Bounds x="700" y="530" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Event_LabEnd" bpmnElement="Event_LabEnd">
+        <omgdc:Bounds x="842" y="552" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Edge_Flow_Lab1" bpmnElement="Flow_Lab1">
+        <omgdi:waypoint x="256" y="570" />
+        <omgdi:waypoint x="300" y="570" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_Lab2" bpmnElement="Flow_Lab2">
+        <omgdi:waypoint x="420" y="570" />
+        <omgdi:waypoint x="460" y="570" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_Lab3" bpmnElement="Flow_Lab3">
+        <omgdi:waypoint x="660" y="570" />
+        <omgdi:waypoint x="700" y="570" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_Lab4" bpmnElement="Flow_Lab4">
+        <omgdi:waypoint x="800" y="570" />
+        <omgdi:waypoint x="842" y="570" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="Shape_Participant_Platform" bpmnElement="Participant_Platform" isHorizontal="true">
+        <omgdc:Bounds x="160" y="690" width="1400" height="150" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Event_ResultsReceived" bpmnElement="Event_ResultsReceived">
+        <omgdc:Bounds x="220" y="747" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_SubProcess_PlatformProcessing" bpmnElement="SubProcess_PlatformProcessing" isExpanded="false">
+        <omgdc:Bounds x="300" y="725" width="200" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Task_PrepareDashboard" bpmnElement="Task_PrepareDashboard">
+        <omgdc:Bounds x="540" y="725" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Event_PlatformEnd" bpmnElement="Event_PlatformEnd">
+        <omgdc:Bounds x="682" y="747" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Edge_Flow_Plat1" bpmnElement="Flow_Plat1">
+        <omgdi:waypoint x="256" y="765" />
+        <omgdi:waypoint x="300" y="765" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_Plat2" bpmnElement="Flow_Plat2">
+        <omgdi:waypoint x="500" y="765" />
+        <omgdi:waypoint x="540" y="765" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_Plat3" bpmnElement="Flow_Plat3">
+        <omgdi:waypoint x="640" y="765" />
+        <omgdi:waypoint x="682" y="765" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="Shape_Participant_CustomerSuccess" bpmnElement="Participant_CustomerSuccess" isHorizontal="true">
+        <omgdc:Bounds x="160" y="860" width="1400" height="250" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Event_PilotStart" bpmnElement="Event_PilotStart">
+        <omgdc:Bounds x="220" y="967" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Task_OnboardCustomer" bpmnElement="Task_OnboardCustomer">
+        <omgdc:Bounds x="300" y="945" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Task_ShipSampleKit" bpmnElement="Task_ShipSampleKit">
+        <omgdc:Bounds x="440" y="945" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Task_TrackShipment" bpmnElement="Task_TrackShipment">
+        <omgdc:Bounds x="580" y="945" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Event_DashboardReady" bpmnElement="Event_DashboardReady">
+        <omgdc:Bounds x="722" y="967" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_SubProcess_CustomerDelivery" bpmnElement="SubProcess_CustomerDelivery" isExpanded="false">
+        <omgdc:Bounds x="800" y="945" width="120" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Event_MonthlyTimer" bpmnElement="Event_MonthlyTimer">
+        <omgdc:Bounds x="962" y="967" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Task_ConductReview" bpmnElement="Task_ConductReview">
+        <omgdc:Bounds x="1040" y="945" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Task_AdjustStrategy" bpmnElement="Task_AdjustStrategy">
+        <omgdc:Bounds x="1180" y="945" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Gateway_CSContinue" bpmnElement="Gateway_CSContinue" isMarkerVisible="true">
+        <omgdc:Bounds x="1320" y="960" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Task_ShipNextKit" bpmnElement="Task_ShipNextKit">
+        <omgdc:Bounds x="1400" y="945" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Event_CSEnd" bpmnElement="Event_CSEnd">
+        <omgdc:Bounds x="1502" y="967" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Edge_Flow_CS1" bpmnElement="Flow_CS1">
+        <omgdi:waypoint x="256" y="985" />
+        <omgdi:waypoint x="300" y="985" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_CS2" bpmnElement="Flow_CS2">
+        <omgdi:waypoint x="400" y="985" />
+        <omgdi:waypoint x="440" y="985" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_CS3" bpmnElement="Flow_CS3">
+        <omgdi:waypoint x="540" y="985" />
+        <omgdi:waypoint x="580" y="985" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_CS4" bpmnElement="Flow_CS4">
+        <omgdi:waypoint x="680" y="985" />
+        <omgdi:waypoint x="722" y="985" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_CS5" bpmnElement="Flow_CS5">
+        <omgdi:waypoint x="758" y="985" />
+        <omgdi:waypoint x="800" y="985" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_CS6" bpmnElement="Flow_CS6">
+        <omgdi:waypoint x="920" y="985" />
+        <omgdi:waypoint x="962" y="985" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_CS7" bpmnElement="Flow_CS7">
+        <omgdi:waypoint x="998" y="985" />
+        <omgdi:waypoint x="1040" y="985" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_CS8" bpmnElement="Flow_CS8">
+        <omgdi:waypoint x="1140" y="985" />
+        <omgdi:waypoint x="1180" y="985" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_CS9" bpmnElement="Flow_CS9">
+        <omgdi:waypoint x="1280" y="985" />
+        <omgdi:waypoint x="1320" y="985" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_CS10" bpmnElement="Flow_CS10">
+        <omgdi:waypoint x="1370" y="985" />
+        <omgdi:waypoint x="1400" y="985" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_CS11" bpmnElement="Flow_CS11">
+        <omgdi:waypoint x="1450" y="945" />
+        <omgdi:waypoint x="1450" y="900" />
+        <omgdi:waypoint x="630" y="900" />
+        <omgdi:waypoint x="630" y="945" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Flow_CS12" bpmnElement="Flow_CS12">
+        <omgdi:waypoint x="1345" y="1010" />
+        <omgdi:waypoint x="1345" y="1065" />
+        <omgdi:waypoint x="1520" y="1065" />
+        <omgdi:waypoint x="1520" y="1003" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_MsgFlow_KitToCustomer" bpmnElement="MsgFlow_KitToCustomer">
+        <omgdi:waypoint x="490" y="945" />
+        <omgdi:waypoint x="490" y="830" />
+        <omgdi:waypoint x="238" y="830" />
+        <omgdi:waypoint x="238" y="198" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_MsgFlow_SamplesToLab" bpmnElement="MsgFlow_SamplesToLab">
+        <omgdi:waypoint x="650" y="220" />
+        <omgdi:waypoint x="650" y="290" />
+        <omgdi:waypoint x="200" y="290" />
+        <omgdi:waypoint x="200" y="552" />
+        <omgdi:waypoint x="220" y="552" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_MsgFlow_ResultsToPlatform" bpmnElement="MsgFlow_ResultsToPlatform">
+        <omgdi:waypoint x="750" y="610" />
+        <omgdi:waypoint x="750" y="680" />
+        <omgdi:waypoint x="238" y="680" />
+        <omgdi:waypoint x="238" y="747" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_MsgFlow_DashboardReady" bpmnElement="MsgFlow_DashboardReady">
+        <omgdi:waypoint x="590" y="805" />
+        <omgdi:waypoint x="590" y="850" />
+        <omgdi:waypoint x="740" y="850" />
+        <omgdi:waypoint x="740" y="967" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_MsgFlow_NotifyCustomer" bpmnElement="MsgFlow_NotifyCustomer">
+        <omgdi:waypoint x="860" y="945" />
+        <omgdi:waypoint x="860" y="850" />
+        <omgdi:waypoint x="900" y="850" />
+        <omgdi:waypoint x="900" y="198" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_MsgFlow_ContextualData" bpmnElement="MsgFlow_ContextualData">
+        <omgdi:waypoint x="790" y="220" />
+        <omgdi:waypoint x="790" y="290" />
+        <omgdi:waypoint x="400" y="290" />
+        <omgdi:waypoint x="400" y="725" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_MsgFlow_BarcodesToPlatform" bpmnElement="MsgFlow_BarcodesToPlatform">
+        <omgdi:waypoint x="400" y="415" />
+        <omgdi:waypoint x="400" y="460" />
+        <omgdi:waypoint x="180" y="460" />
+        <omgdi:waypoint x="180" y="765" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_MsgFlow_KitsToCS" bpmnElement="MsgFlow_KitsToCS">
+        <omgdi:waypoint x="500" y="375" />
+        <omgdi:waypoint x="600" y="375" />
+        <omgdi:waypoint x="600" y="840" />
+        <omgdi:waypoint x="490" y="840" />
+        <omgdi:waypoint x="490" y="945" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+  <bpmndi:BPMNDiagram>
+    <bpmndi:BPMNPlane bpmnElement="SubProcess_SampleCollection" />
+  </bpmndi:BPMNDiagram>
+  <bpmndi:BPMNDiagram>
+    <bpmndi:BPMNPlane bpmnElement="SubProcess_ServicePreparation" />
+  </bpmndi:BPMNDiagram>
+  <bpmndi:BPMNDiagram>
+    <bpmndi:BPMNPlane bpmnElement="SubProcess_LabReceipt" />
+  </bpmndi:BPMNDiagram>
+  <bpmndi:BPMNDiagram>
+    <bpmndi:BPMNPlane bpmnElement="SubProcess_LabAnalysis" />
+  </bpmndi:BPMNDiagram>
+  <bpmndi:BPMNDiagram>
+    <bpmndi:BPMNPlane bpmnElement="SubProcess_PlatformProcessing" />
+  </bpmndi:BPMNDiagram>
+  <bpmndi:BPMNDiagram>
+    <bpmndi:BPMNPlane bpmnElement="SubProcess_CustomerDelivery" />
+  </bpmndi:BPMNDiagram>
+</definitions>
