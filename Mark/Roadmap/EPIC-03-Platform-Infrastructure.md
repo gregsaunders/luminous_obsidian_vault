@@ -5,6 +5,10 @@
 **Owner:** Greg
 **Target:** Q2 2026 (Before Pilot)
 
+**Dependencies:**
+- ⭐ **Foundational:** Mostly independent - enables EPIC-01
+- 🔗 **Related:** EPIC-02 Feature 2.1 (audit trail covers biosensor data)
+
 ---
 
 ## Business Value
@@ -20,6 +24,7 @@ Core platform capabilities that support the customer experience: user management
 ### Feature 3.1: Customer User Provisioning
 **Status:** 🟡 Partial (framework exists)
 **Priority:** High
+**Dependencies:** None (foundational, enables EPIC-01 Feature 1.1)
 
 Configure customer access to the platform.
 
@@ -40,6 +45,7 @@ Configure customer access to the platform.
 ### Feature 3.2: Notification System
 **Status:** 🟡 Partial (framework exists)
 **Priority:** High
+**Dependencies:** Feature 3.1 (users must exist to notify), EPIC-02 Feature 2.2 (results must exist to trigger alerts)
 
 Alert customers when events occur.
 
@@ -57,6 +63,7 @@ Alert customers when events occur.
 ### Feature 3.3: Audit Trail (Glass Box)
 **Status:** 🟡 Partial (TerminusDB has capability)
 **Priority:** Medium
+**Dependencies:** EPIC-02 Feature 2.1 (data model to audit)
 
 Immutable record of all data changes for regulatory compliance.
 
@@ -74,6 +81,7 @@ Immutable record of all data changes for regulatory compliance.
 ### Feature 3.4: PDF Report Generation
 **Status:** 🔴 Not Started
 **Priority:** Medium
+**Dependencies:** EPIC-01 Features 1.2, 1.3 (charts/views to include in PDF), EPIC-02 Features 2.1-2.3 (data to report on)
 
 Generate downloadable PDF summaries for customers.
 
@@ -89,6 +97,7 @@ Generate downloadable PDF summaries for customers.
 ### Feature 3.5: API Documentation
 **Status:** 🟡 Partial
 **Priority:** Medium
+**Dependencies:** EPIC-02 Features 2.2, 2.3 (APIs must exist to document)
 
 Document APIs for customer integrations.
 

@@ -2,8 +2,12 @@
 
 **Status:** 🔴 Not Started
 **Priority:** High
-**Owner:** Jeff
+**Owner:** Jeff (Greg for Fulcrum API integration)
 **Target:** Q2 2026 (Before Pilot)
+
+**Dependencies:**
+- ⭐ **Foundational:** No external blockers - this EPIC feeds into EPIC-02 Feature 2.3
+- 🔗 **Related:** EPIC-02 Feature 2.3 (sample metadata linkage consumes field data)
 
 ---
 
@@ -20,6 +24,7 @@ Field technicians need to capture sample metadata when collecting samples. This 
 ### Feature 4.1: Sample Metadata Capture App
 **Status:** 🔴 Not Started
 **Priority:** High
+**Dependencies:** None (foundational, enables EPIC-02 Feature 2.3)
 
 Mobile/tablet app for field technicians to capture sample metadata.
 

@@ -5,6 +5,10 @@
 **Owner:** Greg
 **Target:** Q2 2026 (Before Pilot)
 
+**Dependencies:**
+- ⭐ **Foundational:** No external blockers - this EPIC enables EPIC-01 and EPIC-03
+- 🔗 **Related:** EPIC-04 Feature 4.1 (field metadata flows into Feature 2.3)
+
 ---
 
 ## Business Value
@@ -20,6 +24,7 @@ The platform needs to receive and store biosensor results from the lab, link the
 ### Feature 2.1: Biosensor Results Data Model
 **Status:** 🔴 Not Started
 **Priority:** Critical
+**Dependencies:** None (foundational)
 
 Define the schema for storing biosensor plate reader results.
 
@@ -46,6 +51,7 @@ Define the schema for storing biosensor plate reader results.
 ### Feature 2.2: Lab Results Upload Pipeline
 **Status:** 🔴 Not Started
 **Priority:** Critical
+**Dependencies:** Feature 2.1 (data model must exist first)
 
 Ingest CSV/Excel files from the plate reader.
 
@@ -64,6 +70,7 @@ Ingest CSV/Excel files from the plate reader.
 ### Feature 2.3: Sample Metadata Linkage
 **Status:** 🔴 Not Started
 **Priority:** Critical
+**Dependencies:** Feature 2.1 (data model), Feature 2.2 (results exist to link), EPIC-04 Feature 4.1 (field metadata source)
 
 Link lab results to field sample metadata via barcode.
 
@@ -85,6 +92,7 @@ Link lab results to field sample metadata via barcode.
 ### Feature 2.4: Contextual Data Integration
 **Status:** 🔴 Not Started
 **Priority:** High
+**Dependencies:** Feature 2.3 (samples must exist to attach contextual data)
 
 Integrate external data sources for correlation analysis.
 
@@ -103,6 +111,7 @@ Integrate external data sources for correlation analysis.
 ### Feature 2.5: Analysis Script Automation
 **Status:** 🔴 Not Started
 **Priority:** Medium
+**Dependencies:** Feature 2.2 (upload pipeline to integrate with)
 
 Automate the Excel-based analysis currently done manually.
 

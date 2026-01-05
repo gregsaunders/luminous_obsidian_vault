@@ -5,6 +5,11 @@
 **Owner:** Greg
 **Target:** Q2 2026 (Before Pilot)
 
+**Dependencies:**
+- ⛔ **Blocked by:** Technology Decision (Metabase vs Retool vs Custom) - see below
+- ⛔ **Blocked by:** EPIC-02 Features 2.1-2.3 (no data to display without ingestion pipeline)
+- 🔗 **Related:** EPIC-03 Feature 3.1 (Customer User Provisioning)
+
 ---
 
 ## Business Value
@@ -20,6 +25,7 @@ Customers need a way to view their biosensor monitoring results. Without a dashb
 ### Feature 1.1: User Authentication
 **Status:** 🟡 Partial (platform has auth, needs customer provisioning)
 **Priority:** Critical
+**Dependencies:** EPIC-03 Feature 3.1 (Customer User Provisioning)
 
 Enable customers to log in and access their team's data.
 
@@ -36,6 +42,7 @@ Enable customers to log in and access their team's data.
 ### Feature 1.2: Summary View
 **Status:** 🔴 Not Started
 **Priority:** Critical
+**Dependencies:** EPIC-02 Features 2.1, 2.2, 2.3 (data model, upload pipeline, sample linkage)
 
 Dashboard landing page showing latest results at a glance.
 
@@ -50,6 +57,7 @@ Dashboard landing page showing latest results at a glance.
 ### Feature 1.3: Trend Charts
 **Status:** 🔴 Not Started
 **Priority:** Critical
+**Dependencies:** Feature 1.2 (Summary View), EPIC-02 Feature 2.1 (data model with timestamps)
 
 Visualize NA levels over time to identify patterns.
 
@@ -65,6 +73,7 @@ Visualize NA levels over time to identify patterns.
 ### Feature 1.4: Spatial View
 **Status:** 🔴 Not Started
 **Priority:** High
+**Dependencies:** Feature 1.2 (Summary View), EPIC-02 Feature 2.3 (sample metadata with GPS)
 
 Show results by sample location (map or location grid).
 
@@ -79,6 +88,7 @@ Show results by sample location (map or location grid).
 ### Feature 1.5: Data Table & Export
 **Status:** 🔴 Not Started
 **Priority:** Critical
+**Dependencies:** EPIC-02 Features 2.1, 2.2, 2.3 (data to display)
 
 Raw data access with filtering and export.
 
@@ -101,7 +111,7 @@ Show NA levels alongside contextual factors (weather, dosing).
 - [ ] Correlation indicators
 - [ ] Contextual data overlay
 
-**Dependencies:** EPIC-02 Feature 2.3 (Contextual Data Integration)
+**Dependencies:** Feature 1.3 (Trend Charts), EPIC-02 Feature 2.4 (Contextual Data Integration)
 
 ---
 
