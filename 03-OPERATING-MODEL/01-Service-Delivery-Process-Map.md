@@ -19,13 +19,13 @@ This document defines the end-to-end service delivery process for Luminous BioSo
 
 ## Service Overview
 
-| Attribute | Value |
-|-----------|-------|
-| **Service Name** | NA Biological Monitoring & Operational Intelligence Service |
-| **Target Turnaround** | 24-72 hours from lab receipt to results in platform |
-| **Sampling Frequency** | Daily preferred (customer-dependent) |
-| **Deployment Model** | Zero-friction offsite lab (Calgary) |
-| **Output** | Operational decisions, not just data (see [[05-Pilot-Deliverables-Framework]]) |
+| Attribute              | Value                                                                          |
+| ---------------------- | ------------------------------------------------------------------------------ |
+| **Service Name**       | NA Biological Monitoring & Operational Intelligence Service                    |
+| **Target Turnaround**  | 24-72 hours from lab receipt to results in platform                            |
+| **Sampling Frequency** | Daily preferred (customer-dependent)                                           |
+| **Deployment Model**   | Zero-friction offsite lab (Calgary)                                            |
+| **Output**             | Operational decisions, not just data (see [[05-Pilot-Deliverables-Framework]]) |
 
 ---
 
