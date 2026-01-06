@@ -46,29 +46,11 @@ A developer can build a new Platform Group by following step-by-step documentati
 - [ ] Architecture overview
 - [ ] Pattern catalog (from CRM PATTERNS.md)
 - [ ] Step-by-step guide for new groups
+- [ ] Platform Group validation checklist (pattern compliance, schema usage)
 
 ---
 
-### Feature 1.2: Support Luminous Platform Group Review
-
-#### Outcome
-Platform team reviews and supports Luminous team's Platform Group implementation to ensure it follows patterns correctly.
-
-#### Context
-The Luminous team owns their scaffolding (Luminous EPIC-02 Feature 2.0). This feature provides platform expertise and review.
-
-#### Scope: Owned Files
-- None (review/advisory role)
-
-#### Tasks
-- [ ] Review Luminous manifest.yaml for pattern compliance
-- [ ] Validate ui_hints.yaml schema usage
-- [ ] Assist with relationship_types.yaml configuration
-- [ ] Provide feedback on integration with platform loader
-
----
-
-### Feature 1.3: UI Hints Schema Documentation
+### Feature 1.2: UI Hints Schema Documentation
 
 #### Outcome
 A developer can configure dynamic UI generation using documented schema patterns.
@@ -83,7 +65,7 @@ A developer can configure dynamic UI generation using documented schema patterns
 
 ---
 
-### Feature 1.4: Extension System Validation
+### Feature 1.3: Extension System Validation
 
 #### Outcome
 Tenant extensions work reliably in production with clear deployment patterns.
