@@ -17,6 +17,7 @@
 | [SQH-EPIC-06: AI Services](SQH-EPIC-06-AI-Services.md) | 🟡 Partial | Medium | Modal-hosted AI models |
 | [SQH-EPIC-07: Frontend Apps](SQH-EPIC-07-Frontend-Apps.md) | 🟡 Partial | Medium | Flutter & React apps |
 | [SQH-EPIC-08: Tech Debt](SQH-EPIC-08-Tech-Debt.md) | Ongoing | Medium | Outstanding TODOs |
+| [SQH-EPIC-09: AI-Generated UI](SQH-EPIC-09-AI-Generated-UI.md) | 🔴 Not Started | Medium | ISON-based composable UI for agents |
 
 ---
 
