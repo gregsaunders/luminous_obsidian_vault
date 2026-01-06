@@ -166,6 +166,6 @@ A standalone app showcases all components for browsing and testing.
 ## References
 
 - [CONTRIBUTING.md - LLM-Parallel Development](../../../square_head/CONTRIBUTING.md)
-- [EPIC-07: Frontend Apps](EPIC-07-Frontend-Apps.md) - Apps that consume this kit
-- [Luminous EPIC-01: Customer Dashboard](../Luminous/EPIC-01-Customer-Dashboard.md) - May depend on Feature 2.4
+- [SQH-EPIC-07: Frontend Apps](SQH-EPIC-07-Frontend-Apps.md) - Apps that consume this kit
+- [LUM-EPIC-01: Customer Dashboard](../Luminous/LUM-EPIC-01-Customer-Dashboard.md) - May depend on Feature 2.4
 - Flutter packages: `frontend/flutter/packages/`

@@ -101,7 +101,7 @@ MVP uses in-app notifications only. Email/push delivery is post-pilot work.
 - [ ] Push notification support
 - [ ] Notification preferences (opt-in/out)
 
-**Note:** See [SquareHead EPIC-08 Tech Debt](../SquareHead/EPIC-08-Tech-Debt.md) for platform-level notification work.
+**Note:** See [SQH-EPIC-08 Tech Debt](../SquareHead/SQH-EPIC-08-Tech-Debt.md) for platform-level notification work.
 
 ---
 
@@ -197,8 +197,8 @@ drf-spectacular provides OpenAPI generation. This feature ensures Luminous endpo
 ## References
 
 - [Technology Requirements](../../03-OPERATING-MODEL/03-Technology-Requirements.md)
-- [SquareHead Platform Backlog](../SquareHead/00-Backlog-Index.md)
-- [SquareHead EPIC-08 Tech Debt](../SquareHead/EPIC-08-Tech-Debt.md) - Notification delivery work
+- [SquareHead Platform Backlog](../SquareHead/SQH-00-Backlog-Index.md)
+- [SQH-EPIC-08 Tech Debt](../SquareHead/SQH-EPIC-08-Tech-Debt.md) - Notification delivery work
 - Teams app: `square_head/apps/teams/`
 - Notifications app: `square_head/apps/notifications/`
 - API app: `square_head/apps/api/`

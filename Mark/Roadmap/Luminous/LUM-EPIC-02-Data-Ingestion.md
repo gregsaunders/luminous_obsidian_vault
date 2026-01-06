@@ -8,7 +8,7 @@
 **Dependencies:**
 - ⭐ **Foundational:** This EPIC enables EPIC-01 and EPIC-03
 - 🔗 **Related:** EPIC-04 Feature 4.1 (field metadata flows into Feature 2.3)
-- 🔗 **Platform:** [SquareHead EPIC-01 Platform Groups](../SquareHead/EPIC-01-Platform-Groups.md)
+- 🔗 **Platform:** [SQH-EPIC-01 Platform Groups](../SquareHead/SQH-EPIC-01-Platform-Groups.md)
 
 ---
 
@@ -277,7 +277,7 @@ Metadata captured   →    CSV exported        →    Barcode linked
 ## References
 
 - [Technology Requirements - Data Ingestion Section](../../03-OPERATING-MODEL/03-Technology-Requirements.md)
-- [Platform Groups Architecture](../SquareHead/EPIC-01-Platform-Groups.md)
+- [Platform Groups Architecture](../SquareHead/SQH-EPIC-01-Platform-Groups.md)
 - CRM manifest.yaml reference: `square_head/apps/platform_groups/crm/manifest.yaml`
 - CRM PATTERNS.md: `square_head/apps/platform_groups/crm/PATTERNS.md`
 - Existing document processing: `square_head/apps/documents/`

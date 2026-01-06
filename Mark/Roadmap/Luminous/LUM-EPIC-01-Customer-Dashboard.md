@@ -9,7 +9,7 @@
 - ⛔ **Blocked by:** Luminous Platform Group scaffolding (EPIC-02 Feature 2.0)
 - ⛔ **Blocked by:** EPIC-02 Features 2.1-2.3 (no data to display without ingestion pipeline)
 - 🔗 **Related:** EPIC-03 Feature 3.1 (Customer User Provisioning)
-- 🔗 **Platform:** [SquareHead EPIC-01 Platform Groups](../SquareHead/EPIC-01-Platform-Groups.md)
+- 🔗 **Platform:** [SQH-EPIC-01 Platform Groups](../SquareHead/SQH-EPIC-01-Platform-Groups.md)
 
 ---
 
@@ -273,7 +273,7 @@ The correlation capability is powered by the **Relational Context Engine** - an 
 **Cons:**
 - More upfront development
 - Requires Flutter expertise
-- Dashboard components need building (see [SquareHead EPIC-02 Feature 2.4](../SquareHead/EPIC-02-Base-UI-Kit.md))
+- Dashboard components need building (see [SQH-EPIC-02 Feature 2.4](../SquareHead/SQH-EPIC-02-Base-UI-Kit.md))
 
 **If chosen, views would be defined in `ui_hints.yaml`:**
 
@@ -309,6 +309,6 @@ Per [Technology Requirements](../../03-OPERATING-MODEL/03-Technology-Requirement
 
 - [Technology Requirements - Dashboard Section](../../03-OPERATING-MODEL/03-Technology-Requirements.md)
 - [Pilot Deliverables Framework](../../03-OPERATING-MODEL/05-Pilot-Deliverables-Framework.md)
-- [Platform Groups Architecture](../SquareHead/EPIC-01-Platform-Groups.md)
+- [Platform Groups Architecture](../SquareHead/SQH-EPIC-01-Platform-Groups.md)
 - CRM ui_hints.yaml reference: `square_head/apps/platform_groups/crm/ui_hints.yaml`
 - Flutter workflow forms: `square_head/frontend/flutter/packages/workflows/`

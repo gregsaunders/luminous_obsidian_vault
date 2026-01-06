@@ -8,8 +8,8 @@
 
 | Area | Focus | Status |
 |------|-------|--------|
-| [Luminous](Luminous/00-Backlog-Index.md) | Biosensor product for NA monitoring | 5 EPICs |
-| [SquareHead](SquareHead/00-Backlog-Index.md) | Core platform infrastructure | 7 EPICs |
+| [Luminous](Luminous/LUM-00-Backlog-Index.md) | Biosensor product for NA monitoring | 5 EPICs |
+| [SquareHead](SquareHead/SQH-00-Backlog-Index.md) | Core platform infrastructure | 8 EPICs |
 
 ---
 
@@ -130,7 +130,7 @@ The CRM implementation (`apps/platform_groups/crm/`) serves as a reference examp
 
 ## Quick Links
 
-- [Luminous Backlog](Luminous/00-Backlog-Index.md)
-- [SquareHead Platform Backlog](SquareHead/00-Backlog-Index.md)
+- [Luminous Backlog](Luminous/LUM-00-Backlog-Index.md)
+- [SquareHead Platform Backlog](SquareHead/SQH-00-Backlog-Index.md)
 - [CRM Reference Implementation](../../square_head/apps/platform_groups/crm/)
 - [Pilot Readiness Scorecard](../03-OPERATING-MODEL/04-Pilot-Readiness-Scorecard.md)

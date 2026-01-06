@@ -28,7 +28,7 @@ Platform Groups are the foundation for all product-specific functionality (Lumin
 
 **What's needed:** Documentation, production testing
 
-**Note:** Luminous Platform Group scaffolding is owned by the Luminous team (see Luminous EPIC-02 Feature 2.0)
+**Note:** Luminous Platform Group scaffolding is defined in LUM-EPIC-02 Feature 2.0
 
 ---
 

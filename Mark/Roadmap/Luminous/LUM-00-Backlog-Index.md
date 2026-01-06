@@ -2,7 +2,7 @@
 
 **Last Updated:** 2026-01-05
 **Target Milestone:** Q2 2026 - CNRL Pilot Ready
-**Architecture:** Luminous is built as a [Platform Group](../SquareHead/EPIC-01-Platform-Groups.md)
+**Architecture:** Luminous is built as a [Platform Group](../SquareHead/SQH-EPIC-01-Platform-Groups.md)
 
 ---
 
@@ -26,11 +26,11 @@ See [Master Index](../00-Master-Index.md) for cross-area dependency map.
 
 | Epic | Status | Priority | Description |
 |------|--------|----------|-------------|
-| [EPIC-01: Customer Dashboard](EPIC-01-Customer-Dashboard.md) | 🔴 Not Started | Critical | Customer-facing dashboard for biosensor results |
-| [EPIC-02: Data Ingestion](EPIC-02-Data-Ingestion.md) | 🔴 Not Started | Critical | Biosensor results, sample metadata, contextual data |
-| [EPIC-03: Platform Infrastructure](EPIC-03-Platform-Infrastructure.md) | 🟡 Partial | High | User provisioning, audit trail, notifications |
-| [EPIC-04: Field Operations](EPIC-04-Field-Operations.md) | 🔴 Not Started | High | Sample metadata capture from field |
-| [EPIC-05: Observability & Docs](EPIC-05-Observability-Docs.md) | 🟡 Partial | Medium | Documentation, AI services, monitoring |
+| [LUM-EPIC-01: Customer Dashboard](LUM-EPIC-01-Customer-Dashboard.md) | 🔴 Not Started | Critical | Customer-facing dashboard for biosensor results |
+| [LUM-EPIC-02: Data Ingestion](LUM-EPIC-02-Data-Ingestion.md) | 🔴 Not Started | Critical | Biosensor results, sample metadata, contextual data |
+| [LUM-EPIC-03: Platform Infrastructure](LUM-EPIC-03-Platform-Infrastructure.md) | 🟡 Partial | High | User provisioning, audit trail, notifications |
+| [LUM-EPIC-04: Field Operations](LUM-EPIC-04-Field-Operations.md) | 🔴 Not Started | High | Sample metadata capture from field |
+| [LUM-EPIC-05: Observability & Docs](LUM-EPIC-05-Observability-Docs.md) | 🟡 Partial | Medium | Documentation, AI services, monitoring |
 
 ---
 
@@ -103,7 +103,7 @@ See [Master Index](../00-Master-Index.md) for cross-area dependency map.
 |----------|---------|--------|-------|
 | Dashboard Tech | Metabase / Retool / Custom Flutter | EPIC-01 all features | TBD |
 
-See [EPIC-01 Technology Decision](EPIC-01-Customer-Dashboard.md#technology-decision) for detailed options.
+See [LUM-EPIC-01 Technology Decision](LUM-EPIC-01-Customer-Dashboard.md#technology-decision) for detailed options.
 
 ## Status Legend
 
@@ -148,7 +148,7 @@ The following features are **blockers** for the Q2 2026 pilot:
 ## Related Documents
 
 - [Master Index](../00-Master-Index.md) - Cross-area overview
-- [SquareHead Platform Backlog](../SquareHead/00-Backlog-Index.md)
+- [SquareHead Platform Backlog](../SquareHead/SQH-00-Backlog-Index.md)
 - [Technology Requirements](../../03-OPERATING-MODEL/03-Technology-Requirements.md)
 - [Pilot Readiness Scorecard](../../03-OPERATING-MODEL/04-Pilot-Readiness-Scorecard.md)
 - [Pilot Deliverables Framework](../../03-OPERATING-MODEL/05-Pilot-Deliverables-Framework.md)

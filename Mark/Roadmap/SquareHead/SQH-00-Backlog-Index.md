@@ -9,14 +9,14 @@
 
 | Epic | Status | Priority | Summary |
 |------|--------|----------|---------|
-| [EPIC-01: Platform Groups](EPIC-01-Platform-Groups.md) | 🟡 Partial | High | Modular app extensibility system |
-| [EPIC-02: Base UI Kit](EPIC-02-Base-UI-Kit.md) | 🟡 Partial | Medium | Shared Flutter component library (Layer 1) |
-| [EPIC-03: Workflow Engine](EPIC-03-Workflow-Engine.md) | 🟡 Partial | High | BPMN workflows with AI agents |
-| [EPIC-04: CDC Pipeline](EPIC-04-CDC-Pipeline.md) | 🟢 Complete | Medium | Change data capture |
-| [EPIC-05: Document Management](EPIC-05-Document-Management.md) | 🟢 Complete | Low | Document processing & search |
-| [EPIC-06: AI Services](EPIC-06-AI-Services.md) | 🟡 Partial | Medium | Modal-hosted AI models |
-| [EPIC-07: Frontend Apps](EPIC-07-Frontend-Apps.md) | 🟡 Partial | Medium | Flutter & React apps |
-| [EPIC-08: Tech Debt](EPIC-08-Tech-Debt.md) | Ongoing | Medium | Outstanding TODOs |
+| [SQH-EPIC-01: Platform Groups](SQH-EPIC-01-Platform-Groups.md) | 🟡 Partial | High | Modular app extensibility system |
+| [SQH-EPIC-02: Base UI Kit](SQH-EPIC-02-Base-UI-Kit.md) | 🟡 Partial | Medium | Shared Flutter component library (Layer 1) |
+| [SQH-EPIC-03: Workflow Engine](SQH-EPIC-03-Workflow-Engine.md) | 🟡 Partial | High | BPMN workflows with AI agents |
+| [SQH-EPIC-04: CDC Pipeline](SQH-EPIC-04-CDC-Pipeline.md) | 🟢 Complete | Medium | Change data capture |
+| [SQH-EPIC-05: Document Management](SQH-EPIC-05-Document-Management.md) | 🟢 Complete | Low | Document processing & search |
+| [SQH-EPIC-06: AI Services](SQH-EPIC-06-AI-Services.md) | 🟡 Partial | Medium | Modal-hosted AI models |
+| [SQH-EPIC-07: Frontend Apps](SQH-EPIC-07-Frontend-Apps.md) | 🟡 Partial | Medium | Flutter & React apps |
+| [SQH-EPIC-08: Tech Debt](SQH-EPIC-08-Tech-Debt.md) | Ongoing | Medium | Outstanding TODOs |
 
 ---
 
