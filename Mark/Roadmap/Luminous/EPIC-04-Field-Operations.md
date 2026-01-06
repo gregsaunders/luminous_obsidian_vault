@@ -71,13 +71,6 @@ MVP uses Fulcrum (off-the-shelf). Future may use custom Flutter app.
 - [ ] Offline capability testing
 - [ ] Export workflow to platform API
 
-#### Tasks (Custom app approach - Future)
-- [ ] Flutter mobile app scaffolding
-- [ ] Barcode scanner integration
-- [ ] Form for metadata capture
-- [ ] Offline-first with sync
-- [ ] API integration
-
 **Required Fields:**
 - Barcode ID (scanned)
 - Collection date/time
@@ -188,6 +181,36 @@ Ship to lab              →   Track shipment         →   Receive sample
                                   ↓
                               Dashboard displays
 ```
+
+---
+
+## Post-Pilot: Custom Field App
+
+**Status:** 🔴 Future (not for Q2 2026 pilot)
+**Dependencies:** SquareHead EPIC-06 (Frontend Apps), Pilot feedback
+
+### Feature 4.5: Custom Flutter Field App
+
+#### Outcome
+Field technicians use a native Flutter app integrated with the platform instead of Fulcrum.
+
+#### Context
+MVP uses Fulcrum for fast deployment. Post-pilot, a custom Flutter app may provide better integration, offline sync, and user experience.
+
+#### Why Post-Pilot
+- Fulcrum is sufficient for pilot
+- Custom app requires Flutter mobile infrastructure (SquareHead EPIC-06)
+- Need pilot feedback to inform requirements
+
+#### Scope: Owned Files (Future)
+- `frontend/flutter/apps/mobile/lib/features/field_capture/`
+
+#### Tasks (Future)
+- [ ] Flutter mobile app scaffolding
+- [ ] Barcode scanner integration
+- [ ] Form for metadata capture
+- [ ] Offline-first with sync
+- [ ] API integration
 
 ---
 

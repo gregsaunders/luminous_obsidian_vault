@@ -63,31 +63,29 @@ Infrastructure exists (OpenTelemetry, Prometheus, Loki, Grafana). This feature a
 
 ---
 
-### Feature 5.2: AI Services Documentation
+### Feature 5.2: Luminous AI Usage Patterns
 **Status:** 🔴 Not Started
 **Priority:** Medium
-**Dependencies:** None (can document existing services anytime)
+**Dependencies:** SquareHead EPIC-05 Feature 5.1 (core AI docs)
 
 #### Outcome
-A developer can understand and operate the self-hosted AI services without tribal knowledge.
+A Luminous developer knows how to use AI services for Luminous-specific tasks.
 
 #### What Success Looks Like
-- Developer reads docs, understands Modal architecture
-- Knows which models are available and when to use each
-- Can deploy/scale services following documented procedures
-- Understands cost implications of usage
+- Developer finds Luminous-specific prompt templates
+- Knows which model to use for biosensor analysis tasks
+- Can configure Luminous agent workflows
+
+#### Context
+Core AI Services documentation is owned by SquareHead EPIC-05. This feature documents Luminous-specific usage patterns only.
 
 #### Scope: Owned Files
-- `docs/ai-services/` (AI documentation)
+- `apps/platform_groups/luminous/docs/ai-usage.md`
 
 #### Tasks
-- [ ] Modal services architecture overview
-- [ ] Service catalog (Granite, Qwen models)
-- [ ] Deployment and scaling procedures
-- [ ] Cost monitoring
-- [ ] Usage guidelines
-
-**Reference:** `square_head/modal_apps/`
+- [ ] Luminous-specific prompt templates
+- [ ] Agent configuration for biosensor workflows
+- [ ] Model selection guidance for Luminous tasks
 
 ---
 

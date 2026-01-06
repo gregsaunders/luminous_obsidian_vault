@@ -26,7 +26,9 @@ Platform Groups are the foundation for all product-specific functionality (Lumin
 
 **What exists:** Full data model, installation flow, extension system, UI hints, CRM reference
 
-**What's needed:** Documentation, Luminous scaffolding, production testing
+**What's needed:** Documentation, production testing
+
+**Note:** Luminous Platform Group scaffolding is owned by the Luminous team (see Luminous EPIC-02 Feature 2.0)
 
 ---
 
@@ -47,18 +49,22 @@ A developer can build a new Platform Group by following step-by-step documentati
 
 ---
 
-### Feature 1.2: Luminous Platform Group Scaffolding
+### Feature 1.2: Support Luminous Platform Group Review
 
 #### Outcome
-The Luminous Platform Group structure exists and can be installed to a tenant.
+Platform team reviews and supports Luminous team's Platform Group implementation to ensure it follows patterns correctly.
+
+#### Context
+The Luminous team owns their scaffolding (Luminous EPIC-02 Feature 2.0). This feature provides platform expertise and review.
 
 #### Scope: Owned Files
-- `apps/platform_groups/luminous/`
+- None (review/advisory role)
 
 #### Tasks
-- [ ] Initial manifest.yaml with data models
-- [ ] ui_hints.yaml for dashboard views
-- [ ] relationship_types.yaml for sample/result linking
+- [ ] Review Luminous manifest.yaml for pattern compliance
+- [ ] Validate ui_hints.yaml schema usage
+- [ ] Assist with relationship_types.yaml configuration
+- [ ] Provide feedback on integration with platform loader
 
 ---
 

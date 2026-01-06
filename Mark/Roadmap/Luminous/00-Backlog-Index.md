@@ -69,8 +69,7 @@ See [Master Index](../00-Master-Index.md) for cross-area dependency map.
 │  ┌──────────────────────┐                                       │
 │  │ ⚠️  DECISION NEEDED │  ← Blocks all EPIC-01 work            │
 │  │ Dashboard Tech     │                                        │
-│  │ (Metabase/Retool/  │                                        │
-│  │  Custom Flutter)   │                                        │
+│  │ (See EPIC-01)      │                                        │
 │  └──────────┬───────────┘                                       │
 │             │                                                   │
 │             ▼                                                   │
@@ -93,12 +92,18 @@ See [Master Index](../00-Master-Index.md) for cross-area dependency map.
 
 ### Key Blockers
 
-| Blocker | Blocks | Owner | Status |
-|---------|--------|-------|--------|
-| Luminous Platform Group scaffolding | All EPIC features | TBD | 🔴 Not Started |
-| EPIC-02 Features 2.1-2.3 | EPIC-01, EPIC-03 notifications/reports | Greg | 🔴 Not Started |
+| Blocker                             | Blocks                                 | Owner | Status         |
+| ----------------------------------- | -------------------------------------- | ----- | -------------- |
+| Luminous Platform Group scaffolding | All EPIC features                      | TBD   | 🔴 Not Started |
+| EPIC-02 Features 2.1-2.3            | EPIC-01, EPIC-03 notifications/reports | Greg  | 🔴 Not Started |
 
-**Note:** Dashboard tech decision resolved - using Platform Group + Flutter dynamic UI (see EPIC-01).
+### Pending Decisions
+
+| Decision | Options | Blocks | Owner |
+|----------|---------|--------|-------|
+| Dashboard Tech | Metabase / Retool / Custom Flutter | EPIC-01 all features | TBD |
+
+See [EPIC-01 Technology Decision](EPIC-01-Customer-Dashboard.md#technology-decision) for detailed options.
 
 ## Status Legend
 

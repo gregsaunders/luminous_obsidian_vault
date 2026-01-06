@@ -203,29 +203,75 @@ An analyst can view NA levels alongside environmental factors to identify correl
 
 ## Technology Decision
 
-**Decision: Platform Group + Flutter Dynamic UI**
+**Status:** ⚠️ DECISION NEEDED - Blocks all EPIC-01 features
 
-The dashboard will be built using the Platform Groups pattern:
-- Views configured in `apps/platform_groups/luminous/ui_hints.yaml`
-- Flutter renders dynamic forms and views from schema metadata
-- AI can generate/modify composable UIs dynamically
+### Option A: Metabase (Embedded Analytics)
 
-**Benefits:**
-- Consistent with platform architecture
-- Reusable patterns from CRM reference
-- AI-assisted UI composition
-- Full customization capability
+| Aspect | Details |
+|--------|---------|
+| **What it is** | Open-source BI tool, SQL-based dashboards |
+| **Deployment** | Self-hosted or cloud |
+| **Dev effort** | Low - SQL queries + drag-and-drop |
+| **Customization** | Limited - works within Metabase paradigms |
+| **Integration** | Embedded iframes, separate auth |
 
-**Previous options (not selected):**
-1. ~~Metabase~~ - Limited customization
-2. ~~Retool~~ - Vendor dependency
-3. ~~Custom from scratch~~ - Unnecessary when Platform Groups exists
+**Pros:**
+- Fast to deploy, good out-of-box charts
+- Non-developers can modify dashboards
+- Proven at scale
+
+**Cons:**
+- Separate system from main platform
+- Limited customization for biosensor-specific views
+- Dual auth complexity (platform + Metabase)
 
 ---
 
-## Implementation Approach
+### Option B: Retool (Low-Code Internal Tools)
 
-Dashboard views are defined in `ui_hints.yaml`:
+| Aspect | Details |
+|--------|---------|
+| **What it is** | Low-code platform for internal tools |
+| **Deployment** | Cloud (or self-hosted enterprise) |
+| **Dev effort** | Low-Medium - drag-and-drop + JS |
+| **Customization** | Medium - flexible within Retool |
+| **Integration** | API-first, custom auth possible |
+
+**Pros:**
+- Fast iteration, good for internal tools
+- Can connect directly to APIs
+- Good for CRUD operations
+
+**Cons:**
+- Vendor lock-in, subscription cost
+- Not designed for customer-facing dashboards
+- Another system to maintain
+
+---
+
+### Option C: Custom Flutter + Platform Groups (ui_hints.yaml)
+
+| Aspect | Details |
+|--------|---------|
+| **What it is** | Native Flutter app using Platform Groups dynamic UI |
+| **Deployment** | Web/Desktop/Mobile via existing Flutter infrastructure |
+| **Dev effort** | Medium-High - build views in Flutter |
+| **Customization** | Full - complete control |
+| **Integration** | Native - same codebase as platform |
+
+**Pros:**
+- Fully integrated with platform architecture
+- Reusable patterns from CRM reference
+- AI can generate/modify ui_hints.yaml
+- Native desktop/mobile apps possible
+- No vendor dependency
+
+**Cons:**
+- More upfront development
+- Requires Flutter expertise
+- Dashboard components need building (or exist in SquareHead EPIC-06?)
+
+**If chosen, views would be defined in `ui_hints.yaml`:**
 
 ```yaml
 models:
@@ -239,7 +285,17 @@ models:
         fields: [sample_location, collection_date]
 ```
 
-The Flutter workflow package renders these dynamically.
+---
+
+### Recommendation
+
+TBD - Decision needed before EPIC-01 work can begin.
+
+**Questions to answer:**
+1. Is this dashboard customer-facing or internal-only?
+2. How much customization do we need for biosensor-specific visualizations?
+3. Do we want native desktop/mobile apps or web-only?
+4. What's the timeline pressure vs. long-term flexibility tradeoff?
 
 ---
 
