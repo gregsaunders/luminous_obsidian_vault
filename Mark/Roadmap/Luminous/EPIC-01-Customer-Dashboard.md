@@ -190,31 +190,92 @@ An analyst can view NA levels alongside environmental factors to identify correl
 - Can see if NA spikes correlate with rain events
 - Insights help explain anomalies and inform operational decisions
 
+#### Context
+The correlation capability is powered by the **Relational Context Engine** - an existing SquareHead platform feature. This feature configures and exposes that capability for the Luminous use case, rather than building correlation logic from scratch.
+
 #### Scope: Owned Files
 - `apps/platform_groups/luminous/ui_hints.yaml` (correlation view config)
 - `apps/platform_groups/luminous/views/correlation.py`
 
 #### Tasks
+- [ ] Configure Relational Context Engine for Luminous data relationships
 - [ ] Multi-axis chart (NA + temperature, precipitation)
 - [ ] Correlation indicators
 - [ ] Contextual data overlay
 
 ---
 
-## Technology Approach
+## Technology Decision
 
-The dashboard will be built using **Flutter + Platform Groups (ui_hints.yaml)**, consistent with the existing platform architecture.
+**Status:** ⚠️ DECISION NEEDED - Blocks all EPIC-01 features
 
-**Why Flutter + ui_hints.yaml:**
+### Option A: Metabase (Embedded Analytics)
+
+| Aspect | Details |
+|--------|---------|
+| **What it is** | Open-source BI tool, SQL-based dashboards |
+| **Deployment** | Self-hosted or cloud (~$85/month) |
+| **Dev effort** | Low - SQL queries + drag-and-drop |
+| **Customization** | Limited - works within Metabase paradigms |
+| **Integration** | Embedded iframes, separate auth |
+
+**Pros:**
+- Fast to deploy (1-2 weeks)
+- Good for pilot validation - learn what customers want
+- Non-developers can modify dashboards
+
+**Cons:**
+- Separate system from main platform
+- Limited customization for biosensor-specific views
+- Dual auth complexity (platform + Metabase)
+
+---
+
+### Option B: Retool (Low-Code Internal Tools)
+
+| Aspect | Details |
+|--------|---------|
+| **What it is** | Low-code platform for internal tools |
+| **Deployment** | Cloud (~$10-50/user/month) |
+| **Dev effort** | Low-Medium - drag-and-drop + JS |
+| **Customization** | Medium - flexible within Retool |
+| **Integration** | API-first, custom auth possible |
+
+**Pros:**
+- Fast iteration (1-2 weeks)
+- Can connect directly to APIs
+- Good for CRUD operations
+
+**Cons:**
+- Vendor lock-in, subscription cost
+- Not designed for customer-facing dashboards
+- Another system to maintain
+
+---
+
+### Option C: Custom Flutter + Platform Groups (ui_hints.yaml)
+
+| Aspect | Details |
+|--------|---------|
+| **What it is** | Native Flutter app using Platform Groups dynamic UI |
+| **Deployment** | Web/Desktop/Mobile via existing Flutter infrastructure |
+| **Dev effort** | Medium-High (4-8 weeks) |
+| **Customization** | Full - complete control |
+| **Integration** | Native - same codebase as platform |
+
+**Pros:**
 - Fully integrated with platform architecture
-- Reusable patterns from CRM reference implementation
-- AI can generate/modify ui_hints.yaml configurations
-- Native desktop/mobile/web apps from single codebase
-- No vendor dependency or dual-auth complexity
+- Reusable patterns from CRM reference
+- AI can generate/modify ui_hints.yaml
+- Native desktop/mobile apps possible
+- No vendor dependency
 
-**Implementation approach:**
+**Cons:**
+- More upfront development
+- Requires Flutter expertise
+- Dashboard components need building (see [SquareHead EPIC-02 Feature 2.4](../SquareHead/EPIC-02-Base-UI-Kit.md))
 
-Views are defined declaratively in `ui_hints.yaml`:
+**If chosen, views would be defined in `ui_hints.yaml`:**
 
 ```yaml
 models:
@@ -228,9 +289,19 @@ models:
         fields: [sample_location, collection_date]
 ```
 
-**Dependencies:**
-- Dashboard chart components from [SquareHead EPIC-02 Feature 2.4](../SquareHead/EPIC-02-Base-UI-Kit.md)
-- Platform Groups loader from [SquareHead EPIC-01](../SquareHead/EPIC-01-Platform-Groups.md)
+---
+
+### Recommendation
+
+Per [Technology Requirements](../../03-OPERATING-MODEL/03-Technology-Requirements.md):
+
+> Use **Metabase or Retool** for pilot to validate what customers want. Build custom dashboard after pilot feedback.
+
+**Questions to answer:**
+1. Is speed-to-pilot more important than long-term architecture?
+2. How much customization do we need for biosensor-specific visualizations?
+3. Do we want native desktop/mobile apps or web-only?
+4. Are we comfortable with the dual-auth complexity of embedded analytics?
 
 ---
 

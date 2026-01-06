@@ -158,6 +158,8 @@ A customer can download a professional PDF report to share with stakeholders who
 - [ ] PDF generation library integration
 - [ ] Include charts/visualizations in PDF
 - [ ] On-demand generation from dashboard
+- [ ] AER compliance report template (regulator-ready format with data provenance)
+- [ ] Indigenous community report template (visual, accessible, plain language)
 - [ ] (Future) Scheduled report emails
 
 ---

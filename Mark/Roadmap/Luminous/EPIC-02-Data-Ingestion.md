@@ -61,6 +61,8 @@ A tenant administrator can install the Luminous platform group and see it availa
 - [ ] Create `relationship_types.yaml` for sample/result linking
 - [ ] Set up `workflows/` directory for future agents
 - [ ] Register Luminous in platform group catalog
+- [ ] Barcode pre-registration workflow (barcodes active in system before kit shipment)
+- [ ] Kit batch tracking (link barcodes to kit preparation batch)
 
 **Reference:** `apps/platform_groups/crm/` for structure and patterns
 
@@ -199,6 +201,11 @@ An analyst can view weather and environmental conditions alongside biosensor res
 
 #### Context
 NA concentrations may correlate with weather events (rain runoff, temperature changes). Having this data alongside results enables correlation analysis.
+
+The **Relational Context Engine** is an existing SquareHead platform capability. This feature focuses on:
+1. **Ingesting** contextual data (weather, SCADA, dosing) into the platform
+2. **Configuring** how that data relates to samples in the Context Engine
+3. The correlation logic itself already exists - we configure it for Luminous relationships
 
 #### Constraints
 - Must work with historical data (samples may be weeks old before upload)
