@@ -109,27 +109,65 @@ All base components meet WCAG 2.1 AA accessibility requirements.
 ### Feature 2.4: Dashboard Components
 
 #### Outcome
-Reusable chart and dashboard components are available for analytics views.
+Reusable chart and dashboard components are available for analytics views, including advanced correlation visualization for time-series data with event overlays.
 
 #### What Success Looks Like
 - Developer can add line/bar/pie charts with minimal code
 - Charts are responsive and handle loading states
 - KPI cards display metrics consistently
 - Data tables support sorting/filtering
+- Analyst can view multiple data series on shared timeline with event annotations
+- Correlations between metrics and events are visually apparent
 
 #### Context
-These components will be used by the Luminous Customer Dashboard and other analytics views across Platform Groups.
+These components will be used by the Luminous Customer Dashboard and other analytics views across Platform Groups. The correlation visualization requirements are driven by biosensor monitoring use cases where NA concentrations must be analyzed alongside operational events (water intake, dosing) and environmental factors (temperature, precipitation).
+
+**Dependencies:**
+- [LUM-EPIC-01 Feature 1.3](../Luminous/LUM-EPIC-01-Customer-Dashboard.md) - Trend Charts
+- [LUM-EPIC-01 Feature 1.6](../Luminous/LUM-EPIC-01-Customer-Dashboard.md) - Correlation View
+
+#### Technology Options
+
+| Option | Pros | Cons |
+|--------|------|------|
+| **fl_chart** | Pure Dart, good community, free | Limited advanced features, no multi-axis native support |
+| **syncfusion_flutter_charts** | Feature-rich, multi-axis, annotations built-in | Commercial license (~$995/dev/year) |
+| **graphic** | Declarative grammar of graphics, flexible | Steeper learning curve, less community |
+| **Custom Canvas** | Full control, no dependencies | Significant dev effort, maintenance burden |
+
+**Decision needed:** Evaluate options during implementation spike.
 
 #### Scope: Owned Files
 - `frontend/flutter/packages/ui/lib/components/charts/`
 - `frontend/flutter/packages/ui/lib/components/dashboard/`
 
 #### Tasks
+
+**Basic Charts:**
+- [x] KPI/Stat card component (exists: `stat_card.dart`)
 - [ ] Line chart component
 - [ ] Bar chart component
-- [ ] KPI card component
+- [ ] Pie/donut chart component
+- [ ] Chart loading/empty/error states
+
+**Advanced Time Series:**
+- [ ] Multi-axis time series component (primary Y-axis + secondary Y-axis for different units)
+- [ ] Event annotation layer (vertical markers with labels for operational events)
+- [ ] Threshold/reference line support (horizontal lines for alert levels)
+- [ ] Correlation highlight bands (shaded regions showing correlation periods)
+- [ ] Interactive zoom/pan with date range selection
+- [ ] Unified tooltip showing all series values at hovered timestamp
+
+**Data Tables:**
 - [ ] Data table with sorting/filtering
-- [ ] Chart loading/empty states
+- [ ] Column visibility toggle
+- [ ] Export to CSV
+
+**Technology Spike:**
+- [ ] Evaluate fl_chart for basic charting needs
+- [ ] Evaluate syncfusion_flutter_charts for advanced features
+- [ ] Prototype multi-axis chart with event annotations
+- [ ] Document library recommendation with trade-offs
 
 ---
 
