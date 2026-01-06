@@ -63,6 +63,9 @@ A tenant administrator can install the Luminous platform group and see it availa
 - [ ] Register Luminous in platform group catalog
 - [ ] Barcode pre-registration workflow (barcodes active in system before kit shipment)
 - [ ] Kit batch tracking (link barcodes to kit preparation batch)
+- [ ] Luminous test fixtures (`apps/platform_groups/luminous/tests/conftest.py`)
+- [ ] E2E test command (`apps/platform_groups/management/commands/e2e_luminous.py`)
+- [ ] Test data seeding script (realistic sample/result data)
 
 **Reference:** `apps/platform_groups/crm/` for structure and patterns
 
@@ -131,6 +134,14 @@ Currently, plate reader results are exported as CSV/Excel and manually copied in
 - Must validate all required columns before accepting
 - Must prevent duplicate uploads (same data, different filename)
 
+#### Platform Capabilities (Reuse)
+Luminous leverages existing SquareHead infrastructure for upload validation:
+- **BulkJobService** (`apps/documents/api/jobs.py`) - Error tracking, progress events
+- **HTTP 207 Multi-Status** - Partial success handling pattern
+- **ConsistencyRun** - Post-upload validation tracking
+
+No new validation workflow needed - configure existing patterns for biosensor data.
+
 #### Scope: Owned Files
 - `apps/platform_groups/luminous/api/`
 - `apps/platform_groups/luminous/services/upload.py`
@@ -183,6 +194,11 @@ Lab results arrive with barcode IDs. Field metadata (from EPIC-04) also has barc
 - [ ] Barcode validation (exists, not already linked)
 - [ ] Link sample → result in database
 - [ ] Handle orphaned results (result without sample metadata)
+- [ ] Fulcrum webhook receiver endpoint
+- [ ] Fulcrum sync schedule (polling fallback if webhook fails)
+- [ ] Sync error handling and retry logic
+- [ ] Duplicate detection for re-synced records
+- [ ] Conflict resolution (field update after lab result linked)
 
 ---
 

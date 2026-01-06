@@ -64,6 +64,17 @@ A Luminous admin can create customer teams and invite users through a self-servi
 - [ ] Role definitions (viewer, admin, API access)
 - [ ] API key generation for integrations
 
+#### Platform Capabilities (Reuse)
+Luminous leverages existing SquareHead team management:
+- **RBAC** (`apps/teams/roles.py`) - Admin/Editor/Viewer roles ready to use
+- **Invitations** (`apps/teams/invitations.py`) - Email invite flow implemented
+- **Auto-provisioning** (`apps/teams/signals.py`) - Storage auto-created on team setup
+
+**Luminous-Specific Tasks:**
+- [ ] Customer onboarding checklist document
+- [ ] Luminous welcome email template customization
+- [ ] Threshold configuration UI for new customers
+
 ---
 
 ### Feature 3.2: Notification System
@@ -192,6 +203,30 @@ drf-spectacular provides OpenAPI generation. This feature ensures Luminous endpo
 - [ ] Authentication documentation
 - [ ] Example code snippets
 - [ ] Rate limiting documentation
+
+---
+
+### Feature 3.6: Pilot UAT Process
+**Status:** 🔴 Not Started
+**Priority:** High
+**Dependencies:** EPIC-01, EPIC-02, EPIC-04 (features to test)
+
+#### Outcome
+CNRL validates the system meets their needs before go-live, with documented sign-off.
+
+#### What Success Looks Like
+- UAT test plan created with CNRL
+- Test scenarios cover all critical workflows
+- CNRL executes tests with Luminous support
+- Issues tracked and resolved
+- Formal sign-off before production launch
+
+#### Tasks
+- [ ] UAT test plan document (scenarios, acceptance criteria)
+- [ ] Test environment provisioned (use existing E2E patterns)
+- [ ] CNRL UAT training session
+- [ ] Issue tracking during UAT
+- [ ] Sign-off checklist and approval workflow
 
 ---
 

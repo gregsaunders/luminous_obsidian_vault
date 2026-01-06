@@ -305,6 +305,24 @@ Per [Technology Requirements](../../03-OPERATING-MODEL/03-Technology-Requirement
 
 ---
 
+### Dashboard Technology Spike
+
+**Status:** 🔴 Not Started
+**Priority:** Critical
+**Deadline:** 1 week timeboxed
+
+#### Outcome
+Team has made an informed decision on dashboard technology with a working proof-of-concept.
+
+#### Tasks
+- [ ] Set up Metabase with sample biosensor data (2 days)
+- [ ] Set up Retool with sample biosensor data (2 days)
+- [ ] Build minimal Flutter dashboard view with ui_hints.yaml (2 days)
+- [ ] Document pros/cons from hands-on evaluation
+- [ ] Team decision meeting and commit to approach
+
+---
+
 ## References
 
 - [Technology Requirements - Dashboard Section](../../03-OPERATING-MODEL/03-Technology-Requirements.md)
