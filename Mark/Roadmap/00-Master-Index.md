@@ -6,10 +6,10 @@
 
 ## Areas
 
-| Area | Focus | Status |
-|------|-------|--------|
-| [Luminous](Luminous/LUM-00-Backlog-Index.md) | Biosensor product for NA monitoring | 5 EPICs |
-| [SquareHead](SquareHead/SQH-00-Backlog-Index.md) | Core platform infrastructure | 8 EPICs |
+| Area                                             | Focus                               | Status  |
+| ------------------------------------------------ | ----------------------------------- | ------- |
+| [Luminous](Luminous/LUM-00-Backlog-Index.md)     | Biosensor product for NA monitoring | 5 EPICs |
+| [SquareHead](SquareHead/SQH-00-Backlog-Index.md) | Core platform infrastructure        | 8 EPICs |
 
 ---
 
