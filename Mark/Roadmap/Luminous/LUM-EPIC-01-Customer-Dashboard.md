@@ -74,6 +74,8 @@ A customer user can log in with their credentials and access only their team's d
 **Status:** 🔴 Not Started
 **Priority:** Critical
 **Dependencies:** EPIC-02 Features 2.1, 2.2, 2.3 (data model, upload pipeline, sample linkage)
+**Used By:**
+- [LUM-EPIC-03 Feature 3.4](LUM-EPIC-03-Platform-Infrastructure.md) - PDF Reports
 
 #### Outcome
 A customer can see an at-a-glance overview of their NA monitoring status across all sites.
@@ -100,6 +102,8 @@ A customer can see an at-a-glance overview of their NA monitoring status across 
 **Status:** 🔴 Not Started
 **Priority:** Critical
 **Dependencies:** Feature 1.2 (Summary View), EPIC-02 Feature 2.1 (data model with timestamps)
+**Used By:**
+- [LUM-EPIC-03 Feature 3.4](LUM-EPIC-03-Platform-Infrastructure.md) - PDF Reports
 
 #### Outcome
 A customer can visualize NA levels over time to identify patterns, anomalies, and seasonal trends.

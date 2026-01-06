@@ -75,6 +75,12 @@ A tenant administrator can install the Luminous platform group and see it availa
 **Status:** 🔴 Not Started
 **Priority:** Critical
 **Dependencies:** Feature 2.0 (Platform Group scaffolding)
+**Used By:**
+- [LUM-EPIC-01 Feature 1.2](LUM-EPIC-01-Customer-Dashboard.md) - Summary View
+- [LUM-EPIC-01 Feature 1.3](LUM-EPIC-01-Customer-Dashboard.md) - Trend Charts
+- [LUM-EPIC-01 Feature 1.5](LUM-EPIC-01-Customer-Dashboard.md) - Data Table & Export
+- [LUM-EPIC-03 Feature 3.3](LUM-EPIC-03-Platform-Infrastructure.md) - Audit Trail
+- [LUM-EPIC-03 Feature 3.4](LUM-EPIC-03-Platform-Infrastructure.md) - PDF Reports
 
 #### Outcome
 The system can store and retrieve biosensor plate reader results with all required fields for analysis.
@@ -114,6 +120,12 @@ Biosensor panels detect different types of naphthenic acids (NAs):
 **Status:** 🔴 Not Started
 **Priority:** Critical
 **Dependencies:** Feature 2.1 (data model must exist first)
+**Used By:**
+- [LUM-EPIC-01 Feature 1.2](LUM-EPIC-01-Customer-Dashboard.md) - Summary View
+- [LUM-EPIC-01 Feature 1.5](LUM-EPIC-01-Customer-Dashboard.md) - Data Table & Export
+- [LUM-EPIC-03 Feature 3.2](LUM-EPIC-03-Platform-Infrastructure.md) - Notification System
+- [LUM-EPIC-03 Feature 3.4](LUM-EPIC-03-Platform-Infrastructure.md) - PDF Reports
+- [LUM-EPIC-03 Feature 3.5](LUM-EPIC-03-Platform-Infrastructure.md) - API Documentation
 
 #### Outcome
 Lab technician can upload plate reader export files and see results in the system within minutes.
@@ -163,6 +175,12 @@ No new validation workflow needed - configure existing patterns for biosensor da
 **Status:** 🔴 Not Started
 **Priority:** Critical
 **Dependencies:** Feature 2.1 (data model), Feature 2.2 (results exist to link), EPIC-04 Feature 4.1 (field metadata source)
+**Used By:**
+- [LUM-EPIC-01 Feature 1.2](LUM-EPIC-01-Customer-Dashboard.md) - Summary View
+- [LUM-EPIC-01 Feature 1.4](LUM-EPIC-01-Customer-Dashboard.md) - Spatial View
+- [LUM-EPIC-01 Feature 1.5](LUM-EPIC-01-Customer-Dashboard.md) - Data Table & Export
+- [LUM-EPIC-03 Feature 3.4](LUM-EPIC-03-Platform-Infrastructure.md) - PDF Reports
+- [LUM-EPIC-03 Feature 3.5](LUM-EPIC-03-Platform-Infrastructure.md) - API Documentation
 
 #### Outcome
 An analyst can trace any lab result back to its field collection context (who collected it, where, when, under what conditions).
@@ -206,6 +224,8 @@ Lab results arrive with barcode IDs. Field metadata (from EPIC-04) also has barc
 **Status:** 🔴 Not Started
 **Priority:** High
 **Dependencies:** Feature 2.3 (samples must exist to attach contextual data)
+**Used By:**
+- [LUM-EPIC-01 Feature 1.6](LUM-EPIC-01-Customer-Dashboard.md) - Correlation View
 
 #### Outcome
 An analyst can view weather and environmental conditions alongside biosensor results to identify correlations.

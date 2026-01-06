@@ -124,6 +124,7 @@ These components will be used by the Luminous Customer Dashboard and other analy
 **Used By:**
 - [LUM-EPIC-01 Feature 1.3](../Luminous/LUM-EPIC-01-Customer-Dashboard.md) - Trend Charts
 - [LUM-EPIC-01 Feature 1.6](../Luminous/LUM-EPIC-01-Customer-Dashboard.md) - Correlation View
+- [SQH-EPIC-09 Feature 9.4](SQH-EPIC-09-AI-Generated-UI.md) - Composable UI Components
 
 #### Technology Options
 

@@ -1,6 +1,6 @@
 # EPIC-04: CDC Pipeline
 
-**Status:** 🟢 Complete
+**Status:** 🟡 Partial
 **Priority:** Medium
 **Owner:** TBD
 
@@ -26,13 +26,54 @@ Debezium-based Change Data Capture pipeline for database mirroring. Production-r
 
 **What exists:** Full connector lifecycle, Kafka integration, snapshot assembly, PostgreSQL/MySQL support
 
-**What's needed:** Secret resolution (Vault), Oracle/MongoDB support, documentation
+**What's needed:** Processing profiles, secret resolution (Vault), documentation
 
 ---
 
 ## Features
 
-### Feature 4.1: Secret Resolution
+### Feature 4.1: Processing Profiles
+**Status:** 🔴 Not Started
+**Priority:** High
+
+#### Outcome
+An operator can configure how different document types are processed through the pipeline.
+
+#### Context
+Not all CDC-sourced documents benefit from the same processing. Transactional records (orders, invoices) are structured data best indexed for lookup. Knowledge documents (articles, manuals) benefit from chunking and semantic embeddings.
+
+#### What Success Looks Like
+- Operator configures `processing_profile` per `ConnectorTableConfig`
+- Transactional tables skip chunking/embedding, go straight to search index
+- Knowledge tables get full processing (chunk + embed + index)
+- Archive tables are stored only, no processing
+- Cost savings from skipping unnecessary embedding API calls
+
+#### Processing Profile Options
+
+| Profile | Chunk | Embed | Index | Use Case |
+|---------|-------|-------|-------|----------|
+| `full` | ✅ | ✅ | ✅ | Knowledge docs, manuals, articles |
+| `index_only` | ❌ | ❌ | ✅ | Transactional records, structured data |
+| `archive` | ❌ | ❌ | ❌ | Audit logs, historical snapshots |
+
+#### Scope: Owned Files
+- `apps/cdc/models.py` - Add `processing_profile` field to `ConnectorTableConfig`
+- `apps/documents/tasks.py` - Route based on profile in `process_object_created_graph`
+- `apps/documents/models.py` - Add profile to `StorageBucket` or metadata
+
+#### Tasks
+- [ ] Add `ProcessingProfile` enum (full, index_only, archive)
+- [ ] Add `processing_profile` field to `ConnectorTableConfig`
+- [ ] Modify pipeline routing in `process_object_created_graph` to check profile
+- [ ] Skip chunking/embedding for `index_only` profile
+- [ ] Skip all processing for `archive` profile
+- [ ] API endpoint to configure profile per table
+- [ ] Documentation for profile selection guidelines
+
+---
+
+### Feature 4.2: Secret Resolution
 
 #### Outcome
 Database credentials are securely managed through Vault, not stored in connector configs.
@@ -44,23 +85,6 @@ Database credentials are securely managed through Vault, not stored in connector
 #### Tasks
 - [ ] Vault integration for database credentials
 - [ ] Secure credential injection
-
----
-
-### Feature 4.2: Oracle/MongoDB Support
-
-#### Outcome
-CDC connectors support Oracle and MongoDB databases.
-
-#### Scope: Owned Files
-- `apps/cdc/connectors/oracle.py`
-- `apps/cdc/connectors/mongodb.py`
-
-#### Tasks
-- [ ] Oracle connector implementation
-- [ ] MongoDB connector implementation
-
-**Note:** Not critical for Luminous pilot
 
 ---
 
@@ -85,3 +109,9 @@ An operator can configure and troubleshoot CDC connectors following documentatio
 - `apps/cdc/services/` - Connector configuration
 - `apps/cdc/assembly/snapshot.py` - Snapshot assembly
 - `apps/cdc/tasks.py` - Celery tasks
+
+---
+
+## References
+
+- [SQH-EPIC-10: Extended Database Connectors](SQH-EPIC-10-Extended-Database-Connectors.md) - Oracle, MongoDB, SQL Server support

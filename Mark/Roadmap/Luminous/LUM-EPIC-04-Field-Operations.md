@@ -40,6 +40,8 @@ Currently, metadata is captured on paper or in ad-hoc systems, leading to data e
 **Status:** 🔴 Not Started
 **Priority:** High
 **Dependencies:** None (foundational, enables EPIC-02 Feature 2.3)
+**Used By:**
+- [LUM-EPIC-02 Feature 2.3](LUM-EPIC-02-Data-Ingestion.md) - Sample Metadata Linkage
 
 #### Outcome
 A field technician can capture sample metadata on a mobile device at collection time, even without internet connectivity.

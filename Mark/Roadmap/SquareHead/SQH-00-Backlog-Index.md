@@ -12,12 +12,13 @@
 | [SQH-EPIC-01: Platform Groups](SQH-EPIC-01-Platform-Groups.md) | 🟡 Partial | High | Modular app extensibility system |
 | [SQH-EPIC-02: Base UI Kit](SQH-EPIC-02-Base-UI-Kit.md) | 🟡 Partial | Medium | Shared Flutter component library (Layer 1) |
 | [SQH-EPIC-03: Workflow Engine](SQH-EPIC-03-Workflow-Engine.md) | 🟡 Partial | High | BPMN workflows with AI agents |
-| [SQH-EPIC-04: CDC Pipeline](SQH-EPIC-04-CDC-Pipeline.md) | 🟢 Complete | Medium | Change data capture |
+| [SQH-EPIC-04: CDC Pipeline](SQH-EPIC-04-CDC-Pipeline.md) | 🟡 Partial | Medium | Change data capture |
 | [SQH-EPIC-05: Document Management](SQH-EPIC-05-Document-Management.md) | 🟢 Complete | Low | Document processing & search |
 | [SQH-EPIC-06: AI Services](SQH-EPIC-06-AI-Services.md) | 🟡 Partial | Medium | Modal-hosted AI models |
 | [SQH-EPIC-07: Frontend Apps](SQH-EPIC-07-Frontend-Apps.md) | 🟡 Partial | Medium | Flutter & React apps |
 | [SQH-EPIC-08: Tech Debt](SQH-EPIC-08-Tech-Debt.md) | Ongoing | Medium | Outstanding TODOs |
 | [SQH-EPIC-09: AI-Generated UI](SQH-EPIC-09-AI-Generated-UI.md) | 🔴 Not Started | Medium | ISON-based composable UI for agents |
+| [SQH-EPIC-10: Extended Database Connectors](SQH-EPIC-10-Extended-Database-Connectors.md) | 🔴 Not Started | Low | Oracle, MongoDB, SQL Server CDC support |
 
 ---
 

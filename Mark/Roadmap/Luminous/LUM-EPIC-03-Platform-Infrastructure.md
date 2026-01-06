@@ -38,6 +38,9 @@ Core platform capabilities that support the customer experience: user management
 **Status:** 🟡 Partial (framework exists)
 **Priority:** High
 **Dependencies:** None (foundational, enables EPIC-01 Feature 1.1)
+**Used By:**
+- [LUM-EPIC-01 Feature 1.1](LUM-EPIC-01-Customer-Dashboard.md) - User Authentication
+- [LUM-EPIC-04 Feature 4.3](LUM-EPIC-04-Field-Operations.md) - Sample Kit Management
 
 #### Outcome
 A Luminous admin can create customer teams and invite users through a self-service workflow.
