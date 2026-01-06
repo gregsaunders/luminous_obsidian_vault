@@ -1,4 +1,4 @@
-# EPIC-06: Frontend Apps
+# EPIC-07: Frontend Apps
 
 **Status:** 🟡 Partial
 **Priority:** Medium
@@ -28,11 +28,13 @@ Flutter monorepo for desktop/mobile/web apps, plus React graph visualizer. Dynam
 
 **What's needed:** Documentation, desktop sync completion, maintenance, web modernization
 
+**Depends on:** [EPIC-02: Base UI Kit](EPIC-02-Base-UI-Kit.md) for shared components
+
 ---
 
 ## Features
 
-### Feature 6.1: Flutter Dynamic Forms Documentation
+### Feature 7.1: Flutter Dynamic Forms Documentation
 
 #### Outcome
 A developer can implement dynamic forms following documented patterns.
@@ -49,7 +51,7 @@ A developer can implement dynamic forms following documented patterns.
 
 ---
 
-### Feature 6.2: Desktop Sync Completion
+### Feature 7.2: Desktop Sync Completion
 
 #### Outcome
 Desktop app users can work offline and sync files when connected.
@@ -64,7 +66,7 @@ Desktop app users can work offline and sync files when connected.
 
 ---
 
-### Feature 6.3: React Graph Visualizer Maintenance
+### Feature 7.3: React Graph Visualizer Maintenance
 
 #### Outcome
 Graph visualizer stays current and integrates well with TerminusDB.
@@ -78,7 +80,7 @@ Graph visualizer stays current and integrates well with TerminusDB.
 
 ---
 
-### Feature 6.4: Web App Modernization
+### Feature 7.4: Web App Modernization
 
 #### Outcome
 Web app performs well and works on mobile browsers.
@@ -98,5 +100,5 @@ Web app performs well and works on mobile browsers.
 - `frontend/flutter/apps/mobile/` - Mobile app
 - `frontend/flutter/apps/web_app/` - Web app
 - `frontend/flutter/packages/workflows/` - Form rendering
-- `frontend/flutter/packages/ui/` - Theme/components
+- `frontend/flutter/packages/ui/` - Theme/components (see EPIC-02)
 - `frontend/react/graph-visualizer/` - React graph viz

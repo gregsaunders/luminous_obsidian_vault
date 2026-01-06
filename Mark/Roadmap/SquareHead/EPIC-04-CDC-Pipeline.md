@@ -1,4 +1,4 @@
-# EPIC-03: CDC Pipeline
+# EPIC-04: CDC Pipeline
 
 **Status:** 🟢 Complete
 **Priority:** Medium
@@ -32,7 +32,7 @@ Debezium-based Change Data Capture pipeline for database mirroring. Production-r
 
 ## Features
 
-### Feature 3.1: Secret Resolution
+### Feature 4.1: Secret Resolution
 
 #### Outcome
 Database credentials are securely managed through Vault, not stored in connector configs.
@@ -47,7 +47,7 @@ Database credentials are securely managed through Vault, not stored in connector
 
 ---
 
-### Feature 3.2: Oracle/MongoDB Support
+### Feature 4.2: Oracle/MongoDB Support
 
 #### Outcome
 CDC connectors support Oracle and MongoDB databases.
@@ -64,7 +64,7 @@ CDC connectors support Oracle and MongoDB databases.
 
 ---
 
-### Feature 3.3: CDC Documentation
+### Feature 4.3: CDC Documentation
 
 #### Outcome
 An operator can configure and troubleshoot CDC connectors following documentation.

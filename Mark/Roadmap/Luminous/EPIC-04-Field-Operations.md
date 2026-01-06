@@ -187,7 +187,7 @@ Ship to lab              →   Track shipment         →   Receive sample
 ## Post-Pilot: Custom Field App
 
 **Status:** 🔴 Future (not for Q2 2026 pilot)
-**Dependencies:** SquareHead EPIC-06 (Frontend Apps), Pilot feedback
+**Dependencies:** SquareHead EPIC-07 (Frontend Apps), Pilot feedback
 
 ### Feature 4.5: Custom Flutter Field App
 
@@ -199,7 +199,7 @@ MVP uses Fulcrum for fast deployment. Post-pilot, a custom Flutter app may provi
 
 #### Why Post-Pilot
 - Fulcrum is sufficient for pilot
-- Custom app requires Flutter mobile infrastructure (SquareHead EPIC-06)
+- Custom app requires Flutter mobile infrastructure (SquareHead EPIC-07)
 - Need pilot feedback to inform requirements
 
 #### Scope: Owned Files (Future)

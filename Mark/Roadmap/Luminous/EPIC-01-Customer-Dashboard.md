@@ -269,7 +269,7 @@ An analyst can view NA levels alongside environmental factors to identify correl
 **Cons:**
 - More upfront development
 - Requires Flutter expertise
-- Dashboard components need building (or exist in SquareHead EPIC-06?)
+- Dashboard components need building (see SquareHead EPIC-02 Feature 2.4)
 
 **If chosen, views would be defined in `ui_hints.yaml`:**
 

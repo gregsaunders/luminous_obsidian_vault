@@ -1,4 +1,4 @@
-# EPIC-05: AI Services
+# EPIC-06: AI Services
 
 **Status:** 🟡 Partial
 **Priority:** Medium
@@ -34,7 +34,7 @@ Modal-hosted self-hosted AI models. Services deployed and functional; need docum
 
 ## Features
 
-### Feature 5.1: AI Services Documentation
+### Feature 6.1: AI Services Documentation
 
 #### Outcome
 A developer can understand and use AI services without asking for help.
@@ -49,7 +49,7 @@ A developer can understand and use AI services without asking for help.
 
 ---
 
-### Feature 5.2: Cost Monitoring Dashboard
+### Feature 6.2: Cost Monitoring Dashboard
 
 #### Outcome
 Team can see AI service usage and costs, with alerts for budget overruns.
@@ -65,7 +65,7 @@ Team can see AI service usage and costs, with alerts for budget overruns.
 
 ---
 
-### Feature 5.3: Model Selection Guidelines
+### Feature 6.3: Model Selection Guidelines
 
 #### Outcome
 A developer knows which model to use for which task without trial and error.

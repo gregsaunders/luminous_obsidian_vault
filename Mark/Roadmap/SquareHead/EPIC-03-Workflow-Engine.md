@@ -1,4 +1,4 @@
-# EPIC-02: Workflow Engine
+# EPIC-03: Workflow Engine
 
 **Status:** 🟡 Partial
 **Priority:** High
@@ -32,7 +32,7 @@ BPMN-based workflow engine with AI agent task support. Core engine works; some a
 
 ## Features
 
-### Feature 2.1: Task Escalation Logic
+### Feature 3.1: Task Escalation Logic
 
 #### Outcome
 Tasks that exceed SLA are automatically escalated to appropriate parties.
@@ -48,7 +48,7 @@ Tasks that exceed SLA are automatically escalated to appropriate parties.
 
 ---
 
-### Feature 2.2: BPMN Role Assignment Extraction
+### Feature 3.2: BPMN Role Assignment Extraction
 
 #### Outcome
 Role assignments from BPMN extensions are parsed and used for dynamic task assignment.
@@ -62,7 +62,7 @@ Role assignments from BPMN extensions are parsed and used for dynamic task assig
 
 ---
 
-### Feature 2.3: Workflow Template Library
+### Feature 3.3: Workflow Template Library
 
 #### Outcome
 Common workflow patterns are available as templates to accelerate new workflow creation.
@@ -78,7 +78,7 @@ Common workflow patterns are available as templates to accelerate new workflow c
 
 ---
 
-### Feature 2.4: Agent Task Patterns Documentation
+### Feature 3.4: Agent Task Patterns Documentation
 
 #### Outcome
 A developer can create AI agent tasks following documented patterns.

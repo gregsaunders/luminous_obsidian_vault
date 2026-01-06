@@ -66,7 +66,7 @@ Infrastructure exists (OpenTelemetry, Prometheus, Loki, Grafana). This feature a
 ### Feature 5.2: Luminous AI Usage Patterns
 **Status:** 🔴 Not Started
 **Priority:** Medium
-**Dependencies:** SquareHead EPIC-05 Feature 5.1 (core AI docs)
+**Dependencies:** SquareHead EPIC-06 Feature 6.1 (core AI docs)
 
 #### Outcome
 A Luminous developer knows how to use AI services for Luminous-specific tasks.
@@ -77,7 +77,7 @@ A Luminous developer knows how to use AI services for Luminous-specific tasks.
 - Can configure Luminous agent workflows
 
 #### Context
-Core AI Services documentation is owned by SquareHead EPIC-05. This feature documents Luminous-specific usage patterns only.
+Core AI Services documentation is owned by SquareHead EPIC-06. This feature documents Luminous-specific usage patterns only.
 
 #### Scope: Owned Files
 - `apps/platform_groups/luminous/docs/ai-usage.md`
