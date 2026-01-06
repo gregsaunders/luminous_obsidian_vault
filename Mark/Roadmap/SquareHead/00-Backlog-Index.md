@@ -10,7 +10,7 @@
 | Epic | Status | Priority | Summary |
 |------|--------|----------|---------|
 | [EPIC-01: Platform Groups](EPIC-01-Platform-Groups.md) | 🟡 Partial | High | Modular app extensibility system |
-| [EPIC-02: Base UI Kit](EPIC-02-Base-UI-Kit.md) | 🟡 Partial | High | Shared Flutter component library (Layer 1) |
+| [EPIC-02: Base UI Kit](EPIC-02-Base-UI-Kit.md) | 🟡 Partial | Medium | Shared Flutter component library (Layer 1) |
 | [EPIC-03: Workflow Engine](EPIC-03-Workflow-Engine.md) | 🟡 Partial | High | BPMN workflows with AI agents |
 | [EPIC-04: CDC Pipeline](EPIC-04-CDC-Pipeline.md) | 🟢 Complete | Medium | Change data capture |
 | [EPIC-05: Document Management](EPIC-05-Document-Management.md) | 🟢 Complete | Low | Document processing & search |

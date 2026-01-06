@@ -1,7 +1,7 @@
 # EPIC-02: Base UI Kit
 
 **Status:** 🟡 Partial
-**Priority:** High
+**Priority:** Medium
 **Owner:** TBD
 
 ---
@@ -25,15 +25,13 @@ All Flutter applications share a consistent, accessible component library with M
 
 The Base UI Kit is the foundation layer (Layer 1) in the three-tier UI architecture:
 
-1. **Layer 1: Base UI Kit** (this epic) - Core components, frozen during parallel work
+1. **Layer 1: Base UI Kit** (this epic) - Core components shared across all apps
 2. **Layer 2: Platform Group Extensions** - Product-specific widgets (Luminous, CRM)
 3. **Layer 3: Tenant Customizations** - Customer branding and preferences
 
 **What exists:** Material 3 theming, basic components in `frontend/flutter/packages/ui/`
 
 **What's needed:** Component documentation, accessibility audit, design tokens, component catalog
-
-**Frozen During Parallel Work:** This package is shared infrastructure. Changes require coordination.
 
 ---
 
@@ -120,7 +118,7 @@ Reusable chart and dashboard components are available for analytics views.
 - Data tables support sorting/filtering
 
 #### Context
-Required if Flutter is chosen for Luminous Customer Dashboard (see Luminous EPIC-01 Technology Decision).
+These components will be used by the Luminous Customer Dashboard and other analytics views across Platform Groups.
 
 #### Scope: Owned Files
 - `frontend/flutter/packages/ui/lib/components/charts/`
@@ -165,20 +163,9 @@ A standalone app showcases all components for browsing and testing.
 
 ---
 
-## LLM-Parallel Development Notes
-
-**This package is FROZEN during parallel development.**
-
-- Changes to base components require coordination
-- Use `ui:layer1-base` label for issues touching this code
-- Platform Group extensions (Layer 2) should NOT modify this package
-- If a new component is needed, open an issue for review before implementation
-
----
-
 ## References
 
 - [CONTRIBUTING.md - LLM-Parallel Development](../../../square_head/CONTRIBUTING.md)
-- [EPIC-07: Frontend Apps](EPIC-08-Frontend-Apps.md) - Apps that consume this kit
+- [EPIC-07: Frontend Apps](EPIC-07-Frontend-Apps.md) - Apps that consume this kit
 - [Luminous EPIC-01: Customer Dashboard](../Luminous/EPIC-01-Customer-Dashboard.md) - May depend on Feature 2.4
 - Flutter packages: `frontend/flutter/packages/`
