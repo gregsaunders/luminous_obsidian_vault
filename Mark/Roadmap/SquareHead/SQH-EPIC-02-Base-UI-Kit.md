@@ -17,7 +17,6 @@ All Flutter applications share a consistent, accessible component library with M
 - As a **Flutter developer**, I can build UIs using documented, reusable components without reinventing common patterns
 - As a **designer**, I can define theme tokens that apply consistently across all apps
 - As a **user**, I experience consistent interactions and visual design across desktop, mobile, and web
-- As an **LLM agent**, I can generate UI code using well-documented component patterns
 
 ---
 
@@ -122,7 +121,7 @@ Reusable chart and dashboard components are available for analytics views, inclu
 #### Context
 These components will be used by the Luminous Customer Dashboard and other analytics views across Platform Groups. The correlation visualization requirements are driven by biosensor monitoring use cases where NA concentrations must be analyzed alongside operational events (water intake, dosing) and environmental factors (temperature, precipitation).
 
-**Dependencies:**
+**Used By:**
 - [LUM-EPIC-01 Feature 1.3](../Luminous/LUM-EPIC-01-Customer-Dashboard.md) - Trend Charts
 - [LUM-EPIC-01 Feature 1.6](../Luminous/LUM-EPIC-01-Customer-Dashboard.md) - Correlation View
 
