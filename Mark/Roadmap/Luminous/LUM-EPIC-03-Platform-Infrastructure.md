@@ -131,6 +131,7 @@ TerminusDB provides built-in versioning. This feature configures it for Luminous
 - [ ] "Who changed what when" reporting
 - [ ] Export audit log for regulators
 - [ ] Retention policy definition
+- [ ] Regulatory audit dashboard (visual chain: Field Scan → Lab Receipt → Plate Reader → Platform Ingestion)
 
 ---
 

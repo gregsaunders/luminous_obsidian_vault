@@ -136,7 +136,8 @@ Currently, plate reader results are exported as CSV/Excel and manually copied in
 - `apps/platform_groups/luminous/services/upload.py`
 
 #### Tasks
-- [ ] CSV upload API endpoint
+- [ ] Plate reader raw file parser (PerkinElmer Victor .xls/.txt native format)
+- [ ] CSV upload API endpoint (fallback for other formats)
 - [ ] File validation (required columns, data types)
 - [ ] Duplicate detection (prevent re-upload)
 - [ ] Parse and transform to data model
@@ -222,6 +223,8 @@ The **Relational Context Engine** is an existing SquareHead platform capability.
   - Historical data fetch for sample dates
 - [ ] Contextual data schema in database
 - [ ] Link contextual data to samples by date/location
+- [ ] Auto-correlation reports (temperature vs. NA concentration, precipitation vs. toxicity)
+- [ ] Pattern detection alerts (notify when significant correlation discovered)
 - [ ] (Future) SCADA integration framework
 - [ ] (Future) Dosing data integration
 
