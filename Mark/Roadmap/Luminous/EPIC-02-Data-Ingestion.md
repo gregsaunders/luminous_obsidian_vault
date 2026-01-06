@@ -1,0 +1,276 @@
+# EPIC-02: Data Ingestion
+
+**Status:** 🔴 Not Started
+**Priority:** Critical
+**Owner:** Greg
+**Target:** Q2 2026 (Before Pilot)
+
+**Dependencies:**
+- ⭐ **Foundational:** This EPIC enables EPIC-01 and EPIC-03
+- 🔗 **Related:** EPIC-04 Feature 4.1 (field metadata flows into Feature 2.3)
+- 🔗 **Platform:** [SquareHead EPIC-01 Platform Groups](../SquareHead/EPIC-01-Platform-Groups.md)
+
+---
+
+## Vision
+
+Lab technicians and field operators can submit biosensor data and sample metadata into the platform, with automatic linking and traceability from field collection to lab analysis.
+
+---
+
+## User Stories
+
+- As a **lab technician**, I can upload plate reader results so that data enters the system without manual data entry
+- As a **field operator**, I can record sample metadata at collection time so that results are linked to their source
+- As an **analyst**, I can see the complete chain from field sample to lab result so that I can trust data provenance
+- As a **data manager**, I can identify orphaned or unlinked records so that data quality issues are surfaced
+
+---
+
+## Context
+
+Currently, lab results are exported from plate readers as Excel files and manually processed. Field metadata is recorded on paper or in separate systems. Linking samples to results requires manual barcode matching, which is error-prone and time-consuming.
+
+This is the data foundation - nothing else works until data flows into the platform.
+
+---
+
+## Features
+
+### Feature 2.0: Luminous Platform Group Scaffolding
+**Status:** 🔴 Not Started
+**Priority:** Critical
+**Dependencies:** None (foundational - blocks all other features)
+
+#### Outcome
+A tenant administrator can install the Luminous platform group and see it available in their workspace.
+
+#### What Success Looks Like
+- Admin navigates to platform group catalog
+- Selects "Luminous" and installs it
+- Luminous appears in navigation
+- No data yet, but structure is ready
+
+#### Scope: Owned Files
+- `apps/platform_groups/luminous/`
+
+#### Tasks
+- [ ] Create `apps/platform_groups/luminous/` directory structure
+- [ ] Write initial `manifest.yaml` with core models
+- [ ] Create `ui_hints.yaml` skeleton
+- [ ] Create `relationship_types.yaml` for sample/result linking
+- [ ] Set up `workflows/` directory for future agents
+- [ ] Register Luminous in platform group catalog
+
+**Reference:** `apps/platform_groups/crm/` for structure and patterns
+
+---
+
+### Feature 2.1: Biosensor Results Data Model
+**Status:** 🔴 Not Started
+**Priority:** Critical
+**Dependencies:** Feature 2.0 (Platform Group scaffolding)
+
+#### Outcome
+The system can store and retrieve biosensor plate reader results with all required fields for analysis.
+
+#### What Success Looks Like
+- A biosensor result record includes all fields needed for downstream analysis
+- Data model supports all three panel types (atuA, marR, 3680)
+- QC status can be tracked per result
+- Data dictionary is documented for future developers
+
+#### Context
+Biosensor panels detect different types of naphthenic acids (NAs):
+- **atuA** - Detects acyclic NAs
+- **marR** - Detects complex/aromatic NAs
+- **3680** - Detects classic NA structures
+
+#### Scope: Owned Files
+- `apps/platform_groups/luminous/manifest.yaml`
+- `apps/platform_groups/luminous/models/`
+
+#### Tasks
+- [ ] Define data model in `manifest.yaml`:
+  - Sample ID (barcode)
+  - Panel type (atuA, marR, 3680)
+  - Raw fluorescence readings
+  - Calculated NA concentration
+  - Detection timestamp
+  - Lab technician ID
+  - QC status (pass/fail)
+- [ ] Create TerminusDB DocumentTemplate classes in `models/`
+- [ ] Add model to `manifest.yaml` models list
+- [ ] Document data dictionary
+
+---
+
+### Feature 2.2: Lab Results Upload Pipeline
+**Status:** 🔴 Not Started
+**Priority:** Critical
+**Dependencies:** Feature 2.1 (data model must exist first)
+
+#### Outcome
+Lab technician can upload plate reader export files and see results in the system within minutes.
+
+#### What Success Looks Like
+- Technician exports CSV from plate reader
+- Uploads via web interface
+- Sees confirmation with row count
+- If errors, gets clear message about which rows/columns failed
+- Cannot accidentally re-upload same file
+- Results appear in dashboard immediately
+
+#### Context
+Currently, plate reader results are exported as CSV/Excel and manually copied into spreadsheets. This is slow and error-prone.
+
+#### Constraints
+- Must handle files up to 10MB
+- Must validate all required columns before accepting
+- Must prevent duplicate uploads (same data, different filename)
+
+#### Scope: Owned Files
+- `apps/platform_groups/luminous/api/`
+- `apps/platform_groups/luminous/services/upload.py`
+
+#### Tasks
+- [ ] CSV upload API endpoint
+- [ ] File validation (required columns, data types)
+- [ ] Duplicate detection (prevent re-upload)
+- [ ] Parse and transform to data model
+- [ ] Store in database with audit trail
+- [ ] Return upload status/errors to user
+
+**Reference:** `square_head/apps/documents/` has file upload infrastructure
+
+---
+
+### Feature 2.3: Sample Metadata Linkage
+**Status:** 🔴 Not Started
+**Priority:** Critical
+**Dependencies:** Feature 2.1 (data model), Feature 2.2 (results exist to link), EPIC-04 Feature 4.1 (field metadata source)
+
+#### Outcome
+An analyst can trace any lab result back to its field collection context (who collected it, where, when, under what conditions).
+
+#### What Success Looks Like
+- Analyst views a biosensor result
+- Clicks to see linked sample metadata
+- Sees collection date, location, collector, field conditions
+- If no metadata linked, sees "unlinked" status with action to link
+- System prevents linking to wrong barcode
+
+#### Context
+Lab results arrive with barcode IDs. Field metadata (from EPIC-04) also has barcode IDs. This feature joins them so analysts can see the full picture.
+
+#### Scope: Owned Files
+- `apps/platform_groups/luminous/models/sample.py`
+- `apps/platform_groups/luminous/api/linkage.py`
+- `apps/platform_groups/luminous/relationship_types.yaml`
+
+#### Tasks
+- [ ] Sample metadata schema:
+  - Barcode ID
+  - Collection date/time
+  - Location (name, GPS if available)
+  - Collector name
+  - Field conditions (weather, notes)
+  - Sample type
+- [ ] API endpoint for metadata submission
+- [ ] Barcode validation (exists, not already linked)
+- [ ] Link sample → result in database
+- [ ] Handle orphaned results (result without sample metadata)
+
+---
+
+### Feature 2.4: Contextual Data Integration
+**Status:** 🔴 Not Started
+**Priority:** High
+**Dependencies:** Feature 2.3 (samples must exist to attach contextual data)
+
+#### Outcome
+An analyst can view weather and environmental conditions alongside biosensor results to identify correlations.
+
+#### What Success Looks Like
+- Analyst views sample results
+- Sees weather data for that date/location (temperature, precipitation, wind)
+- Can filter or sort by weather conditions
+- System automatically fetches historical weather for sample dates
+
+#### Context
+NA concentrations may correlate with weather events (rain runoff, temperature changes). Having this data alongside results enables correlation analysis.
+
+#### Constraints
+- Must work with historical data (samples may be weeks old before upload)
+- Weather API rate limits and costs to consider
+
+#### Scope: Owned Files
+- `apps/platform_groups/luminous/services/weather.py`
+- `apps/platform_groups/luminous/models/contextual.py`
+
+#### Tasks
+- [ ] Weather data integration
+  - Environment Canada API or similar
+  - Temperature, precipitation, wind
+  - Historical data fetch for sample dates
+- [ ] Contextual data schema in database
+- [ ] Link contextual data to samples by date/location
+- [ ] (Future) SCADA integration framework
+- [ ] (Future) Dosing data integration
+
+---
+
+### Feature 2.5: Analysis Script Automation
+**Status:** 🔴 Not Started
+**Priority:** Medium
+**Dependencies:** Feature 2.2 (upload pipeline to integrate with)
+
+#### Outcome
+Lab technician uploads raw plate reader data and receives analyzed results automatically, without manual Excel processing.
+
+#### What Success Looks Like
+- Technician uploads raw fluorescence data
+- System applies standard calculations (currently done in Excel)
+- QC checks run automatically (flag outliers, failed controls)
+- Results appear as "pass" or "needs review"
+- Technician spends minutes instead of hours on analysis
+
+#### Context
+Currently, Greg runs Excel macros to transform raw fluorescence readings into NA concentrations. This is time-consuming and creates a single point of failure.
+
+#### Scope: Owned Files
+- `apps/platform_groups/luminous/services/analysis.py`
+- `apps/platform_groups/luminous/services/qc.py`
+
+#### Tasks
+- [ ] Document current Excel analysis workflow
+- [ ] Port calculations to Python/R
+- [ ] Automated QC checks
+- [ ] Validation rules before data acceptance
+- [ ] Integration with upload pipeline
+
+---
+
+## Data Flow Diagram
+
+```
+Field                    Lab                      Platform
+─────                    ───                      ────────
+Sample collected    →    Sample received     →    Metadata uploaded
+  ↓                        ↓                         ↓
+Barcode scanned     →    Plate reader run    →    Results uploaded
+  ↓                        ↓                         ↓
+Metadata captured   →    CSV exported        →    Barcode linked
+                                                     ↓
+                                              Dashboard displays
+```
+
+---
+
+## References
+
+- [Technology Requirements - Data Ingestion Section](../../03-OPERATING-MODEL/03-Technology-Requirements.md)
+- [Platform Groups Architecture](../SquareHead/EPIC-01-Platform-Groups.md)
+- CRM manifest.yaml reference: `square_head/apps/platform_groups/crm/manifest.yaml`
+- CRM PATTERNS.md: `square_head/apps/platform_groups/crm/PATTERNS.md`
+- Existing document processing: `square_head/apps/documents/`

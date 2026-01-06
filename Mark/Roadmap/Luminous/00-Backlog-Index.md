@@ -1,7 +1,24 @@
-# Square Head Platform Backlog
+# Luminous Product Backlog
 
 **Last Updated:** 2026-01-05
 **Target Milestone:** Q2 2026 - CNRL Pilot Ready
+**Architecture:** Luminous is built as a [Platform Group](../SquareHead/EPIC-01-Platform-Groups.md)
+
+---
+
+## Platform Group Dependency
+
+Luminous depends on the Square Head Platform Groups system. All features are implemented within:
+
+```
+apps/platform_groups/luminous/
+├── manifest.yaml           # Data models (Sample, Result, Location)
+├── ui_hints.yaml          # Dashboard view configuration
+├── relationship_types.yaml # Sample → Result → Location links
+└── workflows/             # Analysis automation agents
+```
+
+See [Master Index](../00-Master-Index.md) for cross-area dependency map.
 
 ---
 
@@ -78,8 +95,10 @@
 
 | Blocker | Blocks | Owner | Status |
 |---------|--------|-------|--------|
-| Dashboard Tech Decision | All EPIC-01 work | Greg | ⚠️ Pending |
+| Luminous Platform Group scaffolding | All EPIC features | TBD | 🔴 Not Started |
 | EPIC-02 Features 2.1-2.3 | EPIC-01, EPIC-03 notifications/reports | Greg | 🔴 Not Started |
+
+**Note:** Dashboard tech decision resolved - using Platform Group + Flutter dynamic UI (see EPIC-01).
 
 ## Status Legend
 
@@ -123,6 +142,9 @@ The following features are **blockers** for the Q2 2026 pilot:
 
 ## Related Documents
 
-- [Technology Requirements](../03-OPERATING-MODEL/03-Technology-Requirements.md)
-- [Pilot Readiness Scorecard](../03-OPERATING-MODEL/04-Pilot-Readiness-Scorecard.md)
-- [Pilot Deliverables Framework](../03-OPERATING-MODEL/05-Pilot-Deliverables-Framework.md)
+- [Master Index](../00-Master-Index.md) - Cross-area overview
+- [SquareHead Platform Backlog](../SquareHead/00-Backlog-Index.md)
+- [Technology Requirements](../../03-OPERATING-MODEL/03-Technology-Requirements.md)
+- [Pilot Readiness Scorecard](../../03-OPERATING-MODEL/04-Pilot-Readiness-Scorecard.md)
+- [Pilot Deliverables Framework](../../03-OPERATING-MODEL/05-Pilot-Deliverables-Framework.md)
+- [CRM Reference Implementation](../../../../square_head/apps/platform_groups/crm/) - Pattern reference
