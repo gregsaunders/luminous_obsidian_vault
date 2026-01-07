@@ -160,11 +160,6 @@ These components will be used by the Luminous Customer Dashboard and other analy
 - [ ] Interactive zoom/pan with date range selection
 - [ ] Unified tooltip showing all series values at hovered timestamp
 
-**Data Tables:**
-- [ ] Data table with sorting/filtering
-- [ ] Column visibility toggle
-- [ ] Export to CSV
-
 **Technology Spike:**
 - [ ] Evaluate fl_chart for basic charting needs
 - [ ] Evaluate syncfusion_flutter_charts for advanced features
@@ -348,11 +343,88 @@ This is the foundational UX pattern for all SquareHead applications. The archite
 
 ---
 
+### Feature 2.7: List/Table Component
+**Status:** 🔴 Not Started
+**Priority:** High
+
+#### Outcome
+A comprehensive, reusable list/table component that Platform Groups use to display tabular data with full user customization.
+
+#### What Success Looks Like
+- Developer renders a data table by passing columns and data
+- User can hide/show columns via column visibility menu
+- User preferences persist across sessions
+- Tables handle large datasets efficiently with virtualization
+- Sorting, filtering, and selection work consistently across all tables
+
+#### Context
+This is a foundational UI component used across all Platform Groups for displaying lists of records (invoices, customers, sensor readings, etc.). The shell's App Content Pane renders this component.
+
+**Used By:**
+- All Platform Groups displaying record lists
+- [SQH-EPIC-09 Feature 9.4](SQH-EPIC-09-AI-Generated-UI.md) - AI-generated table views
+
+#### Scope: Owned Files
+- `frontend/flutter/packages/ui/lib/components/data_table/`
+- `frontend/flutter/packages/ui/lib/components/data_table/data_table.dart`
+- `frontend/flutter/packages/ui/lib/components/data_table/column_visibility_menu.dart`
+- `frontend/flutter/packages/ui/lib/components/data_table/table_header.dart`
+- `frontend/flutter/packages/ui/lib/components/data_table/table_row.dart`
+
+#### Tasks
+
+**Core Table:**
+- [ ] Data table component with typed column definitions
+- [ ] Column header with label and sort indicator
+- [ ] Table row component with cell rendering
+- [ ] Loading state (skeleton rows)
+- [ ] Empty state with customizable message
+- [ ] Error state with retry action
+
+**Column Management:**
+- [ ] Column visibility toggle menu
+- [ ] Column visibility persistence (per-table, per-user)
+- [ ] Column resizing (drag column borders)
+- [ ] Column reordering via drag-and-drop
+- [ ] Minimum/maximum column width constraints
+- [ ] Column pinning (freeze left/right columns)
+
+**Sorting & Filtering:**
+- [ ] Single-column sort (click header)
+- [ ] Multi-column sort (shift+click)
+- [ ] Sort indicator (ascending/descending icons)
+- [ ] Column filter popover
+- [ ] Text filter (contains, starts with, equals)
+- [ ] Numeric filter (greater than, less than, between)
+- [ ] Date filter (before, after, range)
+- [ ] Active filter indicator on column header
+
+**Row Selection:**
+- [ ] Single-select mode (radio-style)
+- [ ] Multi-select mode (checkbox column)
+- [ ] Select all / deselect all
+- [ ] Selection callback with selected row data
+- [ ] Row highlight on hover
+- [ ] Selected row styling
+
+**Performance:**
+- [ ] Virtualized scrolling for large datasets
+- [ ] Lazy loading / infinite scroll support
+- [ ] Optimized re-renders on data change
+
+**Export:**
+- [ ] Export visible data to CSV
+- [ ] Export selected rows to CSV
+- [ ] Copy selected rows to clipboard
+
+---
+
 ## Key Files
 
 - `frontend/flutter/packages/ui/` - Base UI Kit package
 - `frontend/flutter/packages/ui/lib/theme/` - Material 3 theming
 - `frontend/flutter/packages/ui/lib/components/` - Reusable components
+- `frontend/flutter/packages/ui/lib/components/data_table/` - List/Table component
 - `frontend/flutter/packages/ui/lib/shell/` - Application shell architecture
 
 ---
