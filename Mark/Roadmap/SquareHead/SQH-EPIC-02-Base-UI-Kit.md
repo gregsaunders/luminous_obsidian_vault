@@ -279,6 +279,18 @@ This is the foundational UX pattern for all SquareHead applications. The archite
 **App Content Pane:**
 - [ ] App content container (renders Platform Group UI)
 - [ ] App action bar (sticky header with title + action buttons)
+- [ ] Breadcrumb navigation component
+  - [ ] Breadcrumb trail showing hierarchy (e.g., Invoices > INV-2026-0042 > Edit)
+  - [ ] Clickable segments for quick navigation up the hierarchy
+  - [ ] Truncation with ellipsis for deep hierarchies
+  - [ ] Home/root icon at start
+- [ ] Tab bar for multi-view navigation
+  - [ ] Tab component with label and close button
+  - [ ] Active tab indicator
+  - [ ] Tab overflow menu (when too many tabs)
+  - [ ] Drag-to-reorder tabs
+  - [ ] Tab persistence (remember open tabs per app)
+  - [ ] Maximum tab limit with user notification
 - [ ] Form rendering area (uses WorkflowFormRenderer)
 - [ ] List/table rendering area
 - [ ] Detail view rendering area
@@ -333,9 +345,9 @@ This is the foundational UX pattern for all SquareHead applications. The archite
 ![[assets/three-pane-shell-mockup-v3-blank.svg]]
 *Initial state when no conversation is active. The artifacts pane collapses to a thin strip. The chat area displays a home screen with quick-access app icons and conversation starters to help users begin interacting with the AI agent.*
 
-**Form + Chat Side-by-Side (Artifacts Collapsed)**
+**Form + Chat with Tabs and Breadcrumbs (Artifacts Collapsed)**
 ![[assets/three-pane-shell-mockup-v4-form-and-chat.svg]]
-*Working state with the invoice form open alongside the chat home screen. Equal-width panes allow users to work on app content while having the agent ready to assist. The artifacts pane remains collapsed until the agent generates content.*
+*Working state showing the full App Content Pane navigation stack: tab bar at top (with "All Invoices" and "INV-2026-0042" tabs), breadcrumb trail below (Home › Invoices › INV-2026-0042), and the action bar with context-specific buttons. Equal-width panes allow users to work on app content while having the agent ready to assist.*
 
 **Hierarchical Menu Hover State**
 ![[assets/three-pane-shell-mockup-v5-menu-hover.svg]]

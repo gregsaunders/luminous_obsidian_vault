@@ -49,60 +49,91 @@
   <!-- Left Pane - App Content (Invoice Form) -->
   <rect x="48" y="40" width="280" height="480" fill="#16213e"/>
 
+  <!-- Tab Bar -->
+  <rect x="48" y="40" width="280" height="26" fill="#0f1525"/>
+
+  <!-- Tab 1 - All Invoices (inactive) -->
+  <rect x="52" y="44" width="80" height="18" rx="3" fill="#16213e"/>
+  <text x="58" y="57" fill="#888" font-size="8">All Invoices</text>
+  <text x="122" y="57" fill="#666" font-size="7">×</text>
+
+  <!-- Tab 2 - INV-2026-0042 (active) -->
+  <rect x="136" y="44" width="90" height="18" rx="3" fill="#0f3460"/>
+  <text x="142" y="57" fill="#eee" font-size="8">INV-2026-0042</text>
+  <text x="216" y="57" fill="#888" font-size="7">×</text>
+
+  <!-- Tab 3 - New tab button -->
+  <rect x="230" y="44" width="20" height="18" rx="3" fill="transparent"/>
+  <text x="235" y="57" fill="#666" font-size="10">+</text>
+
+  <!-- Divider below tab bar -->
+  <line x1="48" y1="66" x2="328" y2="66" stroke="#333" stroke-width="1"/>
+
+  <!-- Breadcrumb Bar -->
+  <rect x="48" y="66" width="280" height="20" fill="#16213e"/>
+  <text x="56" y="80" fill="#888" font-size="8">🏠</text>
+  <text x="68" y="80" fill="#666" font-size="8">›</text>
+  <text x="76" y="80" fill="#888" font-size="8">Invoices</text>
+  <text x="112" y="80" fill="#666" font-size="8">›</text>
+  <text x="120" y="80" fill="#e94560" font-size="8">INV-2026-0042</text>
+
+  <!-- Divider below breadcrumb -->
+  <line x1="48" y1="86" x2="328" y2="86" stroke="#333" stroke-width="1"/>
+
   <!-- App Action Bar (sticky header with buttons) -->
-  <rect x="48" y="40" width="280" height="44" fill="#0f3460"/>
-  <text x="65" y="67" fill="#eee" font-size="12" font-weight="bold">New Invoice</text>
+  <rect x="48" y="86" width="280" height="34" fill="#0f3460"/>
+  <text x="58" y="108" fill="#eee" font-size="10" font-weight="bold">Edit Invoice</text>
 
   <!-- Action buttons in header bar -->
-  <rect x="168" y="50" width="50" height="24" rx="4" fill="#16213e"/>
-  <text x="178" y="67" fill="#aaa" font-size="10">Cancel</text>
+  <rect x="168" y="92" width="45" height="22" rx="4" fill="#16213e"/>
+  <text x="176" y="107" fill="#aaa" font-size="9">Cancel</text>
 
-  <rect x="223" y="50" width="40" height="24" rx="4" fill="#e94560"/>
-  <text x="230" y="67" fill="#fff" font-size="10">Draft</text>
+  <rect x="218" y="92" width="38" height="22" rx="4" fill="#e94560"/>
+  <text x="225" y="107" fill="#fff" font-size="9">Draft</text>
 
-  <rect x="268" y="50" width="45" height="24" rx="4" fill="#4ade80"/>
-  <text x="278" y="67" fill="#000" font-size="10">Send</text>
+  <rect x="261" y="92" width="42" height="22" rx="4" fill="#4ade80"/>
+  <text x="270" y="107" fill="#000" font-size="9">Send</text>
 
   <!-- Divider below action bar -->
-  <line x1="48" y1="84" x2="328" y2="84" stroke="#333" stroke-width="1"/>
+  <line x1="48" y1="120" x2="328" y2="120" stroke="#333" stroke-width="1"/>
 
-  <!-- Invoice Form (scrollable content area) -->
-  <text x="65" y="110" fill="#aaa" font-size="11">Customer</text>
-  <rect x="65" y="118" width="245" height="28" rx="4" fill="#0f3460"/>
-  <text x="75" y="137" fill="#eee" font-size="11">Acme Corporation</text>
+  <!-- Invoice Form (scrollable content area) - shifted down -->
+  <text x="58" y="140" fill="#aaa" font-size="10">Customer</text>
+  <rect x="58" y="147" width="255" height="24" rx="4" fill="#0f3460"/>
+  <text x="66" y="163" fill="#eee" font-size="10">Acme Corporation</text>
 
-  <text x="65" y="165" fill="#aaa" font-size="11">Invoice Number</text>
-  <rect x="65" y="173" width="245" height="28" rx="4" fill="#0f3460"/>
-  <text x="75" y="192" fill="#666" font-size="11">INV-2026-0042</text>
+  <text x="58" y="186" fill="#aaa" font-size="10">Invoice Number</text>
+  <rect x="58" y="193" width="255" height="24" rx="4" fill="#0f3460"/>
+  <text x="66" y="209" fill="#666" font-size="10">INV-2026-0042</text>
 
-  <text x="65" y="220" fill="#aaa" font-size="11">Amount</text>
-  <rect x="65" y="228" width="120" height="28" rx="4" fill="#0f3460"/>
-  <text x="75" y="247" fill="#eee" font-size="11">$4,500.00</text>
+  <text x="58" y="232" fill="#aaa" font-size="10">Amount</text>
+  <rect x="58" y="239" width="125" height="24" rx="4" fill="#0f3460"/>
+  <text x="66" y="255" fill="#eee" font-size="10">$4,500.00</text>
 
-  <text x="195" y="220" fill="#aaa" font-size="11">Due Date</text>
-  <rect x="195" y="228" width="115" height="28" rx="4" fill="#0f3460"/>
-  <text x="205" y="247" fill="#eee" font-size="11">2026-02-15</text>
+  <text x="190" y="232" fill="#aaa" font-size="10">Due Date</text>
+  <rect x="190" y="239" width="123" height="24" rx="4" fill="#0f3460"/>
+  <text x="198" y="255" fill="#eee" font-size="10">2026-02-15</text>
 
-  <text x="65" y="280" fill="#aaa" font-size="11">Line Items</text>
-  <rect x="65" y="288" width="245" height="80" rx="4" fill="#0f3460"/>
-  <text x="75" y="308" fill="#888" font-size="10">Item</text>
-  <text x="180" y="308" fill="#888" font-size="10">Qty</text>
-  <text x="220" y="308" fill="#888" font-size="10">Price</text>
-  <line x1="75" y1="315" x2="300" y2="315" stroke="#333" stroke-width="1"/>
-  <text x="75" y="332" fill="#eee" font-size="10">Consulting</text>
-  <text x="180" y="332" fill="#eee" font-size="10">10h</text>
-  <text x="220" y="332" fill="#eee" font-size="10">$3,000</text>
-  <text x="75" y="352" fill="#eee" font-size="10">Support</text>
-  <text x="180" y="352" fill="#eee" font-size="10">5h</text>
-  <text x="220" y="352" fill="#eee" font-size="10">$1,500</text>
+  <text x="58" y="278" fill="#aaa" font-size="10">Line Items</text>
+  <rect x="58" y="285" width="255" height="65" rx="4" fill="#0f3460"/>
+  <text x="66" y="300" fill="#888" font-size="9">Item</text>
+  <text x="165" y="300" fill="#888" font-size="9">Qty</text>
+  <text x="210" y="300" fill="#888" font-size="9">Price</text>
+  <line x1="66" y1="306" x2="305" y2="306" stroke="#333" stroke-width="1"/>
+  <text x="66" y="320" fill="#eee" font-size="9">Consulting</text>
+  <text x="165" y="320" fill="#eee" font-size="9">10h</text>
+  <text x="210" y="320" fill="#eee" font-size="9">$3,000</text>
+  <text x="66" y="336" fill="#eee" font-size="9">Support</text>
+  <text x="165" y="336" fill="#eee" font-size="9">5h</text>
+  <text x="210" y="336" fill="#eee" font-size="9">$1,500</text>
 
-  <text x="65" y="395" fill="#aaa" font-size="11">Notes</text>
-  <rect x="65" y="403" width="245" height="50" rx="4" fill="#0f3460"/>
-  <text x="75" y="423" fill="#666" font-size="10">Add notes...</text>
+  <text x="58" y="370" fill="#aaa" font-size="10">Notes</text>
+  <rect x="58" y="377" width="255" height="40" rx="4" fill="#0f3460"/>
+  <text x="66" y="393" fill="#666" font-size="9">Add notes...</text>
 
   <!-- Scroll indicator -->
-  <rect x="318" y="100" width="4" height="60" rx="2" fill="#333"/>
-  <rect x="318" y="100" width="4" height="25" rx="2" fill="#666"/>
+  <rect x="318" y="130" width="4" height="50" rx="2" fill="#333"/>
+  <rect x="318" y="130" width="4" height="20" rx="2" fill="#666"/>
 
   <!-- Divider -->
   <line x1="328" y1="40" x2="328" y2="520" stroke="#333" stroke-width="1"/>
@@ -205,4 +236,7 @@
   <!-- Annotation: Icon Rail -->
   <rect x="5" y="505" width="38" height="12" fill="#e94560" opacity="0.3"/>
   <text x="8" y="513" fill="#e94560" font-size="7">RAIL</text>
+
+  <rect x="140" y="505" width="38" height="12" fill="#f59e0b" opacity="0.3"/>
+  <text x="143" y="513" fill="#f59e0b" font-size="7">TABS</text>
 </svg>
