@@ -32,8 +32,6 @@ Customers can log in and see their NA monitoring data with actionable insights, 
 
 Customers need a way to view their biosensor monitoring results. Without a dashboard, there's no way to deliver the core value proposition: "24-72 hour turnaround on NA monitoring with trend visualization."
 
-Currently, results are delivered via email or manual reports. This is slow, doesn't scale, and doesn't allow customers to explore their data.
-
 ---
 
 ## Features
