@@ -15,48 +15,7 @@
 
 ## Cross-Area Dependencies
 
-```
-┌─────────────────────────────────────────────────────────────────────────┐
-│                         SQUAREHEAD PLATFORM                             │
-│                                                                         │
-│  ┌──────────────────┐  ┌──────────────────┐  ┌──────────────────┐       │
-│  │ EPIC-01          │  │ EPIC-02          │  │ EPIC-05          │       │
-│  │ Platform Groups  │  │ Workflow Engine  │  │ AI Services      │       │
-│  │ (manifest.yaml,  │  │ (BPMN, agents,   │  │ (Modal, Granite, │       │
-│  │  ui_hints.yaml)  │  │  DMN decisions)  │  │  Qwen models)    │       │
-│  └────────┬─────────┘  └────────┬─────────┘  └────────┬─────────┘       │
-│           │                     │                     │                 │
-│           └─────────────────────┼─────────────────────┘                 │
-│                                 │                                       │
-└─────────────────────────────────┼───────────────────────────────────────┘
-                                  │
-                                  ▼
-┌─────────────────────────────────────────────────────────────────────────┐
-│                           LUMINOUS PRODUCT                              │
-│                                                                         │
-│  ┌──────────────────────────────────────────────────────────────────┐   │
-│  │ apps/platform_groups/luminous/                                   │   │
-│  │                                                                  │   │
-│  │ ┌─────────────┐  ┌─────────────┐  ┌─────────────┐  ┌───────────┐ │   │
-│  │ │ manifest    │  │ ui_hints    │  │ workflows/  │  │ relation- │ │   │
-│  │ │ .yaml       │  │ .yaml       │  │ agents/     │  │ ship_types│ │   │
-│  │ │             │  │             │  │             │  │ .yaml     │ │   │
-│  │ │ - Sample    │  │ - Dashboard │  │ - Analysis  │  │           │ │   │
-│  │ │ - Result    │  │   views     │  │   agents    │  │ - Sample  │ │   │
-│  │ │ - Location  │  │ - Forms     │  │ - QC agents │  │   → Result│ │   │
-│  │ │ - Context   │  │ - Charts    │  │             │  │ - Result  │ │   │
-│  │ └─────────────┘  └─────────────┘  └─────────────┘  │   → Loc   │ │   │
-│  │                                                    └───────────┘ │   │
-│  └──────────────────────────────────────────────────────────────────┘   │
-│                                                                         │
-│  EPIC-01: Dashboard (uses ui_hints.yaml for dynamic UI)                 │
-│  EPIC-02: Data Ingestion (defines manifest.yaml models)                 │
-│  EPIC-03: Infrastructure (uses platform notifications, auth)            │
-│  EPIC-04: Field Ops (metadata capture for sample linkage)               │
-│  EPIC-05: Docs (documents platform + product)                           │
-│                                                                         │
-└─────────────────────────────────────────────────────────────────────────┘
-```
+![[assets/master-cross-area-dependencies.svg]]
 
 ---
 
