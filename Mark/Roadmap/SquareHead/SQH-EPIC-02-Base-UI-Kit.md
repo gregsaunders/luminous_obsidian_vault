@@ -225,6 +225,11 @@ This is the foundational UX pattern for all SquareHead applications. The archite
  Rail        App Pane              Chat Pane         Artifacts Pane
 ```
 
+**Key Concepts**
+![[assets/three-pane-shell-mockup-v2b-annotated.svg]]
+*Annotated version highlighting the core interaction model: (1) App-context aware chat - the agent sees what you're working on and can reference it in conversation, (2) Artifacts pane opens on demand - generated content like charts and previews appear when the agent creates them, (3) Bidirectional context flow - the chat references form data while generating artifacts that relate to the current task.*
+
+
 **Used By:**
 - [SQH-EPIC-07](SQH-EPIC-07-Frontend-Apps.md) - Desktop, Mobile, Web apps
 - [SQH-EPIC-09 Feature 9.5](SQH-EPIC-09-AI-Generated-UI.md) - Ephemeral UI Lifecycle (artifacts pane)
@@ -341,9 +346,6 @@ This is the foundational UX pattern for all SquareHead applications. The archite
 ![[assets/three-pane-shell-mockup-v2.svg]]
 *Full 3-pane layout showing an invoice form in the app pane, an active agent conversation in the chat pane, and generated artifacts (chart + invoice preview) in the right pane. Demonstrates the complete workflow where an agent assists with creating an invoice while surfacing relevant context.*
 
-**Key Concepts (Annotated)**
-![[assets/three-pane-shell-mockup-v2b-annotated.svg]]
-*Annotated version highlighting the core interaction model: (1) App-context aware chat - the agent sees what you're working on and can reference it in conversation, (2) Artifacts pane opens on demand - generated content like charts and previews appear when the agent creates them, (3) Bidirectional context flow - the chat references form data while generating artifacts that relate to the current task.*
 
 **Blank Chat Home Screen (Artifacts Collapsed)**
 ![[assets/three-pane-shell-mockup-v3-blank.svg]]
