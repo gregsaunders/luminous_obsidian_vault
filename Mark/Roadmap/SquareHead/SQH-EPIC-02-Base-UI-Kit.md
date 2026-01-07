@@ -341,6 +341,10 @@ This is the foundational UX pattern for all SquareHead applications. The archite
 ![[assets/three-pane-shell-mockup-v2.svg]]
 *Full 3-pane layout showing an invoice form in the app pane, an active agent conversation in the chat pane, and generated artifacts (chart + invoice preview) in the right pane. Demonstrates the complete workflow where an agent assists with creating an invoice while surfacing relevant context.*
 
+**Key Concepts (Annotated)**
+![[assets/three-pane-shell-mockup-v2b-annotated.svg]]
+*Annotated version highlighting the core interaction model: (1) App-context aware chat - the agent sees what you're working on and can reference it in conversation, (2) Artifacts pane opens on demand - generated content like charts and previews appear when the agent creates them, (3) Bidirectional context flow - the chat references form data while generating artifacts that relate to the current task.*
+
 **Blank Chat Home Screen (Artifacts Collapsed)**
 ![[assets/three-pane-shell-mockup-v3-blank.svg]]
 *Initial state when no conversation is active. The artifacts pane collapses to a thin strip. The chat area displays a home screen with quick-access app icons and conversation starters to help users begin interacting with the AI agent.*
