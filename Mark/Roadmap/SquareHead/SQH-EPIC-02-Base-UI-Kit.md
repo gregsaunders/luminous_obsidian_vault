@@ -203,26 +203,31 @@ A standalone app showcases all components for browsing and testing.
 All SquareHead applications share a unified 3-pane layout architecture that provides a consistent, AI-native user experience.
 
 #### What Success Looks Like
-- User opens desktop app and sees the 3-pane layout
-- Left pane shows installed apps/modules (collapsible)
-- Center pane is the primary interaction area: chat with AI agents + app icons
-- Right pane displays artifacts, visualizations, and generated content (collapsible, opens on demand)
+- User opens desktop app and sees the unified shell with header bar, icon rail, and content panes
+- Header bar provides global navigation: hamburger menu, context-aware menus, search, notifications, user profile
+- Icon rail shows installed apps; hamburger toggles to expanded drawer with app names
+- App content pane renders forms, lists, and detail views from Platform Groups
+- Chat pane shows AI agent conversation or home screen with quick access and conversation starters
+- Artifacts pane displays agent-generated content (charts, previews, documents)
 - Panels resize smoothly and remember user preferences
-- Mobile users get the same experience with panels collapsed into drawer navigation
+- Mobile users get the same functionality with adaptive drawer/bottom sheet navigation
 
 #### Context
 This is the foundational UX pattern for all SquareHead applications. The architecture is inspired by modern AI-native interfaces where conversation and artifacts coexist.
 
 ```
-┌─────────────┬───────────────────────┬─────────────────┐
-│             │                       │                 │
-│   APPS      │       CHAT +          │   ARTIFACTS     │
-│   (left)    │       APP ICONS       │   (right)       │
-│             │       (center)        │                 │
-│  collapsible│                       │  collapsible    │
-│             │                       │  opens on       │
-│             │                       │  demand         │
-└─────────────┴───────────────────────┴─────────────────┘
+┌──────────────────────────────────────────────────────────────────────┐
+│ ☰  SquareHead   │ Invoices │ Bills │ Ledger │  🔍 Search  │ 🔔 👤   │
+├────┬─────────────────────────┬─────────────────┬─────────────────────┤
+│    │                         │                 │                     │
+│ 📊 │      APP CONTENT        │      CHAT       │     ARTIFACTS       │
+│ 💰 │   (forms, lists,        │  (conversation  │   (charts, docs,    │
+│ 🧪 │    detail views)        │   or home       │    previews)        │
+│ 📋 │                         │   screen)       │                     │
+│    │                         │                 │   opens on demand   │
+│ ⚙️ │                         │                 │                     │
+└────┴─────────────────────────┴─────────────────┴─────────────────────┘
+ Rail        App Pane              Chat Pane         Artifacts Pane
 ```
 
 **Used By:**
@@ -232,8 +237,18 @@ This is the foundational UX pattern for all SquareHead applications. The archite
 #### Scope: Owned Files
 - `frontend/flutter/packages/ui/lib/shell/`
 - `frontend/flutter/packages/ui/lib/shell/three_pane_layout.dart`
-- `frontend/flutter/packages/ui/lib/shell/collapsible_panel.dart`
+- `frontend/flutter/packages/ui/lib/shell/header_bar.dart`
+- `frontend/flutter/packages/ui/lib/shell/icon_rail.dart`
+- `frontend/flutter/packages/ui/lib/shell/app_drawer.dart`
+- `frontend/flutter/packages/ui/lib/shell/app_content_pane.dart`
+- `frontend/flutter/packages/ui/lib/shell/chat_pane.dart`
+- `frontend/flutter/packages/ui/lib/shell/chat_home_screen.dart`
 - `frontend/flutter/packages/ui/lib/shell/artifacts_pane.dart`
+- `frontend/flutter/packages/ui/lib/shell/collapsible_panel.dart`
+- `frontend/flutter/packages/ui/lib/components/search_bar.dart`
+- `frontend/flutter/packages/ui/lib/components/notification_icon.dart`
+- `frontend/flutter/packages/ui/lib/components/user_menu.dart`
+- `frontend/flutter/packages/ui/lib/components/dropdown_menu.dart`
 
 #### Tasks
 
@@ -243,40 +258,75 @@ This is the foundational UX pattern for all SquareHead applications. The archite
 - [ ] Panel state persistence (remember collapsed/expanded)
 - [ ] Drag-to-resize panel borders
 
-**Left Pane (Apps):**
-- [ ] App list/grid component
-- [ ] App icon with badge support
-- [ ] Collapse to icon-only rail mode
+**Header Bar:**
+- [ ] Header bar container (full-width, fixed position)
+- [ ] Hamburger menu button (toggles icon rail ↔ expanded drawer)
+- [ ] App logo/title display
+- [ ] Context-aware menu bar with dropdown support
+- [ ] Menu item hover states and dropdown positioning
+- [ ] Global search bar component
+- [ ] Search results popover/dropdown
+- [ ] Notification icon with badge count
+- [ ] Notification dropdown/popover with list
+- [ ] User profile button with avatar
+- [ ] User dropdown menu (profile, settings, logout)
 
-**Center Pane (Chat + Icons):**
+**Icon Rail + App Drawer:**
+- [ ] Icon rail component (thin strip, always visible)
+- [ ] App icon with tooltip on hover
+- [ ] App icon badge support (notifications, status)
+- [ ] Active app indicator (highlighted state)
+- [ ] Expand rail to full drawer (hamburger toggle)
+- [ ] Drawer shows icon + app name + description
+- [ ] Settings icon at bottom of rail
+- [ ] Collapse/expand animation
+
+**App Content Pane:**
+- [ ] App content container (renders Platform Group UI)
+- [ ] App action bar (sticky header with title + action buttons)
+- [ ] Form rendering area (uses WorkflowFormRenderer)
+- [ ] List/table rendering area
+- [ ] Detail view rendering area
+- [ ] Scroll behavior with sticky action bar
+- [ ] Loading/empty/error states
+
+**Chat Pane:**
 - [ ] Chat conversation container
-- [ ] App icon bar/launcher
-- [ ] Agent message components
-- [ ] User input area
+- [ ] Agent message bubble component
+- [ ] User message bubble component
+- [ ] Message timestamp display
+- [ ] Typing indicator
+- [ ] User input area with send button
+- [ ] Attachment button and file picker
+- [ ] Chat home screen (when no conversation active):
+  - [ ] Welcome message with personalized greeting
+  - [ ] Quick Access grid (app icons for fast navigation)
+  - [ ] "Try Asking" section with conversation starters
+  - [ ] Conversation starter cards (icon, prompt, description)
+  - [ ] Click-to-send conversation starters
 
-**Right Pane (Artifacts):**
+**Artifacts Pane:**
 - [ ] Artifact container widget
 - [ ] Auto-open when agent generates content
 - [ ] Multiple artifact tabs/stack
+- [ ] Artifact tab bar with close buttons
 - [ ] Close/minimize behavior
+- [ ] Collapse to thin strip indicator
+- [ ] Expand arrow/button
 
 **Responsive Behavior:**
-- [ ] Mobile: Drawer-based navigation (left pane becomes drawer)
+- [ ] Mobile: Drawer-based navigation (icon rail becomes drawer)
 - [ ] Mobile: Bottom sheet for artifacts (right pane)
-- [ ] Tablet: 2-pane mode (center + right, left as drawer)
-- [ ] Breakpoint definitions
+- [ ] Mobile: Chat becomes primary view, app content in drawer
+- [ ] Tablet: 2-pane mode (app + chat, artifacts as overlay)
+- [ ] Breakpoint definitions (mobile < 600, tablet < 1024, desktop >= 1024)
 
 **Design Decisions:**
 - **Menu system:** Hierarchical - menu bar changes based on current app context (e.g., Accounting App shows invoices, bills, general ledger; root shows system-wide menu)
 - **Keyboard navigation:** Standard keyboard navigation (Tab, Arrow keys, Enter, Escape)
 - **Touch gestures:** None for now - standard touch interactions only
 - **Platform Group customization:** Platform Groups register app icons via manifest; shell displays icons, Platform Groups own app content
-
-**Tasks - Hierarchical Menu:**
-- [ ] Menu bar component with context-aware items
-- [ ] Root-level system menu (settings, profile, help)
-- [ ] App-level menu integration point (apps provide their menu items)
-- [ ] Menu state management (track current app context)
+- **Chat home screen:** Displayed when no active conversation; includes quick access icons and conversation starters to guide users
 
 #### Visual Design
 
