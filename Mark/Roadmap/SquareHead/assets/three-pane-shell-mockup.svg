@@ -1,0 +1,102 @@
+<svg viewBox="0 0 900 500" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, sans-serif">
+  <!-- Background -->
+  <rect width="900" height="500" fill="#1a1a2e"/>
+
+  <!-- Header Bar -->
+  <rect x="0" y="0" width="900" height="40" fill="#16213e"/>
+  <text x="20" y="26" fill="#eee" font-size="14" font-weight="bold">☰ SquareHead</text>
+  <rect x="350" y="10" width="200" height="22" rx="4" fill="#0f3460"/>
+  <text x="365" y="25" fill="#888" font-size="11">Search...</text>
+  <text x="820" y="26" fill="#eee" font-size="12">🔔  👤 Mark</text>
+
+  <!-- Left Pane - Apps -->
+  <rect x="0" y="40" width="140" height="460" fill="#16213e"/>
+  <text x="15" y="70" fill="#888" font-size="10" font-weight="bold">APPS</text>
+
+  <!-- App Icons -->
+  <rect x="15" y="85" width="110" height="36" rx="6" fill="#0f3460"/>
+  <text x="30" y="108" fill="#eee" font-size="12">📊 Dashboard</text>
+
+  <rect x="15" y="130" width="110" height="36" rx="6" fill="#e94560"/>
+  <text x="30" y="153" fill="#fff" font-size="12">💰 Accounting</text>
+
+  <rect x="15" y="175" width="110" height="36" rx="6" fill="#0f3460"/>
+  <text x="30" y="198" fill="#eee" font-size="12">🧪 Labs</text>
+
+  <rect x="15" y="220" width="110" height="36" rx="6" fill="#0f3460"/>
+  <text x="30" y="243" fill="#eee" font-size="12">📋 CRM</text>
+
+  <!-- Settings at bottom -->
+  <text x="15" y="470" fill="#888" font-size="12">⚙️ Settings</text>
+
+  <!-- Center Pane -->
+  <rect x="140" y="40" width="480" height="460" fill="#1a1a2e"/>
+
+  <!-- App Menu Bar -->
+  <rect x="140" y="40" width="480" height="32" fill="#0f3460"/>
+  <text x="160" y="60" fill="#e94560" font-size="11" font-weight="bold">Invoices</text>
+  <text x="230" y="60" fill="#aaa" font-size="11">Bills</text>
+  <text x="280" y="60" fill="#aaa" font-size="11">Ledger</text>
+  <text x="340" y="60" fill="#aaa" font-size="11">Reports</text>
+
+  <!-- Chat Area -->
+  <text x="160" y="100" fill="#888" font-size="10" font-weight="bold">AGENT CHAT</text>
+
+  <!-- User Message -->
+  <rect x="280" y="115" width="320" height="40" rx="8" fill="#0f3460"/>
+  <text x="295" y="140" fill="#eee" font-size="11">Show me Q4 revenue breakdown</text>
+
+  <!-- Agent Message -->
+  <rect x="160" y="165" width="340" height="55" rx="8" fill="#16213e"/>
+  <text x="175" y="185" fill="#eee" font-size="11">Here's the Q4 breakdown. I've created</text>
+  <text x="175" y="200" fill="#eee" font-size="11">a chart showing revenue by product →</text>
+
+  <!-- User Message 2 -->
+  <rect x="320" y="230" width="280" height="40" rx="8" fill="#0f3460"/>
+  <text x="335" y="255" fill="#eee" font-size="11">Can you also show expenses?</text>
+
+  <!-- Agent Message 2 -->
+  <rect x="160" y="280" width="280" height="40" rx="8" fill="#16213e"/>
+  <text x="175" y="305" fill="#eee" font-size="11">Added expenses to the view →</text>
+
+  <!-- Input Area -->
+  <rect x="160" y="440" width="440" height="40" rx="8" fill="#0f3460" stroke="#333" stroke-width="1"/>
+  <text x="180" y="465" fill="#666" font-size="12">Message...</text>
+  <text x="560" y="465" fill="#888" font-size="14">📎  ➤</text>
+
+  <!-- Right Pane - Artifacts -->
+  <rect x="620" y="40" width="280" height="460" fill="#16213e"/>
+  <text x="640" y="70" fill="#888" font-size="10" font-weight="bold">ARTIFACTS</text>
+
+  <!-- Artifact 1 - Chart -->
+  <rect x="635" y="85" width="250" height="150" rx="6" fill="#0f3460"/>
+  <text x="650" y="105" fill="#eee" font-size="11" font-weight="bold">Q4 Revenue</text>
+  <!-- Simple chart bars -->
+  <rect x="660" y="130" width="30" height="80" fill="#e94560"/>
+  <rect x="700" y="150" width="30" height="60" fill="#e94560"/>
+  <rect x="740" y="120" width="30" height="90" fill="#e94560"/>
+  <rect x="780" y="140" width="30" height="70" fill="#e94560"/>
+  <text x="665" y="225" fill="#888" font-size="9">Q1</text>
+  <text x="705" y="225" fill="#888" font-size="9">Q2</text>
+  <text x="745" y="225" fill="#888" font-size="9">Q3</text>
+  <text x="785" y="225" fill="#888" font-size="9">Q4</text>
+
+  <!-- Artifact 2 - Table -->
+  <rect x="635" y="250" width="250" height="120" rx="6" fill="#0f3460"/>
+  <text x="650" y="270" fill="#eee" font-size="11" font-weight="bold">Expense Details</text>
+  <line x1="650" y1="285" x2="870" y2="285" stroke="#333" stroke-width="1"/>
+  <text x="650" y="305" fill="#888" font-size="10">Category</text>
+  <text x="780" y="305" fill="#888" font-size="10">Amount</text>
+  <text x="650" y="325" fill="#eee" font-size="10">Payroll</text>
+  <text x="780" y="325" fill="#eee" font-size="10">$125K</text>
+  <text x="650" y="345" fill="#eee" font-size="10">Operations</text>
+  <text x="780" y="345" fill="#eee" font-size="10">$45K</text>
+
+  <!-- Collapse indicators -->
+  <text x="125" y="485" fill="#666" font-size="10">◀</text>
+  <text x="875" y="485" fill="#666" font-size="10">▶</text>
+
+  <!-- Divider lines -->
+  <line x1="140" y1="40" x2="140" y2="500" stroke="#333" stroke-width="1"/>
+  <line x1="620" y1="40" x2="620" y2="500" stroke="#333" stroke-width="1"/>
+</svg>

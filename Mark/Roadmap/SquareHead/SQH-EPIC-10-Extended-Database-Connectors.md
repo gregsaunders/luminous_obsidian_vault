@@ -1,4 +1,4 @@
-# EPIC-10: Extended Database Connectors
+# EPIC-10: Extended Database Support
 
 **Status:** 🔴 Not Started
 **Priority:** Low
@@ -8,98 +8,133 @@
 
 ## Vision
 
-The CDC pipeline supports a wide variety of database sources beyond PostgreSQL and MySQL, enabling data mirroring from diverse enterprise systems.
+The CDC pipeline configuration layer supports additional Debezium-compatible databases, enabling data mirroring from diverse enterprise systems with minimal code changes.
 
 ---
 
 ## User Stories
 
-- As a **data engineer**, I can configure CDC connectors for Oracle databases to mirror enterprise data
+- As a **data engineer**, I can configure CDC connectors for Oracle databases by selecting the Oracle engine
 - As a **data engineer**, I can configure CDC connectors for MongoDB to capture document changes
-- As a **data engineer**, I can configure CDC connectors for SQL Server to mirror Windows-ecosystem databases
+- As a **data engineer**, I can use the existing SQL Server support that's already implemented
 
 ---
 
 ## Context
 
-The core CDC pipeline (EPIC-04) supports PostgreSQL and MySQL. This EPIC extends database support to additional platforms as customer requirements emerge.
+**Debezium already supports these databases** - we don't build connectors, we configure them.
 
-**Current Support (EPIC-04):**
-- PostgreSQL (production-ready)
-- MySQL (production-ready)
+Debezium provides production-ready connectors for:
+- PostgreSQL, MySQL, MariaDB, SQL Server, Oracle, MongoDB, Db2, Cassandra, Spanner, Vitess, Informix
 
-**Potential Future Support (this EPIC):**
-- Oracle
-- MongoDB
-- SQL Server
-- MariaDB
-- Others as needed
+Our CDC pipeline wraps Debezium with a configuration layer that handles:
+1. **ConfigBuilders** - Generate Debezium JSON config with database-specific parameters
+2. **Schema Discovery** - SQLAlchemy-based introspection with database-specific URLs
+3. **Read-only enforcement** - Database-specific SQL syntax
+
+**Current Implementation Status:**
+| Database | ConfigBuilder | Discovery URL | Read-only SQL | Status |
+|----------|--------------|---------------|---------------|--------|
+| PostgreSQL | ✅ | ✅ | ✅ | Production |
+| MySQL | ✅ | ✅ | ✅ | Production |
+| SQL Server | ✅ | ✅ | ✅ | **Implemented** (undocumented) |
+| Oracle | ❌ | ❌ | ❌ | Needs config layer |
+| MongoDB | ❌ | N/A | N/A | Different architecture |
+
+**Key Insight:** SQL Server is already implemented in `connector_config_builders.py` but wasn't documented in EPIC-04.
 
 ---
 
 ## Features
 
-### Feature 10.1: Oracle Connector
-**Status:** 🔴 Not Started
+### Feature 10.1: SQL Server Documentation
+**Status:** 🟡 Partial (code exists, docs missing)
 **Priority:** Low
 
 #### Outcome
-CDC pipeline can capture changes from Oracle databases.
+SQL Server CDC support is documented and tested.
+
+#### Context
+`SQLServerConfigBuilder` already exists in the codebase. This feature adds documentation and validation.
 
 #### Scope: Owned Files
-- `apps/cdc/connectors/oracle.py`
+- `docs/cdc/sqlserver.md`
+- `apps/cdc/tests/test_sqlserver_config.py`
 
 #### Tasks
-- [ ] Debezium Oracle connector configuration
-- [ ] Oracle-specific schema mapping
-- [ ] LogMiner vs XStream evaluation
-- [ ] Testing with Oracle XE
+- [ ] Document SQL Server CDC setup requirements
+- [ ] Add integration test with SQL Server container
+- [ ] Update EPIC-04 documentation to reflect SQL Server support
 
 ---
 
-### Feature 10.2: MongoDB Connector
+### Feature 10.2: Oracle ConfigBuilder
 **Status:** 🔴 Not Started
 **Priority:** Low
 
 #### Outcome
-CDC pipeline can capture changes from MongoDB databases.
+Data engineers can configure CDC connectors for Oracle databases.
+
+#### Context
+Debezium supports Oracle via LogMiner or XStream. We need to add:
+- `OracleConfigBuilder` class with Oracle-specific Debezium parameters
+- SQLAlchemy Oracle URL creation (`oracle+oracledb://`)
+- Oracle read-only enforcement SQL
 
 #### Scope: Owned Files
-- `apps/cdc/connectors/mongodb.py`
+- `apps/cdc/services/connector_config_builders.py` - Add `OracleConfigBuilder`
+- `apps/cdc/discovery/runner.py` - Add Oracle URL + read-only SQL
+- `apps/cdc/tests/test_oracle_config.py`
 
 #### Tasks
-- [ ] Debezium MongoDB connector configuration
-- [ ] Document-to-relational mapping strategy
-- [ ] Change stream handling
-- [ ] Testing with MongoDB Community
+- [ ] Create `OracleConfigBuilder` extending `DebeziumConfigBuilder`
+- [ ] Add Oracle-specific config fields (LogMiner vs XStream, mining strategy)
+- [ ] Add SQLAlchemy Oracle URL creation in discovery runner
+- [ ] Add Oracle read-only enforcement SQL
+- [ ] Register in `CONFIG_BUILDERS` dict
+- [ ] Add unit tests
+
+#### References
+- [Debezium Oracle Connector](https://debezium.io/documentation/reference/stable/connectors/oracle.html)
 
 ---
 
-### Feature 10.3: SQL Server Connector
+### Feature 10.3: MongoDB Support Evaluation
 **Status:** 🔴 Not Started
 **Priority:** Low
 
 #### Outcome
-CDC pipeline can capture changes from Microsoft SQL Server databases.
+Decision documented on whether MongoDB CDC makes sense for our architecture.
+
+#### Context
+MongoDB is fundamentally different from relational databases:
+- No schema/tables/columns - uses collections and documents
+- Debezium MongoDB connector has different configuration model
+- Our discovery logic is table-based (SQLAlchemy)
+- May need separate code paths rather than plugin pattern
 
 #### Scope: Owned Files
-- `apps/cdc/connectors/sqlserver.py`
+- `docs/cdc/mongodb-evaluation.md`
 
 #### Tasks
-- [ ] Debezium SQL Server connector configuration
-- [ ] SQL Server CDC feature enablement docs
-- [ ] Testing with SQL Server Express
+- [ ] Evaluate if MongoDB CDC fits our use cases
+- [ ] Document architectural differences
+- [ ] Recommend: implement, defer, or out-of-scope
+- [ ] If implementing: design document-to-table mapping strategy
 
 ---
 
 ## Key Files
 
-- `apps/cdc/connectors/` - Database-specific connector implementations
-- `apps/cdc/services/connector_config_builders.py` - Connector configuration
+- `apps/cdc/services/connector_config_builders.py` - ConfigBuilder classes + registry
+- `apps/cdc/discovery/runner.py` - Schema discovery with SQLAlchemy
+- `apps/cdc/models.py` - `DatabaseEngine` and `DebeziumPlugin` enums (Oracle/MongoDB already defined)
 
 ---
 
 ## References
 
 - [SQH-EPIC-04: CDC Pipeline](SQH-EPIC-04-CDC-Pipeline.md) - Core CDC infrastructure
-- Debezium Connectors: https://debezium.io/documentation/reference/stable/connectors/
+- [Debezium Source Connectors](https://debezium.io/documentation/reference/stable/connectors/index.html)
+- [Debezium Oracle Connector](https://debezium.io/documentation/reference/stable/connectors/oracle.html)
+- [Debezium MongoDB Connector](https://debezium.io/documentation/reference/stable/connectors/mongodb.html)

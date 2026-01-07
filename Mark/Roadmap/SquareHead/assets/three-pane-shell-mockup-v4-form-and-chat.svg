@@ -1,0 +1,183 @@
+<svg viewBox="0 0 760 520" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, sans-serif">
+  <!-- Background -->
+  <rect width="760" height="520" fill="#1a1a2e"/>
+
+  <!-- Header Bar - Full Width -->
+  <rect x="0" y="0" width="760" height="40" fill="#16213e"/>
+
+  <!-- Hamburger Menu -->
+  <text x="20" y="26" fill="#eee" font-size="16">☰</text>
+
+  <text x="60" y="26" fill="#eee" font-size="14" font-weight="bold">SquareHead</text>
+
+  <!-- Menu items spanning full width -->
+  <text x="180" y="26" fill="#e94560" font-size="12" font-weight="bold">Invoices</text>
+  <text x="260" y="26" fill="#aaa" font-size="12">Bills</text>
+  <text x="310" y="26" fill="#aaa" font-size="12">Ledger</text>
+  <text x="380" y="26" fill="#aaa" font-size="12">Reports</text>
+
+  <!-- Search and user -->
+  <rect x="450" y="10" width="140" height="22" rx="4" fill="#0f3460"/>
+  <text x="465" y="25" fill="#888" font-size="11">Search...</text>
+  <text x="680" y="26" fill="#eee" font-size="12">🔔  👤 Mark</text>
+
+  <!-- Icon Rail - Always Visible (thin strip on far left) -->
+  <rect x="0" y="40" width="48" height="480" fill="#0f1525"/>
+
+  <!-- App icons in rail -->
+  <rect x="8" y="55" width="32" height="32" rx="6" fill="#0f3460"/>
+  <text x="16" y="78" fill="#eee" font-size="14">📊</text>
+
+  <rect x="8" y="95" width="32" height="32" rx="6" fill="#e94560"/>
+  <text x="16" y="118" fill="#fff" font-size="14">💰</text>
+
+  <rect x="8" y="135" width="32" height="32" rx="6" fill="#0f3460"/>
+  <text x="16" y="158" fill="#eee" font-size="14">🧪</text>
+
+  <rect x="8" y="175" width="32" height="32" rx="6" fill="#0f3460"/>
+  <text x="16" y="198" fill="#eee" font-size="14">📋</text>
+
+  <!-- Expand arrow at bottom of rail -->
+  <text x="18" y="490" fill="#666" font-size="12">▶</text>
+
+  <!-- Settings at bottom of rail -->
+  <text x="16" y="460" fill="#888" font-size="14">⚙️</text>
+
+  <!-- Divider after rail -->
+  <line x1="48" y1="40" x2="48" y2="520" stroke="#333" stroke-width="1"/>
+
+  <!-- Left Pane - Invoice Form (equal width ~336px) -->
+  <rect x="48" y="40" width="336" height="480" fill="#16213e"/>
+
+  <!-- App Action Bar (sticky header with buttons) -->
+  <rect x="48" y="40" width="336" height="44" fill="#0f3460"/>
+  <text x="65" y="67" fill="#eee" font-size="12" font-weight="bold">New Invoice</text>
+
+  <!-- Action buttons in header bar -->
+  <rect x="205" y="50" width="50" height="24" rx="4" fill="#16213e"/>
+  <text x="215" y="67" fill="#aaa" font-size="10">Cancel</text>
+
+  <rect x="260" y="50" width="40" height="24" rx="4" fill="#e94560"/>
+  <text x="267" y="67" fill="#fff" font-size="10">Draft</text>
+
+  <rect x="305" y="50" width="45" height="24" rx="4" fill="#4ade80"/>
+  <text x="315" y="67" fill="#000" font-size="10">Send</text>
+
+  <!-- Divider below action bar -->
+  <line x1="48" y1="84" x2="384" y2="84" stroke="#333" stroke-width="1"/>
+
+  <!-- Invoice Form (scrollable content area) -->
+  <text x="65" y="110" fill="#aaa" font-size="11">Customer</text>
+  <rect x="65" y="118" width="300" height="28" rx="4" fill="#0f3460"/>
+  <text x="75" y="137" fill="#eee" font-size="11">Acme Corporation</text>
+
+  <text x="65" y="165" fill="#aaa" font-size="11">Invoice Number</text>
+  <rect x="65" y="173" width="300" height="28" rx="4" fill="#0f3460"/>
+  <text x="75" y="192" fill="#666" font-size="11">INV-2026-0042</text>
+
+  <text x="65" y="220" fill="#aaa" font-size="11">Amount</text>
+  <rect x="65" y="228" width="145" height="28" rx="4" fill="#0f3460"/>
+  <text x="75" y="247" fill="#eee" font-size="11">$4,500.00</text>
+
+  <text x="220" y="220" fill="#aaa" font-size="11">Due Date</text>
+  <rect x="220" y="228" width="145" height="28" rx="4" fill="#0f3460"/>
+  <text x="230" y="247" fill="#eee" font-size="11">2026-02-15</text>
+
+  <text x="65" y="280" fill="#aaa" font-size="11">Line Items</text>
+  <rect x="65" y="288" width="300" height="80" rx="4" fill="#0f3460"/>
+  <text x="75" y="308" fill="#888" font-size="10">Item</text>
+  <text x="200" y="308" fill="#888" font-size="10">Qty</text>
+  <text x="260" y="308" fill="#888" font-size="10">Price</text>
+  <line x1="75" y1="315" x2="355" y2="315" stroke="#333" stroke-width="1"/>
+  <text x="75" y="332" fill="#eee" font-size="10">Consulting</text>
+  <text x="200" y="332" fill="#eee" font-size="10">10h</text>
+  <text x="260" y="332" fill="#eee" font-size="10">$3,000</text>
+  <text x="75" y="352" fill="#eee" font-size="10">Support</text>
+  <text x="200" y="352" fill="#eee" font-size="10">5h</text>
+  <text x="260" y="352" fill="#eee" font-size="10">$1,500</text>
+
+  <text x="65" y="395" fill="#aaa" font-size="11">Notes</text>
+  <rect x="65" y="403" width="300" height="50" rx="4" fill="#0f3460"/>
+  <text x="75" y="423" fill="#666" font-size="10">Add notes...</text>
+
+  <!-- Scroll indicator for form -->
+  <rect x="374" y="100" width="4" height="60" rx="2" fill="#333"/>
+  <rect x="374" y="100" width="4" height="25" rx="2" fill="#666"/>
+
+  <!-- Divider between form and chat -->
+  <line x1="384" y1="40" x2="384" y2="520" stroke="#333" stroke-width="1"/>
+
+  <!-- Right Pane - Chat Home Screen (equal width ~336px) -->
+  <rect x="384" y="40" width="356" height="480" fill="#1a1a2e"/>
+
+  <!-- Chat Header -->
+  <text x="401" y="70" fill="#888" font-size="10" font-weight="bold">AGENT CHAT</text>
+
+  <!-- Welcome Section -->
+  <text x="562" y="105" fill="#eee" font-size="14" font-weight="bold" text-anchor="middle">How can I help?</text>
+
+  <!-- Compact App Icons (2x3 grid) -->
+  <text x="420" y="135" fill="#888" font-size="9" font-weight="bold">QUICK ACCESS</text>
+
+  <rect x="420" y="148" width="50" height="50" rx="8" fill="#0f3460"/>
+  <text x="438" y="175" fill="#eee" font-size="16">📊</text>
+  <text x="445" y="192" fill="#aaa" font-size="7" text-anchor="middle">Dashboard</text>
+
+  <rect x="480" y="148" width="50" height="50" rx="8" fill="#0f3460"/>
+  <text x="498" y="175" fill="#eee" font-size="16">💰</text>
+  <text x="505" y="192" fill="#aaa" font-size="7" text-anchor="middle">Accounting</text>
+
+  <rect x="540" y="148" width="50" height="50" rx="8" fill="#0f3460"/>
+  <text x="558" y="175" fill="#eee" font-size="16">📄</text>
+  <text x="565" y="192" fill="#aaa" font-size="7" text-anchor="middle">Invoices</text>
+
+  <rect x="600" y="148" width="50" height="50" rx="8" fill="#0f3460"/>
+  <text x="618" y="175" fill="#eee" font-size="16">📋</text>
+  <text x="625" y="192" fill="#aaa" font-size="7" text-anchor="middle">CRM</text>
+
+  <rect x="660" y="148" width="50" height="50" rx="8" fill="#0f3460"/>
+  <text x="678" y="175" fill="#eee" font-size="16">📈</text>
+  <text x="685" y="192" fill="#aaa" font-size="7" text-anchor="middle">Reports</text>
+
+  <!-- Conversation Starters -->
+  <text x="420" y="225" fill="#888" font-size="9" font-weight="bold">TRY ASKING</text>
+
+  <rect x="405" y="238" width="305" height="42" rx="6" fill="#16213e" stroke="#333" stroke-width="1"/>
+  <text x="420" y="255" fill="#e94560" font-size="12">💡</text>
+  <text x="440" y="255" fill="#eee" font-size="10">"Show me Q4 revenue breakdown"</text>
+  <text x="440" y="270" fill="#666" font-size="8">View financial summaries and charts</text>
+
+  <rect x="405" y="288" width="305" height="42" rx="6" fill="#16213e" stroke="#333" stroke-width="1"/>
+  <text x="420" y="305" fill="#e94560" font-size="12">📝</text>
+  <text x="440" y="305" fill="#eee" font-size="10">"Create an invoice for Acme Corp"</text>
+  <text x="440" y="320" fill="#666" font-size="8">Generate and send invoices</text>
+
+  <rect x="405" y="338" width="305" height="42" rx="6" fill="#16213e" stroke="#333" stroke-width="1"/>
+  <text x="420" y="355" fill="#e94560" font-size="12">📊</text>
+  <text x="440" y="355" fill="#eee" font-size="10">"What are my overdue receivables?"</text>
+  <text x="440" y="370" fill="#666" font-size="8">Check outstanding payments</text>
+
+  <rect x="405" y="388" width="305" height="42" rx="6" fill="#16213e" stroke="#333" stroke-width="1"/>
+  <text x="420" y="405" fill="#e94560" font-size="12">🔍</text>
+  <text x="440" y="405" fill="#eee" font-size="10">"Find all invoices from last month"</text>
+  <text x="440" y="420" fill="#666" font-size="8">Search and filter records</text>
+
+  <!-- Input Area at bottom of chat -->
+  <rect x="405" y="460" width="305" height="40" rx="8" fill="#0f3460" stroke="#333" stroke-width="1"/>
+  <text x="425" y="485" fill="#666" font-size="11">Ask me anything...</text>
+  <text x="670" y="485" fill="#888" font-size="14">📎  ➤</text>
+
+  <!-- Collapsed Artifacts Indicator (thin strip on right) -->
+  <rect x="740" y="40" width="20" height="480" fill="#0f1525"/>
+  <text x="745" y="270" fill="#666" font-size="12">◀</text>
+
+  <!-- Annotation labels -->
+  <rect x="5" y="505" width="38" height="12" fill="#e94560" opacity="0.3"/>
+  <text x="8" y="513" fill="#e94560" font-size="7">RAIL</text>
+
+  <rect x="195" y="505" width="38" height="12" fill="#4ade80" opacity="0.3"/>
+  <text x="198" y="513" fill="#4ade80" font-size="7">FORM</text>
+
+  <rect x="540" y="505" width="38" height="12" fill="#60a5fa" opacity="0.3"/>
+  <text x="543" y="513" fill="#60a5fa" font-size="7">CHAT</text>
+</svg>

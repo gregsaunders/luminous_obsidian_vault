@@ -24,7 +24,7 @@ External database changes are captured in real-time and mirrored into the platfo
 
 Debezium-based Change Data Capture pipeline for database mirroring. Production-ready with 15+ models.
 
-**What exists:** Full connector lifecycle, Kafka integration, snapshot assembly, PostgreSQL/MySQL support
+**What exists:** Full connector lifecycle, Kafka integration, snapshot assembly, PostgreSQL/MySQL/SQL Server support
 
 **What's needed:** Processing profiles, secret resolution (Vault), documentation
 
