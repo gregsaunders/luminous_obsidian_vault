@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 680">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 900 580">
   <defs>
     <!-- Arrow marker for dependency lines -->
     <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
@@ -36,23 +36,23 @@
 
   <!-- Legend -->
   <g transform="translate(450, 52)">
-    <use href="#status-complete" x="-235" y="-8" width="16" height="16"/>
+    <use xlink:href="#status-complete" x="-235" y="-8" width="16" height="16"/>
     <text x="-215" y="4" font-family="system-ui, sans-serif" font-size="11" fill="#333333">Complete</text>
 
-    <use href="#status-partial" x="-130" y="-8" width="16" height="16"/>
+    <use xlink:href="#status-partial" x="-130" y="-8" width="16" height="16"/>
     <text x="-110" y="4" font-family="system-ui, sans-serif" font-size="11" fill="#333333">Partial</text>
 
-    <use href="#status-not-started" x="-25" y="-8" width="16" height="16"/>
+    <use xlink:href="#status-not-started" x="-25" y="-8" width="16" height="16"/>
     <text x="-5" y="4" font-family="system-ui, sans-serif" font-size="11" fill="#333333">Not Started</text>
 
-    <use href="#status-ongoing" x="95" y="-8" width="16" height="16"/>
+    <use xlink:href="#status-ongoing" x="95" y="-8" width="16" height="16"/>
     <text x="115" y="4" font-family="system-ui, sans-serif" font-size="11" fill="#333333">Ongoing</text>
   </g>
 
   <!-- Layer: FOUNDATIONAL -->
   <g>
     <!-- Layer background -->
-    <rect x="30" y="75" width="840" height="200" rx="12" fill="rgba(59, 130, 246, 0.08)" stroke="#3b82f6" stroke-width="1" stroke-opacity="0.3"/>
+    <rect x="30" y="75" width="840" height="200" rx="12" fill="#ebf3fe" stroke="#3b82f6" stroke-width="1" stroke-opacity="0.3"/>
     <text x="50" y="98" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#2563eb">FOUNDATIONAL</text>
     <text x="157" y="98" font-family="system-ui, sans-serif" font-size="11" fill="#64748b">(High Priority)</text>
 
@@ -61,7 +61,7 @@
       <rect x="60" y="115" width="150" height="60" rx="8" fill="white" stroke="#cbd5e1" stroke-width="1.5"/>
       <text x="135" y="140" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#1e293b">EPIC-01</text>
       <text x="135" y="158" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#64748b">Platform Groups</text>
-      <use href="#status-partial" x="188" y="122" width="16" height="16"/>
+      <use xlink:href="#status-partial" x="188" y="122" width="16" height="16"/>
     </g>
 
     <!-- EPIC-02: Base UI Kit -->
@@ -69,7 +69,7 @@
       <rect x="250" y="115" width="150" height="60" rx="8" fill="white" stroke="#cbd5e1" stroke-width="1.5"/>
       <text x="325" y="140" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#1e293b">EPIC-02</text>
       <text x="325" y="158" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#64748b">Base UI Kit</text>
-      <use href="#status-partial" x="378" y="122" width="16" height="16"/>
+      <use xlink:href="#status-partial" x="378" y="122" width="16" height="16"/>
     </g>
 
     <!-- EPIC-03: Workflow Engine -->
@@ -77,7 +77,7 @@
       <rect x="155" y="205" width="150" height="60" rx="8" fill="white" stroke="#cbd5e1" stroke-width="1.5"/>
       <text x="230" y="230" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#1e293b">EPIC-03</text>
       <text x="230" y="248" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#64748b">Workflow Engine</text>
-      <use href="#status-partial" x="283" y="212" width="16" height="16"/>
+      <use xlink:href="#status-partial" x="283" y="212" width="16" height="16"/>
     </g>
 
     <!-- EPIC-07: Frontend Apps -->
@@ -85,7 +85,7 @@
       <rect x="510" y="115" width="150" height="60" rx="8" fill="white" stroke="#cbd5e1" stroke-width="1.5"/>
       <text x="585" y="140" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#1e293b">EPIC-07</text>
       <text x="585" y="158" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#64748b">Frontend Apps</text>
-      <use href="#status-partial" x="638" y="122" width="16" height="16"/>
+      <use xlink:href="#status-partial" x="638" y="122" width="16" height="16"/>
     </g>
 
     <!-- EPIC-09: AI-Generated UI -->
@@ -93,7 +93,7 @@
       <rect x="700" y="115" width="150" height="60" rx="8" fill="white" stroke="#cbd5e1" stroke-width="1.5"/>
       <text x="775" y="140" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#1e293b">EPIC-09</text>
       <text x="775" y="158" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#64748b">AI-Generated UI</text>
-      <use href="#status-not-started" x="828" y="122" width="16" height="16"/>
+      <use xlink:href="#status-not-started" x="828" y="122" width="16" height="16"/>
     </g>
 
     <!-- Dependency: EPIC-01 -> EPIC-03 -->
@@ -116,7 +116,7 @@
   <!-- Layer: INFRASTRUCTURE -->
   <g>
     <!-- Layer background -->
-    <rect x="30" y="290" width="840" height="115" rx="12" fill="rgba(139, 92, 246, 0.08)" stroke="#8b5cf6" stroke-width="1" stroke-opacity="0.3"/>
+    <rect x="30" y="290" width="840" height="115" rx="12" fill="#f5f3ff" stroke="#8b5cf6" stroke-width="1" stroke-opacity="0.3"/>
     <text x="50" y="313" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#7c3aed">INFRASTRUCTURE</text>
     <text x="172" y="313" font-family="system-ui, sans-serif" font-size="11" fill="#64748b">(Medium Priority)</text>
 
@@ -125,7 +125,7 @@
       <rect x="60" y="330" width="150" height="60" rx="8" fill="white" stroke="#cbd5e1" stroke-width="1.5"/>
       <text x="135" y="355" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#1e293b">EPIC-04</text>
       <text x="135" y="373" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#64748b">CDC Pipeline</text>
-      <use href="#status-partial" x="188" y="337" width="16" height="16"/>
+      <use xlink:href="#status-partial" x="188" y="337" width="16" height="16"/>
     </g>
 
     <!-- EPIC-10: Extended DB Connectors -->
@@ -133,7 +133,7 @@
       <rect x="250" y="330" width="150" height="60" rx="8" fill="white" stroke="#cbd5e1" stroke-width="1.5"/>
       <text x="325" y="355" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#1e293b">EPIC-10</text>
       <text x="325" y="373" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#64748b">Extended DB</text>
-      <use href="#status-not-started" x="378" y="337" width="16" height="16"/>
+      <use xlink:href="#status-not-started" x="378" y="337" width="16" height="16"/>
     </g>
 
     <!-- Dependency: EPIC-04 -> EPIC-10 -->
@@ -145,7 +145,7 @@
       <rect x="510" y="330" width="150" height="60" rx="8" fill="white" stroke="#cbd5e1" stroke-width="1.5"/>
       <text x="585" y="355" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#1e293b">EPIC-05</text>
       <text x="585" y="373" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#64748b">Document Mgmt</text>
-      <use href="#status-complete" x="638" y="337" width="16" height="16"/>
+      <use xlink:href="#status-complete" x="638" y="337" width="16" height="16"/>
     </g>
 
     <!-- EPIC-06: AI Services -->
@@ -153,14 +153,14 @@
       <rect x="700" y="330" width="150" height="60" rx="8" fill="white" stroke="#cbd5e1" stroke-width="1.5"/>
       <text x="775" y="355" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#1e293b">EPIC-06</text>
       <text x="775" y="373" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#64748b">AI Services</text>
-      <use href="#status-partial" x="828" y="337" width="16" height="16"/>
+      <use xlink:href="#status-partial" x="828" y="337" width="16" height="16"/>
     </g>
   </g>
 
   <!-- Layer: SECURITY -->
   <g>
     <!-- Layer background -->
-    <rect x="30" y="420" width="400" height="115" rx="12" fill="rgba(239, 68, 68, 0.08)" stroke="#ef4444" stroke-width="1" stroke-opacity="0.3"/>
+    <rect x="30" y="420" width="400" height="115" rx="12" fill="#fef2f2" stroke="#ef4444" stroke-width="1" stroke-opacity="0.3"/>
     <text x="50" y="443" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#dc2626">SECURITY</text>
     <text x="116" y="443" font-family="system-ui, sans-serif" font-size="11" fill="#64748b">(Multi-user Teams)</text>
 
@@ -169,7 +169,7 @@
       <rect x="60" y="460" width="200" height="60" rx="8" fill="white" stroke="#cbd5e1" stroke-width="1.5"/>
       <text x="160" y="485" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#1e293b">EPIC-11</text>
       <text x="160" y="503" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#64748b">Record-Level Access Control</text>
-      <use href="#status-not-started" x="238" y="467" width="16" height="16"/>
+      <use xlink:href="#status-not-started" x="238" y="467" width="16" height="16"/>
     </g>
   </g>
 
@@ -180,7 +180,7 @@
   <!-- Layer: ONGOING -->
   <g>
     <!-- Layer background -->
-    <rect x="470" y="420" width="400" height="115" rx="12" fill="rgba(107, 114, 128, 0.08)" stroke="#6b7280" stroke-width="1" stroke-opacity="0.3"/>
+    <rect x="470" y="420" width="400" height="115" rx="12" fill="#f9fafb" stroke="#6b7280" stroke-width="1" stroke-opacity="0.3"/>
     <text x="490" y="443" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#4b5563">ONGOING</text>
 
     <!-- EPIC-08: Tech Debt -->
@@ -188,7 +188,7 @@
       <rect x="510" y="460" width="150" height="60" rx="8" fill="white" stroke="#cbd5e1" stroke-width="1.5"/>
       <text x="585" y="485" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#1e293b">EPIC-08</text>
       <text x="585" y="503" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#64748b">Tech Debt</text>
-      <use href="#status-ongoing" x="638" y="467" width="16" height="16"/>
+      <use xlink:href="#status-ongoing" x="638" y="467" width="16" height="16"/>
     </g>
   </g>
 
