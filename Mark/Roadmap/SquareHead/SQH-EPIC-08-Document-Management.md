@@ -1,4 +1,4 @@
-# EPIC-05: Document Management
+# EPIC-08: Document Management
 
 **Status:** 🟢 Complete
 **Priority:** Low (not directly needed for Luminous)
@@ -32,7 +32,7 @@ Comprehensive document processing system with 20+ models. Supports upload, versi
 
 ## Features
 
-### Feature 5.1: Per-Model Qdrant Collections
+### Feature 8.1: Per-Model Qdrant Collections
 
 #### Outcome
 Different document types are stored in separate Qdrant collections for better organization and performance.
@@ -46,7 +46,7 @@ Different document types are stored in separate Qdrant collections for better or
 
 ---
 
-### Feature 5.2: Hybrid Search Optimization
+### Feature 8.2: Hybrid Search Optimization
 
 #### Outcome
 Search queries return more relevant results faster.
@@ -60,7 +60,7 @@ Search queries return more relevant results faster.
 
 ---
 
-### Feature 5.3: RAPTOR Indexing Improvements
+### Feature 8.3: RAPTOR Indexing Improvements
 
 #### Outcome
 Hierarchical document summaries improve retrieval for long documents.

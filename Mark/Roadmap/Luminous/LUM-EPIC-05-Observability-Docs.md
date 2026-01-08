@@ -66,7 +66,7 @@ Infrastructure exists (OpenTelemetry, Prometheus, Loki, Grafana). This feature a
 ### Feature 5.2: Luminous AI Usage Patterns
 **Status:** 🔴 Not Started
 **Priority:** Medium
-**Dependencies:** SquareHead EPIC-06 Feature 6.1 (core AI docs)
+**Dependencies:** SquareHead EPIC-09 Feature 9.1 (core AI docs)
 
 #### Outcome
 A Luminous developer knows how to use AI services for Luminous-specific tasks.
