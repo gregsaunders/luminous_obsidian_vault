@@ -118,16 +118,32 @@ Record: Invoice #789 (invoice_type = "customer_invoice") → Accountant cannot s
 
 All applicable checks must pass for access to be granted.
 
+### PostgreSQL Usage: Two Distinct Roles
+
+SquareHead uses PostgreSQL in **two different ways**—this distinction is critical for understanding access control:
+
+| PostgreSQL Role | ORM | Database | Data Type | Access Control |
+|-----------------|-----|----------|-----------|----------------|
+| **Platform Config** | Django ORM | Shared `confluent` DB | Users, Tenants, Teams, CDC configs, Permissions | Django QuerySet `.filter()` |
+| **Customer Data** ([EPIC-12](SQH-EPIC-12-Unified-Data-Access-Layer.md)) | SQLAlchemy | Per-tenant `sqh_tenant_{slug}` | High-volume Platform Group models (e.g., lab results) | SQL WHERE clauses via `AccessContext` |
+
+**Key points:**
+- Django ORM is **only** for platform configuration—not customer/tenant business data
+- Customer data in PostgreSQL uses **separate per-tenant databases** accessed via SQLAlchemy
+- Platform Group models can choose their backend: TerminusDB (graph) or PostgreSQL (relational) - see [EPIC-12](SQH-EPIC-12-Unified-Data-Access-Layer.md)
+- The `PlatformGroupRecordService` routes to the appropriate backend based on model's `_storage` config
+
 ### Multi-Storage Architecture Challenge
 
-Data flows through **5 storage systems**, requiring access control at multiple layers:
+Data flows through **5+ storage systems**, requiring access control at multiple layers:
 
 | Storage | Purpose | Current Team Isolation |
 |---------|---------|----------------------|
-| TerminusDB | Document graph | ✓ team_id field (optional check) |
+| TerminusDB | Document graph (Platform Groups) | ✓ team_id field (optional check) |
 | Qdrant | Vector search | ⚠️ bucket_name only |
 | Meilisearch | Keyword search | ⚠️ bucket_name only |
-| PostgreSQL | Django models | ✓ Foreign key to Team |
+| PostgreSQL (Django) | Platform config | ✓ Foreign key to Team |
+| PostgreSQL (SQLAlchemy) | Customer data ([EPIC-12](SQH-EPIC-12-Unified-Data-Access-Layer.md)) | ✓ Per-tenant DB + SQL WHERE |
 | MinIO | File storage | ✓ Bucket-per-team |
 
 **Critical Gap:** Qdrant and Meilisearch don't filter by team_id or attribute values.
@@ -683,6 +699,8 @@ Users can share individual records with specific team members.
 
 **Note:** RBAC is already implemented via Platform Group permissions. This EPIC adds Ownership and ABAC layers on top.
 
+**Note:** For multi-backend access control (TerminusDB + PostgreSQL), see [EPIC-12 Feature 12.8](SQH-EPIC-12-Unified-Data-Access-Layer.md#feature-128-access-control-integration).
+
 ---
 
 ## Key Files
@@ -698,7 +716,7 @@ Users can share individual records with specific team members.
 - `apps/documents/access_control.py` - **NEW** DocumentAccessControl + ABAC
 - `apps/documents/graph/search_service.py` - Search with access control
 - `apps/documents/graph/operations.py` - TerminusDB with mandatory team validation
-- `apps/platform_groups/record_service.py` - Platform Group CRUD with WOQL filtering
+- `apps/platform_groups/record_service.py` - Platform Group CRUD with access control
 
 **Storage Layer:**
 - `apps/documents/graph/consistency.py` - Qdrant payload creation

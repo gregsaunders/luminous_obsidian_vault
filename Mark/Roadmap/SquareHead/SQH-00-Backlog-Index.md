@@ -18,8 +18,9 @@
 | [SQH-EPIC-07: Frontend Apps](SQH-EPIC-07-Frontend-Apps.md) | 🟡 Partial | Medium | Flutter & React apps |
 | [SQH-EPIC-08: Tech Debt](SQH-EPIC-08-Tech-Debt.md) | Ongoing | Medium | Outstanding TODOs |
 | [SQH-EPIC-09: AI-Generated UI](SQH-EPIC-09-AI-Generated-UI.md) | 🔴 Not Started | Medium | ISON-based composable UI for agents |
-| [SQH-EPIC-10: Extended Database Support](SQH-EPIC-10-Extended-Database-Connectors.md) | 🔴 Not Started | Low | ConfigBuilder layer for Oracle, MongoDB |
+| [SQH-EPIC-10: Unified Data Access Layer](SQH-EPIC-10-Unified-Data-Access-Layer.md) | 🔴 Not Started | High | TerminusDB + PostgreSQL backend abstraction |
 | [SQH-EPIC-11: Record-Level Access Control](SQH-EPIC-11-Record-Access-Control.md) | 🔴 Not Started | Medium | Record ownership, ACLs, audit logging |
+| [SQH-EPIC-12: Extended Database Support](SQH-EPIC-12-Extended-Database-Connectors.md) | 🔴 Not Started | Low | ConfigBuilder layer for Oracle, MongoDB |
 
 ---
 
