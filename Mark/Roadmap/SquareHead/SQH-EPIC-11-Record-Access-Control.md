@@ -132,6 +132,11 @@ Data flows through **5 storage systems**, requiring access control at multiple l
 
 **Critical Gap:** Qdrant and Meilisearch don't filter by team_id or attribute values.
 
+#### Data Flow Diagram
+
+![[assets/access-control-data-flow.svg]]
+*Data flow diagram showing access control enforcement points. User path (left, green) has team isolation but lacks ABAC and ownership filtering. Agent path (right, orange) has critical gaps—context is available but tools ignore it, resulting in unfiltered queries.*
+
 ### Storage-Specific Implementation Strategies
 
 Access control implementation differs by storage system. **Django QuerySets are NOT universally applicable**—only PostgreSQL-backed models support them.
