@@ -8,6 +8,11 @@
 	* XLSX
 * We will also add different datasets that may only be accessible by API/Database query
 
+# Candidates for integration with square head
+
+* OSMP Data Portal
+	* https://www.alberta.ca/oil-sands-monitoring-program-scientific-papers-and-data
+	* https://osmdataportal.alberta.ca/applications/public.html?publicuser=Guest#waterdata/stationoverview
 
 Here are several large public water sampling datasets for the Alberta oil sands region:
 
