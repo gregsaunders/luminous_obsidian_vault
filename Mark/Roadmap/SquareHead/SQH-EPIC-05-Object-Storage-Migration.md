@@ -1,5 +1,11 @@
+---
+linear_id: SQU-42
+linear_url: https://linear.app/squarehead/issue/SQU-42
+---
+
 # EPIC-05: Object Storage Migration
 
+**Linear:** [SQU-42](https://linear.app/squarehead/issue/SQU-42)
 **Status:** 🔴 Not Started
 **Priority:** High
 **Owner:** Greg

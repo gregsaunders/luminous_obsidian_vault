@@ -1,6 +1,11 @@
+---
+linear_project: Luminous
+linear_url: https://linear.app/squarehead/project/luminous-9a90903f56ff
+---
+
 # Luminous Product Backlog
 
-**Last Updated:** 2026-01-05
+**Last Updated:** 2026-01-08
 **Target Milestone:** Q2 2026 - CNRL Pilot Ready
 **Architecture:** Luminous is built as a [Platform Group](../SquareHead/SQH-EPIC-01-Platform-Groups.md)
 
@@ -24,13 +29,13 @@ See [Master Index](../00-Master-Index.md) for cross-area dependency map.
 
 ## Epic Overview
 
-| Epic | Status | Priority | Description |
-|------|--------|----------|-------------|
-| [LUM-EPIC-01: Customer Dashboard](LUM-EPIC-01-Customer-Dashboard.md) | 🔴 Not Started | Critical | Customer-facing dashboard for biosensor results |
-| [LUM-EPIC-02: Data Ingestion](LUM-EPIC-02-Data-Ingestion.md) | 🔴 Not Started | Critical | Biosensor results, sample metadata, contextual data |
-| [LUM-EPIC-03: Platform Infrastructure](LUM-EPIC-03-Platform-Infrastructure.md) | 🟡 Partial | High | User provisioning, audit trail, notifications |
-| [LUM-EPIC-04: Field Operations](LUM-EPIC-04-Field-Operations.md) | 🔴 Not Started | High | Sample metadata capture from field |
-| [LUM-EPIC-05: Observability & Docs](LUM-EPIC-05-Observability-Docs.md) | 🟡 Partial | Medium | Documentation, AI services, monitoring |
+| Epic | Linear | Status | Priority | Description |
+|------|--------|--------|----------|-------------|
+| [LUM-EPIC-01: Customer Dashboard](LUM-EPIC-01-Customer-Dashboard.md) | [SQU-5](https://linear.app/squarehead/issue/SQU-5) | 🔴 Not Started | Critical | Customer-facing dashboard for biosensor results |
+| [LUM-EPIC-02: Data Ingestion](LUM-EPIC-02-Data-Ingestion.md) | [SQU-6](https://linear.app/squarehead/issue/SQU-6) | 🔴 Not Started | Critical | Biosensor results, sample metadata, contextual data |
+| [LUM-EPIC-03: Platform Infrastructure](LUM-EPIC-03-Platform-Infrastructure.md) | [SQU-7](https://linear.app/squarehead/issue/SQU-7) | 🟡 Partial | High | User provisioning, audit trail, notifications |
+| [LUM-EPIC-04: Field Operations](LUM-EPIC-04-Field-Operations.md) | [SQU-8](https://linear.app/squarehead/issue/SQU-8) | 🔴 Not Started | High | Sample metadata capture from field |
+| [LUM-EPIC-05: Observability & Docs](LUM-EPIC-05-Observability-Docs.md) | [SQU-9](https://linear.app/squarehead/issue/SQU-9) | 🟡 Partial | Medium | Documentation, AI services, monitoring |
 
 ---
 

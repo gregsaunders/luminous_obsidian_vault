@@ -1,6 +1,12 @@
+---
+linear_id: SQU-48
+linear_url: https://linear.app/squarehead/issue/SQU-48
+---
+
 # EPIC-11: Frontend Apps
 
-**Status:** 🟡 Partial
+**Linear:** [SQU-48](https://linear.app/squarehead/issue/SQU-48)
+**Status:** Partial
 **Priority:** Medium
 **Owner:** TBD
 

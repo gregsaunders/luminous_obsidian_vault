@@ -1,6 +1,12 @@
+---
+linear_id: SQU-49
+linear_url: https://linear.app/squarehead/issue/SQU-49
+---
+
 # EPIC-12: Extended Database Support
 
-**Status:** 🔴 Not Started
+**Linear:** [SQU-49](https://linear.app/squarehead/issue/SQU-49)
+**Status:** Not Started
 **Priority:** Low
 **Owner:** TBD
 
@@ -35,11 +41,11 @@ Our CDC pipeline wraps Debezium with a configuration layer that handles:
 **Current Implementation Status:**
 | Database | ConfigBuilder | Discovery URL | Read-only SQL | Status |
 |----------|--------------|---------------|---------------|--------|
-| PostgreSQL | ✅ | ✅ | ✅ | Production |
-| MySQL | ✅ | ✅ | ✅ | Production |
-| SQL Server | ✅ | ✅ | ✅ | **Implemented** (undocumented) |
-| Oracle | ❌ | ❌ | ❌ | Needs config layer |
-| MongoDB | ❌ | N/A | N/A | Different architecture |
+| PostgreSQL | Yes | Yes | Yes | Production |
+| MySQL | Yes | Yes | Yes | Production |
+| SQL Server | Yes | Yes | Yes | **Implemented** (undocumented) |
+| Oracle | No | No | No | Needs config layer |
+| MongoDB | No | N/A | N/A | Different architecture |
 
 **Key Insight:** SQL Server is already implemented in `connector_config_builders.py` but wasn't documented in EPIC-04.
 
@@ -48,7 +54,7 @@ Our CDC pipeline wraps Debezium with a configuration layer that handles:
 ## Features
 
 ### Feature 12.1: SQL Server Documentation
-**Status:** 🟡 Partial (code exists, docs missing)
+**Status:** Partial (code exists, docs missing)
 **Priority:** Low
 
 #### Outcome
@@ -69,7 +75,7 @@ SQL Server CDC support is documented and tested.
 ---
 
 ### Feature 12.2: Oracle ConfigBuilder
-**Status:** 🔴 Not Started
+**Status:** Not Started
 **Priority:** Low
 
 #### Outcome
@@ -100,7 +106,7 @@ Debezium supports Oracle via LogMiner or XStream. We need to add:
 ---
 
 ### Feature 12.3: MongoDB Support Evaluation
-**Status:** 🔴 Not Started
+**Status:** Not Started
 **Priority:** Low
 
 #### Outcome

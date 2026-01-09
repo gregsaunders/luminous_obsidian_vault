@@ -1,5 +1,11 @@
+---
+linear_id: SQU-43
+linear_url: https://linear.app/squarehead/issue/SQU-43
+---
+
 # EPIC-06: Workflow Engine
 
+**Linear:** [SQU-43](https://linear.app/squarehead/issue/SQU-43)
 **Status:** 🟡 Partial
 **Priority:** High
 **Owner:** TBD

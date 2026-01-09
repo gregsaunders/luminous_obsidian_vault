@@ -1,6 +1,12 @@
+---
+linear_id: SQU-46
+linear_url: https://linear.app/squarehead/issue/SQU-46
+---
+
 # EPIC-09: Document Management
 
-**Status:** 🟢 Complete
+**Linear:** [SQU-46](https://linear.app/squarehead/issue/SQU-46)
+**Status:** Complete
 **Priority:** Low (not directly needed for Luminous)
 **Owner:** TBD
 

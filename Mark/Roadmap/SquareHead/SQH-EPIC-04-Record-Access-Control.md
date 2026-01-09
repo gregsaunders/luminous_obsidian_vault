@@ -1,5 +1,11 @@
+---
+linear_id: SQU-41
+linear_url: https://linear.app/squarehead/issue/SQU-41
+---
+
 # EPIC-04: Record-Level Access Control
 
+**Linear:** [SQU-41](https://linear.app/squarehead/issue/SQU-41)
 **Status:** 🔴 Not Started
 **Priority:** Medium (needed before multi-user production deployments)
 **Owner:** TBD

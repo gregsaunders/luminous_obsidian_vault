@@ -1,5 +1,11 @@
+---
+linear_id: SQU-44
+linear_url: https://linear.app/squarehead/issue/SQU-44
+---
+
 # EPIC-07: CDC Pipeline
 
+**Linear:** [SQU-44](https://linear.app/squarehead/issue/SQU-44)
 **Status:** 🟡 Partial
 **Priority:** Medium
 **Owner:** TBD

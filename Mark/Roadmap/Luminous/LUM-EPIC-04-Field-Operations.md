@@ -1,5 +1,11 @@
+---
+linear_id: SQU-8
+linear_url: https://linear.app/squarehead/issue/SQU-8/epic-04-field-operations
+---
+
 # EPIC-04: Field Operations
 
+**Linear:** [SQU-8](https://linear.app/squarehead/issue/SQU-8)
 **Status:** 🔴 Not Started
 **Priority:** High
 **Owner:** Jeff (Greg for Fulcrum API integration)
@@ -37,6 +43,7 @@ Currently, metadata is captured on paper or in ad-hoc systems, leading to data e
 ## Features
 
 ### Feature 4.1: Sample Metadata Capture App
+**Linear:** [SQU-28](https://linear.app/squarehead/issue/SQU-28)
 **Status:** 🔴 Not Started
 **Priority:** High
 **Dependencies:** None (foundational, enables EPIC-02 Feature 2.3)
@@ -86,6 +93,7 @@ MVP uses Fulcrum (off-the-shelf). Future may use custom Flutter app.
 ---
 
 ### Feature 4.2: Sampling SOP for Customers
+**Linear:** [SQU-29](https://linear.app/squarehead/issue/SQU-29)
 **Status:** 🟡 Partial
 **Priority:** High
 **Dependencies:** None
@@ -115,6 +123,7 @@ A customer's field staff can follow clear instructions to collect and ship sampl
 ---
 
 ### Feature 4.3: Sample Kit Management
+**Linear:** [SQU-30](https://linear.app/squarehead/issue/SQU-30)
 **Status:** 🔴 Not Started
 **Priority:** Medium
 **Dependencies:** Feature 3.1 (customer provisioning)
@@ -140,6 +149,7 @@ Luminous operations can track sample kit inventory and ensure customers never ru
 ---
 
 ### Feature 4.4: Courier Logistics
+**Linear:** [SQU-31](https://linear.app/squarehead/issue/SQU-31)
 **Status:** 🟡 Partial
 **Priority:** Medium
 **Dependencies:** None
@@ -192,6 +202,7 @@ Ship to lab              →   Track shipment         →   Receive sample
 **Dependencies:** SquareHead EPIC-11 (Frontend Apps), Pilot feedback
 
 ### Feature 4.5: Custom Flutter Field App
+**Linear:** [SQU-32](https://linear.app/squarehead/issue/SQU-32)
 
 #### Outcome
 Field technicians use a native Flutter app integrated with the platform instead of Fulcrum.

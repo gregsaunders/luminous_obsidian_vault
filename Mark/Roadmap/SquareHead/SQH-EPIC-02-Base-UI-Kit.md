@@ -1,5 +1,11 @@
+---
+linear_id: SQU-39
+linear_url: https://linear.app/squarehead/issue/SQU-39
+---
+
 # EPIC-02: UI Kit and Platform UX
 
+**Linear:** [SQU-39](https://linear.app/squarehead/issue/SQU-39)
 **Status:** 🟡 Partial
 **Priority:** High
 **Owner:** TBD

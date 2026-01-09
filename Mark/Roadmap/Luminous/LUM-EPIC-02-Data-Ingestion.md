@@ -1,5 +1,11 @@
+---
+linear_id: SQU-6
+linear_url: https://linear.app/squarehead/issue/SQU-6/epic-02-data-ingestion
+---
+
 # EPIC-02: Data Ingestion
 
+**Linear:** [SQU-6](https://linear.app/squarehead/issue/SQU-6)
 **Status:** 🔴 Not Started
 **Priority:** Critical
 **Owner:** Greg
@@ -38,6 +44,7 @@ This is the data foundation - nothing else works until data flows into the platf
 ## Features
 
 ### Feature 2.0: Luminous Platform Group Scaffolding
+**Linear:** [SQU-16](https://linear.app/squarehead/issue/SQU-16)
 **Status:** 🔴 Not Started
 **Priority:** Critical
 **Dependencies:** None (foundational - blocks all other features)
@@ -72,6 +79,7 @@ A tenant administrator can install the Luminous platform group and see it availa
 ---
 
 ### Feature 2.1: Biosensor Results Data Model
+**Linear:** [SQU-17](https://linear.app/squarehead/issue/SQU-17)
 **Status:** 🔴 Not Started
 **Priority:** Critical
 **Dependencies:** Feature 2.0 (Platform Group scaffolding)
@@ -117,6 +125,7 @@ Biosensor panels detect different types of naphthenic acids (NAs):
 ---
 
 ### Feature 2.2: Lab Results Upload Pipeline
+**Linear:** [SQU-18](https://linear.app/squarehead/issue/SQU-18)
 **Status:** 🔴 Not Started
 **Priority:** Critical
 **Dependencies:** Feature 2.1 (data model must exist first)
@@ -172,6 +181,7 @@ No new validation workflow needed - configure existing patterns for biosensor da
 ---
 
 ### Feature 2.3: Sample Metadata Linkage
+**Linear:** [SQU-19](https://linear.app/squarehead/issue/SQU-19)
 **Status:** 🔴 Not Started
 **Priority:** Critical
 **Dependencies:** Feature 2.1 (data model), Feature 2.2 (results exist to link), EPIC-04 Feature 4.1 (field metadata source)
@@ -221,6 +231,7 @@ Lab results arrive with barcode IDs. Field metadata (from EPIC-04) also has barc
 ---
 
 ### Feature 2.4: Contextual Data Integration
+**Linear:** [SQU-20](https://linear.app/squarehead/issue/SQU-20)
 **Status:** 🔴 Not Started
 **Priority:** High
 **Dependencies:** Feature 2.3 (samples must exist to attach contextual data)
@@ -267,6 +278,7 @@ The **Relational Context Engine** is an existing SquareHead platform capability.
 ---
 
 ### Feature 2.5: Analysis Script Automation
+**Linear:** [SQU-21](https://linear.app/squarehead/issue/SQU-21)
 **Status:** 🔴 Not Started
 **Priority:** Medium
 **Dependencies:** Feature 2.2 (upload pipeline to integrate with)

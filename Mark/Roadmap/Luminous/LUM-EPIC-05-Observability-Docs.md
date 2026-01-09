@@ -1,5 +1,11 @@
+---
+linear_id: SQU-9
+linear_url: https://linear.app/squarehead/issue/SQU-9/epic-05-observability-and-docs
+---
+
 # EPIC-05: Observability & Documentation
 
+**Linear:** [SQU-9](https://linear.app/squarehead/issue/SQU-9)
 **Status:** 🟡 Partial
 **Priority:** Medium
 **Owner:** Greg
@@ -35,6 +41,7 @@ Platform observability ensures reliability during pilot operations. Documentatio
 ## Features
 
 ### Feature 5.1: Platform Monitoring Dashboard
+**Linear:** [SQU-33](https://linear.app/squarehead/issue/SQU-33)
 **Status:** 🟡 Partial (infrastructure exists)
 **Priority:** Medium
 **Dependencies:** None (infrastructure exists, just needs Luminous-specific dashboards)
@@ -64,6 +71,7 @@ Infrastructure exists (OpenTelemetry, Prometheus, Loki, Grafana). This feature a
 ---
 
 ### Feature 5.2: Luminous AI Usage Patterns
+**Linear:** [SQU-34](https://linear.app/squarehead/issue/SQU-34)
 **Status:** 🔴 Not Started
 **Priority:** Medium
 **Dependencies:** SquareHead EPIC-10 Feature 10.1 (core AI docs)
@@ -90,6 +98,7 @@ Core AI Services documentation is owned by SquareHead EPIC-10. This feature docu
 ---
 
 ### Feature 5.3: Developer Onboarding Guide
+**Linear:** [SQU-35](https://linear.app/squarehead/issue/SQU-35)
 **Status:** 🟡 Partial
 **Priority:** Medium
 **Dependencies:** None (can start now, update as architecture evolves)
@@ -117,6 +126,7 @@ A new developer can set up their environment and make their first contribution w
 ---
 
 ### Feature 5.4: Flutter Client Documentation
+**Linear:** [SQU-36](https://linear.app/squarehead/issue/SQU-36)
 **Status:** 🟡 Partial
 **Priority:** Medium
 **Dependencies:** None
@@ -145,6 +155,7 @@ A Flutter developer can understand the client architecture and contribute to any
 ---
 
 ### Feature 5.5: Runbook for Operations
+**Linear:** [SQU-37](https://linear.app/squarehead/issue/SQU-37)
 **Status:** 🔴 Not Started
 **Priority:** Low
 **Dependencies:** Features 5.1 (monitoring must exist to write runbooks about)

@@ -1,3 +1,8 @@
+---
+linear_project: SquareHead Platform
+linear_url: https://linear.app/squarehead/project/squarehead-platform-b6e6ffab
+---
+
 # SquareHead Platform Backlog
 
 **Last Updated:** 2026-01-08
@@ -7,21 +12,21 @@
 
 ## Epic Overview
 
-| Epic | Status | Priority | Summary |
-|------|--------|----------|---------|
-| [SQH-EPIC-01: Platform Groups](SQH-EPIC-01-Platform-Groups.md) | 🟡 Partial | High | Modular app extensibility system |
-| [SQH-EPIC-02: UI Kit and Platform UX](SQH-EPIC-02-Base-UI-Kit.md) | 🟡 Partial | High | Component library + 3-pane application shell |
-| [SQH-EPIC-03: Unified Data Access Layer](SQH-EPIC-03-Unified-Data-Access-Layer.md) | 🔴 Not Started | High | TerminusDB + PostgreSQL backend abstraction |
-| [SQH-EPIC-04: Record-Level Access Control](SQH-EPIC-04-Record-Access-Control.md) | 🔴 Not Started | Medium | Record ownership, ACLs, audit logging |
-| [SQH-EPIC-05: Object Storage Migration](SQH-EPIC-05-Object-Storage-Migration.md) | 🔴 Not Started | High | Replace MinIO with license-compliant storage |
-| [SQH-EPIC-06: Workflow Engine](SQH-EPIC-06-Workflow-Engine.md) | 🟡 Partial | High | BPMN workflows with AI agents |
-| [SQH-EPIC-07: CDC Pipeline](SQH-EPIC-07-CDC-Pipeline.md) | 🟡 Partial | Medium | Change data capture |
-| [SQH-EPIC-08: AI-Generated UI](SQH-EPIC-08-AI-Generated-UI.md) | 🔴 Not Started | Medium | ISON-based composable UI for agents |
-| [SQH-EPIC-09: Document Management](SQH-EPIC-09-Document-Management.md) | 🟢 Complete | Low | Document processing & search |
-| [SQH-EPIC-10: AI Services](SQH-EPIC-10-AI-Services.md) | 🟡 Partial | Medium | Modal-hosted AI models |
-| [SQH-EPIC-11: Frontend Apps](SQH-EPIC-11-Frontend-Apps.md) | 🟡 Partial | Medium | Flutter & React apps |
-| [SQH-EPIC-12: Extended Database Support](SQH-EPIC-12-Extended-Database-Connectors.md) | 🔴 Not Started | Low | ConfigBuilder layer for Oracle, MongoDB |
-| [SQH-EPIC-13: Tech Debt](SQH-EPIC-13-Tech-Debt.md) | Ongoing | Medium | Outstanding TODOs |
+| Epic | Linear | Status | Priority | Summary |
+|------|--------|--------|----------|---------|
+| [SQH-EPIC-01: Platform Groups](SQH-EPIC-01-Platform-Groups.md) | [SQU-38](https://linear.app/squarehead/issue/SQU-38) | 🟡 Partial | High | Modular app extensibility system |
+| [SQH-EPIC-02: UI Kit and Platform UX](SQH-EPIC-02-Base-UI-Kit.md) | [SQU-39](https://linear.app/squarehead/issue/SQU-39) | 🟡 Partial | High | Component library + 3-pane application shell |
+| [SQH-EPIC-03: Unified Data Access Layer](SQH-EPIC-03-Unified-Data-Access-Layer.md) | [SQU-40](https://linear.app/squarehead/issue/SQU-40) | 🔴 Not Started | High | TerminusDB + PostgreSQL backend abstraction |
+| [SQH-EPIC-04: Record-Level Access Control](SQH-EPIC-04-Record-Access-Control.md) | [SQU-41](https://linear.app/squarehead/issue/SQU-41) | 🔴 Not Started | Medium | Record ownership, ACLs, audit logging |
+| [SQH-EPIC-05: Object Storage Migration](SQH-EPIC-05-Object-Storage-Migration.md) | [SQU-42](https://linear.app/squarehead/issue/SQU-42) | 🔴 Not Started | High | Replace MinIO with license-compliant storage |
+| [SQH-EPIC-06: Workflow Engine](SQH-EPIC-06-Workflow-Engine.md) | [SQU-43](https://linear.app/squarehead/issue/SQU-43) | 🟡 Partial | High | BPMN workflows with AI agents |
+| [SQH-EPIC-07: CDC Pipeline](SQH-EPIC-07-CDC-Pipeline.md) | [SQU-44](https://linear.app/squarehead/issue/SQU-44) | 🟡 Partial | Medium | Change data capture |
+| [SQH-EPIC-08: AI-Generated UI](SQH-EPIC-08-AI-Generated-UI.md) | [SQU-45](https://linear.app/squarehead/issue/SQU-45) | 🔴 Not Started | Medium | ISON-based composable UI for agents |
+| [SQH-EPIC-09: Document Management](SQH-EPIC-09-Document-Management.md) | [SQU-46](https://linear.app/squarehead/issue/SQU-46) | 🟢 Complete | Low | Document processing & search |
+| [SQH-EPIC-10: AI Services](SQH-EPIC-10-AI-Services.md) | [SQU-47](https://linear.app/squarehead/issue/SQU-47) | 🟡 Partial | Medium | Modal-hosted AI models |
+| [SQH-EPIC-11: Frontend Apps](SQH-EPIC-11-Frontend-Apps.md) | [SQU-48](https://linear.app/squarehead/issue/SQU-48) | 🟡 Partial | Medium | Flutter & React apps |
+| [SQH-EPIC-12: Extended Database Support](SQH-EPIC-12-Extended-Database-Connectors.md) | [SQU-49](https://linear.app/squarehead/issue/SQU-49) | 🔴 Not Started | Low | ConfigBuilder layer for Oracle, MongoDB |
+| [SQH-EPIC-13: Tech Debt](SQH-EPIC-13-Tech-Debt.md) | [SQU-50](https://linear.app/squarehead/issue/SQU-50) | Ongoing | Medium | Outstanding TODOs |
 
 ---
 

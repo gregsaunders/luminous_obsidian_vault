@@ -1,5 +1,11 @@
+---
+linear_id: SQU-7
+linear_url: https://linear.app/squarehead/issue/SQU-7/epic-03-platform-infrastructure
+---
+
 # EPIC-03: Platform Infrastructure
 
+**Linear:** [SQU-7](https://linear.app/squarehead/issue/SQU-7)
 **Status:** 🟡 Partial
 **Priority:** High
 **Owner:** Greg
@@ -35,6 +41,7 @@ Core platform capabilities that support the customer experience: user management
 ## Features
 
 ### Feature 3.1: Customer User Provisioning
+**Linear:** [SQU-22](https://linear.app/squarehead/issue/SQU-22)
 **Status:** 🟡 Partial (framework exists)
 **Priority:** High
 **Dependencies:** None (foundational, enables EPIC-01 Feature 1.1)
@@ -81,6 +88,7 @@ Luminous leverages existing SquareHead team management:
 ---
 
 ### Feature 3.2: Notification System
+**Linear:** [SQU-23](https://linear.app/squarehead/issue/SQU-23)
 **Status:** 🟡 Partial (in-app only - email not implemented)
 **Priority:** Medium (post-pilot - in-app sufficient for MVP)
 **Dependencies:** Feature 3.1 (users must exist to notify), EPIC-02 Feature 2.2 (results must exist to trigger alerts)
@@ -120,6 +128,7 @@ MVP uses in-app notifications only. Email/push delivery is post-pilot work.
 ---
 
 ### Feature 3.3: Audit Trail (Glass Box)
+**Linear:** [SQU-24](https://linear.app/squarehead/issue/SQU-24)
 **Status:** 🟡 Partial (TerminusDB has capability)
 **Priority:** Medium
 **Dependencies:** EPIC-02 Feature 2.1 (data model to audit)
@@ -150,6 +159,7 @@ TerminusDB provides built-in versioning. This feature configures it for Luminous
 ---
 
 ### Feature 3.4: PDF Report Generation
+**Linear:** [SQU-25](https://linear.app/squarehead/issue/SQU-25)
 **Status:** 🔴 Not Started
 **Priority:** Medium
 **Dependencies:** EPIC-01 Features 1.2, 1.3 (charts/views to include in PDF), EPIC-02 Features 2.1-2.3 (data to report on)
@@ -180,6 +190,7 @@ A customer can download a professional PDF report to share with stakeholders who
 ---
 
 ### Feature 3.5: API Documentation
+**Linear:** [SQU-26](https://linear.app/squarehead/issue/SQU-26)
 **Status:** 🟡 Partial
 **Priority:** Medium
 **Dependencies:** EPIC-02 Features 2.2, 2.3 (APIs must exist to document)
@@ -210,6 +221,7 @@ drf-spectacular provides OpenAPI generation. This feature ensures Luminous endpo
 ---
 
 ### Feature 3.6: Pilot UAT Process
+**Linear:** [SQU-27](https://linear.app/squarehead/issue/SQU-27)
 **Status:** 🔴 Not Started
 **Priority:** High
 **Dependencies:** EPIC-01, EPIC-02, EPIC-04 (features to test)

@@ -1,5 +1,11 @@
+---
+linear_id: SQU-50
+linear_url: https://linear.app/squarehead/issue/SQU-50
+---
+
 # EPIC-13: Tech Debt
 
+**Linear:** [SQU-50](https://linear.app/squarehead/issue/SQU-50)
 **Status:** Ongoing
 **Priority:** Medium
 **Owner:** TBD

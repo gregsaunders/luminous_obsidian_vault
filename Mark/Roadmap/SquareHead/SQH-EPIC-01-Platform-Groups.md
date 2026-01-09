@@ -1,5 +1,11 @@
+---
+linear_id: SQU-38
+linear_url: https://linear.app/squarehead/issue/SQU-38/epic-01-platform-groups-composable-apps
+---
+
 # EPIC-01: Platform Groups & Composable Apps
 
+**Linear:** [SQU-38](https://linear.app/squarehead/issue/SQU-38)
 **Status:** 🟡 Partial
 **Priority:** High (Luminous depends on this)
 **Owner:** TBD

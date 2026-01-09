@@ -1,6 +1,12 @@
+---
+linear_id: SQU-45
+linear_url: https://linear.app/squarehead/issue/SQU-45
+---
+
 # EPIC-08: AI-Generated UI
 
-**Status:** 🔴 Not Started
+**Linear:** [SQU-45](https://linear.app/squarehead/issue/SQU-45)
+**Status:** Not Started
 **Priority:** Medium
 **Owner:** TBD
 
@@ -36,10 +42,10 @@ This EPIC creates an ISON → JSON Schema translation layer, enabling agents to 
 **Architecture:**
 ```
 Agent generates ISON → Translator → JSON Schema → WorkflowFormRenderer → Flutter UI
-                                                         ↓
-                                               User fills form
-                                                         ↓
-                                               Data back to agent
+                                                        ↓
+                                              User fills form
+                                                        ↓
+                                              Data back to agent
 ```
 
 **References:**

@@ -1,15 +1,17 @@
 # Square Head Platform - Master Roadmap Index
 
-**Last Updated:** 2026-01-05
+**Last Updated:** 2026-01-08
 
 ---
 
-## Areas
+## Project Tracking
 
-| Area                                             | Focus                               | Status  |
-| ------------------------------------------------ | ----------------------------------- | ------- |
-| [Luminous](Luminous/LUM-00-Backlog-Index.md)     | Biosensor product for NA monitoring | 5 EPICs |
-| [SquareHead](SquareHead/SQH-00-Backlog-Index.md) | Core platform infrastructure        | 8 EPICs |
+This roadmap is tracked in **Linear**: [Squarehead Workspace](https://linear.app/squarehead)
+
+| Project | Linear | EPICs |
+|---------|--------|-------|
+| [Luminous](Luminous/LUM-00-Backlog-Index.md) | [Luminous Project](https://linear.app/squarehead/project/luminous-9a90903f56ff) | 5 EPICs (SQU-5 to SQU-9) |
+| [SquareHead](SquareHead/SQH-00-Backlog-Index.md) | [SquareHead Platform Project](https://linear.app/squarehead/project/squarehead-platform-b6e6ffab) | 13 EPICs (SQU-38 to SQU-50) |
 
 ---
 
@@ -25,40 +27,6 @@
 |---------|--------|--------|
 | **Luminous Platform Group scaffolding** | All Luminous EPICs | Not Started |
 | Dashboard tech decision resolved | - | Platform Group + Flutter |
-
----
-
-## GitHub Project Labels
-
-### Area Labels
-| Label | Color | Scope |
-|-------|-------|-------|
-| `area:luminous` | Green | Luminous product features |
-| `area:platform` | Blue | Square Head platform |
-
-### Sub-Area Labels
-| Label | Color | Area | Purpose |
-|-------|-------|------|---------|
-| `area:platform-groups` | Light Blue | Platform | Extensibility system |
-| `area:workflows` | Light Blue | Platform | BPMN/workflow engine |
-| `area:cdc` | Light Blue | Platform | Change data capture |
-| `area:documents` | Light Blue | Platform | Document management |
-| `area:ai` | Light Blue | Platform | AI/Modal services |
-| `area:frontend` | Light Blue | Platform | Flutter/React apps |
-| `area:dashboard` | Light Green | Luminous | Customer dashboard |
-| `area:ingestion` | Light Green | Luminous | Data ingestion |
-| `area:field-ops` | Light Green | Luminous | Field operations |
-
-### Priority & Type Labels
-| Label | Color | Purpose |
-|-------|-------|---------|
-| `priority:critical` | Red | Blockers |
-| `priority:high` | Orange | Before pilot |
-| `priority:medium` | Yellow | Nice to have |
-| `type:feature` | Purple | New functionality |
-| `type:bug` | Red | Bug fixes |
-| `type:tech-debt` | Brown | Cleanup/refactoring |
-| `type:docs` | Gray | Documentation |
 
 ---
 

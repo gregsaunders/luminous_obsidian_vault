@@ -1,6 +1,12 @@
+---
+linear_id: SQU-47
+linear_url: https://linear.app/squarehead/issue/SQU-47
+---
+
 # EPIC-10: AI Services
 
-**Status:** 🟡 Partial
+**Linear:** [SQU-47](https://linear.app/squarehead/issue/SQU-47)
+**Status:** Partial
 **Priority:** Medium
 **Owner:** TBD
 

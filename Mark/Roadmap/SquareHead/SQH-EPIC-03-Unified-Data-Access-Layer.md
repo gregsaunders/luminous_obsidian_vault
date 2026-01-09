@@ -1,5 +1,11 @@
+---
+linear_id: SQU-40
+linear_url: https://linear.app/squarehead/issue/SQU-40
+---
+
 # EPIC-03: Unified Data Access Layer
 
+**Linear:** [SQU-40](https://linear.app/squarehead/issue/SQU-40)
 **Status:** 🔴 Not Started
 **Priority:** High (Prerequisite for PostgreSQL-backed Platform Group models)
 **Owner:** TBD

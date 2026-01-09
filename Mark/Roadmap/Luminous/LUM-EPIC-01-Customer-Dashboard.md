@@ -1,5 +1,11 @@
+---
+linear_id: SQU-5
+linear_url: https://linear.app/squarehead/issue/SQU-5/epic-01-customer-dashboard
+---
+
 # EPIC-01: Customer Dashboard
 
+**Linear:** [SQU-5](https://linear.app/squarehead/issue/SQU-5)
 **Status:** 🔴 Not Started
 **Priority:** Critical
 **Owner:** Greg
@@ -37,6 +43,7 @@ Customers need a way to view their biosensor monitoring results. Without a dashb
 ## Features
 
 ### Feature 1.1: User Authentication
+**Linear:** [SQU-10](https://linear.app/squarehead/issue/SQU-10)
 **Status:** 🟡 Partial (platform has auth, needs customer provisioning)
 **Priority:** Critical
 **Dependencies:** EPIC-03 Feature 3.1 (Customer User Provisioning)
@@ -69,6 +76,7 @@ A customer user can log in with their credentials and access only their team's d
 ---
 
 ### Feature 1.2: Summary View
+**Linear:** [SQU-11](https://linear.app/squarehead/issue/SQU-11)
 **Status:** 🔴 Not Started
 **Priority:** Critical
 **Dependencies:** EPIC-02 Features 2.1, 2.2, 2.3 (data model, upload pipeline, sample linkage)
@@ -97,6 +105,7 @@ A customer can see an at-a-glance overview of their NA monitoring status across 
 ---
 
 ### Feature 1.3: Trend Charts
+**Linear:** [SQU-12](https://linear.app/squarehead/issue/SQU-12)
 **Status:** 🔴 Not Started
 **Priority:** Critical
 **Dependencies:** Feature 1.2 (Summary View), EPIC-02 Feature 2.1 (data model with timestamps)
@@ -126,6 +135,7 @@ A customer can visualize NA levels over time to identify patterns, anomalies, an
 ---
 
 ### Feature 1.4: Spatial View
+**Linear:** [SQU-13](https://linear.app/squarehead/issue/SQU-13)
 **Status:** 🔴 Not Started
 **Priority:** High
 **Dependencies:** Feature 1.2 (Summary View), EPIC-02 Feature 2.3 (sample metadata with GPS)
@@ -152,6 +162,7 @@ A customer can see results organized by physical location to understand spatial 
 ---
 
 ### Feature 1.5: Data Table & Export
+**Linear:** [SQU-14](https://linear.app/squarehead/issue/SQU-14)
 **Status:** 🔴 Not Started
 **Priority:** Critical
 **Dependencies:** EPIC-02 Features 2.1, 2.2, 2.3 (data to display)
@@ -179,6 +190,7 @@ A customer can access raw data, filter it, and export it for their own analysis 
 ---
 
 ### Feature 1.6: Correlation View
+**Linear:** [SQU-15](https://linear.app/squarehead/issue/SQU-15)
 **Status:** 🔴 Not Started
 **Priority:** High
 **Dependencies:** Feature 1.3 (Trend Charts), EPIC-02 Feature 2.4 (Contextual Data Integration)
