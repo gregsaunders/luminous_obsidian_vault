@@ -1,4 +1,4 @@
-# EPIC-11: Extended Database Support
+# EPIC-12: Extended Database Support
 
 **Status:** 🔴 Not Started
 **Priority:** Low
@@ -47,7 +47,7 @@ Our CDC pipeline wraps Debezium with a configuration layer that handles:
 
 ## Features
 
-### Feature 11.1: SQL Server Documentation
+### Feature 12.1: SQL Server Documentation
 **Status:** 🟡 Partial (code exists, docs missing)
 **Priority:** Low
 
@@ -64,11 +64,11 @@ SQL Server CDC support is documented and tested.
 #### Tasks
 - [ ] Document SQL Server CDC setup requirements
 - [ ] Add integration test with SQL Server container
-- [ ] Update EPIC-06 documentation to reflect SQL Server support
+- [ ] Update EPIC-07 documentation to reflect SQL Server support
 
 ---
 
-### Feature 11.2: Oracle ConfigBuilder
+### Feature 12.2: Oracle ConfigBuilder
 **Status:** 🔴 Not Started
 **Priority:** Low
 
@@ -99,7 +99,7 @@ Debezium supports Oracle via LogMiner or XStream. We need to add:
 
 ---
 
-### Feature 11.3: MongoDB Support Evaluation
+### Feature 12.3: MongoDB Support Evaluation
 **Status:** 🔴 Not Started
 **Priority:** Low
 
@@ -134,7 +134,7 @@ MongoDB is fundamentally different from relational databases:
 
 ## References
 
-- [SQH-EPIC-06: CDC Pipeline](SQH-EPIC-06-CDC-Pipeline.md) - Core CDC infrastructure
+- [SQH-EPIC-07: CDC Pipeline](SQH-EPIC-07-CDC-Pipeline.md) - Core CDC infrastructure
 - [Debezium Source Connectors](https://debezium.io/documentation/reference/stable/connectors/index.html)
 - [Debezium Oracle Connector](https://debezium.io/documentation/reference/stable/connectors/oracle.html)
 - [Debezium MongoDB Connector](https://debezium.io/documentation/reference/stable/connectors/mongodb.html)

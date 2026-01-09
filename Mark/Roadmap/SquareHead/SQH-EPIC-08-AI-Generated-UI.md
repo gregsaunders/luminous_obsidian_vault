@@ -1,4 +1,4 @@
-# EPIC-07: AI-Generated UI
+# EPIC-08: AI-Generated UI
 
 **Status:** 🔴 Not Started
 **Priority:** Medium
@@ -50,7 +50,7 @@ Agent generates ISON → Translator → JSON Schema → WorkflowFormRenderer →
 
 ## Features
 
-### Feature 7.1: ISON UI Vocabulary
+### Feature 8.1: ISON UI Vocabulary
 
 #### Outcome
 A defined ISON vocabulary for UI components that maps to the existing JSON Schema form system.
@@ -86,7 +86,7 @@ A defined ISON vocabulary for UI components that maps to the existing JSON Schem
 
 ---
 
-### Feature 7.2: ISON → JSON Schema Translator
+### Feature 8.2: ISON → JSON Schema Translator
 
 #### Outcome
 A translation layer converts ISON UI definitions to JSON Schema compatible with WorkflowFormRenderer.
@@ -119,7 +119,7 @@ A translation layer converts ISON UI definitions to JSON Schema compatible with 
 
 ---
 
-### Feature 7.3: Agent UI Generation API
+### Feature 8.3: Agent UI Generation API
 
 #### Outcome
 Agents can request UI generation through a simple API that returns rendered UI specifications.
@@ -144,7 +144,7 @@ Agents can request UI generation through a simple API that returns rendered UI s
 
 ---
 
-### Feature 7.4: Composable UI Components
+### Feature 8.4: Composable UI Components
 
 #### Outcome
 The UI vocabulary includes visualization components beyond forms (charts, tables, cards).
@@ -189,7 +189,7 @@ The UI vocabulary includes visualization components beyond forms (charts, tables
 
 ---
 
-### Feature 7.5: Ephemeral UI Lifecycle
+### Feature 8.5: Ephemeral UI Lifecycle
 
 #### Outcome
 Agent-generated UIs can be created, rendered, collected, and disposed without persisting.
@@ -224,9 +224,9 @@ Agent-generated UIs can be created, rendered, collected, and disposed without pe
 
 ## References
 
-- [SQH-EPIC-02: Base UI Kit](SQH-EPIC-02-Base-UI-Kit.md) - UI components (Feature 7.4 dependency)
-- [SQH-EPIC-05: Workflow Engine](SQH-EPIC-05-Workflow-Engine.md) - Agent integration
-- [SQH-EPIC-10: Frontend Apps](SQH-EPIC-10-Frontend-Apps.md) - Dynamic forms documentation
+- [SQH-EPIC-02: Base UI Kit](SQH-EPIC-02-Base-UI-Kit.md) - UI components (Feature 8.4 dependency)
+- [SQH-EPIC-06: Workflow Engine](SQH-EPIC-06-Workflow-Engine.md) - Agent integration
+- [SQH-EPIC-11: Frontend Apps](SQH-EPIC-11-Frontend-Apps.md) - Dynamic forms documentation
 - [ISON Official Site](https://www.ison.dev/)
 - [ISON GitHub](https://github.com/maheshvaikri-code/ison)
 - Existing form system: `frontend/flutter/packages/workflows/lib/src/widgets/forms/`

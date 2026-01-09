@@ -126,7 +126,7 @@ These components will be used by the Luminous Customer Dashboard and other analy
 **Used By:**
 - [LUM-EPIC-01 Feature 1.3](../Luminous/LUM-EPIC-01-Customer-Dashboard.md) - Trend Charts
 - [LUM-EPIC-01 Feature 1.6](../Luminous/LUM-EPIC-01-Customer-Dashboard.md) - Correlation View
-- [SQH-EPIC-09 Feature 9.4](SQH-EPIC-09-AI-Generated-UI.md) - Composable UI Components
+- [SQH-EPIC-08 Feature 8.4](SQH-EPIC-08-AI-Generated-UI.md) - Composable UI Components
 
 #### Technology Options
 
@@ -231,8 +231,8 @@ This is the foundational UX pattern for all SquareHead applications. The archite
 
 
 **Used By:**
-- [SQH-EPIC-07](SQH-EPIC-07-Frontend-Apps.md) - Desktop, Mobile, Web apps
-- [SQH-EPIC-09 Feature 9.5](SQH-EPIC-09-AI-Generated-UI.md) - Ephemeral UI Lifecycle (artifacts pane)
+- [SQH-EPIC-11](SQH-EPIC-11-Frontend-Apps.md) - Desktop, Mobile, Web apps
+- [SQH-EPIC-08 Feature 8.5](SQH-EPIC-08-AI-Generated-UI.md) - Ephemeral UI Lifecycle (artifacts pane)
 
 #### Scope: Owned Files
 - `frontend/flutter/packages/ui/lib/shell/`
@@ -380,7 +380,7 @@ This is a foundational UI component used across all Platform Groups for displayi
 
 **Used By:**
 - All Platform Groups displaying record lists
-- [SQH-EPIC-09 Feature 9.4](SQH-EPIC-09-AI-Generated-UI.md) - AI-generated table views
+- [SQH-EPIC-08 Feature 8.4](SQH-EPIC-08-AI-Generated-UI.md) - AI-generated table views
 
 #### Scope: Owned Files
 - `frontend/flutter/packages/ui/lib/components/data_table/`
@@ -450,6 +450,6 @@ This is a foundational UI component used across all Platform Groups for displayi
 ## References
 
 - [CONTRIBUTING.md - LLM-Parallel Development](../../../square_head/CONTRIBUTING.md)
-- [SQH-EPIC-07: Frontend Apps](SQH-EPIC-07-Frontend-Apps.md) - Apps that consume this kit
+- [SQH-EPIC-11: Frontend Apps](SQH-EPIC-11-Frontend-Apps.md) - Apps that consume this kit
 - [LUM-EPIC-01: Customer Dashboard](../Luminous/LUM-EPIC-01-Customer-Dashboard.md) - May depend on Feature 2.4
 - Flutter packages: `frontend/flutter/packages/`

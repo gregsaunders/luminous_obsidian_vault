@@ -115,7 +115,7 @@ MVP uses in-app notifications only. Email/push delivery is post-pilot work.
 - [ ] Push notification support
 - [ ] Notification preferences (opt-in/out)
 
-**Note:** See [SQH-EPIC-12 Tech Debt](../SquareHead/SQH-EPIC-12-Tech-Debt.md) for platform-level notification work.
+**Note:** See [SQH-EPIC-13 Tech Debt](../SquareHead/SQH-EPIC-13-Tech-Debt.md) for platform-level notification work.
 
 ---
 
@@ -237,7 +237,7 @@ CNRL validates the system meets their needs before go-live, with documented sign
 
 - [Technology Requirements](../../03-OPERATING-MODEL/03-Technology-Requirements.md)
 - [SquareHead Platform Backlog](../SquareHead/SQH-00-Backlog-Index.md)
-- [SQH-EPIC-12 Tech Debt](../SquareHead/SQH-EPIC-12-Tech-Debt.md) - Notification delivery work
+- [SQH-EPIC-13 Tech Debt](../SquareHead/SQH-EPIC-13-Tech-Debt.md) - Notification delivery work
 - Teams app: `square_head/apps/teams/`
 - Notifications app: `square_head/apps/notifications/`
 - API app: `square_head/apps/api/`

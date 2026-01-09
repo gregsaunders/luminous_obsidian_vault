@@ -1,4 +1,4 @@
-# EPIC-10: Frontend Apps
+# EPIC-11: Frontend Apps
 
 **Status:** 🟡 Partial
 **Priority:** Medium
@@ -34,7 +34,7 @@ Flutter monorepo for desktop/mobile/web apps, plus React graph visualizer. Dynam
 
 ## Features
 
-### Feature 10.1: Flutter Dynamic Forms Documentation
+### Feature 11.1: Flutter Dynamic Forms Documentation
 
 #### Outcome
 A developer can implement dynamic forms following documented patterns.
@@ -51,7 +51,7 @@ A developer can implement dynamic forms following documented patterns.
 
 ---
 
-### Feature 10.2: Desktop Sync Completion
+### Feature 11.2: Desktop Sync Completion
 
 #### Outcome
 Desktop app users can work offline and sync files when connected.
@@ -66,7 +66,7 @@ Desktop app users can work offline and sync files when connected.
 
 ---
 
-### Feature 10.3: React Graph Visualizer Maintenance
+### Feature 11.3: React Graph Visualizer Maintenance
 
 #### Outcome
 Graph visualizer stays current and integrates well with TerminusDB.
@@ -80,7 +80,7 @@ Graph visualizer stays current and integrates well with TerminusDB.
 
 ---
 
-### Feature 10.4: Web App Modernization
+### Feature 11.4: Web App Modernization
 
 #### Outcome
 Web app performs well and works on mobile browsers.

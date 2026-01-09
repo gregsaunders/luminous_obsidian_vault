@@ -1,6 +1,6 @@
 # SquareHead Platform Backlog
 
-**Last Updated:** 2026-01-07
+**Last Updated:** 2026-01-08
 **Scope:** Core platform infrastructure and capabilities
 
 ---
@@ -13,14 +13,15 @@
 | [SQH-EPIC-02: UI Kit and Platform UX](SQH-EPIC-02-Base-UI-Kit.md) | 🟡 Partial | High | Component library + 3-pane application shell |
 | [SQH-EPIC-03: Unified Data Access Layer](SQH-EPIC-03-Unified-Data-Access-Layer.md) | 🔴 Not Started | High | TerminusDB + PostgreSQL backend abstraction |
 | [SQH-EPIC-04: Record-Level Access Control](SQH-EPIC-04-Record-Access-Control.md) | 🔴 Not Started | Medium | Record ownership, ACLs, audit logging |
-| [SQH-EPIC-05: Workflow Engine](SQH-EPIC-05-Workflow-Engine.md) | 🟡 Partial | High | BPMN workflows with AI agents |
-| [SQH-EPIC-06: CDC Pipeline](SQH-EPIC-06-CDC-Pipeline.md) | 🟡 Partial | Medium | Change data capture |
-| [SQH-EPIC-07: AI-Generated UI](SQH-EPIC-07-AI-Generated-UI.md) | 🔴 Not Started | Medium | ISON-based composable UI for agents |
-| [SQH-EPIC-08: Document Management](SQH-EPIC-08-Document-Management.md) | 🟢 Complete | Low | Document processing & search |
-| [SQH-EPIC-09: AI Services](SQH-EPIC-09-AI-Services.md) | 🟡 Partial | Medium | Modal-hosted AI models |
-| [SQH-EPIC-10: Frontend Apps](SQH-EPIC-10-Frontend-Apps.md) | 🟡 Partial | Medium | Flutter & React apps |
-| [SQH-EPIC-11: Extended Database Support](SQH-EPIC-11-Extended-Database-Connectors.md) | 🔴 Not Started | Low | ConfigBuilder layer for Oracle, MongoDB |
-| [SQH-EPIC-12: Tech Debt](SQH-EPIC-12-Tech-Debt.md) | Ongoing | Medium | Outstanding TODOs |
+| [SQH-EPIC-05: Object Storage Migration](SQH-EPIC-05-Object-Storage-Migration.md) | 🔴 Not Started | High | Replace MinIO with license-compliant storage |
+| [SQH-EPIC-06: Workflow Engine](SQH-EPIC-06-Workflow-Engine.md) | 🟡 Partial | High | BPMN workflows with AI agents |
+| [SQH-EPIC-07: CDC Pipeline](SQH-EPIC-07-CDC-Pipeline.md) | 🟡 Partial | Medium | Change data capture |
+| [SQH-EPIC-08: AI-Generated UI](SQH-EPIC-08-AI-Generated-UI.md) | 🔴 Not Started | Medium | ISON-based composable UI for agents |
+| [SQH-EPIC-09: Document Management](SQH-EPIC-09-Document-Management.md) | 🟢 Complete | Low | Document processing & search |
+| [SQH-EPIC-10: AI Services](SQH-EPIC-10-AI-Services.md) | 🟡 Partial | Medium | Modal-hosted AI models |
+| [SQH-EPIC-11: Frontend Apps](SQH-EPIC-11-Frontend-Apps.md) | 🟡 Partial | Medium | Flutter & React apps |
+| [SQH-EPIC-12: Extended Database Support](SQH-EPIC-12-Extended-Database-Connectors.md) | 🔴 Not Started | Low | ConfigBuilder layer for Oracle, MongoDB |
+| [SQH-EPIC-13: Tech Debt](SQH-EPIC-13-Tech-Debt.md) | Ongoing | Medium | Outstanding TODOs |
 
 ---
 
@@ -71,7 +72,7 @@
 
 - **Backend:** Django 5.2, DRF
 - **Databases:** PostgreSQL, TerminusDB (graph), Qdrant (vector), Meilisearch (search)
-- **Storage:** MinIO (S3-compatible)
+- **Storage:** MinIO (S3-compatible) - *migrating, see EPIC-05*
 - **Queue:** Redis + Celery
 - **Frontend:** Flutter (desktop/mobile/web), React
 - **AI:** OpenAI APIs + Modal (Granite, Qwen2.5 variants)

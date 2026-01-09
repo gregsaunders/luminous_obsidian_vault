@@ -1,4 +1,4 @@
-# EPIC-12: Tech Debt
+# EPIC-13: Tech Debt
 
 **Status:** Ongoing
 **Priority:** Medium
@@ -28,7 +28,7 @@ Outstanding TODOs and incomplete features found throughout the codebase. This EP
 
 ## Features
 
-### Feature 12.1: Email Notification Delivery
+### Feature 13.1: Email Notification Delivery
 **Status:** Not Implemented
 **Impact:** Medium (post-pilot per user decision)
 
@@ -48,7 +48,7 @@ The notification framework exists (`apps/notifications/`) with in-app working. E
 
 ---
 
-### Feature 12.2: Push Notification Support
+### Feature 13.2: Push Notification Support
 **Status:** Not Implemented
 **Impact:** Low
 
@@ -64,7 +64,7 @@ Users receive push notifications on mobile devices.
 
 ---
 
-### Feature 12.3: Test Coverage Gaps
+### Feature 13.3: Test Coverage Gaps
 **Status:** Ongoing
 
 #### Outcome
@@ -83,7 +83,7 @@ Critical paths have adequate test coverage.
 
 ---
 
-### Feature 12.4: Support Ticket System
+### Feature 13.4: Support Ticket System
 **Status:** Stub Only
 
 #### Outcome
@@ -103,7 +103,7 @@ Users can submit support tickets and track their status.
 
 ---
 
-### Feature 12.5: Group Chat UI Integration
+### Feature 13.5: Group Chat UI Integration
 **Status:** Minimal
 
 #### Outcome
@@ -126,8 +126,8 @@ WebSocket consumer exists (`apps/group_chat/`) but minimal UI integration.
 
 | Item | File | Notes |
 |------|------|-------|
-| Task escalation | `apps/workflows/tasks.py` | Tracked in EPIC-05 |
-| CDC secret resolution | `apps/cdc/services/connector_config_builders.py` | Tracked in EPIC-06 |
-| BPMN role extraction | `apps/workflows/engine.py` | Tracked in EPIC-05 |
-| Per-model Qdrant | `apps/documents/graph/search_service.py` | Tracked in EPIC-08 |
-| Notification auto-retry | `apps/notifications/` | Part of 12.1/12.2 |
+| Task escalation | `apps/workflows/tasks.py` | Tracked in EPIC-06 |
+| CDC secret resolution | `apps/cdc/services/connector_config_builders.py` | Tracked in EPIC-07 |
+| BPMN role extraction | `apps/workflows/engine.py` | Tracked in EPIC-06 |
+| Per-model Qdrant | `apps/documents/graph/search_service.py` | Tracked in EPIC-09 |
+| Notification auto-retry | `apps/notifications/` | Part of 13.1/13.2 |

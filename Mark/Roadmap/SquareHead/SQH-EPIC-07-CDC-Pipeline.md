@@ -1,4 +1,4 @@
-# EPIC-06: CDC Pipeline
+# EPIC-07: CDC Pipeline
 
 **Status:** 🟡 Partial
 **Priority:** Medium
@@ -32,7 +32,7 @@ Debezium-based Change Data Capture pipeline for database mirroring. Production-r
 
 ## Features
 
-### Feature 6.1: Processing Profiles
+### Feature 7.1: Processing Profiles
 **Status:** 🔴 Not Started
 **Priority:** High
 
@@ -73,7 +73,7 @@ Not all CDC-sourced documents benefit from the same processing. Transactional re
 
 ---
 
-### Feature 6.2: Secret Resolution
+### Feature 7.2: Secret Resolution
 
 #### Outcome
 Database credentials are securely managed through Vault, not stored in connector configs.
@@ -88,7 +88,7 @@ Database credentials are securely managed through Vault, not stored in connector
 
 ---
 
-### Feature 6.3: CDC Documentation
+### Feature 7.3: CDC Documentation
 
 #### Outcome
 An operator can configure and troubleshoot CDC connectors following documentation.
@@ -114,4 +114,4 @@ An operator can configure and troubleshoot CDC connectors following documentatio
 
 ## References
 
-- [SQH-EPIC-11: Extended Database Support](SQH-EPIC-11-Extended-Database-Connectors.md) - Oracle, MongoDB, SQL Server support
+- [SQH-EPIC-12: Extended Database Support](SQH-EPIC-12-Extended-Database-Connectors.md) - Oracle, MongoDB, SQL Server support
