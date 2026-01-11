@@ -14,125 +14,117 @@ linear_url: https://linear.app/squarehead/issue/SQU-45
 
 ## Vision
 
-AI agents can generate composable, ephemeral user interfaces on the fly using an LLM-optimized schema format, enabling dynamic data collection and visualization during agent conversations.
+AI agents can generate composable, ephemeral user interfaces on the fly using JSON Schema, enabling dynamic data collection and visualization during agent conversations.
 
 ---
 
 ## User Stories
 
-- As an **AI agent**, I can generate a form UI with minimal tokens to collect structured input from users
+- As an **AI agent**, I can generate a form UI using JSON Schema to collect structured input from users
 - As a **user**, I see a well-designed form appear inline when an agent needs information from me
-- As a **developer**, I can extend the UI vocabulary without modifying the core translation layer
+- As a **developer**, I can extend the UI vocabulary without modifying the core rendering layer
 - As an **agent developer**, I can request visualizations (charts, tables) using the same schema format
 
 ---
 
 ## Context
 
-The platform has a sophisticated JSON Schema-based form system (`WorkflowFormRenderer`) that renders Flutter Material 3 widgets from declarative schemas. However, JSON Schema is verbose and not optimized for LLM generation.
+The platform has a sophisticated JSON Schema-based form system (`WorkflowFormRenderer`) that renders Flutter Material 3 widgets from declarative schemas.
 
-**ISON** (Interchange Simple Object Notation) is a data format designed specifically for LLMs:
-- 30-70% fewer tokens than JSON
-- Based on tabular/relational patterns from LLM training data
-- Multi-language parsers (JS/TS, Python, Rust, C++)
-- Schema validation support
-
-This EPIC creates an ISON → JSON Schema translation layer, enabling agents to generate UIs efficiently.
+**Why JSON Schema for AI generation:**
+- LLMs have extensive training on JSON Schema and Flutter widget patterns
+- Direct generation eliminates translation layer complexity
+- Accuracy matters more than token savings for UI generation (users see errors)
+- Existing `WorkflowFormRenderer` already consumes JSON Schema
 
 **Architecture:**
 ```
-Agent generates ISON → Translator → JSON Schema → WorkflowFormRenderer → Flutter UI
-                                                        ↓
-                                              User fills form
-                                                        ↓
-                                              Data back to agent
+Agent generates JSON Schema → WorkflowFormRenderer → Flutter UI
+                                        ↓
+                              User fills form
+                                        ↓
+                              Data back to agent
 ```
-
-**References:**
-- [ISON Official Site](https://www.ison.dev/)
-- [ISON GitHub](https://github.com/maheshvaikri-code/ison)
 
 ---
 
 ## Features
 
-### Feature 8.1: ISON UI Vocabulary
+### Feature 8.1: UI Schema Vocabulary
+**Linear:** [SQU-51](https://linear.app/squarehead/issue/SQU-51)
 
 #### Outcome
-A defined ISON vocabulary for UI components that maps to the existing JSON Schema form system.
+A defined JSON Schema vocabulary for UI components that works with the existing form system and is optimized for LLM generation.
 
 #### What Success Looks Like
-- ISON format documented for forms, fields, layouts
-- Vocabulary covers: text, number, date, enum, reference, array, object
-- Layout hints (col-span) expressible in ISON
-- Validation rules expressible in ISON
+- JSON Schema conventions documented for forms, fields, layouts
+- Schema covers: text, number, date, enum, reference, array, object
+- Layout hints (col-span) expressible via `x-ui-*` extensions
+- Validation rules expressible in standard JSON Schema format
+- Example prompts that reliably produce valid schemas
 
-#### Example Syntax
-```
-@form contact
-| name:str col=6 req           # String field, 6 columns, required
-| email:str[email] col=6 req   # Email format
-| phone:str col=6              # Optional
-| status:enum(active,inactive,lead) col=6
-| account:ref(crm.account) col=6
-| notes:str[textarea] col=12
+#### Example Schema
+```json
+{
+  "type": "object",
+  "title": "Contact Form",
+  "properties": {
+    "name": {
+      "type": "string",
+      "title": "Name",
+      "x-ui-col-span": 6
+    },
+    "email": {
+      "type": "string",
+      "format": "email",
+      "title": "Email",
+      "x-ui-col-span": 6
+    },
+    "phone": {
+      "type": "string",
+      "title": "Phone",
+      "x-ui-col-span": 6
+    },
+    "status": {
+      "type": "string",
+      "enum": ["active", "inactive", "lead"],
+      "title": "Status",
+      "x-ui-col-span": 6
+    },
+    "notes": {
+      "type": "string",
+      "title": "Notes",
+      "x-ui-col-span": 12,
+      "x-ui-widget": "textarea"
+    }
+  },
+  "required": ["name", "email"]
+}
 ```
 
 #### Scope: Owned Files
-- `docs/ai-ui/ison-vocabulary.md`
+- `docs/ai-ui/schema-vocabulary.md`
 - `docs/ai-ui/examples/`
 
 #### Tasks
-- [ ] Define ISON table format for form fields
-- [ ] Map ISON types to JSON Schema types
-- [ ] Define layout hint syntax (column spans, sections)
-- [ ] Define validation rule syntax
-- [ ] Document enum and reference field syntax
-- [ ] Create example ISON snippets for common patterns
+- [ ] Document JSON Schema conventions for form fields
+- [ ] Define `x-ui-*` extension vocabulary (col-span, widget, sections)
+- [ ] Document type mappings to Flutter widgets
+- [ ] Create example schemas for common patterns
+- [ ] Create example prompts for LLM generation
+- [ ] Document validation rule patterns
 
 ---
 
-### Feature 8.2: ISON → JSON Schema Translator
-
-#### Outcome
-A translation layer converts ISON UI definitions to JSON Schema compatible with WorkflowFormRenderer.
-
-#### What Success Looks Like
-- ISON input produces valid JSON Schema output
-- All existing field types supported
-- Layout hints preserved in x-ui-col-span
-- Round-trip validation (ISON → JSON → rendered form)
-
-#### Technology Options
-
-| Option | Pros | Cons |
-|--------|------|------|
-| **Python (backend)** | Existing ISON parser, server-side validation | Requires API call, latency |
-| **Dart (frontend)** | No network latency, offline capable | Need to port/wrap ISON parser |
-| **Rust via FFI** | Official ISON parser, performant | FFI complexity |
-
-#### Scope: Owned Files
-- `square_head/apps/ai_ui/` (Python backend option)
-- `frontend/flutter/packages/ai_ui/` (Dart frontend option)
-
-#### Tasks
-- [ ] Evaluate ISON parser options for Flutter/Dart
-- [ ] Implement ISON parser integration
-- [ ] Build translator: ISON → JSON Schema
-- [ ] Add x-ui-* extension mapping
-- [ ] Unit tests for translation accuracy
-- [ ] Integration test with WorkflowFormRenderer
-
----
-
-### Feature 8.3: Agent UI Generation API
+### Feature 8.2: Agent UI Generation API
+**Linear:** [SQU-52](https://linear.app/squarehead/issue/SQU-52)
 
 #### Outcome
 Agents can request UI generation through a simple API that returns rendered UI specifications.
 
 #### What Success Looks Like
-- Agent sends ISON string, receives UI ready for rendering
-- Error handling for invalid ISON
+- Agent sends JSON Schema, receives UI ready for rendering
+- Error handling for invalid schemas
 - Schema validation before rendering
 - Supports both form input and display-only modes
 
@@ -142,15 +134,16 @@ Agents can request UI generation through a simple API that returns rendered UI s
 
 #### Tasks
 - [ ] API endpoint: POST /api/v1/ai-ui/generate
-- [ ] Request validation
-- [ ] Error response format
+- [ ] JSON Schema validation
+- [ ] Error response format with helpful messages
 - [ ] Flutter widget for rendering agent-generated UI
 - [ ] Callback mechanism for form submission
 - [ ] Display-only mode for visualizations
 
 ---
 
-### Feature 8.4: Composable UI Components
+### Feature 8.3: Composable UI Components
+**Linear:** [SQU-53](https://linear.app/squarehead/issue/SQU-53)
 
 #### Outcome
 The UI vocabulary includes visualization components beyond forms (charts, tables, cards).
@@ -161,41 +154,54 @@ The UI vocabulary includes visualization components beyond forms (charts, tables
 - Agent can compose multiple components in a layout
 - Components use Base UI Kit (SQH-EPIC-02)
 
-#### Example Syntax
-```
-@chart line
-| title "NA Concentration Over Time"
-| x_axis date
-| y_axis concentration "mg/L"
-@data
-| 2024-01-01 12.5
-| 2024-01-02 14.2
-| 2024-01-03 11.8
-
-@stat_card
-| value "1,234"
-| label "Total Samples"
-| trend "+12%"
-| trend_positive true
+#### Example Schema
+```json
+{
+  "type": "object",
+  "x-ui-component": "chart",
+  "properties": {
+    "chartType": { "const": "line" },
+    "title": { "const": "NA Concentration Over Time" },
+    "xAxis": { "const": "date" },
+    "yAxis": { "const": "concentration" },
+    "yAxisLabel": { "const": "mg/L" },
+    "data": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "date": { "type": "string" },
+          "concentration": { "type": "number" }
+        }
+      },
+      "default": [
+        { "date": "2024-01-01", "concentration": 12.5 },
+        { "date": "2024-01-02", "concentration": 14.2 },
+        { "date": "2024-01-03", "concentration": 11.8 }
+      ]
+    }
+  }
+}
 ```
 
 #### Dependencies
 - [SQH-EPIC-02 Feature 2.4](SQH-EPIC-02-Base-UI-Kit.md) - Dashboard Components
 
 #### Scope: Owned Files
-- `docs/ai-ui/ison-vocabulary.md` (extended)
+- `docs/ai-ui/schema-vocabulary.md` (extended)
 - `frontend/flutter/packages/ai_ui/lib/src/components/`
 
 #### Tasks
-- [ ] Define ISON syntax for chart specification
-- [ ] Define ISON syntax for data table
-- [ ] Define ISON syntax for stat cards
+- [ ] Define JSON Schema for chart specification
+- [ ] Define JSON Schema for data table
+- [ ] Define JSON Schema for stat cards
 - [ ] Layout composition (multiple components)
 - [ ] Integrate with Base UI Kit chart components
 
 ---
 
-### Feature 8.5: Ephemeral UI Lifecycle
+### Feature 8.4: Ephemeral UI Lifecycle
+**Linear:** [SQU-54](https://linear.app/squarehead/issue/SQU-54)
 
 #### Outcome
 Agent-generated UIs can be created, rendered, collected, and disposed without persisting.
@@ -221,8 +227,8 @@ Agent-generated UIs can be created, rendered, collected, and disposed without pe
 
 ## Key Files
 
-- `docs/ai-ui/` - ISON vocabulary documentation
-- `square_head/apps/ai_ui/` - Backend translation service
+- `docs/ai-ui/` - Schema vocabulary documentation
+- `square_head/apps/ai_ui/` - Backend validation service
 - `frontend/flutter/packages/ai_ui/` - Flutter package
 - `frontend/flutter/packages/workflows/` - Existing form renderer (dependency)
 
@@ -230,9 +236,7 @@ Agent-generated UIs can be created, rendered, collected, and disposed without pe
 
 ## References
 
-- [SQH-EPIC-02: Base UI Kit](SQH-EPIC-02-Base-UI-Kit.md) - UI components (Feature 8.4 dependency)
+- [SQH-EPIC-02: Base UI Kit](SQH-EPIC-02-Base-UI-Kit.md) - UI components (Feature 8.3 dependency)
 - [SQH-EPIC-06: Workflow Engine](SQH-EPIC-06-Workflow-Engine.md) - Agent integration
 - [SQH-EPIC-11: Frontend Apps](SQH-EPIC-11-Frontend-Apps.md) - Dynamic forms documentation
-- [ISON Official Site](https://www.ison.dev/)
-- [ISON GitHub](https://github.com/maheshvaikri-code/ison)
 - Existing form system: `frontend/flutter/packages/workflows/lib/src/widgets/forms/`

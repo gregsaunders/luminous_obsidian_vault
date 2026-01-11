@@ -356,6 +356,51 @@ Access control (RBAC, Ownership, ABAC) works consistently across both backends.
 
 ---
 
+### Feature 3.9: ISON Output Formatting for AI Context
+**Linear:** [SQU-55](https://linear.app/squarehead/issue/SQU-55)
+**Status:** 🔴 Not Started
+**Priority:** Low
+
+#### Outcome
+Query results from PostgreSQL, TerminusDB, and hybrid search can be formatted as ISON for token-efficient injection into LLM context.
+
+#### Rationale
+- Large result sets (100s-1000s of rows) consume significant context tokens
+- ISON provides 30-70% token reduction over JSON
+- Tabular format aligns well with query results
+- LLM reads the data; doesn't need to generate it (accuracy less critical than for output)
+
+#### Example
+```
+# JSON (verbose) - 89 tokens
+[{"id": "123", "name": "Acme Corp", "status": "active"}, {"id": "456", "name": "Globex", "status": "inactive"}]
+
+# ISON (compact) - ~40 tokens
+@accounts
+| id  | name      | status
+| 123 | Acme Corp | active
+| 456 | Globex    | inactive
+```
+
+#### Scope: Owned Files
+- `apps/platform_groups/query_services/formatters/__init__.py` - **NEW**
+- `apps/platform_groups/query_services/formatters/ison.py` - **NEW**
+- `apps/platform_groups/query_services/postgresql.py` - Extend
+- `apps/platform_groups/query_services/terminusdb.py` - Extend
+
+#### Tasks
+- [ ] Add `output_format` parameter to query services (json, ison)
+- [ ] Implement ISON serializer for tabular results
+- [ ] Add ISON formatting to PostgreSQLQueryService
+- [ ] Add ISON formatting to TerminusDBQueryService
+- [ ] Document usage patterns for AI context injection
+
+#### References
+- [ISON Official Site](https://www.ison.dev/)
+- [ISON GitHub](https://github.com/maheshvaikri-code/ison)
+
+---
+
 ## Implementation Order
 
 | Phase | Features | Rationale |
@@ -366,6 +411,7 @@ Access control (RBAC, Ownership, ABAC) works consistently across both backends.
 | **Phase 4** | 3.5 | Refactor service to route by backend |
 | **Phase 5** | 3.6, 3.7 | Backend-specific query services |
 | **Phase 6** | 3.8 | Access control integration (with EPIC-04) |
+| **Phase 7** | 3.9 | ISON formatting for AI context (optional) |
 
 Existing models continue to work without changes (default = TerminusDB).
 
@@ -386,6 +432,7 @@ Existing models continue to work without changes (default = TerminusDB).
 - `apps/platform_groups/query_services/__init__.py` - **NEW** Package init
 - `apps/platform_groups/query_services/postgresql.py` - **NEW** SQL aggregations, JOINs
 - `apps/platform_groups/query_services/terminusdb.py` - **NEW** Graph traversals, WOQL
+- `apps/platform_groups/query_services/formatters/` - **NEW** Output formatters (JSON, ISON)
 
 **Service Layer:**
 - `apps/platform_groups/record_service.py` - Refactor to route by backend
