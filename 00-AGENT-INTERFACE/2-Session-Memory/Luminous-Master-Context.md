@@ -1,8 +1,8 @@
 # Luminous BioSolutions: Master Context File
 
 Created: 2025-10-18
-Version: 1.7 (The "Containment → Release" Update)
-Last Updated: 2026-01-02
+Version: 1.8 (The "ARO & TIER Visibility" Update)
+Last Updated: 2026-01-10
 Status: ✅ Active Master Context
 
 ## How to Use This Master Context
@@ -20,9 +20,10 @@ Status: ✅ Active Master Context
 ### Company Focus (Last Updated: Dec 23, 2025)
 - **100% Monitoring & Intelligence Company**
 - **Core Product:** NA Biological Monitoring & Operational Intelligence Service
-- **Commercial Strategy:** **Velocity First** - Sell the $260k+ efficiency win to fund the Regulatory Readiness infrastructure.
-- **Deployment Model:** Zero-Friction Offsite Lab (Calgary). No site access required.
-- **Fundraising Target:** $2.5M (Scenario B).
+- **Commercial Strategy:** **Risk Visibility First** - Sell the ARO compression and TIER compliance levers to fund the long-term infrastructure.
+- **Deployment Model:** **Sprint-0 Managed Service** - Offsite monitoring to build the "Intelligence Gradient" without IT friction.
+- **Fundraising Target:** $2.5M (Scenario B) - Highlighting the $Multi-Billion liability leverage.
+
 - **Current Status:** Preparing for commercial pilot (see [[04-Pilot-Readiness-Scorecard]])
 
 ### Current Positioning Statement
@@ -39,9 +40,9 @@ Status: ✅ Active Master Context
 - This has been validated by HRMS specialists at the NA Workshop (July 2025)
 
 ### Three-Tier Value Hierarchy:
-- **The Wedge (Tier 1):** Accelerated Learning ($260k/year validated, plus unknown discoveries). Compressing 5 years of learning into 18 months via real-time feedback loops.
-- **The Driver (Tier 3):** Existential Trust. Providing an immutable "Digital Chain of Custody" for Regulators and Indigenous stakeholders.
-- **The Upside (Tier 2):** Joint Discovery. Unlocking Fresh Water Substitution, Caustic Optimization, and **operational insights we can't predict today**.
+- **The Wedge (Tier 1):** Accelerated Learning & Risk Visibility. Compressing ARO timelines by 12 months creates **$91M+ in Present Value gains** (based on $1.9B ARO).
+- **The Driver (Tier 3):** Existential Trust & Regulatory Bridge. Providing an objective "Toxicity vs. Concentration" validator for Indigenous and local stakeholders.
+- **The Upside (Tier 2):** ESG & Carbon Shield. Quantifying biogenic methane reduction to shield against **$95/tonne TIER carbon taxes**.
 
 ### Pilot Readiness Status (NEW - Dec 2025)
 **Overall: ~50% 🟡**
@@ -133,12 +134,15 @@ Oil sands operators have **never** had regulatory approval to release tailings w
 ├── No release permitted
 └── NAs are the blocker
 
-Coming Soon: RELEASE ERA
-├── Regulations will permit treated water release
-├── Constructed wetlands as treatment pathway
-├── Must prove NAs are at safe levels
-└── Need operational competence for release decisions
+Coming Soon: RELEASE ERA (12-18 Month Window)
+├── Regulations will permit treated water release (Drafts by Sept 2026)
+├── Constructed wetlands as treatment pathway (Validated by Kearl GROW Pilot)
+├── Must prove NAs are at safe levels (Toxicity vs. Concentration breakthrough)
+└── Need operational competence for release decisions (Luminous as the "Handoff Platform")
 ```
+
+**The "Day Zero" Opportunity:**
+Operators move from 50 years of "how do we contain this?" to "how do we safely release?" They are effectively standing up their *first* treatment programs. Luminous is the foundational operating system for these Day 0 systems.
 
 **Why This Matters for Positioning:**
 - This is **NOT about competitive advantage** - there are only 3 major operators (Suncor, Syncrude, Imperial/Kearl)
@@ -208,7 +212,10 @@ A: "You've been in containment mode since 1967 - and you've done that well. But 
 A: "This is genuinely new technology. The biosensor gives you feedback in 24-72 hours instead of 4 weeks. That's not incremental - it's a fundamentally different way to operate. With quarterly data, you're making decisions based on where you were a month ago. With high-frequency monitoring, you're making decisions based on what's happening now."
 
 **Q6: We already know our wetlands work. Why do we need more monitoring?** (NEW - Jan 2026)
-A: "You're right - Kearl proved passive wetland treatment works. But with only 13 samples, you discovered things like the temperature-toxicity correlation that nobody was looking for. Imagine what patterns emerge with 100+ samples per month. We're not replacing what works - we're helping you understand it well enough to optimize it."
+A: "You're right—Kearl proved passive wetland treatment works. But with guidelines coming in 12-18 months, the question is how to optimize for 'Ready to Release.' Luminous helps you maximize your built infrastructure capacity by 26% and justifies your release decisions to stakeholders who demand more than 'concentration' data."
+
+**Q7: Is this just about lab tests? (NEW - Jan 2026)**
+A: "No. This is about **Risk Visibility**. We are an information platform that helps you collapse the 'Unknown Unknowns' in your ARO. If daily data proves remediation success 6 months earlier, the balance sheet impact is measured in tens of millions of dollars."
 
 ## SECTION 8: CONTINUOUS IMPROVEMENT LOG
 

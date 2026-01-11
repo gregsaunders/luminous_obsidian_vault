@@ -13,8 +13,8 @@
 **Funding Target:** $2.5M CAD (Scenario B) + Non-dilutive matching
 **Timeline:** Budget finalized Week 1-4, pilot signed Q2 2026, close Q2 2026
 
-**Strategic Pivot (Nov 21):**
-We have shifted from a "Clean Tech Tool" pitch to an "Operational Intelligence Infrastructure" pitch. The ask has increased from $1.5M to $2.5M to secure the runway needed to capture the 18-month "Release Readiness" window before 2027 regulations drop.
+**Strategic Pivot (Jan 2026):**
+We have shifted from an "Efficiency Tool" ($260k ROI) to a **"Risk Arbitrage Platform" ($90M+ PV Gain)**. The narrative now focuses on ARO compression (liability reduction) and TIER carbon tax shielding, leveraging the 12-18 month "Ready to Release" window.
 
 ---
 
@@ -58,9 +58,9 @@ We are not asking investors to fund R&D risk (TRL 7-8 is proven). We are asking 
 
 ### Timing Strategy
 
-**The "18-Month Window" Urgency:**
-- **The Market Reality:** Operators have 18 months to figure out release before 2027.
-- **The Fundraising Implication:** We cannot afford to wait for pilot success to raise. We need capital NOW to be installed *before* the guidelines drop.
+**The "Ready to Release" Window:**
+- **The Market Reality:** Operators have 12-18 months to stand up treatment programs before release guidelines are finalized.
+- **The Financial FOMO:** Luminous is the only platform that collapse "Risk Buffers" in ARO estimates from Day 0 of treatment infrastructure build.
 
 **Question:**
 Does the "18-Month Regulatory Countdown" create enough FOMO to close a round pre-revenue?
@@ -207,4 +207,11 @@ Does the "18-Month Regulatory Countdown" create enough FOMO to close a round pre
 4. **Pilot Agreement Template** (Jeff → Doug review) - Due Dec 20 (3 weeks)
 5. **BLG Legal Engagement** (Jeff) - This week
 
-**Last Updated:** 2025-11-29
+### 2026-01-10: Strategic Refinement (ARO & TIER)
+**Key Realizations:**
+1. **ARO Compression as the Primary Lever**: Using discounted cash flow mechanics, a 12-month acceleration in reclamation confidence yields a **$91M PV gain** for a $1.9B liability.
+2. **TIER Carbon Shield**: NA remediation inhibits methane leakage from tailings. At **$95/tonne**, this is a direct financial liability shield for operators under Alberta's "Direct Investment Pathway."
+3. **Toxicity-First Accelerated Release**: Proving LC50 toxicity thresholds are met faster than total NAFC concentrations provides an unassailable path to accelerated regulatory approval.
+4. **"Sprint-0" Low Friction Entry**: A managed service off-site pilot model bypasses IT/procurement bottlenecks to capture the 2026 season.
+
+**Last Updated:** 2026-01-10
