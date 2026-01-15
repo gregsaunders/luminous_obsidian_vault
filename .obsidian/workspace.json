@@ -192,8 +192,10 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "62750cc74e0b3e31",
+  "active": "588cb12a155ad9aa",
   "lastOpenFiles": [
+    "05-KNOWLEDGE/1-Technical-Docs/Internal-Papers/Jeff's new pitch stuff",
+    "05-KNOWLEDGE/1-Technical-Docs/Internal-Papers/Jeff's new pitch stuff ",
     "Jeff's thoughts Jan 13 2026.md",
     "00-AGENT-INTERFACE/2-Session-Memory/2026-01-10-Session-Log-Strategic-Pivot.md",
     "Untitled.md",
@@ -206,7 +208,6 @@
     "Square Head Data/Government/Wetland Surface Water Quality",
     "Square Head Data/Government/Untitled",
     "Square Head Data/Government/Groundwater Quality - Oil Sands Region/EST-source-identification.pdf",
-    "Square Head Data/Government/Groundwater Quality - Oil Sands Region",
     "Square Head Data/Government/Mainstem Water Quality - Oil Sands Region/index.md.md",
     "Square Head Data/Government/Mainstem Water Quality - Oil Sands Region/Untitled.md",
     "Mark/Roadmap/SquareHead/SQH-EPIC-05-Object-Storage-Migration.md",
@@ -229,7 +230,6 @@
     "Mark/Roadmap/SquareHead/SQH-EPIC-07-AI-Generated-UI.md",
     "Mark/Roadmap/SquareHead/SQH-EPIC-11-Extended-Database-Connectors.md",
     "Mark/Roadmap/SquareHead/SQH-EPIC-06-CDC-Pipeline.md",
-    "Mark/Roadmap/SquareHead/SQH-EPIC-12-Tech-Debt.md",
     "Mark/Roadmap/SquareHead/assets/access-control-data-flow.svg",
     "Mark/Roadmap/Luminous/assets/luminous-dependency-map.svg",
     "Mark/Roadmap/assets/master-cross-area-dependencies.svg",
