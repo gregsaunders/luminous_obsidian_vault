@@ -11,14 +11,12 @@
             "id": "62750cc74e0b3e31",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Journal/Greg/2026-01/2026-01-08a.md",
-                "mode": "source",
-                "source": false
+                "file": "Journal/Greg/Raw data MS vs biosensor/kearl wetland map.png"
               },
-              "icon": "lucide-file",
-              "title": "2026-01-08a"
+              "icon": "lucide-image",
+              "title": "kearl wetland map"
             }
           }
         ]
@@ -88,7 +86,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 348.5
+    "width": 430.5
   },
   "right": {
     "id": "c61c2be9af22c590",
@@ -194,6 +192,16 @@
   },
   "active": "62750cc74e0b3e31",
   "lastOpenFiles": [
+    "temp/~$mmary of the History of Microbial Genomics - Grok.docx",
+    "Journal/Greg/Raw data MS vs biosensor/img-2becf64d-5026-4ae4-bda0-e24c943f8a6f.png",
+    "Journal/Greg/Raw data MS vs biosensor/kearl wetland map.png",
+    "Journal/Greg/Raw data MS vs biosensor/Fig 3 Target style image to show data .jpg",
+    "Journal/Greg/Raw data MS vs biosensor/Fig 1 MS_vs_Biosensor_TimeSeries_averages of all reps- NO SD.png",
+    "Journal/Greg/Raw data MS vs biosensor/img-2becf64d-5026-4ae4-bda0-e24c943f8a6f",
+    "Journal/Greg/2026-01/2026-01-08a.md",
+    "Journal/Greg/Raw data MS vs biosensor/rep 1_no min0 Wetland Conventional vs new analytical methods.csv",
+    "Journal/Greg/Raw data MS vs biosensor/rep 2_no min0 Wetland Conventional vs new analytical methods.csv",
+    "Journal/Greg/~$mmary of the History of Microbial Genomics - Grok.docx",
     "Journal/Greg/Raw data MS vs biosensor",
     "00-AGENT-INTERFACE/2-Session-Memory/Strategic Memory Luminous Oil Sands ARO Mitigation Positioning.md",
     "02-STRATEGY/3-Partnerships/CDL-Application/2026-01-15-Session-2-Objectives.md",
@@ -205,11 +213,6 @@
     "Square Head Data/Government/Surface Water Quality Discreet/abs264",
     "Square Head Data/Government/Surface Water Quality Discreet/abs240-20260106_165051",
     "Square Head Data/Government/Surface Water Quality Discreet/abs191-20260106_165050",
-    "Square Head Data/Government/Surface Water Quality Discreet/abs098-20260106_165047",
-    "Square Head Data/Government/Surface Water Quality Discreet/abs058-20260106_165045",
-    "Square Head Data/Government/Surface Water Quality Discreet",
-    "Square Head Data/Government/Wetland Surface Water Quality",
-    "Square Head Data/Government/Untitled",
     "Square Head Data/Government/Mainstem Water Quality - Oil Sands Region/index.md.md",
     "Square Head Data/Government/Mainstem Water Quality - Oil Sands Region/Untitled.md",
     "Mark/Roadmap/SquareHead/SQH-EPIC-05-Object-Storage-Migration.md",
@@ -226,7 +229,6 @@
     "Square Head Data/index.md.md",
     "Square Head Data/Untitled.md",
     "Mark/Roadmap/Luminous/LUM-EPIC-02-Data-Ingestion.md",
-    "Journal/Greg/2026-01/2026-01-08a.md",
     "Mark/Roadmap/SquareHead/SQH-EPIC-04-Record-Access-Control.md",
     "Mark/Roadmap/SquareHead/SQH-EPIC-03-Unified-Data-Access-Layer.md",
     "Mark/Roadmap/SquareHead/SQH-EPIC-07-AI-Generated-UI.md",
@@ -236,10 +238,6 @@
     "Mark/Roadmap/SquareHead/assets/cross-area-dependencies.svg",
     "Mark/Roadmap/SquareHead/assets/three-pane-shell-mockup-v2b-annotated.svg",
     "Mark/Roadmap/SquareHead/assets/three-pane-shell-mockup-v5-menu-hover.svg",
-    "Mark/Roadmap/SquareHead/assets/three-pane-shell-mockup-v2.svg",
-    "Mark/Roadmap/SquareHead/assets/three-pane-shell-mockup-v4-form-and-chat.svg",
-    "Mark/Roadmap/SquareHead/assets/three-pane-shell-mockup-v3-blank.svg",
-    "Mark/Roadmap/SquareHead/assets/three-pane-shell-mockup.svg",
     "99-ARCHIVE/business-development-reference/Business Development/Dependencies/LBS Dependency.canvas",
     "99-ARCHIVE/business-development-reference/Business Development/1 Luminous Meta Model/02 Luminous Domains and Component/Luminous Meta Model.canvas",
     "99-ARCHIVE/business-development-reference/Business Development/1 Luminous Meta Model/01 What is a Meta Model?/Metamodel Explanation/Untitled.canvas",
