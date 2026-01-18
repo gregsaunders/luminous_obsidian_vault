@@ -11,12 +11,14 @@
             "id": "62750cc74e0b3e31",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Journal/Greg/Raw data MS vs biosensor/kearl wetland map.png"
+                "file": "Journal/Greg/2026-01/guthrie-erp-specialist/linkedin-post.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "kearl wetland map"
+              "icon": "lucide-file",
+              "title": "linkedin-post"
             }
           }
         ]
@@ -192,9 +194,13 @@
   },
   "active": "62750cc74e0b3e31",
   "lastOpenFiles": [
+    "Journal/Greg/Raw data MS vs biosensor/kearl wetland map.png",
+    "Journal/Greg/2026-01/guthrie-erp-specialist/linkedin-post.md",
+    "Journal/Greg/2026-01/guthrie-erp-specialist/Screenshot 2026-01-14 at 1.35.27 PM.png",
+    "Journal/Greg/2026-01/guthrie-erp-specialist",
+    "Journal/Greg/2026-01/untitled folder",
     "temp/~$mmary of the History of Microbial Genomics - Grok.docx",
     "Journal/Greg/Raw data MS vs biosensor/img-2becf64d-5026-4ae4-bda0-e24c943f8a6f.png",
-    "Journal/Greg/Raw data MS vs biosensor/kearl wetland map.png",
     "Journal/Greg/Raw data MS vs biosensor/Fig 3 Target style image to show data .jpg",
     "Journal/Greg/Raw data MS vs biosensor/Fig 1 MS_vs_Biosensor_TimeSeries_averages of all reps- NO SD.png",
     "Journal/Greg/Raw data MS vs biosensor/img-2becf64d-5026-4ae4-bda0-e24c943f8a6f",
@@ -210,9 +216,6 @@
     "Jeff's thoughts Jan 13 2026.md",
     "00-AGENT-INTERFACE/2-Session-Memory/2026-01-10-Session-Log-Strategic-Pivot.md",
     "Untitled.md",
-    "Square Head Data/Government/Surface Water Quality Discreet/abs264",
-    "Square Head Data/Government/Surface Water Quality Discreet/abs240-20260106_165051",
-    "Square Head Data/Government/Surface Water Quality Discreet/abs191-20260106_165050",
     "Square Head Data/Government/Mainstem Water Quality - Oil Sands Region/index.md.md",
     "Square Head Data/Government/Mainstem Water Quality - Oil Sands Region/Untitled.md",
     "Mark/Roadmap/SquareHead/SQH-EPIC-05-Object-Storage-Migration.md",
@@ -231,13 +234,11 @@
     "Mark/Roadmap/Luminous/LUM-EPIC-02-Data-Ingestion.md",
     "Mark/Roadmap/SquareHead/SQH-EPIC-04-Record-Access-Control.md",
     "Mark/Roadmap/SquareHead/SQH-EPIC-03-Unified-Data-Access-Layer.md",
-    "Mark/Roadmap/SquareHead/SQH-EPIC-07-AI-Generated-UI.md",
     "Mark/Roadmap/SquareHead/assets/access-control-data-flow.svg",
     "Mark/Roadmap/Luminous/assets/luminous-dependency-map.svg",
     "Mark/Roadmap/assets/master-cross-area-dependencies.svg",
     "Mark/Roadmap/SquareHead/assets/cross-area-dependencies.svg",
     "Mark/Roadmap/SquareHead/assets/three-pane-shell-mockup-v2b-annotated.svg",
-    "Mark/Roadmap/SquareHead/assets/three-pane-shell-mockup-v5-menu-hover.svg",
     "99-ARCHIVE/business-development-reference/Business Development/Dependencies/LBS Dependency.canvas",
     "99-ARCHIVE/business-development-reference/Business Development/1 Luminous Meta Model/02 Luminous Domains and Component/Luminous Meta Model.canvas",
     "99-ARCHIVE/business-development-reference/Business Development/1 Luminous Meta Model/01 What is a Meta Model?/Metamodel Explanation/Untitled.canvas",
