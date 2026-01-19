@@ -735,19 +735,25 @@ Suncor CEO Rich Kruger's highest stated priority is the **Operational Excellence
 ## 🔐 DOCUMENT CONTROL
 
 **Owner:** Jeff (jeffviolo@gmail.com)
-**Last Updated:** January 19, 2026 (5:45 PM MT - Major Update with Financial Data)
-**Version:** 2.1 (Financial Data Verified + Strategic Gold Nuggets Integrated)
-**Status:** ACTIVE - Campaign execution phase (Ready for Email Rewrites)
+**Last Updated:** January 19, 2026 (7:15 PM MT - Tone Calibration + Conservative Positioning)
+**Version:** 2.2 (Financial Data Verified + Conservative Messaging Guidelines Integrated)
+**Status:** ACTIVE - Campaign execution phase (Ready for Email Rewrites with Conservative Tone)
 **Next Review:** Post-webinar (March 6, 2026)
 
-**Major Updates in v2.1:**
+**Major Updates in v2.2:**
 - ✅ Verified ARO financial data from Suncor ($12.271B) and CNRL ($7.690B) annual reports
-- ✅ Identified "Critical Audit Matter" positioning (audit insurance angle)
+- ✅ Identified "Critical Audit Matter" positioning (repositioned with conservative tone)
 - ✅ Documented "inability to release water" regulatory bottleneck from Suncor
 - ✅ Integrated Bill C-59 independent verification mandate
 - ✅ Added shareholder return protection angle ($13B annual returns at risk)
 - ✅ Documented OEMS safety mandate alignment
 - ✅ Financial impact modeling: $45-50M PV recovery per operator with 1-year timeline reduction
+- ✅ **TONE CALIBRATION:** Shifted from aggressive "savior" positioning to humble "essential partner" positioning
+- ✅ **CORRECTED SPECS:** HRMS = semi-annual (not quarterly), 8 weeks (not 2-4), $700-1K (not $500-1.5K)
+- ✅ **UNIFIED OFFERING:** Always position "Biosensor + RCE" together (not biosensors alone)
+- ✅ **INDIGENOUS ORIGIN:** Always lead with bacteria isolated from Alberta tailings ponds
+- ✅ **ENGINEERED WETLANDS FIRST:** Every communication acknowledges wetlands as core solution
+- ✅ Created "Conservative Messaging Guidelines" document (foundation for all future content)
 
 **Distribution:**
 - Internal team (Luminous BioSolutions)
