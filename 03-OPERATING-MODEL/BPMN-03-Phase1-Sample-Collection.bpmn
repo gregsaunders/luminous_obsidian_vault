@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
-             xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
-             xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC"
-             xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI"
-             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-             id="Definitions_Phase1"
-             targetNamespace="http://luminousbiosolutions.com/bpmn/na-monitoring"
-             exporter="Luminous BioSolutions"
-             exporterVersion="1.0">
-
-  <!-- ============================================================ -->
-  <!-- PROCESS: Phase 1 - Sample Collection (Detailed)              -->
-  <!-- ============================================================ -->
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC" xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Definitions_Phase1" targetNamespace="http://luminousbiosolutions.com/bpmn/na-monitoring" exporter="Camunda Modeler" exporterVersion="5.42.0">
   <process id="Process_Phase1_SampleCollection" name="Phase 1: Sample Collection" isExecutable="false">
-    <documentation>
-      Luminous BioSolutions NA Monitoring Service
+    <documentation>Luminous BioSolutions NA Monitoring Service
       Phase 1: Sample Collection - Detailed Process
 
       This process covers sample collection at the customer site.
@@ -28,18 +15,12 @@
 
       Related: [[02-Roles-and-Responsibilities]] | [[03-Technology-Requirements]]
 
-      Version 1.1 | Created: 2026-01-01
-    </documentation>
-
-    <!-- Start Event -->
+      Version 1.1 | Created: 2026-01-01</documentation>
     <startEvent id="Event_Start" name="Sample Kit Received">
       <documentation>Customer has received the sample collection kit from Luminous</documentation>
     </startEvent>
-
-    <!-- Task 1.1: Receive Kit -->
     <task id="Task_ReceiveKit" name="Receive Sample Kit">
-      <documentation>
-        Receive and verify sample collection kit.
+      <documentation>Receive and verify sample collection kit.
 
         Verify contents:
         - Correct number of containers
@@ -49,11 +30,8 @@
 
         Input: Sample kit shipment
         Output: Kit inventory confirmed
-        Responsible: Customer (Site Operator)
-      </documentation>
+        Responsible: Customer (Site Operator)</documentation>
     </task>
-
-    <!-- Task 1.2: Travel to Location -->
     <task id="Task_TravelToLocation" name="Travel to Sampling Location">
       <documentation>
         Travel to designated sampling location.
@@ -66,8 +44,6 @@
         Responsible: Customer (Site Operator)
       </documentation>
     </task>
-
-    <!-- Task 1.3: Collect Sample -->
     <task id="Task_CollectSample" name="Collect Water Sample">
       <documentation>
         Collect water sample following Sampling SOP.
@@ -86,8 +62,6 @@
         Tool: Sampling SOP
       </documentation>
     </task>
-
-    <!-- Task 1.4: Scan Barcode -->
     <task id="Task_ScanBarcode" name="Scan Sample Barcode">
       <documentation>
         Scan barcode on sample container to capture metadata.
@@ -103,8 +77,6 @@
         Tool: Handheld App (TBD) or barcode scanner
       </documentation>
     </task>
-
-    <!-- Task 1.5: Confirm Metadata -->
     <task id="Task_ConfirmMetadata" name="Confirm Sample Metadata">
       <documentation>
         Confirm/enter additional sample metadata.
@@ -122,8 +94,6 @@
         Tool: Handheld App or paper form
       </documentation>
     </task>
-
-    <!-- Task 1.6: Store in Cooler -->
     <task id="Task_StoreInCooler" name="Store Sample in Cooler">
       <documentation>
         Place sample in insulated cooler with ice packs.
@@ -139,13 +109,9 @@
         Responsible: Customer (Site Operator)
       </documentation>
     </task>
-
-    <!-- Gateway: More Samples? -->
     <exclusiveGateway id="Gateway_MoreSamples" name="More Samples to Collect?">
       <documentation>Decision: Are there more sampling locations for this collection event?</documentation>
     </exclusiveGateway>
-
-    <!-- Task 1.7: Complete Chain of Custody -->
     <task id="Task_ChainOfCustody" name="Complete Chain of Custody Form">
       <documentation>
         Complete chain of custody documentation.
@@ -163,8 +129,6 @@
         Tool: Paper form or digital COC
       </documentation>
     </task>
-
-    <!-- Task 1.8: Package for Shipment -->
     <task id="Task_PackageForShipment" name="Package Samples for Shipment">
       <documentation>
         Prepare cooler for shipment to lab.
@@ -182,8 +146,6 @@
         Tool: Packaging SOP
       </documentation>
     </task>
-
-    <!-- Task 1.9: Arrange Pickup -->
     <task id="Task_ArrangePickup" name="Arrange Courier Pickup">
       <documentation>
         Schedule courier pickup for sample shipment.
@@ -198,157 +160,110 @@
         Tool: Courier website/phone
       </documentation>
     </task>
-
-    <!-- End Event -->
     <endEvent id="Event_End" name="Samples Shipped">
       <documentation>Samples handed off to courier, proceeding to Phase 2 (Transport)</documentation>
     </endEvent>
-
-    <!-- Sequence Flows -->
-    <sequenceFlow id="Flow_1" sourceRef="Event_Start" targetRef="Task_ReceiveKit"/>
-    <sequenceFlow id="Flow_2" sourceRef="Task_ReceiveKit" targetRef="Task_TravelToLocation"/>
-    <sequenceFlow id="Flow_3" sourceRef="Task_TravelToLocation" targetRef="Task_CollectSample"/>
-    <sequenceFlow id="Flow_4" sourceRef="Task_CollectSample" targetRef="Task_ScanBarcode"/>
-    <sequenceFlow id="Flow_5" sourceRef="Task_ScanBarcode" targetRef="Task_ConfirmMetadata"/>
-    <sequenceFlow id="Flow_6" sourceRef="Task_ConfirmMetadata" targetRef="Task_StoreInCooler"/>
-    <sequenceFlow id="Flow_7" sourceRef="Task_StoreInCooler" targetRef="Gateway_MoreSamples"/>
-    <sequenceFlow id="Flow_8" name="Yes" sourceRef="Gateway_MoreSamples" targetRef="Task_TravelToLocation"/>
-    <sequenceFlow id="Flow_9" name="No" sourceRef="Gateway_MoreSamples" targetRef="Task_ChainOfCustody"/>
-    <sequenceFlow id="Flow_10" sourceRef="Task_ChainOfCustody" targetRef="Task_PackageForShipment"/>
-    <sequenceFlow id="Flow_11" sourceRef="Task_PackageForShipment" targetRef="Task_ArrangePickup"/>
-    <sequenceFlow id="Flow_12" sourceRef="Task_ArrangePickup" targetRef="Event_End"/>
+    <sequenceFlow id="Flow_1" sourceRef="Event_Start" targetRef="Task_ReceiveKit" />
+    <sequenceFlow id="Flow_2" sourceRef="Task_ReceiveKit" targetRef="Task_TravelToLocation" />
+    <sequenceFlow id="Flow_3" sourceRef="Task_TravelToLocation" targetRef="Task_CollectSample" />
+    <sequenceFlow id="Flow_4" sourceRef="Task_CollectSample" targetRef="Task_ScanBarcode" />
+    <sequenceFlow id="Flow_5" sourceRef="Task_ScanBarcode" targetRef="Task_ConfirmMetadata" />
+    <sequenceFlow id="Flow_6" sourceRef="Task_ConfirmMetadata" targetRef="Task_StoreInCooler" />
+    <sequenceFlow id="Flow_7" sourceRef="Task_StoreInCooler" targetRef="Gateway_MoreSamples" />
+    <sequenceFlow id="Flow_8" name="Yes" sourceRef="Gateway_MoreSamples" targetRef="Task_TravelToLocation" />
+    <sequenceFlow id="Flow_9" name="No" sourceRef="Gateway_MoreSamples" targetRef="Task_ChainOfCustody" />
+    <sequenceFlow id="Flow_10" sourceRef="Task_ChainOfCustody" targetRef="Task_PackageForShipment" />
+    <sequenceFlow id="Flow_11" sourceRef="Task_PackageForShipment" targetRef="Task_ArrangePickup" />
+    <sequenceFlow id="Flow_12" sourceRef="Task_ArrangePickup" targetRef="Event_End" />
   </process>
-
-  <!-- ============================================================ -->
-  <!-- BPMN DIAGRAM (Visual Layout)                                 -->
-  <!-- ============================================================ -->
   <bpmndi:BPMNDiagram id="BPMNDiagram_Phase1">
     <bpmndi:BPMNPlane id="BPMNPlane_Phase1" bpmnElement="Process_Phase1_SampleCollection">
-
-      <!-- Start Event -->
       <bpmndi:BPMNShape id="Shape_Event_Start" bpmnElement="Event_Start">
-        <omgdc:Bounds x="180" y="200" width="36" height="36"/>
+        <omgdc:Bounds x="180" y="200" width="36" height="36" />
       </bpmndi:BPMNShape>
-
-      <!-- Task 1.1 -->
       <bpmndi:BPMNShape id="Shape_Task_ReceiveKit" bpmnElement="Task_ReceiveKit">
-        <omgdc:Bounds x="270" y="178" width="100" height="80"/>
+        <omgdc:Bounds x="270" y="178" width="100" height="80" />
       </bpmndi:BPMNShape>
-
-      <!-- Task 1.2 -->
       <bpmndi:BPMNShape id="Shape_Task_TravelToLocation" bpmnElement="Task_TravelToLocation">
-        <omgdc:Bounds x="420" y="178" width="100" height="80"/>
+        <omgdc:Bounds x="420" y="178" width="100" height="80" />
       </bpmndi:BPMNShape>
-
-      <!-- Task 1.3 -->
       <bpmndi:BPMNShape id="Shape_Task_CollectSample" bpmnElement="Task_CollectSample">
-        <omgdc:Bounds x="570" y="178" width="100" height="80"/>
+        <omgdc:Bounds x="570" y="178" width="100" height="80" />
       </bpmndi:BPMNShape>
-
-      <!-- Task 1.4 -->
       <bpmndi:BPMNShape id="Shape_Task_ScanBarcode" bpmnElement="Task_ScanBarcode">
-        <omgdc:Bounds x="720" y="178" width="100" height="80"/>
+        <omgdc:Bounds x="720" y="178" width="100" height="80" />
       </bpmndi:BPMNShape>
-
-      <!-- Task 1.5 -->
       <bpmndi:BPMNShape id="Shape_Task_ConfirmMetadata" bpmnElement="Task_ConfirmMetadata">
-        <omgdc:Bounds x="870" y="178" width="100" height="80"/>
+        <omgdc:Bounds x="870" y="178" width="100" height="80" />
       </bpmndi:BPMNShape>
-
-      <!-- Task 1.6 -->
       <bpmndi:BPMNShape id="Shape_Task_StoreInCooler" bpmnElement="Task_StoreInCooler">
-        <omgdc:Bounds x="1020" y="178" width="100" height="80"/>
+        <omgdc:Bounds x="1020" y="178" width="100" height="80" />
       </bpmndi:BPMNShape>
-
-      <!-- Gateway: More Samples -->
       <bpmndi:BPMNShape id="Shape_Gateway_MoreSamples" bpmnElement="Gateway_MoreSamples" isMarkerVisible="true">
-        <omgdc:Bounds x="1170" y="193" width="50" height="50"/>
+        <omgdc:Bounds x="1170" y="193" width="50" height="50" />
       </bpmndi:BPMNShape>
-
-      <!-- Task 1.7 -->
       <bpmndi:BPMNShape id="Shape_Task_ChainOfCustody" bpmnElement="Task_ChainOfCustody">
-        <omgdc:Bounds x="1270" y="178" width="100" height="80"/>
+        <omgdc:Bounds x="1270" y="178" width="100" height="80" />
       </bpmndi:BPMNShape>
-
-      <!-- Task 1.8 -->
       <bpmndi:BPMNShape id="Shape_Task_PackageForShipment" bpmnElement="Task_PackageForShipment">
-        <omgdc:Bounds x="1420" y="178" width="100" height="80"/>
+        <omgdc:Bounds x="1420" y="178" width="100" height="80" />
       </bpmndi:BPMNShape>
-
-      <!-- Task 1.9 -->
       <bpmndi:BPMNShape id="Shape_Task_ArrangePickup" bpmnElement="Task_ArrangePickup">
-        <omgdc:Bounds x="1570" y="178" width="100" height="80"/>
+        <omgdc:Bounds x="1570" y="178" width="100" height="80" />
       </bpmndi:BPMNShape>
-
-      <!-- End Event -->
       <bpmndi:BPMNShape id="Shape_Event_End" bpmnElement="Event_End">
-        <omgdc:Bounds x="1720" y="200" width="36" height="36"/>
+        <omgdc:Bounds x="1720" y="200" width="36" height="36" />
       </bpmndi:BPMNShape>
-
-      <!-- Sequence Flow Edges -->
       <bpmndi:BPMNEdge id="Edge_Flow_1" bpmnElement="Flow_1">
-        <omgdi:waypoint x="216" y="218"/>
-        <omgdi:waypoint x="270" y="218"/>
+        <omgdi:waypoint x="216" y="218" />
+        <omgdi:waypoint x="270" y="218" />
       </bpmndi:BPMNEdge>
-
       <bpmndi:BPMNEdge id="Edge_Flow_2" bpmnElement="Flow_2">
-        <omgdi:waypoint x="370" y="218"/>
-        <omgdi:waypoint x="420" y="218"/>
+        <omgdi:waypoint x="370" y="218" />
+        <omgdi:waypoint x="420" y="218" />
       </bpmndi:BPMNEdge>
-
       <bpmndi:BPMNEdge id="Edge_Flow_3" bpmnElement="Flow_3">
-        <omgdi:waypoint x="520" y="218"/>
-        <omgdi:waypoint x="570" y="218"/>
+        <omgdi:waypoint x="520" y="218" />
+        <omgdi:waypoint x="570" y="218" />
       </bpmndi:BPMNEdge>
-
       <bpmndi:BPMNEdge id="Edge_Flow_4" bpmnElement="Flow_4">
-        <omgdi:waypoint x="670" y="218"/>
-        <omgdi:waypoint x="720" y="218"/>
+        <omgdi:waypoint x="670" y="218" />
+        <omgdi:waypoint x="720" y="218" />
       </bpmndi:BPMNEdge>
-
       <bpmndi:BPMNEdge id="Edge_Flow_5" bpmnElement="Flow_5">
-        <omgdi:waypoint x="820" y="218"/>
-        <omgdi:waypoint x="870" y="218"/>
+        <omgdi:waypoint x="820" y="218" />
+        <omgdi:waypoint x="870" y="218" />
       </bpmndi:BPMNEdge>
-
       <bpmndi:BPMNEdge id="Edge_Flow_6" bpmnElement="Flow_6">
-        <omgdi:waypoint x="970" y="218"/>
-        <omgdi:waypoint x="1020" y="218"/>
+        <omgdi:waypoint x="970" y="218" />
+        <omgdi:waypoint x="1020" y="218" />
       </bpmndi:BPMNEdge>
-
       <bpmndi:BPMNEdge id="Edge_Flow_7" bpmnElement="Flow_7">
-        <omgdi:waypoint x="1120" y="218"/>
-        <omgdi:waypoint x="1170" y="218"/>
+        <omgdi:waypoint x="1120" y="218" />
+        <omgdi:waypoint x="1170" y="218" />
       </bpmndi:BPMNEdge>
-
       <bpmndi:BPMNEdge id="Edge_Flow_8" bpmnElement="Flow_8">
-        <omgdi:waypoint x="1195" y="193"/>
-        <omgdi:waypoint x="1195" y="120"/>
-        <omgdi:waypoint x="470" y="120"/>
-        <omgdi:waypoint x="470" y="178"/>
+        <omgdi:waypoint x="1195" y="193" />
+        <omgdi:waypoint x="1195" y="120" />
+        <omgdi:waypoint x="470" y="120" />
+        <omgdi:waypoint x="470" y="178" />
       </bpmndi:BPMNEdge>
-
       <bpmndi:BPMNEdge id="Edge_Flow_9" bpmnElement="Flow_9">
-        <omgdi:waypoint x="1220" y="218"/>
-        <omgdi:waypoint x="1270" y="218"/>
+        <omgdi:waypoint x="1220" y="218" />
+        <omgdi:waypoint x="1270" y="218" />
       </bpmndi:BPMNEdge>
-
       <bpmndi:BPMNEdge id="Edge_Flow_10" bpmnElement="Flow_10">
-        <omgdi:waypoint x="1370" y="218"/>
-        <omgdi:waypoint x="1420" y="218"/>
+        <omgdi:waypoint x="1370" y="218" />
+        <omgdi:waypoint x="1420" y="218" />
       </bpmndi:BPMNEdge>
-
       <bpmndi:BPMNEdge id="Edge_Flow_11" bpmnElement="Flow_11">
-        <omgdi:waypoint x="1520" y="218"/>
-        <omgdi:waypoint x="1570" y="218"/>
+        <omgdi:waypoint x="1520" y="218" />
+        <omgdi:waypoint x="1570" y="218" />
       </bpmndi:BPMNEdge>
-
       <bpmndi:BPMNEdge id="Edge_Flow_12" bpmnElement="Flow_12">
-        <omgdi:waypoint x="1670" y="218"/>
-        <omgdi:waypoint x="1720" y="218"/>
+        <omgdi:waypoint x="1670" y="218" />
+        <omgdi:waypoint x="1720" y="218" />
       </bpmndi:BPMNEdge>
-
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
-
 </definitions>

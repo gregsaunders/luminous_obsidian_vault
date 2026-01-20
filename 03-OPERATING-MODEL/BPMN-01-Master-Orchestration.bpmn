@@ -31,11 +31,9 @@
       <messageEventDefinition id="MsgEvtDef_KitReceived" />
     </startEvent>
     <subProcess id="SubProcess_SampleCollection" name="Phase 1: Sample Collection">
-      <documentation>
-        Customer collects water samples at designated locations.
+      <documentation>Customer collects water samples at designated locations.
         Steps: Receive kit, collect sample, scan barcode, confirm metadata, store in cooler, arrange pickup.
-        See: BPMN-02-Sample-Collection.bpmn for details.
-      </documentation>
+        See: BPMN-02-Sample-Collection.bpmn for details.</documentation>
       <startEvent id="Event_CollectionStart" name="Start Collection" />
       <task id="Task_CollectSample" name="Collect Water Sample">
         <documentation>Collect water sample at designated location using Sampling SOP and GPS coordinates</documentation>
@@ -93,10 +91,8 @@
       <documentation>Customer contract signed, ready for service preparation</documentation>
     </startEvent>
     <subProcess id="SubProcess_ServicePreparation" name="Phase 0: Service Preparation">
-      <documentation>
-        Pre-pilot preparation: barcode design, kit assembly, platform registration.
-        See: Service-Delivery-Process-Map.md Phase 0 for details.
-      </documentation>
+      <documentation>Pre-pilot preparation: barcode design, kit assembly, platform registration.
+        See: Service-Delivery-Process-Map.md Phase 0 for details.</documentation>
       <startEvent id="Event_PrepStart" name="Start Preparation" />
       <task id="Task_DesignBarcodeSchema" name="Design Barcode Schema">
         <documentation>Design customer-specific barcode schema: KEA-04-0001-001-7 (Customer-WaterBody-Batch-Container-Check)</documentation>
