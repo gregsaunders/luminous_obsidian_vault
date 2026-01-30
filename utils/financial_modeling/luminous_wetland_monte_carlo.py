@@ -470,81 +470,6 @@ def write_table_intro(ws, row: int, table_doc, start_col: int = 1, width_cols: i
 
     return row
 
-
-def write_reference_section(ws, row: int, table_docs: list, start_col: int = 1) -> int:
-    """Write TABLE REFERENCE section at the bottom of a sheet.
-
-    Args:
-        ws: Worksheet object
-        row: Current row position
-        table_docs: List of TableDocumentation objects
-        start_col: Starting column (default 1)
-
-    Returns:
-        Next row position
-    """
-    # Skip if no documented tables
-    documented = [t for t in table_docs if t.purpose or t.assumptions or t.data_source]
-    if not documented:
-        return row
-
-    # Add spacing before reference section
-    row += 2
-
-    # Reference section header
-    ref_fill = PatternFill(start_color="D9E2F3", end_color="D9E2F3", fill_type="solid")
-    header_cell = ws.cell(row=row, column=start_col, value="TABLE REFERENCE")
-    header_cell.font = Font(bold=True, size=10, color="1F4E79")
-    header_cell.fill = ref_fill
-    row += 1
-
-    # Separator line
-    sep_cell = ws.cell(row=row, column=start_col, value="─" * 50)
-    sep_cell.font = Font(size=8, color="999999")
-    row += 1
-
-    # Write each table's full documentation
-    for table_doc in documented:
-        # Table name as subheader
-        name_cell = ws.cell(row=row, column=start_col, value=table_doc.table_name)
-        name_cell.font = Font(bold=True, size=10)
-        row += 1
-
-        # Purpose
-        if table_doc.purpose:
-            ws.cell(row=row, column=start_col, value=f"  Purpose: {table_doc.purpose}")
-            row += 1
-
-        # Assumptions (may be multi-line)
-        if table_doc.assumptions:
-            ws.cell(row=row, column=start_col, value="  Assumptions:")
-            row += 1
-            for line in table_doc.assumptions.strip().split('\n'):
-                line = line.strip()
-                if line.startswith('-'):
-                    line = f"    {line}"
-                else:
-                    line = f"    - {line}" if line else ""
-                if line:
-                    ws.cell(row=row, column=start_col, value=line)
-                    row += 1
-
-        # Data source
-        if table_doc.data_source:
-            ws.cell(row=row, column=start_col, value=f"  Data Source: {table_doc.data_source}")
-            row += 1
-
-        # Related tables
-        if table_doc.related_tables:
-            related = ", ".join(table_doc.related_tables)
-            ws.cell(row=row, column=start_col, value=f"  Related: {related}")
-            row += 1
-
-        row += 1  # Blank line between tables
-
-    return row
-
-
 # =============================================================================
 # SHEET 0: COVER
 # =============================================================================
@@ -1356,9 +1281,6 @@ def create_4_scenarios(wb):
         row += 1
 
     create_table(ws, "tbl_ModelScenarios", f"A{model_start-1}:D{row-1}")
-
-    # Write TABLE REFERENCE section at bottom of sheet
-    row = write_reference_section(ws, row, collected_docs)
 
     set_column_widths(ws, {'A': 12, 'B': 22, 'C': 14, 'D': 24, 'E': 40})
     return ws
@@ -2515,9 +2437,6 @@ def create_16_dashboard(wb):
     row += 1
     ws.cell(row=row, column=1, value="Errors Found:")
     ws.cell(row=row, column=2, value="=COUNTIF('17_Checks'!D:D,\"FAIL\")")
-
-    # Write TABLE REFERENCE section at bottom of sheet
-    row = write_reference_section(ws, row, collected_docs)
 
     set_column_widths(ws, {'A': 30, 'B': 18, 'C': 16, 'D': 18})
     return ws
