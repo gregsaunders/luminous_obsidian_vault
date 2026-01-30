@@ -30,3 +30,39 @@ columns:
   Gate_Status: "ENABLED if testing latency allows action, BLOCKED if too slow"
   Stoch_Mult: "Monte Carlo multiplier from 7_Calc_Stochastic (varies each iteration)"
   Gated_Value: "Base_Value x Stoch_Mult if ENABLED, else $0"
+
+tables:
+  gated_values:
+    table_name: "tbl_GatedValues"
+    title: "Gated Value Calculations"
+    description: "Scenario values after applying latency gating logic and stochastic multipliers."
+    purpose: "Calculate the actual value captured based on testing option's ability to meet response time requirements"
+    assumptions: |
+      - Gate status determined by comparing testing latency to required response time
+      - ENABLED scenarios: Gated_Value = Base_Value x Stoch_Mult
+      - BLOCKED scenarios: Gated_Value = $0 (value cannot be captured)
+      - Stochastic multipliers vary each Monte Carlo iteration
+    data_source: "Calculated from tbl_ValueScenarios, tbl_LatencyGating, and tbl_Stochastic"
+    related_tables: ["tbl_ValueScenarios", "tbl_LatencyGating", "tbl_Stochastic", "tbl_ScenarioBreakdown"]
+    headers: [Scenario, Base_Value, Gate_Status, Stoch_Mult, Gated_Value]
+    rows:
+      - scenario: "S1"
+        base_value: "=INDEX(Scenario_BaseValues,1)"
+        gate_status: "=INDEX(Gate_S1,MATCH(Testing_Option,TestOpt_Option,0))"
+        stoch_mult: "=Stoch_S1"
+        gated_value: "=IF(C2=\"ENABLED\",B2*D2,0)"
+      - scenario: "S2"
+        base_value: "=INDEX(Scenario_BaseValues,2)"
+        gate_status: "=INDEX(Gate_S2,MATCH(Testing_Option,TestOpt_Option,0))"
+        stoch_mult: "=Stoch_S2"
+        gated_value: "=IF(C3=\"ENABLED\",B3*D3,0)"
+      - scenario: "S3"
+        base_value: "=INDEX(Scenario_BaseValues,3)"
+        gate_status: "=INDEX(Gate_S3,MATCH(Testing_Option,TestOpt_Option,0))"
+        stoch_mult: "=Stoch_S3"
+        gated_value: "=IF(C4=\"ENABLED\",B4*D4,0)"
+      - scenario: "S4"
+        base_value: "=INDEX(Scenario_BaseValues,4)"
+        gate_status: "=INDEX(Gate_S4,MATCH(Testing_Option,TestOpt_Option,0))"
+        stoch_mult: "=Stoch_S4"
+        gated_value: "=IF(C5=\"ENABLED\",B5*D5,0)"

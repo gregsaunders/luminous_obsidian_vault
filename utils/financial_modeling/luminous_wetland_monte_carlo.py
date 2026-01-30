@@ -50,6 +50,7 @@ from content_loader import (
     ContentLoader,
     ContentNotFoundError,
     ContentValidationError,
+    TableDocumentation,
     get_loader
 )
 
@@ -394,6 +395,110 @@ def write_content_section(ws, start_row: int, section, loader) -> int:
             row += 1
 
     row += 1  # Blank row after section
+    return row
+
+
+def write_table_intro(ws, row: int, table_doc, start_col: int = 1) -> int:
+    """Write table title and description above a table.
+
+    Args:
+        ws: Worksheet object
+        row: Current row position
+        table_doc: TableDocumentation object with title and description
+        start_col: Starting column (default 1)
+
+    Returns:
+        Next row position (ready for header row)
+    """
+    # Title row - bold, slightly larger
+    if table_doc.title:
+        title_cell = ws.cell(row=row, column=start_col, value=table_doc.title)
+        title_cell.font = Font(bold=True, size=11)
+        row += 1
+
+    # Description row - italic, smaller, gray background
+    if table_doc.description:
+        desc_cell = ws.cell(row=row, column=start_col, value=table_doc.description)
+        desc_cell.font = Font(italic=True, size=9, color="666666")
+        desc_cell.alignment = Alignment(wrap_text=True)
+        desc_fill = PatternFill(start_color="F2F2F2", end_color="F2F2F2", fill_type="solid")
+        desc_cell.fill = desc_fill
+        row += 1
+
+    return row
+
+
+def write_reference_section(ws, row: int, table_docs: list, start_col: int = 1) -> int:
+    """Write TABLE REFERENCE section at the bottom of a sheet.
+
+    Args:
+        ws: Worksheet object
+        row: Current row position
+        table_docs: List of TableDocumentation objects
+        start_col: Starting column (default 1)
+
+    Returns:
+        Next row position
+    """
+    # Skip if no documented tables
+    documented = [t for t in table_docs if t.purpose or t.assumptions or t.data_source]
+    if not documented:
+        return row
+
+    # Add spacing before reference section
+    row += 2
+
+    # Reference section header
+    ref_fill = PatternFill(start_color="D9E2F3", end_color="D9E2F3", fill_type="solid")
+    header_cell = ws.cell(row=row, column=start_col, value="TABLE REFERENCE")
+    header_cell.font = Font(bold=True, size=10, color="1F4E79")
+    header_cell.fill = ref_fill
+    row += 1
+
+    # Separator line
+    sep_cell = ws.cell(row=row, column=start_col, value="─" * 50)
+    sep_cell.font = Font(size=8, color="999999")
+    row += 1
+
+    # Write each table's full documentation
+    for table_doc in documented:
+        # Table name as subheader
+        name_cell = ws.cell(row=row, column=start_col, value=table_doc.table_name)
+        name_cell.font = Font(bold=True, size=10)
+        row += 1
+
+        # Purpose
+        if table_doc.purpose:
+            ws.cell(row=row, column=start_col, value=f"  Purpose: {table_doc.purpose}")
+            row += 1
+
+        # Assumptions (may be multi-line)
+        if table_doc.assumptions:
+            ws.cell(row=row, column=start_col, value="  Assumptions:")
+            row += 1
+            for line in table_doc.assumptions.strip().split('\n'):
+                line = line.strip()
+                if line.startswith('-'):
+                    line = f"    {line}"
+                else:
+                    line = f"    - {line}" if line else ""
+                if line:
+                    ws.cell(row=row, column=start_col, value=line)
+                    row += 1
+
+        # Data source
+        if table_doc.data_source:
+            ws.cell(row=row, column=start_col, value=f"  Data Source: {table_doc.data_source}")
+            row += 1
+
+        # Related tables
+        if table_doc.related_tables:
+            related = ", ".join(table_doc.related_tables)
+            ws.cell(row=row, column=start_col, value=f"  Related: {related}")
+            row += 1
+
+        row += 1  # Blank line between tables
+
     return row
 
 
@@ -1132,11 +1237,21 @@ def create_4_scenarios(wb):
     ws = wb.create_sheet("4_Scenarios")
     ws.sheet_properties.tabColor = TAB_YELLOW
 
+    # Load table documentation from YAML
+    loader = get_content_loader()
+    table_docs = loader.get_table_docs("4_scenarios")
+    collected_docs = []  # Collect for reference section
+
     ws['A1'] = "Value Scenario Definitions"
     ws['A1'].font = FONT_TITLE
 
-    # Value Scenarios
+    # Value Scenarios - with inline documentation
     row = 3
+    if 'value_scenarios' in table_docs:
+        doc = table_docs['value_scenarios']
+        collected_docs.append(doc)
+        row = write_table_intro(ws, row, doc)
+
     headers = ['ID', 'Name', 'Base_Value', 'Required_Response_Days', 'Description']
     row = write_header_row(ws, row, headers)
 
@@ -1166,9 +1281,12 @@ def create_4_scenarios(wb):
                    f"$C${scenarios_start}:$C${scenarios_end}")
     row += 2
 
-    # Model Scenarios
-    ws.cell(row=row, column=1, value="Model Scenarios").font = FONT_HEADER
-    row += 1
+    # Model Scenarios - with inline documentation
+    if 'model_scenarios' in table_docs:
+        doc = table_docs['model_scenarios']
+        collected_docs.append(doc)
+        row = write_table_intro(ws, row, doc)
+
     headers = ['Scenario', 'Discount_Adj', 'Growth_Adj', 'Risk_Adj']
     row = write_header_row(ws, row, headers)
 
@@ -1193,6 +1311,9 @@ def create_4_scenarios(wb):
         row += 1
 
     create_table(ws, "tbl_ModelScenarios", f"A{model_start-1}:D{row-1}")
+
+    # Write TABLE REFERENCE section at bottom of sheet
+    row = write_reference_section(ws, row, collected_docs)
 
     set_column_widths(ws, {'A': 12, 'B': 22, 'C': 14, 'D': 24, 'E': 40})
     return ws
@@ -2155,19 +2276,26 @@ def create_16_dashboard(wb):
     ws['A1'] = "Executive Dashboard"
     ws['A1'].font = FONT_TITLE
 
+    # Load table documentation from YAML
+    loader = get_content_loader()
+    table_docs = loader.get_table_docs("16_dashboard")
+    collected_docs = []  # Collect for reference section
+
     # Load and write context box from YAML
     row = 3
     try:
-        loader = get_content_loader()
         context = loader.get_context_box("16_dashboard")
         if context:
             row = write_context_box(ws, row, context.title, context.content, width_cols=2)
     except (ContentNotFoundError, ContentValidationError):
         pass  # Continue without context box if content not available
 
-    # KPI Summary
-    ws.cell(row=row, column=1, value="Key Performance Indicators").font = FONT_HEADER
-    row += 1
+    # KPI Summary - with inline documentation
+    if 'kpis' in table_docs:
+        doc = table_docs['kpis']
+        collected_docs.append(doc)
+        row = write_table_intro(ws, row, doc)
+
     headers = ['Metric', 'Value']
     row = write_header_row(ws, row, headers)
 
@@ -2196,9 +2324,12 @@ def create_16_dashboard(wb):
     create_table(ws, "tbl_KPIs", f"A{kpi_start-1}:B{row-1}")
     row += 1
 
-    # Scenario Value Breakdown
-    ws.cell(row=row, column=1, value="Scenario Value Breakdown").font = FONT_HEADER
-    row += 1
+    # Scenario Value Breakdown - with inline documentation
+    if 'scenario_breakdown' in table_docs:
+        doc = table_docs['scenario_breakdown']
+        collected_docs.append(doc)
+        row = write_table_intro(ws, row, doc)
+
     headers = ['Scenario', 'Gated_Value', 'Status']
     row = write_header_row(ws, row, headers)
 
@@ -2220,9 +2351,12 @@ def create_16_dashboard(wb):
     create_table(ws, "tbl_ScenarioBreakdown", f"A{breakdown_start-1}:C{row-1}")
     row += 1
 
-    # Treatment Kinetics KPIs (Kearl Integration)
-    ws.cell(row=row, column=1, value="Treatment Kinetics (Kearl 2022)").font = FONT_HEADER
-    row += 1
+    # Treatment Kinetics KPIs - with inline documentation
+    if 'treatment_kpis' in table_docs:
+        doc = table_docs['treatment_kpis']
+        collected_docs.append(doc)
+        row = write_table_intro(ws, row, doc)
+
     headers = ['Metric', 'Value', 'Status']
     row = write_header_row(ws, row, headers)
 
@@ -2255,9 +2389,12 @@ def create_16_dashboard(wb):
     create_table(ws, "tbl_TreatmentKPIs", f"A{kinetics_kpi_start-1}:C{row-1}")
     row += 1
 
-    # Testing Option Comparison
-    ws.cell(row=row, column=1, value="Testing Option Comparison").font = FONT_HEADER
-    row += 1
+    # Testing Option Comparison - with inline documentation
+    if 'option_comparison' in table_docs:
+        doc = table_docs['option_comparison']
+        collected_docs.append(doc)
+        row = write_table_intro(ws, row, doc)
+
     headers = ['Metric', 'Monthly_HRMS', 'Weekly_HRMS', 'Daily_Biosensor']
     row = write_header_row(ws, row, headers)
 
@@ -2289,6 +2426,9 @@ def create_16_dashboard(wb):
     row += 1
     ws.cell(row=row, column=1, value="Errors Found:")
     ws.cell(row=row, column=2, value="=COUNTIF('17_Checks'!D:D,\"FAIL\")")
+
+    # Write TABLE REFERENCE section at bottom of sheet
+    row = write_reference_section(ws, row, collected_docs)
 
     set_column_widths(ws, {'A': 30, 'B': 18, 'C': 16, 'D': 18})
     return ws

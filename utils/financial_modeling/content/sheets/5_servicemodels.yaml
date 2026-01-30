@@ -38,3 +38,89 @@ columns:
   Max: "Maximum value (90th percentile estimate)"
   Units: "Parameter units"
   Source: "Calibration source or rationale"
+
+tables:
+  triangular:
+    table_name: "tbl_Triangular"
+    title: "Triangular Distributions"
+    description: "Monte Carlo input parameters using triangular probability distributions for key uncertain variables."
+    purpose: "Define the uncertainty ranges for stochastic variables that drive value scenario calculations"
+    assumptions: |
+      - Triangular distribution selected for interpretability with stakeholders
+      - Min/Max represent 10th/90th percentile expert estimates, not absolute bounds
+      - Mode represents the most likely value (base case assumption)
+      - Variables are assumed independent (no correlation modeled)
+    data_source: "Expert judgment calibrated against Financial Model Framework v2.1"
+    related_tables: ["tbl_Stochastic", "tbl_GatedValues", "tbl_ValueScenarios"]
+    headers: [Variable, Min, Mode, Max, Units]
+    rows:
+      - variable: "Season_Extension_Days"
+        min: 14
+        mode: 21
+        max: 35
+        units: "days"
+      - variable: "Extension_Value_Per_Day"
+        min: 3000
+        mode: 7500
+        max: 15000
+        units: "$/day"
+      - variable: "Interventions_Avoided"
+        min: 1
+        mode: 3
+        max: 8
+        units: "events"
+      - variable: "Treatment_Rate_Factor"
+        min: 0.70
+        mode: 1.00
+        max: 1.30
+        units: "multiplier"
+
+  beta:
+    table_name: "tbl_Beta"
+    title: "Beta Distributions"
+    description: "Monte Carlo input parameters using beta distributions for bounded percentage variables."
+    purpose: "Model uncertainty in efficiency and probability parameters that must stay within 0-100% bounds"
+    assumptions: |
+      - Beta distribution ensures values stay within specified bounds
+      - Alpha/Beta parameters shape the distribution skewness
+      - Used for variables that represent percentages or bounded factors
+    data_source: "Expert judgment for efficiency and probability estimates"
+    related_tables: ["tbl_Triangular", "tbl_Stochastic"]
+    headers: [Variable, Alpha, Beta, Min, Max, Units]
+    rows:
+      - variable: "Efficiency_Gain"
+        alpha: 2
+        beta: 5
+        min: 0.05
+        max: 0.40
+        units: "%"
+
+  value_sensitivity:
+    table_name: "tbl_ValueSensitivity"
+    title: "Value Per M3 Sensitivity Frames"
+    description: "Alternative value framing approaches for sensitivity analysis and stakeholder communication."
+    purpose: "Provide multiple perspectives on value per cubic meter of treated water"
+    assumptions: |
+      - Operational frame: Direct operational cost savings
+      - Avoided Treatment frame: Value of alternatives not needed
+      - ARO Liability frame: Asset retirement obligation cost reduction (Zhang 2026)
+      - Values are illustrative ranges for framing discussions
+    data_source: "Zhang (2026) analysis for ARO frame; operational estimates for others"
+    related_tables: ["tbl_ValueScenarios", "tbl_KPIs"]
+    headers: [Frame, Low, Base, High, Context]
+    rows:
+      - frame: "Operational"
+        low: 3
+        base: 5
+        high: 8
+        context: "Direct operational benefit"
+      - frame: "Avoided Treatment"
+        low: 10
+        base: 20
+        high: 30
+        context: "Alternative treatment costs"
+      - frame: "ARO Liability"
+        low: 21
+        base: 50
+        high: 93
+        context: "Zhang (2026) analysis"

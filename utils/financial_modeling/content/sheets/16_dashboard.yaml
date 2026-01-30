@@ -27,6 +27,145 @@ context_box:
     Press Ctrl+Alt+F9 to regenerate all 1000 Monte Carlo iterations.
     Dashboard values update automatically.
 
+tables:
+  kpis:
+    table_name: "tbl_KPIs"
+    title: "Key Performance Indicators"
+    description: "Primary Monte Carlo simulation outputs and financial metrics for executive decision-making."
+    purpose: "Provide at-a-glance summary of biosensor investment value and risk profile"
+    assumptions: |
+      - NPV calculated over 5-year horizon with 7% discount rate
+      - P10/P50/P90 derived from 1000 Monte Carlo iterations
+      - All metrics assume Daily Biosensor as selected testing option
+      - Values refresh when Monte Carlo simulation is recalculated
+    data_source: "Calculated from 10_Calc_Sim Monte Carlo simulation results"
+    related_tables: ["tbl_ScenarioBreakdown", "tbl_Annual", "tbl_CashFlow"]
+    headers: [Metric, Value]
+    rows:
+      - metric: "Selected Testing Option"
+        value: "=Testing_Option"
+      - metric: "Expected NPV (5-Year)"
+        value: "=NPV_Total"
+      - metric: "Monte Carlo P10"
+        value: "=MC_P10"
+      - metric: "Monte Carlo P50"
+        value: "=MC_P50"
+      - metric: "Monte Carlo P90"
+        value: "=MC_P90"
+      - metric: "Probability NPV > 0"
+        value: "=MC_Prob_Positive"
+      - metric: "Annual Testing Cost"
+        value: "=Testing_Cost"
+      - metric: "Year 1 Gross Value"
+        value: "=Year1_Gross_Value"
+      - metric: "Year 1 Net Value"
+        value: "=Year1_Net_Value"
+
+  scenario_breakdown:
+    table_name: "tbl_ScenarioBreakdown"
+    title: "Scenario Value Breakdown"
+    description: "Individual scenario contributions to total gated value with gate status."
+    purpose: "Show which value scenarios are captured by the selected testing option"
+    assumptions: |
+      - Gate status determined by testing latency vs required response time
+      - ENABLED means testing latency allows capturing this value
+      - BLOCKED means testing latency prevents capturing this value
+      - Values are stochastic and vary with each Monte Carlo iteration
+    data_source: "Calculated from 8_Calc_Value gating logic and stochastic multipliers"
+    related_tables: ["tbl_KPIs", "tbl_ValueScenarios", "tbl_GatedValues"]
+    headers: [Scenario, Gated_Value, Status]
+    rows:
+      - scenario: "S1: Season Extension"
+        gated_value: "=S1_Value"
+        status: "=INDEX(Gate_S1,MATCH(Testing_Option,TestOpt_Option,0))"
+      - scenario: "S2: Intervention Avoidance"
+        gated_value: "=S2_Value"
+        status: "=INDEX(Gate_S2,MATCH(Testing_Option,TestOpt_Option,0))"
+      - scenario: "S3: Spatial Routing"
+        gated_value: "=S3_Value"
+        status: "=INDEX(Gate_S3,MATCH(Testing_Option,TestOpt_Option,0))"
+      - scenario: "S4: Early Detection"
+        gated_value: "=S4_Value"
+        status: "=INDEX(Gate_S4,MATCH(Testing_Option,TestOpt_Option,0))"
+
+  treatment_kpis:
+    table_name: "tbl_TreatmentKPIs"
+    title: "Treatment Kinetics (Kearl 2022)"
+    description: "NAFC degradation parameters and Monte Carlo treatment time estimates."
+    purpose: "Validate that biosensor-enabled treatment achieves regulatory compliance within season"
+    assumptions: |
+      - Based on Kearl (2022) first-order kinetics model for NAFC degradation
+      - Initial/target NAFC concentrations from site characterization data
+      - Treatment rate factor varies stochastically (0.7-1.3 multiplier)
+      - Season length constraint of 120 days for Alberta operations
+    data_source: "Kearl (2022) wetland treatment kinetics research"
+    related_tables: ["tbl_KPIs", "tbl_Triangular", "tbl_TreatmentKinetics"]
+    headers: [Metric, Value, Status]
+    rows:
+      - metric: "Initial NAFC Concentration"
+        value: "=Initial_NAFC"
+        status: '=IF(Initial_NAFC>Target_NAFC,"Above Target","At/Below Target")'
+      - metric: "Target NAFC Concentration"
+        value: "=Target_NAFC"
+        status: '"-"'
+      - metric: "Days to Regulatory Compliance"
+        value: "=Days_to_Compliance"
+        status: "=Compliance_Status"
+      - metric: "Circulation Cycles Required"
+        value: "=Circulation_Cycles"
+        status: '=IF(Circulation_Cycles<=3,"Standard","Extended")'
+      - metric: "Treatment Efficiency"
+        value: "=Treatment_Efficiency"
+        status: '=IF(Treatment_Efficiency>0.2,"Good","Low")'
+      - metric: "MC Expected Days"
+        value: "=MC_Expected_Days"
+        status: '=IF(MC_Expected_Days<=Season_Length,"Achievable","Risk")'
+      - metric: "MC P90 Days (conservative)"
+        value: "=MC_P90_Days"
+        status: '=IF(MC_P90_Days<=Season_Length,"Low Risk","High Risk")'
+      - metric: "MC Prob(Achievable)"
+        value: "=MC_Prob_Achievable"
+        status: '=IF(MC_Prob_Achievable>=0.9,"High Confidence","Review Required")'
+
+  option_comparison:
+    table_name: "tbl_OptionComparison"
+    title: "Testing Option Comparison"
+    description: "Side-by-side comparison of gate status and value across all testing options."
+    purpose: "Demonstrate the value differential between HRMS and biosensor testing approaches"
+    assumptions: |
+      - Monthly HRMS: 42-day turnaround, $60K/season
+      - Weekly HRMS: 42-day turnaround, $28.6K/season
+      - Daily Biosensor: 1-day turnaround, $10K/season
+      - Gate status determined by latency vs required response time
+    data_source: "Testing cost quotes and operational latency measurements"
+    related_tables: ["tbl_KPIs", "tbl_TestOptions", "tbl_LatencyGating"]
+    headers: [Metric, Monthly_HRMS, Weekly_HRMS, Daily_Biosensor]
+    rows:
+      - metric: "S1 Gate"
+        monthly_hrms: "BLOCKED"
+        weekly_hrms: "BLOCKED"
+        daily_biosensor: "ENABLED"
+      - metric: "S2 Gate"
+        monthly_hrms: "BLOCKED"
+        weekly_hrms: "BLOCKED"
+        daily_biosensor: "ENABLED"
+      - metric: "S3 Gate"
+        monthly_hrms: "BLOCKED"
+        weekly_hrms: "ENABLED"
+        daily_biosensor: "ENABLED"
+      - metric: "S4 Gate"
+        monthly_hrms: "BLOCKED"
+        weekly_hrms: "BLOCKED"
+        daily_biosensor: "ENABLED"
+      - metric: "Testing Cost/Season"
+        monthly_hrms: "$60,000"
+        weekly_hrms: "$28,571"
+        daily_biosensor: "$10,000"
+      - metric: "Potential 5-Year NPV"
+        monthly_hrms: "-$29k"
+        weekly_hrms: "$180k"
+        daily_biosensor: "$1.1M+"
+
 kpis:
   - name: "Expected NPV (5-Year)"
     source: "NPV_Total"

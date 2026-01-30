@@ -61,7 +61,33 @@ class ChangeLogContent(BaseModel):
 
 
 class TableDefinition(BaseModel):
-    """A table structure for embedding in sheets."""
+    """A table structure for embedding in sheets (legacy, use TableDocumentation)."""
+    headers: List[str]
+    rows: List[Union[List[Any], Dict[str, Any]]]
+
+
+class TableDocumentation(BaseModel):
+    """Full metadata for table documentation with inline and reference content.
+
+    Inline (above table):
+        - title: Brief title displayed above table
+        - description: 1-2 sentence explanation
+
+    Reference section (bottom of sheet):
+        - purpose: Why this table exists
+        - assumptions: Key assumptions affecting interpretation
+        - data_source: Where the data comes from
+        - related_tables: Cross-references to related tables
+    """
+    table_name: str
+    title: Optional[str] = None
+    description: Optional[str] = None
+    # Extended metadata for reference section
+    purpose: Optional[str] = None
+    assumptions: Optional[str] = None
+    data_source: Optional[str] = None
+    related_tables: Optional[List[str]] = None
+    # Table structure
     headers: List[str]
     rows: List[Union[List[Any], Dict[str, Any]]]
 
@@ -72,7 +98,7 @@ class SectionContent(BaseModel):
     title: str
     intro: Optional[str] = None
     content: Optional[List[str]] = None
-    table: Optional[TableDefinition] = None
+    table: Optional[Union[TableDefinition, TableDocumentation]] = None
     source: Optional[str] = None  # Reference to global content file
     subsections: Optional[List['SectionContent']] = None
     source_citation: Optional[str] = None
@@ -98,6 +124,9 @@ class SheetContent(BaseModel):
     sections: Optional[List[SectionContent]] = None
     context_box: Optional[ContextBox] = None
     columns: Optional[Dict[str, str]] = None  # Column name -> description
+    # NEW: Standardized tables dictionary with full documentation
+    tables: Optional[Dict[str, TableDocumentation]] = None
+    # LEGACY: Keep for backward compatibility during migration
     value_scenarios: Optional[Dict[str, Any]] = None
     model_scenarios: Optional[Dict[str, Any]] = None
     checks: Optional[Dict[str, Any]] = None
@@ -328,6 +357,40 @@ class ContentLoader:
                     return section
         raise ContentNotFoundError(
             f"Section '{section_id}' not found in {sheet_id}.yaml"
+        )
+
+    def get_table_docs(self, sheet_id: str) -> Dict[str, TableDocumentation]:
+        """
+        Get all table documentation for a sheet.
+
+        Args:
+            sheet_id: Sheet identifier.
+
+        Returns:
+            Dict mapping table keys to TableDocumentation objects.
+        """
+        content = self.load_sheet_content(sheet_id)
+        return content.tables or {}
+
+    def get_table_doc(self, sheet_id: str, table_key: str) -> TableDocumentation:
+        """
+        Get documentation for a specific table.
+
+        Args:
+            sheet_id: Sheet identifier.
+            table_key: Table key within the tables dict.
+
+        Returns:
+            TableDocumentation object.
+
+        Raises:
+            ContentNotFoundError: If table not found.
+        """
+        tables = self.get_table_docs(sheet_id)
+        if table_key in tables:
+            return tables[table_key]
+        raise ContentNotFoundError(
+            f"Table '{table_key}' not found in {sheet_id}.yaml"
         )
 
     # -------------------------------------------------------------------------

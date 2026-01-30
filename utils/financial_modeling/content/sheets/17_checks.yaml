@@ -31,76 +31,87 @@ context_box:
     The 0_Cover sheet shows overall model health status.
     Any FAIL here will trigger the "Review 17_Checks" warning.
 
-checks:
-  table_name: "tbl_Checks"
-  headers: [Check_ID, Category, Description, Formula]
-  rows:
-    - check_id: "CHK001"
-      category: "Range"
-      description: "Discount rate between 0-15%"
-      formula: '=IF(AND(Discount_Rate>=0,Discount_Rate<=0.15),"PASS","FAIL")'
+tables:
+  checks:
+    table_name: "tbl_Checks"
+    title: "Model Validation Checks"
+    description: "Automated validation rules that verify model inputs and outputs are within acceptable ranges."
+    purpose: "Ensure model integrity by detecting invalid inputs, inconsistent parameters, and unreasonable outputs"
+    assumptions: |
+      - Range checks based on reasonable operational bounds
+      - Sanity checks based on expected order-of-magnitude for outputs
+      - Consistency checks ensure related parameters are logically coherent
+      - PASS/FAIL status updates automatically when inputs change
+    data_source: "Validation rules based on domain expertise and operational constraints"
+    related_tables: ["tbl_Control", "tbl_KPIs", "tbl_ValueScenarios"]
+    headers: [Check_ID, Category, Description, Status]
+    rows:
+      - check_id: "CHK001"
+        category: "Range"
+        description: "Discount rate between 0-15%"
+        status: '=IF(AND(Discount_Rate>=0,Discount_Rate<=0.15),"PASS","FAIL")'
 
-    - check_id: "CHK002"
-      category: "Range"
-      description: "Season length between 60-150 days"
-      formula: '=IF(AND(Season_Length>=60,Season_Length<=150),"PASS","FAIL")'
+      - check_id: "CHK002"
+        category: "Range"
+        description: "Season length between 60-150 days"
+        status: '=IF(AND(Season_Length>=60,Season_Length<=150),"PASS","FAIL")'
 
-    - check_id: "CHK003"
-      category: "Range"
-      description: "Projection years between 1-10"
-      formula: '=IF(AND(Projection_Years>=1,Projection_Years<=10),"PASS","FAIL")'
+      - check_id: "CHK003"
+        category: "Range"
+        description: "Projection years between 1-10"
+        status: '=IF(AND(Projection_Years>=1,Projection_Years<=10),"PASS","FAIL")'
 
-    - check_id: "CHK004"
-      category: "Range"
-      description: "Wetland area between 0.1-10 ha"
-      formula: '=IF(AND(Wetland_Area>=0.1,Wetland_Area<=10),"PASS","FAIL")'
+      - check_id: "CHK004"
+        category: "Range"
+        description: "Wetland area between 0.1-10 ha"
+        status: '=IF(AND(Wetland_Area>=0.1,Wetland_Area<=10),"PASS","FAIL")'
 
-    - check_id: "CHK005"
-      category: "Range"
-      description: "Annual throughput between 1000-500000 m3"
-      formula: '=IF(AND(Annual_Throughput>=1000,Annual_Throughput<=500000),"PASS","FAIL")'
+      - check_id: "CHK005"
+        category: "Range"
+        description: "Annual throughput between 1000-500000 m3"
+        status: '=IF(AND(Annual_Throughput>=1000,Annual_Throughput<=500000),"PASS","FAIL")'
 
-    - check_id: "CHK006"
-      category: "Range"
-      description: "Value per m3 between $1-$20"
-      formula: '=IF(AND(Value_Per_M3>=1,Value_Per_M3<=20),"PASS","FAIL")'
+      - check_id: "CHK006"
+        category: "Range"
+        description: "Value per m3 between $1-$20"
+        status: '=IF(AND(Value_Per_M3>=1,Value_Per_M3<=20),"PASS","FAIL")'
 
-    - check_id: "CHK007"
-      category: "Sanity"
-      description: "NPV within reasonable bounds (-$1M to $10M)"
-      formula: '=IF(AND(NPV_Total>-1000000,NPV_Total<10000000),"PASS","FAIL")'
+      - check_id: "CHK007"
+        category: "Sanity"
+        description: "NPV within reasonable bounds (-$1M to $10M)"
+        status: '=IF(AND(NPV_Total>-1000000,NPV_Total<10000000),"PASS","FAIL")'
 
-    - check_id: "CHK008"
-      category: "Consistency"
-      description: "Testing option is valid selection"
-      formula: '=IF(COUNTIF(TestOpt_Option,Testing_Option)>0,"PASS","FAIL")'
+      - check_id: "CHK008"
+        category: "Consistency"
+        description: "Testing option is valid selection"
+        status: '=IF(COUNTIF(TestOpt_Option,Testing_Option)>0,"PASS","FAIL")'
 
-    - check_id: "CHK009"
-      category: "Consistency"
-      description: "Scenario selection is valid"
-      formula: '=IF(OR(Scenario_Select="Base",Scenario_Select="Conservative",Scenario_Select="Optimistic"),"PASS","FAIL")'
+      - check_id: "CHK009"
+        category: "Consistency"
+        description: "Scenario selection is valid"
+        status: '=IF(OR(Scenario_Select="Base",Scenario_Select="Conservative",Scenario_Select="Optimistic"),"PASS","FAIL")'
 
-    - check_id: "CHK010"
-      category: "Range"
-      description: "Learning curve multipliers between 0-1.5"
-      formula: '=IF(AND(MIN(LearningCurve_Mult)>=0,MAX(LearningCurve_Mult)<=1.5),"PASS","FAIL")'
+      - check_id: "CHK010"
+        category: "Range"
+        description: "Learning curve multipliers between 0-1.5"
+        status: '=IF(AND(MIN(LearningCurve_Mult)>=0,MAX(LearningCurve_Mult)<=1.5),"PASS","FAIL")'
 
-    - check_id: "CHK011"
-      category: "Range"
-      description: "Initial NAFC concentration positive"
-      formula: '=IF(Initial_NAFC>0,"PASS","FAIL")'
+      - check_id: "CHK011"
+        category: "Range"
+        description: "Initial NAFC concentration positive"
+        status: '=IF(Initial_NAFC>0,"PASS","FAIL")'
 
-    - check_id: "CHK012"
-      category: "Range"
-      description: "Target NAFC less than initial"
-      formula: '=IF(Target_NAFC<Initial_NAFC,"PASS","FAIL")'
+      - check_id: "CHK012"
+        category: "Range"
+        description: "Target NAFC less than initial"
+        status: '=IF(Target_NAFC<Initial_NAFC,"PASS","FAIL")'
 
-    - check_id: "CHK013"
-      category: "Range"
-      description: "Treatment days positive"
-      formula: '=IF(Treatment_Days>0,"PASS","FAIL")'
+      - check_id: "CHK013"
+        category: "Range"
+        description: "Treatment days positive"
+        status: '=IF(Treatment_Days>0,"PASS","FAIL")'
 
-    - check_id: "CHK014"
-      category: "Range"
-      description: "Treatment rates positive"
-      formula: '=IF(AND(Eff_Rapid_Rate>0,Eff_Slow_Rate>0),"PASS","FAIL")'
+      - check_id: "CHK014"
+        category: "Range"
+        description: "Treatment rates positive"
+        status: '=IF(AND(Eff_Rapid_Rate>0,Eff_Slow_Rate>0),"PASS","FAIL")'
