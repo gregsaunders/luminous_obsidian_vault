@@ -440,9 +440,10 @@ def write_table_intro(ws, row: int, table_doc, start_col: int = 1, width_cols: i
                            end_row=row, end_column=end_col)
 
         # Set row height based on content length
-        chars_per_row = max(1, (width_cols - 1) * 12)
+        # ~20 chars per column width, 13 points per line
+        chars_per_row = max(1, (width_cols - 1) * 20)
         estimated_lines = max(1, len(content) // chars_per_row + 1)
-        ws.row_dimensions[row].height = max(15, estimated_lines * 15)
+        ws.row_dimensions[row].height = max(13, estimated_lines * 13)
         row += 1
         return row
 
