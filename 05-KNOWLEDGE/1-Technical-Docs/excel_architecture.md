@@ -1,6 +1,6 @@
-# Luminous 18-Sheet Excel Standard
+# Luminous Excel Architecture Standard
 
-**Version:** 3.0
+**Version:** 3.1
 **Date:** 2026-01-29
 **Standard:** [FAST Standard Organisation](https://www.fast-standard.org/)
 
@@ -8,12 +8,13 @@
 
 ## Overview
 
-This document defines the Luminous 18-sheet Excel architecture standard for financial models. Based on the FAST (Flexible, Appropriate, Structured, Transparent) methodology, this standard ensures:
+This document defines the Luminous Excel architecture standard for financial models. Based on the FAST (Flexible, Appropriate, Structured, Transparent) methodology, this standard ensures:
 
 - **Transparency**: All calculations visible in Excel formulas
 - **Auditability**: Clear data flow from inputs to outputs
 - **Interactivity**: User-adjustable inputs that recalculate in real-time
 - **Scalability**: Portfolio-level aggregation via numerical prefixes
+- **Extensibility**: New sheets can be added within each category
 
 ---
 
@@ -21,17 +22,37 @@ This document defines the Luminous 18-sheet Excel architecture standard for fina
 
 ### Numerical Prefix Standard
 
-All sheets use numerical prefixes (0-17) to ensure:
-- Consistent tab sorting across workbooks
-- Easy reference in formulas
-- Portfolio aggregation compatibility
+Sheets use numerical prefixes organized by **category ranges**:
+
+| Range | Category | Purpose |
+|-------|----------|---------|
+| 0-2 | Navigation/Control | Cover, TOC, Instructions |
+| 3-5 | Input | Assumptions, Scenarios, Distributions |
+| 6-19 | Calculation | All calculation engines |
+| 20-29 | Output | P&L, Cash Flow, Dashboards |
+| 30+ | Validation | Checks, Audits |
+
+This range-based approach allows adding sheets within each category without restructuring.
+
+### Core Sheets (Required)
+
+These sheets form the minimum viable model:
 
 | Index | Sheet Name | Category | Purpose |
 |-------|------------|----------|---------|
 | 0 | `0_Cover` | Navigation | Model hub, status summary |
 | 1 | `1_TOC` | Control | Table of contents, navigation |
 | 2 | `2_Instructions` | Reference | Methodology, data sources, glossary |
-| 3 | `3_Assumptions` | Input | ALL inputs consolidated (timing, site config, costs, testing) |
+| 3 | `3_Assumptions` | Input | Primary inputs (timing, site config, costs) |
+| 20 | `20_Dashboard` | Output | Executive summary, KPIs |
+| 30 | `30_Checks` | Validation | Integrity checks |
+
+### Standard Sheets (Typical Model)
+
+A typical model includes these additional sheets:
+
+| Index | Sheet Name | Category | Purpose |
+|-------|------------|----------|---------|
 | 4 | `4_Scenarios` | Input | Value scenario definitions |
 | 5 | `5_ServiceModels` | Input | Monte Carlo distribution parameters |
 | 6 | `6_Calc_Timeline` | Calculation | Time series generation |
@@ -39,13 +60,28 @@ All sheets use numerical prefixes (0-17) to ensure:
 | 8 | `8_Calc_Value` | Calculation | Gated value calculations |
 | 9 | `9_Calc_Costs` | Calculation | Cost calculations |
 | 10 | `10_Calc_Sim` | Calculation | Data Table Monte Carlo (1000 iterations) |
-| 11 | `11_PL_Monthly` | Output | Monthly P&L (placeholder for future) |
-| 12 | `12_PL_Annual` | Output | Annual projections |
-| 13 | `13_CashFlow` | Output | Cumulative projections, NPV |
-| 14 | `14_UnitEconomics` | Output | Cost/value per m³, breakeven analysis |
 | 15 | `15_Sensitivity` | Calculation | Tornado analysis |
-| 16 | `16_Dashboard` | Output | Executive summary, KPIs |
-| 17 | `17_Checks` | Validation | Integrity checks |
+| 21 | `21_PL_Annual` | Output | Annual projections |
+| 22 | `22_CashFlow` | Output | Cumulative projections, NPV |
+| 23 | `23_UnitEconomics` | Output | Cost/value per m³, breakeven analysis |
+
+### Adding New Sheets
+
+When extending the model:
+
+1. **Identify the category** (Input, Calculation, Output, Validation)
+2. **Choose an available index** within the category range
+3. **Follow naming convention**: `<Index>_<Category>_<Description>` or `<Index>_<Description>`
+4. **Update the TOC** sheet with the new sheet reference
+5. **Register in LOCATIONS** if using Python generator
+
+**Examples of valid extensions:**
+- `11_Calc_Reserves` - Additional calculation for reserve modeling
+- `12_Calc_Emissions` - Carbon/emissions calculations
+- `16_Calc_Regulatory` - Regulatory compliance calculations
+- `24_PL_Monthly` - Monthly P&L detail
+- `25_Waterfall` - Waterfall chart data
+- `31_Audit_Trail` - Detailed audit logging
 
 ---
 
@@ -53,20 +89,20 @@ All sheets use numerical prefixes (0-17) to ensure:
 
 Visual categorization by sheet type:
 
-| Category | Color | RGB | Sheets |
-|----------|-------|-----|--------|
-| Navigation | White | `#FFFFFF` | 0_Cover |
-| Control | Yellow | `#FFFF00` | 1_TOC |
-| Reference | Gray | `#808080` | 2_Instructions |
-| Input | Yellow | `#FFFF00` | 3-5 (Assumptions, Scenarios, ServiceModels) |
-| Calculation | Blue | `#4472C4` | 6-10, 15 (Calc_*, Sensitivity) |
-| Output | Green | `#70AD47` | 11-14, 16 (PL_*, CashFlow, UnitEconomics, Dashboard) |
-| Validation | Red | `#FF0000` | 17_Checks |
+| Category | Color | RGB | Index Range |
+|----------|-------|-----|-------------|
+| Navigation | White | `#FFFFFF` | 0 |
+| Control | Yellow | `#FFFF00` | 1 |
+| Reference | Gray | `#808080` | 2 |
+| Input | Yellow | `#FFFF00` | 3-5 |
+| Calculation | Blue | `#4472C4` | 6-19 |
+| Output | Green | `#70AD47` | 20-29 |
+| Validation | Red | `#FF0000` | 30+ |
 
 ### User-Editable Indicators
 
 - **Yellow fill** (`#FFFF99`) on cells that users can modify
-- Input sheets (3-5) contain all user-editable cells
+- Input sheets (range 3-5) contain all user-editable cells
 - Calculation and Reference sheets are protected
 
 ---
@@ -107,22 +143,25 @@ Use descriptive, CamelCase names:
 ## Data Flow Architecture
 
 ```
-[INPUT SHEETS]           [CALCULATION SHEETS]              [OUTPUT]
+[INPUT: 3-5]             [CALCULATION: 6-19]               [OUTPUT: 20-29]
 
 1_TOC ────────────┐
 3_Assumptions ────┼──► 6_Calc_Timeline ───────────────┐
 4_Scenarios ──────┤    7_Calc_Stochastic              │
 5_ServiceModels ──┘    8_Calc_Value                   │
-                       9_Calc_Costs                   ├──► 16_Dashboard
+                       9_Calc_Costs                   ├──► 20_Dashboard
                        10_Calc_Sim                    │
                        15_Sensitivity ────────────────┤
+                       [Additional Calc sheets...]    │
                                                       │
-                       12_PL_Annual ──────────────────┤
-                       13_CashFlow ───────────────────┤
-                       14_UnitEconomics ──────────────┘
+                       21_PL_Annual ──────────────────┤
+                       22_CashFlow ───────────────────┤
+                       23_UnitEconomics ──────────────┘
+                       [Additional Output sheets...]
 
                                       ▼
-                                17_Checks ◄───────────────────────┘
+                                30_Checks ◄───────────────────────┘
+                                [Additional Validation sheets...]
 ```
 
 ### Flow Rules
@@ -245,16 +284,13 @@ Health: =IF(COUNTIF(tbl_Checks[Status], "FAIL")=0,
 
 ### Protected Sheets (Locked)
 
-- `6_Calc_*` through `10_Calc_Sim` - Calculation engine
-- `15_Sensitivity` - Tornado analysis
-- `17_Checks` - Validation logic
+- All Calculation sheets (index range 6-19)
+- All Validation sheets (index range 30+)
 
 ### Unprotected Sheets (Editable)
 
 - `1_TOC` - Navigation
-- `3_Assumptions` - All business assumptions
-- `4_Scenarios` - Scenario definitions
-- `5_ServiceModels` - Distribution parameters
+- All Input sheets (index range 3-5)
 
 ### Cell-Level Formatting
 
@@ -271,6 +307,7 @@ Sheet `2_Instructions` contains change log table:
 
 | Version | Date | Author | Changes |
 |---------|------|--------|---------|
+| 3.1 | 2026-01-29 | [Author] | Range-based indexing for extensibility, Core vs Standard sheets |
 | 3.0 | 2026-01-29 | [Author] | FAST 18-sheet standardization, LOCATIONS registry |
 | 2.0 | 2026-01-29 | [Author] | FAST migration, Excel-native MC |
 
@@ -321,7 +358,7 @@ The financial model is generated by `luminous_wetland_monte_carlo.py` which:
 
 1. Uses a **LOCATIONS registry** to track all cell addresses
 2. Generates formulas via `loc()` helper function
-3. Creates all 18 sheets in numerical order (0-17)
+3. Creates sheets in numerical order based on index ranges
 4. Writes formulas only - Excel performs all calculations
 
 ### LOCATIONS Registry Pattern
@@ -339,6 +376,31 @@ def register_location(var_name: str, sheet: str, col: str, row: int):
 ```
 
 This pattern eliminates brittle find/replace operations and ensures all cross-sheet references are tracked centrally.
+
+### Adding New Sheets in Python
+
+When extending the generator:
+
+```python
+# Define sheet indices at module level for clarity
+SHEET_INDICES = {
+    'Cover': 0,
+    'TOC': 1,
+    'Instructions': 2,
+    'Assumptions': 3,
+    'Scenarios': 4,
+    'ServiceModels': 5,
+    'Calc_Timeline': 6,
+    'Calc_Stochastic': 7,
+    # ... add new calculation sheets in range 6-19
+    'Calc_NewFeature': 11,  # Example extension
+    'Dashboard': 20,
+    'PL_Annual': 21,
+    'CashFlow': 22,
+    # ... add new output sheets in range 20-29
+    'Checks': 30,
+}
+```
 
 ---
 
