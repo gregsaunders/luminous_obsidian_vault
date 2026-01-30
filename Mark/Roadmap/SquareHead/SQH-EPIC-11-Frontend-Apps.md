@@ -34,7 +34,7 @@ Flutter monorepo for desktop/mobile/web apps, plus React graph visualizer. Dynam
 
 **What's needed:** Documentation, desktop sync completion, maintenance, web modernization
 
-**Depends on:** [SQH-EPIC-02: Base UI Kit](SQH-EPIC-02-Base-UI-Kit.md) for shared components
+**Depends on:** [SQH-EPIC-04: Base UI Kit](SQH-EPIC-04-Base-UI-Kit.md) for shared components
 
 ---
 

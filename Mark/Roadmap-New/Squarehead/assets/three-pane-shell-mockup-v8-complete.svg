@@ -1,0 +1,288 @@
+<svg viewBox="0 0 900 520" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <!-- Light Mode Color Palette (WCAG AA Compliant) -->
+  <!-- Background: #F8FAFC, Surface: #FFFFFF, Surface Elevated: #F1F5F9 -->
+  <!-- Border: #E2E8F0, Primary: #2563EB, Accent: #7C3AED -->
+  <!-- Text Primary: #1E293B, Text Secondary: #475569, Text Muted: #64748B -->
+  <!-- Success: #16A34A, Warning: #CA8A04 -->
+
+  <defs>
+    <!-- Shimmer gradient for chat micro-action -->
+    <linearGradient id="chatShimmer" gradientUnits="userSpaceOnUse" x1="300" y1="0" x2="400" y2="40">
+      <stop offset="0%" stop-color="rgba(255,255,255,0)"/>
+      <stop offset="35%" stop-color="rgba(255,255,255,0)"/>
+      <stop offset="45%" stop-color="rgba(255,255,255,0.5)"/>
+      <stop offset="50%" stop-color="rgba(255,255,255,0.8)"/>
+      <stop offset="55%" stop-color="rgba(255,255,255,0.5)"/>
+      <stop offset="65%" stop-color="rgba(255,255,255,0)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+      <animate attributeName="x1" from="300" to="650" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="x2" from="400" to="750" dur="1.5s" repeatCount="indefinite"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="520" fill="#F8FAFC"/>
+
+  <!-- Header Bar - Full Width -->
+  <rect x="0" y="0" width="900" height="40" fill="#FFFFFF"/>
+  <line x1="0" y1="40" x2="900" y2="40" stroke="#E2E8F0" stroke-width="1"/>
+
+  <!-- Hamburger Menu -->
+  <text x="20" y="26" fill="#1E293B" font-size="16">☰</text>
+  <text x="60" y="26" fill="#1E293B" font-size="14" font-weight="bold">SquareHead</text>
+
+  <!-- Menu items -->
+  <text x="180" y="26" fill="#2563EB" font-size="12" font-weight="500">Invoices</text>
+  <text x="260" y="26" fill="#475569" font-size="12">Bills</text>
+  <text x="310" y="26" fill="#475569" font-size="12">Ledger</text>
+  <text x="380" y="26" fill="#475569" font-size="12">Reports</text>
+
+  <!-- Search bar -->
+  <rect x="500" y="10" width="180" height="22" rx="4" fill="#F1F5F9" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="515" y="25" fill="#64748B" font-size="11">Search...</text>
+  <text x="820" y="26" fill="#1E293B" font-size="12">🔔  👤 Mark</text>
+
+  <!-- Icon Rail -->
+  <rect x="0" y="40" width="48" height="480" fill="#F1F5F9"/>
+  <line x1="48" y1="40" x2="48" y2="520" stroke="#E2E8F0" stroke-width="1"/>
+
+  <!-- App icons in rail -->
+  <rect x="8" y="55" width="32" height="32" rx="6" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="16" y="78" fill="#1E293B" font-size="14">📊</text>
+
+  <rect x="8" y="95" width="32" height="32" rx="6" fill="#2563EB"/>
+  <text x="16" y="118" fill="#FFFFFF" font-size="14">💰</text>
+
+  <rect x="8" y="135" width="32" height="32" rx="6" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="16" y="158" fill="#1E293B" font-size="14">🧪</text>
+
+  <text x="16" y="460" fill="#64748B" font-size="14">⚙️</text>
+
+  <!-- App Content Pane (left side) -->
+  <rect x="48" y="40" width="300" height="480" fill="#FFFFFF"/>
+  <line x1="348" y1="40" x2="348" y2="520" stroke="#E2E8F0" stroke-width="1"/>
+
+  <!-- Tabs -->
+  <rect x="48" y="40" width="300" height="30" fill="#F1F5F9"/>
+  <rect x="58" y="47" width="80" height="18" rx="3" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="68" y="60" fill="#64748B" font-size="9">All Invoices</text>
+  <rect x="145" y="47" width="95" height="18" rx="3" fill="#2563EB"/>
+  <text x="155" y="60" fill="#FFFFFF" font-size="9">INV-2026-0043</text>
+
+  <!-- Breadcrumbs -->
+  <text x="58" y="85" fill="#64748B" font-size="9">🏠 › Invoices › INV-2026-0043</text>
+
+  <!-- Form header -->
+  <rect x="48" y="95" width="300" height="35" fill="#F8FAFC"/>
+  <text x="60" y="118" fill="#1E293B" font-size="12" font-weight="600">Edit Invoice</text>
+  <!-- AI indicator - completed -->
+  <rect x="145" y="103" width="45" height="18" rx="9" fill="#DCFCE7" stroke="#86EFAC" stroke-width="1"/>
+  <text x="153" y="115" fill="#16A34A" font-size="8">🤖 AI ✓</text>
+  <!-- Send button now active -->
+  <rect x="250" y="102" width="40" height="22" rx="4" fill="#2563EB"/>
+  <text x="258" y="117" fill="#FFFFFF" font-size="10">Send</text>
+  <rect x="200" y="102" width="45" height="22" rx="4" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="210" y="117" fill="#475569" font-size="10">Draft</text>
+
+  <!-- Form fields -->
+  <!-- Customer - COMPLETED -->
+  <text x="60" y="150" fill="#475569" font-size="10">Customer</text>
+  <rect x="60" y="155" width="270" height="28" rx="4" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="70" y="174" fill="#1E293B" font-size="11">Acme Corporation</text>
+  <text x="310" y="174" fill="#16A34A" font-size="12">✓</text>
+
+  <!-- Invoice Number - COMPLETED -->
+  <text x="60" y="198" fill="#475569" font-size="10">Invoice Number</text>
+  <rect x="60" y="203" width="270" height="28" rx="4" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="70" y="222" fill="#64748B" font-size="11">INV-2026-0043</text>
+  <text x="310" y="222" fill="#16A34A" font-size="12">✓</text>
+
+  <!-- Invoice Date - COMPLETED -->
+  <text x="60" y="246" fill="#475569" font-size="10">Invoice Date</text>
+  <rect x="60" y="251" width="130" height="28" rx="4" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="70" y="270" fill="#1E293B" font-size="11">Jan 15, 2026</text>
+
+  <!-- Due Date - COMPLETED -->
+  <text x="200" y="246" fill="#475569" font-size="10">Due Date</text>
+  <rect x="200" y="251" width="130" height="28" rx="4" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="210" y="270" fill="#1E293B" font-size="11">Feb 14, 2026</text>
+
+  <!-- Line Items section -->
+  <text x="60" y="298" fill="#475569" font-size="10">Line Items</text>
+  <rect x="60" y="303" width="270" height="130" rx="4" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+
+  <!-- Line items header -->
+  <text x="70" y="320" fill="#64748B" font-size="9" font-weight="500">Description</text>
+  <text x="180" y="320" fill="#64748B" font-size="9" font-weight="500">Hours</text>
+  <text x="230" y="320" fill="#64748B" font-size="9" font-weight="500">Rate</text>
+  <text x="280" y="320" fill="#64748B" font-size="9" font-weight="500">Total</text>
+  <line x1="65" y1="326" x2="325" y2="326" stroke="#E2E8F0" stroke-width="1"/>
+
+  <!-- Line 1 - COMPLETED -->
+  <text x="70" y="342" fill="#1E293B" font-size="9">Consulting</text>
+  <text x="180" y="342" fill="#1E293B" font-size="9">10h</text>
+  <text x="230" y="342" fill="#1E293B" font-size="9">$150</text>
+  <text x="280" y="342" fill="#1E293B" font-size="9">$1,500</text>
+  <text x="315" y="342" fill="#16A34A" font-size="10">✓</text>
+
+  <!-- Line 2 - COMPLETED -->
+  <text x="70" y="360" fill="#1E293B" font-size="9">Development</text>
+  <text x="180" y="360" fill="#1E293B" font-size="9">20h</text>
+  <text x="230" y="360" fill="#1E293B" font-size="9">$175</text>
+  <text x="280" y="360" fill="#1E293B" font-size="9">$3,500</text>
+  <text x="315" y="360" fill="#16A34A" font-size="10">✓</text>
+
+  <!-- Line 3 - COMPLETED -->
+  <text x="70" y="378" fill="#1E293B" font-size="9">Support</text>
+  <text x="180" y="378" fill="#1E293B" font-size="9">5h</text>
+  <text x="230" y="378" fill="#1E293B" font-size="9">$125</text>
+  <text x="280" y="378" fill="#1E293B" font-size="9">$625</text>
+  <text x="315" y="378" fill="#16A34A" font-size="10">✓</text>
+
+  <!-- Line 4 - COMPLETED -->
+  <text x="70" y="396" fill="#1E293B" font-size="9">Code Review</text>
+  <text x="180" y="396" fill="#1E293B" font-size="9">3h</text>
+  <text x="230" y="396" fill="#1E293B" font-size="9">$175</text>
+  <text x="280" y="396" fill="#1E293B" font-size="9">$525</text>
+  <text x="315" y="396" fill="#16A34A" font-size="10">✓</text>
+
+  <!-- Totals row -->
+  <line x1="65" y1="408" x2="325" y2="408" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="230" y="422" fill="#64748B" font-size="9" font-weight="500">Total:</text>
+  <text x="280" y="422" fill="#1E293B" font-size="9" font-weight="600">$6,150</text>
+
+  <!-- Chat Pane (middle) -->
+  <rect x="348" y="40" width="280" height="480" fill="#F8FAFC"/>
+  <line x1="628" y1="40" x2="628" y2="520" stroke="#E2E8F0" stroke-width="1"/>
+
+  <!-- Chat header -->
+  <rect x="348" y="40" width="280" height="35" fill="#FFFFFF"/>
+  <line x1="348" y1="75" x2="628" y2="75" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="360" y="63" fill="#1E293B" font-size="12" font-weight="500">Agent Chat</text>
+
+  <!-- Chat messages -->
+  <!-- User message -->
+  <rect x="385" y="90" width="230" height="55" rx="8" fill="#2563EB"/>
+  <text x="397" y="108" fill="#FFFFFF" font-size="10">Invoice Acme Corp for last month and</text>
+  <text x="397" y="122" fill="#FFFFFF" font-size="10">generate a status report for their PM.</text>
+  <text x="397" y="136" fill="#DBEAFE" font-size="9">I want to review before sending.</text>
+
+  <!-- Agent message - initial response -->
+  <rect x="360" y="160" width="255" height="85" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="372" y="178" fill="#1E293B" font-size="10">I'll prepare both documents for review:</text>
+  <text x="372" y="195" fill="#1E293B" font-size="10">1. Invoice from your December timesheets</text>
+  <text x="372" y="209" fill="#1E293B" font-size="10">2. Project status report for Sarah Chen</text>
+  <text x="372" y="226" fill="#64748B" font-size="9">I'll hold for your approval before sending.</text>
+  <text x="372" y="239" fill="#64748B" font-size="9">Generating now...</text>
+
+  <!-- Agent message - completion response -->
+  <rect x="360" y="258" width="255" height="85" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="372" y="278" fill="#16A34A" font-size="10">✓ Done! I've generated both documents.</text>
+  <text x="372" y="298" fill="#1E293B" font-size="10">The invoice totals $6,150 for 38 hours of</text>
+  <text x="372" y="312" fill="#1E293B" font-size="10">work in December.</text>
+  <text x="372" y="332" fill="#1E293B" font-size="10">I'm opening the invoice now.</text>
+
+  <!-- Micro-action indicator with shimmer -->
+  <g>
+    <rect x="360" y="355" width="185" height="28" rx="6" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1"/>
+    <rect x="360" y="355" width="185" height="28" rx="6" fill="url(#chatShimmer)"/>
+    <text x="372" y="374" fill="#1D4ED8" font-size="10">📄 Opening Invoice Dec-2025...</text>
+  </g>
+
+  <!-- Chat input -->
+  <rect x="360" y="470" width="255" height="40" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="375" y="495" fill="#64748B" font-size="11">Message...</text>
+  <text x="580" y="495" fill="#64748B" font-size="14">🎤 ➤</text>
+
+  <!-- RIGHT PANE - Progress/Artifacts/Context -->
+  <rect x="628" y="40" width="272" height="480" fill="#F1F5F9"/>
+
+  <!-- PROGRESS Card -->
+  <g>
+    <rect x="640" y="52" width="248" height="148" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+    <text x="656" y="76" fill="#1E293B" font-size="11" font-weight="600">Progress</text>
+    <text x="868" y="76" fill="#64748B" font-size="12">−</text>
+
+    <!-- Progress items - all completed except sends -->
+    <!-- Completed -->
+    <g transform="translate(656, 98)">
+      <text x="0" y="0" fill="#16A34A" font-size="12">✓</text>
+      <text x="20" y="0" fill="#1E293B" font-size="11">Fetched customer, timesheet, project</text>
+    </g>
+    <!-- Completed -->
+    <g transform="translate(656, 118)">
+      <text x="0" y="0" fill="#16A34A" font-size="12">✓</text>
+      <text x="20" y="0" fill="#1E293B" font-size="11">Generated invoice</text>
+    </g>
+    <!-- Completed -->
+    <g transform="translate(656, 138)">
+      <text x="0" y="0" fill="#16A34A" font-size="12">✓</text>
+      <text x="20" y="0" fill="#1E293B" font-size="11">Generated status report</text>
+    </g>
+    <!-- Pending (awaiting approval) -->
+    <g transform="translate(656, 158)">
+      <circle cx="6" cy="-4" r="5" fill="none" stroke="#CBD5E1" stroke-width="1.5"/>
+      <text x="20" y="0" fill="#94A3B8" font-size="11">Send invoice to Acme AP</text>
+    </g>
+    <!-- Pending (awaiting approval) -->
+    <g transform="translate(656, 178)">
+      <circle cx="6" cy="-4" r="5" fill="none" stroke="#CBD5E1" stroke-width="1.5"/>
+      <text x="20" y="0" fill="#94A3B8" font-size="11">Send report to Sarah Chen</text>
+    </g>
+  </g>
+
+  <!-- ARTIFACTS Card -->
+  <g>
+    <rect x="640" y="212" width="248" height="120" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+    <text x="656" y="236" fill="#1E293B" font-size="11" font-weight="600">Artifacts</text>
+    <text x="868" y="236" fill="#64748B" font-size="12">−</text>
+
+    <!-- Artifact 1: Invoice (complete, selected/active) -->
+    <g>
+      <rect x="652" y="250" width="224" height="32" rx="6" fill="#EFF6FF" stroke="#2563EB" stroke-width="2"/>
+      <line x1="682" y1="250" x2="682" y2="282" stroke="#BFDBFE" stroke-width="1"/>
+      <text x="661" y="271" fill="#2563EB" font-size="12">📄</text>
+      <text x="692" y="270" fill="#1E293B" font-size="11">Invoice Dec-2025</text>
+      <line x1="846" y1="250" x2="846" y2="282" stroke="#BFDBFE" stroke-width="1"/>
+      <text x="854" y="271" fill="#64748B" font-size="9">...</text>
+    </g>
+
+    <!-- Artifact 2: Status Report (complete) -->
+    <g>
+      <rect x="652" y="290" width="224" height="32" rx="6" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+      <line x1="682" y1="290" x2="682" y2="322" stroke="#E2E8F0" stroke-width="1"/>
+      <text x="661" y="311" fill="#64748B" font-size="12">📊</text>
+      <text x="692" y="310" fill="#1E293B" font-size="11">Project Status Report</text>
+      <line x1="846" y1="290" x2="846" y2="322" stroke="#E2E8F0" stroke-width="1"/>
+      <text x="854" y="311" fill="#64748B" font-size="9">...</text>
+    </g>
+  </g>
+
+  <!-- CONTEXT Card -->
+  <g>
+    <rect x="640" y="344" width="248" height="135" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+    <text x="656" y="368" fill="#1E293B" font-size="11" font-weight="600">Context</text>
+    <text x="868" y="368" fill="#64748B" font-size="12">−</text>
+
+    <!-- Context items - database entities -->
+    <g transform="translate(656, 390)">
+      <text x="0" y="0" fill="#64748B" font-size="12">🏢</text>
+      <text x="20" y="0" fill="#1E293B" font-size="11">Acme Corporation</text>
+    </g>
+
+    <g transform="translate(656, 412)">
+      <text x="0" y="0" fill="#64748B" font-size="12">👤</text>
+      <text x="20" y="0" fill="#1E293B" font-size="11">Sarah Chen (PM)</text>
+    </g>
+
+    <g transform="translate(656, 434)">
+      <text x="0" y="0" fill="#64748B" font-size="12">⏱️</text>
+      <text x="20" y="0" fill="#1E293B" font-size="11">Dec 2025 Timesheets</text>
+    </g>
+
+    <g transform="translate(656, 456)">
+      <text x="0" y="0" fill="#64748B" font-size="12">📋</text>
+      <text x="20" y="0" fill="#1E293B" font-size="11">Acme Project Tasks</text>
+    </g>
+  </g>
+</svg>

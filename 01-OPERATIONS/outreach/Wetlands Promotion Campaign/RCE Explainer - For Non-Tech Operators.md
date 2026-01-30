@@ -16,7 +16,10 @@ Let's clear this up first:
 
 ## ✅ What RCE Actually Is
 
-**The Relational Context Engine is a *reasoning platform* that understands how things *relate to each other* over time—not just what they are.**
+**The Relational Context Engine is a *deterministic reasoning platform* built on graph database architecture that understands how things *relate to each other* over time—not just what they are.**
+
+**Deterministic Intelligence (Not "AI Hype"):**
+The RCE is a traditional graph database that maps the physical relationships of your wetland system. It doesn't "guess"—it interrogates a solid, high-frequency dataset to show how variables like flow and temperature impact treatment. It provides clean, structured data that makes insights reliable, rather than speculative. This is deterministic intelligence, not pump-and-dump AI.
 
 ---
 
@@ -121,30 +124,30 @@ NA Spike (88 mg/L)
 
 ---
 
-## 🧠 HOW RCE "LEARNS": The LLM Component
+## 🧠 HOW RCE WORKS: Graph Database + Reasoning Layer
 
 **"Wait, is this AI?"**
 
-Yes—but not the kind that hallucinates or makes stuff up.
+Yes—but it's deterministic intelligence built on a foundation of structured data relationships, not speculative predictions.
 
-### What the LLM Does in RCE:
+### What the RCE Does:
 
-1. **Reads your operational data** (biosensor readings, SCADA, lab reports, maintenance logs)
-2. **Understands relationships** (e.g., "upstream events affect downstream performance")
-3. **Finds patterns** across months or years of history
-4. **Answers questions in plain English:**
+1. **Maps physical relationships** in your wetland system using graph database architecture
+2. **Interrogates high-frequency datasets** (biosensor readings, SCADA, lab reports, maintenance logs)
+3. **Identifies cause-and-effect patterns** based on actual historical performance
+4. **Provides structured insights** grounded in your operational data:
    - "What caused the NA spike in Pond 3 last Tuesday?"
    - "Has this temperature drop affected NA degradation before?"
    - "What's the best flow rate for Cell 2 given current conditions?"
 
-### What the LLM Does NOT Do:
+### What the RCE Does NOT Do:
 
-- ❌ Make guesses without data
+- ❌ Make speculative guesses without data
 - ❌ Override your SCADA or safety systems
 - ❌ Make decisions autonomously (you're always in control)
-- ❌ Hallucinate data or make stuff up
+- ❌ Use "black box" AI that can't explain its reasoning
 
-**Think of it as:** A senior operator with perfect memory who's been watching your system 24/7 for 10 years—but it's software.
+**Think of it as:** A senior operator with perfect memory who's been watching your system 24/7 for 10 years—but it's deterministic software, not guesswork.
 
 ---
 

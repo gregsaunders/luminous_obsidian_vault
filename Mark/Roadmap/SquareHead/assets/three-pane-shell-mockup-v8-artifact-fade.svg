@@ -1,0 +1,184 @@
+<svg viewBox="0 0 900 520" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <!-- Light Mode Color Palette (WCAG AA Compliant) -->
+  <!-- This mockup shows the gradient fade reveal behavior when artifact is expanded -->
+
+  <defs>
+    <!-- Gradient for the fade effect on right pane -->
+    <linearGradient id="fadeGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1" />
+      <stop offset="60%" style="stop-color:#FFFFFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFFFFF;stop-opacity:0" />
+    </linearGradient>
+
+    <!-- Mask for the fade effect -->
+    <mask id="fadeMask">
+      <rect x="0" y="0" width="100" height="480" fill="url(#fadeGradient)"/>
+    </mask>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="520" fill="#F8FAFC"/>
+
+  <!-- Header Bar - Full Width -->
+  <rect x="0" y="0" width="900" height="40" fill="#FFFFFF"/>
+  <line x1="0" y1="40" x2="900" y2="40" stroke="#E2E8F0" stroke-width="1"/>
+
+  <!-- Hamburger Menu -->
+  <text x="20" y="26" fill="#1E293B" font-size="16">☰</text>
+  <text x="60" y="26" fill="#1E293B" font-size="14" font-weight="bold">SquareHead</text>
+
+  <!-- Menu items -->
+  <text x="180" y="26" fill="#2563EB" font-size="12" font-weight="500">Invoices</text>
+  <text x="260" y="26" fill="#475569" font-size="12">Bills</text>
+  <text x="310" y="26" fill="#475569" font-size="12">Ledger</text>
+  <text x="380" y="26" fill="#475569" font-size="12">Reports</text>
+
+  <!-- Search bar -->
+  <rect x="500" y="10" width="180" height="22" rx="4" fill="#F1F5F9" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="515" y="25" fill="#64748B" font-size="11">Search...</text>
+  <text x="820" y="26" fill="#1E293B" font-size="12">🔔  👤 Mark</text>
+
+  <!-- Icon Rail -->
+  <rect x="0" y="40" width="48" height="480" fill="#F1F5F9"/>
+  <line x1="48" y1="40" x2="48" y2="520" stroke="#E2E8F0" stroke-width="1"/>
+
+  <!-- App icons -->
+  <rect x="8" y="55" width="32" height="32" rx="6" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="16" y="78" fill="#1E293B" font-size="14">📊</text>
+  <rect x="8" y="95" width="32" height="32" rx="6" fill="#2563EB"/>
+  <text x="16" y="118" fill="#FFFFFF" font-size="14">💰</text>
+  <rect x="8" y="135" width="32" height="32" rx="6" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="16" y="158" fill="#1E293B" font-size="14">🧪</text>
+  <text x="16" y="460" fill="#64748B" font-size="14">⚙️</text>
+
+  <!-- FULL ARTIFACT VIEW (expanded in center) -->
+  <rect x="48" y="40" width="770" height="480" fill="#FFFFFF"/>
+
+  <!-- Artifact header -->
+  <rect x="48" y="40" width="770" height="45" fill="#F8FAFC"/>
+  <line x1="48" y1="85" x2="818" y2="85" stroke="#E2E8F0" stroke-width="1"/>
+
+  <!-- Close button -->
+  <rect x="58" y="50" width="28" height="28" rx="4" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="66" y="69" fill="#64748B" font-size="14">✕</text>
+
+  <text x="100" y="70" fill="#1E293B" font-size="14" font-weight="600">Acme Corp - Revenue History</text>
+  <text x="310" y="70" fill="#64748B" font-size="11">Last 12 months</text>
+
+  <!-- Action buttons -->
+  <rect x="650" y="50" width="70" height="28" rx="4" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="665" y="69" fill="#475569" font-size="10">📥 Export</text>
+
+  <rect x="730" y="50" width="75" height="28" rx="4" fill="#2563EB"/>
+  <text x="748" y="69" fill="#FFFFFF" font-size="10">📌 Pin</text>
+
+  <!-- Chart area -->
+  <rect x="70" y="100" width="650" height="350" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" rx="8"/>
+
+  <!-- Y-axis labels -->
+  <text x="80" y="130" fill="#64748B" font-size="9">$50k</text>
+  <text x="80" y="200" fill="#64748B" font-size="9">$40k</text>
+  <text x="80" y="270" fill="#64748B" font-size="9">$30k</text>
+  <text x="80" y="340" fill="#64748B" font-size="9">$20k</text>
+  <text x="80" y="410" fill="#64748B" font-size="9">$10k</text>
+
+  <!-- Grid lines -->
+  <line x1="110" y1="125" x2="700" y2="125" stroke="#F1F5F9" stroke-width="1"/>
+  <line x1="110" y1="195" x2="700" y2="195" stroke="#F1F5F9" stroke-width="1"/>
+  <line x1="110" y1="265" x2="700" y2="265" stroke="#F1F5F9" stroke-width="1"/>
+  <line x1="110" y1="335" x2="700" y2="335" stroke="#F1F5F9" stroke-width="1"/>
+  <line x1="110" y1="405" x2="700" y2="405" stroke="#F1F5F9" stroke-width="1"/>
+
+  <!-- X-axis labels -->
+  <text x="130" y="435" fill="#64748B" font-size="9">Feb</text>
+  <text x="180" y="435" fill="#64748B" font-size="9">Mar</text>
+  <text x="230" y="435" fill="#64748B" font-size="9">Apr</text>
+  <text x="280" y="435" fill="#64748B" font-size="9">May</text>
+  <text x="330" y="435" fill="#64748B" font-size="9">Jun</text>
+  <text x="380" y="435" fill="#64748B" font-size="9">Jul</text>
+  <text x="430" y="435" fill="#64748B" font-size="9">Aug</text>
+  <text x="480" y="435" fill="#64748B" font-size="9">Sep</text>
+  <text x="530" y="435" fill="#64748B" font-size="9">Oct</text>
+  <text x="580" y="435" fill="#64748B" font-size="9">Nov</text>
+  <text x="630" y="435" fill="#64748B" font-size="9">Dec</text>
+  <text x="680" y="435" fill="#64748B" font-size="9">Jan</text>
+
+  <!-- Line chart -->
+  <polyline
+    fill="none"
+    stroke="#2563EB"
+    stroke-width="2"
+    points="130,350 180,320 230,340 280,280 330,260 380,290 430,220 480,200 530,180 580,210 630,150 680,170"/>
+
+  <!-- Data points -->
+  <circle cx="130" cy="350" r="4" fill="#2563EB"/>
+  <circle cx="180" cy="320" r="4" fill="#2563EB"/>
+  <circle cx="230" cy="340" r="4" fill="#2563EB"/>
+  <circle cx="280" cy="280" r="4" fill="#2563EB"/>
+  <circle cx="330" cy="260" r="4" fill="#2563EB"/>
+  <circle cx="380" cy="290" r="4" fill="#2563EB"/>
+  <circle cx="430" cy="220" r="4" fill="#2563EB"/>
+  <circle cx="480" cy="200" r="4" fill="#2563EB"/>
+  <circle cx="530" cy="180" r="4" fill="#2563EB"/>
+  <circle cx="580" cy="210" r="4" fill="#2563EB"/>
+  <circle cx="630" cy="150" r="4" fill="#2563EB"/>
+  <circle cx="680" cy="170" r="4" fill="#2563EB"/>
+
+  <!-- GRADIENT FADE RIGHT PANE (compressed to ~80px with fade) -->
+  <!-- This shows the pane peeking out with gradient fade -->
+  <rect x="818" y="40" width="82" height="480" fill="#FFFFFF"/>
+
+  <!-- Gradient overlay to create fade effect -->
+  <defs>
+    <linearGradient id="rightFade" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#FFFFFF;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#F8FAFC;stop-opacity:0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Faded content - partially visible -->
+  <g opacity="1">
+    <!-- PROGRESS header (partial) -->
+    <rect x="818" y="40" width="82" height="30" fill="#F8FAFC"/>
+    <text x="825" y="60" fill="#64748B" font-size="10" font-weight="600">PROGRE</text>
+
+    <!-- Progress items (fading) -->
+    <text x="825" y="85" fill="#16A34A" font-size="11" opacity="0.9">✓ Fetch</text>
+    <text x="825" y="105" fill="#16A34A" font-size="11" opacity="0.7">✓ Gene</text>
+    <text x="825" y="125" fill="#16A34A" font-size="11" opacity="0.5">✓ Pulle</text>
+
+    <line x1="818" y1="145" x2="900" y2="145" stroke="#E2E8F0" stroke-width="1" opacity="0.5"/>
+
+    <!-- ARTIFACTS header (partial) -->
+    <rect x="818" y="145" width="82" height="30" fill="#F8FAFC" opacity="0.8"/>
+    <text x="825" y="165" fill="#64748B" font-size="10" font-weight="600" opacity="0.8">ARTIFA</text>
+
+    <!-- Artifact thumbnail hint -->
+    <rect x="825" y="185" width="40" height="40" rx="4" fill="#F1F5F9" opacity="0.6"/>
+    <text x="838" y="210" fill="#64748B" font-size="14" opacity="0.6">📊</text>
+
+    <rect x="825" y="235" width="40" height="40" rx="4" fill="#F1F5F9" opacity="0.4"/>
+    <text x="838" y="260" fill="#64748B" font-size="14" opacity="0.4">📄</text>
+
+    <line x1="818" y1="290" x2="900" y2="290" stroke="#E2E8F0" stroke-width="1" opacity="0.3"/>
+
+    <!-- CONTEXT header (partial) -->
+    <rect x="818" y="290" width="82" height="30" fill="#F8FAFC" opacity="0.5"/>
+    <text x="825" y="310" fill="#64748B" font-size="10" font-weight="600" opacity="0.5">CONTE</text>
+
+    <!-- Context items hint -->
+    <text x="825" y="340" fill="#64748B" font-size="11" opacity="0.3">📁 cust</text>
+  </g>
+
+  <!-- Fade overlay gradient -->
+  <rect x="850" y="40" width="50" height="480" fill="url(#rightFade)"/>
+
+  <!-- Interaction hint: hover indicator -->
+  <rect x="875" y="250" width="20" height="40" rx="10" fill="#E2E8F0" opacity="0.8"/>
+  <text x="880" y="275" fill="#64748B" font-size="10">◀</text>
+
+  <!-- Annotation: Gradient fade hint -->
+  <rect x="750" y="480" width="140" height="30" fill="#FEF3C7" rx="4" opacity="0.9"/>
+  <text x="760" y="498" fill="#92400E" font-size="9">↑ Gradient fade: hover to expand</text>
+</svg>

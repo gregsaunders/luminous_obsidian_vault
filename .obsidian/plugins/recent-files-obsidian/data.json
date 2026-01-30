@@ -1,8 +1,112 @@
 {
   "recentFiles": [
     {
-      "basename": "Untitled",
-      "path": "Journal/Greg/2026-01/guthrie-erp-specialist/Untitled.md"
+      "basename": "sprint-01-upstream-optimization",
+      "path": "05-KNOWLEDGE/1-Technical-Docs/Internal-Papers/sprint-01-upstream-optimization.md"
+    },
+    {
+      "basename": "sprint-04-confluent-value-map",
+      "path": "05-KNOWLEDGE/1-Technical-Docs/Internal-Papers/sprint-04-confluent-value-map.md"
+    },
+    {
+      "basename": "sprint-02-remediation-landscape",
+      "path": "05-KNOWLEDGE/1-Technical-Docs/Internal-Papers/sprint-02-remediation-landscape.md"
+    },
+    {
+      "basename": "Complete Bookout Et Al",
+      "path": "05-KNOWLEDGE/1-Technical-Docs/scientific-foundation/Complete Bookout Et Al.md"
+    },
+    {
+      "basename": "Summary Kearl Wetland",
+      "path": "05-KNOWLEDGE/1-Technical-Docs/scientific-foundation/Summary Kearl Wetland.md"
+    },
+    {
+      "basename": "Summary Bookout Et Al",
+      "path": "05-KNOWLEDGE/1-Technical-Docs/scientific-foundation/Summary Bookout Et Al.md"
+    },
+    {
+      "basename": "Complete Kearl Wetland Report",
+      "path": "05-KNOWLEDGE/1-Technical-Docs/scientific-foundation/Complete Kearl Wetland Report.md"
+    },
+    {
+      "basename": "Luminous BioSolutions Financial Model Framework",
+      "path": "Luminous BioSolutions Financial Model Framework.md"
+    },
+    {
+      "basename": "00-Master-Index",
+      "path": "Mark/Roadmap/00-Master-Index.md"
+    },
+    {
+      "basename": "SQH-00-Backlog-Index",
+      "path": "Mark/Roadmap/SquareHead/SQH-00-Backlog-Index.md"
+    },
+    {
+      "basename": "CDL Day 2",
+      "path": "Journal/Greg/2026-01-28/CDL Day 2.md"
+    },
+    {
+      "basename": "SQH-EPIC-06-AI-Services",
+      "path": "Mark/Roadmap/SquareHead/SQH-EPIC-06-AI-Services.md"
+    },
+    {
+      "basename": "LUM-00-Backlog-Index",
+      "path": "Mark/Roadmap/Luminous/LUM-00-Backlog-Index.md"
+    },
+    {
+      "basename": "2026-01-27a",
+      "path": "Journal/Greg/2026-01/2026-01-27a.md"
+    },
+    {
+      "basename": "01-Service-Delivery-Process-Map",
+      "path": "03-OPERATING-MODEL/01-Service-Delivery-Process-Map.md"
+    },
+    {
+      "basename": "00-Operating-Model-Index",
+      "path": "03-OPERATING-MODEL/00-Operating-Model-Index.md"
+    },
+    {
+      "basename": "05-Pilot-Deliverables-Framework",
+      "path": "03-OPERATING-MODEL/05-Pilot-Deliverables-Framework.md"
+    },
+    {
+      "basename": "02-Roles-and-Responsibilities",
+      "path": "03-OPERATING-MODEL/02-Roles-and-Responsibilities.md"
+    },
+    {
+      "basename": "03-Technology-Requirements",
+      "path": "03-OPERATING-MODEL/03-Technology-Requirements.md"
+    },
+    {
+      "basename": "Diagram Strategy",
+      "path": "04-PRODUCTS/1-Website/Diagram Strategy.md"
+    },
+    {
+      "basename": "_STYLE-GUIDE",
+      "path": "04-PRODUCTS/0-Brand-Identity/_STYLE-GUIDE.md"
+    },
+    {
+      "basename": "06-Session-Summary-Operating-Model-Build",
+      "path": "03-OPERATING-MODEL/06-Session-Summary-Operating-Model-Build.md"
+    },
+    {
+      "basename": "1.3 Shawn's Version",
+      "path": "99-ARCHIVE/2025-grant-applications/01 Grant Funding/ERA/ERA Industrial Transformation Challenge 2025/1.3 Shawn's Version.md"
+    },
+    {
+      "basename": "📦 DELIVERABLES PACKAGE - Session Summary",
+      "path": "01-OPERATIONS/outreach/Wetlands Promotion Campaign/Archive/📦 DELIVERABLES PACKAGE - Session Summary.md"
+    },
+    {
+      "basename": "07-Strategic-Capabilities",
+      "path": "03-OPERATING-MODEL/07-Strategic-Capabilities.md"
+    },
+    {
+      "basename": "04-Pilot-Readiness-Scorecard",
+      "path": "03-OPERATING-MODEL/04-Pilot-Readiness-Scorecard.md"
+    },
+    {
+      "basename": "linkedin-post",
+      "path": "Journal/Greg/2026-01/guthrie-erp-specialist/linkedin-post.md"
     },
     {
       "basename": "kearl wetland map",
@@ -25,34 +129,6 @@
       "path": "Journal/Greg/2026-01/2026-01-08a.md"
     },
     {
-      "basename": "Untitled",
-      "path": "Journal/Greg/2026-01/Untitled.md"
-    },
-    {
-      "basename": "LUM-EPIC-02-Data-Ingestion",
-      "path": "Mark/Roadmap/Luminous/LUM-EPIC-02-Data-Ingestion.md"
-    },
-    {
-      "basename": "LUM-EPIC-01-Customer-Dashboard",
-      "path": "Mark/Roadmap/Luminous/LUM-EPIC-01-Customer-Dashboard.md"
-    },
-    {
-      "basename": "LUM-00-Backlog-Index",
-      "path": "Mark/Roadmap/Luminous/LUM-00-Backlog-Index.md"
-    },
-    {
-      "basename": "SQH-00-Backlog-Index",
-      "path": "Mark/Roadmap/SquareHead/SQH-00-Backlog-Index.md"
-    },
-    {
-      "basename": "SQH-EPIC-02-Base-UI-Kit",
-      "path": "Mark/Roadmap/SquareHead/SQH-EPIC-02-Base-UI-Kit.md"
-    },
-    {
-      "basename": "00-Master-Index",
-      "path": "Mark/Roadmap/00-Master-Index.md"
-    },
-    {
       "basename": "2026-01-06a",
       "path": "Journal/Greg/2026-01/2026-01-06a.md"
     },
@@ -61,44 +137,12 @@
       "path": "03-OPERATING-MODEL/08-Operator-Value-Proposition.md"
     },
     {
-      "basename": "07-Strategic-Capabilities",
-      "path": "03-OPERATING-MODEL/07-Strategic-Capabilities.md"
-    },
-    {
-      "basename": "00-Operating-Model-Index",
-      "path": "03-OPERATING-MODEL/00-Operating-Model-Index.md"
-    },
-    {
-      "basename": "06-Session-Summary-Operating-Model-Build",
-      "path": "03-OPERATING-MODEL/06-Session-Summary-Operating-Model-Build.md"
-    },
-    {
-      "basename": "05-Pilot-Deliverables-Framework",
-      "path": "03-OPERATING-MODEL/05-Pilot-Deliverables-Framework.md"
-    },
-    {
-      "basename": "04-Pilot-Readiness-Scorecard",
-      "path": "03-OPERATING-MODEL/04-Pilot-Readiness-Scorecard.md"
-    },
-    {
-      "basename": "02-Roles-and-Responsibilities",
-      "path": "03-OPERATING-MODEL/02-Roles-and-Responsibilities.md"
-    },
-    {
-      "basename": "01-Service-Delivery-Process-Map",
-      "path": "03-OPERATING-MODEL/01-Service-Delivery-Process-Map.md"
-    },
-    {
       "basename": "2025-12-23a",
       "path": "Journal/Greg/2025-12/2025-12-23a.md"
     },
     {
       "basename": "Untitled",
       "path": "Journal/Greg/2025-12/Untitled.md"
-    },
-    {
-      "basename": "03-Technology-Requirements",
-      "path": "03-OPERATING-MODEL/03-Technology-Requirements.md"
     },
     {
       "basename": "2025-12-16b",

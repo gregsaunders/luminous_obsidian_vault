@@ -26,20 +26,20 @@ Traditional HRMS monitoring—semi-annual sampling, 8-week turnaround, $700-1,00
 
 **Here's what we've been working on:**
 
-We isolated bacteria from Alberta tailings ponds that evolved the ability to sense naphthenic acids. We didn't invent this capability—we learned from it, engineering these indigenous bacteria into biosensors that detect NA compound classes in hours.
+We isolated bacteria from Alberta tailings ponds that evolved the ability to sense naphthenic acids. We didn't invent this capability—we learned from it, engineering these ecosystem-native bacteria into biosensors that detect NA compound classes in hours. All testing occurs in our off-site laboratory—no engineered bacteria are ever introduced into wetlands.
 
 Combined with our **Relational Context Engine (RCE)**, we correlate high-frequency NA data with all wetland variables (temperature, pH, flow, treatment conditions) to create:
 
 1. **Operational insights** that help optimize performance
-2. **Continuous documentation** that supports data-driven ARO timeline conversations
+2. **Continuous documentation** that supports ARO timeline certainty
 
 **The context:**
 
 Suncor and CNRL carry **$20 billion in ARO liability** with **$958 million in annual accretion expense**. Auditors flag this as a "Critical Audit Matter" due to sparse empirical data. Suncor explicitly cites "inability to release treated mine water" as the risk extending closures.
 
-**What if the right combination of engineered systems and continuous data intelligence makes tailings remediation less expensive than current conservative assumptions suggest?**
+**What if the right combination of engineered systems and continuous data intelligence provides more predictable timelines than current worst-case assumptions suggest?**
 
-That's the question.
+That's the opportunity—not solving the $20B liability, but supporting ARO timeline certainty through defensible documentation.
 
 ---
 
@@ -52,11 +52,12 @@ Our biosensor technology was published in *ACS Synthetic Biology* (September 202
 He'll show:
 - Complete field trial data (no marketing spin)
 - How Biosensor + RCE creates operational insights and audit-grade documentation
-- What this means for engineered wetland optimization and ARO conversations
+- What this means for engineered wetland optimization and ARO timeline certainty
 
 **This is for:**
 - Engineers wanting to accelerate operational learning
-- CFOs/Audit teams needing empirical performance documentation
+- CFOs/Audit teams needing defensible performance documentation
+- Investor Relations teams managing Bill C-59 compliance
 - Regulatory affairs teams supporting water release applications
 - Anyone working on tailings remediation at scale
 

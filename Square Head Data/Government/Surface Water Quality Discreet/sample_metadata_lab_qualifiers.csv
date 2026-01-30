@@ -1,0 +1,15 @@
+Code,Lab,Description
+I,AITF-EAS (ENVIRONMENTAL ANALYTICAL SERVICES),The reported value is between the laboratory method detection limit and the laboratory practical quantitation limit
+K,AITF-EAS (ENVIRONMENTAL ANALYTICAL SERVICES),Off-scale low. Actual value is known to be less than the value given
+T,AITF-EAS (ENVIRONMENTAL ANALYTICAL SERVICES),Value reported is less than the laboratory method detection limit
+U,AITF-EAS (ENVIRONMENTAL ANALYTICAL SERVICES),Compound was analyzed for but not detected
+H,AXYS ANALYTICAL SERVICES LTD,Concentration is estimated (information only value)
+N,AXYS ANALYTICAL SERVICES LTD,Authentic recovery is not within method/contract control limits
+ND,AXYS ANALYTICAL SERVICES LTD,Not detected
+NDR,AXYS ANALYTICAL SERVICES LTD,"Peak detected but did not meet quantification criteria, result reported represents the estimated maximum possible concentration."
+NQ,AXYS ANALYTICAL SERVICES LTD,Data not quantifiable
+V,AXYS ANALYTICAL SERVICES LTD,Surrogate recovery is not within method/contract control limits
+CA,UNIVERSITY OF ALBERTA - BIOGEOCHEMICAL ANALYTICAL SERVICE LABORATORY,Analysis cancelled by client
+HT,UNIVERSITY OF ALBERTA - BIOGEOCHEMICAL ANALYTICAL SERVICE LABORATORY,Holding time exceeded
+LE,UNIVERSITY OF ALBERTA - BIOGEOCHEMICAL ANALYTICAL SERVICE LABORATORY,Lost sample due to laboratory error
+VV,UNIVERSITY OF ALBERTA - BIOGEOCHEMICAL ANALYTICAL SERVICE LABORATORY,Value has been verified

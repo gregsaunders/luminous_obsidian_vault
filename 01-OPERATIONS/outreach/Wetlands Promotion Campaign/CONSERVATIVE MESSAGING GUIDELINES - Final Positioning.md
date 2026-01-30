@@ -80,15 +80,19 @@ Every communication must acknowledge engineered wetlands as the proven, cost-eff
 
 ---
 
-### **Rule 4: Indigenous Bacteria Origin Story - Always Lead With This**
+### **Rule 4: Ecosystem-Native Bacteria Origin Story - Always Lead With This**
 
 **Standard Origin Story (Use in Every Communication):**
-> "Luminous BioSolutions' bacterial biosensors weren't invented in a distant lab—they were isolated from bacteria living in Alberta tailings ponds. These microorganisms evolved over decades in OSPW environments, developing the ability to sense and respond to naphthenic acids. We didn't create this capability—we learned from it, genetically engineering these indigenous bacteria into precision biosensors that can detect NA compound classes in hours instead of weeks."
+> "Luminous BioSolutions' bacterial biosensors weren't invented in a distant lab—they were isolated from bacteria living in Alberta tailings ponds. These ecosystem-native microorganisms evolved over decades in OSPW environments, developing the ability to sense and respond to naphthenic acids. We didn't create this capability—we learned from it, genetically engineering these bacteria into precision biosensors that can detect NA compound classes in hours instead of weeks. All testing occurs in our off-site laboratory—no engineered bacteria are ever introduced into wetlands or tailings ponds."
+
+**Terminology Note:**
+Use "ecosystem-native bacteria" or "bacteria isolated from Alberta tailings ponds" rather than "indigenous bacteria" to avoid potential cultural appropriation while maintaining the critical local provenance story.
 
 **Why This Is Powerful:**
 - ✅ **Scientific humility:** "We learned from nature"
 - ✅ **Local credibility:** "From Alberta ponds" (not imported tech)
-- ✅ **Indigenous connection:** Bacteria are indigenous to these systems
+- ✅ **Ecosystem connection:** Bacteria evolved in these specific environments
+- ✅ **Safety assurance:** Off-site testing model
 - ✅ **Differentiation:** No competitor can claim this origin story
 - ✅ **Authenticity:** It's true, not marketing spin
 
@@ -102,23 +106,24 @@ Every communication must acknowledge engineered wetlands as the proven, cost-eff
 
 ---
 
-### **Rule 5: Financial Context as "Positive Opportunity" (Not "What We Solve")**
+### **Rule 5: Financial Context as "ARO Timeline Certainty" (Not "ARO Reduction")**
 
 **Standard Financial Framing:**
-> "Suncor and CNRL carry $20 billion in combined ARO liability with $958 million in annual accretion expense. It's a massive challenge—but the timing may be right for a shift in how we think about it.
+> "Suncor and CNRL carry $20 billion in combined ARO liability with $958 million in annual accretion expense. Tailings remediation is a multi-generational challenge—but the timing may be right for a shift in how we think about timeline certainty.
 >
 > Engineered wetlands are proving cost-effective at scale. Continuous monitoring technology (biosensors + RCE) is now providing the operational data that was previously impossible to capture economically. And auditors are asking for exactly this kind of empirical performance documentation.
 >
-> **What if tailings remediation—done with the right combination of engineered systems and data intelligence—turns out to be less expensive and faster than current conservative ARO assumptions suggest?**
+> **What if tailings remediation—done with the right combination of engineered systems and data intelligence—provides more predictable timelines than current worst-case assumptions suggest?**
 >
-> That's the opportunity: not solving the ARO challenge outright, but providing the missing data layer that helps operators, auditors, and regulators see what's actually working—and build confidence in more optimistic (but data-backed) closure timelines."
+> That's the opportunity: not solving the ARO challenge outright, but providing the missing data layer that supports ARO timeline certainty and defensible documentation for financial statement efficiency. This is about timeline predictability, not magic wand solutions."
 
 **Key Principles:**
+- ✅ Use "ARO timeline certainty" (not "ARO reduction")
+- ✅ Use "financial statement efficiency" (not "liability elimination")
+- ✅ Use "defensible documentation" (not "guarantee of savings")
+- ✅ Frame as **message of opportunity** and **path to certainty**
+- ✅ Acknowledge complexity ("multi-generational challenge")
 - ✅ Use exact figures ($20B ARO, $958M accretion) for credibility
-- ✅ Frame as **opportunity**, not crisis
-- ✅ Acknowledge complexity ("massive challenge")
-- ✅ Position timing as right ("technology is firming up")
-- ✅ Optimistic framing ("may be less expensive than thought")
 - ✅ Clear about our role ("missing data layer" not "the solution")
 
 **WHY THIS WORKS:**
@@ -170,18 +175,20 @@ Every communication must acknowledge engineered wetlands as the proven, cost-eff
 **Conservative Positioning:**
 > "ARO liability estimates rely on closure timeline assumptions. Auditors flag ARO as a 'Critical Audit Matter' because these assumptions depend on professional judgment in the absence of continuous empirical data.
 >
-> Luminous Biosensor + RCE helps create the empirical performance documentation that supports conversations with audit teams about treatment efficacy and timeline confidence. We don't reduce ARO liability directly—but we provide the operational data that supports the case for data-driven timeline assessments rather than worst-case conservative assumptions.
+> Luminous Biosensor + RCE helps create the empirical performance documentation that supports ARO timeline certainty—providing defensible, continuous proof for confident closure assumptions. We don't reduce ARO liability directly—but we provide the operational data that supports the case for data-driven timeline assessments rather than worst-case conservative assumptions.
 >
-> With $20 billion in ARO liability and $958 million in annual accretion expense across just Suncor and CNRL, the question isn't whether to monitor—it's whether continuous data can support more confident (but defensible) closure timeline planning."
+> With $20 billion in ARO liability and $958 million in annual accretion expense across just Suncor and CNRL, the question isn't whether to monitor—it's whether continuous data can support more predictable (but defensible) closure timeline planning. This is about financial statement efficiency and timeline certainty, not magic wand solutions."
 
 **Key Messaging:**
-- We **help create documentation** (not "convert Critical Audit Matters")
-- We **support conversations** (not "deliver $45-50M PV recovery")
-- We **provide data that supports the case** (not "the answer")
+- We **support ARO timeline certainty** (not "ARO reduction")
+- We **help create defensible documentation** (not "convert Critical Audit Matters")
+- We **support conversations about timeline confidence** (not "deliver $45-50M PV recovery")
+- We **provide data for financial statement efficiency** (not "solve the $20B liability")
 - Use exact financial figures for **context and motivation** (not claims)
 
 **Target Audiences:**
 - CFOs
+- Investor Relations Leads (Bill C-59 compliance)
 - Audit Committees
 - External Auditors (Big 4)
 - Risk Management
@@ -192,7 +199,7 @@ Every communication must acknowledge engineered wetlands as the proven, cost-eff
 ### **TRACK 3: SOCIAL LICENSE & TRANSPARENCY**
 
 **Conservative Positioning:**
-> "Regulatory approval for water release requires demonstrating consistent treatment performance over time. Continuous biosensor monitoring provides transparent, third-party data that helps operators build the documentation trail regulators need to assess water release applications.
+> "Regulatory approval for water release requires demonstrating consistent treatment performance over time. Continuous biosensor monitoring provides transparent, third-party data through a Joint Oversight Tool that helps operators build the documentation trail regulators need to assess water release applications. This enables Indigenous monitors to move from 'reviewing historical reports' to 'real-time program oversight,' building the shared confidence required for eventual water release.
 >
 > Under Bill C-59, operators need independent verification for environmental claims. Luminous Biosensor + RCE provides one tool in the verification toolkit—complementing traditional lab methods while offering more frequent data points with immutable, timestamped records.
 >

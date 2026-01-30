@@ -120,4 +120,4 @@ An operator can configure and troubleshoot CDC connectors following documentatio
 
 ## References
 
-- [SQH-EPIC-12: Extended Database Support](SQH-EPIC-12-Extended-Database-Connectors.md) - Oracle, MongoDB, SQL Server support
+- [SQH-EPIC-13: Extended Database Support](SQH-EPIC-13-Extended-Database-Connectors.md) - Oracle, MongoDB, SQL Server support

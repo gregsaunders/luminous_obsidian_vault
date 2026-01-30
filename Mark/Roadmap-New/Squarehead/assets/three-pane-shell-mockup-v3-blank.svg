@@ -1,0 +1,120 @@
+<svg viewBox="0 0 760 520" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, sans-serif">
+  <!-- Background -->
+  <rect width="760" height="520" fill="#1a1a2e"/>
+
+  <!-- Header Bar - Full Width -->
+  <rect x="0" y="0" width="760" height="40" fill="#16213e"/>
+
+  <!-- Hamburger Menu -->
+  <text x="20" y="26" fill="#eee" font-size="16">☰</text>
+
+  <text x="60" y="26" fill="#eee" font-size="14" font-weight="bold">SquareHead</text>
+
+  <!-- Menu items spanning full width -->
+  <text x="180" y="26" fill="#aaa" font-size="12">Invoices</text>
+  <text x="260" y="26" fill="#aaa" font-size="12">Bills</text>
+  <text x="310" y="26" fill="#aaa" font-size="12">Ledger</text>
+  <text x="380" y="26" fill="#aaa" font-size="12">Reports</text>
+
+  <!-- Search and user -->
+  <rect x="450" y="10" width="140" height="22" rx="4" fill="#0f3460"/>
+  <text x="465" y="25" fill="#888" font-size="11">Search...</text>
+  <text x="680" y="26" fill="#eee" font-size="12">🔔  👤 Mark</text>
+
+  <!-- Icon Rail - Always Visible (thin strip on far left) -->
+  <rect x="0" y="40" width="48" height="480" fill="#0f1525"/>
+
+  <!-- App icons in rail -->
+  <rect x="8" y="55" width="32" height="32" rx="6" fill="#0f3460"/>
+  <text x="16" y="78" fill="#eee" font-size="14">📊</text>
+
+  <rect x="8" y="95" width="32" height="32" rx="6" fill="#0f3460"/>
+  <text x="16" y="118" fill="#eee" font-size="14">💰</text>
+
+  <rect x="8" y="135" width="32" height="32" rx="6" fill="#0f3460"/>
+  <text x="16" y="158" fill="#eee" font-size="14">🧪</text>
+
+  <rect x="8" y="175" width="32" height="32" rx="6" fill="#0f3460"/>
+  <text x="16" y="198" fill="#eee" font-size="14">📋</text>
+
+  <!-- Expand arrow at bottom of rail -->
+  <text x="18" y="490" fill="#666" font-size="12">▶</text>
+
+  <!-- Settings at bottom of rail -->
+  <text x="16" y="460" fill="#888" font-size="14">⚙️</text>
+
+  <!-- Divider after rail -->
+  <line x1="48" y1="40" x2="48" y2="520" stroke="#333" stroke-width="1"/>
+
+  <!-- Main Content Area (Chat + Home Screen) -->
+  <rect x="48" y="40" width="692" height="480" fill="#1a1a2e"/>
+
+  <!-- Welcome Section -->
+  <text x="394" y="90" fill="#eee" font-size="18" font-weight="bold" text-anchor="middle">Good morning, Mark</text>
+  <text x="394" y="115" fill="#888" font-size="12" text-anchor="middle">How can I help you today?</text>
+
+  <!-- App Icons Grid (like phone home screen) -->
+  <text x="100" y="160" fill="#888" font-size="10" font-weight="bold">QUICK ACCESS</text>
+
+  <!-- Row 1 of app icons -->
+  <rect x="100" y="175" width="70" height="70" rx="12" fill="#0f3460"/>
+  <text x="127" y="210" fill="#eee" font-size="24">📊</text>
+  <text x="135" y="235" fill="#aaa" font-size="9" text-anchor="middle">Dashboard</text>
+
+  <rect x="185" y="175" width="70" height="70" rx="12" fill="#0f3460"/>
+  <text x="212" y="210" fill="#eee" font-size="24">💰</text>
+  <text x="220" y="235" fill="#aaa" font-size="9" text-anchor="middle">Accounting</text>
+
+  <rect x="270" y="175" width="70" height="70" rx="12" fill="#0f3460"/>
+  <text x="297" y="210" fill="#eee" font-size="24">📄</text>
+  <text x="305" y="235" fill="#aaa" font-size="9" text-anchor="middle">Invoices</text>
+
+  <rect x="355" y="175" width="70" height="70" rx="12" fill="#0f3460"/>
+  <text x="382" y="210" fill="#eee" font-size="24">📋</text>
+  <text x="390" y="235" fill="#aaa" font-size="9" text-anchor="middle">CRM</text>
+
+  <rect x="440" y="175" width="70" height="70" rx="12" fill="#0f3460"/>
+  <text x="467" y="210" fill="#eee" font-size="24">📈</text>
+  <text x="475" y="235" fill="#aaa" font-size="9" text-anchor="middle">Reports</text>
+
+  <rect x="525" y="175" width="70" height="70" rx="12" fill="#0f3460"/>
+  <text x="552" y="210" fill="#eee" font-size="24">🧪</text>
+  <text x="560" y="235" fill="#aaa" font-size="9" text-anchor="middle">Labs</text>
+
+  <!-- Conversation Starters Section -->
+  <text x="100" y="290" fill="#888" font-size="10" font-weight="bold">TRY ASKING</text>
+
+  <!-- Conversation starter cards -->
+  <rect x="100" y="305" width="280" height="50" rx="8" fill="#16213e" stroke="#333" stroke-width="1"/>
+  <text x="120" y="325" fill="#e94560" font-size="14">💡</text>
+  <text x="145" y="325" fill="#eee" font-size="11">"Show me Q4 revenue breakdown"</text>
+  <text x="145" y="342" fill="#666" font-size="9">View financial summaries and charts</text>
+
+  <rect x="400" y="305" width="280" height="50" rx="8" fill="#16213e" stroke="#333" stroke-width="1"/>
+  <text x="420" y="325" fill="#e94560" font-size="14">📝</text>
+  <text x="445" y="325" fill="#eee" font-size="11">"Create an invoice for Acme Corp"</text>
+  <text x="445" y="342" fill="#666" font-size="9">Generate and send invoices</text>
+
+  <rect x="100" y="365" width="280" height="50" rx="8" fill="#16213e" stroke="#333" stroke-width="1"/>
+  <text x="120" y="385" fill="#e94560" font-size="14">📊</text>
+  <text x="145" y="385" fill="#eee" font-size="11">"What are my overdue receivables?"</text>
+  <text x="145" y="402" fill="#666" font-size="9">Check outstanding payments</text>
+
+  <rect x="400" y="365" width="280" height="50" rx="8" fill="#16213e" stroke="#333" stroke-width="1"/>
+  <text x="420" y="385" fill="#e94560" font-size="14">🔍</text>
+  <text x="445" y="385" fill="#eee" font-size="11">"Find all invoices from last month"</text>
+  <text x="445" y="402" fill="#666" font-size="9">Search and filter records</text>
+
+  <!-- Input Area at bottom -->
+  <rect x="100" y="460" width="580" height="44" rx="8" fill="#0f3460" stroke="#333" stroke-width="1"/>
+  <text x="130" y="487" fill="#666" font-size="13">Ask me anything...</text>
+  <text x="630" y="487" fill="#888" font-size="16">📎  ➤</text>
+
+  <!-- Collapsed Artifacts Indicator (thin strip on right) -->
+  <rect x="740" y="40" width="20" height="480" fill="#0f1525"/>
+  <text x="745" y="270" fill="#666" font-size="12">◀</text>
+
+  <!-- Annotation: Artifacts collapsed -->
+  <rect x="742" y="505" width="16" height="12" fill="#e94560" opacity="0.3"/>
+  <text x="743" y="513" fill="#e94560" font-size="6">▼</text>
+</svg>
