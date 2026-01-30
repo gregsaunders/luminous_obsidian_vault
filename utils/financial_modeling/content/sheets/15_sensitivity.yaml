@@ -1,0 +1,43 @@
+# =============================================================================
+# Sheet 15: Sensitivity - Tornado Analysis
+# =============================================================================
+
+sheet_id: "15_Sensitivity"
+title: "Sensitivity Analysis"
+
+context_box:
+  title: "Tornado Sensitivity Analysis"
+  content: |
+    This sheet shows how NPV changes when individual parameters vary.
+
+    METHODOLOGY:
+    - Each parameter is varied from Low to High while others stay at Base
+    - NPV is calculated at each extreme
+    - "Swing" = |NPV_at_High - NPV_at_Low| measures parameter influence
+    - Parameters are sorted by Swing (largest impact first)
+
+    INTERPRETATION:
+    - Parameters at top of tornado have most influence on outcomes
+    - Focus validation efforts on high-sensitivity parameters
+    - Parameters with low swing are less critical to model accuracy
+
+    KEY PARAMETERS TESTED:
+    - Value_Per_M3: Direct impact on operational value
+    - Annual_Throughput: Volume scaling factor
+    - Treatment_Rate_Factor: Kinetics uncertainty
+    - Discount_Rate: Time value of money
+    - Season_Length: Active treatment period
+
+    LIMITATIONS:
+    - One-at-a-time analysis ignores parameter correlations
+    - Monte Carlo simulation (10_Calc_Sim) captures joint uncertainty
+    - Use tornado for directional insight, MC for quantified risk
+
+columns:
+  Parameter: "Model input being varied"
+  Low: "Lower bound value tested"
+  Base: "Default/most likely value"
+  High: "Upper bound value tested"
+  NPV_at_Low: "Model NPV when parameter is at Low"
+  NPV_at_High: "Model NPV when parameter is at High"
+  Swing: "Absolute difference between Low and High NPV"

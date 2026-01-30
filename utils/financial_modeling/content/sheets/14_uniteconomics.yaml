@@ -1,0 +1,37 @@
+# =============================================================================
+# Sheet 14: UnitEconomics - Per-Unit Economics View
+# =============================================================================
+
+sheet_id: "14_UnitEconomics"
+title: "Unit Economics"
+
+context_box:
+  title: "Per-Cubic-Meter Economics"
+  content: |
+    This sheet expresses all values on a per-m3 basis for comparability.
+
+    WHY UNIT ECONOMICS MATTER:
+    - Allows comparison across different site sizes
+    - Enables scaling estimates to new deployments
+    - Provides intuitive metrics for operator discussions
+    - Connects to industry benchmarks (treatment costs, ARO liabilities)
+
+    KEY METRICS:
+    - Value per m3: Total value divided by annual throughput
+    - Cost per m3: Testing cost divided by throughput
+    - Net per m3: Value minus cost per unit volume
+    - NPV per m3: 5-year NPV divided by total 5-year throughput
+
+    BENCHMARKS (from 2_Instructions):
+    - Operational value: $3-8/m3 (this model's output)
+    - Avoided treatment: $10-30/m3 (alternative treatment costs)
+    - ARO liability: $21-93/m3 (Zhang 2026 analysis)
+
+    The biosensor's value per m3 can be compared against these benchmarks
+    to understand its contribution relative to the total value stack.
+
+columns:
+  Metric: "Unit economics measure"
+  Value: "Calculated value"
+  Unit: "Units ($/m3)"
+  Benchmark: "Industry benchmark or reference range"

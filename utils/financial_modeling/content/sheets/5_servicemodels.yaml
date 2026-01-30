@@ -1,0 +1,40 @@
+# =============================================================================
+# Sheet 5: ServiceModels - Monte Carlo Distribution Parameters
+# =============================================================================
+
+sheet_id: "5_ServiceModels"
+title: "Monte Carlo Distribution Parameters"
+
+context_box:
+  title: "Stochastic Variable Distributions"
+  content: |
+    This sheet defines the probability distributions for Monte Carlo simulation.
+
+    All variables use TRIANGULAR distributions with three parameters:
+    - Min: Pessimistic/worst-case value
+    - Mode: Most likely value (peak of distribution)
+    - Max: Optimistic/best-case value
+
+    WHY TRIANGULAR?
+    - Simple to parameterize from expert judgment
+    - Captures asymmetric uncertainty naturally
+    - Easy to explain to stakeholders
+    - Sufficient for this level of analysis
+
+    CALIBRATION APPROACH:
+    - Mode is the "base case" assumption
+    - Min/Max represent reasonable bounds, not extremes
+    - Roughly: 10th and 90th percentiles of expert belief
+
+    MODIFYING DISTRIBUTIONS:
+    - Edit the yellow cells to adjust parameters
+    - Run Monte Carlo (10_Calc_Sim) to see impact on output distribution
+    - Check 17_Checks for validation warnings on invalid ranges
+
+columns:
+  Variable: "Name of the stochastic variable"
+  Min: "Minimum value (10th percentile estimate)"
+  Mode: "Most likely value (base case)"
+  Max: "Maximum value (90th percentile estimate)"
+  Units: "Parameter units"
+  Source: "Calibration source or rationale"

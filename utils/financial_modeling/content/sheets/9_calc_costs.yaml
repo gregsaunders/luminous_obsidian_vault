@@ -1,0 +1,31 @@
+# =============================================================================
+# Sheet 9: Calc_Costs - Testing Cost Calculations
+# =============================================================================
+
+sheet_id: "9_Calc_Costs"
+title: "Cost Calculations"
+
+context_box:
+  title: "Understanding Cost Calculations"
+  content: |
+    This sheet calculates the annual cost of the selected testing approach.
+
+    Cost Components:
+    - Testing frequency: How often samples are taken (daily vs weekly vs monthly)
+    - Sample points: Number of locations monitored per test event
+    - Cost per test: Lab analysis cost for HRMS or sensor cost for Biosensor
+    - Season length: Number of active treatment days per year
+
+    Formula: Annual_Cost = (Season_Days / Test_Interval) x Sample_Points x Cost_Per_Test
+
+    The testing option parameters come from 3_Assumptions (Test Options table).
+    Biosensor has higher frequency but much lower cost per test, resulting
+    in comparable or lower total annual costs with far better data resolution.
+
+columns:
+  Testing_Option: "Selected testing method (from 1_TOC dropdown)"
+  Test_Interval: "Days between tests (1 for Biosensor, 7-30 for HRMS)"
+  Sample_Points: "Number of monitoring locations per test event"
+  Cost_Per_Test: "Unit cost per sample analysis"
+  Tests_Per_Season: "Total number of test events per treatment season"
+  Annual_Cost: "Total testing cost for the season"

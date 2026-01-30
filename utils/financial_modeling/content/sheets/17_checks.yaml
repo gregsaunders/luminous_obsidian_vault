@@ -1,0 +1,106 @@
+# =============================================================================
+# Sheet 17: Checks - Model Validation
+# =============================================================================
+
+sheet_id: "17_Checks"
+title: "Model Validation Checks"
+
+context_box:
+  title: "Model Integrity Checks"
+  content: |
+    This sheet validates model inputs and calculations.
+
+    CHECK CATEGORIES:
+    - Range: Input values within acceptable bounds
+    - Consistency: Related inputs are logically consistent
+    - Sanity: Output values are reasonable
+    - Integrity: Calculations produce expected results
+
+    INTERPRETING RESULTS:
+    - PASS: Check passed, no action needed
+    - FAIL: Issue detected, review the referenced input/output
+
+    WHAT TO DO IF CHECKS FAIL:
+    1. Note which check(s) failed
+    2. Review the description to understand the issue
+    3. Navigate to the relevant input (usually 1_TOC or 3_Assumptions)
+    4. Adjust values to bring them within valid ranges
+    5. Return here to confirm PASS status
+
+    AUTOMATED MONITORING:
+    The 0_Cover sheet shows overall model health status.
+    Any FAIL here will trigger the "Review 17_Checks" warning.
+
+checks:
+  table_name: "tbl_Checks"
+  headers: [Check_ID, Category, Description, Formula]
+  rows:
+    - check_id: "CHK001"
+      category: "Range"
+      description: "Discount rate between 0-15%"
+      formula: '=IF(AND(Discount_Rate>=0,Discount_Rate<=0.15),"PASS","FAIL")'
+
+    - check_id: "CHK002"
+      category: "Range"
+      description: "Season length between 60-150 days"
+      formula: '=IF(AND(Season_Length>=60,Season_Length<=150),"PASS","FAIL")'
+
+    - check_id: "CHK003"
+      category: "Range"
+      description: "Projection years between 1-10"
+      formula: '=IF(AND(Projection_Years>=1,Projection_Years<=10),"PASS","FAIL")'
+
+    - check_id: "CHK004"
+      category: "Range"
+      description: "Wetland area between 0.1-10 ha"
+      formula: '=IF(AND(Wetland_Area>=0.1,Wetland_Area<=10),"PASS","FAIL")'
+
+    - check_id: "CHK005"
+      category: "Range"
+      description: "Annual throughput between 1000-500000 m3"
+      formula: '=IF(AND(Annual_Throughput>=1000,Annual_Throughput<=500000),"PASS","FAIL")'
+
+    - check_id: "CHK006"
+      category: "Range"
+      description: "Value per m3 between $1-$20"
+      formula: '=IF(AND(Value_Per_M3>=1,Value_Per_M3<=20),"PASS","FAIL")'
+
+    - check_id: "CHK007"
+      category: "Sanity"
+      description: "NPV within reasonable bounds (-$1M to $10M)"
+      formula: '=IF(AND(NPV_Total>-1000000,NPV_Total<10000000),"PASS","FAIL")'
+
+    - check_id: "CHK008"
+      category: "Consistency"
+      description: "Testing option is valid selection"
+      formula: '=IF(COUNTIF(TestOpt_Option,Testing_Option)>0,"PASS","FAIL")'
+
+    - check_id: "CHK009"
+      category: "Consistency"
+      description: "Scenario selection is valid"
+      formula: '=IF(OR(Scenario_Select="Base",Scenario_Select="Conservative",Scenario_Select="Optimistic"),"PASS","FAIL")'
+
+    - check_id: "CHK010"
+      category: "Range"
+      description: "Learning curve multipliers between 0-1.5"
+      formula: '=IF(AND(MIN(LearningCurve_Mult)>=0,MAX(LearningCurve_Mult)<=1.5),"PASS","FAIL")'
+
+    - check_id: "CHK011"
+      category: "Range"
+      description: "Initial NAFC concentration positive"
+      formula: '=IF(Initial_NAFC>0,"PASS","FAIL")'
+
+    - check_id: "CHK012"
+      category: "Range"
+      description: "Target NAFC less than initial"
+      formula: '=IF(Target_NAFC<Initial_NAFC,"PASS","FAIL")'
+
+    - check_id: "CHK013"
+      category: "Range"
+      description: "Treatment days positive"
+      formula: '=IF(Treatment_Days>0,"PASS","FAIL")'
+
+    - check_id: "CHK014"
+      category: "Range"
+      description: "Treatment rates positive"
+      formula: '=IF(AND(Eff_Rapid_Rate>0,Eff_Slow_Rate>0),"PASS","FAIL")'

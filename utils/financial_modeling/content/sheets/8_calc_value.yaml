@@ -1,0 +1,32 @@
+# =============================================================================
+# Sheet 8: Calc_Value - Gated Value Calculations
+# =============================================================================
+
+sheet_id: "8_Calc_Value"
+title: "Gated Value Calculations"
+
+context_box:
+  title: "Understanding Gated Value Calculations"
+  content: |
+    This sheet calculates value that HRMS testing CANNOT capture due to its
+    42-day latency. Each scenario requires a response faster than HRMS allows.
+
+    The "Gating" Logic:
+    - HRMS has 42-day turnaround from sample to results
+    - All four scenarios require decisions within 3-14 days
+    - Therefore, HRMS is always BLOCKED; Biosensor (1-day) is ENABLED
+
+    Value Calculation:
+    - Gated_Value = Base_Value x Stoch_Mult (if ENABLED)
+    - Gated_Value = $0 (if BLOCKED)
+
+    Since the selected Testing_Option is Biosensor (1-day latency), all
+    scenarios are ENABLED and contribute value. If HRMS were selected,
+    all would be BLOCKED and total value would be $0.
+
+columns:
+  Scenario: "Value scenario identifier (S1-S4)"
+  Base_Value: "Deterministic value from 4_Scenarios (annual benefit if captured)"
+  Gate_Status: "ENABLED if testing latency allows action, BLOCKED if too slow"
+  Stoch_Mult: "Monte Carlo multiplier from 7_Calc_Stochastic (varies each iteration)"
+  Gated_Value: "Base_Value x Stoch_Mult if ENABLED, else $0"

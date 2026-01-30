@@ -1,0 +1,68 @@
+# =============================================================================
+# Sheet 4: Scenarios - Value Scenario Definitions
+# =============================================================================
+
+sheet_id: "4_Scenarios"
+title: "Value Scenario Definitions"
+
+context_box:
+  title: "Understanding Value Scenarios"
+  content: |
+    This sheet defines the four value scenarios that biosensor monitoring enables.
+
+    Each scenario represents value that CANNOT be captured with HRMS testing
+    because HRMS's 42-day latency exceeds the required response time.
+
+    The scenarios are additive - a single biosensor deployment captures
+    all four value streams simultaneously.
+
+    Scenario values are calibrated from the Financial Model Framework
+    ($250K/year total operational value) allocated across scenarios
+    based on relative importance and frequency.
+
+value_scenarios:
+  table_name: "tbl_ValueScenarios"
+  headers: [ID, Name, Base_Value, Required_Response_Days, Description]
+  rows:
+    - id: S1
+      name: "Season Extension"
+      base_value: 104000
+      required_response_days: 7
+      description: "Temperature-based vs calendar shutdown - extend treatment 10-15 days"
+
+    - id: S2
+      name: "Intervention Avoidance"
+      base_value: 67500
+      required_response_days: 7
+      description: "Prevent false-positive interventions from delayed results"
+
+    - id: S3
+      name: "Spatial Routing"
+      base_value: 78000
+      required_response_days: 14
+      description: "Route flow to high-performing cells based on real-time data"
+
+    - id: S4
+      name: "Early Detection"
+      base_value: 36000
+      required_response_days: 3
+      description: "Detect exceedances before regulatory reporting deadlines"
+
+model_scenarios:
+  table_name: "tbl_ModelScenarios"
+  headers: [Scenario, Discount_Adj, Growth_Adj, Risk_Adj]
+  rows:
+    - scenario: "Base"
+      discount_adj: 0
+      growth_adj: 0
+      risk_adj: 0
+
+    - scenario: "Conservative"
+      discount_adj: 0.004
+      growth_adj: -0.02
+      risk_adj: 0.10
+
+    - scenario: "Optimistic"
+      discount_adj: -0.003
+      growth_adj: 0.01
+      risk_adj: -0.10

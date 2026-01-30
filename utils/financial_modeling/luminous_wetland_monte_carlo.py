@@ -45,6 +45,14 @@ from openpyxl.utils import get_column_letter, quote_sheetname
 from openpyxl.formatting.rule import FormulaRule
 import os
 
+# Content loader for externalized documentation
+from content_loader import (
+    ContentLoader,
+    ContentNotFoundError,
+    ContentValidationError,
+    get_loader
+)
+
 # =============================================================================
 # LOCATIONS REGISTRY - Dual-purpose: Write addresses AND Read references
 # =============================================================================
@@ -211,6 +219,182 @@ def set_column_widths(ws, widths):
     """Set column widths from a dict of column: width."""
     for col, width in widths.items():
         ws.column_dimensions[col].width = width
+
+
+# =============================================================================
+# CONTENT LOADING HELPERS
+# =============================================================================
+
+# Module-level content loader instance
+_content_loader = None
+
+
+def get_content_loader():
+    """Get or create the content loader instance."""
+    global _content_loader
+    if _content_loader is None:
+        _content_loader = ContentLoader()
+    return _content_loader
+
+
+def write_context_box(ws, start_row: int, title: str, content: str,
+                      start_col: int = 1, width_cols: int = 4) -> int:
+    """Write a context/explanation box at the top of a calculation sheet.
+
+    Args:
+        ws: Worksheet object
+        start_row: Row to start writing
+        title: Box title
+        content: Multi-line content string (newlines preserved)
+        start_col: Starting column (default 1)
+        width_cols: Number of columns to merge (default 4)
+
+    Returns:
+        Next available row after the context box
+    """
+    # Context box fill (light blue background)
+    context_fill = PatternFill(start_color="DEEAF6", end_color="DEEAF6", fill_type="solid")
+    context_border = Border(
+        left=Side(style='medium', color='4472C4'),
+        right=Side(style='medium', color='4472C4'),
+        top=Side(style='medium', color='4472C4'),
+        bottom=Side(style='medium', color='4472C4')
+    )
+
+    row = start_row
+
+    # Title row
+    title_cell = ws.cell(row=row, column=start_col, value=title)
+    title_cell.font = Font(bold=True, size=11, color="1F4E79")
+    title_cell.fill = context_fill
+    title_cell.border = context_border
+    title_cell.alignment = Alignment(horizontal='left', vertical='center')
+
+    # Merge title across columns
+    end_col = start_col + width_cols - 1
+    ws.merge_cells(start_row=row, start_column=start_col,
+                   end_row=row, end_column=end_col)
+    row += 1
+
+    # Content rows - split by newlines and write each line
+    # Apply wrap_text for multi-line content within cells
+    content_lines = content.strip().split('\n')
+
+    # Write content in a merged cell with wrap_text
+    content_cell = ws.cell(row=row, column=start_col, value=content.strip())
+    content_cell.fill = context_fill
+    content_cell.alignment = Alignment(horizontal='left', vertical='top', wrap_text=True)
+    content_cell.border = context_border
+
+    # Merge content cell
+    ws.merge_cells(start_row=row, start_column=start_col,
+                   end_row=row, end_column=end_col)
+
+    # Set row height based on content lines (approximate)
+    line_count = len(content_lines)
+    ws.row_dimensions[row].height = max(15, line_count * 15)
+
+    row += 1
+
+    # Add a blank row after context box
+    row += 1
+
+    return row
+
+
+def write_content_section(ws, start_row: int, section, loader) -> int:
+    """Write a content section from YAML to the worksheet.
+
+    Args:
+        ws: Worksheet object
+        start_row: Row to start writing
+        section: SectionContent object from content loader
+        loader: ContentLoader instance for resolving references
+
+    Returns:
+        Next available row after the section
+    """
+    row = start_row
+
+    # Section title
+    ws.cell(row=row, column=1, value=section.title).font = FONT_HEADER
+    row += 1
+
+    # Source citation if present
+    if section.source_citation:
+        cell = ws.cell(row=row, column=1, value=f"Source: {section.source_citation}")
+        cell.font = Font(italic=True)
+        row += 1
+
+    # Project if present
+    if section.project:
+        ws.cell(row=row, column=1, value=section.project)
+        row += 1
+
+    # Intro text if present
+    if section.intro:
+        ws.cell(row=row, column=1, value=section.intro)
+        row += 1
+
+    # Bullet point content
+    if section.content:
+        for line in section.content:
+            ws.cell(row=row, column=1, value=f"  - {line}")
+            row += 1
+
+    # Table if present
+    if section.table:
+        row = write_header_row(ws, row, section.table.headers)
+        for table_row in section.table.rows:
+            if isinstance(table_row, dict):
+                for col, header in enumerate(section.table.headers, 1):
+                    key = header.lower().replace(" ", "_")
+                    ws.cell(row=row, column=col, value=table_row.get(key, ""))
+            else:
+                for col, val in enumerate(table_row, 1):
+                    ws.cell(row=row, column=col, value=val)
+            row += 1
+
+    # Handle source references (e.g., glossary, data_sources)
+    if section.source:
+        if section.source.startswith("global/"):
+            source_name = section.source.replace("global/", "").replace(".yaml", "")
+            if source_name == "glossary":
+                terms = loader.get_glossary()
+                for term in terms:
+                    ws.cell(row=row, column=1, value=term.term).font = FONT_BOLD
+                    ws.cell(row=row, column=2, value=term.definition)
+                    row += 1
+            elif source_name == "data_sources":
+                sources = loader.get_data_sources()
+                for source in sources:
+                    if isinstance(source, str):
+                        ws.cell(row=row, column=1, value=f"  - {source}")
+                    else:
+                        ws.cell(row=row, column=1, value=f"  - {source.citation}")
+                    row += 1
+            elif source_name == "change_log":
+                entries = loader.get_change_log()
+                row = write_header_row(ws, row, ['Version', 'Date', 'Changes'])
+                for entry in entries:
+                    ws.cell(row=row, column=1, value=entry.version)
+                    ws.cell(row=row, column=2, value=entry.date)
+                    ws.cell(row=row, column=3, value=entry.changes)
+                    row += 1
+
+    # Subsections
+    if section.subsections:
+        for subsection in section.subsections:
+            ws.cell(row=row, column=1, value=subsection.title).font = Font(bold=True)
+            row += 1
+            if subsection.content:
+                for line in subsection.content:
+                    ws.cell(row=row, column=1, value=f"  - {line}")
+                    row += 1
+            row += 1
+
+    row += 1  # Blank row after section
+    return row
 
 
 # =============================================================================
@@ -389,9 +573,9 @@ def create_2_instructions(wb):
     usage = [
         "1. Edit yellow-highlighted cells in 1_TOC and 3_Assumptions",
         "2. Go to 10_Calc_Sim and set up the Data Table:",
-        "   - Select A5:H1005",
+        "   - Select A5:I1005",
         "   - Data > What-If Analysis > Data Table",
-        "   - Column Input Cell: $J$1 (blank cell on same sheet)",
+        "   - Column Input Cell: $K$1 (blank cell on same sheet)",
         "3. Press Ctrl+Alt+F9 to run Monte Carlo simulation",
         "4. View results in 16_Dashboard",
         "5. Check 17_Checks for any validation errors",
@@ -1132,7 +1316,16 @@ def create_6_calc_timeline(wb):
     ws['A1'] = "Projection Timeline"
     ws['A1'].font = FONT_TITLE
 
+    # Load and write context box from YAML
     row = 3
+    try:
+        loader = get_content_loader()
+        context = loader.get_context_box("6_calc_timeline")
+        if context:
+            row = write_context_box(ws, row, context.title, context.content, width_cols=5)
+    except (ContentNotFoundError, ContentValidationError):
+        pass  # Continue without context box if content not available
+
     headers = ['Year_Index', 'Calendar_Year', 'Treatment_Days', 'Discount_Factor', 'Learning_Mult']
     row = write_header_row(ws, row, headers)
 
@@ -1263,7 +1456,16 @@ def create_7_calc_stochastic(wb):
     ws['A2'] = "(Press F9 to recalculate random draws)"
     ws['A2'].font = Font(italic=True)
 
+    # Load and write context box from YAML
     row = 4
+    try:
+        loader = get_content_loader()
+        context = loader.get_context_box("7_calc_stochastic")
+        if context:
+            row = write_context_box(ws, row, context.title, context.content, width_cols=3)
+    except (ContentNotFoundError, ContentValidationError):
+        pass  # Continue without context box if content not available
+
     headers = ['Variable', 'Random_U', 'Realized_Value']
     row = write_header_row(ws, row, headers)
 
@@ -1349,7 +1551,16 @@ def create_8_calc_value(wb):
     ws['A1'] = "Gated Value Calculations"
     ws['A1'].font = FONT_TITLE
 
+    # Load and write context box from YAML
     row = 3
+    try:
+        loader = get_content_loader()
+        context = loader.get_context_box("8_calc_value")
+        if context:
+            row = write_context_box(ws, row, context.title, context.content, width_cols=5)
+    except (ContentNotFoundError, ContentValidationError):
+        pass  # Continue without context box if content not available
+
     headers = ['Scenario', 'Base_Value', 'Gate_Status', 'Stoch_Mult', 'Gated_Value']
     row = write_header_row(ws, row, headers)
 
@@ -1416,7 +1627,16 @@ def create_9_calc_costs(wb):
     ws['A1'] = "Cost Calculations"
     ws['A1'].font = FONT_TITLE
 
+    # Load and write context box from YAML
     row = 3
+    try:
+        loader = get_content_loader()
+        context = loader.get_context_box("9_calc_costs")
+        if context:
+            row = write_context_box(ws, row, context.title, context.content, width_cols=3)
+    except (ContentNotFoundError, ContentValidationError):
+        pass  # Continue without context box if content not available
+
     headers = ['Component', 'Formula', 'Value']
     row = write_header_row(ws, row, headers)
 
@@ -1484,6 +1704,17 @@ def create_10_calc_sim(wb):
 
     ws['A1'] = "Monte Carlo Simulation (1000 iterations)"
     ws['A1'].font = FONT_TITLE
+
+    # Load and write context box from YAML (placed in column L to avoid Data Table area)
+    try:
+        loader = get_content_loader()
+        context = loader.get_context_box("10_calc_sim")
+        if context:
+            # Place context box in column L (outside Data Table range A-I)
+            write_context_box(ws, 1, context.title, context.content, start_col=12, width_cols=4)
+    except (ContentNotFoundError, ContentValidationError):
+        pass  # Continue without context box if content not available
+
     ws['A2'] = "Select A5:I1005 > Data > What-If Analysis > Data Table"
     ws['A2'].font = Font(italic=True)
     ws['A3'] = "Column Input Cell: $K$1 (blank cell on this sheet)"
@@ -1554,11 +1785,11 @@ def create_10_calc_sim(wb):
     row += 1
 
     kinetics_stats = [
-        ("Expected Days to Compliance", "=AVERAGE(I6:I1005)", '0.0'),
-        ("P10 Days (optimistic)", "=PERCENTILE(I6:I1005,0.10)", '0.0'),
-        ("P50 Days (median)", "=PERCENTILE(I6:I1005,0.50)", '0.0'),
-        ("P90 Days (conservative)", "=PERCENTILE(I6:I1005,0.90)", '0.0'),
-        ("Prob(Achievable in Season)", "=COUNTIF(I6:I1005,\"<=\"&Season_Length)/1000", FMT_PERCENT),
+        ("Expected Days to Compliance", '=IFERROR(AVERAGE(I6:I1005),"Run MC")', '0.0'),
+        ("P10 Days (optimistic)", '=IFERROR(PERCENTILE(I6:I1005,0.10),"Run MC")', '0.0'),
+        ("P50 Days (median)", '=IFERROR(PERCENTILE(I6:I1005,0.50),"Run MC")', '0.0'),
+        ("P90 Days (conservative)", '=IFERROR(PERCENTILE(I6:I1005,0.90),"Run MC")', '0.0'),
+        ("Prob(Achievable in Season)", '=IFERROR(COUNTIF(I6:I1005,"<="&Season_Length)/1000,"Run MC")', FMT_PERCENT),
     ]
 
     kinetics_stats_start = row
@@ -1589,8 +1820,18 @@ def create_11_pl_monthly(wb):
 
     ws['A1'] = "Monthly P&L (Placeholder)"
     ws['A1'].font = FONT_TITLE
-    ws['A3'] = "This sheet is a placeholder for monthly granularity if required."
-    ws['A4'] = "Current model uses annual projections in 12_PL_Annual."
+
+    # Load and write context box from YAML
+    row = 3
+    try:
+        loader = get_content_loader()
+        context = loader.get_context_box("11_pl_monthly")
+        if context:
+            row = write_context_box(ws, row, context.title, context.content, width_cols=4)
+    except (ContentNotFoundError, ContentValidationError):
+        # Fallback to original text
+        ws['A3'] = "This sheet is a placeholder for monthly granularity if required."
+        ws['A4'] = "Current model uses annual projections in 12_PL_Annual."
 
     set_column_widths(ws, {'A': 60})
     return ws
@@ -1608,7 +1849,16 @@ def create_12_pl_annual(wb):
     ws['A1'] = "Annual Projections"
     ws['A1'].font = FONT_TITLE
 
+    # Load and write context box from YAML
     row = 3
+    try:
+        loader = get_content_loader()
+        context = loader.get_context_box("12_pl_annual")
+        if context:
+            row = write_context_box(ws, row, context.title, context.content, width_cols=10)
+    except (ContentNotFoundError, ContentValidationError):
+        pass  # Continue without context box if content not available
+
     headers = ['Year', 'S1_Value', 'S2_Value', 'S3_Value', 'S4_Value',
                'Gross_Value', 'Costs', 'Net_Annual', 'Discount_Factor', 'Discounted']
     row = write_header_row(ws, row, headers)
@@ -1640,6 +1890,10 @@ def create_12_pl_annual(wb):
 
     annual_end = row - 1
     create_table(ws, "tbl_Annual", f"A{annual_start-1}:J{row-1}")
+
+    # Create named ranges for Year 1 values (for dashboard cross-sheet references)
+    add_named_range(wb, "Year1_Gross_Value", "12_PL_Annual", f"$F${annual_start}")
+    add_named_range(wb, "Year1_Net_Value", "12_PL_Annual", f"$H${annual_start}")
 
     # Aggregate KPIs
     row += 2
@@ -1679,20 +1933,30 @@ def create_13_cashflow(wb):
     ws['A1'] = "Cumulative Cash Flow"
     ws['A1'].font = FONT_TITLE
 
+    # Load and write context box from YAML
     row = 3
+    try:
+        loader = get_content_loader()
+        context = loader.get_context_box("13_cashflow")
+        if context:
+            row = write_context_box(ws, row, context.title, context.content, width_cols=4)
+    except (ContentNotFoundError, ContentValidationError):
+        pass  # Continue without context box if content not available
+
     headers = ['Year', 'Annual_Net', 'Cumulative_Net', 'Cumulative_NPV']
     row = write_header_row(ws, row, headers)
 
     cf_start = row
     for i in range(5):
         ws.cell(row=row, column=1, value=f"=Base_Year+{i}")
-        ws.cell(row=row, column=2, value=f"='12_PL_Annual'!H{4+i}")
+        # Use INDEX on table columns instead of hardcoded row references
+        ws.cell(row=row, column=2, value=f"=INDEX(tbl_Annual[Net_Annual],{i+1})")
         if i == 0:
             ws.cell(row=row, column=3, value=f"=B{row}")
-            ws.cell(row=row, column=4, value=f"='12_PL_Annual'!J{4+i}")
+            ws.cell(row=row, column=4, value=f"=INDEX(tbl_Annual[Discounted],{i+1})")
         else:
             ws.cell(row=row, column=3, value=f"=C{row-1}+B{row}")
-            ws.cell(row=row, column=4, value=f"=D{row-1}+'12_PL_Annual'!J{4+i}")
+            ws.cell(row=row, column=4, value=f"=D{row-1}+INDEX(tbl_Annual[Discounted],{i+1})")
 
         for col in [2, 3, 4]:
             ws.cell(row=row, column=col).number_format = FMT_CURRENCY
@@ -1717,7 +1981,16 @@ def create_14_uniteconomics(wb):
     ws['A1'] = "Unit Economics"
     ws['A1'].font = FONT_TITLE
 
+    # Load and write context box from YAML
     row = 3
+    try:
+        loader = get_content_loader()
+        context = loader.get_context_box("14_uniteconomics")
+        if context:
+            row = write_context_box(ws, row, context.title, context.content, width_cols=4)
+    except (ContentNotFoundError, ContentValidationError):
+        pass  # Continue without context box if content not available
+
     headers = ['Metric', 'Value', 'Unit', 'Formula']
     row = write_header_row(ws, row, headers)
 
@@ -1785,11 +2058,19 @@ def create_15_sensitivity(wb):
     ws['A1'] = "Sensitivity Analysis"
     ws['A1'].font = FONT_TITLE
 
-    # Methodology note
-    ws['A2'] = "Automatic scaling - no manual Data Table setup required"
-    ws['A2'].font = Font(italic=True, color="666666")
+    # Load and write context box from YAML
+    row = 3
+    try:
+        loader = get_content_loader()
+        context = loader.get_context_box("15_sensitivity")
+        if context:
+            row = write_context_box(ws, row, context.title, context.content, width_cols=7)
+    except (ContentNotFoundError, ContentValidationError):
+        # Fallback to original methodology note
+        ws['A2'] = "Automatic scaling - no manual Data Table setup required"
+        ws['A2'].font = Font(italic=True, color="666666")
+        row = 4
 
-    row = 4
     headers = ['Parameter', 'Low', 'Base', 'High', 'NPV_at_Low', 'NPV_at_High', 'Swing']
     row = write_header_row(ws, row, headers)
 
@@ -1810,9 +2091,24 @@ def create_15_sensitivity(wb):
         ws.cell(row=row, column=2, value=low)
         ws.cell(row=row, column=3, value=base)
         ws.cell(row=row, column=4, value=high)
-        ws.cell(row=row, column=5, value="[Use Data Table]")
-        ws.cell(row=row, column=6, value="[Use Data Table]")
-        ws.cell(row=row, column=7, value="[Use Data Table]")
+
+        # Calculate NPV_at_Low and NPV_at_High using scaling formulas
+        if scale_type == 'proportional':
+            # NPV scales linearly: NPV_at_X = NPV_Total * (X / Base)
+            ws.cell(row=row, column=5, value=f"=NPV_Total*(B{row}/C{row})")
+            ws.cell(row=row, column=6, value=f"=NPV_Total*(D{row}/C{row})")
+        elif scale_type == 'inverse_rate':
+            # Discount rate: NPV_at_X = NPV_Total * ((1+Base)/(1+X))^2.5
+            ws.cell(row=row, column=5, value=f"=NPV_Total*((1+C{row})/(1+B{row}))^2.5")
+            ws.cell(row=row, column=6, value=f"=NPV_Total*((1+C{row})/(1+D{row}))^2.5")
+
+        # Swing = |NPV_at_High - NPV_at_Low|
+        ws.cell(row=row, column=7, value=f"=ABS(F{row}-E{row})")
+
+        # Format currency columns
+        for col in [5, 6, 7]:
+            ws.cell(row=row, column=col).number_format = FMT_CURRENCY
+
         row += 1
 
     create_table(ws, "tbl_Sensitivity", f"A{sens_start-1}:G{row-1}")
@@ -1859,8 +2155,17 @@ def create_16_dashboard(wb):
     ws['A1'] = "Executive Dashboard"
     ws['A1'].font = FONT_TITLE
 
-    # KPI Summary
+    # Load and write context box from YAML
     row = 3
+    try:
+        loader = get_content_loader()
+        context = loader.get_context_box("16_dashboard")
+        if context:
+            row = write_context_box(ws, row, context.title, context.content, width_cols=2)
+    except (ContentNotFoundError, ContentValidationError):
+        pass  # Continue without context box if content not available
+
+    # KPI Summary
     ws.cell(row=row, column=1, value="Key Performance Indicators").font = FONT_HEADER
     row += 1
     headers = ['Metric', 'Value']
@@ -1875,8 +2180,8 @@ def create_16_dashboard(wb):
         ("Monte Carlo P90", "=MC_P90"),
         ("Probability NPV > 0", "=MC_Prob_Positive"),
         ("Annual Testing Cost", "=Testing_Cost"),
-        ("Year 1 Gross Value", "='12_PL_Annual'!F4"),
-        ("Year 1 Net Value", "='12_PL_Annual'!H4"),
+        ("Year 1 Gross Value", "=Year1_Gross_Value"),
+        ("Year 1 Net Value", "=Year1_Net_Value"),
     ]
 
     for metric, formula in kpis:
@@ -2001,7 +2306,16 @@ def create_17_checks(wb):
     ws['A1'] = "Model Validation Checks"
     ws['A1'].font = FONT_TITLE
 
+    # Load and write context box from YAML
     row = 3
+    try:
+        loader = get_content_loader()
+        context = loader.get_context_box("17_checks")
+        if context:
+            row = write_context_box(ws, row, context.title, context.content, width_cols=4)
+    except (ContentNotFoundError, ContentValidationError):
+        pass  # Continue without context box if content not available
+
     headers = ['Check_ID', 'Category', 'Description', 'Status']
     row = write_header_row(ws, row, headers)
 
@@ -2189,9 +2503,9 @@ def main():
     print("Next Steps in Excel:")
     print("  1. Open the workbook")
     print("  2. Go to 10_Calc_Sim")
-    print("  3. Select A5:H1005")
+    print("  3. Select A5:I1005")
     print("  4. Data > What-If Analysis > Data Table")
-    print("  5. Column Input Cell: $J$1")
+    print("  5. Column Input Cell: $K$1")
     print("  6. Press Ctrl+Alt+F9 to run Monte Carlo")
     print()
     print("Sheet Legend:")

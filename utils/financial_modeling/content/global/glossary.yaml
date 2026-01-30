@@ -1,0 +1,72 @@
+# =============================================================================
+# Glossary - Shared terminology definitions
+# =============================================================================
+# These terms appear in the 2_Instructions glossary section and may be
+# referenced as cell comments throughout the workbook.
+
+terms:
+  - term: HRMS
+    definition: High-Resolution Mass Spectrometry
+    context: |
+      Gold-standard analytical method for NAFC quantification.
+      42-day turnaround time from sample collection to results.
+    related_sheets: [2_Instructions, 3_Assumptions, 8_Calc_Value]
+
+  - term: OSPW
+    definition: Oil Sands Process-affected Water
+    context: |
+      Water that has been in contact with oil sands during bitumen extraction.
+      Contains naphthenic acids and other organic compounds requiring treatment.
+
+  - term: ARO
+    definition: Asset Retirement Obligation
+    context: |
+      Long-dated environmental liabilities discussed in Zhang (2026).
+      Represents the discounted cost of future site remediation.
+      Oil sands operators hold $100B+ in ARO liabilities.
+    related_sheets: [2_Instructions, 5_ServiceModels, 15_Sensitivity]
+
+  - term: NPV
+    definition: Net Present Value
+    context: |
+      Sum of discounted future cash flows.
+      The model calculates 5-year NPV using the discount rate from 1_TOC.
+
+  - term: HLR
+    definition: Hydraulic Loading Rate
+    units: m3/m2/day
+    context: |
+      Volume of water applied per unit wetland area per day.
+      Default assumption: 0.05 m3/m2/day based on Kadlec & Wallace (2009).
+
+  - term: FAST
+    definition: Flexible, Appropriate, Structured, Transparent
+    source: fast-standard.org
+    context: |
+      Financial modeling standard this workbook follows.
+      18-sheet architecture with color-coded tabs by function.
+
+  - term: NAFC
+    definition: Naphthenic Acid Fraction Compounds
+    context: |
+      Primary toxicant class in OSPW. Measured in mg/L.
+      Treatment targets reducing NAFC concentration below toxicity thresholds.
+    related_sheets: [2_Instructions, 3_Assumptions]
+
+  - term: LC50
+    definition: Lethal Concentration 50%
+    context: |
+      Concentration at which 50% of test organisms die.
+      For fathead minnow embryos, NAFC LC50 is 18-34 mg/L in literature.
+
+  - term: TRL
+    definition: Technology Readiness Level
+    context: |
+      Scale from 1-9 measuring technology maturity.
+      Luminous biosensor has achieved TRL 8 (field validated at Kearl).
+
+  - term: SCADA
+    definition: Supervisory Control and Data Acquisition
+    context: |
+      Industrial control system for monitoring wetland operations.
+      Provides flow rates, water levels, and operational parameters.

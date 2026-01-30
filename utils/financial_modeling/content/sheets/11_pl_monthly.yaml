@@ -1,0 +1,30 @@
+# =============================================================================
+# Sheet 11: PL_Monthly - Monthly Profit & Loss (Placeholder)
+# =============================================================================
+
+sheet_id: "11_PL_Monthly"
+title: "Monthly P&L"
+
+context_box:
+  title: "Monthly P&L View"
+  content: |
+    This sheet is a placeholder for future monthly P&L projections.
+
+    CURRENT STATUS: Not implemented in this version.
+
+    FUTURE USE CASES:
+    - Monthly cash flow timing for working capital analysis
+    - Seasonal revenue recognition patterns
+    - Monthly cost accruals
+    - Intra-year variance analysis
+
+    The model currently uses annual projections (12_PL_Annual) as the
+    primary financial view. Monthly detail would add complexity without
+    significant benefit for the current valuation use case.
+
+    If monthly detail is needed, the structure should mirror 12_PL_Annual
+    with columns for each month and rows for:
+    - Gross Value by scenario
+    - Testing costs
+    - Operating expenses
+    - Net monthly benefit

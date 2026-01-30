@@ -1,0 +1,59 @@
+# =============================================================================
+# Sheet 16: Dashboard - Executive Summary
+# =============================================================================
+
+sheet_id: "16_Dashboard"
+title: "Executive Dashboard"
+
+context_box:
+  title: "Key Results Summary"
+  content: |
+    This dashboard presents the key outputs from the Monte Carlo simulation.
+
+    PRIMARY METRICS:
+    - Expected NPV: Mean of 1000 simulation iterations
+    - P10/P50/P90: Confidence interval bounds
+    - Probability NPV > 0: Likelihood of positive outcome
+
+    INTERPRETATION GUIDE:
+    - P10 = "Pessimistic but plausible" (10% of outcomes are worse)
+    - P50 = Median outcome (equally likely to be higher or lower)
+    - P90 = "Optimistic but plausible" (10% of outcomes are better)
+
+    A narrow P10-P90 range indicates low uncertainty.
+    P10 > 0 means even pessimistic scenarios show positive value.
+
+    REFRESH DATA:
+    Press Ctrl+Alt+F9 to regenerate all 1000 Monte Carlo iterations.
+    Dashboard values update automatically.
+
+kpis:
+  - name: "Expected NPV (5-Year)"
+    source: "NPV_Total"
+    format: "currency"
+    description: "Mean NPV across 1000 Monte Carlo iterations"
+
+  - name: "Monte Carlo P10"
+    source: "MC_P10_NPV"
+    format: "currency"
+    description: "10th percentile NPV (pessimistic case)"
+
+  - name: "Monte Carlo P50"
+    source: "MC_P50_NPV"
+    format: "currency"
+    description: "Median NPV (most likely outcome)"
+
+  - name: "Monte Carlo P90"
+    source: "MC_P90_NPV"
+    format: "currency"
+    description: "90th percentile NPV (optimistic case)"
+
+  - name: "Probability NPV > 0"
+    source: "MC_Prob_Positive"
+    format: "percent"
+    description: "Percentage of iterations with positive NPV"
+
+  - name: "Annual Value (at Maturity)"
+    source: "Annual_Net_Y3"
+    format: "currency"
+    description: "Annual net benefit at full operational maturity (Year 3+)"

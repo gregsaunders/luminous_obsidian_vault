@@ -1,0 +1,33 @@
+# =============================================================================
+# Sheet 13: CashFlow - Cumulative Cash Flow Projections
+# =============================================================================
+
+sheet_id: "13_CashFlow"
+title: "Cumulative Cash Flow"
+
+context_box:
+  title: "Cumulative Cash Flow Analysis"
+  content: |
+    This sheet tracks cumulative value capture over the projection horizon.
+
+    KEY METRICS:
+    - Cumulative Net: Running total of annual net benefits
+    - Cumulative NPV: Running total of discounted net benefits
+    - Payback Point: Year when cumulative value turns positive
+
+    USE CASES:
+    - Determine when investment breaks even
+    - Assess cash flow timing for capital planning
+    - Compare cumulative value vs upfront investment
+
+    Note: This model assumes no upfront capital investment for the
+    biosensor system (included in testing costs). For scenarios with
+    capital expenditure, add an initial investment row and adjust
+    payback calculations accordingly.
+
+columns:
+  Year: "Projection year"
+  Annual_Net: "Net benefit for this year (from 12_PL_Annual)"
+  Cumulative_Net: "Running total of Annual_Net"
+  Annual_NPV: "Discounted net benefit for this year"
+  Cumulative_NPV: "Running total of discounted benefits"

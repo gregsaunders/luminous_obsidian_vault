@@ -1,0 +1,127 @@
+# =============================================================================
+# Sheet 2: Instructions - Methodology and Documentation
+# =============================================================================
+# This is the primary documentation sheet explaining how to use the model.
+
+sheet_id: "2_Instructions"
+title: "Model Instructions & Documentation"
+
+sections:
+  # ---------------------------------------------------------------------------
+  # Section 1: Model Purpose
+  # ---------------------------------------------------------------------------
+  - id: purpose
+    title: "1. Model Purpose"
+    content:
+      - "Quantify value of high-frequency biosensor monitoring vs HRMS for OSPW wetland treatment"
+      - "Monte Carlo simulation for uncertainty quantification (1000 iterations)"
+      - "FAST Standard compliance for transparency and auditability"
+      - "All calculations performed in Excel - Python only generates structure/formulas"
+
+  # ---------------------------------------------------------------------------
+  # Section 2: How to Use This Model
+  # ---------------------------------------------------------------------------
+  - id: usage
+    title: "2. How to Use This Model"
+    content:
+      - "1. Edit yellow-highlighted cells in 1_TOC and 3_Assumptions"
+      - "2. Go to 10_Calc_Sim and set up the Data Table:"
+      - "   - Select A5:I1005"
+      - "   - Data > What-If Analysis > Data Table"
+      - "   - Column Input Cell: $K$1 (blank cell on same sheet)"
+      - "3. Press Ctrl+Alt+F9 to run Monte Carlo simulation"
+      - "4. View results in 16_Dashboard"
+      - "5. Check 17_Checks for any validation errors"
+
+  # ---------------------------------------------------------------------------
+  # Section 3: Latency Gating Logic
+  # ---------------------------------------------------------------------------
+  - id: latency_gating
+    title: "3. Latency Gating Logic"
+    intro: "HRMS lab testing has 42-day turnaround, blocking time-sensitive decisions:"
+    table:
+      headers: [Scenario, Required_Response, HRMS_42d, Biosensor_1d]
+      rows:
+        - ["S1: Season Extension", "7 days", "BLOCKED", "ENABLED"]
+        - ["S2: Intervention Avoidance", "7 days", "BLOCKED", "ENABLED"]
+        - ["S3: Spatial Routing", "14 days", "BLOCKED", "ENABLED"]
+        - ["S4: Early Detection", "3 days", "BLOCKED", "ENABLED"]
+
+  # ---------------------------------------------------------------------------
+  # Section 4: Glossary
+  # ---------------------------------------------------------------------------
+  - id: glossary
+    title: "4. Glossary"
+    source: "global/glossary.yaml"
+
+  # ---------------------------------------------------------------------------
+  # Section 5: Data Sources
+  # ---------------------------------------------------------------------------
+  - id: data_sources
+    title: "5. Data Sources"
+    source: "global/data_sources.yaml"
+
+  # ---------------------------------------------------------------------------
+  # Section 6: Value Per Cubic Meter Derivation
+  # ---------------------------------------------------------------------------
+  - id: value_derivation
+    title: "6. Value Per Cubic Meter Derivation"
+    intro: "The $5/m3 operational value is derived from:"
+    content:
+      - "Conservative annual value: $250,000/year (Financial Model Framework)"
+      - "Annual throughput: 50,000 m3/year (3_Assumptions default)"
+      - "Calculation: $250,000 / 50,000 m3 = $5/m3"
+      - "This is the OPERATIONAL benefit only - excludes avoided treatment and ARO impacts"
+    subsections:
+      - id: value_sensitivity
+        title: "Value Sensitivity Analysis (15_Sensitivity):"
+        content:
+          - "Operational: $3-8/m3 (base $5) - Direct wetland treatment value"
+          - "Avoided Treatment: $10-30/m3 (base $20) - Alternative treatment costs"
+          - "ARO Liability: $21-93/m3 (base $50) - Zhang (2026) liability analysis"
+
+  # ---------------------------------------------------------------------------
+  # Section 7: Treatment Kinetics
+  # ---------------------------------------------------------------------------
+  - id: treatment_kinetics
+    title: "7. Treatment Kinetics (Kearl 2022 Field Data)"
+    source_citation: "Vander Meulen & Headley (2024) GROW Presentation"
+    project: "Genome Canada LSARP - GROW (Genomics Research for Optimization of Constructed Treatment Wetlands)"
+    subsections:
+      - id: two_phase_kinetics
+        title: "Two-Phase Kinetics Model:"
+        content:
+          - "Rapid Phase (Days 0-15): -0.532 mg/L/day (R^2=0.43)"
+          - "Slow Phase (Days 30-69): -0.248 mg/L/day (R^2=0.50)"
+          - "The slowdown reflects preferential removal of labile compounds"
+
+      - id: toxicity_endpoints
+        title: "Toxicity Endpoints (Fathead Minnow Embryo):"
+        content:
+          - "Day 14: ~50% survival (1 recirculation cycle = LC50)"
+          - "Day 28: 80-90% survival (2 cycles)"
+          - "Day 42: >90% survival (3 cycles = non-toxic, equivalent to controls)"
+
+      - id: concentration_paradox
+        title: "The Concentration Paradox:"
+        content:
+          - "Water at Day 42 was non-toxic despite ~50 mg/L NAFC concentration"
+          - "Literature LC50 values for fathead minnow: 18-34 mg/L"
+          - "Explanation: Wetlands preferentially remove high-carbon, lipophilic (most toxic) compounds"
+          - "Remaining NAFCs are oxidized (O3, O4 classes) and less bioavailable"
+          - "Implication: Total NAFC concentration alone may be inadequate for assessing safety"
+
+      - id: adjusting_parameters
+        title: "Adjusting Parameters:"
+        content:
+          - "All kinetics parameters are in 3_Assumptions Section H (yellow cells)"
+          - "Treatment_Rate_Factor in 5_ServiceModels captures seasonal/vegetation variability"
+          - "Modify Initial_NAFC to match your source water concentration"
+          - "Adjust Target_NAFC for different regulatory thresholds"
+
+  # ---------------------------------------------------------------------------
+  # Section 8: Change Log
+  # ---------------------------------------------------------------------------
+  - id: change_log
+    title: "8. Change Log"
+    source: "global/change_log.yaml"

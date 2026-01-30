@@ -1,0 +1,44 @@
+# =============================================================================
+# Sheet 10: Calc_Sim - Monte Carlo Simulation
+# =============================================================================
+
+sheet_id: "10_Calc_Sim"
+title: "Monte Carlo Simulation"
+
+context_box:
+  title: "Running the Monte Carlo Simulation"
+  content: |
+    This sheet captures 1000 iterations using Excel's Data Table feature.
+
+    SETUP INSTRUCTIONS:
+    1. Select the data range A5:I1005 (headers + 1000 rows)
+    2. Go to Data > What-If Analysis > Data Table
+    3. Leave "Row input cell" blank
+    4. For "Column input cell" enter: $K$1 (any blank cell on this sheet)
+    5. Click OK
+
+    HOW IT WORKS:
+    - Excel recalculates the model 1000 times
+    - Each row captures one iteration's outputs (NPV, scenario values, costs)
+    - The Data Table forces RAND() functions to regenerate each iteration
+    - Results are stored as values, not formulas
+
+    RECALCULATING:
+    - Press Ctrl+Alt+F9 to force full recalculation
+    - This regenerates all 1000 iterations (may take several seconds)
+    - Standard F9 only recalculates changed cells
+
+    OUTPUT STATISTICS:
+    - Expected NPV: Mean of 1000 iterations
+    - P10/P50/P90: Percentile values for confidence intervals
+    - Prob(NPV>0): Percentage of iterations with positive NPV
+
+columns:
+  Iteration: "Row number (1-1000)"
+  NPV: "Net Present Value for this iteration"
+  S1: "Season Extension value captured"
+  S2: "Intervention Avoidance value captured"
+  S3: "Spatial Routing value captured"
+  S4: "Early Detection value captured"
+  Cost: "Annual testing cost"
+  Net: "Net annual benefit (Total Value - Cost)"

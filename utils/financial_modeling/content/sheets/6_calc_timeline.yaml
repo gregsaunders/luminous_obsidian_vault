@@ -1,0 +1,25 @@
+# =============================================================================
+# Sheet 6: Calc_Timeline - Projection Timeline Generation
+# =============================================================================
+
+sheet_id: "6_Calc_Timeline"
+title: "Projection Timeline"
+
+context_box:
+  title: "Understanding the Timeline"
+  content: |
+    This sheet generates the projection timeline used throughout the model.
+
+    Key outputs:
+    - Year numbers (1-5) based on Projection_Years setting
+    - Calendar years starting from Base_Year
+    - Month indices for seasonal calculations
+
+    The timeline drives all time-dependent calculations in sheets 8-15.
+    Changing Projection_Years or Base_Year in 1_TOC updates this timeline.
+
+columns:
+  Year_Index: "Sequential year number (1, 2, 3...)"
+  Calendar_Year: "Actual calendar year (Base_Year + Year_Index - 1)"
+  Month_Index: "Month within year for seasonal calculations"
+  Season_Active: "TRUE/FALSE indicating if month is within treatment season"

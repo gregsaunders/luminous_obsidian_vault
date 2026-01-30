@@ -1,0 +1,37 @@
+# =============================================================================
+# Sheet 12: PL_Annual - Annual Projections
+# =============================================================================
+
+sheet_id: "12_PL_Annual"
+title: "Annual Projections"
+
+context_box:
+  title: "Annual Financial Projections"
+  content: |
+    This sheet projects annual value capture over the planning horizon.
+
+    KEY CALCULATIONS:
+    - Gross Value: Sum of gated scenario values from 8_Calc_Value
+    - Learning Curve: Year 1 at 50%, Year 2 at 75%, Year 3+ at 100%
+    - Adjusted Value: Gross Value x Learning Curve Multiplier
+    - Net Value: Adjusted Value - Testing Costs
+    - NPV: Discounted sum using rate from 1_TOC
+
+    LEARNING CURVE RATIONALE:
+    Year 1 (50%): Pilot learning, process establishment
+    Year 2 (75%): Initial optimization, expanded coverage
+    Year 3+ (100%): Full operational maturity, steady state
+
+    The learning curve can be adjusted in 3_Assumptions Section D.
+    Conservative default reflects typical technology adoption patterns.
+
+columns:
+  Year: "Projection year (1-5)"
+  Calendar_Year: "Actual calendar year"
+  Gross_Value: "Total gated value before learning adjustment"
+  Learning_Mult: "Learning curve multiplier for this year"
+  Adjusted_Value: "Gross_Value x Learning_Mult"
+  Testing_Cost: "Annual cost of selected testing approach"
+  Net_Value: "Adjusted_Value - Testing_Cost"
+  Discount_Factor: "1/(1+r)^n for NPV calculation"
+  PV_Net: "Present value of Net_Value"

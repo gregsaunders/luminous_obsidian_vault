@@ -1,0 +1,225 @@
+# =============================================================================
+# Content Schema Documentation
+# =============================================================================
+#
+# This file documents the expected structure for all content YAML files.
+# Use this as a reference when editing or creating content files.
+#
+# IMPORTANT: The generator will FAIL if content files are missing or malformed.
+# There are NO fallbacks - content files are the single source of truth.
+#
+# =============================================================================
+
+file_conventions:
+  encoding: UTF-8
+  naming: |
+    - Global files: lowercase with underscores (glossary.yaml, data_sources.yaml)
+    - Sheet files: match sheet ID lowercase (2_instructions.yaml, 8_calc_value.yaml)
+
+yaml_tips:
+  multiline_literal: |
+    Use | for literal blocks (preserves newlines):
+    content: |
+      First line
+      Second line
+      Third line
+
+  multiline_folded: |
+    Use > for folded blocks (joins lines with spaces):
+    description: >
+      This is a long description that spans
+      multiple lines but will be joined into
+      a single paragraph.
+
+  special_characters: |
+    Quote strings containing colons, brackets, or special YAML chars:
+    title: "Section 3: Important Notes"
+    formula: '=IF(A1>0,"Yes","No")'
+
+# =============================================================================
+# GLOBAL CONTENT SCHEMAS
+# =============================================================================
+
+global_glossary:
+  description: Shared glossary terms used across multiple sheets
+  location: content/global/glossary.yaml
+  required_fields:
+    terms: list of term objects
+  term_fields:
+    term: (required) The term being defined
+    definition: (required) Brief definition
+    context: (optional) Additional context or notes
+    related_sheets: (optional) List of sheet IDs where term is relevant
+    source: (optional) Citation for the definition
+    units: (optional) Units of measurement if applicable
+
+  example: |
+    terms:
+      - term: HRMS
+        definition: High-Resolution Mass Spectrometry
+
+      - term: ARO
+        definition: Asset Retirement Obligation
+        context: |
+          Long-dated environmental liabilities discussed in Zhang (2026).
+          Represents the discounted cost of future site remediation.
+        related_sheets: [2_Instructions, 5_ServiceModels]
+
+global_data_sources:
+  description: Citation references for data and methodology
+  location: content/global/data_sources.yaml
+  required_fields:
+    sources: list of citations (strings or objects)
+  source_fields:
+    citation: (required if object) Full citation text
+    url: (optional) Link to source
+    notes: (optional) Additional notes
+
+  example: |
+    sources:
+      - "Zhang (2026) Long-Dated Environmental Liabilities in Oil Sands"
+      - citation: "Kadlec & Wallace (2009) Treatment Wetlands, 2nd Ed."
+        url: "https://doi.org/..."
+        notes: "Primary reference for wetland hydraulics"
+
+global_change_log:
+  description: Version history for the model
+  location: content/global/change_log.yaml
+  required_fields:
+    entries: list of version entries
+  entry_fields:
+    version: (required) Version number
+    date: (required) ISO date (YYYY-MM-DD)
+    changes: (required) Description of changes
+
+  example: |
+    entries:
+      - version: "3.2"
+        date: "2026-01-30"
+        changes: "Externalized documentation content to YAML files"
+
+# =============================================================================
+# SHEET CONTENT SCHEMAS
+# =============================================================================
+
+sheet_content:
+  description: Base structure for all sheet content files
+  required_fields:
+    sheet_id: Sheet identifier (e.g., "2_Instructions")
+    title: Display title for the sheet
+  optional_fields:
+    sections: List of content sections (for documentation sheets)
+    context_box: Explanation box for calculation sheets
+    columns: Dict of column name -> description
+    value_scenarios: Scenario definitions (for 4_Scenarios)
+    model_scenarios: Model scenario definitions
+    checks: Validation check definitions (for 17_Checks)
+    navigation: Navigation items (for 0_Cover)
+    kpis: KPI definitions (for 16_Dashboard)
+
+section_content:
+  description: A section within a documentation sheet
+  required_fields:
+    id: Unique section identifier
+    title: Section heading text
+  optional_fields:
+    intro: Introductory text before content
+    content: List of bullet points
+    table: Table definition (headers + rows)
+    source: Path to global content file (e.g., "global/glossary.yaml")
+    subsections: Nested sections
+    source_citation: Citation for the section's data
+    project: Project name if applicable
+
+  example: |
+    sections:
+      - id: purpose
+        title: "1. Model Purpose"
+        content:
+          - "Quantify value of biosensor monitoring vs HRMS"
+          - "Monte Carlo simulation for uncertainty quantification"
+
+      - id: latency_gating
+        title: "3. Latency Gating Logic"
+        intro: "HRMS lab testing has 42-day turnaround:"
+        table:
+          headers: [Scenario, Required_Response, HRMS_42d, Biosensor_1d]
+          rows:
+            - ["S1: Season Extension", "7 days", "BLOCKED", "ENABLED"]
+            - ["S2: Intervention Avoidance", "7 days", "BLOCKED", "ENABLED"]
+
+context_box:
+  description: Explanation box for calculation sheets
+  purpose: |
+    Context boxes appear at the top of calculation sheets to explain
+    what the sheet calculates and how to interpret the results.
+  required_fields:
+    title: Box heading
+    content: Multi-line explanation text
+
+  example: |
+    context_box:
+      title: "Understanding Gated Value Calculations"
+      content: |
+        This sheet calculates value that HRMS testing cannot capture
+        due to its 42-day latency. Each scenario requires faster response.
+
+        Key columns:
+        - Base_Value: Deterministic value from 4_Scenarios
+        - Gate_Status: ENABLED if latency allows action, else BLOCKED
+        - Gated_Value: Base_Value x Stoch_Mult if ENABLED, else $0
+
+column_descriptions:
+  description: Descriptions for table columns (used for cell comments)
+  format: Dict mapping column header to description text
+
+  example: |
+    columns:
+      Base_Value: "Deterministic value from 4_Scenarios sheet"
+      Gate_Status: "ENABLED if biosensor latency allows action, BLOCKED for HRMS"
+      Stoch_Mult: "Monte Carlo multiplier (varies 0.7-1.3 each iteration)"
+      Gated_Value: "Base_Value x Stoch_Mult if ENABLED, otherwise $0"
+
+# =============================================================================
+# REQUIRED FILES CHECKLIST
+# =============================================================================
+
+required_files:
+  global:
+    - glossary.yaml
+    - data_sources.yaml
+    - change_log.yaml
+
+  sheets:
+    - 0_cover.yaml
+    - 2_instructions.yaml
+    - 4_scenarios.yaml
+    - 5_servicemodels.yaml
+    - 6_calc_timeline.yaml
+    - 7_calc_stochastic.yaml
+    - 8_calc_value.yaml
+    - 9_calc_costs.yaml
+    - 10_calc_sim.yaml
+    - 11_pl_monthly.yaml
+    - 12_pl_annual.yaml
+    - 13_cashflow.yaml
+    - 14_uniteconomics.yaml
+    - 15_sensitivity.yaml
+    - 16_dashboard.yaml
+    - 17_checks.yaml
+
+# =============================================================================
+# VALIDATION
+# =============================================================================
+
+validation_notes: |
+  The content_loader.py module validates all content at startup using pydantic.
+
+  If validation fails, you'll see an error like:
+    Schema validation failed for 2_instructions.yaml:
+      sections -> 0 -> title: Field required
+
+  This means the first section is missing its required 'title' field.
+
+  To validate content files without running the full generator:
+    python content_loader.py

@@ -28,7 +28,8 @@
       "Bash(for name in Gross_Value Testing_Cost Value)",
       "Bash(do echo \"$name:\")",
       "Bash(done)",
-      "Bash(xattr:*)"
+      "Bash(xattr:*)",
+      "Bash(/Users/greg/Luminous Dropbox/Obsidian/.venv/bin/python:*)"
     ],
     "deny": []
   }

@@ -1,0 +1,30 @@
+# =============================================================================
+# Sheet 7: Calc_Stochastic - Random Variable Generation
+# =============================================================================
+
+sheet_id: "7_Calc_Stochastic"
+title: "Stochastic Variables"
+
+context_box:
+  title: "Monte Carlo Random Variables"
+  content: |
+    This sheet generates random variables for Monte Carlo simulation.
+
+    Each variable uses a triangular distribution defined in 5_ServiceModels:
+    - Min: Worst-case value
+    - Mode: Most likely value
+    - Max: Best-case value
+
+    The RAND() functions recalculate when you press F9 or Ctrl+Alt+F9.
+    Sheet 10_Calc_Sim captures 1000 iterations via Excel Data Tables.
+
+    Important: These values change on every recalculation. The simulation
+    statistics (P10, P50, P90) in the Dashboard are calculated from the
+    1000 captured iterations, not from individual cell values.
+
+columns:
+  Variable: "Name of the stochastic variable"
+  Min: "Minimum value (triangular distribution)"
+  Mode: "Most likely value (peak of distribution)"
+  Max: "Maximum value (triangular distribution)"
+  Random: "Current random draw (changes each recalc)"

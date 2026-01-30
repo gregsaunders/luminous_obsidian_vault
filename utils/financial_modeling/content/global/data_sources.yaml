@@ -1,0 +1,42 @@
+# =============================================================================
+# Data Sources - Citations and references
+# =============================================================================
+# Academic papers, industry reports, and data sources used in the model.
+
+sources:
+  - citation: "Zhang (2026) Long-Dated Environmental Liabilities in Oil Sands"
+    notes: |
+      Primary source for ARO liability values ($21-93/m3 range).
+      Analyzed disclosure patterns and liability estimation methods.
+
+  - citation: "Kadlec & Wallace (2009) Treatment Wetlands, 2nd Ed."
+    notes: |
+      Foundational reference for wetland hydraulics and treatment kinetics.
+      Provides HLR guidelines and first-order decay models.
+
+  - citation: "FAST Standard Organisation (fast-standard.org)"
+    url: "https://fast-standard.org"
+    notes: |
+      Financial modeling standard this workbook follows.
+      Defines 18-sheet architecture and color-coding conventions.
+
+  - citation: "Luminous BioSolutions Financial Model Framework"
+    notes: |
+      Internal document establishing $250K/year baseline operational value.
+      Derived from pilot data and operator interviews.
+
+  - citation: "Vander Meulen & Headley (2024) GROW Presentation"
+    notes: |
+      Kearl Wetland Pilot Data presented at GROW (Genomics Research for
+      Optimization of Constructed Treatment Wetlands).
+      Source for two-phase kinetics model and toxicity endpoints.
+
+  - citation: "Genome Canada LSARP - GROW Project"
+    notes: |
+      Large-Scale Applied Research Project funding wetland optimization research.
+      Collaboration between Imperial, University of Alberta, and Environment Canada.
+
+  - citation: "Kearl 2022 Field Data"
+    notes: |
+      Multi-season field validation of wetland treatment performance.
+      Demonstrated 3-cycle (42-day) treatment to non-toxic endpoints.

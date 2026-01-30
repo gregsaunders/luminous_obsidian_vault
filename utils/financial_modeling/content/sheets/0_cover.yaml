@@ -1,0 +1,58 @@
+# =============================================================================
+# Sheet 0: Cover - Navigation Hub
+# =============================================================================
+
+sheet_id: "0_Cover"
+title: "Luminous Wetland Monte Carlo Financial Model"
+
+navigation:
+  - sheet: "1_TOC"
+    description: "Table of Contents / Control panel"
+
+  - sheet: "2_Instructions"
+    description: "Methodology and documentation"
+
+  - sheet: "3_Assumptions"
+    description: "ALL inputs (timing, site, test options, validation)"
+
+  - sheet: "4_Scenarios"
+    description: "Value scenario definitions"
+
+  - sheet: "5_ServiceModels"
+    description: "Monte Carlo distributions"
+
+  - sheet: "6_Calc_Timeline"
+    description: "Projection timeline"
+
+  - sheet: "7_Calc_Stochastic"
+    description: "Random variable generation"
+
+  - sheet: "8_Calc_Value"
+    description: "Gating logic + scenario calculations"
+
+  - sheet: "9_Calc_Costs"
+    description: "Cost calculations"
+
+  - sheet: "10_Calc_Sim"
+    description: "1000-iteration Monte Carlo"
+
+  - sheet: "11_PL_Monthly"
+    description: "Monthly P&L (placeholder)"
+
+  - sheet: "12_PL_Annual"
+    description: "Annual projections"
+
+  - sheet: "13_CashFlow"
+    description: "Cumulative projections"
+
+  - sheet: "14_UnitEconomics"
+    description: "Unit economics view"
+
+  - sheet: "15_Sensitivity"
+    description: "Tornado analysis"
+
+  - sheet: "16_Dashboard"
+    description: "Executive dashboard"
+
+  - sheet: "17_Checks"
+    description: "Validation checks"
