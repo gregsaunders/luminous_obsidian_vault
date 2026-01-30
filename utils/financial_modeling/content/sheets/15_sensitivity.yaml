@@ -41,3 +41,17 @@ columns:
   NPV_at_Low: "Model NPV when parameter is at Low"
   NPV_at_High: "Model NPV when parameter is at High"
   Swing: "Absolute difference between Low and High NPV"
+
+tables:
+  sensitivity:
+    table_name: "tbl_Sensitivity"
+    title: "Sensitivity Analysis"
+    description: "Tornado chart data showing NPV impact when each parameter varies from low to high."
+    purpose: "Identify which parameters most influence outcomes for validation focus"
+    assumptions: |
+      - One-at-a-time analysis: each parameter varied while others at base
+      - Swing = |NPV_at_High - NPV_at_Low| measures parameter influence
+      - Parameters sorted by swing (largest impact first)
+    data_source: "Calculated by evaluating NPV at parameter bounds"
+    related_tables: ["tbl_Triangular", "tbl_SiteConfig", "tbl_KPIs"]
+    headers: [Parameter, Low, Base, High, NPV_at_Low, NPV_at_High, Swing]

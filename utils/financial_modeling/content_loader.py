@@ -78,6 +78,10 @@ class TableDocumentation(BaseModel):
         - assumptions: Key assumptions affecting interpretation
         - data_source: Where the data comes from
         - related_tables: Cross-references to related tables
+
+    Table structure (optional - only needed when YAML drives data):
+        - headers: Column headers
+        - rows: Row data (can be omitted if Python generates the data)
     """
     table_name: str
     title: Optional[str] = None
@@ -87,9 +91,9 @@ class TableDocumentation(BaseModel):
     assumptions: Optional[str] = None
     data_source: Optional[str] = None
     related_tables: Optional[List[str]] = None
-    # Table structure
-    headers: List[str]
-    rows: List[Union[List[Any], Dict[str, Any]]]
+    # Table structure (optional - only used when YAML drives table data)
+    headers: Optional[List[str]] = None
+    rows: Optional[List[Union[List[Any], Dict[str, Any]]]] = None
 
 
 class SectionContent(BaseModel):

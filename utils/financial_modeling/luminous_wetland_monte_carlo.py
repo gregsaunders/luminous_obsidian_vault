@@ -398,7 +398,7 @@ def write_content_section(ws, start_row: int, section, loader) -> int:
     return row
 
 
-def write_table_intro(ws, row: int, table_doc, start_col: int = 1) -> int:
+def write_table_intro(ws, row: int, table_doc, start_col: int = 1, width_cols: int = 1) -> int:
     """Write table title and description above a table.
 
     Args:
@@ -406,6 +406,7 @@ def write_table_intro(ws, row: int, table_doc, start_col: int = 1) -> int:
         row: Current row position
         table_doc: TableDocumentation object with title and description
         start_col: Starting column (default 1)
+        width_cols: Number of columns to merge for description (default 1)
 
     Returns:
         Next row position (ready for header row)
@@ -416,14 +417,55 @@ def write_table_intro(ws, row: int, table_doc, start_col: int = 1) -> int:
         title_cell.font = Font(bold=True, size=11)
         row += 1
 
-    # Description row - italic, smaller, gray background
-    if table_doc.description:
-        desc_cell = ws.cell(row=row, column=start_col, value=table_doc.description)
-        desc_cell.font = Font(italic=True, size=9, color="666666")
-        desc_cell.alignment = Alignment(wrap_text=True)
-        desc_fill = PatternFill(start_color="F2F2F2", end_color="F2F2F2", fill_type="solid")
-        desc_cell.fill = desc_fill
+    # Helper to write a metadata row with label and merged content
+    def write_meta_row(label: str, content: str, fill_color: str = "F2F2F2") -> int:
+        nonlocal row
+        # Write label in first column
+        label_cell = ws.cell(row=row, column=start_col, value=f"{label}:")
+        label_cell.font = Font(bold=True, size=10, color="666666")
+        label_cell.alignment = Alignment(vertical="top")
+        label_fill = PatternFill(start_color=fill_color, end_color=fill_color, fill_type="solid")
+        label_cell.fill = label_fill
+
+        # Write content in remaining columns (merged)
+        content_cell = ws.cell(row=row, column=start_col + 1, value=content.strip())
+        content_cell.font = Font(size=10, color="666666")
+        content_cell.alignment = Alignment(wrap_text=True, vertical="top")
+        content_cell.fill = label_fill
+
+        # Merge content across remaining width
+        if width_cols > 2:
+            end_col = start_col + width_cols - 1
+            ws.merge_cells(start_row=row, start_column=start_col + 1,
+                           end_row=row, end_column=end_col)
+
+        # Set row height based on content length
+        chars_per_row = max(1, (width_cols - 1) * 12)
+        estimated_lines = max(1, len(content) // chars_per_row + 1)
+        ws.row_dimensions[row].height = max(15, estimated_lines * 15)
         row += 1
+        return row
+
+    # Description row
+    if table_doc.description:
+        write_meta_row("Description", table_doc.description)
+
+    # Purpose row
+    if table_doc.purpose:
+        write_meta_row("Purpose", table_doc.purpose)
+
+    # Assumptions row
+    if table_doc.assumptions:
+        write_meta_row("Assumptions", table_doc.assumptions)
+
+    # Data source row
+    if table_doc.data_source:
+        write_meta_row("Data Source", table_doc.data_source)
+
+    # Related tables row
+    if table_doc.related_tables:
+        tables_str = ", ".join(table_doc.related_tables)
+        write_meta_row("Related Tables", tables_str)
 
     return row
 
@@ -577,13 +619,17 @@ def create_1_toc(wb):
     ws = wb.create_sheet("1_TOC")
     ws.sheet_properties.tabColor = TAB_YELLOW
 
+    # Load table documentation from YAML
+    loader = get_content_loader()
+    table_docs = loader.get_table_docs("1_toc")
+
     ws['A1'] = "Control Panel"
     ws['A1'].font = FONT_TITLE
-    ws['A2'] = "User-editable parameters - change these to update model"
-    ws['A2'].font = Font(italic=True)
 
     # Control table
-    row = 4
+    row = 3
+    if 'control' in table_docs:
+        row = write_table_intro(ws, row, table_docs['control'], width_cols=4)
     headers = ['Parameter', 'Value', 'Validation', 'Description']
     row = write_header_row(ws, row, headers)
 
@@ -636,7 +682,7 @@ def create_1_toc(wb):
     add_named_range(wb, "Base_Year", "1_TOC", f"$B${row}")
     row += 1
 
-    create_table(ws, "tbl_Control", f"A4:D{row-1}")
+    create_table(ws, "tbl_Control", f"A{start_row-1}:D{row-1}")
 
     # Data validation will reference 3_Assumptions validation lists
     # (Added after 3_Assumptions is created)
@@ -886,18 +932,20 @@ def create_3_assumptions(wb):
     ws = wb.create_sheet("3_Assumptions")
     ws.sheet_properties.tabColor = TAB_YELLOW
 
+    # Load table documentation from YAML
+    loader = get_content_loader()
+    table_docs = loader.get_table_docs("3_assumptions")
+
     ws['A1'] = "Model Assumptions (Single Source of Truth)"
     ws['A1'].font = FONT_TITLE
-    ws['A2'] = "All user-editable values are highlighted yellow"
-    ws['A2'].font = Font(italic=True)
 
-    row = 4
+    row = 3
 
     # =========================================================================
     # SECTION A: TIMING PARAMETERS
     # =========================================================================
-    ws.cell(row=row, column=1, value="A. TIMING PARAMETERS").font = FONT_HEADER
-    row += 1
+    if 'timing' in table_docs:
+        row = write_table_intro(ws, row, table_docs['timing'], width_cols=4)
     headers = ['Parameter', 'Value', 'Unit', 'Notes']
     row = write_header_row(ws, row, headers)
 
@@ -927,8 +975,8 @@ def create_3_assumptions(wb):
     row += 1
 
     # Seasonality table
-    ws.cell(row=row, column=1, value="Seasonality Index").font = Font(bold=True, italic=True)
-    row += 1
+    if 'seasonality' in table_docs:
+        row = write_table_intro(ws, row, table_docs['seasonality'], width_cols=4)
     headers = ['Month', 'Month_Num', 'Multiplier', 'Activity']
     row = write_header_row(ws, row, headers)
 
@@ -955,8 +1003,8 @@ def create_3_assumptions(wb):
     # =========================================================================
     # SECTION B: SITE CONFIGURATION
     # =========================================================================
-    ws.cell(row=row, column=1, value="B. SITE CONFIGURATION").font = FONT_HEADER
-    row += 1
+    if 'site_config' in table_docs:
+        row = write_table_intro(ws, row, table_docs['site_config'], width_cols=4)
     headers = ['Parameter', 'Value', 'Unit', 'Source']
     row = write_header_row(ws, row, headers)
 
@@ -992,8 +1040,8 @@ def create_3_assumptions(wb):
     # =========================================================================
     # SECTION C: COST PARAMETERS
     # =========================================================================
-    ws.cell(row=row, column=1, value="C. COST PARAMETERS").font = FONT_HEADER
-    row += 1
+    if 'cost_params' in table_docs:
+        row = write_table_intro(ws, row, table_docs['cost_params'], width_cols=3)
     headers = ['Parameter', 'Value', 'Unit']
     row = write_header_row(ws, row, headers)
 
@@ -1019,8 +1067,8 @@ def create_3_assumptions(wb):
     # =========================================================================
     # SECTION D: LEARNING CURVE
     # =========================================================================
-    ws.cell(row=row, column=1, value="D. LEARNING CURVE").font = FONT_HEADER
-    row += 1
+    if 'learning_curve' in table_docs:
+        row = write_table_intro(ws, row, table_docs['learning_curve'], width_cols=3)
     headers = ['Year', 'Multiplier', 'Notes']
     row = write_header_row(ws, row, headers)
 
@@ -1049,8 +1097,8 @@ def create_3_assumptions(wb):
     # =========================================================================
     # SECTION E: TEST OPTIONS (from old 5_Ref_TestOptions)
     # =========================================================================
-    ws.cell(row=row, column=1, value="E. TEST OPTIONS").font = FONT_HEADER
-    row += 1
+    if 'test_options' in table_docs:
+        row = write_table_intro(ws, row, table_docs['test_options'], width_cols=6)
     headers = ['Option', 'Method', 'Interval', 'Points', 'Cost_Per_Test', 'Latency_Days']
     row = write_header_row(ws, row, headers)
 
@@ -1084,8 +1132,8 @@ def create_3_assumptions(wb):
     row += 1
 
     # Latency Gating (calculated)
-    ws.cell(row=row, column=1, value="Latency Gating (Calculated)").font = Font(bold=True, italic=True)
-    row += 1
+    if 'latency_gating' in table_docs:
+        row = write_table_intro(ws, row, table_docs['latency_gating'], width_cols=5)
     headers = ['Option', 'S1_Gate', 'S2_Gate', 'S3_Gate', 'S4_Gate']
     row = write_header_row(ws, row, headers)
 
@@ -1156,10 +1204,8 @@ def create_3_assumptions(wb):
     # =========================================================================
     # SECTION H: TREATMENT KINETICS (Kearl Field Data)
     # =========================================================================
-    ws.cell(row=row, column=1, value="H. TREATMENT KINETICS").font = FONT_HEADER
-    row += 1
-    ws.cell(row=row, column=1, value="Source: Vander Meulen & Headley (2024) GROW Presentation - Kearl Pilot 2022").font = Font(italic=True, size=9)
-    row += 1
+    if 'treatment_kinetics' in table_docs:
+        row = write_table_intro(ws, row, table_docs['treatment_kinetics'], width_cols=4)
     headers = ['Parameter', 'Value', 'Unit', 'Notes']
     row = write_header_row(ws, row, headers)
 
@@ -1191,10 +1237,8 @@ def create_3_assumptions(wb):
     # =========================================================================
     # SECTION I: TOXICITY MILESTONES (Kearl Field Data)
     # =========================================================================
-    ws.cell(row=row, column=1, value="I. TOXICITY MILESTONES").font = FONT_HEADER
-    row += 1
-    ws.cell(row=row, column=1, value="Fathead minnow embryo survival endpoints (Parrott Lab, Burlington)").font = Font(italic=True, size=9)
-    row += 1
+    if 'toxicity_milestones' in table_docs:
+        row = write_table_intro(ws, row, table_docs['toxicity_milestones'], width_cols=4)
     headers = ['Milestone', 'Days', 'Survival', 'Notes']
     row = write_header_row(ws, row, headers)
 
@@ -1250,7 +1294,7 @@ def create_4_scenarios(wb):
     if 'value_scenarios' in table_docs:
         doc = table_docs['value_scenarios']
         collected_docs.append(doc)
-        row = write_table_intro(ws, row, doc)
+        row = write_table_intro(ws, row, doc, width_cols=5)
 
     headers = ['ID', 'Name', 'Base_Value', 'Required_Response_Days', 'Description']
     row = write_header_row(ws, row, headers)
@@ -1285,7 +1329,7 @@ def create_4_scenarios(wb):
     if 'model_scenarios' in table_docs:
         doc = table_docs['model_scenarios']
         collected_docs.append(doc)
-        row = write_table_intro(ws, row, doc)
+        row = write_table_intro(ws, row, doc, width_cols=4)
 
     headers = ['Scenario', 'Discount_Adj', 'Growth_Adj', 'Risk_Adj']
     row = write_header_row(ws, row, headers)
@@ -1328,13 +1372,17 @@ def create_5_servicemodels(wb):
     ws = wb.create_sheet("5_ServiceModels")
     ws.sheet_properties.tabColor = TAB_YELLOW
 
+    # Load table documentation from YAML
+    loader = get_content_loader()
+    table_docs = loader.get_table_docs("5_servicemodels")
+
     ws['A1'] = "Monte Carlo Distribution Parameters"
     ws['A1'].font = FONT_TITLE
 
     # Triangular Distributions
     row = 3
-    ws.cell(row=row, column=1, value="Triangular Distributions").font = FONT_HEADER
-    row += 1
+    if 'triangular' in table_docs:
+        row = write_table_intro(ws, row, table_docs['triangular'], width_cols=5)
     headers = ['Variable', 'Min', 'Mode', 'Max', 'Units']
     row = write_header_row(ws, row, headers)
 
@@ -1367,8 +1415,8 @@ def create_5_servicemodels(wb):
     row += 2
 
     # Beta Distributions
-    ws.cell(row=row, column=1, value="Beta Distributions").font = FONT_HEADER
-    row += 1
+    if 'beta' in table_docs:
+        row = write_table_intro(ws, row, table_docs['beta'], width_cols=6)
     headers = ['Variable', 'Alpha', 'Beta', 'Min', 'Max', 'Units']
     row = write_header_row(ws, row, headers)
 
@@ -1398,8 +1446,8 @@ def create_5_servicemodels(wb):
     row += 2
 
     # Value Per M3 Sensitivity (Zhang 2026 framing)
-    ws.cell(row=row, column=1, value="Value Per M3 Sensitivity Frames").font = FONT_HEADER
-    row += 1
+    if 'value_sensitivity' in table_docs:
+        row = write_table_intro(ws, row, table_docs['value_sensitivity'], width_cols=5)
     headers = ['Frame', 'Low', 'Base', 'High', 'Context']
     row = write_header_row(ws, row, headers)
 
@@ -1439,13 +1487,18 @@ def create_6_calc_timeline(wb):
 
     # Load and write context box from YAML
     row = 3
+    loader = get_content_loader()
     try:
-        loader = get_content_loader()
         context = loader.get_context_box("6_calc_timeline")
         if context:
             row = write_context_box(ws, row, context.title, context.content, width_cols=5)
     except (ContentNotFoundError, ContentValidationError):
         pass  # Continue without context box if content not available
+
+    # Add table intro from YAML
+    table_docs = loader.get_table_docs("6_calc_timeline")
+    if 'timeline' in table_docs:
+        row = write_table_intro(ws, row, table_docs['timeline'], width_cols=5)
 
     headers = ['Year_Index', 'Calendar_Year', 'Treatment_Days', 'Discount_Factor', 'Learning_Mult']
     row = write_header_row(ws, row, headers)
@@ -1579,13 +1632,18 @@ def create_7_calc_stochastic(wb):
 
     # Load and write context box from YAML
     row = 4
+    loader = get_content_loader()
     try:
-        loader = get_content_loader()
         context = loader.get_context_box("7_calc_stochastic")
         if context:
             row = write_context_box(ws, row, context.title, context.content, width_cols=3)
     except (ContentNotFoundError, ContentValidationError):
         pass  # Continue without context box if content not available
+
+    # Add table intro from YAML
+    table_docs = loader.get_table_docs("7_calc_stochastic")
+    if 'stochastic' in table_docs:
+        row = write_table_intro(ws, row, table_docs['stochastic'], width_cols=3)
 
     headers = ['Variable', 'Random_U', 'Realized_Value']
     row = write_header_row(ws, row, headers)
@@ -1674,13 +1732,18 @@ def create_8_calc_value(wb):
 
     # Load and write context box from YAML
     row = 3
+    loader = get_content_loader()
     try:
-        loader = get_content_loader()
         context = loader.get_context_box("8_calc_value")
         if context:
             row = write_context_box(ws, row, context.title, context.content, width_cols=5)
     except (ContentNotFoundError, ContentValidationError):
         pass  # Continue without context box if content not available
+
+    # Add table intro from YAML
+    table_docs = loader.get_table_docs("8_calc_value")
+    if 'gated_values' in table_docs:
+        row = write_table_intro(ws, row, table_docs['gated_values'], width_cols=5)
 
     headers = ['Scenario', 'Base_Value', 'Gate_Status', 'Stoch_Mult', 'Gated_Value']
     row = write_header_row(ws, row, headers)
@@ -1750,13 +1813,18 @@ def create_9_calc_costs(wb):
 
     # Load and write context box from YAML
     row = 3
+    loader = get_content_loader()
     try:
-        loader = get_content_loader()
         context = loader.get_context_box("9_calc_costs")
         if context:
             row = write_context_box(ws, row, context.title, context.content, width_cols=3)
     except (ContentNotFoundError, ContentValidationError):
         pass  # Continue without context box if content not available
+
+    # Add table intro from YAML
+    table_docs = loader.get_table_docs("9_calc_costs")
+    if 'cost_calc' in table_docs:
+        row = write_table_intro(ws, row, table_docs['cost_calc'], width_cols=3)
 
     headers = ['Component', 'Formula', 'Value']
     row = write_header_row(ws, row, headers)
@@ -1972,13 +2040,18 @@ def create_12_pl_annual(wb):
 
     # Load and write context box from YAML
     row = 3
+    loader = get_content_loader()
     try:
-        loader = get_content_loader()
         context = loader.get_context_box("12_pl_annual")
         if context:
             row = write_context_box(ws, row, context.title, context.content, width_cols=10)
     except (ContentNotFoundError, ContentValidationError):
         pass  # Continue without context box if content not available
+
+    # Add table intro from YAML
+    table_docs = loader.get_table_docs("12_pl_annual")
+    if 'annual' in table_docs:
+        row = write_table_intro(ws, row, table_docs['annual'], width_cols=10)
 
     headers = ['Year', 'S1_Value', 'S2_Value', 'S3_Value', 'S4_Value',
                'Gross_Value', 'Costs', 'Net_Annual', 'Discount_Factor', 'Discounted']
@@ -2056,13 +2129,18 @@ def create_13_cashflow(wb):
 
     # Load and write context box from YAML
     row = 3
+    loader = get_content_loader()
     try:
-        loader = get_content_loader()
         context = loader.get_context_box("13_cashflow")
         if context:
             row = write_context_box(ws, row, context.title, context.content, width_cols=4)
     except (ContentNotFoundError, ContentValidationError):
         pass  # Continue without context box if content not available
+
+    # Add table intro from YAML
+    table_docs = loader.get_table_docs("13_cashflow")
+    if 'cashflow' in table_docs:
+        row = write_table_intro(ws, row, table_docs['cashflow'], width_cols=4)
 
     headers = ['Year', 'Annual_Net', 'Cumulative_Net', 'Cumulative_NPV']
     row = write_header_row(ws, row, headers)
@@ -2104,13 +2182,18 @@ def create_14_uniteconomics(wb):
 
     # Load and write context box from YAML
     row = 3
+    loader = get_content_loader()
     try:
-        loader = get_content_loader()
         context = loader.get_context_box("14_uniteconomics")
         if context:
             row = write_context_box(ws, row, context.title, context.content, width_cols=4)
     except (ContentNotFoundError, ContentValidationError):
         pass  # Continue without context box if content not available
+
+    # Add table intro from YAML
+    table_docs = loader.get_table_docs("14_uniteconomics")
+    if 'unit_economics' in table_docs:
+        row = write_table_intro(ws, row, table_docs['unit_economics'], width_cols=4)
 
     headers = ['Metric', 'Value', 'Unit', 'Formula']
     row = write_header_row(ws, row, headers)
@@ -2181,8 +2264,8 @@ def create_15_sensitivity(wb):
 
     # Load and write context box from YAML
     row = 3
+    loader = get_content_loader()
     try:
-        loader = get_content_loader()
         context = loader.get_context_box("15_sensitivity")
         if context:
             row = write_context_box(ws, row, context.title, context.content, width_cols=7)
@@ -2191,6 +2274,11 @@ def create_15_sensitivity(wb):
         ws['A2'] = "Automatic scaling - no manual Data Table setup required"
         ws['A2'].font = Font(italic=True, color="666666")
         row = 4
+
+    # Add table intro from YAML
+    table_docs = loader.get_table_docs("15_sensitivity")
+    if 'sensitivity' in table_docs:
+        row = write_table_intro(ws, row, table_docs['sensitivity'], width_cols=7)
 
     headers = ['Parameter', 'Low', 'Base', 'High', 'NPV_at_Low', 'NPV_at_High', 'Swing']
     row = write_header_row(ws, row, headers)
@@ -2294,7 +2382,7 @@ def create_16_dashboard(wb):
     if 'kpis' in table_docs:
         doc = table_docs['kpis']
         collected_docs.append(doc)
-        row = write_table_intro(ws, row, doc)
+        row = write_table_intro(ws, row, doc, width_cols=2)
 
     headers = ['Metric', 'Value']
     row = write_header_row(ws, row, headers)
@@ -2328,7 +2416,7 @@ def create_16_dashboard(wb):
     if 'scenario_breakdown' in table_docs:
         doc = table_docs['scenario_breakdown']
         collected_docs.append(doc)
-        row = write_table_intro(ws, row, doc)
+        row = write_table_intro(ws, row, doc, width_cols=3)
 
     headers = ['Scenario', 'Gated_Value', 'Status']
     row = write_header_row(ws, row, headers)
@@ -2355,7 +2443,7 @@ def create_16_dashboard(wb):
     if 'treatment_kpis' in table_docs:
         doc = table_docs['treatment_kpis']
         collected_docs.append(doc)
-        row = write_table_intro(ws, row, doc)
+        row = write_table_intro(ws, row, doc, width_cols=3)
 
     headers = ['Metric', 'Value', 'Status']
     row = write_header_row(ws, row, headers)
@@ -2393,7 +2481,7 @@ def create_16_dashboard(wb):
     if 'option_comparison' in table_docs:
         doc = table_docs['option_comparison']
         collected_docs.append(doc)
-        row = write_table_intro(ws, row, doc)
+        row = write_table_intro(ws, row, doc, width_cols=4)
 
     headers = ['Metric', 'Monthly_HRMS', 'Weekly_HRMS', 'Daily_Biosensor']
     row = write_header_row(ws, row, headers)
@@ -2448,13 +2536,18 @@ def create_17_checks(wb):
 
     # Load and write context box from YAML
     row = 3
+    loader = get_content_loader()
     try:
-        loader = get_content_loader()
         context = loader.get_context_box("17_checks")
         if context:
             row = write_context_box(ws, row, context.title, context.content, width_cols=4)
     except (ContentNotFoundError, ContentValidationError):
         pass  # Continue without context box if content not available
+
+    # Add table intro from YAML
+    table_docs = loader.get_table_docs("17_checks")
+    if 'checks' in table_docs:
+        row = write_table_intro(ws, row, table_docs['checks'], width_cols=4)
 
     headers = ['Check_ID', 'Category', 'Description', 'Status']
     row = write_header_row(ws, row, headers)

@@ -35,3 +35,17 @@ columns:
   Value: "Calculated value"
   Unit: "Units ($/m3)"
   Benchmark: "Industry benchmark or reference range"
+
+tables:
+  unit_economics:
+    table_name: "tbl_UnitEconomics"
+    title: "Unit Economics"
+    description: "Per-cubic-meter economics for cross-site comparability and scaling estimates."
+    purpose: "Express all values on per-m3 basis for benchmarking and scaling"
+    assumptions: |
+      - Annual throughput from tbl_SiteConfig used as denominator
+      - NPV values divided by 5-year total throughput
+      - Benchmarks from industry data and Zhang (2026) analysis
+    data_source: "Calculated from model outputs and 3_Assumptions throughput"
+    related_tables: ["tbl_SiteConfig", "tbl_Annual", "tbl_KPIs"]
+    headers: [Metric, Value, Unit, Benchmark]

@@ -35,3 +35,17 @@ columns:
   Net_Value: "Adjusted_Value - Testing_Cost"
   Discount_Factor: "1/(1+r)^n for NPV calculation"
   PV_Net: "Present value of Net_Value"
+
+tables:
+  annual:
+    table_name: "tbl_Annual"
+    title: "Annual Projections"
+    description: "Year-by-year financial projections with learning curve adjustments and NPV calculations."
+    purpose: "Project multi-year value capture for ROI and NPV analysis"
+    assumptions: |
+      - Learning curve applied: Year 1 (50%), Year 2 (75%), Year 3+ (100%)
+      - Discount rate from 1_TOC applied to all future cash flows
+      - Testing costs deducted annually based on selected approach
+    data_source: "Calculated from tbl_GatedValues, tbl_LearningCurve, tbl_CostCalc"
+    related_tables: ["tbl_GatedValues", "tbl_LearningCurve", "tbl_CostCalc", "tbl_CashFlow"]
+    headers: [Year, Calendar_Year, Gross_Value, Learning_Mult, Adjusted_Value, Testing_Cost, Net_Value, Discount_Factor, PV_Net, Cumulative_NPV]

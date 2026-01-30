@@ -31,3 +31,17 @@ columns:
   Cumulative_Net: "Running total of Annual_Net"
   Annual_NPV: "Discounted net benefit for this year"
   Cumulative_NPV: "Running total of discounted benefits"
+
+tables:
+  cashflow:
+    table_name: "tbl_CashFlow"
+    title: "Cash Flow Summary"
+    description: "Cumulative cash flow and NPV tracking for payback analysis."
+    purpose: "Track when cumulative value exceeds investment for breakeven analysis"
+    assumptions: |
+      - No upfront capital investment assumed (costs included in testing)
+      - Annual net values from tbl_Annual
+      - Cumulative NPV used for total project value
+    data_source: "Calculated from tbl_Annual"
+    related_tables: ["tbl_Annual", "tbl_KPIs"]
+    headers: [Year, Annual_Net, Cumulative_Net, Cumulative_NPV]

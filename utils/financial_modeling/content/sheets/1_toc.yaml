@@ -1,0 +1,21 @@
+# =============================================================================
+# Sheet 1: TOC - Table of Contents and Control Panel
+# =============================================================================
+
+sheet_id: "1_TOC"
+title: "Control Panel"
+
+tables:
+  control:
+    table_name: "tbl_Control"
+    title: "Control Panel"
+    description: "User-editable model parameters that drive all calculations. Change these values to explore different scenarios."
+    purpose: "Provide a single location for users to modify key model inputs"
+    assumptions: |
+      - Testing_Option selects between HRMS and biosensor approaches
+      - Scenario_Select chooses conservative, base, or optimistic parameters
+      - Discount_Rate applies to all NPV calculations
+      - Projection_Years determines the financial projection horizon
+    data_source: "User input - default values from Financial Model Framework v2.1"
+    related_tables: ["tbl_ModelScenarios", "tbl_TestOptions"]
+    headers: [Parameter, Value, Validation, Description]

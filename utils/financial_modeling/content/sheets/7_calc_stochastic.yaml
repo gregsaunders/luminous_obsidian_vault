@@ -28,3 +28,17 @@ columns:
   Mode: "Most likely value (peak of distribution)"
   Max: "Maximum value (triangular distribution)"
   Random: "Current random draw (changes each recalc)"
+
+tables:
+  stochastic:
+    table_name: "tbl_Stochastic"
+    title: "Stochastic Variables"
+    description: "Random variable generation using triangular distributions for Monte Carlo simulation."
+    purpose: "Generate stochastic multipliers that vary across simulation iterations"
+    assumptions: |
+      - Uses triangular distribution parameters from 5_ServiceModels
+      - RAND() functions recalculate on spreadsheet refresh
+      - Values captured by Data Table in 10_Calc_Sim for 1000 iterations
+    data_source: "Distribution parameters from tbl_Triangular and tbl_Beta"
+    related_tables: ["tbl_Triangular", "tbl_Beta", "tbl_GatedValues"]
+    headers: [Variable, Formula, Value]

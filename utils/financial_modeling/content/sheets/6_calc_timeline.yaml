@@ -23,3 +23,17 @@ columns:
   Calendar_Year: "Actual calendar year (Base_Year + Year_Index - 1)"
   Month_Index: "Month within year for seasonal calculations"
   Season_Active: "TRUE/FALSE indicating if month is within treatment season"
+
+tables:
+  timeline:
+    table_name: "tbl_Timeline"
+    title: "Projection Timeline"
+    description: "Year-by-year projection timeline with seasonal month breakdown and learning curve factors."
+    purpose: "Generate the time dimension for all financial calculations"
+    assumptions: |
+      - Projection starts at Base_Year and extends for Projection_Years
+      - Each year contains 12 months with season flags
+      - Learning curve multiplier applied from tbl_LearningCurve
+    data_source: "Generated from 1_TOC control parameters"
+    related_tables: ["tbl_LearningCurve", "tbl_Seasonality", "tbl_Annual"]
+    headers: [Year_Index, Calendar_Year, Month_Index, Season_Active, Learning_Mult]

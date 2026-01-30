@@ -1,0 +1,117 @@
+# =============================================================================
+# Sheet 3: Assumptions - Model Assumptions (Single Source of Truth)
+# =============================================================================
+
+sheet_id: "3_Assumptions"
+title: "Model Assumptions (Single Source of Truth)"
+
+tables:
+  timing:
+    table_name: "tbl_Timing"
+    title: "A. Timing Parameters"
+    description: "Treatment season timing that determines the operational window for wetland treatment."
+    purpose: "Define the active treatment period for financial projections"
+    assumptions: |
+      - Treatment season aligned with Alberta weather patterns (May-September)
+      - Season length directly impacts annual value capture potential
+    data_source: "Standard Alberta treatment wetland operational calendar"
+    related_tables: ["tbl_Seasonality", "tbl_Timeline"]
+    headers: [Parameter, Value, Unit, Notes]
+
+  seasonality:
+    table_name: "tbl_Seasonality"
+    title: "Seasonality Index"
+    description: "Monthly activity multipliers reflecting natural treatment capacity variation across the season."
+    purpose: "Weight value calculations by month based on treatment capacity patterns"
+    assumptions: |
+      - Peak activity in June-July matches optimal treatment temperatures
+      - Ramp-up in May and decline in September reflect shoulder seasons
+    data_source: "Kearl pilot operational data patterns"
+    related_tables: ["tbl_Timing", "tbl_Timeline"]
+    headers: [Month, Month_Num, Multiplier, Activity]
+
+  site_config:
+    table_name: "tbl_SiteConfig"
+    title: "B. Site Configuration"
+    description: "Physical wetland parameters that define treatment capacity and value per unit."
+    purpose: "Establish the operational scale for all calculations"
+    assumptions: |
+      - Standard 1.0 ha design based on Kearl pilot scaling
+      - HLR of 0.05 m3/m2/day is conservative for constructed wetlands
+    data_source: "Kearl pilot scaling (0.76 ha) extrapolated to standard design"
+    related_tables: ["tbl_TreatmentKinetics"]
+    headers: [Parameter, Value, Unit, Source]
+
+  cost_params:
+    table_name: "tbl_CostParams"
+    title: "C. Cost Parameters"
+    description: "Operational cost assumptions for labor, penalties, and downtime."
+    purpose: "Enable cost-benefit calculations for testing options"
+    assumptions: |
+      - Labor costs include all direct operational expenses
+      - Regulatory penalty reflects typical EPEA violation costs
+    data_source: "Industry estimates from Financial Model Framework v2.1"
+    related_tables: ["tbl_CostCalc"]
+    headers: [Parameter, Value, Unit]
+
+  learning_curve:
+    table_name: "tbl_LearningCurve"
+    title: "D. Learning Curve"
+    description: "Year-over-year efficiency multipliers reflecting operational maturity progression."
+    purpose: "Discount early-year value to account for pilot learning and optimization"
+    assumptions: |
+      - Year 1 at 50% reflects pilot learning phase
+      - Full maturity (100%) achieved by Year 3
+    data_source: "Standard industrial learning curve for new process technology"
+    related_tables: ["tbl_Timeline", "tbl_GatedValues"]
+    headers: [Year, Multiplier, Notes]
+
+  test_options:
+    table_name: "tbl_TestOptions"
+    title: "E. Test Options"
+    description: "Testing method specifications including frequency, cost, and result latency."
+    purpose: "Compare HRMS lab testing vs real-time biosensor monitoring approaches"
+    assumptions: |
+      - HRMS costs include lab fees and sample logistics
+      - Biosensor costs assume deployed hardware and consumables
+      - Latency includes sample processing and reporting time
+    data_source: "HRMS: Commercial lab quotes; Biosensor: Luminous device specifications"
+    related_tables: ["tbl_LatencyGating", "tbl_CostCalc"]
+    headers: [Option, Method, Interval, Points, Cost_Per_Test, Latency_Days]
+
+  latency_gating:
+    table_name: "tbl_LatencyGating"
+    title: "Latency Gating (Calculated)"
+    description: "Calculated gate status showing which testing options can capture each value scenario."
+    purpose: "Determine ENABLED/BLOCKED status based on latency vs required response time"
+    assumptions: |
+      - ENABLED if testing latency <= scenario required response days
+      - BLOCKED if testing latency > scenario required response days
+      - Gates determine whether value can be captured
+    data_source: "Calculated from tbl_TestOptions latency vs tbl_ValueScenarios requirements"
+    related_tables: ["tbl_TestOptions", "tbl_ValueScenarios", "tbl_GatedValues"]
+    headers: [Option, S1_Gate, S2_Gate, S3_Gate, S4_Gate]
+
+  treatment_kinetics:
+    table_name: "tbl_TreatmentKinetics"
+    title: "H. Treatment Kinetics"
+    description: "NAFC removal rate parameters from Kearl 2022 pilot field data."
+    purpose: "Model treatment progression and time-to-compliance calculations"
+    assumptions: |
+      - Biphasic removal: rapid initial phase (Days 0-15) then slower steady state
+      - Rates calibrated from Vander Meulen & Headley (2024) GROW presentation
+    data_source: "Kearl 2022 pilot data - Vander Meulen & Headley GROW presentation"
+    related_tables: ["tbl_ToxicityMilestones", "tbl_Stochastic"]
+    headers: [Parameter, Value, Unit, Notes]
+
+  toxicity_milestones:
+    table_name: "tbl_ToxicityMilestones"
+    title: "I. Toxicity Milestones"
+    description: "Fathead minnow embryo survival endpoints marking treatment progress toward non-toxicity."
+    purpose: "Define compliance milestones for treatment effectiveness tracking"
+    assumptions: |
+      - LC50 at Day 14 marks start of toxicity reduction
+      - Non-toxic threshold (>90% survival) typically achieved by Day 42
+    data_source: "Parrott Lab (Burlington) fathead minnow embryo bioassays"
+    related_tables: ["tbl_TreatmentKinetics"]
+    headers: [Milestone, Days, Survival, Notes]

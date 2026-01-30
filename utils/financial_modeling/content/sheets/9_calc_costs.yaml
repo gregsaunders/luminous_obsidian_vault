@@ -29,3 +29,16 @@ columns:
   Cost_Per_Test: "Unit cost per sample analysis"
   Tests_Per_Season: "Total number of test events per treatment season"
   Annual_Cost: "Total testing cost for the season"
+
+tables:
+  cost_calc:
+    table_name: "tbl_CostCalc"
+    title: "Cost Calculation"
+    description: "Annual testing cost breakdown for the selected monitoring approach."
+    purpose: "Calculate total cost of testing to include in ROI and NPV calculations"
+    assumptions: |
+      - Cost = (Season_Days / Test_Interval) x Sample_Points x Cost_Per_Test
+      - Parameters looked up from tbl_TestOptions based on selected option
+    data_source: "Calculated from tbl_TestOptions parameters"
+    related_tables: ["tbl_TestOptions", "tbl_CostParams", "tbl_Annual"]
+    headers: [Component, Formula, Value]
