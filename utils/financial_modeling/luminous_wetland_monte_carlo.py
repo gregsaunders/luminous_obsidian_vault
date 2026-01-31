@@ -222,6 +222,61 @@ def set_column_widths(ws, widths):
         ws.column_dimensions[col].width = width
 
 
+def get_merged_width(ws, start_col: int, end_col: int) -> float:
+    """Get combined width of columns for merged cell calculations.
+
+    Args:
+        ws: Worksheet object
+        start_col: Starting column number (1-indexed)
+        end_col: Ending column number (1-indexed)
+
+    Returns:
+        Combined width of all columns in range
+    """
+    from openpyxl.utils import get_column_letter
+    total_width = 0
+    for col in range(start_col, end_col + 1):
+        col_letter = get_column_letter(col)
+        col_width = ws.column_dimensions[col_letter].width
+        # Default Excel width is ~8.43 if not set
+        total_width += col_width if col_width else 8.43
+    return total_width
+
+
+def calculate_row_height(text: str, column_width: float, font_size: int = 10, buffer: float = 1.3) -> float:
+    """Calculate row height needed for wrapped text.
+
+    Args:
+        text: The text content
+        column_width: Combined width of columns the text spans
+        font_size: Font size in points (default 10)
+        buffer: Safety multiplier for edge cases (default 1.3)
+
+    Returns:
+        Row height in points
+    """
+    if not text:
+        return 15
+
+    # Approximate characters that fit per column width unit
+    # Excel column width ~7 pixels per unit, ~7 pixels per character at size 10
+    chars_per_width_unit = 1.0
+    chars_per_line = max(1, int(column_width * chars_per_width_unit))
+
+    # Count explicit newlines and calculate wrapping
+    lines = text.split('\n')
+    total_lines = 0
+    for line in lines:
+        # Each explicit line may wrap
+        wrapped_lines = max(1, (len(line) + chars_per_line - 1) // chars_per_line)
+        total_lines += wrapped_lines
+
+    # Height per line (approximately 1.2 * font_size)
+    line_height = font_size * 1.2
+
+    return max(15, total_lines * line_height * buffer)
+
+
 # =============================================================================
 # CONTENT LOADING HELPERS
 # =============================================================================
@@ -277,10 +332,6 @@ def write_context_box(ws, start_row: int, title: str, content: str,
                    end_row=row, end_column=end_col)
     row += 1
 
-    # Content rows - split by newlines and write each line
-    # Apply wrap_text for multi-line content within cells
-    content_lines = content.strip().split('\n')
-
     # Write content in a merged cell with wrap_text
     content_cell = ws.cell(row=row, column=start_col, value=content.strip())
     content_cell.fill = context_fill
@@ -291,9 +342,9 @@ def write_context_box(ws, start_row: int, title: str, content: str,
     ws.merge_cells(start_row=row, start_column=start_col,
                    end_row=row, end_column=end_col)
 
-    # Set row height based on content lines (approximate)
-    line_count = len(content_lines)
-    ws.row_dimensions[row].height = max(15, line_count * 15)
+    # Set row height based on content and column width
+    merged_width = get_merged_width(ws, start_col, start_col + width_cols - 1)
+    ws.row_dimensions[row].height = calculate_row_height(content.strip(), merged_width)
 
     row += 1
 
@@ -439,11 +490,9 @@ def write_table_intro(ws, row: int, table_doc, start_col: int = 1, width_cols: i
             ws.merge_cells(start_row=row, start_column=start_col + 1,
                            end_row=row, end_column=end_col)
 
-        # Set row height based on content length
-        # ~20 chars per column width, 13 points per line
-        chars_per_row = max(1, (width_cols - 1) * 20)
-        estimated_lines = max(1, len(content) // chars_per_row + 1)
-        ws.row_dimensions[row].height = max(13, estimated_lines * 13)
+        # Set row height based on content and column width
+        merged_width = get_merged_width(ws, start_col + 1, start_col + width_cols - 1)
+        ws.row_dimensions[row].height = calculate_row_height(content.strip(), merged_width)
         row += 1
         return row
 
@@ -479,6 +528,7 @@ def create_0_cover(wb):
     ws = wb.active
     ws.title = "0_Cover"
     ws.sheet_properties.tabColor = TAB_WHITE
+    set_column_widths(ws, {'A': 20, 'B': 45})
 
     # Title
     ws['A1'] = "Luminous Wetland Monte Carlo Financial Model"
@@ -532,7 +582,6 @@ def create_0_cover(wb):
         ws.cell(row=row, column=2, value=description)
         row += 1
 
-    set_column_widths(ws, {'A': 20, 'B': 45})
     return ws
 
 
@@ -544,6 +593,7 @@ def create_1_toc(wb):
     """Sheet 1: TOC - Table of Contents and Control Panel."""
     ws = wb.create_sheet("1_TOC")
     ws.sheet_properties.tabColor = TAB_YELLOW
+    set_column_widths(ws, {'A': 20, 'B': 18, 'C': 12, 'D': 35})
 
     # Load table documentation from YAML
     loader = get_content_loader()
@@ -613,7 +663,6 @@ def create_1_toc(wb):
     # Data validation will reference 3_Assumptions validation lists
     # (Added after 3_Assumptions is created)
 
-    set_column_widths(ws, {'A': 20, 'B': 18, 'C': 12, 'D': 35})
     return ws
 
 
@@ -625,6 +674,7 @@ def create_2_instructions(wb):
     """Sheet 2: Instructions - Methodology, glossary, data sources."""
     ws = wb.create_sheet("2_Instructions")
     ws.sheet_properties.tabColor = TAB_GRAY
+    set_column_widths(ws, {'A': 35, 'B': 30, 'C': 50, 'D': 15})
 
     row = 1
     ws.cell(row=row, column=1, value="Model Instructions & Documentation").font = FONT_TITLE
@@ -835,7 +885,6 @@ def create_2_instructions(wb):
     ws.cell(row=row, column=2, value="2025-12-01")
     ws.cell(row=row, column=3, value="Initial Python-based model")
 
-    set_column_widths(ws, {'A': 35, 'B': 30, 'C': 50, 'D': 15})
     return ws
 
 
@@ -857,6 +906,7 @@ def create_3_assumptions(wb):
     """
     ws = wb.create_sheet("3_Assumptions")
     ws.sheet_properties.tabColor = TAB_YELLOW
+    set_column_widths(ws, {'A': 24, 'B': 14, 'C': 12, 'D': 42, 'E': 16, 'F': 14})
 
     # Load table documentation from YAML
     loader = get_content_loader()
@@ -967,7 +1017,7 @@ def create_3_assumptions(wb):
     # SECTION C: COST PARAMETERS
     # =========================================================================
     if 'cost_params' in table_docs:
-        row = write_table_intro(ws, row, table_docs['cost_params'], width_cols=3)
+        row = write_table_intro(ws, row, table_docs['cost_params'], width_cols=4)
     headers = ['Parameter', 'Value', 'Unit']
     row = write_header_row(ws, row, headers)
 
@@ -994,7 +1044,7 @@ def create_3_assumptions(wb):
     # SECTION D: LEARNING CURVE
     # =========================================================================
     if 'learning_curve' in table_docs:
-        row = write_table_intro(ws, row, table_docs['learning_curve'], width_cols=3)
+        row = write_table_intro(ws, row, table_docs['learning_curve'], width_cols=4)
     headers = ['Year', 'Multiplier', 'Notes']
     row = write_header_row(ws, row, headers)
 
@@ -1186,8 +1236,6 @@ def create_3_assumptions(wb):
 
     create_table(ws, "tbl_ToxicityMilestones", f"A{toxicity_start-1}:D{row-1}")
 
-    set_column_widths(ws, {'A': 24, 'B': 14, 'C': 12, 'D': 42, 'E': 16, 'F': 14})
-
     # Store key row numbers for other sheets to reference
     register_location("_timing_start", "3_Assumptions", "A", timing_start)
     register_location("_site_start", "3_Assumptions", "A", site_start)
@@ -1206,6 +1254,7 @@ def create_4_scenarios(wb):
     """Sheet 4: Scenarios - Value scenario definitions."""
     ws = wb.create_sheet("4_Scenarios")
     ws.sheet_properties.tabColor = TAB_YELLOW
+    set_column_widths(ws, {'A': 12, 'B': 22, 'C': 14, 'D': 24, 'E': 40})
 
     # Load table documentation from YAML
     loader = get_content_loader()
@@ -1282,7 +1331,6 @@ def create_4_scenarios(wb):
 
     create_table(ws, "tbl_ModelScenarios", f"A{model_start-1}:D{row-1}")
 
-    set_column_widths(ws, {'A': 12, 'B': 22, 'C': 14, 'D': 24, 'E': 40})
     return ws
 
 
@@ -1294,6 +1342,7 @@ def create_5_servicemodels(wb):
     """Sheet 5: ServiceModels - Monte Carlo distribution parameters."""
     ws = wb.create_sheet("5_ServiceModels")
     ws.sheet_properties.tabColor = TAB_YELLOW
+    set_column_widths(ws, {'A': 28, 'B': 12, 'C': 12, 'D': 12, 'E': 12, 'F': 35})
 
     # Load table documentation from YAML
     loader = get_content_loader()
@@ -1392,7 +1441,6 @@ def create_5_servicemodels(wb):
 
     create_table(ws, "tbl_ValueSensitivity", f"A{sens_start-1}:E{row-1}")
 
-    set_column_widths(ws, {'A': 28, 'B': 12, 'C': 12, 'D': 12, 'E': 12, 'F': 35})
     return ws
 
 
@@ -1404,6 +1452,7 @@ def create_6_calc_timeline(wb):
     """Sheet 6: Calc_Timeline - Generate projection time series."""
     ws = wb.create_sheet("6_Calc_Timeline")
     ws.sheet_properties.tabColor = TAB_BLUE
+    set_column_widths(ws, {'A': 20, 'B': 36, 'C': 16, 'D': 12, 'E': 14})
 
     ws['A1'] = "Projection Timeline"
     ws['A1'].font = FONT_TITLE
@@ -1535,7 +1584,6 @@ def create_6_calc_timeline(wb):
     ws.cell(row=row, column=4, value="status")
     add_named_range(wb, "Compliance_Status", "6_Calc_Timeline", f"$C${row}")
 
-    set_column_widths(ws, {'A': 20, 'B': 36, 'C': 16, 'D': 12, 'E': 14})
     return ws
 
 
@@ -1547,6 +1595,7 @@ def create_7_calc_stochastic(wb):
     """Sheet 7: Calc_Stochastic - Excel-native random variable generation."""
     ws = wb.create_sheet("7_Calc_Stochastic")
     ws.sheet_properties.tabColor = TAB_BLUE
+    set_column_widths(ws, {'A': 22, 'B': 12, 'C': 70})
 
     ws['A1'] = "Stochastic Variables"
     ws['A1'].font = FONT_TITLE
@@ -1637,7 +1686,6 @@ def create_7_calc_stochastic(wb):
 
     create_table(ws, "tbl_Stochastic", f"A{stoch_start-1}:C{row-1}")
 
-    set_column_widths(ws, {'A': 22, 'B': 12, 'C': 70})
     return ws
 
 
@@ -1649,6 +1697,7 @@ def create_8_calc_value(wb):
     """Sheet 8: Calc_Value - Calculate gated value for each scenario."""
     ws = wb.create_sheet("8_Calc_Value")
     ws.sheet_properties.tabColor = TAB_BLUE
+    set_column_widths(ws, {'A': 28, 'B': 14, 'C': 14, 'D': 14, 'E': 14})
 
     ws['A1'] = "Gated Value Calculations"
     ws['A1'].font = FONT_TITLE
@@ -1718,7 +1767,6 @@ def create_8_calc_value(wb):
     ws[f'E{row}'].number_format = FMT_CURRENCY
     add_named_range(wb, "Gross_Value", "8_Calc_Value", f"$E${row}")
 
-    set_column_widths(ws, {'A': 28, 'B': 14, 'C': 14, 'D': 14, 'E': 14})
     return ws
 
 
@@ -1730,6 +1778,7 @@ def create_9_calc_costs(wb):
     """Sheet 9: Calc_Costs - Calculate testing and operational costs."""
     ws = wb.create_sheet("9_Calc_Costs")
     ws.sheet_properties.tabColor = TAB_BLUE
+    set_column_widths(ws, {'A': 22, 'B': 25, 'C': 18})
 
     ws['A1'] = "Cost Calculations"
     ws['A1'].font = FONT_TITLE
@@ -1801,7 +1850,6 @@ def create_9_calc_costs(wb):
 
     create_table(ws, "tbl_CostCalc", f"A{cost_start-1}:C{row-1}")
 
-    set_column_widths(ws, {'A': 22, 'B': 25, 'C': 18})
     return ws
 
 
@@ -1813,6 +1861,7 @@ def create_10_calc_sim(wb):
     """Sheet 10: Calc_Sim - 1000-iteration Monte Carlo using Excel Data Table."""
     ws = wb.create_sheet("10_Calc_Sim")
     ws.sheet_properties.tabColor = TAB_BLUE
+    set_column_widths(ws, {'A': 26, 'B': 14, 'C': 14, 'D': 14, 'E': 14, 'F': 14, 'G': 14, 'H': 14, 'I': 18, 'K': 8})
 
     # Title row first (matching other sheets' pattern)
     ws['A1'] = "Monte Carlo Simulation (1000 iterations)"
@@ -1934,7 +1983,6 @@ def create_10_calc_sim(wb):
     add_named_range(wb, "MC_P90_Days", "10_Calc_Sim", f"$B${kinetics_stats_start+3}")
     add_named_range(wb, "MC_Prob_Achievable", "10_Calc_Sim", f"$B${kinetics_stats_start+4}")
 
-    set_column_widths(ws, {'A': 26, 'B': 14, 'C': 14, 'D': 14, 'E': 14, 'F': 14, 'G': 14, 'H': 14, 'I': 18, 'K': 8})
     return ws
 
 
@@ -1946,6 +1994,7 @@ def create_11_pl_monthly(wb):
     """Sheet 11: PL_Monthly - Placeholder for monthly P&L if needed."""
     ws = wb.create_sheet("11_PL_Monthly")
     ws.sheet_properties.tabColor = TAB_BLUE
+    set_column_widths(ws, {'A': 60})
 
     ws['A1'] = "Monthly P&L (Placeholder)"
     ws['A1'].font = FONT_TITLE
@@ -1962,7 +2011,6 @@ def create_11_pl_monthly(wb):
         ws['A3'] = "This sheet is a placeholder for monthly granularity if required."
         ws['A4'] = "Current model uses annual projections in 12_PL_Annual."
 
-    set_column_widths(ws, {'A': 60})
     return ws
 
 
@@ -1974,6 +2022,8 @@ def create_12_pl_annual(wb):
     """Sheet 12: PL_Annual - Annual projection summaries."""
     ws = wb.create_sheet("12_PL_Annual")
     ws.sheet_properties.tabColor = TAB_BLUE
+    set_column_widths(ws, {'A': 12, 'B': 12, 'C': 12, 'D': 12, 'E': 12,
+                           'F': 14, 'G': 12, 'H': 14, 'I': 16, 'J': 14})
 
     ws['A1'] = "Annual Projections"
     ws['A1'].font = FONT_TITLE
@@ -2050,8 +2100,6 @@ def create_12_pl_annual(wb):
     cell.number_format = FMT_CURRENCY
     row += 1
 
-    set_column_widths(ws, {'A': 12, 'B': 12, 'C': 12, 'D': 12, 'E': 12,
-                          'F': 14, 'G': 12, 'H': 14, 'I': 16, 'J': 14})
     return ws
 
 
@@ -2063,6 +2111,7 @@ def create_13_cashflow(wb):
     """Sheet 13: CashFlow - Cumulative projections."""
     ws = wb.create_sheet("13_CashFlow")
     ws.sheet_properties.tabColor = TAB_BLUE
+    set_column_widths(ws, {'A': 12, 'B': 16, 'C': 16, 'D': 16})
 
     ws['A1'] = "Cumulative Cash Flow"
     ws['A1'].font = FONT_TITLE
@@ -2104,7 +2153,6 @@ def create_13_cashflow(wb):
 
     create_table(ws, "tbl_CashFlow", f"A{cf_start-1}:D{row-1}")
 
-    set_column_widths(ws, {'A': 12, 'B': 16, 'C': 16, 'D': 16})
     return ws
 
 
@@ -2116,6 +2164,7 @@ def create_14_uniteconomics(wb):
     """Sheet 14: UnitEconomics - Unit economics view."""
     ws = wb.create_sheet("14_UnitEconomics")
     ws.sheet_properties.tabColor = TAB_BLUE
+    set_column_widths(ws, {'A': 28, 'B': 18, 'C': 10, 'D': 25})
 
     ws['A1'] = "Unit Economics"
     ws['A1'].font = FONT_TITLE
@@ -2180,7 +2229,6 @@ def create_14_uniteconomics(wb):
     ws.cell(row=row, column=2, value="=(Gross_Value-Testing_Cost)/(Testing_Cost/INDEX(TestOpt_Cost,MATCH(Testing_Option,TestOpt_Option,0)))")
     ws['B' + str(row)].number_format = FMT_CURRENCY_DEC
 
-    set_column_widths(ws, {'A': 28, 'B': 18, 'C': 10, 'D': 25})
     return ws
 
 
@@ -2198,6 +2246,7 @@ def create_15_sensitivity(wb):
     """
     ws = wb.create_sheet("15_Sensitivity")
     ws.sheet_properties.tabColor = TAB_BLUE
+    set_column_widths(ws, {'A': 18, 'B': 12, 'C': 12, 'D': 12, 'E': 15, 'F': 15, 'G': 15})
 
     ws['A1'] = "Sensitivity Analysis"
     ws['A1'].font = FONT_TITLE
@@ -2288,7 +2337,6 @@ def create_15_sensitivity(wb):
         ws.cell(row=row, column=1, value=inst)
         row += 1
 
-    set_column_widths(ws, {'A': 18, 'B': 12, 'C': 12, 'D': 12, 'E': 15, 'F': 15, 'G': 15})
     return ws
 
 
@@ -2300,6 +2348,7 @@ def create_16_dashboard(wb):
     """Sheet 16: Dashboard - Executive summary with KPIs."""
     ws = wb.create_sheet("16_Dashboard")
     ws.sheet_properties.tabColor = TAB_GREEN
+    set_column_widths(ws, {'A': 30, 'B': 18, 'C': 16, 'D': 18})
 
     ws['A1'] = "Executive Dashboard"
     ws['A1'].font = FONT_TITLE
@@ -2455,7 +2504,6 @@ def create_16_dashboard(wb):
     ws.cell(row=row, column=1, value="Errors Found:")
     ws.cell(row=row, column=2, value="=COUNTIF('17_Checks'!D:D,\"FAIL\")")
 
-    set_column_widths(ws, {'A': 30, 'B': 18, 'C': 16, 'D': 18})
     return ws
 
 
@@ -2467,6 +2515,7 @@ def create_17_checks(wb):
     """Sheet 17: Checks - Dedicated validation and integrity checks."""
     ws = wb.create_sheet("17_Checks")
     ws.sheet_properties.tabColor = TAB_RED
+    set_column_widths(ws, {'A': 12, 'B': 12, 'C': 40, 'D': 12})
 
     ws['A1'] = "Model Validation Checks"
     ws['A1'].font = FONT_TITLE
@@ -2547,7 +2596,6 @@ def create_17_checks(wb):
     ws.cell(row=row, column=1, value="Model Health:")
     ws.cell(row=row, column=2, value='=IF(COUNTIF(tbl_Checks[Status],"FAIL")=0,"HEALTHY","REVIEW REQUIRED")')
 
-    set_column_widths(ws, {'A': 12, 'B': 12, 'C': 40, 'D': 12})
     return ws
 
 
