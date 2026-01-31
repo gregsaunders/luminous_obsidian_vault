@@ -1,0 +1,90 @@
+# Ionic Variables - Water quality parameters affecting treatment and compliance
+# These variables are monitored for regulatory compliance gates.
+
+category: ionic
+
+variables:
+  # Salinity - Affects microbial activity and compliance
+  - id: Salinity
+    name: Salinity
+    description: >-
+      Total dissolved salts in the treatment water. High salinity can
+      inhibit microbial activity and may trigger compliance gates for
+      discharge to freshwater ecosystems.
+    unit: ppt
+    distribution: triangular
+    params:
+      min: 0.5
+      mode: 2.0
+      max: 5.0
+    drivers: []
+    sheet: 5_EnvironmentalDrivers
+    is_input: true
+
+  # Sodium Adsorption Ratio - Critical for land discharge
+  - id: SAR
+    name: Sodium Adsorption Ratio
+    description: >-
+      Ratio indicating sodium hazard for irrigation or land application.
+      SAR > 4.0 typically triggers compliance gate failure. Critical
+      parameter for treated water discharge options.
+    unit: ratio
+    distribution: triangular
+    params:
+      min: 1.0
+      mode: 2.5
+      max: 6.0
+    drivers: []
+    sheet: 5_EnvironmentalDrivers
+    is_input: true
+
+  # Chloride - Compliance parameter
+  - id: Chloride
+    name: Chloride Concentration
+    description: >-
+      Chloride ion concentration. Regulatory threshold typically
+      230 mg/L for aquatic life protection. Elevated chloride can
+      indicate process water intrusion.
+    unit: mg/L
+    distribution: triangular
+    params:
+      min: 50
+      mode: 150
+      max: 300
+    drivers: []
+    sheet: 5_EnvironmentalDrivers
+    is_input: true
+
+  # Sulfate - Process water indicator
+  - id: Sulfate
+    name: Sulfate Concentration
+    description: >-
+      Sulfate ion concentration. Elevated levels may indicate
+      process water contribution. Monitored for compliance and
+      as a treatment performance indicator.
+    unit: mg/L
+    distribution: triangular
+    params:
+      min: 100
+      mode: 300
+      max: 600
+    drivers: []
+    sheet: 5_EnvironmentalDrivers
+    is_input: true
+
+  # Clay Fraction - Affects bioavailability modifier
+  - id: Clay_Fraction
+    name: Clay Fraction
+    description: >-
+      Fraction of clay particles in the substrate/sediment.
+      Higher clay content reduces contaminant bioavailability
+      through sorption, affecting treatment efficiency.
+    unit: fraction (0-1)
+    distribution: triangular
+    params:
+      min: 0.05
+      mode: 0.15
+      max: 0.30
+    drivers: []
+    sheet: 5_EnvironmentalDrivers
+    is_input: true

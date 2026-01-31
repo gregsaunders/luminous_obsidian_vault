@@ -1,0 +1,51 @@
+# =============================================================================
+# Sheet 5: EnvironmentalDrivers - Environmental Driver Profiles
+# =============================================================================
+
+sheet_id: "5_EnvironmentalDrivers"
+title: "Environmental Driver Profiles"
+
+context_box:
+  title: "Environmental Drivers"
+  content: |
+    Monthly profiles for key environmental variables affecting treatment kinetics.
+    Temperature drives Q10 rate modifier (rates double per 10C above 20C).
+    UV intensity affects photodegradation rates.
+    Dissolved oxygen controls aerobic biodegradation.
+    Nutrient availability influences microbial activity.
+    Bioavailability accounts for sorption and binding effects.
+
+tables:
+  env_profiles:
+    table_name: "tbl_Env_Profiles"
+    title: "Environmental Profiles"
+    description: "Monthly environmental profile table with editable values."
+    purpose: "Define monthly averages for environmental variables that affect treatment kinetics"
+    assumptions: |
+      - Monthly values represent typical conditions for the treatment season
+      - Values are interpolated for daily calculations
+      - Site-specific profiles can override defaults
+    data_source: "Kearl site monitoring data and literature values"
+    related_tables: ["tbl_Rate_Modifiers"]
+    headers: [Variable, Unit, May, Jun, Jul, Aug, Sep, Notes]
+
+  ionic_profiles:
+    table_name: "tbl_Ionic_Params"
+    title: "Ionic Parameters"
+    description: "Ionic parameter ranges for compliance gate evaluation."
+    purpose: "Define parameter ranges and thresholds for compliance assessment"
+    assumptions: |
+      - Thresholds based on regulatory requirements
+      - Min/Mode/Max represent typical operating ranges
+    data_source: "Alberta Environment and Protected Areas guidelines"
+    related_tables: ["tbl_Compliance_Gates"]
+    headers: [Parameter, Unit, Min, Mode, Max, Threshold, Direction, Notes]
+
+notes:
+  - "Yellow-highlighted cells are user-editable inputs"
+  - "Values are used by 9_Calc_Kinetics to calculate rate modifiers"
+  - "Site-specific profiles can be loaded from config/sites/"
+
+referenced_by:
+  - "9_Calc_Kinetics"
+  - "11_Calc_Compliance"

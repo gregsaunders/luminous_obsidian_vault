@@ -14,22 +14,22 @@ Target: Excel 365/2021
 Sheet Structure (FAST 18-Sheet Standard):
   0_Cover        - Navigation hub
   1_TOC          - Table of Contents / Control panel
-  3_Instructions - Methodology and documentation
-  4_Assumptions  - ALL inputs consolidated (timing, site config, test options, validation)
-  6_Scenarios    - Value scenario definitions
-  7_ServiceModels - Monte Carlo distribution parameters
-  8_Calc_Timeline - Projection timeline
-  10_Calc_Stochastic - Random variable generation
-  12_Calc_Value   - Gated value calculations
-  13_Calc_Costs   - Cost calculations
-  14_Calc_Sim    - Monte Carlo simulation (Data Table)
-  15_PL_Monthly  - (Placeholder for monthly P&L if needed)
-  16_PL_Annual   - Annual projections
-  17_CashFlow    - Cumulative projections
-  18_UnitEconomics - Unit economics view
-  19_Sensitivity - Tornado analysis
-  20_Dashboard   - Executive dashboard
-  21_Checks      - Validation checks
+  2_Instructions - Methodology and documentation
+  3_Assumptions  - ALL inputs consolidated (timing, site config, test options, validation)
+  4_Scenarios    - Value scenario definitions
+  5_ServiceModels - Monte Carlo distribution parameters
+  6_Calc_Timeline - Projection timeline
+  7_Calc_Stochastic - Random variable generation
+  8_Calc_Value   - Gated value calculations
+  9_Calc_Costs   - Cost calculations
+  10_Calc_Sim    - Monte Carlo simulation (Data Table)
+  11_PL_Monthly  - (Placeholder for monthly P&L if needed)
+  12_PL_Annual   - Annual projections
+  13_CashFlow    - Cumulative projections
+  14_UnitEconomics - Unit economics view
+  15_Sensitivity - Tornado analysis
+  16_Dashboard   - Executive dashboard
+  17_Checks      - Validation checks
 
 Output: luminous_wetland_monte_carlo_model.xlsx
 """
@@ -74,46 +74,46 @@ LOCATIONS = {}
 # Scope: Direct formula reference only (not downstream dependencies)
 
 INPUT_REGISTRY = {
-    # === 4_Assumptions: Treatment Kinetics → 8_Calc_Timeline ===
-    'Initial_NAFC': ['8_Calc_Timeline'],
-    'Target_NAFC': ['8_Calc_Timeline'],
-    'Rapid_Phase_Rate': ['8_Calc_Timeline'],
-    'Slow_Phase_Rate': ['8_Calc_Timeline'],
-    'Rapid_Phase_Duration': ['8_Calc_Timeline'],
-    'Recirculation_Cycle': ['8_Calc_Timeline'],
-    'Season_Length': ['8_Calc_Timeline', '13_Calc_Costs', '14_Calc_Sim'],
+    # === 3_Assumptions: Treatment Kinetics → 6_Calc_Timeline ===
+    'Initial_NAFC': ['6_Calc_Timeline'],
+    'Target_NAFC': ['6_Calc_Timeline'],
+    'Rapid_Phase_Rate': ['6_Calc_Timeline'],
+    'Slow_Phase_Rate': ['6_Calc_Timeline'],
+    'Rapid_Phase_Duration': ['6_Calc_Timeline'],
+    'Recirculation_Cycle': ['6_Calc_Timeline'],
+    'Season_Length': ['6_Calc_Timeline', '9_Calc_Costs', '10_Calc_Sim'],
 
-    # === 4_Assumptions: Learning Curve → 8_Calc_Timeline ===
-    'LearningCurve_Mult': ['8_Calc_Timeline'],
+    # === 3_Assumptions: Learning Curve → 6_Calc_Timeline ===
+    'LearningCurve_Mult': ['6_Calc_Timeline'],
 
-    # === 7_ServiceModels: Triangular Distributions → 10_Calc_Stochastic ===
-    'Tri_Season_Extension_Days_Min': ['10_Calc_Stochastic'],
-    'Tri_Season_Extension_Days_Mode': ['10_Calc_Stochastic'],
-    'Tri_Season_Extension_Days_Max': ['10_Calc_Stochastic'],
-    'Tri_Extension_Value_Per_Day_Min': ['10_Calc_Stochastic'],
-    'Tri_Extension_Value_Per_Day_Mode': ['10_Calc_Stochastic'],
-    'Tri_Extension_Value_Per_Day_Max': ['10_Calc_Stochastic'],
-    'Tri_Interventions_Avoided_Min': ['10_Calc_Stochastic'],
-    'Tri_Interventions_Avoided_Mode': ['10_Calc_Stochastic'],
-    'Tri_Interventions_Avoided_Max': ['10_Calc_Stochastic'],
-    'Tri_Treatment_Rate_Factor_Min': ['10_Calc_Stochastic'],
-    'Tri_Treatment_Rate_Factor_Mode': ['10_Calc_Stochastic'],
-    'Tri_Treatment_Rate_Factor_Max': ['10_Calc_Stochastic'],
+    # === 5_ServiceModels: Triangular Distributions → 7_Calc_Stochastic ===
+    'Tri_Season_Extension_Days_Min': ['7_Calc_Stochastic'],
+    'Tri_Season_Extension_Days_Mode': ['7_Calc_Stochastic'],
+    'Tri_Season_Extension_Days_Max': ['7_Calc_Stochastic'],
+    'Tri_Extension_Value_Per_Day_Min': ['7_Calc_Stochastic'],
+    'Tri_Extension_Value_Per_Day_Mode': ['7_Calc_Stochastic'],
+    'Tri_Extension_Value_Per_Day_Max': ['7_Calc_Stochastic'],
+    'Tri_Interventions_Avoided_Min': ['7_Calc_Stochastic'],
+    'Tri_Interventions_Avoided_Mode': ['7_Calc_Stochastic'],
+    'Tri_Interventions_Avoided_Max': ['7_Calc_Stochastic'],
+    'Tri_Treatment_Rate_Factor_Min': ['7_Calc_Stochastic'],
+    'Tri_Treatment_Rate_Factor_Mode': ['7_Calc_Stochastic'],
+    'Tri_Treatment_Rate_Factor_Max': ['7_Calc_Stochastic'],
 
-    # === 7_ServiceModels: Beta Distributions → 10_Calc_Stochastic ===
+    # === 5_ServiceModels: Beta Distributions → 7_Calc_Stochastic ===
     # Note: Alpha/Beta params used internally in formulas, Min/Max for scaling
-    'Beta_Efficiency_Gain_Min': ['10_Calc_Stochastic'],
-    'Beta_Efficiency_Gain_Max': ['10_Calc_Stochastic'],
+    'Beta_Efficiency_Gain_Min': ['7_Calc_Stochastic'],
+    'Beta_Efficiency_Gain_Max': ['7_Calc_Stochastic'],
 
-    # === Intermediate calculations (8_Calc_Timeline) → multiple sheets ===
-    'Eff_Rapid_Rate': ['8_Calc_Timeline'],
-    'Eff_Slow_Rate': ['8_Calc_Timeline'],
-    'NAFC_After_Rapid': ['8_Calc_Timeline'],
-    'Days_to_Compliance': ['8_Calc_Timeline', '14_Calc_Sim'],
+    # === Intermediate calculations (6_Calc_Timeline) → multiple sheets ===
+    'Eff_Rapid_Rate': ['6_Calc_Timeline'],
+    'Eff_Slow_Rate': ['6_Calc_Timeline'],
+    'NAFC_After_Rapid': ['6_Calc_Timeline'],
+    'Days_to_Compliance': ['6_Calc_Timeline', '10_Calc_Sim'],
 
-    # === Timeline outputs → 16_PL_Annual ===
-    'Timeline_LearningMult': ['16_PL_Annual'],
-    'Timeline_DiscountFactor': ['16_PL_Annual'],
+    # === Timeline outputs → 12_PL_Annual ===
+    'Timeline_LearningMult': ['12_PL_Annual'],
+    'Timeline_DiscountFactor': ['12_PL_Annual'],
 }
 
 # Maps parameter names to their canonical INPUT_REGISTRY keys (for aliases)
@@ -147,7 +147,7 @@ def loc(var_name: str) -> str:
     (e.g., Data Table setup, debugging).
 
     Usage:
-        loc('Season_Length')  # Returns "'4_Assumptions'!$B$15"
+        loc('Season_Length')  # Returns "'3_Assumptions'!$B$15"
     """
     if var_name not in LOCATIONS:
         raise KeyError(f"Variable '{var_name}' not registered in LOCATIONS. "
@@ -160,7 +160,7 @@ def register_location(var_name: str, sheet: str, col: str, row: int):
 
     Args:
         var_name: Logical name for the variable (e.g., 'Season_Length')
-        sheet: Sheet name (e.g., '4_Assumptions')
+        sheet: Sheet name (e.g., '3_Assumptions')
         col: Column letter (e.g., 'B')
         row: Row number (e.g., 15)
 
@@ -630,8 +630,8 @@ def verify_traceability(wb, fail_on_mismatch=False):
     import re
 
     # Sheets to scan for formula references
-    calc_sheets = ['8_Calc_Timeline', '10_Calc_Stochastic', '12_Calc_Value',
-                   '13_Calc_Costs', '14_Calc_Sim', '16_PL_Annual', '17_CashFlow']
+    calc_sheets = ['6_Calc_Timeline', '7_Calc_Stochastic', '8_Calc_Value',
+                   '9_Calc_Costs', '10_Calc_Sim', '12_PL_Annual', '13_CashFlow']
 
     # Build expected mapping: sheet -> set of expected input names
     expected_by_sheet = {}
@@ -739,9 +739,9 @@ def create_0_cover(wb):
     ws['A8'] = "Model Status"
     ws['A8'].font = FONT_HEADER
     ws['A9'] = "Health:"
-    ws['B9'] = "=IF(COUNTIF('21_Checks'!D:D,\"FAIL\")=0, \"All Checks Pass\", \"Review 21_Checks\")"
+    ws['B9'] = "=IF(COUNTIF('17_Checks'!D:D,\"FAIL\")=0, \"All Checks Pass\", \"Review 17_Checks\")"
     ws['A10'] = "Errors:"
-    ws['B10'] = "=COUNTIF('21_Checks'!D:D,\"FAIL\")"
+    ws['B10'] = "=COUNTIF('17_Checks'!D:D,\"FAIL\")"
 
     # Navigation
     ws['A12'] = "Sheet Navigation"
@@ -749,22 +749,22 @@ def create_0_cover(wb):
 
     sheets = [
         ("1_TOC", "Table of Contents / Control panel"),
-        ("3_Instructions", "Methodology and documentation"),
-        ("4_Assumptions", "ALL inputs (timing, site, test options, validation)"),
-        ("6_Scenarios", "Value scenario definitions"),
-        ("7_ServiceModels", "Monte Carlo distributions"),
-        ("8_Calc_Timeline", "Projection timeline"),
-        ("10_Calc_Stochastic", "Random variable generation"),
-        ("12_Calc_Value", "Gated value calculations"),
-        ("13_Calc_Costs", "Cost calculations"),
-        ("14_Calc_Sim", "1000-iteration Monte Carlo"),
-        ("15_PL_Monthly", "Monthly P&L (placeholder)"),
-        ("16_PL_Annual", "Annual projections"),
-        ("17_CashFlow", "Cumulative projections"),
-        ("18_UnitEconomics", "Unit economics view"),
-        ("19_Sensitivity", "Tornado analysis"),
-        ("20_Dashboard", "Executive dashboard"),
-        ("21_Checks", "Validation checks"),
+        ("2_Instructions", "Methodology and documentation"),
+        ("3_Assumptions", "ALL inputs (timing, site, test options, validation)"),
+        ("4_Scenarios", "Value scenario definitions"),
+        ("5_ServiceModels", "Monte Carlo distributions"),
+        ("6_Calc_Timeline", "Projection timeline"),
+        ("7_Calc_Stochastic", "Random variable generation"),
+        ("8_Calc_Value", "Gated value calculations"),
+        ("9_Calc_Costs", "Cost calculations"),
+        ("10_Calc_Sim", "1000-iteration Monte Carlo"),
+        ("11_PL_Monthly", "Monthly P&L (placeholder)"),
+        ("12_PL_Annual", "Annual projections"),
+        ("13_CashFlow", "Cumulative projections"),
+        ("14_UnitEconomics", "Unit economics view"),
+        ("15_Sensitivity", "Tornado analysis"),
+        ("16_Dashboard", "Executive dashboard"),
+        ("17_Checks", "Validation checks"),
     ]
 
     row = 13
@@ -851,8 +851,8 @@ def create_1_toc(wb):
 
     create_table(ws, "tbl_Control", f"A{start_row-1}:D{row-1}")
 
-    # Data validation will reference 4_Assumptions validation lists
-    # (Added after 4_Assumptions is created)
+    # Data validation will reference 3_Assumptions validation lists
+    # (Added after 3_Assumptions is created)
 
     return ws
 
@@ -861,9 +861,9 @@ def create_1_toc(wb):
 # SHEET 2: INSTRUCTIONS
 # =============================================================================
 
-def create_3_instructions(wb):
+def create_2_instructions(wb):
     """Sheet 2: Instructions - Methodology, glossary, data sources."""
-    ws = wb.create_sheet("3_Instructions")
+    ws = wb.create_sheet("2_Instructions")
     ws.sheet_properties.tabColor = TAB_GRAY
     set_column_widths(ws, {'A': 35, 'B': 30, 'C': 50, 'D': 15})
 
@@ -889,14 +889,14 @@ def create_3_instructions(wb):
     ws.cell(row=row, column=1, value="2. How to Use This Model").font = FONT_HEADER
     row += 1
     usage = [
-        "1. Edit yellow-highlighted cells in 1_TOC and 4_Assumptions",
-        "2. Go to 14_Calc_Sim and set up the Data Table:",
+        "1. Edit yellow-highlighted cells in 1_TOC and 3_Assumptions",
+        "2. Go to 10_Calc_Sim and set up the Data Table:",
         "   - Select range shown in instructions (formula row through 1000 iterations)",
         "   - Data > What-If Analysis > Data Table",
         "   - Column Input Cell: $K$1 (blank cell on same sheet)",
         "3. Press Ctrl+Alt+F9 to run Monte Carlo simulation",
-        "4. View results in 20_Dashboard",
-        "5. Check 21_Checks for any validation errors",
+        "4. View results in 16_Dashboard",
+        "5. Check 17_Checks for any validation errors",
     ]
     for line in usage:
         ws.cell(row=row, column=1, value=line)
@@ -966,7 +966,7 @@ def create_3_instructions(wb):
     row += 1
     value_derivation = [
         "Conservative annual value: $250,000/year (Financial Model Framework)",
-        "Annual throughput: 50,000 m3/year (4_Assumptions default)",
+        "Annual throughput: 50,000 m3/year (3_Assumptions default)",
         "Calculation: $250,000 / 50,000 m3 = $5/m3",
         "This is the OPERATIONAL benefit only - excludes avoided treatment and ARO impacts",
     ]
@@ -975,7 +975,7 @@ def create_3_instructions(wb):
         row += 1
     row += 1
 
-    ws.cell(row=row, column=1, value="Value Sensitivity Analysis (19_Sensitivity):").font = Font(bold=True)
+    ws.cell(row=row, column=1, value="Value Sensitivity Analysis (15_Sensitivity):").font = Font(bold=True)
     row += 1
     sensitivity_context = [
         "Operational: $3-8/m3 (base $5) - Direct wetland treatment value",
@@ -1036,8 +1036,8 @@ def create_3_instructions(wb):
     ws.cell(row=row, column=1, value="Adjusting Parameters:").font = Font(bold=True)
     row += 1
     adjust_notes = [
-        "All kinetics parameters are in 4_Assumptions Section H (yellow cells)",
-        "Treatment_Rate_Factor in 7_ServiceModels captures seasonal/vegetation variability",
+        "All kinetics parameters are in 3_Assumptions Section H (yellow cells)",
+        "Treatment_Rate_Factor in 5_ServiceModels captures seasonal/vegetation variability",
         "Modify Initial_NAFC to match your source water concentration",
         "Adjust Target_NAFC for different regulatory thresholds",
     ]
@@ -1083,13 +1083,13 @@ def create_3_instructions(wb):
 # SHEET 1.5: INPUT MAP (Traceability Reference)
 # =============================================================================
 
-def create_2_inputmap(wb):
+def create_1_5_inputmap(wb):
     """Sheet 1.5: InputMap - Complete registry of inputs and their consumers.
 
     Shows which inputs are used by which calculation sheets, providing
     traceability from inputs to calculations.
     """
-    ws = wb.create_sheet("2_InputMap")
+    ws = wb.create_sheet("1.5_InputMap")
     ws.sheet_properties.tabColor = TAB_GRAY
     set_column_widths(ws, {'A': 32, 'B': 18, 'C': 18, 'D': 28})
 
@@ -1106,46 +1106,46 @@ def create_2_inputmap(wb):
     map_start = row
 
     # Group inputs by source sheet for better organization
-    inputs_4_assumptions = [
-        ('Initial_NAFC', '4_Assumptions'),
-        ('Target_NAFC', '4_Assumptions'),
-        ('Rapid_Phase_Rate', '4_Assumptions'),
-        ('Slow_Phase_Rate', '4_Assumptions'),
-        ('Rapid_Phase_Duration', '4_Assumptions'),
-        ('Recirculation_Cycle', '4_Assumptions'),
-        ('Season_Length', '4_Assumptions'),
-        ('LearningCurve_Mult', '4_Assumptions'),
+    inputs_3_assumptions = [
+        ('Initial_NAFC', '3_Assumptions'),
+        ('Target_NAFC', '3_Assumptions'),
+        ('Rapid_Phase_Rate', '3_Assumptions'),
+        ('Slow_Phase_Rate', '3_Assumptions'),
+        ('Rapid_Phase_Duration', '3_Assumptions'),
+        ('Recirculation_Cycle', '3_Assumptions'),
+        ('Season_Length', '3_Assumptions'),
+        ('LearningCurve_Mult', '3_Assumptions'),
     ]
 
-    inputs_7_servicemodels = [
-        ('Tri_Season_Extension_Days_Min', '7_ServiceModels'),
-        ('Tri_Season_Extension_Days_Mode', '7_ServiceModels'),
-        ('Tri_Season_Extension_Days_Max', '7_ServiceModels'),
-        ('Tri_Extension_Value_Per_Day_Min', '7_ServiceModels'),
-        ('Tri_Extension_Value_Per_Day_Mode', '7_ServiceModels'),
-        ('Tri_Extension_Value_Per_Day_Max', '7_ServiceModels'),
-        ('Tri_Interventions_Avoided_Min', '7_ServiceModels'),
-        ('Tri_Interventions_Avoided_Mode', '7_ServiceModels'),
-        ('Tri_Interventions_Avoided_Max', '7_ServiceModels'),
-        ('Tri_Treatment_Rate_Factor_Min', '7_ServiceModels'),
-        ('Tri_Treatment_Rate_Factor_Mode', '7_ServiceModels'),
-        ('Tri_Treatment_Rate_Factor_Max', '7_ServiceModels'),
-        ('Beta_Efficiency_Gain_Alpha', '7_ServiceModels'),
-        ('Beta_Efficiency_Gain_Beta', '7_ServiceModels'),
-        ('Beta_Efficiency_Gain_Min', '7_ServiceModels'),
-        ('Beta_Efficiency_Gain_Max', '7_ServiceModels'),
+    inputs_5_servicemodels = [
+        ('Tri_Season_Extension_Days_Min', '5_ServiceModels'),
+        ('Tri_Season_Extension_Days_Mode', '5_ServiceModels'),
+        ('Tri_Season_Extension_Days_Max', '5_ServiceModels'),
+        ('Tri_Extension_Value_Per_Day_Min', '5_ServiceModels'),
+        ('Tri_Extension_Value_Per_Day_Mode', '5_ServiceModels'),
+        ('Tri_Extension_Value_Per_Day_Max', '5_ServiceModels'),
+        ('Tri_Interventions_Avoided_Min', '5_ServiceModels'),
+        ('Tri_Interventions_Avoided_Mode', '5_ServiceModels'),
+        ('Tri_Interventions_Avoided_Max', '5_ServiceModels'),
+        ('Tri_Treatment_Rate_Factor_Min', '5_ServiceModels'),
+        ('Tri_Treatment_Rate_Factor_Mode', '5_ServiceModels'),
+        ('Tri_Treatment_Rate_Factor_Max', '5_ServiceModels'),
+        ('Beta_Efficiency_Gain_Alpha', '5_ServiceModels'),
+        ('Beta_Efficiency_Gain_Beta', '5_ServiceModels'),
+        ('Beta_Efficiency_Gain_Min', '5_ServiceModels'),
+        ('Beta_Efficiency_Gain_Max', '5_ServiceModels'),
     ]
 
     inputs_6_calc = [
-        ('Eff_Rapid_Rate', '8_Calc_Timeline'),
-        ('Eff_Slow_Rate', '8_Calc_Timeline'),
-        ('NAFC_After_Rapid', '8_Calc_Timeline'),
-        ('Days_to_Compliance', '8_Calc_Timeline'),
-        ('Timeline_LearningMult', '8_Calc_Timeline'),
-        ('Timeline_DiscountFactor', '8_Calc_Timeline'),
+        ('Eff_Rapid_Rate', '6_Calc_Timeline'),
+        ('Eff_Slow_Rate', '6_Calc_Timeline'),
+        ('NAFC_After_Rapid', '6_Calc_Timeline'),
+        ('Days_to_Compliance', '6_Calc_Timeline'),
+        ('Timeline_LearningMult', '6_Calc_Timeline'),
+        ('Timeline_DiscountFactor', '6_Calc_Timeline'),
     ]
 
-    all_inputs = inputs_4_assumptions + inputs_7_servicemodels + inputs_6_calc
+    all_inputs = inputs_3_assumptions + inputs_5_servicemodels + inputs_6_calc
 
     for input_name, source_sheet in all_inputs:
         ws.cell(row=row, column=1, value=input_name)
@@ -1186,25 +1186,25 @@ def create_2_inputmap(wb):
 # SHEET 3: ASSUMPTIONS (Consolidated: Timing + Site Config + Test Options + Validation)
 # =============================================================================
 
-def create_4_assumptions(wb):
+def create_3_assumptions(wb):
     """Sheet 3: Assumptions - ALL inputs consolidated.
 
     This sheet consolidates:
     - Timing parameters (from old 2_Timing)
-    - Site configuration (from old 4_Assumptions)
+    - Site configuration (from old 3_Assumptions)
     - Cost parameters
     - Learning curve
     - Test options (from old 5_Ref_TestOptions)
     - Validation lists (from old 7_Ref_Validation)
     - MC anchor cell
     """
-    ws = wb.create_sheet("4_Assumptions")
+    ws = wb.create_sheet("3_Assumptions")
     ws.sheet_properties.tabColor = TAB_YELLOW
     set_column_widths(ws, {'A': 24, 'B': 14, 'C': 12, 'D': 42, 'E': 30, 'F': 16, 'G': 14})
 
     # Load table documentation from YAML
     loader = get_content_loader()
-    table_docs = loader.get_table_docs("4_assumptions")
+    table_docs = loader.get_table_docs("3_assumptions")
 
     ws['A1'] = "Model Assumptions (Single Source of Truth)"
     ws['A1'].font = FONT_TITLE
@@ -1238,11 +1238,11 @@ def create_4_assumptions(wb):
         refs = get_input_references(param)
         ws.cell(row=row, column=5, value=', '.join(refs) if refs else '')
         # Register each timing parameter
-        add_named_range(wb, param, "4_Assumptions", f"$B${row}")
+        add_named_range(wb, param, "3_Assumptions", f"$B${row}")
         row += 1
 
     # Also add Season_Length as alias for Treatment_Days
-    add_named_range(wb, "Season_Length", "4_Assumptions", f"$B${timing_start + 4}")
+    add_named_range(wb, "Season_Length", "3_Assumptions", f"$B${timing_start + 4}")
 
     create_table(ws, "tbl_Timing", f"A{timing_start-1}:E{row-1}")
     row += 1
@@ -1301,14 +1301,14 @@ def create_4_assumptions(wb):
         refs = get_input_references(param)
         ws.cell(row=row, column=5, value=', '.join(refs) if refs else '')
         add_named_range(wb, param.replace('Ha', '_Ha').replace('M3', '_M3'),
-                       "4_Assumptions", f"$B${row}")
+                       "3_Assumptions", f"$B${row}")
         row += 1
 
     # Simpler named ranges for common ones
-    add_named_range(wb, "Wetland_Area", "4_Assumptions", f"$B${site_start}")
-    add_named_range(wb, "Treatment_Cells", "4_Assumptions", f"$B${site_start+1}")
-    add_named_range(wb, "Annual_Throughput", "4_Assumptions", f"$B${site_start+2}")
-    add_named_range(wb, "Value_Per_M3", "4_Assumptions", f"$B${site_start+3}")
+    add_named_range(wb, "Wetland_Area", "3_Assumptions", f"$B${site_start}")
+    add_named_range(wb, "Treatment_Cells", "3_Assumptions", f"$B${site_start+1}")
+    add_named_range(wb, "Annual_Throughput", "3_Assumptions", f"$B${site_start+2}")
+    add_named_range(wb, "Value_Per_M3", "3_Assumptions", f"$B${site_start+3}")
 
     create_table(ws, "tbl_SiteConfig", f"A{site_start-1}:E{row-1}")
     row += 2
@@ -1337,7 +1337,7 @@ def create_4_assumptions(wb):
         # Referenced By column
         refs = get_input_references(param)
         ws.cell(row=row, column=4, value=', '.join(refs) if refs else '')
-        add_named_range(wb, param, "4_Assumptions", f"$B${row}")
+        add_named_range(wb, param, "3_Assumptions", f"$B${row}")
         row += 1
 
     create_table(ws, "tbl_CostParams", f"A{cost_start-1}:D{row-1}")
@@ -1374,8 +1374,8 @@ def create_4_assumptions(wb):
         row += 1
 
     # Register learning curve range for INDEX lookups
-    register_range("LearningCurve_Mult", "4_Assumptions", "B", learning_start, "B", row-1)
-    add_named_range(wb, "LearningCurve_Mult", "4_Assumptions", f"$B${learning_start}:$B${row-1}")
+    register_range("LearningCurve_Mult", "3_Assumptions", "B", learning_start, "B", row-1)
+    add_named_range(wb, "LearningCurve_Mult", "3_Assumptions", f"$B${learning_start}:$B${row-1}")
     create_table(ws, "tbl_LearningCurve", f"A{learning_start-1}:D{row-1}")
     row += 2
 
@@ -1410,12 +1410,12 @@ def create_4_assumptions(wb):
     create_table(ws, "tbl_TestOptions", f"A{testopts_start-1}:G{row-1}")
 
     # Named ranges for each column (for INDEX/MATCH lookups)
-    add_named_range(wb, "TestOpt_Option", "4_Assumptions", f"$A${testopts_start}:$A${testopts_end}")
-    add_named_range(wb, "TestOpt_Method", "4_Assumptions", f"$B${testopts_start}:$B${testopts_end}")
-    add_named_range(wb, "TestOpt_Interval", "4_Assumptions", f"$C${testopts_start}:$C${testopts_end}")
-    add_named_range(wb, "TestOpt_Points", "4_Assumptions", f"$D${testopts_start}:$D${testopts_end}")
-    add_named_range(wb, "TestOpt_Cost", "4_Assumptions", f"$E${testopts_start}:$E${testopts_end}")
-    add_named_range(wb, "TestOpt_Latency", "4_Assumptions", f"$F${testopts_start}:$F${testopts_end}")
+    add_named_range(wb, "TestOpt_Option", "3_Assumptions", f"$A${testopts_start}:$A${testopts_end}")
+    add_named_range(wb, "TestOpt_Method", "3_Assumptions", f"$B${testopts_start}:$B${testopts_end}")
+    add_named_range(wb, "TestOpt_Interval", "3_Assumptions", f"$C${testopts_start}:$C${testopts_end}")
+    add_named_range(wb, "TestOpt_Points", "3_Assumptions", f"$D${testopts_start}:$D${testopts_end}")
+    add_named_range(wb, "TestOpt_Cost", "3_Assumptions", f"$E${testopts_start}:$E${testopts_end}")
+    add_named_range(wb, "TestOpt_Latency", "3_Assumptions", f"$F${testopts_start}:$F${testopts_end}")
     row += 1
 
     # Latency Gating (calculated)
@@ -1443,10 +1443,10 @@ def create_4_assumptions(wb):
 
     # Named ranges for gating lookups
     gating_end = row - 1
-    add_named_range(wb, "Gate_S1", "4_Assumptions", f"$B${gating_start}:$B${gating_end}")
-    add_named_range(wb, "Gate_S2", "4_Assumptions", f"$C${gating_start}:$C${gating_end}")
-    add_named_range(wb, "Gate_S3", "4_Assumptions", f"$D${gating_start}:$D${gating_end}")
-    add_named_range(wb, "Gate_S4", "4_Assumptions", f"$E${gating_start}:$E${gating_end}")
+    add_named_range(wb, "Gate_S1", "3_Assumptions", f"$B${gating_start}:$B${gating_end}")
+    add_named_range(wb, "Gate_S2", "3_Assumptions", f"$C${gating_start}:$C${gating_end}")
+    add_named_range(wb, "Gate_S3", "3_Assumptions", f"$D${gating_start}:$D${gating_end}")
+    add_named_range(wb, "Gate_S4", "3_Assumptions", f"$E${gating_start}:$E${gating_end}")
     row += 2
 
     # =========================================================================
@@ -1471,9 +1471,9 @@ def create_4_assumptions(wb):
     row += 1
 
     # Named ranges for validation dropdowns
-    add_named_range(wb, "List_TestingOptions", "4_Assumptions",
+    add_named_range(wb, "List_TestingOptions", "3_Assumptions",
                    f"$A${validation_start}:$A${row-1}")
-    add_named_range(wb, "List_Scenarios", "4_Assumptions",
+    add_named_range(wb, "List_Scenarios", "3_Assumptions",
                    f"$B${validation_start}:$B${row-1}")
     row += 1
 
@@ -1485,7 +1485,7 @@ def create_4_assumptions(wb):
     ws.cell(row=row, column=1, value="MC_Anchor -->")
     # B column left blank (implicit None) - critical for Data Table column input
     mc_anchor_row = row
-    add_named_range(wb, "MC_Anchor", "4_Assumptions", f"$B${mc_anchor_row}")
+    add_named_range(wb, "MC_Anchor", "3_Assumptions", f"$B${mc_anchor_row}")
     row += 2
 
     # =========================================================================
@@ -1518,7 +1518,7 @@ def create_4_assumptions(wb):
         # Referenced By column
         refs = get_input_references(param)
         ws.cell(row=row, column=5, value=', '.join(refs) if refs else '')
-        add_named_range(wb, param, "4_Assumptions", f"$B${row}")
+        add_named_range(wb, param, "3_Assumptions", f"$B${row}")
         row += 1
 
     create_table(ws, "tbl_TreatmentKinetics", f"A{kinetics_start-1}:E{row-1}")
@@ -1545,146 +1545,34 @@ def create_4_assumptions(wb):
         cell.fill = FILL_EDITABLE
         ws.cell(row=row, column=3, value=survival)
         ws.cell(row=row, column=4, value=notes)
-        add_named_range(wb, milestone, "4_Assumptions", f"$B${row}")
+        add_named_range(wb, milestone, "3_Assumptions", f"$B${row}")
         row += 1
 
     create_table(ws, "tbl_ToxicityMilestones", f"A{toxicity_start-1}:D{row-1}")
 
     # Store key row numbers for other sheets to reference
-    register_location("_timing_start", "4_Assumptions", "A", timing_start)
-    register_location("_site_start", "4_Assumptions", "A", site_start)
-    register_location("_learning_start", "4_Assumptions", "B", learning_start)
-    register_location("_testopts_start", "4_Assumptions", "A", testopts_start)
-    register_location("_gating_start", "4_Assumptions", "A", gating_start)
+    register_location("_timing_start", "3_Assumptions", "A", timing_start)
+    register_location("_site_start", "3_Assumptions", "A", site_start)
+    register_location("_learning_start", "3_Assumptions", "B", learning_start)
+    register_location("_testopts_start", "3_Assumptions", "A", testopts_start)
+    register_location("_gating_start", "3_Assumptions", "A", gating_start)
 
     return ws
 
 
 # =============================================================================
-# SHEET 5: ENVIRONMENTAL DRIVERS (NEW)
+# SHEET 4: SCENARIOS
 # =============================================================================
 
-def create_5_environmentaldrivers(wb):
-    """Sheet 5: EnvironmentalDrivers - Monthly environmental profiles for kinetics."""
-    ws = wb.create_sheet("5_EnvironmentalDrivers")
-    ws.sheet_properties.tabColor = TAB_YELLOW
-    set_column_widths(ws, {'A': 22, 'B': 10, 'C': 10, 'D': 10, 'E': 10, 'F': 10, 'G': 10, 'H': 30})
-
-    ws['A1'] = "Environmental Driver Profiles"
-    ws['A1'].font = FONT_TITLE
-
-    # Load context box from YAML if available
-    row = 3
-    loader = get_content_loader()
-    try:
-        context = loader.get_context_box("5_environmentaldrivers")
-        if context:
-            row = write_context_box(ws, row, context.title, context.content, width_cols=8)
-    except (ContentNotFoundError, ContentValidationError):
-        # Default context if YAML not available
-        context_content = """Monthly profiles for environmental variables affecting treatment kinetics.
-Temperature drives Q10 rate modifier (rates double per 10C above 20C).
-UV intensity affects photodegradation rates.
-Dissolved oxygen controls aerobic biodegradation.
-Edit yellow cells to customize for your site."""
-        row = write_context_box(ws, row, "Environmental Drivers", context_content, width_cols=8)
-
-    # Environmental Profiles Table
-    row += 1
-    headers = ['Variable', 'Unit', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Notes']
-    row = write_header_row(ws, row, headers)
-
-    env_start = row
-    env_profiles = [
-        ('Temp_Water', 'C', 10, 16, 20, 18, 12, 'Water temperature - Q10 driver'),
-        ('UV_Relative', '0-1', 0.75, 1.00, 1.00, 0.85, 0.55, 'Relative UV intensity'),
-        ('DO_Typical', 'mg/L', 8.5, 7.5, 6.5, 7.0, 8.0, 'Dissolved oxygen'),
-        ('Nutrient_Index', '0-1', 1.0, 0.7, 0.4, 0.3, 0.2, 'Nutrient availability'),
-        ('Bioavail_Index', '0-1', 0.7, 0.9, 1.0, 0.95, 0.8, 'Bioavailability factor'),
-    ]
-
-    for var_name, unit, may, jun, jul, aug, sep, notes in env_profiles:
-        ws.cell(row=row, column=1, value=var_name)
-        ws.cell(row=row, column=2, value=unit)
-        # Monthly values - editable
-        for col, val in enumerate([may, jun, jul, aug, sep], 3):
-            cell = ws.cell(row=row, column=col, value=val)
-            cell.fill = FILL_EDITABLE
-            if unit == 'C':
-                cell.number_format = '0.0'
-            elif unit in ['0-1', 'mg/L']:
-                cell.number_format = '0.00'
-        ws.cell(row=row, column=8, value=notes)
-        # Register named ranges for each month
-        for col_idx, month in enumerate(['May', 'Jun', 'Jul', 'Aug', 'Sep'], 3):
-            col_letter = get_column_letter(col_idx)
-            range_name = f"Env_{var_name}_{month}"
-            register_location(range_name, "5_EnvironmentalDrivers", col_letter, row)
-            add_named_range(wb, range_name, "5_EnvironmentalDrivers", f"${col_letter}${row}")
-        row += 1
-
-    create_table(ws, "tbl_Env_Profiles", f"A{env_start-1}:H{row-1}")
-    row += 2
-
-    # Ionic/Compliance Parameters Table
-    ws.cell(row=row, column=1, value="Ionic Parameters (Compliance Gates)").font = Font(bold=True)
-    row += 1
-    headers = ['Parameter', 'Unit', 'Min', 'Mode', 'Max', 'Threshold', 'Direction', 'Notes']
-    row = write_header_row(ws, row, headers)
-
-    ionic_start = row
-    ionic_params = [
-        ('Chloride', 'mg/L', 50, 150, 300, 230, 'below', 'Aquatic life threshold'),
-        ('SAR', 'ratio', 1.0, 2.5, 6.0, 4.0, 'below', 'Land application limit'),
-        ('Sulfate', 'mg/L', 100, 300, 600, 500, 'below', 'Process water indicator'),
-        ('DO_Compliance', 'mg/L', 5.0, 7.0, 9.0, 6.5, 'above', 'Minimum for discharge'),
-    ]
-
-    for param, unit, min_v, mode_v, max_v, thresh, direction, notes in ionic_params:
-        ws.cell(row=row, column=1, value=param)
-        ws.cell(row=row, column=2, value=unit)
-        for col, val in enumerate([min_v, mode_v, max_v], 3):
-            cell = ws.cell(row=row, column=col, value=val)
-            cell.fill = FILL_EDITABLE
-            cell.number_format = '0.0' if isinstance(val, float) else '0'
-        ws.cell(row=row, column=6, value=thresh)
-        ws.cell(row=row, column=7, value=direction)
-        ws.cell(row=row, column=8, value=notes)
-        # Register named ranges
-        register_location(f"Ionic_{param}_Min", "5_EnvironmentalDrivers", "C", row)
-        add_named_range(wb, f"Ionic_{param}_Min", "5_EnvironmentalDrivers", f"$C${row}")
-        register_location(f"Ionic_{param}_Mode", "5_EnvironmentalDrivers", "D", row)
-        add_named_range(wb, f"Ionic_{param}_Mode", "5_EnvironmentalDrivers", f"$D${row}")
-        register_location(f"Ionic_{param}_Max", "5_EnvironmentalDrivers", "E", row)
-        add_named_range(wb, f"Ionic_{param}_Max", "5_EnvironmentalDrivers", f"$E${row}")
-        register_location(f"Ionic_{param}_Threshold", "5_EnvironmentalDrivers", "F", row)
-        add_named_range(wb, f"Ionic_{param}_Threshold", "5_EnvironmentalDrivers", f"$F${row}")
-        row += 1
-
-    create_table(ws, "tbl_Ionic_Params", f"A{ionic_start-1}:H{row-1}")
-    row += 2
-
-    # Site Profile Reference
-    ws.cell(row=row, column=1, value="Current Site Profile:").font = Font(bold=True)
-    ws.cell(row=row, column=2, value="Kearl")
-    ws.cell(row=row, column=3, value="(from config/sites/kearl.yaml)")
-
-    return ws
-
-
-# =============================================================================
-# SHEET 6: SCENARIOS
-# =============================================================================
-
-def create_6_scenarios(wb):
+def create_4_scenarios(wb):
     """Sheet 4: Scenarios - Value scenario definitions."""
-    ws = wb.create_sheet("6_Scenarios")
+    ws = wb.create_sheet("4_Scenarios")
     ws.sheet_properties.tabColor = TAB_YELLOW
     set_column_widths(ws, {'A': 12, 'B': 22, 'C': 14, 'D': 24, 'E': 40})
 
     # Load table documentation from YAML
     loader = get_content_loader()
-    table_docs = loader.get_table_docs("6_scenarios")
+    table_docs = loader.get_table_docs("4_scenarios")
     collected_docs = []  # Collect for reference section
 
     ws['A1'] = "Value Scenario Definitions"
@@ -1722,7 +1610,7 @@ def create_6_scenarios(wb):
     create_table(ws, "tbl_ValueScenarios", f"A{scenarios_start-1}:E{row-1}")
 
     # Named range for base values column
-    add_named_range(wb, "Scenario_BaseValues", "6_Scenarios",
+    add_named_range(wb, "Scenario_BaseValues", "4_Scenarios",
                    f"$C${scenarios_start}:$C${scenarios_end}")
     row += 2
 
@@ -1764,15 +1652,15 @@ def create_6_scenarios(wb):
 # SHEET 5: SERVICE MODELS (Distribution Parameters)
 # =============================================================================
 
-def create_7_servicemodels(wb):
+def create_5_servicemodels(wb):
     """Sheet 5: ServiceModels - Monte Carlo distribution parameters."""
-    ws = wb.create_sheet("7_ServiceModels")
+    ws = wb.create_sheet("5_ServiceModels")
     ws.sheet_properties.tabColor = TAB_YELLOW
     set_column_widths(ws, {'A': 28, 'B': 12, 'C': 12, 'D': 12, 'E': 12, 'F': 30, 'G': 35})
 
     # Load table documentation from YAML
     loader = get_content_loader()
-    table_docs = loader.get_table_docs("7_servicemodels")
+    table_docs = loader.get_table_docs("5_servicemodels")
 
     ws['A1'] = "Monte Carlo Distribution Parameters"
     ws['A1'].font = FONT_TITLE
@@ -1804,12 +1692,12 @@ def create_7_servicemodels(wb):
         refs = get_input_references(f"Tri_{var}_Min")
         ws.cell(row=row, column=6, value=', '.join(refs) if refs else '')
         # Register AND create named ranges for triangular distribution formulas
-        register_location(f"Tri_{var}_Min", "7_ServiceModels", "B", row)
-        add_named_range(wb, f"Tri_{var}_Min", "7_ServiceModels", f"$B${row}")
-        register_location(f"Tri_{var}_Mode", "7_ServiceModels", "C", row)
-        add_named_range(wb, f"Tri_{var}_Mode", "7_ServiceModels", f"$C${row}")
-        register_location(f"Tri_{var}_Max", "7_ServiceModels", "D", row)
-        add_named_range(wb, f"Tri_{var}_Max", "7_ServiceModels", f"$D${row}")
+        register_location(f"Tri_{var}_Min", "5_ServiceModels", "B", row)
+        add_named_range(wb, f"Tri_{var}_Min", "5_ServiceModels", f"$B${row}")
+        register_location(f"Tri_{var}_Mode", "5_ServiceModels", "C", row)
+        add_named_range(wb, f"Tri_{var}_Mode", "5_ServiceModels", f"$C${row}")
+        register_location(f"Tri_{var}_Max", "5_ServiceModels", "D", row)
+        add_named_range(wb, f"Tri_{var}_Max", "5_ServiceModels", f"$D${row}")
         row += 1
 
     create_table(ws, "tbl_Triangular", f"A{tri_start-1}:F{row-1}")
@@ -1836,14 +1724,14 @@ def create_7_servicemodels(wb):
         refs = get_input_references(f"Beta_{var}_Alpha")
         ws.cell(row=row, column=7, value=', '.join(refs) if refs else '')
         # Register AND create named ranges for beta distribution formulas
-        register_location(f"Beta_{var}_Alpha", "7_ServiceModels", "B", row)
-        add_named_range(wb, f"Beta_{var}_Alpha", "7_ServiceModels", f"$B${row}")
-        register_location(f"Beta_{var}_Beta", "7_ServiceModels", "C", row)
-        add_named_range(wb, f"Beta_{var}_Beta", "7_ServiceModels", f"$C${row}")
-        register_location(f"Beta_{var}_Min", "7_ServiceModels", "D", row)
-        add_named_range(wb, f"Beta_{var}_Min", "7_ServiceModels", f"$D${row}")
-        register_location(f"Beta_{var}_Max", "7_ServiceModels", "E", row)
-        add_named_range(wb, f"Beta_{var}_Max", "7_ServiceModels", f"$E${row}")
+        register_location(f"Beta_{var}_Alpha", "5_ServiceModels", "B", row)
+        add_named_range(wb, f"Beta_{var}_Alpha", "5_ServiceModels", f"$B${row}")
+        register_location(f"Beta_{var}_Beta", "5_ServiceModels", "C", row)
+        add_named_range(wb, f"Beta_{var}_Beta", "5_ServiceModels", f"$C${row}")
+        register_location(f"Beta_{var}_Min", "5_ServiceModels", "D", row)
+        add_named_range(wb, f"Beta_{var}_Min", "5_ServiceModels", f"$D${row}")
+        register_location(f"Beta_{var}_Max", "5_ServiceModels", "E", row)
+        add_named_range(wb, f"Beta_{var}_Max", "5_ServiceModels", f"$E${row}")
         row += 1
 
     create_table(ws, "tbl_Beta", f"A{beta_start-1}:G{row-1}")
@@ -1880,9 +1768,9 @@ def create_7_servicemodels(wb):
 # SHEET 6: CALC_TIMELINE
 # =============================================================================
 
-def create_8_calc_timeline(wb):
+def create_6_calc_timeline(wb):
     """Sheet 6: Calc_Timeline - Generate projection time series."""
-    ws = wb.create_sheet("8_Calc_Timeline")
+    ws = wb.create_sheet("6_Calc_Timeline")
     ws.sheet_properties.tabColor = TAB_BLUE
     set_column_widths(ws, {'A': 20, 'B': 36, 'C': 16, 'D': 12, 'E': 14})
 
@@ -1893,14 +1781,14 @@ def create_8_calc_timeline(wb):
     row = 3
     loader = get_content_loader()
     try:
-        context = loader.get_context_box("8_calc_timeline")
+        context = loader.get_context_box("6_calc_timeline")
         if context:
             row = write_context_box(ws, row, context.title, context.content, width_cols=5)
     except (ContentNotFoundError, ContentValidationError):
         pass  # Continue without context box if content not available
 
     # Add table intro from YAML
-    table_docs = loader.get_table_docs("8_calc_timeline")
+    table_docs = loader.get_table_docs("6_calc_timeline")
     if 'timeline' in table_docs:
         row = write_table_intro(ws, row, table_docs['timeline'], width_cols=5)
 
@@ -1917,7 +1805,7 @@ def create_8_calc_timeline(wb):
             ws.cell(row=row, column=4, value=1)
         else:
             ws.cell(row=row, column=4, value=f"=1/(1+Discount_Rate)^{i}")
-        # Learning Multiplier - reference consolidated table in 4_Assumptions
+        # Learning Multiplier - reference consolidated table in 3_Assumptions
         if i == 0:
             ws.cell(row=row, column=5, value=1)
         else:
@@ -1928,10 +1816,10 @@ def create_8_calc_timeline(wb):
     create_table(ws, "tbl_Timeline", f"A{timeline_start-1}:E{row-1}")
 
     # Register timeline columns for downstream use
-    register_range("Timeline_DiscountFactor", "8_Calc_Timeline", "D", timeline_start, "D", timeline_end)
-    add_named_range(wb, "Timeline_DiscountFactor", "8_Calc_Timeline", f"$D${timeline_start}:$D${timeline_end}")
-    register_range("Timeline_LearningMult", "8_Calc_Timeline", "E", timeline_start, "E", timeline_end)
-    add_named_range(wb, "Timeline_LearningMult", "8_Calc_Timeline", f"$E${timeline_start}:$E${timeline_end}")
+    register_range("Timeline_DiscountFactor", "6_Calc_Timeline", "D", timeline_start, "D", timeline_end)
+    add_named_range(wb, "Timeline_DiscountFactor", "6_Calc_Timeline", f"$D${timeline_start}:$D${timeline_end}")
+    register_range("Timeline_LearningMult", "6_Calc_Timeline", "E", timeline_start, "E", timeline_end)
+    add_named_range(wb, "Timeline_LearningMult", "6_Calc_Timeline", f"$E${timeline_start}:$E${timeline_end}")
     row += 2
 
     # =========================================================================
@@ -1951,7 +1839,7 @@ def create_8_calc_timeline(wb):
     ws.cell(row=row, column=3, value=f"={ref('Rapid_Phase_Rate')}*Stoch_TreatmentRate")
     ws.cell(row=row, column=3).number_format = '0.000'
     ws.cell(row=row, column=4, value="mg/L/day")
-    add_named_range(wb, "Eff_Rapid_Rate", "8_Calc_Timeline", f"$C${row}")
+    add_named_range(wb, "Eff_Rapid_Rate", "6_Calc_Timeline", f"$C${row}")
     row += 1
 
     # Effective Slow Rate (scaled by stochastic factor)
@@ -1960,7 +1848,7 @@ def create_8_calc_timeline(wb):
     ws.cell(row=row, column=3, value=f"={ref('Slow_Phase_Rate')}*Stoch_TreatmentRate")
     ws.cell(row=row, column=3).number_format = '0.000'
     ws.cell(row=row, column=4, value="mg/L/day")
-    add_named_range(wb, "Eff_Slow_Rate", "8_Calc_Timeline", f"$C${row}")
+    add_named_range(wb, "Eff_Slow_Rate", "6_Calc_Timeline", f"$C${row}")
     row += 1
 
     # NAFC After Rapid Phase
@@ -1971,7 +1859,7 @@ def create_8_calc_timeline(wb):
     ws.cell(row=row, column=3, value=nafc_rapid_formula)
     ws.cell(row=row, column=3).number_format = '0.00'
     ws.cell(row=row, column=4, value="mg/L")
-    add_named_range(wb, "NAFC_After_Rapid", "8_Calc_Timeline", f"$C${row}")
+    add_named_range(wb, "NAFC_After_Rapid", "6_Calc_Timeline", f"$C${row}")
     row += 1
 
     # Days to Regulatory Compliance
@@ -1988,7 +1876,7 @@ def create_8_calc_timeline(wb):
     ws.cell(row=row, column=3, value=days_formula)
     ws.cell(row=row, column=3).number_format = '0.0'
     ws.cell(row=row, column=4, value="days")
-    add_named_range(wb, "Days_to_Compliance", "8_Calc_Timeline", f"$C${row}")
+    add_named_range(wb, "Days_to_Compliance", "6_Calc_Timeline", f"$C${row}")
     row += 1
 
     # Circulation Cycles Required
@@ -1997,7 +1885,7 @@ def create_8_calc_timeline(wb):
     ws.cell(row=row, column=3, value=f"=CEILING({ref('Days_to_Compliance')}/{ref('Recirculation_Cycle')},1)")
     ws.cell(row=row, column=3).number_format = '0'
     ws.cell(row=row, column=4, value="cycles")
-    add_named_range(wb, "Circulation_Cycles", "8_Calc_Timeline", f"$C${row}")
+    add_named_range(wb, "Circulation_Cycles", "6_Calc_Timeline", f"$C${row}")
     row += 1
 
     # Treatment Efficiency
@@ -2006,7 +1894,7 @@ def create_8_calc_timeline(wb):
     ws.cell(row=row, column=3, value=f"=({ref('Initial_NAFC')}-{ref('Target_NAFC')})/{ref('Initial_NAFC')}")
     ws.cell(row=row, column=3).number_format = '0.0%'
     ws.cell(row=row, column=4, value="%")
-    add_named_range(wb, "Treatment_Efficiency", "8_Calc_Timeline", f"$C${row}")
+    add_named_range(wb, "Treatment_Efficiency", "6_Calc_Timeline", f"$C${row}")
     row += 1
 
     # Compliance Status
@@ -2014,140 +1902,18 @@ def create_8_calc_timeline(wb):
     ws.cell(row=row, column=2, value="Achievable within season?")
     ws.cell(row=row, column=3, value=f'=IF({ref("Days_to_Compliance")}<={ref("Season_Length")},"ACHIEVABLE","EXCEEDS SEASON")')
     ws.cell(row=row, column=4, value="status")
-    add_named_range(wb, "Compliance_Status", "8_Calc_Timeline", f"$C${row}")
+    add_named_range(wb, "Compliance_Status", "6_Calc_Timeline", f"$C${row}")
 
     return ws
 
 
 # =============================================================================
-# SHEET 9: CALC_KINETICS (NEW)
+# SHEET 7: CALC_STOCHASTIC
 # =============================================================================
 
-def create_9_calc_kinetics(wb):
-    """Sheet 9: Calc_Kinetics - Rate modifier calculations using environmental drivers."""
-    ws = wb.create_sheet("9_Calc_Kinetics")
-    ws.sheet_properties.tabColor = TAB_BLUE
-    set_column_widths(ws, {'A': 24, 'B': 55, 'C': 14, 'D': 12, 'E': 35})
-
-    ws['A1'] = "Treatment Kinetics Modifiers"
-    ws['A1'].font = FONT_TITLE
-
-    # Context box
-    row = 3
-    context_content = """Environmental rate modifiers cascade to produce Effective_Rate.
-Q10: Temperature coefficient (rate doubles per 10C above reference).
-UV: Photodegradation modifier (reduced by turbidity).
-DO: Aerobic biodegradation modifier (full above 6.5 mg/L).
-Nutrient/Bioavail: Substrate availability modifiers."""
-    row = write_context_box(ws, row, "Kinetics Cascade", context_content, width_cols=5)
-
-    # Rate Modifiers Table
-    row += 1
-    headers = ['Modifier', 'Formula', 'Value', 'Unit', 'Notes']
-    row = write_header_row(ws, row, headers)
-
-    mod_start = row
-
-    # Q10 Temperature Factor
-    ws.cell(row=row, column=1, value="Q10_Factor")
-    ws.cell(row=row, column=2, value="=2^((Stoch_Temp-20)/10)")
-    # Use July temperature as default (mid-season)
-    q10_formula = "=2^((Env_Temp_Water_Jul-20)/10)"
-    ws.cell(row=row, column=3, value=q10_formula)
-    ws.cell(row=row, column=3).number_format = '0.000'
-    ws.cell(row=row, column=4, value="multiplier")
-    ws.cell(row=row, column=5, value="T=20C gives 1.0, T=30C gives 2.0")
-    register_location("Q10_Factor", "9_Calc_Kinetics", "C", row)
-    add_named_range(wb, "Q10_Factor", "9_Calc_Kinetics", f"$C${row}")
-    row += 1
-
-    # UV Modifier
-    ws.cell(row=row, column=1, value="UV_Modifier")
-    ws.cell(row=row, column=2, value="=UV_Relative*(1-MIN(1,Turbidity/100))")
-    # Simplified: use July UV and assume low turbidity
-    uv_formula = "=Env_UV_Relative_Jul*(1-MIN(1,Ionic_Chloride_Mode/1000))"
-    ws.cell(row=row, column=3, value=uv_formula)
-    ws.cell(row=row, column=3).number_format = '0.000'
-    ws.cell(row=row, column=4, value="multiplier")
-    ws.cell(row=row, column=5, value="UV intensity adjusted for turbidity")
-    register_location("UV_Modifier", "9_Calc_Kinetics", "C", row)
-    add_named_range(wb, "UV_Modifier", "9_Calc_Kinetics", f"$C${row}")
-    row += 1
-
-    # DO Modifier
-    ws.cell(row=row, column=1, value="DO_Modifier")
-    ws.cell(row=row, column=2, value="=IF(DO>=6.5,1,DO/6.5)")
-    do_formula = "=IF(Env_DO_Typical_Jul>=6.5,1,Env_DO_Typical_Jul/6.5)"
-    ws.cell(row=row, column=3, value=do_formula)
-    ws.cell(row=row, column=3).number_format = '0.000'
-    ws.cell(row=row, column=4, value="multiplier")
-    ws.cell(row=row, column=5, value="Full rate above 6.5 mg/L")
-    register_location("DO_Modifier", "9_Calc_Kinetics", "C", row)
-    add_named_range(wb, "DO_Modifier", "9_Calc_Kinetics", f"$C${row}")
-    row += 1
-
-    # Nutrient Modifier
-    ws.cell(row=row, column=1, value="Nutrient_Modifier")
-    ws.cell(row=row, column=2, value="=Nutrient_Index")
-    nut_formula = "=Env_Nutrient_Index_Jul"
-    ws.cell(row=row, column=3, value=nut_formula)
-    ws.cell(row=row, column=3).number_format = '0.000'
-    ws.cell(row=row, column=4, value="multiplier")
-    ws.cell(row=row, column=5, value="Nutrient availability factor")
-    register_location("Nutrient_Modifier", "9_Calc_Kinetics", "C", row)
-    add_named_range(wb, "Nutrient_Modifier", "9_Calc_Kinetics", f"$C${row}")
-    row += 1
-
-    # Bioavailability Modifier
-    ws.cell(row=row, column=1, value="Bioavail_Modifier")
-    ws.cell(row=row, column=2, value="=Bioavail*(1-Clay*0.5)")
-    bio_formula = "=Env_Bioavail_Index_Jul*(1-0.15*0.5)"
-    ws.cell(row=row, column=3, value=bio_formula)
-    ws.cell(row=row, column=3).number_format = '0.000'
-    ws.cell(row=row, column=4, value="multiplier")
-    ws.cell(row=row, column=5, value="Adjusted for clay sorption")
-    register_location("Bioavail_Modifier", "9_Calc_Kinetics", "C", row)
-    add_named_range(wb, "Bioavail_Modifier", "9_Calc_Kinetics", f"$C${row}")
-    row += 1
-
-    create_table(ws, "tbl_Rate_Modifiers", f"A{mod_start-1}:E{row-1}")
-    row += 2
-
-    # Combined Effective Rate
-    ws.cell(row=row, column=1, value="Combined Rate Calculation").font = Font(bold=True)
-    row += 1
-
-    ws.cell(row=row, column=1, value="Effective_Rate")
-    ws.cell(row=row, column=2, value="=Base_Rate * Q10 * UV * DO * Nutrient * Bioavail * Stoch_Treatment")
-    # Combine all modifiers with base rate
-    eff_formula = "=Rapid_Phase_Rate*Q10_Factor*UV_Modifier*DO_Modifier*Nutrient_Modifier*Bioavail_Modifier*Stoch_TreatmentRate"
-    ws.cell(row=row, column=3, value=eff_formula)
-    ws.cell(row=row, column=3).number_format = '0.000'
-    ws.cell(row=row, column=4, value="mg/L/day")
-    ws.cell(row=row, column=5, value="Combined effective treatment rate")
-    register_location("Effective_Rate", "9_Calc_Kinetics", "C", row)
-    add_named_range(wb, "Effective_Rate", "9_Calc_Kinetics", f"$C${row}")
-    row += 1
-
-    # Rate comparison
-    ws.cell(row=row, column=1, value="Rate_vs_Baseline")
-    ws.cell(row=row, column=2, value="=Effective_Rate / Rapid_Phase_Rate")
-    comp_formula = "=Effective_Rate/Rapid_Phase_Rate"
-    ws.cell(row=row, column=3, value=comp_formula)
-    ws.cell(row=row, column=3).number_format = '0.0%'
-    ws.cell(row=row, column=4, value="%")
-    ws.cell(row=row, column=5, value="Effective vs baseline rate")
-
-    return ws
-
-
-# =============================================================================
-# SHEET 10: CALC_STOCHASTIC
-# =============================================================================
-
-def create_10_calc_stochastic(wb):
-    """Sheet 10: Calc_Stochastic - Excel-native random variable generation."""
-    ws = wb.create_sheet("10_Calc_Stochastic")
+def create_7_calc_stochastic(wb):
+    """Sheet 7: Calc_Stochastic - Excel-native random variable generation."""
+    ws = wb.create_sheet("7_Calc_Stochastic")
     ws.sheet_properties.tabColor = TAB_BLUE
     set_column_widths(ws, {'A': 22, 'B': 12, 'C': 70})
 
@@ -2160,14 +1926,14 @@ def create_10_calc_stochastic(wb):
     row = 4
     loader = get_content_loader()
     try:
-        context = loader.get_context_box("10_calc_stochastic")
+        context = loader.get_context_box("7_calc_stochastic")
         if context:
             row = write_context_box(ws, row, context.title, context.content, width_cols=3)
     except (ContentNotFoundError, ContentValidationError):
         pass  # Continue without context box if content not available
 
     # Add table intro from YAML
-    table_docs = loader.get_table_docs("10_calc_stochastic")
+    table_docs = loader.get_table_docs("7_calc_stochastic")
     if 'stochastic' in table_docs:
         row = write_table_intro(ws, row, table_docs['stochastic'], width_cols=3)
 
@@ -2187,7 +1953,7 @@ def create_10_calc_stochastic(wb):
                    f"{min_nm}+SQRT(B{row}*({max_nm}-{min_nm})*({mode_nm}-{min_nm})),"
                    f"{max_nm}-SQRT((1-B{row})*({max_nm}-{min_nm})*({max_nm}-{mode_nm})))")
     ws.cell(row=row, column=3, value=tri_formula)
-    add_named_range(wb, "Stoch_SeasonExt", "10_Calc_Stochastic", f"$C${row}")
+    add_named_range(wb, "Stoch_SeasonExt", "7_Calc_Stochastic", f"$C${row}")
     row += 1
 
     # Extension Value (Triangular)
@@ -2200,7 +1966,7 @@ def create_10_calc_stochastic(wb):
                    f"{min_nm}+SQRT(B{row}*({max_nm}-{min_nm})*({mode_nm}-{min_nm})),"
                    f"{max_nm}-SQRT((1-B{row})*({max_nm}-{min_nm})*({max_nm}-{mode_nm})))")
     ws.cell(row=row, column=3, value=tri_formula)
-    add_named_range(wb, "Stoch_ExtValue", "10_Calc_Stochastic", f"$C${row}")
+    add_named_range(wb, "Stoch_ExtValue", "7_Calc_Stochastic", f"$C${row}")
     row += 1
 
     # Interventions Avoided (Triangular)
@@ -2213,7 +1979,7 @@ def create_10_calc_stochastic(wb):
                    f"{min_nm}+SQRT(B{row}*({max_nm}-{min_nm})*({mode_nm}-{min_nm})),"
                    f"{max_nm}-SQRT((1-B{row})*({max_nm}-{min_nm})*({max_nm}-{mode_nm})))")
     ws.cell(row=row, column=3, value=tri_formula)
-    add_named_range(wb, "Stoch_Interventions", "10_Calc_Stochastic", f"$C${row}")
+    add_named_range(wb, "Stoch_Interventions", "7_Calc_Stochastic", f"$C${row}")
     row += 1
 
     # Efficiency Gain (Uniform approximation for Beta - simpler on Mac)
@@ -2222,7 +1988,7 @@ def create_10_calc_stochastic(wb):
     min_nm = ref('Beta_Efficiency_Gain_Min')
     max_nm = ref('Beta_Efficiency_Gain_Max')
     ws.cell(row=row, column=3, value=f"={min_nm}+({max_nm}-{min_nm})*B{row}")
-    add_named_range(wb, "Stoch_Efficiency", "10_Calc_Stochastic", f"$C${row}")
+    add_named_range(wb, "Stoch_Efficiency", "7_Calc_Stochastic", f"$C${row}")
     row += 1
 
     # Treatment Rate Factor (Triangular) - Kearl kinetics variability
@@ -2235,7 +2001,7 @@ def create_10_calc_stochastic(wb):
                    f"{min_nm}+SQRT(B{row}*({max_nm}-{min_nm})*({mode_nm}-{min_nm})),"
                    f"{max_nm}-SQRT((1-B{row})*({max_nm}-{min_nm})*({max_nm}-{mode_nm})))")
     ws.cell(row=row, column=3, value=tri_formula)
-    add_named_range(wb, "Stoch_TreatmentRate", "10_Calc_Stochastic", f"$C${row}")
+    add_named_range(wb, "Stoch_TreatmentRate", "7_Calc_Stochastic", f"$C${row}")
     row += 1
 
     create_table(ws, "tbl_Stochastic", f"A{stoch_start-1}:C{row-1}")
@@ -2244,104 +2010,12 @@ def create_10_calc_stochastic(wb):
 
 
 # =============================================================================
-# SHEET 11: CALC_COMPLIANCE (NEW)
+# SHEET 8: CALC_VALUE
 # =============================================================================
 
-def create_11_calc_compliance(wb):
-    """Sheet 11: Calc_Compliance - 13-variable compliance gate matrix."""
-    ws = wb.create_sheet("11_Calc_Compliance")
-    ws.sheet_properties.tabColor = TAB_BLUE
-    set_column_widths(ws, {'A': 20, 'B': 14, 'C': 10, 'D': 10, 'E': 10, 'F': 35})
-
-    ws['A1'] = "Compliance Gate Matrix"
-    ws['A1'].font = FONT_TITLE
-
-    # Context box
-    row = 3
-    context_content = """13-variable compliance gates for water release qualification.
-Each gate returns 1 (PASS) or 0 (FAIL) as numeric value.
-Master_Gate_Status = MIN(all gates) - 0 if ANY gate fails.
-Numeric gates enable: value gating, fractional compliance (future).
-Gate thresholds defined in 5_EnvironmentalDrivers."""
-    row = write_context_box(ws, row, "Compliance Gates", context_content, width_cols=6)
-
-    # Compliance Gates Table
-    row += 1
-    headers = ['Gate', 'Threshold', 'Direction', 'Value', 'Status', 'Notes']
-    row = write_header_row(ws, row, headers)
-
-    gate_start = row
-
-    # Define the 13 compliance gates per the plan
-    gates = [
-        ('Toxicity', 'Baseline +/- 5%', 'within', '=IF(ABS(Stoch_Efficiency-0.2)<0.05,1,0)', 'Toxicity baseline'),
-        ('Chloride', '< 230 mg/L', 'below', '=IF(Ionic_Chloride_Mode<230,1,0)', 'Aquatic life protection'),
-        ('SAR', '< 4.0', 'below', '=IF(Ionic_SAR_Mode<4,1,0)', 'Land application'),
-        ('DO', '> 6.5 mg/L', 'above', '=IF(Env_DO_Typical_Jul>6.5,1,0)', 'Minimum oxygen'),
-        ('pH_Low', '> 6.5', 'above', '=IF(7.5>6.5,1,0)', 'pH lower limit'),
-        ('pH_High', '< 8.5', 'below', '=IF(7.5<8.5,1,0)', 'pH upper limit'),
-        ('Sulfate', '< 500 mg/L', 'below', '=IF(Ionic_Sulfate_Mode<500,1,0)', 'Process water indicator'),
-        ('Temperature', '< 25 C', 'below', '=IF(Env_Temp_Water_Jul<25,1,0)', 'Thermal discharge'),
-        ('NAFC', '< Target', 'below', '=IF(Days_to_Compliance<Season_Length,1,0)', 'Treatment complete'),
-        ('Turbidity', '< 100 NTU', 'below', '=1', 'Sediment control'),
-        ('Oil_Sheen', 'None visible', 'absent', '=1', 'Visual inspection'),
-        ('Odor', 'None detected', 'absent', '=1', 'Sensory inspection'),
-        ('Foam', 'None persistent', 'absent', '=1', 'Surface condition'),
-    ]
-
-    for gate_name, threshold, direction, formula, notes in gates:
-        ws.cell(row=row, column=1, value=gate_name)
-        ws.cell(row=row, column=2, value=threshold)
-        ws.cell(row=row, column=3, value=direction)
-        ws.cell(row=row, column=4, value=formula)
-        ws.cell(row=row, column=4).number_format = '0'
-        # Status column - shows PASS/FAIL based on numeric value
-        status_formula = f'=IF(D{row}=1,"PASS","FAIL")'
-        ws.cell(row=row, column=5, value=status_formula)
-        ws.cell(row=row, column=6, value=notes)
-        # Register named range for each gate
-        register_location(f"Gate_{gate_name}", "11_Calc_Compliance", "D", row)
-        add_named_range(wb, f"Gate_{gate_name}", "11_Calc_Compliance", f"$D${row}")
-        row += 1
-
-    gate_end = row - 1
-    create_table(ws, "tbl_Compliance_Gates", f"A{gate_start-1}:F{row-1}")
-    row += 2
-
-    # Master Gate Status
-    ws.cell(row=row, column=1, value="Master Gate Status").font = Font(bold=True)
-    row += 1
-
-    ws.cell(row=row, column=1, value="Master_Gate_Status")
-    ws.cell(row=row, column=2, value="=MIN(all gates)")
-    # MIN of all gate values - 0 if any gate fails
-    master_formula = f"=MIN(D{gate_start}:D{gate_end})"
-    ws.cell(row=row, column=3, value=master_formula)
-    ws.cell(row=row, column=3).number_format = '0'
-    ws.cell(row=row, column=4, value='=IF(C' + str(row) + '=1,"ALL PASS","BLOCKED")')
-    register_location("Master_Gate_Status", "11_Calc_Compliance", "C", row)
-    add_named_range(wb, "Master_Gate_Status", "11_Calc_Compliance", f"$C${row}")
-    row += 1
-
-    # Gate count summary
-    ws.cell(row=row, column=1, value="Gates Passing")
-    ws.cell(row=row, column=3, value=f"=COUNTIF(D{gate_start}:D{gate_end},1)")
-    ws.cell(row=row, column=4, value=f"of {gate_end - gate_start + 1}")
-    row += 1
-
-    ws.cell(row=row, column=1, value="Gates Failing")
-    ws.cell(row=row, column=3, value=f"=COUNTIF(D{gate_start}:D{gate_end},0)")
-
-    return ws
-
-
-# =============================================================================
-# SHEET 12: CALC_VALUE
-# =============================================================================
-
-def create_12_calc_value(wb):
-    """Sheet 12: Calc_Value - Calculate gated value for each scenario."""
-    ws = wb.create_sheet("12_Calc_Value")
+def create_8_calc_value(wb):
+    """Sheet 8: Calc_Value - Calculate gated value for each scenario."""
+    ws = wb.create_sheet("8_Calc_Value")
     ws.sheet_properties.tabColor = TAB_BLUE
     set_column_widths(ws, {'A': 28, 'B': 14, 'C': 14, 'D': 14, 'E': 14})
 
@@ -2352,14 +2026,14 @@ def create_12_calc_value(wb):
     row = 3
     loader = get_content_loader()
     try:
-        context = loader.get_context_box("12_calc_value")
+        context = loader.get_context_box("8_calc_value")
         if context:
             row = write_context_box(ws, row, context.title, context.content, width_cols=5)
     except (ContentNotFoundError, ContentValidationError):
         pass  # Continue without context box if content not available
 
     # Add table intro from YAML
-    table_docs = loader.get_table_docs("12_calc_value")
+    table_docs = loader.get_table_docs("8_calc_value")
     if 'gated_values' in table_docs:
         row = write_table_intro(ws, row, table_docs['gated_values'], width_cols=5)
 
@@ -2374,7 +2048,7 @@ def create_12_calc_value(wb):
     ws.cell(row=row, column=3, value="=INDEX(Gate_S1,MATCH(Testing_Option,TestOpt_Option,0))")
     ws.cell(row=row, column=4, value="=Stoch_SeasonExt/21")  # Normalize around mode
     ws.cell(row=row, column=5, value=f'=IF(C{row}="ENABLED",B{row}*D{row},0)')
-    add_named_range(wb, "S1_Value", "12_Calc_Value", f"$E${row}")
+    add_named_range(wb, "S1_Value", "8_Calc_Value", f"$E${row}")
     row += 1
 
     # S2: Intervention Avoidance
@@ -2383,7 +2057,7 @@ def create_12_calc_value(wb):
     ws.cell(row=row, column=3, value="=INDEX(Gate_S2,MATCH(Testing_Option,TestOpt_Option,0))")
     ws.cell(row=row, column=4, value="=Stoch_Interventions/3")  # Normalize around mode
     ws.cell(row=row, column=5, value=f'=IF(C{row}="ENABLED",B{row}*D{row},0)')
-    add_named_range(wb, "S2_Value", "12_Calc_Value", f"$E${row}")
+    add_named_range(wb, "S2_Value", "8_Calc_Value", f"$E${row}")
     row += 1
 
     # S3: Spatial Routing
@@ -2392,7 +2066,7 @@ def create_12_calc_value(wb):
     ws.cell(row=row, column=3, value="=INDEX(Gate_S3,MATCH(Testing_Option,TestOpt_Option,0))")
     ws.cell(row=row, column=4, value="=Stoch_Efficiency/0.15")  # Normalize around expected
     ws.cell(row=row, column=5, value=f'=IF(C{row}="ENABLED",B{row}*D{row},0)')
-    add_named_range(wb, "S3_Value", "12_Calc_Value", f"$E${row}")
+    add_named_range(wb, "S3_Value", "8_Calc_Value", f"$E${row}")
     row += 1
 
     # S4: Early Detection
@@ -2401,7 +2075,7 @@ def create_12_calc_value(wb):
     ws.cell(row=row, column=3, value="=INDEX(Gate_S4,MATCH(Testing_Option,TestOpt_Option,0))")
     ws.cell(row=row, column=4, value="=1+Stoch_Efficiency")  # Add efficiency bonus
     ws.cell(row=row, column=5, value=f'=IF(C{row}="ENABLED",B{row}*D{row},0)')
-    add_named_range(wb, "S4_Value", "12_Calc_Value", f"$E${row}")
+    add_named_range(wb, "S4_Value", "8_Calc_Value", f"$E${row}")
     row += 1
 
     create_table(ws, "tbl_GatedValues", f"A{value_start-1}:E{row-1}")
@@ -2411,7 +2085,7 @@ def create_12_calc_value(wb):
     ws.cell(row=row, column=1, value="Total_Gross_Value").font = FONT_BOLD
     ws.cell(row=row, column=5, value=f"=SUM(E{value_start}:E{row-2})")
     ws[f'E{row}'].number_format = FMT_CURRENCY
-    add_named_range(wb, "Gross_Value", "12_Calc_Value", f"$E${row}")
+    add_named_range(wb, "Gross_Value", "8_Calc_Value", f"$E${row}")
 
     return ws
 
@@ -2420,9 +2094,9 @@ def create_12_calc_value(wb):
 # SHEET 9: CALC_COSTS
 # =============================================================================
 
-def create_13_calc_costs(wb):
+def create_9_calc_costs(wb):
     """Sheet 9: Calc_Costs - Calculate testing and operational costs."""
-    ws = wb.create_sheet("13_Calc_Costs")
+    ws = wb.create_sheet("9_Calc_Costs")
     ws.sheet_properties.tabColor = TAB_BLUE
     set_column_widths(ws, {'A': 22, 'B': 25, 'C': 18})
 
@@ -2433,14 +2107,14 @@ def create_13_calc_costs(wb):
     row = 3
     loader = get_content_loader()
     try:
-        context = loader.get_context_box("13_calc_costs")
+        context = loader.get_context_box("9_calc_costs")
         if context:
             row = write_context_box(ws, row, context.title, context.content, width_cols=3)
     except (ContentNotFoundError, ContentValidationError):
         pass  # Continue without context box if content not available
 
     # Add table intro from YAML
-    table_docs = loader.get_table_docs("13_calc_costs")
+    table_docs = loader.get_table_docs("9_calc_costs")
     if 'cost_calc' in table_docs:
         row = write_table_intro(ws, row, table_docs['cost_calc'], width_cols=3)
 
@@ -2491,7 +2165,7 @@ def create_13_calc_costs(wb):
     cell = ws.cell(row=row, column=3, value=f"=C{total_tests_row}*C{cost_row}")
     cell.number_format = FMT_CURRENCY
     cell.font = FONT_BOLD
-    add_named_range(wb, "Testing_Cost", "13_Calc_Costs", f"$C${row}")
+    add_named_range(wb, "Testing_Cost", "9_Calc_Costs", f"$C${row}")
     row += 1
 
     create_table(ws, "tbl_CostCalc", f"A{cost_start-1}:C{row-1}")
@@ -2503,9 +2177,9 @@ def create_13_calc_costs(wb):
 # SHEET 10: CALC_SIM (Monte Carlo)
 # =============================================================================
 
-def create_14_calc_sim(wb):
+def create_10_calc_sim(wb):
     """Sheet 10: Calc_Sim - 1000-iteration Monte Carlo using Excel Data Table."""
-    ws = wb.create_sheet("14_Calc_Sim")
+    ws = wb.create_sheet("10_Calc_Sim")
     ws.sheet_properties.tabColor = TAB_BLUE
     set_column_widths(ws, {'A': 26, 'B': 14, 'C': 14, 'D': 14, 'E': 14, 'F': 14, 'G': 14, 'H': 14, 'I': 18, 'K': 8})
 
@@ -2517,7 +2191,7 @@ def create_14_calc_sim(wb):
     row = 3
     try:
         loader = get_content_loader()
-        context = loader.get_context_box("14_calc_sim")
+        context = loader.get_context_box("10_calc_sim")
         if context:
             row = write_context_box(ws, row, context.title, context.content, start_col=1, width_cols=5)
     except (ContentNotFoundError, ContentValidationError):
@@ -2596,12 +2270,12 @@ def create_14_calc_sim(wb):
         cell.number_format = fmt
         row += 1
 
-    add_named_range(wb, "MC_Expected_NPV", "14_Calc_Sim", f"$B${stats_start}")
-    add_named_range(wb, "MC_P10", "14_Calc_Sim", f"$B${stats_start+1}")
-    add_named_range(wb, "MC_P50", "14_Calc_Sim", f"$B${stats_start+2}")
-    add_named_range(wb, "MC_P90", "14_Calc_Sim", f"$B${stats_start+3}")
-    add_named_range(wb, "MC_StdDev", "14_Calc_Sim", f"$B${stats_start+4}")
-    add_named_range(wb, "MC_Prob_Positive", "14_Calc_Sim", f"$B${stats_start+5}")
+    add_named_range(wb, "MC_Expected_NPV", "10_Calc_Sim", f"$B${stats_start}")
+    add_named_range(wb, "MC_P10", "10_Calc_Sim", f"$B${stats_start+1}")
+    add_named_range(wb, "MC_P50", "10_Calc_Sim", f"$B${stats_start+2}")
+    add_named_range(wb, "MC_P90", "10_Calc_Sim", f"$B${stats_start+3}")
+    add_named_range(wb, "MC_StdDev", "10_Calc_Sim", f"$B${stats_start+4}")
+    add_named_range(wb, "MC_Prob_Positive", "10_Calc_Sim", f"$B${stats_start+5}")
 
     # Treatment Kinetics Statistics (Kearl Integration)
     row += 1
@@ -2623,11 +2297,11 @@ def create_14_calc_sim(wb):
         cell.number_format = fmt
         row += 1
 
-    add_named_range(wb, "MC_Expected_Days", "14_Calc_Sim", f"$B${kinetics_stats_start}")
-    add_named_range(wb, "MC_P10_Days", "14_Calc_Sim", f"$B${kinetics_stats_start+1}")
-    add_named_range(wb, "MC_P50_Days", "14_Calc_Sim", f"$B${kinetics_stats_start+2}")
-    add_named_range(wb, "MC_P90_Days", "14_Calc_Sim", f"$B${kinetics_stats_start+3}")
-    add_named_range(wb, "MC_Prob_Achievable", "14_Calc_Sim", f"$B${kinetics_stats_start+4}")
+    add_named_range(wb, "MC_Expected_Days", "10_Calc_Sim", f"$B${kinetics_stats_start}")
+    add_named_range(wb, "MC_P10_Days", "10_Calc_Sim", f"$B${kinetics_stats_start+1}")
+    add_named_range(wb, "MC_P50_Days", "10_Calc_Sim", f"$B${kinetics_stats_start+2}")
+    add_named_range(wb, "MC_P90_Days", "10_Calc_Sim", f"$B${kinetics_stats_start+3}")
+    add_named_range(wb, "MC_Prob_Achievable", "10_Calc_Sim", f"$B${kinetics_stats_start+4}")
 
     return ws
 
@@ -2636,9 +2310,9 @@ def create_14_calc_sim(wb):
 # SHEET 11: PL_MONTHLY (Placeholder)
 # =============================================================================
 
-def create_15_pl_monthly(wb):
+def create_11_pl_monthly(wb):
     """Sheet 11: PL_Monthly - Placeholder for monthly P&L if needed."""
-    ws = wb.create_sheet("15_PL_Monthly")
+    ws = wb.create_sheet("11_PL_Monthly")
     ws.sheet_properties.tabColor = TAB_BLUE
     set_column_widths(ws, {'A': 60})
 
@@ -2649,13 +2323,13 @@ def create_15_pl_monthly(wb):
     row = 3
     try:
         loader = get_content_loader()
-        context = loader.get_context_box("15_pl_monthly")
+        context = loader.get_context_box("11_pl_monthly")
         if context:
             row = write_context_box(ws, row, context.title, context.content, width_cols=4)
     except (ContentNotFoundError, ContentValidationError):
         # Fallback to original text
         ws['A3'] = "This sheet is a placeholder for monthly granularity if required."
-        ws['A4'] = "Current model uses annual projections in 16_PL_Annual."
+        ws['A4'] = "Current model uses annual projections in 12_PL_Annual."
 
     return ws
 
@@ -2664,9 +2338,9 @@ def create_15_pl_monthly(wb):
 # SHEET 12: PL_ANNUAL
 # =============================================================================
 
-def create_16_pl_annual(wb):
+def create_12_pl_annual(wb):
     """Sheet 12: PL_Annual - Annual projection summaries."""
-    ws = wb.create_sheet("16_PL_Annual")
+    ws = wb.create_sheet("12_PL_Annual")
     ws.sheet_properties.tabColor = TAB_BLUE
     set_column_widths(ws, {'A': 12, 'B': 12, 'C': 12, 'D': 12, 'E': 12,
                            'F': 14, 'G': 12, 'H': 14, 'I': 16, 'J': 14})
@@ -2678,14 +2352,14 @@ def create_16_pl_annual(wb):
     row = 3
     loader = get_content_loader()
     try:
-        context = loader.get_context_box("16_pl_annual")
+        context = loader.get_context_box("12_pl_annual")
         if context:
             row = write_context_box(ws, row, context.title, context.content, width_cols=10)
     except (ContentNotFoundError, ContentValidationError):
         pass  # Continue without context box if content not available
 
     # Add table intro from YAML
-    table_docs = loader.get_table_docs("16_pl_annual")
+    table_docs = loader.get_table_docs("12_pl_annual")
     if 'annual' in table_docs:
         row = write_table_intro(ws, row, table_docs['annual'], width_cols=10)
 
@@ -2722,8 +2396,8 @@ def create_16_pl_annual(wb):
     create_table(ws, "tbl_Annual", f"A{annual_start-1}:J{row-1}")
 
     # Create named ranges for Year 1 values (for dashboard cross-sheet references)
-    add_named_range(wb, "Year1_Gross_Value", "16_PL_Annual", f"$F${annual_start}")
-    add_named_range(wb, "Year1_Net_Value", "16_PL_Annual", f"$H${annual_start}")
+    add_named_range(wb, "Year1_Gross_Value", "12_PL_Annual", f"$F${annual_start}")
+    add_named_range(wb, "Year1_Net_Value", "12_PL_Annual", f"$H${annual_start}")
 
     # Aggregate KPIs
     row += 2
@@ -2733,7 +2407,7 @@ def create_16_pl_annual(wb):
     ws.cell(row=row, column=1, value="NPV_Total")
     cell = ws.cell(row=row, column=2, value=f"=SUM(J{annual_start}:J{annual_end})")
     cell.number_format = FMT_CURRENCY
-    add_named_range(wb, "NPV_Total", "16_PL_Annual", f"$B${row}")
+    add_named_range(wb, "NPV_Total", "12_PL_Annual", f"$B${row}")
     row += 1
 
     ws.cell(row=row, column=1, value="Total_Gross_5Yr")
@@ -2753,9 +2427,9 @@ def create_16_pl_annual(wb):
 # SHEET 13: CASHFLOW
 # =============================================================================
 
-def create_17_cashflow(wb):
+def create_13_cashflow(wb):
     """Sheet 13: CashFlow - Cumulative projections."""
-    ws = wb.create_sheet("17_CashFlow")
+    ws = wb.create_sheet("13_CashFlow")
     ws.sheet_properties.tabColor = TAB_BLUE
     set_column_widths(ws, {'A': 12, 'B': 16, 'C': 16, 'D': 16})
 
@@ -2766,14 +2440,14 @@ def create_17_cashflow(wb):
     row = 3
     loader = get_content_loader()
     try:
-        context = loader.get_context_box("17_cashflow")
+        context = loader.get_context_box("13_cashflow")
         if context:
             row = write_context_box(ws, row, context.title, context.content, width_cols=4)
     except (ContentNotFoundError, ContentValidationError):
         pass  # Continue without context box if content not available
 
     # Add table intro from YAML
-    table_docs = loader.get_table_docs("17_cashflow")
+    table_docs = loader.get_table_docs("13_cashflow")
     if 'cashflow' in table_docs:
         row = write_table_intro(ws, row, table_docs['cashflow'], width_cols=4)
 
@@ -2806,9 +2480,9 @@ def create_17_cashflow(wb):
 # SHEET 14: UNIT ECONOMICS
 # =============================================================================
 
-def create_18_uniteconomics(wb):
+def create_14_uniteconomics(wb):
     """Sheet 14: UnitEconomics - Unit economics view."""
-    ws = wb.create_sheet("18_UnitEconomics")
+    ws = wb.create_sheet("14_UnitEconomics")
     ws.sheet_properties.tabColor = TAB_BLUE
     set_column_widths(ws, {'A': 28, 'B': 18, 'C': 10, 'D': 25})
 
@@ -2819,14 +2493,14 @@ def create_18_uniteconomics(wb):
     row = 3
     loader = get_content_loader()
     try:
-        context = loader.get_context_box("18_uniteconomics")
+        context = loader.get_context_box("14_uniteconomics")
         if context:
             row = write_context_box(ws, row, context.title, context.content, width_cols=4)
     except (ContentNotFoundError, ContentValidationError):
         pass  # Continue without context box if content not available
 
     # Add table intro from YAML
-    table_docs = loader.get_table_docs("18_uniteconomics")
+    table_docs = loader.get_table_docs("14_uniteconomics")
     if 'unit_economics' in table_docs:
         row = write_table_intro(ws, row, table_docs['unit_economics'], width_cols=4)
 
@@ -2836,7 +2510,7 @@ def create_18_uniteconomics(wb):
     ue_start = row
 
     metrics = [
-        ("Annual Throughput", "=Annual_Throughput", "m3/yr", "From 4_Assumptions"),
+        ("Annual Throughput", "=Annual_Throughput", "m3/yr", "From 3_Assumptions"),
         ("Gross Value per Season", "=Gross_Value", "$", "Sum of S1-S4"),
         ("Testing Cost per Season", "=Testing_Cost", "$", "Based on option selected"),
         ("Net Value per Season", "=Gross_Value-Testing_Cost", "$", "Gross - Testing"),
@@ -2882,7 +2556,7 @@ def create_18_uniteconomics(wb):
 # SHEET 15: SENSITIVITY
 # =============================================================================
 
-def create_19_sensitivity(wb):
+def create_15_sensitivity(wb):
     """Sheet 15: Sensitivity - Tornado analysis with automatic calculations.
 
     Uses scaling factors to estimate NPV at different parameter values:
@@ -2890,7 +2564,7 @@ def create_19_sensitivity(wb):
       NPV scales linearly with parameter value
     - Discount_Rate: Inverse relationship using time-value adjustment
     """
-    ws = wb.create_sheet("19_Sensitivity")
+    ws = wb.create_sheet("15_Sensitivity")
     ws.sheet_properties.tabColor = TAB_BLUE
     set_column_widths(ws, {'A': 18, 'B': 12, 'C': 12, 'D': 12, 'E': 15, 'F': 15, 'G': 15})
 
@@ -2901,7 +2575,7 @@ def create_19_sensitivity(wb):
     row = 3
     loader = get_content_loader()
     try:
-        context = loader.get_context_box("19_sensitivity")
+        context = loader.get_context_box("15_sensitivity")
         if context:
             row = write_context_box(ws, row, context.title, context.content, width_cols=7)
     except (ContentNotFoundError, ContentValidationError):
@@ -2911,7 +2585,7 @@ def create_19_sensitivity(wb):
         row = 4
 
     # Add table intro from YAML
-    table_docs = loader.get_table_docs("19_sensitivity")
+    table_docs = loader.get_table_docs("15_sensitivity")
     if 'sensitivity' in table_docs:
         row = write_table_intro(ws, row, table_docs['sensitivity'], width_cols=7)
 
@@ -2990,9 +2664,9 @@ def create_19_sensitivity(wb):
 # SHEET 16: DASHBOARD
 # =============================================================================
 
-def create_20_dashboard(wb):
+def create_16_dashboard(wb):
     """Sheet 16: Dashboard - Executive summary with KPIs."""
-    ws = wb.create_sheet("20_Dashboard")
+    ws = wb.create_sheet("16_Dashboard")
     ws.sheet_properties.tabColor = TAB_GREEN
     set_column_widths(ws, {'A': 30, 'B': 18, 'C': 16, 'D': 18})
 
@@ -3001,13 +2675,13 @@ def create_20_dashboard(wb):
 
     # Load table documentation from YAML
     loader = get_content_loader()
-    table_docs = loader.get_table_docs("20_dashboard")
+    table_docs = loader.get_table_docs("16_dashboard")
     collected_docs = []  # Collect for reference section
 
     # Load and write context box from YAML
     row = 3
     try:
-        context = loader.get_context_box("20_dashboard")
+        context = loader.get_context_box("16_dashboard")
         if context:
             row = write_context_box(ws, row, context.title, context.content, width_cols=4)
     except (ContentNotFoundError, ContentValidationError):
@@ -3145,10 +2819,10 @@ def create_20_dashboard(wb):
     ws.cell(row=row, column=1, value="Model Health").font = FONT_HEADER
     row += 1
     ws.cell(row=row, column=1, value="Check Status:")
-    ws.cell(row=row, column=2, value="=IF(COUNTIF('21_Checks'!D:D,\"FAIL\")=0,\"HEALTHY\",\"REVIEW REQUIRED\")")
+    ws.cell(row=row, column=2, value="=IF(COUNTIF('17_Checks'!D:D,\"FAIL\")=0,\"HEALTHY\",\"REVIEW REQUIRED\")")
     row += 1
     ws.cell(row=row, column=1, value="Errors Found:")
-    ws.cell(row=row, column=2, value="=COUNTIF('21_Checks'!D:D,\"FAIL\")")
+    ws.cell(row=row, column=2, value="=COUNTIF('17_Checks'!D:D,\"FAIL\")")
 
     return ws
 
@@ -3157,9 +2831,9 @@ def create_20_dashboard(wb):
 # SHEET 17: CHECKS
 # =============================================================================
 
-def create_21_checks(wb):
+def create_17_checks(wb):
     """Sheet 17: Checks - Dedicated validation and integrity checks."""
-    ws = wb.create_sheet("21_Checks")
+    ws = wb.create_sheet("17_Checks")
     ws.sheet_properties.tabColor = TAB_RED
     set_column_widths(ws, {'A': 12, 'B': 12, 'C': 40, 'D': 12})
 
@@ -3170,14 +2844,14 @@ def create_21_checks(wb):
     row = 3
     loader = get_content_loader()
     try:
-        context = loader.get_context_box("21_checks")
+        context = loader.get_context_box("17_checks")
         if context:
             row = write_context_box(ws, row, context.title, context.content, width_cols=4)
     except (ContentNotFoundError, ContentValidationError):
         pass  # Continue without context box if content not available
 
     # Add table intro from YAML
-    table_docs = loader.get_table_docs("21_checks")
+    table_docs = loader.get_table_docs("17_checks")
     if 'checks' in table_docs:
         row = write_table_intro(ws, row, table_docs['checks'], width_cols=4)
 
@@ -3250,15 +2924,13 @@ def create_21_checks(wb):
 # =============================================================================
 
 def generate_workbook():
-    """Generate the FAST-compliant Excel workbook (22 sheets, 0-21)."""
-    print("Luminous Wetland Financial Model - FAST Standard Generator v4.0")
+    """Generate the FAST-compliant Excel workbook (18 sheets, 0-17)."""
+    print("Luminous Wetland Financial Model - FAST Standard Generator v3.0")
     print("=" * 65)
-    print("\nGenerating 22-sheet FAST-compliant workbook...")
+    print("\nGenerating 18-sheet FAST-compliant workbook...")
     print("  - Python writes FORMULAS only (via LOCATIONS registry)")
     print("  - Excel performs ALL calculations")
     print("  - Monte Carlo via Data Tables (1000 iterations)")
-    print("  - NEW: Environmental drivers and kinetics cascade")
-    print("  - NEW: 13-variable compliance gate matrix")
     print()
 
     # Clear locations registry
@@ -3267,7 +2939,7 @@ def generate_workbook():
     # Create workbook
     wb = Workbook()
 
-    # Create all 22 sheets in order (0-21)
+    # Create all 18 sheets in order (0-17)
     print("Creating sheets:")
 
     print("  [0] 0_Cover - Navigation hub")
@@ -3276,70 +2948,61 @@ def generate_workbook():
     print("  [1] 1_TOC - Control panel")
     create_1_toc(wb)
 
-    print("  [2] 3_Instructions - Methodology")
-    create_3_instructions(wb)
+    print("  [2] 2_Instructions - Methodology")
+    create_2_instructions(wb)
 
-    print("  [3] 4_Assumptions - ALL inputs consolidated")
-    create_4_assumptions(wb)
+    print("  [3] 3_Assumptions - ALL inputs consolidated")
+    create_3_assumptions(wb)
 
-    print("  [5] 5_EnvironmentalDrivers - Monthly environmental profiles (NEW)")
-    create_5_environmentaldrivers(wb)
+    print("  [4] 4_Scenarios - Value scenario definitions")
+    create_4_scenarios(wb)
 
-    print("  [6] 6_Scenarios - Value scenario definitions")
-    create_6_scenarios(wb)
+    print("  [5] 5_ServiceModels - Monte Carlo distributions")
+    create_5_servicemodels(wb)
 
-    print("  [7] 7_ServiceModels - Monte Carlo distributions")
-    create_7_servicemodels(wb)
-
-    print("  [8] 8_Calc_Timeline - Projection timeline")
-    create_8_calc_timeline(wb)
-
-    print("  [9] 9_Calc_Kinetics - Rate modifier cascade (NEW)")
-    create_9_calc_kinetics(wb)
+    print("  [6] 6_Calc_Timeline - Projection timeline")
+    create_6_calc_timeline(wb)
 
     # Create InputMap AFTER input sheets so WRITE_MAP has range registrations
-    print("  [2] 2_InputMap - Input traceability reference")
-    create_2_inputmap(wb)
-    # Move sheet to correct position (after 3_Instructions, index 3)
-    wb.move_sheet("2_InputMap", offset=-(wb.sheetnames.index("2_InputMap") - 3))
+    print("  [1.5] 1.5_InputMap - Input traceability reference")
+    create_1_5_inputmap(wb)
+    # Move sheet to correct position (after 2_Instructions, index 3)
+    wb.move_sheet("1.5_InputMap", offset=-(wb.sheetnames.index("1.5_InputMap") - 3))
 
-    print("  [10] 10_Calc_Stochastic - Random variables")
-    create_10_calc_stochastic(wb)
+    print("  [7] 7_Calc_Stochastic - Random variables")
+    create_7_calc_stochastic(wb)
 
-    print("  [11] 11_Calc_Compliance - Gate matrix (NEW)")
-    create_11_calc_compliance(wb)
+    print("  [8] 8_Calc_Value - Gated values")
+    create_8_calc_value(wb)
 
-    print("  [12] 12_Calc_Value - Gated values")
-    create_12_calc_value(wb)
+    print("  [9] 9_Calc_Costs - Cost calculations")
+    create_9_calc_costs(wb)
 
-    print("  [9] 13_Calc_Costs - Cost calculations")
-    create_13_calc_costs(wb)
+    print("  [10] 10_Calc_Sim - 1000-iteration Monte Carlo")
+    create_10_calc_sim(wb)
 
-    print("  [10] 14_Calc_Sim - 1000-iteration Monte Carlo")
-    create_14_calc_sim(wb)
+    print("  [11] 11_PL_Monthly - Monthly P&L (placeholder)")
+    create_11_pl_monthly(wb)
 
-    print("  [11] 15_PL_Monthly - Monthly P&L (placeholder)")
-    create_15_pl_monthly(wb)
+    print("  [12] 12_PL_Annual - Annual projections")
+    create_12_pl_annual(wb)
 
-    print("  [12] 16_PL_Annual - Annual projections")
-    create_16_pl_annual(wb)
+    print("  [13] 13_CashFlow - Cumulative projections")
+    create_13_cashflow(wb)
 
-    print("  [13] 17_CashFlow - Cumulative projections")
-    create_17_cashflow(wb)
+    print("  [14] 14_UnitEconomics - Unit economics view")
+    create_14_uniteconomics(wb)
 
-    print("  [14] 18_UnitEconomics - Unit economics view")
-    create_18_uniteconomics(wb)
+    print("  [15] 15_Sensitivity - Tornado analysis")
+    create_15_sensitivity(wb)
 
-    print("  [15] 19_Sensitivity - Tornado analysis")
-    create_19_sensitivity(wb)
+    print("  [16] 16_Dashboard - Executive dashboard")
+    create_16_dashboard(wb)
 
-    print("  [16] 20_Dashboard - Executive dashboard")
-    create_20_dashboard(wb)
+    print("  [17] 17_Checks - Validation checks")
+    create_17_checks(wb)
 
-    print("  [17] 21_Checks - Validation checks")
-    create_21_checks(wb)
-
-    # Add data validation to 1_TOC (after 4_Assumptions exists)
+    # Add data validation to 1_TOC (after 3_Assumptions exists)
     toc_ws = wb['1_TOC']
 
     # Testing Option dropdown
@@ -3380,13 +3043,13 @@ def main():
     wb.save(output_path)
 
     print("\n" + "=" * 65)
-    print("SUCCESS! FAST-compliant 22-sheet workbook created.")
+    print("SUCCESS! FAST-compliant 18-sheet workbook created.")
     print()
     print("LOCATIONS registry contains", len(LOCATIONS), "registered variables")
     print()
     print("Next Steps in Excel:")
     print("  1. Open the workbook")
-    print("  2. Go to 14_Calc_Sim")
+    print("  2. Go to 10_Calc_Sim")
     print("  3. Select range shown in sheet instructions (formula row through iterations)")
     print("  4. Data > What-If Analysis > Data Table")
     print("  5. Column Input Cell: $K$1")

@@ -159,7 +159,7 @@ class ContentLoader:
     Usage:
         loader = ContentLoader()
         glossary = loader.get_glossary()
-        instructions = loader.load_sheet_content("2_instructions")
+        instructions = loader.load_sheet_content("3_instructions")
     """
 
     def __init__(self, content_dir: Optional[Path] = None):
@@ -302,7 +302,7 @@ class ContentLoader:
         Load and validate content for a specific sheet.
 
         Args:
-            sheet_id: Sheet identifier (e.g., '2_instructions', '8_calc_value').
+            sheet_id: Sheet identifier (e.g., '3_instructions', '12_calc_value').
 
         Returns:
             Validated SheetContent object.
@@ -419,12 +419,12 @@ class ContentLoader:
         for name in required_global:
             self.load_global_content(name)
 
-        # Required sheet files
+        # Required sheet files (renumbered per Phase 0 migration)
         required_sheets = [
-            '0_cover', '2_instructions', '4_scenarios', '5_servicemodels',
-            '6_calc_timeline', '7_calc_stochastic', '8_calc_value', '9_calc_costs',
-            '10_calc_sim', '11_pl_monthly', '12_pl_annual', '13_cashflow',
-            '14_uniteconomics', '15_sensitivity', '16_dashboard', '17_checks'
+            '0_cover', '1_toc', '3_instructions', '4_assumptions', '6_scenarios', '7_servicemodels',
+            '8_calc_timeline', '10_calc_stochastic', '12_calc_value', '13_calc_costs',
+            '14_calc_sim', '15_pl_monthly', '16_pl_annual', '17_cashflow',
+            '18_uniteconomics', '19_sensitivity', '20_dashboard', '21_checks'
         ]
         for sheet_id in required_sheets:
             self.load_sheet_content(sheet_id)

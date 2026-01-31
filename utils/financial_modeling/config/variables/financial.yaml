@@ -1,0 +1,82 @@
+# Financial Variables - Stochastic inputs for Monte Carlo simulation
+# These are the original 5 variables from the v1 model, migrated to YAML config.
+
+category: financial
+
+variables:
+  # Triangular Distribution Variables
+  - id: Season_Extension_Days
+    name: Season Extension Days
+    description: >-
+      Additional treatment days gained through wetland optimization.
+      Represents the extension of the operational treatment season beyond
+      the baseline scenario.
+    unit: days
+    distribution: triangular
+    params:
+      min: 14
+      mode: 21
+      max: 35
+    sheet: 7_ServiceModels
+    is_input: true
+
+  - id: Extension_Value_Per_Day
+    name: Extension Value Per Day
+    description: >-
+      Economic value generated per additional treatment day.
+      Includes operational savings, avoided costs, and productivity gains.
+    unit: $/day
+    distribution: triangular
+    params:
+      min: 3000
+      mode: 7500
+      max: 15000
+    sheet: 7_ServiceModels
+    is_input: true
+
+  - id: Interventions_Avoided
+    name: Interventions Avoided
+    description: >-
+      Number of costly emergency interventions avoided through
+      proactive wetland treatment. Each intervention has significant
+      operational and regulatory costs.
+    unit: events
+    distribution: triangular
+    params:
+      min: 1
+      mode: 3
+      max: 8
+    sheet: 7_ServiceModels
+    is_input: true
+
+  - id: Treatment_Rate_Factor
+    name: Treatment Rate Factor
+    description: >-
+      Multiplier on the baseline treatment rate, capturing seasonal
+      and vegetation variability. Based on Kearl kinetics data with
+      uncertainty around optimal conditions.
+    unit: multiplier
+    distribution: triangular
+    params:
+      min: 0.70
+      mode: 1.00
+      max: 1.30
+    sheet: 7_ServiceModels
+    is_input: true
+
+  # Beta Distribution Variables
+  - id: Efficiency_Gain
+    name: Efficiency Gain
+    description: >-
+      Fractional efficiency improvement achieved through wetland
+      optimization. Uses Beta distribution to model bounded improvement
+      with a mode around 15-20%.
+    unit: fraction
+    distribution: beta
+    params:
+      alpha: 2
+      beta: 5
+      min: 0.05
+      max: 0.40
+    sheet: 7_ServiceModels
+    is_input: true

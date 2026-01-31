@@ -1,0 +1,43 @@
+# Model Configuration - Global settings for the Monte Carlo simulation
+
+# Simulation settings
+simulation:
+  iterations: 1000           # Number of Monte Carlo iterations
+  random_seed: null          # Set to integer for reproducibility (null = random each run)
+
+# Active site profile
+site_profile: kearl          # Options: kearl, generic
+
+# Financial parameters
+financial:
+  discount_rate: 0.048       # Default discount rate (4.8%)
+  projection_years: 5        # Number of years to project
+  base_year: 2026            # Starting year for projections
+
+# Output settings
+output:
+  include_percentiles: [10, 25, 50, 75, 90]  # Percentiles to calculate
+  show_distribution_charts: true
+  include_sensitivity_analysis: true
+
+# Validation settings
+validation:
+  enforce_parameter_bounds: true
+  warn_on_extreme_values: true
+  max_allowed_nafc: 100      # mg/L - flag if initial NAFC exceeds this
+  min_treatment_rate: 0.01   # mg/L/day - flag if rates below this
+
+# Sheet configuration
+sheets:
+  # New sheets added in Phase 1+ (not yet implemented)
+  # 5_EnvironmentalDrivers: false
+  # 9_Calc_Kinetics: false
+  # 11_Calc_Compliance: false
+
+  # These control which sheets are generated
+  include_monthly_pl: false  # 15_PL_Monthly is placeholder
+
+# Excel settings
+excel:
+  calculation_mode: automatic
+  data_table_enabled: true

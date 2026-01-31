@@ -1,0 +1,87 @@
+# Kearl Site Configuration
+# Site-specific kinetics parameters derived from Imperial Oil Kearl mine wetland data.
+
+site_id: kearl
+name: Imperial Oil Kearl Mine
+region: Alberta, Canada
+description: >-
+  Treatment wetland parameters based on 2022 field data from Kearl Lake oil sands
+  operation. Kinetics derived from NAFC concentration measurements over a 69-day
+  treatment period showing biphasic degradation behavior.
+
+# Treatment system specifications
+system:
+  capacity_m3: 8772          # 4-bay system volume
+  treatment_cells: 4
+  wetland_area_ha: 1.0
+  annual_throughput_m3: 50000
+
+# NAFC treatment kinetics
+# Based on Kearl 2022 field data showing biphasic degradation:
+# - Rapid phase (Days 0-15): Fast initial removal, R^2=0.43
+# - Slow phase (Days 30-69): Sustained removal, R^2=0.50
+kinetics:
+  initial_nafc_mg_l: 63.1      # Day 0 concentration
+  target_nafc_mg_l: 50.0       # Regulatory threshold for non-toxicity
+  rapid_phase_rate: 0.532      # mg/L/day during rapid phase
+  slow_phase_rate: 0.248       # mg/L/day during slow phase
+  rapid_phase_duration: 15     # Days for rapid removal phase
+  recirculation_cycle: 14      # Standard wetland recirculation period (days)
+
+# Seasonal parameters
+seasonal:
+  typical_season_length: 100   # Default operating days per season
+  season_start_month: 5        # May
+  season_end_month: 9          # September
+
+# Environmental baseline profiles (monthly averages)
+# Used for environmental driver calculations
+environmental_profiles:
+  water_temp_c:
+    may: 10
+    jun: 16
+    jul: 20
+    aug: 18
+    sep: 12
+  uv_relative:               # Relative UV index (0-1 scale)
+    may: 0.75
+    jun: 1.00
+    jul: 1.00
+    aug: 0.85
+    sep: 0.55
+  dissolved_oxygen_mg_l:
+    may: 8.5
+    jun: 7.5
+    jul: 6.5
+    aug: 7.0
+    sep: 8.0
+  nutrient_index:            # Nutrient availability (0-1 scale)
+    may: 1.0
+    jun: 0.7
+    jul: 0.4
+    aug: 0.3
+    sep: 0.2
+  bioavail_index:            # Bioavailability factor (0-1 scale)
+    may: 0.7
+    jun: 0.9
+    jul: 1.0
+    aug: 0.95
+    sep: 0.8
+
+# Site-specific calibration factors
+calibration:
+  q10_reference_temp: 20     # Reference temperature for Q10 calculations
+  q10_value: 2.0             # Temperature coefficient
+  clay_fraction: 0.15        # Fraction of clay in substrate (affects bioavailability)
+  uv_attenuation_factor: 0.1 # UV attenuation per unit turbidity
+
+# Data quality notes
+data_quality:
+  source: "Kearl 2022 field measurements"
+  rapid_phase_r_squared: 0.43
+  slow_phase_r_squared: 0.50
+  confidence: medium
+  notes: >-
+    Kinetics show typical biphasic behavior with initial rapid removal followed
+    by slower sustained degradation. R^2 values indicate moderate fit, suggesting
+    additional environmental factors may influence rates.

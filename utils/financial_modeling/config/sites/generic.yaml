@@ -1,0 +1,81 @@
+# Generic Site Configuration
+# Default parameters for sites without specific calibration data.
+
+site_id: generic
+name: Generic Treatment Wetland
+region: North America
+description: >-
+  Default wetland treatment parameters based on literature values and
+  general industry experience. Use as a starting point when site-specific
+  data is not available.
+
+# Treatment system specifications (typical)
+system:
+  capacity_m3: 5000
+  treatment_cells: 2
+  wetland_area_ha: 0.5
+  annual_throughput_m3: 25000
+
+# Generic NAFC treatment kinetics
+# Based on literature values for constructed treatment wetlands
+kinetics:
+  initial_nafc_mg_l: 50.0
+  target_nafc_mg_l: 40.0
+  rapid_phase_rate: 0.40
+  slow_phase_rate: 0.20
+  rapid_phase_duration: 14
+  recirculation_cycle: 14
+
+# Seasonal parameters
+seasonal:
+  typical_season_length: 90
+  season_start_month: 5
+  season_end_month: 9
+
+# Environmental baseline profiles (generic mid-latitude)
+environmental_profiles:
+  water_temp_c:
+    may: 12
+    jun: 18
+    jul: 22
+    aug: 20
+    sep: 14
+  uv_relative:
+    may: 0.70
+    jun: 0.95
+    jul: 1.00
+    aug: 0.90
+    sep: 0.60
+  dissolved_oxygen_mg_l:
+    may: 9.0
+    jun: 8.0
+    jul: 7.0
+    aug: 7.5
+    sep: 8.5
+  nutrient_index:
+    may: 0.9
+    jun: 0.8
+    jul: 0.5
+    aug: 0.4
+    sep: 0.3
+  bioavail_index:
+    may: 0.8
+    jun: 0.9
+    jul: 1.0
+    aug: 0.95
+    sep: 0.85
+
+# Generic calibration factors
+calibration:
+  q10_reference_temp: 20
+  q10_value: 2.0
+  clay_fraction: 0.10
+  uv_attenuation_factor: 0.1
+
+# Data quality notes
+data_quality:
+  source: "Literature values and general industry experience"
+  confidence: low
+  notes: >-
+    These are placeholder values. For accurate modeling, obtain site-specific
+    kinetics data from pilot studies or field measurements.

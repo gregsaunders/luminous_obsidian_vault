@@ -1,0 +1,108 @@
+# Kinetic Variables - Treatment rate parameters and modifiers
+# These variables calculate effective treatment rates using environmental drivers.
+
+category: kinetic
+
+variables:
+  # Q10 Factor - Temperature rate modifier
+  - id: Q10_Factor
+    name: Q10 Temperature Factor
+    description: >-
+      Temperature coefficient modifier for reaction rates.
+      Q10=2 means rates double for every 10°C temperature increase.
+      Calculated as: 2^((T - 20) / 10)
+    unit: multiplier
+    distribution: fixed
+    params:
+      value: "=2^((Stoch_Temp-20)/10)"
+    drivers:
+      - Temp_Water
+    sheet: 9_Calc_Kinetics
+    is_input: false
+
+  # UV Modifier - Photodegradation rate modifier
+  - id: UV_Modifier
+    name: UV Rate Modifier
+    description: >-
+      Modifier for UV-mediated photodegradation rates.
+      Accounts for UV intensity and turbidity attenuation.
+      Formula: UV_Index * (1 - MIN(1, Turbidity/100))
+    unit: multiplier
+    distribution: fixed
+    params:
+      value: "=UV_Relative*(1-MIN(1,Turbidity/100))"
+    drivers:
+      - UV_Relative
+      - Turbidity
+    sheet: 9_Calc_Kinetics
+    is_input: false
+
+  # DO Modifier - Aerobic degradation rate modifier
+  - id: DO_Modifier
+    name: Dissolved Oxygen Modifier
+    description: >-
+      Modifier for aerobic biodegradation rates.
+      Full activity at DO >= 6.5 mg/L, linear reduction below.
+      Formula: IF(DO >= 6.5, 1, DO/6.5)
+    unit: multiplier
+    distribution: fixed
+    params:
+      value: "=IF(Stoch_DO>=6.5,1,Stoch_DO/6.5)"
+    drivers:
+      - DO_Typical
+    sheet: 9_Calc_Kinetics
+    is_input: false
+
+  # Nutrient Modifier - Microbial activity modifier
+  - id: Nutrient_Modifier
+    name: Nutrient Availability Modifier
+    description: >-
+      Modifier based on nutrient availability for microbial activity.
+      Considers both N and P availability using Liebig's minimum.
+      Formula: MIN(1, N/5, P/1)
+    unit: multiplier
+    distribution: fixed
+    params:
+      value: "=Nutrient_Index"
+    drivers:
+      - Nutrient_Index
+    sheet: 9_Calc_Kinetics
+    is_input: false
+
+  # Bioavailability Modifier - Contaminant accessibility modifier
+  - id: Bioavail_Modifier
+    name: Bioavailability Modifier
+    description: >-
+      Modifier accounting for contaminant bioavailability.
+      Reduced by clay sorption.
+      Formula: Base * (1 - Clay_Fraction * 0.5)
+    unit: multiplier
+    distribution: fixed
+    params:
+      value: "=Bioavail_Index*(1-Clay_Fraction*0.5)"
+    drivers:
+      - Bioavail_Index
+      - Clay_Fraction
+    sheet: 9_Calc_Kinetics
+    is_input: false
+
+  # Effective Treatment Rate - Combined rate with all modifiers
+  - id: Effective_Rate
+    name: Effective Treatment Rate
+    description: >-
+      Combined effective treatment rate incorporating all environmental
+      modifiers. This is the actual rate used in treatment calculations.
+      Formula: Rapid_Phase_Rate * Q10 * UV * DO * Nutrient * Bioavail * Stoch_TreatmentRate
+    unit: mg/L/day
+    distribution: fixed
+    params:
+      value: "=Rapid_Phase_Rate*Q10_Factor*UV_Modifier*DO_Modifier*Nutrient_Modifier*Bioavail_Modifier*Stoch_TreatmentRate"
+    drivers:
+      - Q10_Factor
+      - UV_Modifier
+      - DO_Modifier
+      - Nutrient_Modifier
+      - Bioavail_Modifier
+      - Treatment_Rate_Factor
+    sheet: 9_Calc_Kinetics
+    is_input: false

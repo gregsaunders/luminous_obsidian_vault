@@ -1,0 +1,136 @@
+# Environmental Variables - Drivers for treatment kinetics
+# These variables affect treatment rates through Q10, UV, DO, and other modifiers.
+
+category: environmental
+
+variables:
+  # Temperature - Primary driver for Q10 rate modification
+  - id: Temp_Water
+    name: Water Temperature
+    description: >-
+      Water temperature in the treatment wetland. Affects treatment kinetics
+      through Q10 temperature coefficient. Higher temperatures generally
+      increase biological activity and treatment rates.
+    unit: C
+    distribution: timeseries
+    params:
+      values:
+        may: 10
+        jun: 16
+        jul: 20
+        aug: 18
+        sep: 12
+    sheet: 5_EnvironmentalDrivers
+    is_input: true
+
+  # UV Index - Affects photodegradation rates
+  - id: UV_Relative
+    name: UV Index (Relative)
+    description: >-
+      Relative UV intensity affecting photodegradation of contaminants.
+      Normalized to 0-1 scale where 1.0 represents peak summer UV.
+      Affected by season, cloud cover, and water surface conditions.
+    unit: index (0-1)
+    distribution: timeseries
+    params:
+      values:
+        may: 0.75
+        jun: 1.00
+        jul: 1.00
+        aug: 0.85
+        sep: 0.55
+    sheet: 5_EnvironmentalDrivers
+    is_input: true
+
+  # Dissolved Oxygen - Required for aerobic degradation
+  - id: DO_Typical
+    name: Dissolved Oxygen
+    description: >-
+      Typical dissolved oxygen concentration in the treatment water.
+      Critical for aerobic biodegradation processes. DO below 6.5 mg/L
+      may limit treatment efficiency.
+    unit: mg/L
+    distribution: timeseries
+    params:
+      values:
+        may: 8.5
+        jun: 7.5
+        jul: 6.5
+        aug: 7.0
+        sep: 8.0
+    sheet: 5_EnvironmentalDrivers
+    is_input: true
+
+  # Turbidity - Affects UV penetration and bioavailability
+  - id: Turbidity
+    name: Turbidity
+    description: >-
+      Water clarity measure affecting UV penetration depth and potentially
+      contaminant bioavailability. Higher turbidity reduces photodegradation
+      effectiveness.
+    unit: NTU
+    distribution: triangular
+    params:
+      min: 5
+      mode: 15
+      max: 50
+    drivers: []
+    sheet: 5_EnvironmentalDrivers
+    is_input: true
+
+  # pH - Affects chemical speciation and bioavailability
+  - id: pH_Water
+    name: Water pH
+    description: >-
+      pH of the treatment water. Affects chemical speciation of contaminants
+      and microbial activity. Optimal range for most treatment processes
+      is 6.5-8.5.
+    unit: pH units
+    distribution: triangular
+    params:
+      min: 6.5
+      mode: 7.5
+      max: 8.5
+    drivers: []
+    sheet: 5_EnvironmentalDrivers
+    is_input: true
+
+  # Nutrient Index - Affects microbial activity
+  - id: Nutrient_Index
+    name: Nutrient Availability Index
+    description: >-
+      Composite index of nutrient availability (N, P) supporting
+      microbial treatment activity. Early season typically has higher
+      nutrient availability from spring runoff.
+    unit: index (0-1)
+    distribution: timeseries
+    params:
+      values:
+        may: 1.0
+        jun: 0.7
+        jul: 0.4
+        aug: 0.3
+        sep: 0.2
+    drivers: []
+    sheet: 5_EnvironmentalDrivers
+    is_input: true
+
+  # Bioavailability Index - Affects contaminant accessibility
+  - id: Bioavail_Index
+    name: Bioavailability Index
+    description: >-
+      Fraction of contaminant available for treatment, accounting for
+      sorption to particles, dissolved organic matter binding, and
+      other factors reducing bioavailability.
+    unit: index (0-1)
+    distribution: timeseries
+    params:
+      values:
+        may: 0.7
+        jun: 0.9
+        jul: 1.0
+        aug: 0.95
+        sep: 0.8
+    drivers: []
+    sheet: 5_EnvironmentalDrivers
+    is_input: true
