@@ -2951,9 +2951,6 @@ def generate_workbook():
     print("  [2] 2_Instructions - Methodology")
     create_2_instructions(wb)
 
-    print("  [1.5] 1.5_InputMap - Input traceability reference")
-    create_1_5_inputmap(wb)
-
     print("  [3] 3_Assumptions - ALL inputs consolidated")
     create_3_assumptions(wb)
 
@@ -2965,6 +2962,12 @@ def generate_workbook():
 
     print("  [6] 6_Calc_Timeline - Projection timeline")
     create_6_calc_timeline(wb)
+
+    # Create InputMap AFTER input sheets so WRITE_MAP has range registrations
+    print("  [1.5] 1.5_InputMap - Input traceability reference")
+    create_1_5_inputmap(wb)
+    # Move sheet to correct position (after 2_Instructions, index 3)
+    wb.move_sheet("1.5_InputMap", offset=-(wb.sheetnames.index("1.5_InputMap") - 3))
 
     print("  [7] 7_Calc_Stochastic - Random variables")
     create_7_calc_stochastic(wb)
