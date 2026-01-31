@@ -116,6 +116,11 @@ INPUT_REGISTRY = {
     'Timeline_DiscountFactor': ['12_PL_Annual'],
 }
 
+# Maps parameter names to their canonical INPUT_REGISTRY keys (for aliases)
+INPUT_ALIASES = {
+    'Treatment_Days': 'Season_Length',
+}
+
 
 def ref(var_name: str) -> str:
     """Return the named range string for use in formulas.
@@ -190,6 +195,36 @@ def clear_locations():
     global LOCATIONS, WRITE_MAP
     LOCATIONS = {}
     WRITE_MAP = {}
+
+
+def is_range_input(name):
+    """Check if a named input is a range (vs single cell) using WRITE_MAP.
+
+    Uses the 'is_range' flag set by register_range() to dynamically detect
+    whether an input spans multiple cells.
+    """
+    return WRITE_MAP.get(name, {}).get('is_range', False)
+
+
+def get_input_references(param_name):
+    """Get references for a parameter, checking aliases if needed.
+
+    Looks up the parameter in INPUT_REGISTRY. If not found directly,
+    checks INPUT_ALIASES for a canonical name mapping.
+
+    Args:
+        param_name: The parameter name (e.g., 'Treatment_Days')
+
+    Returns:
+        List of sheet names that reference this input, or empty list.
+    """
+    refs = INPUT_REGISTRY.get(param_name, [])
+    if refs:
+        return refs
+    alias = INPUT_ALIASES.get(param_name)
+    if alias:
+        return INPUT_REGISTRY.get(alias, [])
+    return []
 
 
 # =============================================================================
@@ -1114,8 +1149,11 @@ def create_1_5_inputmap(wb):
 
     for input_name, source_sheet in all_inputs:
         ws.cell(row=row, column=1, value=input_name)
-        # Value column - formula reference to the named range
-        ws.cell(row=row, column=2, value=f"={input_name}")
+        # Value column - formula reference or range note
+        if is_range_input(input_name):
+            ws.cell(row=row, column=2, value="(range - see source sheet)")
+        else:
+            ws.cell(row=row, column=2, value=f"={input_name}")
         ws.cell(row=row, column=3, value=source_sheet)
         # Referenced By - from INPUT_REGISTRY
         refs = INPUT_REGISTRY.get(input_name, [])
@@ -1197,7 +1235,7 @@ def create_3_assumptions(wb):
         ws.cell(row=row, column=3, value=unit)
         ws.cell(row=row, column=4, value=notes)
         # Referenced By column - lookup from INPUT_REGISTRY
-        refs = INPUT_REGISTRY.get(param, [])
+        refs = get_input_references(param)
         ws.cell(row=row, column=5, value=', '.join(refs) if refs else '')
         # Register each timing parameter
         add_named_range(wb, param, "3_Assumptions", f"$B${row}")
@@ -1260,7 +1298,7 @@ def create_3_assumptions(wb):
         ws.cell(row=row, column=3, value=unit)
         ws.cell(row=row, column=4, value=source)
         # Referenced By column
-        refs = INPUT_REGISTRY.get(param, [])
+        refs = get_input_references(param)
         ws.cell(row=row, column=5, value=', '.join(refs) if refs else '')
         add_named_range(wb, param.replace('Ha', '_Ha').replace('M3', '_M3'),
                        "3_Assumptions", f"$B${row}")
@@ -1297,7 +1335,7 @@ def create_3_assumptions(wb):
         cell.number_format = FMT_CURRENCY
         ws.cell(row=row, column=3, value=unit)
         # Referenced By column
-        refs = INPUT_REGISTRY.get(param, [])
+        refs = get_input_references(param)
         ws.cell(row=row, column=4, value=', '.join(refs) if refs else '')
         add_named_range(wb, param, "3_Assumptions", f"$B${row}")
         row += 1
@@ -1323,7 +1361,7 @@ def create_3_assumptions(wb):
     ]
 
     # Get references for the learning curve range
-    lc_refs = INPUT_REGISTRY.get('LearningCurve_Mult', [])
+    lc_refs = get_input_references('LearningCurve_Mult')
     lc_ref_str = ', '.join(lc_refs) if lc_refs else ''
 
     for year, mult, notes in learning_curve:
@@ -1478,7 +1516,7 @@ def create_3_assumptions(wb):
         ws.cell(row=row, column=3, value=unit)
         ws.cell(row=row, column=4, value=notes)
         # Referenced By column
-        refs = INPUT_REGISTRY.get(param, [])
+        refs = get_input_references(param)
         ws.cell(row=row, column=5, value=', '.join(refs) if refs else '')
         add_named_range(wb, param, "3_Assumptions", f"$B${row}")
         row += 1
@@ -1651,7 +1689,7 @@ def create_5_servicemodels(wb):
                 cell.number_format = FMT_CURRENCY
         ws.cell(row=row, column=5, value=units)
         # Referenced By column - all three params reference the same sheets
-        refs = INPUT_REGISTRY.get(f"Tri_{var}_Min", [])
+        refs = get_input_references(f"Tri_{var}_Min")
         ws.cell(row=row, column=6, value=', '.join(refs) if refs else '')
         # Register AND create named ranges for triangular distribution formulas
         register_location(f"Tri_{var}_Min", "5_ServiceModels", "B", row)
@@ -1683,7 +1721,7 @@ def create_5_servicemodels(wb):
             cell.fill = FILL_EDITABLE
         ws.cell(row=row, column=6, value=units)
         # Referenced By column - all beta params reference the same sheets
-        refs = INPUT_REGISTRY.get(f"Beta_{var}_Alpha", [])
+        refs = get_input_references(f"Beta_{var}_Alpha")
         ws.cell(row=row, column=7, value=', '.join(refs) if refs else '')
         # Register AND create named ranges for beta distribution formulas
         register_location(f"Beta_{var}_Alpha", "5_ServiceModels", "B", row)
