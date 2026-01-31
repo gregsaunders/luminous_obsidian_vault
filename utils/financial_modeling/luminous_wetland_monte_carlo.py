@@ -65,6 +65,57 @@ WRITE_MAP = {}
 # LOCATIONS: Legacy support - stores full addresses (for backward compat)
 LOCATIONS = {}
 
+# =============================================================================
+# INPUT_REGISTRY - Maps inputs to sheets that directly reference them in formulas
+# =============================================================================
+# Used for:
+#   1. Populating "Referenced By" column in input tables
+#   2. Validating registry matches actual formula usage (verify_traceability)
+# Scope: Direct formula reference only (not downstream dependencies)
+
+INPUT_REGISTRY = {
+    # === 3_Assumptions: Treatment Kinetics → 6_Calc_Timeline ===
+    'Initial_NAFC': ['6_Calc_Timeline'],
+    'Target_NAFC': ['6_Calc_Timeline'],
+    'Rapid_Phase_Rate': ['6_Calc_Timeline'],
+    'Slow_Phase_Rate': ['6_Calc_Timeline'],
+    'Rapid_Phase_Duration': ['6_Calc_Timeline'],
+    'Recirculation_Cycle': ['6_Calc_Timeline'],
+    'Season_Length': ['6_Calc_Timeline', '9_Calc_Costs', '10_Calc_Sim'],
+
+    # === 3_Assumptions: Learning Curve → 6_Calc_Timeline ===
+    'LearningCurve_Mult': ['6_Calc_Timeline'],
+
+    # === 5_ServiceModels: Triangular Distributions → 7_Calc_Stochastic ===
+    'Tri_Season_Extension_Days_Min': ['7_Calc_Stochastic'],
+    'Tri_Season_Extension_Days_Mode': ['7_Calc_Stochastic'],
+    'Tri_Season_Extension_Days_Max': ['7_Calc_Stochastic'],
+    'Tri_Extension_Value_Per_Day_Min': ['7_Calc_Stochastic'],
+    'Tri_Extension_Value_Per_Day_Mode': ['7_Calc_Stochastic'],
+    'Tri_Extension_Value_Per_Day_Max': ['7_Calc_Stochastic'],
+    'Tri_Interventions_Avoided_Min': ['7_Calc_Stochastic'],
+    'Tri_Interventions_Avoided_Mode': ['7_Calc_Stochastic'],
+    'Tri_Interventions_Avoided_Max': ['7_Calc_Stochastic'],
+    'Tri_Treatment_Rate_Factor_Min': ['7_Calc_Stochastic'],
+    'Tri_Treatment_Rate_Factor_Mode': ['7_Calc_Stochastic'],
+    'Tri_Treatment_Rate_Factor_Max': ['7_Calc_Stochastic'],
+
+    # === 5_ServiceModels: Beta Distributions → 7_Calc_Stochastic ===
+    # Note: Alpha/Beta params used internally in formulas, Min/Max for scaling
+    'Beta_Efficiency_Gain_Min': ['7_Calc_Stochastic'],
+    'Beta_Efficiency_Gain_Max': ['7_Calc_Stochastic'],
+
+    # === Intermediate calculations (6_Calc_Timeline) → multiple sheets ===
+    'Eff_Rapid_Rate': ['6_Calc_Timeline'],
+    'Eff_Slow_Rate': ['6_Calc_Timeline'],
+    'NAFC_After_Rapid': ['6_Calc_Timeline'],
+    'Days_to_Compliance': ['6_Calc_Timeline', '10_Calc_Sim'],
+
+    # === Timeline outputs → 12_PL_Annual ===
+    'Timeline_LearningMult': ['12_PL_Annual'],
+    'Timeline_DiscountFactor': ['12_PL_Annual'],
+}
+
 
 def ref(var_name: str) -> str:
     """Return the named range string for use in formulas.
@@ -519,6 +570,111 @@ def write_table_intro(ws, row: int, table_doc, start_col: int = 1, width_cols: i
 
     return row
 
+
+# =============================================================================
+# TRACEABILITY VERIFICATION
+# =============================================================================
+
+def verify_traceability(wb, fail_on_mismatch=False):
+    """Verify INPUT_REGISTRY matches actual formula usage in generated workbook.
+
+    Scans calculation sheets (6-10, 12-13) for named range references in formulas
+    and compares against INPUT_REGISTRY to detect:
+    - Registry says input X is used by sheet Y, but formula doesn't contain X
+    - Formula contains input X but registry doesn't list sheet Y
+
+    Args:
+        wb: Workbook to verify
+        fail_on_mismatch: If True, raise exception on mismatch (default False = warn only)
+
+    Returns:
+        Tuple of (registry_errors, formula_warnings) where:
+        - registry_errors: List of "Registry says X used in Y but not found"
+        - formula_warnings: List of "Formula in Y uses X but not in registry"
+    """
+    import re
+
+    # Sheets to scan for formula references
+    calc_sheets = ['6_Calc_Timeline', '7_Calc_Stochastic', '8_Calc_Value',
+                   '9_Calc_Costs', '10_Calc_Sim', '12_PL_Annual', '13_CashFlow']
+
+    # Build expected mapping: sheet -> set of expected input names
+    expected_by_sheet = {}
+    for input_name, sheets in INPUT_REGISTRY.items():
+        for sheet in sheets:
+            if sheet not in expected_by_sheet:
+                expected_by_sheet[sheet] = set()
+            expected_by_sheet[sheet].add(input_name)
+
+    # Build actual mapping: sheet -> set of named ranges found in formulas
+    actual_by_sheet = {}
+    all_registered_names = set(INPUT_REGISTRY.keys())
+
+    for sheet_name in calc_sheets:
+        if sheet_name not in wb.sheetnames:
+            continue
+        ws = wb[sheet_name]
+        found_names = set()
+
+        for row in ws.iter_rows():
+            for cell in row:
+                if cell.value and isinstance(cell.value, str) and cell.value.startswith('='):
+                    formula = cell.value
+                    # Find all potential named range references
+                    # Named ranges are typically word characters, possibly with underscores
+                    potential_names = re.findall(r'\b([A-Za-z_][A-Za-z0-9_]*)\b', formula)
+                    for name in potential_names:
+                        if name in all_registered_names:
+                            found_names.add(name)
+
+        actual_by_sheet[sheet_name] = found_names
+
+    # Compare expected vs actual
+    registry_errors = []
+    formula_warnings = []
+
+    for sheet_name in calc_sheets:
+        expected = expected_by_sheet.get(sheet_name, set())
+        actual = actual_by_sheet.get(sheet_name, set())
+
+        # Registry says it should be there but isn't
+        missing_from_formulas = expected - actual
+        for name in missing_from_formulas:
+            registry_errors.append(f"Registry: '{name}' should be in {sheet_name}, but not found in formulas")
+
+        # Found in formulas but not in registry (informational)
+        extra_in_formulas = actual - expected
+        for name in extra_in_formulas:
+            formula_warnings.append(f"Formula in {sheet_name} uses '{name}' but not in INPUT_REGISTRY")
+
+    # Output results
+    if registry_errors or formula_warnings:
+        print("\n" + "=" * 65)
+        print("TRACEABILITY VERIFICATION RESULTS")
+        print("=" * 65)
+
+        if registry_errors:
+            print(f"\nRegistry Mismatches ({len(registry_errors)}):")
+            for err in registry_errors:
+                print(f"  WARNING: {err}")
+
+        if formula_warnings:
+            print(f"\nUndocumented References ({len(formula_warnings)}):")
+            for warn in formula_warnings[:10]:  # Limit output
+                print(f"  INFO: {warn}")
+            if len(formula_warnings) > 10:
+                print(f"  ... and {len(formula_warnings) - 10} more")
+
+        print("=" * 65)
+
+        if fail_on_mismatch and registry_errors:
+            raise ValueError(f"Traceability verification failed: {len(registry_errors)} registry mismatches")
+    else:
+        print("\nTraceability verification: PASSED (registry matches formula usage)")
+
+    return registry_errors, formula_warnings
+
+
 # =============================================================================
 # SHEET 0: COVER
 # =============================================================================
@@ -889,6 +1045,106 @@ def create_2_instructions(wb):
 
 
 # =============================================================================
+# SHEET 1.5: INPUT MAP (Traceability Reference)
+# =============================================================================
+
+def create_1_5_inputmap(wb):
+    """Sheet 1.5: InputMap - Complete registry of inputs and their consumers.
+
+    Shows which inputs are used by which calculation sheets, providing
+    traceability from inputs to calculations.
+    """
+    ws = wb.create_sheet("1.5_InputMap")
+    ws.sheet_properties.tabColor = TAB_GRAY
+    set_column_widths(ws, {'A': 32, 'B': 18, 'C': 18, 'D': 28})
+
+    ws['A1'] = "Input Traceability Map"
+    ws['A1'].font = FONT_TITLE
+
+    ws['A2'] = "Shows which calculation sheets directly reference each input"
+    ws['A2'].font = Font(italic=True)
+
+    row = 4
+    headers = ['Input Name', 'Value', 'Source Sheet', 'Referenced By']
+    row = write_header_row(ws, row, headers)
+
+    map_start = row
+
+    # Group inputs by source sheet for better organization
+    inputs_3_assumptions = [
+        ('Initial_NAFC', '3_Assumptions'),
+        ('Target_NAFC', '3_Assumptions'),
+        ('Rapid_Phase_Rate', '3_Assumptions'),
+        ('Slow_Phase_Rate', '3_Assumptions'),
+        ('Rapid_Phase_Duration', '3_Assumptions'),
+        ('Recirculation_Cycle', '3_Assumptions'),
+        ('Season_Length', '3_Assumptions'),
+        ('LearningCurve_Mult', '3_Assumptions'),
+    ]
+
+    inputs_5_servicemodels = [
+        ('Tri_Season_Extension_Days_Min', '5_ServiceModels'),
+        ('Tri_Season_Extension_Days_Mode', '5_ServiceModels'),
+        ('Tri_Season_Extension_Days_Max', '5_ServiceModels'),
+        ('Tri_Extension_Value_Per_Day_Min', '5_ServiceModels'),
+        ('Tri_Extension_Value_Per_Day_Mode', '5_ServiceModels'),
+        ('Tri_Extension_Value_Per_Day_Max', '5_ServiceModels'),
+        ('Tri_Interventions_Avoided_Min', '5_ServiceModels'),
+        ('Tri_Interventions_Avoided_Mode', '5_ServiceModels'),
+        ('Tri_Interventions_Avoided_Max', '5_ServiceModels'),
+        ('Tri_Treatment_Rate_Factor_Min', '5_ServiceModels'),
+        ('Tri_Treatment_Rate_Factor_Mode', '5_ServiceModels'),
+        ('Tri_Treatment_Rate_Factor_Max', '5_ServiceModels'),
+        ('Beta_Efficiency_Gain_Alpha', '5_ServiceModels'),
+        ('Beta_Efficiency_Gain_Beta', '5_ServiceModels'),
+        ('Beta_Efficiency_Gain_Min', '5_ServiceModels'),
+        ('Beta_Efficiency_Gain_Max', '5_ServiceModels'),
+    ]
+
+    inputs_6_calc = [
+        ('Eff_Rapid_Rate', '6_Calc_Timeline'),
+        ('Eff_Slow_Rate', '6_Calc_Timeline'),
+        ('NAFC_After_Rapid', '6_Calc_Timeline'),
+        ('Days_to_Compliance', '6_Calc_Timeline'),
+        ('Timeline_LearningMult', '6_Calc_Timeline'),
+        ('Timeline_DiscountFactor', '6_Calc_Timeline'),
+    ]
+
+    all_inputs = inputs_3_assumptions + inputs_5_servicemodels + inputs_6_calc
+
+    for input_name, source_sheet in all_inputs:
+        ws.cell(row=row, column=1, value=input_name)
+        # Value column - formula reference to the named range
+        ws.cell(row=row, column=2, value=f"={input_name}")
+        ws.cell(row=row, column=3, value=source_sheet)
+        # Referenced By - from INPUT_REGISTRY
+        refs = INPUT_REGISTRY.get(input_name, [])
+        ws.cell(row=row, column=4, value=', '.join(refs) if refs else '')
+        row += 1
+
+    create_table(ws, "tbl_InputMap", f"A{map_start-1}:D{row-1}")
+
+    # Add summary section
+    row += 2
+    ws.cell(row=row, column=1, value="Summary").font = FONT_HEADER
+    row += 1
+    ws.cell(row=row, column=1, value=f"Total inputs tracked: {len(all_inputs)}")
+    row += 1
+    ws.cell(row=row, column=1, value=f"Registry entries: {len(INPUT_REGISTRY)}")
+    row += 2
+
+    ws.cell(row=row, column=1, value="Note:").font = FONT_BOLD
+    row += 1
+    ws.cell(row=row, column=1, value="'Referenced By' shows direct formula references only,")
+    row += 1
+    ws.cell(row=row, column=1, value="not downstream dependencies. The verify_traceability()")
+    row += 1
+    ws.cell(row=row, column=1, value="function validates this registry against actual formulas.")
+
+    return ws
+
+
+# =============================================================================
 # SHEET 3: ASSUMPTIONS (Consolidated: Timing + Site Config + Test Options + Validation)
 # =============================================================================
 
@@ -906,7 +1162,7 @@ def create_3_assumptions(wb):
     """
     ws = wb.create_sheet("3_Assumptions")
     ws.sheet_properties.tabColor = TAB_YELLOW
-    set_column_widths(ws, {'A': 24, 'B': 14, 'C': 12, 'D': 42, 'E': 16, 'F': 14})
+    set_column_widths(ws, {'A': 24, 'B': 14, 'C': 12, 'D': 42, 'E': 30, 'F': 16, 'G': 14})
 
     # Load table documentation from YAML
     loader = get_content_loader()
@@ -921,8 +1177,8 @@ def create_3_assumptions(wb):
     # SECTION A: TIMING PARAMETERS
     # =========================================================================
     if 'timing' in table_docs:
-        row = write_table_intro(ws, row, table_docs['timing'], width_cols=4)
-    headers = ['Parameter', 'Value', 'Unit', 'Notes']
+        row = write_table_intro(ws, row, table_docs['timing'], width_cols=5)
+    headers = ['Parameter', 'Value', 'Unit', 'Notes', 'Referenced By']
     row = write_header_row(ws, row, headers)
 
     timing_start = row
@@ -940,6 +1196,9 @@ def create_3_assumptions(wb):
         cell.fill = FILL_EDITABLE
         ws.cell(row=row, column=3, value=unit)
         ws.cell(row=row, column=4, value=notes)
+        # Referenced By column - lookup from INPUT_REGISTRY
+        refs = INPUT_REGISTRY.get(param, [])
+        ws.cell(row=row, column=5, value=', '.join(refs) if refs else '')
         # Register each timing parameter
         add_named_range(wb, param, "3_Assumptions", f"$B${row}")
         row += 1
@@ -947,7 +1206,7 @@ def create_3_assumptions(wb):
     # Also add Season_Length as alias for Treatment_Days
     add_named_range(wb, "Season_Length", "3_Assumptions", f"$B${timing_start + 4}")
 
-    create_table(ws, "tbl_Timing", f"A{timing_start-1}:D{row-1}")
+    create_table(ws, "tbl_Timing", f"A{timing_start-1}:E{row-1}")
     row += 1
 
     # Seasonality table
@@ -980,8 +1239,8 @@ def create_3_assumptions(wb):
     # SECTION B: SITE CONFIGURATION
     # =========================================================================
     if 'site_config' in table_docs:
-        row = write_table_intro(ws, row, table_docs['site_config'], width_cols=4)
-    headers = ['Parameter', 'Value', 'Unit', 'Source']
+        row = write_table_intro(ws, row, table_docs['site_config'], width_cols=5)
+    headers = ['Parameter', 'Value', 'Unit', 'Source', 'Referenced By']
     row = write_header_row(ws, row, headers)
 
     site_start = row
@@ -1000,6 +1259,9 @@ def create_3_assumptions(wb):
             cell.number_format = FMT_CURRENCY_DEC
         ws.cell(row=row, column=3, value=unit)
         ws.cell(row=row, column=4, value=source)
+        # Referenced By column
+        refs = INPUT_REGISTRY.get(param, [])
+        ws.cell(row=row, column=5, value=', '.join(refs) if refs else '')
         add_named_range(wb, param.replace('Ha', '_Ha').replace('M3', '_M3'),
                        "3_Assumptions", f"$B${row}")
         row += 1
@@ -1010,7 +1272,7 @@ def create_3_assumptions(wb):
     add_named_range(wb, "Annual_Throughput", "3_Assumptions", f"$B${site_start+2}")
     add_named_range(wb, "Value_Per_M3", "3_Assumptions", f"$B${site_start+3}")
 
-    create_table(ws, "tbl_SiteConfig", f"A{site_start-1}:D{row-1}")
+    create_table(ws, "tbl_SiteConfig", f"A{site_start-1}:E{row-1}")
     row += 2
 
     # =========================================================================
@@ -1018,7 +1280,7 @@ def create_3_assumptions(wb):
     # =========================================================================
     if 'cost_params' in table_docs:
         row = write_table_intro(ws, row, table_docs['cost_params'], width_cols=4)
-    headers = ['Parameter', 'Value', 'Unit']
+    headers = ['Parameter', 'Value', 'Unit', 'Referenced By']
     row = write_header_row(ws, row, headers)
 
     cost_start = row
@@ -1034,10 +1296,13 @@ def create_3_assumptions(wb):
         cell.fill = FILL_EDITABLE
         cell.number_format = FMT_CURRENCY
         ws.cell(row=row, column=3, value=unit)
+        # Referenced By column
+        refs = INPUT_REGISTRY.get(param, [])
+        ws.cell(row=row, column=4, value=', '.join(refs) if refs else '')
         add_named_range(wb, param, "3_Assumptions", f"$B${row}")
         row += 1
 
-    create_table(ws, "tbl_CostParams", f"A{cost_start-1}:C{row-1}")
+    create_table(ws, "tbl_CostParams", f"A{cost_start-1}:D{row-1}")
     row += 2
 
     # =========================================================================
@@ -1045,7 +1310,7 @@ def create_3_assumptions(wb):
     # =========================================================================
     if 'learning_curve' in table_docs:
         row = write_table_intro(ws, row, table_docs['learning_curve'], width_cols=4)
-    headers = ['Year', 'Multiplier', 'Notes']
+    headers = ['Year', 'Multiplier', 'Notes', 'Referenced By']
     row = write_header_row(ws, row, headers)
 
     learning_start = row
@@ -1057,25 +1322,31 @@ def create_3_assumptions(wb):
         (5, 1.00, 'Steady state'),
     ]
 
+    # Get references for the learning curve range
+    lc_refs = INPUT_REGISTRY.get('LearningCurve_Mult', [])
+    lc_ref_str = ', '.join(lc_refs) if lc_refs else ''
+
     for year, mult, notes in learning_curve:
         ws.cell(row=row, column=1, value=year)
         cell = ws.cell(row=row, column=2, value=mult)
         cell.fill = FILL_EDITABLE
         ws.cell(row=row, column=3, value=notes)
+        # Referenced By column - same for all rows in the range
+        ws.cell(row=row, column=4, value=lc_ref_str)
         row += 1
 
     # Register learning curve range for INDEX lookups
     register_range("LearningCurve_Mult", "3_Assumptions", "B", learning_start, "B", row-1)
     add_named_range(wb, "LearningCurve_Mult", "3_Assumptions", f"$B${learning_start}:$B${row-1}")
-    create_table(ws, "tbl_LearningCurve", f"A{learning_start-1}:C{row-1}")
+    create_table(ws, "tbl_LearningCurve", f"A{learning_start-1}:D{row-1}")
     row += 2
 
     # =========================================================================
     # SECTION E: TEST OPTIONS (from old 5_Ref_TestOptions)
     # =========================================================================
     if 'test_options' in table_docs:
-        row = write_table_intro(ws, row, table_docs['test_options'], width_cols=6)
-    headers = ['Option', 'Method', 'Interval', 'Points', 'Cost_Per_Test', 'Latency_Days']
+        row = write_table_intro(ws, row, table_docs['test_options'], width_cols=7)
+    headers = ['Option', 'Method', 'Interval', 'Points', 'Cost_Per_Test', 'Latency_Days', 'Referenced By']
     row = write_header_row(ws, row, headers)
 
     testopts_start = row
@@ -1093,10 +1364,12 @@ def create_3_assumptions(wb):
         cell = ws.cell(row=row, column=5, value=cost)
         cell.number_format = FMT_CURRENCY
         ws.cell(row=row, column=6, value=latency)
+        # Referenced By column - test options are referenced via range lookups
+        ws.cell(row=row, column=7, value='')
         row += 1
 
     testopts_end = row - 1
-    create_table(ws, "tbl_TestOptions", f"A{testopts_start-1}:F{row-1}")
+    create_table(ws, "tbl_TestOptions", f"A{testopts_start-1}:G{row-1}")
 
     # Named ranges for each column (for INDEX/MATCH lookups)
     add_named_range(wb, "TestOpt_Option", "3_Assumptions", f"$A${testopts_start}:$A${testopts_end}")
@@ -1181,8 +1454,8 @@ def create_3_assumptions(wb):
     # SECTION H: TREATMENT KINETICS (Kearl Field Data)
     # =========================================================================
     if 'treatment_kinetics' in table_docs:
-        row = write_table_intro(ws, row, table_docs['treatment_kinetics'], width_cols=4)
-    headers = ['Parameter', 'Value', 'Unit', 'Notes']
+        row = write_table_intro(ws, row, table_docs['treatment_kinetics'], width_cols=5)
+    headers = ['Parameter', 'Value', 'Unit', 'Notes', 'Referenced By']
     row = write_header_row(ws, row, headers)
 
     kinetics_start = row
@@ -1204,10 +1477,13 @@ def create_3_assumptions(wb):
             cell.number_format = '0.000'
         ws.cell(row=row, column=3, value=unit)
         ws.cell(row=row, column=4, value=notes)
+        # Referenced By column
+        refs = INPUT_REGISTRY.get(param, [])
+        ws.cell(row=row, column=5, value=', '.join(refs) if refs else '')
         add_named_range(wb, param, "3_Assumptions", f"$B${row}")
         row += 1
 
-    create_table(ws, "tbl_TreatmentKinetics", f"A{kinetics_start-1}:D{row-1}")
+    create_table(ws, "tbl_TreatmentKinetics", f"A{kinetics_start-1}:E{row-1}")
     row += 2
 
     # =========================================================================
@@ -1342,7 +1618,7 @@ def create_5_servicemodels(wb):
     """Sheet 5: ServiceModels - Monte Carlo distribution parameters."""
     ws = wb.create_sheet("5_ServiceModels")
     ws.sheet_properties.tabColor = TAB_YELLOW
-    set_column_widths(ws, {'A': 28, 'B': 12, 'C': 12, 'D': 12, 'E': 12, 'F': 35})
+    set_column_widths(ws, {'A': 28, 'B': 12, 'C': 12, 'D': 12, 'E': 12, 'F': 30, 'G': 35})
 
     # Load table documentation from YAML
     loader = get_content_loader()
@@ -1354,8 +1630,8 @@ def create_5_servicemodels(wb):
     # Triangular Distributions
     row = 3
     if 'triangular' in table_docs:
-        row = write_table_intro(ws, row, table_docs['triangular'], width_cols=5)
-    headers = ['Variable', 'Min', 'Mode', 'Max', 'Units']
+        row = write_table_intro(ws, row, table_docs['triangular'], width_cols=6)
+    headers = ['Variable', 'Min', 'Mode', 'Max', 'Units', 'Referenced By']
     row = write_header_row(ws, row, headers)
 
     tri_start = row
@@ -1374,6 +1650,9 @@ def create_5_servicemodels(wb):
             if '$' in units:
                 cell.number_format = FMT_CURRENCY
         ws.cell(row=row, column=5, value=units)
+        # Referenced By column - all three params reference the same sheets
+        refs = INPUT_REGISTRY.get(f"Tri_{var}_Min", [])
+        ws.cell(row=row, column=6, value=', '.join(refs) if refs else '')
         # Register AND create named ranges for triangular distribution formulas
         register_location(f"Tri_{var}_Min", "5_ServiceModels", "B", row)
         add_named_range(wb, f"Tri_{var}_Min", "5_ServiceModels", f"$B${row}")
@@ -1383,13 +1662,13 @@ def create_5_servicemodels(wb):
         add_named_range(wb, f"Tri_{var}_Max", "5_ServiceModels", f"$D${row}")
         row += 1
 
-    create_table(ws, "tbl_Triangular", f"A{tri_start-1}:E{row-1}")
+    create_table(ws, "tbl_Triangular", f"A{tri_start-1}:F{row-1}")
     row += 2
 
     # Beta Distributions
     if 'beta' in table_docs:
-        row = write_table_intro(ws, row, table_docs['beta'], width_cols=6)
-    headers = ['Variable', 'Alpha', 'Beta', 'Min', 'Max', 'Units']
+        row = write_table_intro(ws, row, table_docs['beta'], width_cols=7)
+    headers = ['Variable', 'Alpha', 'Beta', 'Min', 'Max', 'Units', 'Referenced By']
     row = write_header_row(ws, row, headers)
 
     beta_start = row
@@ -1403,6 +1682,9 @@ def create_5_servicemodels(wb):
             cell = ws.cell(row=row, column=col, value=val)
             cell.fill = FILL_EDITABLE
         ws.cell(row=row, column=6, value=units)
+        # Referenced By column - all beta params reference the same sheets
+        refs = INPUT_REGISTRY.get(f"Beta_{var}_Alpha", [])
+        ws.cell(row=row, column=7, value=', '.join(refs) if refs else '')
         # Register AND create named ranges for beta distribution formulas
         register_location(f"Beta_{var}_Alpha", "5_ServiceModels", "B", row)
         add_named_range(wb, f"Beta_{var}_Alpha", "5_ServiceModels", f"$B${row}")
@@ -1414,7 +1696,7 @@ def create_5_servicemodels(wb):
         add_named_range(wb, f"Beta_{var}_Max", "5_ServiceModels", f"$E${row}")
         row += 1
 
-    create_table(ws, "tbl_Beta", f"A{beta_start-1}:F{row-1}")
+    create_table(ws, "tbl_Beta", f"A{beta_start-1}:G{row-1}")
     row += 2
 
     # Value Per M3 Sensitivity (Zhang 2026 framing)
@@ -2631,6 +2913,9 @@ def generate_workbook():
     print("  [2] 2_Instructions - Methodology")
     create_2_instructions(wb)
 
+    print("  [1.5] 1.5_InputMap - Input traceability reference")
+    create_1_5_inputmap(wb)
+
     print("  [3] 3_Assumptions - ALL inputs consolidated")
     create_3_assumptions(wb)
 
@@ -2698,6 +2983,9 @@ def generate_workbook():
     )
     toc_ws.add_data_validation(dv_scenario)
     dv_scenario.add(toc_ws['B6'])
+
+    # Verify traceability registry matches actual formula usage
+    verify_traceability(wb)
 
     return wb
 
