@@ -650,7 +650,7 @@ def create_2_instructions(wb):
     usage = [
         "1. Edit yellow-highlighted cells in 1_TOC and 3_Assumptions",
         "2. Go to 10_Calc_Sim and set up the Data Table:",
-        "   - Select A5:I1005",
+        "   - Select range shown in instructions (formula row through 1000 iterations)",
         "   - Data > What-If Analysis > Data Table",
         "   - Column Input Cell: $K$1 (blank cell on same sheet)",
         "3. Press Ctrl+Alt+F9 to run Monte Carlo simulation",
@@ -1814,67 +1814,84 @@ def create_10_calc_sim(wb):
     ws = wb.create_sheet("10_Calc_Sim")
     ws.sheet_properties.tabColor = TAB_BLUE
 
+    # Title row first (matching other sheets' pattern)
     ws['A1'] = "Monte Carlo Simulation (1000 iterations)"
     ws['A1'].font = FONT_TITLE
 
-    # Load and write context box from YAML (placed in column L to avoid Data Table area)
+    # Context box starts at row 3 (after blank row 2)
+    row = 3
     try:
         loader = get_content_loader()
         context = loader.get_context_box("10_calc_sim")
         if context:
-            # Place context box in column L (outside Data Table range A-I)
-            write_context_box(ws, 1, context.title, context.content, start_col=12, width_cols=4)
+            row = write_context_box(ws, row, context.title, context.content, start_col=1, width_cols=5)
     except (ContentNotFoundError, ContentValidationError):
         pass  # Continue without context box if content not available
 
-    ws['A2'] = "Select A5:I1005 > Data > What-If Analysis > Data Table"
-    ws['A2'].font = Font(italic=True)
-    ws['A3'] = "Column Input Cell: $K$1 (blank cell on this sheet)"
-    ws['A3'].font = Font(italic=True)
+    # Calculate row numbers for Data Table
+    row += 1  # Blank row after context box
+    header_row = row
+    formula_row = header_row + 1
+    first_iter_row = formula_row + 1
+    last_iter_row = first_iter_row + 999  # 1000 iterations
+
+    # Brief instructions above the data table
+    ws.cell(row=row, column=1, value=f"Select A{formula_row}:I{last_iter_row} > Data > What-If Analysis > Data Table")
+    ws.cell(row=row, column=1).font = Font(italic=True)
+    row += 1
+    ws.cell(row=row, column=1, value="Column Input Cell: $K$1 (blank cell on this sheet)")
+    ws.cell(row=row, column=1).font = Font(italic=True)
+
+    # Recalculate header/formula rows after instructions
+    header_row = row + 1
+    formula_row = header_row + 1
+    first_iter_row = formula_row + 1
+    last_iter_row = first_iter_row + 999
 
     # MC Anchor cell on this sheet - leave as None for Data Table column input
     # Do NOT set to empty string - causes Excel validation issues
     # ws['K1'] is implicitly blank
 
-    # Header row (Row 4)
-    row = 4
+    # Header row
+    row = header_row
     headers = ['Iteration', 'NPV', 'S1', 'S2', 'S3', 'S4', 'Cost', 'Net', 'Days_to_Compliance']
     for col, header in enumerate(headers, 1):
         cell = ws.cell(row=row, column=col, value=header)
         cell.font = FONT_BOLD
 
-    # Formula row (Row 5) - FIRST row of Data Table selection
+    # Formula row - FIRST row of Data Table selection
     # Column A left blank (implicit None) - top-left of Data Table
-    ws.cell(row=5, column=2, value="=NPV_Total")
-    ws.cell(row=5, column=3, value="=S1_Value")
-    ws.cell(row=5, column=4, value="=S2_Value")
-    ws.cell(row=5, column=5, value="=S3_Value")
-    ws.cell(row=5, column=6, value="=S4_Value")
-    ws.cell(row=5, column=7, value="=Testing_Cost")
-    ws.cell(row=5, column=8, value="=Gross_Value-Testing_Cost")
-    ws.cell(row=5, column=9, value="=Days_to_Compliance")  # Kearl treatment kinetics
+    row = formula_row
+    ws.cell(row=row, column=2, value="=NPV_Total")
+    ws.cell(row=row, column=3, value="=S1_Value")
+    ws.cell(row=row, column=4, value="=S2_Value")
+    ws.cell(row=row, column=5, value="=S3_Value")
+    ws.cell(row=row, column=6, value="=S4_Value")
+    ws.cell(row=row, column=7, value="=Testing_Cost")
+    ws.cell(row=row, column=8, value="=Gross_Value-Testing_Cost")
+    ws.cell(row=row, column=9, value="=Days_to_Compliance")  # Kearl treatment kinetics
 
     # Format formula row
     for col in [2, 3, 4, 5, 6, 7, 8]:
-        ws.cell(row=5, column=col).number_format = FMT_CURRENCY
-    ws.cell(row=5, column=9).number_format = '0.0'  # Days format
+        ws.cell(row=row, column=col).number_format = FMT_CURRENCY
+    ws.cell(row=row, column=9).number_format = '0.0'  # Days format
 
-    # Iteration numbers (1-1000) start in Row 6
+    # Iteration numbers (1-1000)
     for i in range(1, 1001):
-        ws.cell(row=5+i, column=1, value=i)
+        ws.cell(row=first_iter_row + i - 1, column=1, value=i)
 
-    # Statistics section
-    row = 1010
+    # Statistics section (after Data Table)
+    row = last_iter_row + 5
     ws.cell(row=row, column=1, value="Monte Carlo Statistics").font = FONT_HEADER
     row += 1
 
     stats = [
-        ("Expected NPV", "=AVERAGE(B6:B1005)", FMT_CURRENCY),
-        ("P10 NPV", "=PERCENTILE(B6:B1005,0.10)", FMT_CURRENCY),
-        ("P50 NPV (Median)", "=PERCENTILE(B6:B1005,0.50)", FMT_CURRENCY),
-        ("P90 NPV", "=PERCENTILE(B6:B1005,0.90)", FMT_CURRENCY),
-        ("StdDev", "=STDEV(B6:B1005)", FMT_CURRENCY),
-        ("Prob(NPV>0)", "=COUNTIF(B6:B1005,\">0\")/1000", FMT_PERCENT),
+        ("Expected NPV", f"=AVERAGE(B{first_iter_row}:B{last_iter_row})", FMT_CURRENCY),
+        ("P10 NPV", f"=PERCENTILE(B{first_iter_row}:B{last_iter_row},0.10)", FMT_CURRENCY),
+        ("P50 NPV (Median)", f"=PERCENTILE(B{first_iter_row}:B{last_iter_row},0.50)", FMT_CURRENCY),
+        ("P90 NPV", f"=PERCENTILE(B{first_iter_row}:B{last_iter_row},0.90)", FMT_CURRENCY),
+        ("StdDev", f"=STDEV(B{first_iter_row}:B{last_iter_row})", FMT_CURRENCY),
+        ("Prob(NPV>0)", f"=COUNTIF(B{first_iter_row}:B{last_iter_row},\">0\")/1000", FMT_PERCENT),
     ]
 
     stats_start = row
@@ -1897,11 +1914,11 @@ def create_10_calc_sim(wb):
     row += 1
 
     kinetics_stats = [
-        ("Expected Days to Compliance", '=IFERROR(AVERAGE(I6:I1005),"Run MC")', '0.0'),
-        ("P10 Days (optimistic)", '=IFERROR(PERCENTILE(I6:I1005,0.10),"Run MC")', '0.0'),
-        ("P50 Days (median)", '=IFERROR(PERCENTILE(I6:I1005,0.50),"Run MC")', '0.0'),
-        ("P90 Days (conservative)", '=IFERROR(PERCENTILE(I6:I1005,0.90),"Run MC")', '0.0'),
-        ("Prob(Achievable in Season)", '=IFERROR(COUNTIF(I6:I1005,"<="&Season_Length)/1000,"Run MC")', FMT_PERCENT),
+        ("Expected Days to Compliance", f'=IFERROR(AVERAGE(I{first_iter_row}:I{last_iter_row}),"Run MC")', '0.0'),
+        ("P10 Days (optimistic)", f'=IFERROR(PERCENTILE(I{first_iter_row}:I{last_iter_row},0.10),"Run MC")', '0.0'),
+        ("P50 Days (median)", f'=IFERROR(PERCENTILE(I{first_iter_row}:I{last_iter_row},0.50),"Run MC")', '0.0'),
+        ("P90 Days (conservative)", f'=IFERROR(PERCENTILE(I{first_iter_row}:I{last_iter_row},0.90),"Run MC")', '0.0'),
+        ("Prob(Achievable in Season)", f'=IFERROR(COUNTIF(I{first_iter_row}:I{last_iter_row},"<="&Season_Length)/1000,"Run MC")', FMT_PERCENT),
     ]
 
     kinetics_stats_start = row
@@ -2656,7 +2673,7 @@ def main():
     print("Next Steps in Excel:")
     print("  1. Open the workbook")
     print("  2. Go to 10_Calc_Sim")
-    print("  3. Select A5:I1005")
+    print("  3. Select range shown in sheet instructions (formula row through iterations)")
     print("  4. Data > What-If Analysis > Data Table")
     print("  5. Column Input Cell: $K$1")
     print("  6. Press Ctrl+Alt+F9 to run Monte Carlo")
