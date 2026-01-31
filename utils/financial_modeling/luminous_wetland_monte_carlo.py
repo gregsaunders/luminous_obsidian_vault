@@ -2314,7 +2314,7 @@ def create_16_dashboard(wb):
     try:
         context = loader.get_context_box("16_dashboard")
         if context:
-            row = write_context_box(ws, row, context.title, context.content, width_cols=2)
+            row = write_context_box(ws, row, context.title, context.content, width_cols=4)
     except (ContentNotFoundError, ContentValidationError):
         pass  # Continue without context box if content not available
 
@@ -2322,7 +2322,7 @@ def create_16_dashboard(wb):
     if 'kpis' in table_docs:
         doc = table_docs['kpis']
         collected_docs.append(doc)
-        row = write_table_intro(ws, row, doc, width_cols=2)
+        row = write_table_intro(ws, row, doc, width_cols=4)
 
     headers = ['Metric', 'Value']
     row = write_header_row(ws, row, headers)
@@ -2356,7 +2356,7 @@ def create_16_dashboard(wb):
     if 'scenario_breakdown' in table_docs:
         doc = table_docs['scenario_breakdown']
         collected_docs.append(doc)
-        row = write_table_intro(ws, row, doc, width_cols=3)
+        row = write_table_intro(ws, row, doc, width_cols=4)
 
     headers = ['Scenario', 'Gated_Value', 'Status']
     row = write_header_row(ws, row, headers)
@@ -2383,7 +2383,7 @@ def create_16_dashboard(wb):
     if 'treatment_kpis' in table_docs:
         doc = table_docs['treatment_kpis']
         collected_docs.append(doc)
-        row = write_table_intro(ws, row, doc, width_cols=3)
+        row = write_table_intro(ws, row, doc, width_cols=4)
 
     headers = ['Metric', 'Value', 'Status']
     row = write_header_row(ws, row, headers)
