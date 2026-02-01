@@ -2009,6 +2009,23 @@ def create_8_calc_timeline(wb):
     add_named_range(wb, "Treatment_Efficiency", "8_Calc_Timeline", f"$C${row}")
     row += 1
 
+    # Final NAFC - concentration at end of treatment season
+    ws.cell(row=row, column=1, value="Final_NAFC")
+    ws.cell(row=row, column=2, value="NAFC at season end")
+    # If compliance achieved, Final = Target; else calculate remaining after full season
+    final_nafc_formula = (
+        f"=IF({ref('Days_to_Compliance')}<={ref('Season_Length')},"
+        f"{ref('Target_NAFC')},"
+        f"MAX(0,IF({ref('Season_Length')}<={ref('Rapid_Phase_Duration')},"
+        f"{ref('Initial_NAFC')}-{ref('Eff_Rapid_Rate')}*{ref('Season_Length')},"
+        f"{ref('NAFC_After_Rapid')}-{ref('Eff_Slow_Rate')}*({ref('Season_Length')}-{ref('Rapid_Phase_Duration')}))))"
+    )
+    ws.cell(row=row, column=3, value=final_nafc_formula)
+    ws.cell(row=row, column=3).number_format = '0.00'
+    ws.cell(row=row, column=4, value="mg/L")
+    add_named_range(wb, "Final_NAFC", "8_Calc_Timeline", f"$C${row}")
+    row += 1
+
     # Compliance Status
     ws.cell(row=row, column=1, value="Compliance_Status")
     ws.cell(row=row, column=2, value="Achievable within season?")
@@ -2050,7 +2067,7 @@ Nutrient/Bioavail: Substrate availability modifiers."""
 
     # Q10 Temperature Factor
     ws.cell(row=row, column=1, value="Q10_Factor")
-    ws.cell(row=row, column=2, value="=2^((Stoch_Temp-20)/10)")
+    ws.cell(row=row, column=2, value="'=2^((Temp-20)/10)")
     # Use July temperature as default (mid-season)
     q10_formula = "=2^((Env_Temp_Water_Jul-20)/10)"
     ws.cell(row=row, column=3, value=q10_formula)
@@ -2063,7 +2080,7 @@ Nutrient/Bioavail: Substrate availability modifiers."""
 
     # UV Modifier
     ws.cell(row=row, column=1, value="UV_Modifier")
-    ws.cell(row=row, column=2, value="=UV_Relative*(1-MIN(1,Turbidity/100))")
+    ws.cell(row=row, column=2, value="'=UV*(1-MIN(1,Turbidity/100))")
     # Simplified: use July UV and assume low turbidity
     uv_formula = "=Env_UV_Relative_Jul*(1-MIN(1,Ionic_Chloride_Mode/1000))"
     ws.cell(row=row, column=3, value=uv_formula)
@@ -2076,7 +2093,7 @@ Nutrient/Bioavail: Substrate availability modifiers."""
 
     # DO Modifier
     ws.cell(row=row, column=1, value="DO_Modifier")
-    ws.cell(row=row, column=2, value="=IF(DO>=6.5,1,DO/6.5)")
+    ws.cell(row=row, column=2, value="'=IF(DO>=6.5,1,DO/6.5)")
     do_formula = "=IF(Env_DO_Typical_Jul>=6.5,1,Env_DO_Typical_Jul/6.5)"
     ws.cell(row=row, column=3, value=do_formula)
     ws.cell(row=row, column=3).number_format = '0.000'
@@ -2088,7 +2105,7 @@ Nutrient/Bioavail: Substrate availability modifiers."""
 
     # Nutrient Modifier
     ws.cell(row=row, column=1, value="Nutrient_Modifier")
-    ws.cell(row=row, column=2, value="=Nutrient_Index")
+    ws.cell(row=row, column=2, value="'=Nutrient_Index")
     nut_formula = "=Env_Nutrient_Index_Jul"
     ws.cell(row=row, column=3, value=nut_formula)
     ws.cell(row=row, column=3).number_format = '0.000'
@@ -2100,7 +2117,7 @@ Nutrient/Bioavail: Substrate availability modifiers."""
 
     # Bioavailability Modifier
     ws.cell(row=row, column=1, value="Bioavail_Modifier")
-    ws.cell(row=row, column=2, value="=Bioavail*(1-Clay*0.5)")
+    ws.cell(row=row, column=2, value="'=Bioavail*(1-Clay*0.5)")
     bio_formula = "=Env_Bioavail_Index_Jul*(1-0.15*0.5)"
     ws.cell(row=row, column=3, value=bio_formula)
     ws.cell(row=row, column=3).number_format = '0.000'
@@ -2118,7 +2135,7 @@ Nutrient/Bioavail: Substrate availability modifiers."""
     row += 1
 
     ws.cell(row=row, column=1, value="Effective_Rate")
-    ws.cell(row=row, column=2, value="=Base_Rate * Q10 * UV * DO * Nutrient * Bioavail * Stoch_Treatment")
+    ws.cell(row=row, column=2, value="'=Base * Q10 * UV * DO * Nut * Bio")
     # Combine all modifiers with base rate
     eff_formula = "=Rapid_Phase_Rate*Q10_Factor*UV_Modifier*DO_Modifier*Nutrient_Modifier*Bioavail_Modifier*Stoch_TreatmentRate"
     ws.cell(row=row, column=3, value=eff_formula)
@@ -2131,7 +2148,7 @@ Nutrient/Bioavail: Substrate availability modifiers."""
 
     # Rate comparison
     ws.cell(row=row, column=1, value="Rate_vs_Baseline")
-    ws.cell(row=row, column=2, value="=Effective_Rate / Rapid_Phase_Rate")
+    ws.cell(row=row, column=2, value="'=Effective / Base_Rate")
     comp_formula = "=Effective_Rate/Rapid_Phase_Rate"
     ws.cell(row=row, column=3, value=comp_formula)
     ws.cell(row=row, column=3).number_format = '0.0%'
@@ -2295,8 +2312,8 @@ Gate thresholds defined in 5_EnvironmentalDrivers."""
         ws.cell(row=row, column=3, value=direction)
         ws.cell(row=row, column=4, value=formula)
         ws.cell(row=row, column=4).number_format = '0'
-        # Status column - shows PASS/FAIL based on numeric value
-        status_formula = f'=IF(D{row}=1,"PASS","FAIL")'
+        # Status column - shows PASS/FAIL based on gate named range
+        status_formula = f'=IF(Gate_{gate_name}=1,"PASS","FAIL")'
         ws.cell(row=row, column=5, value=status_formula)
         ws.cell(row=row, column=6, value=notes)
         # Register named range for each gate
@@ -2304,7 +2321,6 @@ Gate thresholds defined in 5_EnvironmentalDrivers."""
         add_named_range(wb, f"Gate_{gate_name}", "11_Calc_Compliance", f"$D${row}")
         row += 1
 
-    gate_end = row - 1
     create_table(ws, "tbl_Compliance_Gates", f"A{gate_start-1}:F{row-1}")
     row += 2
 
@@ -2314,23 +2330,26 @@ Gate thresholds defined in 5_EnvironmentalDrivers."""
 
     ws.cell(row=row, column=1, value="ComplianceGate")
     ws.cell(row=row, column=2, value="=MIN(all gates)")
-    # MIN of all gate values - 0 if any gate fails
-    master_formula = f"=MIN(D{gate_start}:D{gate_end})"
+    # MIN of all gate values using named ranges - 0 if any gate fails
+    master_formula = (
+        "=MIN(Gate_Toxicity,Gate_Chloride,Gate_SAR,Gate_DO,Gate_pH_Low,Gate_pH_High,"
+        "Gate_Sulfate,Gate_Temperature,Gate_NAFC,Gate_Turbidity,Gate_Oil_Sheen,Gate_Odor,Gate_Foam)"
+    )
     ws.cell(row=row, column=3, value=master_formula)
     ws.cell(row=row, column=3).number_format = '0'
-    ws.cell(row=row, column=4, value='=IF(C' + str(row) + '=1,"ALL PASS","BLOCKED")')
+    ws.cell(row=row, column=4, value='=IF(ComplianceGate=1,"ALL PASS","BLOCKED")')
     register_location("ComplianceGate", "11_Calc_Compliance", "C", row)
     add_named_range(wb, "ComplianceGate", "11_Calc_Compliance", f"$C${row}")
     row += 1
 
-    # Gate count summary
+    # Gate count summary - use table column reference
     ws.cell(row=row, column=1, value="Gates Passing")
-    ws.cell(row=row, column=3, value=f"=COUNTIF(D{gate_start}:D{gate_end},1)")
-    ws.cell(row=row, column=4, value=f"of {gate_end - gate_start + 1}")
+    ws.cell(row=row, column=3, value="=COUNTIF(tbl_Compliance_Gates[Value],1)")
+    ws.cell(row=row, column=4, value="of 13")
     row += 1
 
     ws.cell(row=row, column=1, value="Gates Failing")
-    ws.cell(row=row, column=3, value=f"=COUNTIF(D{gate_start}:D{gate_end},0)")
+    ws.cell(row=row, column=3, value="=COUNTIF(tbl_Compliance_Gates[Value],0)")
 
     return ws
 
