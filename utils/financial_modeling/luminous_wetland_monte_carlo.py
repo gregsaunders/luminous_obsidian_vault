@@ -2260,7 +2260,7 @@ def create_11_calc_compliance(wb):
     row = 3
     context_content = """13-variable compliance gates for water release qualification.
 Each gate returns 1 (PASS) or 0 (FAIL) as numeric value.
-Master_Gate_Status = MIN(all gates) - 0 if ANY gate fails.
+ComplianceGate = MIN(all gates) - 0 if ANY gate fails.
 Numeric gates enable: value gating, fractional compliance (future).
 Gate thresholds defined in 5_EnvironmentalDrivers."""
     row = write_context_box(ws, row, "Compliance Gates", context_content, width_cols=6)
@@ -2274,10 +2274,10 @@ Gate thresholds defined in 5_EnvironmentalDrivers."""
 
     # Define the 13 compliance gates per the plan
     gates = [
-        ('Toxicity', 'Baseline +/- 5%', 'within', '=IF(ABS(Stoch_Efficiency-0.2)<0.05,1,0)', 'Toxicity baseline'),
+        ('Toxicity', 'NAFC <= Target', 'below', '=IF(Final_NAFC<=Target_NAFC,1,0)', 'NAFC toxicity target'),
         ('Chloride', '< 230 mg/L', 'below', '=IF(Ionic_Chloride_Mode<230,1,0)', 'Aquatic life protection'),
         ('SAR', '< 4.0', 'below', '=IF(Ionic_SAR_Mode<4,1,0)', 'Land application'),
-        ('DO', '> 6.5 mg/L', 'above', '=IF(Env_DO_Typical_Jul>6.5,1,0)', 'Minimum oxygen'),
+        ('DO', '>= 6.5 mg/L', 'above', '=IF(Env_DO_Typical_Jul>=6.5,1,0)', 'Minimum oxygen'),
         ('pH_Low', '> 6.5', 'above', '=IF(7.5>6.5,1,0)', 'pH lower limit'),
         ('pH_High', '< 8.5', 'below', '=IF(7.5<8.5,1,0)', 'pH upper limit'),
         ('Sulfate', '< 500 mg/L', 'below', '=IF(Ionic_Sulfate_Mode<500,1,0)', 'Process water indicator'),
@@ -2312,15 +2312,15 @@ Gate thresholds defined in 5_EnvironmentalDrivers."""
     ws.cell(row=row, column=1, value="Master Gate Status").font = Font(bold=True)
     row += 1
 
-    ws.cell(row=row, column=1, value="Master_Gate_Status")
+    ws.cell(row=row, column=1, value="ComplianceGate")
     ws.cell(row=row, column=2, value="=MIN(all gates)")
     # MIN of all gate values - 0 if any gate fails
     master_formula = f"=MIN(D{gate_start}:D{gate_end})"
     ws.cell(row=row, column=3, value=master_formula)
     ws.cell(row=row, column=3).number_format = '0'
     ws.cell(row=row, column=4, value='=IF(C' + str(row) + '=1,"ALL PASS","BLOCKED")')
-    register_location("Master_Gate_Status", "11_Calc_Compliance", "C", row)
-    add_named_range(wb, "Master_Gate_Status", "11_Calc_Compliance", f"$C${row}")
+    register_location("ComplianceGate", "11_Calc_Compliance", "C", row)
+    add_named_range(wb, "ComplianceGate", "11_Calc_Compliance", f"$C${row}")
     row += 1
 
     # Gate count summary
@@ -2413,22 +2413,22 @@ def create_12_calc_value(wb):
     ws[f'E{row}'].number_format = FMT_CURRENCY
     add_named_range(wb, "Gross_Value", "12_Calc_Value", f"$E${row}")
 
-    # Compliance adjustment - apply Master_Gate_Status from 11_Calc_Compliance
+    # Compliance adjustment - apply ComplianceGate from 11_Calc_Compliance
     row += 2
     ws.cell(row=row, column=1, value="Compliance Gate").font = FONT_BOLD
-    ws.cell(row=row, column=2, value="=Master_Gate_Status")
+    ws.cell(row=row, column=2, value="=ComplianceGate")
     ws.cell(row=row, column=3, value='=IF(B' + str(row) + '=1,"PASS","FAIL")')
     ws[f'B{row}'].number_format = '0'
     row += 1
 
-    ws.cell(row=row, column=1, value="Compliance_Adjusted_Value").font = FONT_BOLD
-    ws.cell(row=row, column=5, value=f"=Gross_Value*Master_Gate_Status")
+    ws.cell(row=row, column=1, value="AdjustedValue").font = FONT_BOLD
+    ws.cell(row=row, column=5, value=f"=Gross_Value*ComplianceGate")
     ws[f'E{row}'].number_format = FMT_CURRENCY
-    add_named_range(wb, "Compliance_Adjusted_Value", "12_Calc_Value", f"$E${row}")
+    add_named_range(wb, "AdjustedValue", "12_Calc_Value", f"$E${row}")
 
     # Add note explaining compliance gate
     row += 2
-    ws.cell(row=row, column=1, value="Note: Compliance_Adjusted_Value = Gross_Value × Master_Gate_Status")
+    ws.cell(row=row, column=1, value="Note: AdjustedValue = Gross_Value × ComplianceGate")
     ws[f'A{row}'].font = Font(italic=True, size=9, color="666666")
     row += 1
     ws.cell(row=row, column=1, value="If ANY compliance gate fails (13 gates), value becomes $0")
@@ -2584,7 +2584,8 @@ def create_14_calc_sim(wb):
     ws.cell(row=row, column=5, value="=S3_Value")
     ws.cell(row=row, column=6, value="=S4_Value")
     ws.cell(row=row, column=7, value="=Testing_Cost")
-    ws.cell(row=row, column=8, value="=Compliance_Adjusted_Value-Testing_Cost")
+    # Net = Gross_Value - Testing_Cost (using named ranges per FAST standard)
+    ws.cell(row=row, column=8, value="=Gross_Value-Testing_Cost")
     ws.cell(row=row, column=9, value="=Days_to_Compliance")  # Kearl treatment kinetics
 
     # Format formula row
@@ -2859,11 +2860,11 @@ def create_18_uniteconomics(wb):
     metrics = [
         ("Annual Throughput", "=Annual_Throughput", "m3/yr", "From 4_Assumptions"),
         ("Gross Value per Season", "=Gross_Value", "$", "Sum of S1-S4 (pre-compliance)"),
-        ("Compliance-Adjusted Value", "=Compliance_Adjusted_Value", "$", "Gross × Master_Gate_Status"),
+        ("Compliance-Adjusted Value", "=AdjustedValue", "$", "Gross × ComplianceGate"),
         ("Testing Cost per Season", "=Testing_Cost", "$", "Based on option selected"),
-        ("Net Value per Season", "=Compliance_Adjusted_Value-Testing_Cost", "$", "Adjusted - Testing"),
+        ("Net Value per Season", "=AdjustedValue-Testing_Cost", "$", "Adjusted - Testing"),
         ("Value per m3 (Gross)", "=Gross_Value/Annual_Throughput", "$/m3", "Gross / Throughput"),
-        ("Value per m3 (Net)", "=(Compliance_Adjusted_Value-Testing_Cost)/Annual_Throughput", "$/m3", "Net / Throughput"),
+        ("Value per m3 (Net)", "=(AdjustedValue-Testing_Cost)/Annual_Throughput", "$/m3", "Net / Throughput"),
         ("Cost per m3", "=Testing_Cost/Annual_Throughput", "$/m3", "Testing / Throughput"),
         ("5-Year NPV per m3", "=NPV_Total/(Annual_Throughput*5)", "$/m3", "NPV / (5yr throughput)"),
     ]
@@ -2894,7 +2895,7 @@ def create_18_uniteconomics(wb):
     row += 1
 
     ws.cell(row=row, column=1, value="Value per test (net):")
-    ws.cell(row=row, column=2, value="=(Compliance_Adjusted_Value-Testing_Cost)/(Testing_Cost/INDEX(TestOpt_Cost,MATCH(Testing_Option,TestOpt_Option,0)))")
+    ws.cell(row=row, column=2, value="=(AdjustedValue-Testing_Cost)/(Testing_Cost/INDEX(TestOpt_Cost,MATCH(Testing_Option,TestOpt_Option,0)))")
     ws['B' + str(row)].number_format = FMT_CURRENCY_DEC
 
     return ws
@@ -3052,7 +3053,6 @@ def create_20_dashboard(wb):
         ("Monte Carlo P50", "=MC_P50"),
         ("Monte Carlo P90", "=MC_P90"),
         ("Probability NPV > 0", "=MC_Prob_Positive"),
-        ("Compliance Gate Status", '=IF(Master_Gate_Status=1,"PASS","FAIL")'),
         ("Annual Testing Cost", "=Testing_Cost"),
         ("Year 1 Gross Value", "=Year1_Gross_Value"),
         ("Year 1 Net Value", "=Year1_Net_Value"),
@@ -3238,9 +3238,9 @@ def create_21_checks(wb):
         ("CHK014", "Range", "Treatment rates positive",
          '=IF(AND(Eff_Rapid_Rate>0,Eff_Slow_Rate>0),"PASS","FAIL")'),
         ("CHK015", "Compliance", "Master compliance gate status",
-         '=IF(Master_Gate_Status=1,"PASS","FAIL")'),
+         '=IF(ComplianceGate=1,"PASS","FAIL")'),
         ("CHK016", "Sanity", "Compliance adjusted value non-negative",
-         '=IF(Compliance_Adjusted_Value>=0,"PASS","FAIL")'),
+         '=IF(AdjustedValue>=0,"PASS","FAIL")'),
     ]
 
     check_start = row

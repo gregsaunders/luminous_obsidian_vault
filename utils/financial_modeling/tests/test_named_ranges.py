@@ -28,10 +28,10 @@ CRITICAL_NAMED_RANGES = [
 
     # Value calculations
     "Gross_Value",
-    "Compliance_Adjusted_Value",  # NEW in Phase 4
+    "AdjustedValue",  # NEW in Phase 4 (renamed from Compliance_Adjusted_Value)
 
     # Compliance gates
-    "Master_Gate_Status",  # NEW in Phase 3
+    "ComplianceGate",  # NEW in Phase 3 (renamed from Master_Gate_Status)
 
     # Kinetics
     "Q10_Factor",
@@ -133,20 +133,20 @@ def test_named_ranges_have_valid_references(generated_wb):
 
 
 @pytest.mark.integration
-def test_compliance_adjusted_value_references_master_gate(generated_wb):
-    """Verify Compliance_Adjusted_Value formula uses Master_Gate_Status."""
+def test_adjusted_value_references_compliance_gate(generated_wb):
+    """Verify AdjustedValue formula uses ComplianceGate."""
     ws = generated_wb["12_Calc_Value"]
 
-    # Find the cell with Compliance_Adjusted_Value
+    # Find the cell with AdjustedValue formula
     found = False
     for row in ws.iter_rows(min_row=1, max_row=50):
         for cell in row:
             if cell.value and isinstance(cell.value, str):
-                if "Gross_Value*Master_Gate_Status" in cell.value:
+                if "Gross_Value*ComplianceGate" in cell.value:
                     found = True
                     break
 
-    assert found, "Compliance_Adjusted_Value should reference Master_Gate_Status"
+    assert found, "AdjustedValue should reference ComplianceGate"
 
 
 @pytest.mark.integration
