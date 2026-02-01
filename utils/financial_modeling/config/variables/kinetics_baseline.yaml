@@ -1,0 +1,88 @@
+# Kinetics Baseline Variables - Baseline treatment kinetics parameters
+# These are the core kinetics inputs used in timeline calculations.
+# Based on Kearl pilot data and treatment models.
+
+category: kinetics_baseline
+
+variables:
+  - id: Initial_NAFC
+    name: Initial NAFC Concentration
+    description: >-
+      Starting NAFC (Naphthenic Acid Fraction Compounds) concentration
+      in mg/L. This is the inlet concentration that treatment must reduce
+      to meet compliance targets.
+    unit: mg/L
+    distribution: fixed
+    params:
+      value: 40
+    sheet: 4_Assumptions
+    is_input: true
+    drivers: []
+
+  - id: Target_NAFC
+    name: Target NAFC Concentration
+    description: >-
+      Compliance target for NAFC concentration in mg/L. Treatment must
+      reduce Initial_NAFC to this level or below for water release.
+    unit: mg/L
+    distribution: fixed
+    params:
+      value: 1
+    sheet: 4_Assumptions
+    is_input: true
+    drivers: []
+
+  - id: Rapid_Phase_Rate
+    name: Rapid Phase Degradation Rate
+    description: >-
+      First-order degradation rate constant (k) for the rapid phase
+      of NAFC treatment. Higher rate reflects easily biodegradable
+      fraction of NAFC mixture.
+    unit: 1/day
+    distribution: fixed
+    params:
+      value: 0.15
+    sheet: 4_Assumptions
+    is_input: true
+    drivers: []
+
+  - id: Slow_Phase_Rate
+    name: Slow Phase Degradation Rate
+    description: >-
+      First-order degradation rate constant (k) for the slow phase
+      of NAFC treatment. Lower rate reflects recalcitrant fraction
+      requiring longer treatment times.
+    unit: 1/day
+    distribution: fixed
+    params:
+      value: 0.03
+    sheet: 4_Assumptions
+    is_input: true
+    drivers: []
+
+  - id: Rapid_Phase_Duration
+    name: Rapid Phase Duration
+    description: >-
+      Number of days in the rapid degradation phase before transitioning
+      to slow phase kinetics. Determined by substrate availability and
+      microbial community dynamics.
+    unit: days
+    distribution: fixed
+    params:
+      value: 14
+    sheet: 4_Assumptions
+    is_input: true
+    drivers: []
+
+  - id: Recirculation_Cycle
+    name: Recirculation Cycle Time
+    description: >-
+      Days per recirculation cycle for water treatment. Shorter cycles
+      increase treatment intensity but require more pumping energy.
+    unit: days
+    distribution: fixed
+    params:
+      value: 7
+    sheet: 4_Assumptions
+    is_input: true
+    drivers: []

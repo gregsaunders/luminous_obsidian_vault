@@ -1,0 +1,60 @@
+# Site Variables - Site configuration parameters for wetland operations
+# These define the physical and operational characteristics of the treatment wetland.
+
+category: site
+
+variables:
+  - id: WetlandAreaHa
+    name: Wetland Area (Ha)
+    description: >-
+      Total treatment wetland area in hectares. Standard design is 1.0 ha,
+      based on scaling from Kearl pilot (0.76 ha) to commercial operations.
+    unit: ha
+    distribution: fixed
+    params:
+      value: 1.0
+      source: Standard design (Kearl pilot = 0.76 ha)
+    sheet: 4_Assumptions
+    is_input: true
+
+  - id: TreatmentCells
+    name: Treatment Cells
+    description: >-
+      Number of discrete treatment cells in the wetland system. Multi-cell
+      design (5) allows operational flexibility, staged treatment, and
+      maintenance without full system shutdown.
+    unit: count
+    distribution: fixed
+    params:
+      value: 5
+      source: Multi-cell design
+    sheet: 4_Assumptions
+    is_input: true
+
+  - id: AnnualThroughputM3
+    name: Annual Throughput (M3)
+    description: >-
+      Annual water treatment capacity in cubic meters. Based on hydraulic
+      loading rate (HLR) of 0.05 m3/m2/day applied to wetland area over
+      the treatment season.
+    unit: m3/yr
+    distribution: fixed
+    params:
+      value: 50000
+      source: HLR = 0.05 m3/m2/day
+    sheet: 4_Assumptions
+    is_input: true
+
+  - id: ValuePerM3
+    name: Value Per M3
+    description: >-
+      Economic value generated per cubic meter of water treated. Derived
+      from total annual value ($250K/yr) divided by throughput (50K m3/yr).
+      This is the base case value before stochastic adjustments.
+    unit: $/m3
+    distribution: fixed
+    params:
+      value: 5.00
+      source: $250K/yr / 50K m3/yr (Section 6)
+    sheet: 4_Assumptions
+    is_input: true

@@ -71,7 +71,8 @@ class ConfigValidator:
     }
 
     # Valid categories
-    VALID_CATEGORIES = ['environmental', 'ionic', 'kinetic', 'financial']
+    VALID_CATEGORIES = ['environmental', 'ionic', 'kinetic', 'financial',
+                        'timing', 'site', 'costs', 'kinetics_baseline']
 
     def validate_variable_file(self, file_path: Path) -> List[str]:
         """

@@ -1,0 +1,72 @@
+# Timing Variables - Seasonal timing parameters for treatment operations
+# These control the treatment season window and operational calendar.
+
+category: timing
+
+variables:
+  - id: Season_Start_Month
+    name: Season Start Month
+    description: >-
+      Month when the treatment season begins. May (5) is typical for
+      northern climates when water temperatures become suitable for
+      biological treatment processes.
+    unit: month
+    distribution: fixed
+    params:
+      value: 5
+      notes: May
+    sheet: 4_Assumptions
+    is_input: true
+
+  - id: Season_Start_Day
+    name: Season Start Day
+    description: >-
+      Day of the month when treatment operations begin. Mid-month (15)
+      provides buffer for seasonal variability and site preparation.
+    unit: day
+    distribution: fixed
+    params:
+      value: 15
+      notes: Mid-May
+    sheet: 4_Assumptions
+    is_input: true
+
+  - id: Season_End_Month
+    name: Season End Month
+    description: >-
+      Month when the treatment season ends. September (9) is typical,
+      before water temperatures drop below treatment thresholds.
+    unit: month
+    distribution: fixed
+    params:
+      value: 9
+      notes: September
+    sheet: 4_Assumptions
+    is_input: true
+
+  - id: Season_End_Day
+    name: Season End Day
+    description: >-
+      Day of the month when treatment operations end. Mid-month (15)
+      allows time for system shutdown and winterization.
+    unit: day
+    distribution: fixed
+    params:
+      value: 15
+      notes: Mid-September
+    sheet: 4_Assumptions
+    is_input: true
+
+  - id: Treatment_Days
+    name: Treatment Days
+    description: >-
+      Total number of active treatment days in the season. This is the
+      primary driver for capacity calculations and value projections.
+      Also referenced as Season_Length.
+    unit: days
+    distribution: fixed
+    params:
+      value: 100
+      notes: Active season length
+    sheet: 4_Assumptions
+    is_input: true

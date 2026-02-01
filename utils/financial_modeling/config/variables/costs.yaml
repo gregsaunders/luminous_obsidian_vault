@@ -1,0 +1,43 @@
+# Cost Variables - Cost parameters for financial modeling
+# These define operational costs and penalties used in P&L calculations.
+
+category: costs
+
+variables:
+  - id: LaborPerDay
+    name: Labor Cost Per Day
+    description: >-
+      Daily labor cost for wetland operations including monitoring,
+      maintenance, and data collection activities. Includes loaded
+      labor rates for field technicians.
+    unit: $/day
+    distribution: fixed
+    params:
+      value: 1500
+    sheet: 4_Assumptions
+    is_input: true
+
+  - id: RegulatoryPenalty
+    name: Regulatory Penalty
+    description: >-
+      Potential penalty cost for regulatory non-compliance events.
+      Used in risk calculations to quantify downside scenarios and
+      value of treatment reliability.
+    unit: $
+    distribution: fixed
+    params:
+      value: 50000
+    sheet: 4_Assumptions
+    is_input: true
+
+  - id: DowntimeCostPerDay
+    name: Downtime Cost Per Day
+    description: >-
+      Daily cost of unplanned system downtime, including lost treatment
+      capacity, emergency response, and potential regulatory implications.
+    unit: $/day
+    distribution: fixed
+    params:
+      value: 15000
+    sheet: 4_Assumptions
+    is_input: true

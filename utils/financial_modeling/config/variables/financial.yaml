@@ -17,6 +17,8 @@ variables:
       min: 14
       mode: 21
       max: 35
+      stoch_name: Stoch_SeasonExt
+      stoch_label: Season_Extension
     sheet: 7_ServiceModels
     is_input: true
 
@@ -31,6 +33,8 @@ variables:
       min: 3000
       mode: 7500
       max: 15000
+      stoch_name: Stoch_ExtValue
+      stoch_label: Extension_Value
     sheet: 7_ServiceModels
     is_input: true
 
@@ -46,6 +50,8 @@ variables:
       min: 1
       mode: 3
       max: 8
+      stoch_name: Stoch_Interventions
+      stoch_label: Interventions_Avoided
     sheet: 7_ServiceModels
     is_input: true
 
@@ -61,6 +67,8 @@ variables:
       min: 0.70
       mode: 1.00
       max: 1.30
+      stoch_name: Stoch_TreatmentRate
+      stoch_label: Treatment_Rate_Factor
     sheet: 7_ServiceModels
     is_input: true
 
@@ -78,5 +86,7 @@ variables:
       beta: 5
       min: 0.05
       max: 0.40
+      stoch_name: Stoch_Efficiency
+      stoch_label: Efficiency_Gain
     sheet: 7_ServiceModels
     is_input: true

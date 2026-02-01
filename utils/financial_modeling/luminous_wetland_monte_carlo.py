@@ -54,6 +54,66 @@ from content_loader import (
     get_loader
 )
 
+# Variable engine for config-driven variables
+from variable_engine import VariableRegistry, DistributionFormulas
+
+# =============================================================================
+# VARIABLE REGISTRY - Config-driven variable management
+# =============================================================================
+
+# Module-level registry (initialized on first use)
+_registry: VariableRegistry = None
+
+
+def get_registry() -> VariableRegistry:
+    """Get or initialize the variable registry singleton.
+
+    Loads all variable definitions from config/variables/*.yaml files.
+    The registry provides:
+    - Variable lookup by ID or category
+    - Distribution parameters for stochastic variables
+    - Dependency resolution for calculation order
+    """
+    global _registry
+    if _registry is None:
+        _registry = VariableRegistry()
+        _registry.load_config()
+    return _registry
+
+
+def build_input_registry(registry: VariableRegistry) -> dict:
+    """Generate INPUT_REGISTRY dynamically from variable definitions.
+
+    Creates mappings from input variables to the sheets that reference them:
+    - Financial triangular vars → Tri_{id}_Min/Mode/Max → 10_Calc_Stochastic
+    - Financial beta vars → Beta_{id}_Alpha/Beta/Min/Max → 10_Calc_Stochastic
+    - Kinetics baseline vars → 8_Calc_Timeline
+
+    Returns:
+        Dict mapping named range names to list of sheets that reference them.
+    """
+    input_registry = {}
+
+    # Financial variables generate distribution parameter named ranges
+    for var in registry.get_by_category('financial'):
+        if var.distribution == 'triangular':
+            for suffix in ['Min', 'Mode', 'Max']:
+                key = f"Tri_{var.id}_{suffix}"
+                input_registry[key] = ['10_Calc_Stochastic']
+        elif var.distribution == 'beta':
+            # Only Min/Max are used in the simplified formula
+            for suffix in ['Min', 'Max']:
+                key = f"Beta_{var.id}_{suffix}"
+                input_registry[key] = ['10_Calc_Stochastic']
+
+    # Kinetics baseline variables are used in timeline calculations
+    for var in registry.get_by_category('kinetics_baseline'):
+        if var.is_input:
+            input_registry[var.id] = ['8_Calc_Timeline']
+
+    return input_registry
+
+
 # =============================================================================
 # LOCATIONS REGISTRY - Dual-purpose: Write addresses AND Read references
 # =============================================================================
@@ -633,9 +693,17 @@ def verify_traceability(wb, fail_on_mismatch=False):
     calc_sheets = ['8_Calc_Timeline', '10_Calc_Stochastic', '12_Calc_Value',
                    '13_Calc_Costs', '14_Calc_Sim', '16_PL_Annual', '17_CashFlow']
 
+    # Merge manual INPUT_REGISTRY with dynamically generated entries
+    registry = get_registry()
+    dynamic_registry = build_input_registry(registry)
+
+    # Combine: dynamic entries override manual for same keys
+    combined_registry = dict(INPUT_REGISTRY)
+    combined_registry.update(dynamic_registry)
+
     # Build expected mapping: sheet -> set of expected input names
     expected_by_sheet = {}
-    for input_name, sheets in INPUT_REGISTRY.items():
+    for input_name, sheets in combined_registry.items():
         for sheet in sheets:
             if sheet not in expected_by_sheet:
                 expected_by_sheet[sheet] = set()
@@ -643,7 +711,7 @@ def verify_traceability(wb, fail_on_mismatch=False):
 
     # Build actual mapping: sheet -> set of named ranges found in formulas
     actual_by_sheet = {}
-    all_registered_names = set(INPUT_REGISTRY.keys())
+    all_registered_names = set(combined_registry.keys())
 
     for sheet_name in calc_sheets:
         if sheet_name not in wb.sheetnames:
@@ -680,7 +748,7 @@ def verify_traceability(wb, fail_on_mismatch=False):
         # Found in formulas but not in registry (informational)
         extra_in_formulas = actual - expected
         for name in extra_in_formulas:
-            formula_warnings.append(f"Formula in {sheet_name} uses '{name}' but not in INPUT_REGISTRY")
+            formula_warnings.append(f"Formula in {sheet_name} uses '{name}' but not in registry")
 
     # Output results
     if registry_errors or formula_warnings:
@@ -1220,25 +1288,23 @@ def create_4_assumptions(wb):
     row = write_header_row(ws, row, headers)
 
     timing_start = row
-    timing = [
-        ('Season_Start_Month', 5, 'month', 'May'),
-        ('Season_Start_Day', 15, 'day', 'Mid-May'),
-        ('Season_End_Month', 9, 'month', 'September'),
-        ('Season_End_Day', 15, 'day', 'Mid-September'),
-        ('Treatment_Days', 100, 'days', 'Active season length'),
-    ]
+    # Registry-driven timing variables
+    registry = get_registry()
+    timing_vars = registry.get_by_category('timing')
 
-    for param, value, unit, notes in timing:
-        ws.cell(row=row, column=1, value=param)
-        cell = ws.cell(row=row, column=2, value=value)
+    for var in timing_vars:
+        ws.cell(row=row, column=1, value=var.id)
+        cell = ws.cell(row=row, column=2, value=var.params.get('value', 0))
         cell.fill = FILL_EDITABLE
-        ws.cell(row=row, column=3, value=unit)
+        ws.cell(row=row, column=3, value=var.unit)
+        # Use notes from params if present
+        notes = var.params.get('notes', '')
         ws.cell(row=row, column=4, value=notes)
         # Referenced By column - lookup from INPUT_REGISTRY
-        refs = get_input_references(param)
+        refs = get_input_references(var.id)
         ws.cell(row=row, column=5, value=', '.join(refs) if refs else '')
         # Register each timing parameter
-        add_named_range(wb, param, "4_Assumptions", f"$B${row}")
+        add_named_range(wb, var.id, "4_Assumptions", f"$B${row}")
         row += 1
 
     # Also add Season_Length as alias for Treatment_Days
@@ -1282,29 +1348,25 @@ def create_4_assumptions(wb):
     row = write_header_row(ws, row, headers)
 
     site_start = row
-    site_config = [
-        ('WetlandAreaHa', 1.0, 'ha', 'Standard design (Kearl pilot = 0.76 ha)'),
-        ('TreatmentCells', 5, 'count', 'Multi-cell design'),
-        ('AnnualThroughputM3', 50000, 'm3/yr', 'HLR = 0.05 m3/m2/day'),
-        ('ValuePerM3', 5.00, '$/m3', '$250K/yr / 50K m3/yr (Section 6)'),
-    ]
+    # Registry-driven site configuration variables
+    site_vars = registry.get_by_category('site')
 
-    for param, value, unit, source in site_config:
-        ws.cell(row=row, column=1, value=param)
-        cell = ws.cell(row=row, column=2, value=value)
+    for var in site_vars:
+        ws.cell(row=row, column=1, value=var.id)
+        cell = ws.cell(row=row, column=2, value=var.params.get('value', 0))
         cell.fill = FILL_EDITABLE
-        if 'Value' in param or '$' in unit:
+        if 'Value' in var.id or '$' in var.unit:
             cell.number_format = FMT_CURRENCY_DEC
-        ws.cell(row=row, column=3, value=unit)
-        ws.cell(row=row, column=4, value=source)
+        ws.cell(row=row, column=3, value=var.unit)
+        ws.cell(row=row, column=4, value=var.params.get('source', ''))
         # Referenced By column
-        refs = get_input_references(param)
+        refs = get_input_references(var.id)
         ws.cell(row=row, column=5, value=', '.join(refs) if refs else '')
-        add_named_range(wb, param.replace('Ha', '_Ha').replace('M3', '_M3'),
+        add_named_range(wb, var.id.replace('Ha', '_Ha').replace('M3', '_M3'),
                        "4_Assumptions", f"$B${row}")
         row += 1
 
-    # Simpler named ranges for common ones
+    # Simpler named ranges for common ones (maintain compatibility)
     add_named_range(wb, "Wetland_Area", "4_Assumptions", f"$B${site_start}")
     add_named_range(wb, "Treatment_Cells", "4_Assumptions", f"$B${site_start+1}")
     add_named_range(wb, "Annual_Throughput", "4_Assumptions", f"$B${site_start+2}")
@@ -1322,22 +1384,19 @@ def create_4_assumptions(wb):
     row = write_header_row(ws, row, headers)
 
     cost_start = row
-    cost_params = [
-        ('LaborPerDay', 1500, '$/day'),
-        ('RegulatoryPenalty', 50000, '$'),
-        ('DowntimeCostPerDay', 15000, '$/day'),
-    ]
+    # Registry-driven cost variables
+    cost_vars = registry.get_by_category('costs')
 
-    for param, value, unit in cost_params:
-        ws.cell(row=row, column=1, value=param)
-        cell = ws.cell(row=row, column=2, value=value)
+    for var in cost_vars:
+        ws.cell(row=row, column=1, value=var.id)
+        cell = ws.cell(row=row, column=2, value=var.params.get('value', 0))
         cell.fill = FILL_EDITABLE
         cell.number_format = FMT_CURRENCY
-        ws.cell(row=row, column=3, value=unit)
+        ws.cell(row=row, column=3, value=var.unit)
         # Referenced By column
-        refs = get_input_references(param)
+        refs = get_input_references(var.id)
         ws.cell(row=row, column=4, value=', '.join(refs) if refs else '')
-        add_named_range(wb, param, "4_Assumptions", f"$B${row}")
+        add_named_range(wb, var.id, "4_Assumptions", f"$B${row}")
         row += 1
 
     create_table(ws, "tbl_CostParams", f"A{cost_start-1}:D{row-1}")
@@ -1785,31 +1844,32 @@ def create_7_servicemodels(wb):
     row = write_header_row(ws, row, headers)
 
     tri_start = row
-    triangular = [
-        ('Season_Extension_Days', 14, 21, 35, 'days'),
-        ('Extension_Value_Per_Day', 3000, 7500, 15000, '$/day'),
-        ('Interventions_Avoided', 1, 3, 8, 'events'),
-        ('Treatment_Rate_Factor', 0.70, 1.00, 1.30, 'multiplier'),  # Kearl kinetics variability
-    ]
+    # Registry-driven triangular distribution variables
+    registry = get_registry()
+    tri_vars = [v for v in registry.get_by_category('financial')
+                if v.distribution == 'triangular']
 
-    for var, min_v, mode_v, max_v, units in triangular:
-        ws.cell(row=row, column=1, value=var)
+    for var in tri_vars:
+        ws.cell(row=row, column=1, value=var.id)
+        min_v = var.params['min']
+        mode_v = var.params['mode']
+        max_v = var.params['max']
         for col, val in enumerate([min_v, mode_v, max_v], 2):
             cell = ws.cell(row=row, column=col, value=val)
             cell.fill = FILL_EDITABLE
-            if '$' in units:
+            if '$' in var.unit:
                 cell.number_format = FMT_CURRENCY
-        ws.cell(row=row, column=5, value=units)
+        ws.cell(row=row, column=5, value=var.unit)
         # Referenced By column - all three params reference the same sheets
-        refs = get_input_references(f"Tri_{var}_Min")
+        refs = get_input_references(f"Tri_{var.id}_Min")
         ws.cell(row=row, column=6, value=', '.join(refs) if refs else '')
         # Register AND create named ranges for triangular distribution formulas
-        register_location(f"Tri_{var}_Min", "7_ServiceModels", "B", row)
-        add_named_range(wb, f"Tri_{var}_Min", "7_ServiceModels", f"$B${row}")
-        register_location(f"Tri_{var}_Mode", "7_ServiceModels", "C", row)
-        add_named_range(wb, f"Tri_{var}_Mode", "7_ServiceModels", f"$C${row}")
-        register_location(f"Tri_{var}_Max", "7_ServiceModels", "D", row)
-        add_named_range(wb, f"Tri_{var}_Max", "7_ServiceModels", f"$D${row}")
+        register_location(f"Tri_{var.id}_Min", "7_ServiceModels", "B", row)
+        add_named_range(wb, f"Tri_{var.id}_Min", "7_ServiceModels", f"$B${row}")
+        register_location(f"Tri_{var.id}_Mode", "7_ServiceModels", "C", row)
+        add_named_range(wb, f"Tri_{var.id}_Mode", "7_ServiceModels", f"$C${row}")
+        register_location(f"Tri_{var.id}_Max", "7_ServiceModels", "D", row)
+        add_named_range(wb, f"Tri_{var.id}_Max", "7_ServiceModels", f"$D${row}")
         row += 1
 
     create_table(ws, "tbl_Triangular", f"A{tri_start-1}:F{row-1}")
@@ -1822,28 +1882,32 @@ def create_7_servicemodels(wb):
     row = write_header_row(ws, row, headers)
 
     beta_start = row
-    beta = [
-        ('Efficiency_Gain', 2, 5, 0.05, 0.40, '%'),
-    ]
+    # Registry-driven beta distribution variables
+    beta_vars = [v for v in registry.get_by_category('financial')
+                 if v.distribution == 'beta']
 
-    for var, alpha, beta_v, min_v, max_v, units in beta:
-        ws.cell(row=row, column=1, value=var)
+    for var in beta_vars:
+        ws.cell(row=row, column=1, value=var.id)
+        alpha = var.params['alpha']
+        beta_v = var.params['beta']
+        min_v = var.params['min']
+        max_v = var.params['max']
         for col, val in enumerate([alpha, beta_v, min_v, max_v], 2):
             cell = ws.cell(row=row, column=col, value=val)
             cell.fill = FILL_EDITABLE
-        ws.cell(row=row, column=6, value=units)
+        ws.cell(row=row, column=6, value=var.unit)
         # Referenced By column - all beta params reference the same sheets
-        refs = get_input_references(f"Beta_{var}_Alpha")
+        refs = get_input_references(f"Beta_{var.id}_Alpha")
         ws.cell(row=row, column=7, value=', '.join(refs) if refs else '')
         # Register AND create named ranges for beta distribution formulas
-        register_location(f"Beta_{var}_Alpha", "7_ServiceModels", "B", row)
-        add_named_range(wb, f"Beta_{var}_Alpha", "7_ServiceModels", f"$B${row}")
-        register_location(f"Beta_{var}_Beta", "7_ServiceModels", "C", row)
-        add_named_range(wb, f"Beta_{var}_Beta", "7_ServiceModels", f"$C${row}")
-        register_location(f"Beta_{var}_Min", "7_ServiceModels", "D", row)
-        add_named_range(wb, f"Beta_{var}_Min", "7_ServiceModels", f"$D${row}")
-        register_location(f"Beta_{var}_Max", "7_ServiceModels", "E", row)
-        add_named_range(wb, f"Beta_{var}_Max", "7_ServiceModels", f"$E${row}")
+        register_location(f"Beta_{var.id}_Alpha", "7_ServiceModels", "B", row)
+        add_named_range(wb, f"Beta_{var.id}_Alpha", "7_ServiceModels", f"$B${row}")
+        register_location(f"Beta_{var.id}_Beta", "7_ServiceModels", "C", row)
+        add_named_range(wb, f"Beta_{var.id}_Beta", "7_ServiceModels", f"$C${row}")
+        register_location(f"Beta_{var.id}_Min", "7_ServiceModels", "D", row)
+        add_named_range(wb, f"Beta_{var.id}_Min", "7_ServiceModels", f"$D${row}")
+        register_location(f"Beta_{var.id}_Max", "7_ServiceModels", "E", row)
+        add_named_range(wb, f"Beta_{var.id}_Max", "7_ServiceModels", f"$E${row}")
         row += 1
 
     create_table(ws, "tbl_Beta", f"A{beta_start-1}:G{row-1}")
@@ -2193,67 +2257,38 @@ def create_10_calc_stochastic(wb):
 
     stoch_start = row
 
-    # Season Extension (Triangular) - using named ranges per audit
-    ws.cell(row=row, column=1, value="Season_Extension")
-    ws.cell(row=row, column=2, value="=RAND()")
-    # Triangular distribution formula using NAMED RANGES (not addresses)
-    min_nm = ref('Tri_Season_Extension_Days_Min')
-    mode_nm = ref('Tri_Season_Extension_Days_Mode')
-    max_nm = ref('Tri_Season_Extension_Days_Max')
-    tri_formula = (f"=IF(B{row}<({mode_nm}-{min_nm})/({max_nm}-{min_nm}),"
-                   f"{min_nm}+SQRT(B{row}*({max_nm}-{min_nm})*({mode_nm}-{min_nm})),"
-                   f"{max_nm}-SQRT((1-B{row})*({max_nm}-{min_nm})*({max_nm}-{mode_nm})))")
-    ws.cell(row=row, column=3, value=tri_formula)
-    add_named_range(wb, "Stoch_SeasonExt", "10_Calc_Stochastic", f"$C${row}")
-    row += 1
+    # Registry-driven stochastic variable generation
+    registry = get_registry()
+    financial_vars = registry.get_by_category('financial')
 
-    # Extension Value (Triangular)
-    ws.cell(row=row, column=1, value="Extension_Value")
-    ws.cell(row=row, column=2, value="=RAND()")
-    min_nm = ref('Tri_Extension_Value_Per_Day_Min')
-    mode_nm = ref('Tri_Extension_Value_Per_Day_Mode')
-    max_nm = ref('Tri_Extension_Value_Per_Day_Max')
-    tri_formula = (f"=IF(B{row}<({mode_nm}-{min_nm})/({max_nm}-{min_nm}),"
-                   f"{min_nm}+SQRT(B{row}*({max_nm}-{min_nm})*({mode_nm}-{min_nm})),"
-                   f"{max_nm}-SQRT((1-B{row})*({max_nm}-{min_nm})*({max_nm}-{mode_nm})))")
-    ws.cell(row=row, column=3, value=tri_formula)
-    add_named_range(wb, "Stoch_ExtValue", "10_Calc_Stochastic", f"$C${row}")
-    row += 1
+    for var in financial_vars:
+        # Get display label and named range name from params
+        label = var.params.get('stoch_label', var.id)
+        stoch_name = var.params.get('stoch_name', f"Stoch_{var.id}")
 
-    # Interventions Avoided (Triangular)
-    ws.cell(row=row, column=1, value="Interventions_Avoided")
-    ws.cell(row=row, column=2, value="=RAND()")
-    min_nm = ref('Tri_Interventions_Avoided_Min')
-    mode_nm = ref('Tri_Interventions_Avoided_Mode')
-    max_nm = ref('Tri_Interventions_Avoided_Max')
-    tri_formula = (f"=IF(B{row}<({mode_nm}-{min_nm})/({max_nm}-{min_nm}),"
-                   f"{min_nm}+SQRT(B{row}*({max_nm}-{min_nm})*({mode_nm}-{min_nm})),"
-                   f"{max_nm}-SQRT((1-B{row})*({max_nm}-{min_nm})*({max_nm}-{mode_nm})))")
-    ws.cell(row=row, column=3, value=tri_formula)
-    add_named_range(wb, "Stoch_Interventions", "10_Calc_Stochastic", f"$C${row}")
-    row += 1
+        ws.cell(row=row, column=1, value=label)
+        ws.cell(row=row, column=2, value="=RAND()")
 
-    # Efficiency Gain (Uniform approximation for Beta - simpler on Mac)
-    ws.cell(row=row, column=1, value="Efficiency_Gain")
-    ws.cell(row=row, column=2, value="=RAND()")
-    min_nm = ref('Beta_Efficiency_Gain_Min')
-    max_nm = ref('Beta_Efficiency_Gain_Max')
-    ws.cell(row=row, column=3, value=f"={min_nm}+({max_nm}-{min_nm})*B{row}")
-    add_named_range(wb, "Stoch_Efficiency", "10_Calc_Stochastic", f"$C${row}")
-    row += 1
+        # Generate formula using DistributionFormulas with named ranges
+        if var.distribution == 'triangular':
+            formula = DistributionFormulas.triangular_named(
+                min_name=f"Tri_{var.id}_Min",
+                mode_name=f"Tri_{var.id}_Mode",
+                max_name=f"Tri_{var.id}_Max",
+                rand_cell=f"B{row}"
+            )
+        elif var.distribution == 'beta':
+            # Use uniform approximation for Beta (simpler on Mac Excel)
+            min_nm = f"Beta_{var.id}_Min"
+            max_nm = f"Beta_{var.id}_Max"
+            formula = f"{min_nm}+({max_nm}-{min_nm})*B{row}"
+        else:
+            # Fallback: use from_variable for other distributions
+            formula = DistributionFormulas.from_variable(var, rand_cell=f"B{row}")
 
-    # Treatment Rate Factor (Triangular) - Kearl kinetics variability
-    ws.cell(row=row, column=1, value="Treatment_Rate_Factor")
-    ws.cell(row=row, column=2, value="=RAND()")
-    min_nm = ref('Tri_Treatment_Rate_Factor_Min')
-    mode_nm = ref('Tri_Treatment_Rate_Factor_Mode')
-    max_nm = ref('Tri_Treatment_Rate_Factor_Max')
-    tri_formula = (f"=IF(B{row}<({mode_nm}-{min_nm})/({max_nm}-{min_nm}),"
-                   f"{min_nm}+SQRT(B{row}*({max_nm}-{min_nm})*({mode_nm}-{min_nm})),"
-                   f"{max_nm}-SQRT((1-B{row})*({max_nm}-{min_nm})*({max_nm}-{mode_nm})))")
-    ws.cell(row=row, column=3, value=tri_formula)
-    add_named_range(wb, "Stoch_TreatmentRate", "10_Calc_Stochastic", f"$C${row}")
-    row += 1
+        ws.cell(row=row, column=3, value=f"={formula}")
+        add_named_range(wb, stoch_name, "10_Calc_Stochastic", f"$C${row}")
+        row += 1
 
     create_table(ws, "tbl_Stochastic", f"A{stoch_start-1}:C{row-1}")
 
