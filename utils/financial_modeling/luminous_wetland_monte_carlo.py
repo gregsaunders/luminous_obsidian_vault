@@ -3053,6 +3053,7 @@ def create_20_dashboard(wb):
         ("Monte Carlo P50", "=MC_P50"),
         ("Monte Carlo P90", "=MC_P90"),
         ("Probability NPV > 0", "=MC_Prob_Positive"),
+        ("Compliance Gate Status", '=IF(ComplianceGate=1,"PASS","FAIL")'),
         ("Annual Testing Cost", "=Testing_Cost"),
         ("Year 1 Gross Value", "=Year1_Gross_Value"),
         ("Year 1 Net Value", "=Year1_Net_Value"),
