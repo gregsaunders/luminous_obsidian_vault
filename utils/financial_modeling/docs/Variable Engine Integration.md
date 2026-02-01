@@ -13,15 +13,19 @@ The variable engine replaces hardcoded variable definitions with YAML configurat
 ## Architecture
 
 ```
-config/variables/
-├── environmental.yaml    # Environmental drivers (Temp, UV, DO, etc.)
-├── ionic.yaml            # Ionic balance variables
-├── kinetic.yaml          # Kinetic rate modifiers
-├── financial.yaml        # Stochastic financial variables (triangular/beta)
-├── timing.yaml           # Seasonal timing parameters
-├── site.yaml             # Site configuration
-├── costs.yaml            # Cost parameters
-└── kinetics_baseline.yaml # Baseline treatment kinetics
+config/
+├── model.yaml            # Simulation settings (iterations, discount rate, etc.)
+├── variables/
+│   ├── environmental.yaml    # Environmental drivers (Temp, UV, DO, etc.)
+│   ├── ionic.yaml            # Ionic balance variables
+│   ├── kinetic.yaml          # Kinetic rate modifiers
+│   ├── financial.yaml        # Stochastic financial variables (triangular/beta)
+│   ├── timing.yaml           # Seasonal timing parameters
+│   ├── site.yaml             # Site configuration
+│   ├── costs.yaml            # Cost parameters
+│   └── kinetics_baseline.yaml # Baseline treatment kinetics
+└── sites/
+    └── kearl.yaml            # Site-specific parameters
 
 variable_engine/
 ├── __init__.py           # Public API exports
@@ -29,6 +33,36 @@ variable_engine/
 ├── distributions.py      # DistributionFormulas class
 └── validators.py         # ConfigValidator class
 ```
+
+## Model Configuration (model.yaml)
+
+The `config/model.yaml` file controls simulation-wide settings:
+
+```yaml
+simulation:
+  iterations: 1000         # Monte Carlo iteration count
+  random_seed: null        # Set integer for reproducibility
+
+financial:
+  discount_rate: 0.048     # 4.8% discount rate
+  projection_years: 5
+  base_year: 2026
+
+output:
+  include_percentiles: [10, 25, 50, 75, 90]
+```
+
+### Accessing Model Config
+
+```python
+config = get_model_config()
+iterations = config['simulation']['iterations']  # 1000
+```
+
+The iteration count flows to:
+- Sheet title: "Monte Carlo Simulation (1000 iterations)"
+- Data Table row count
+- Probability formulas: `=COUNTIF(...)/1000`
 
 ## YAML Configuration Format
 

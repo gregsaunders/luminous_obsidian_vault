@@ -43,7 +43,9 @@ from openpyxl.workbook.defined_name import DefinedName
 from openpyxl.worksheet.datavalidation import DataValidation
 from openpyxl.utils import get_column_letter, quote_sheetname
 from openpyxl.formatting.rule import FormulaRule
+from pathlib import Path
 import os
+import yaml
 
 # Content loader for externalized documentation
 from content_loader import (
@@ -79,6 +81,28 @@ def get_registry() -> VariableRegistry:
         _registry = VariableRegistry()
         _registry.load_config()
     return _registry
+
+
+# =============================================================================
+# MODEL CONFIG - Simulation settings from config/model.yaml
+# =============================================================================
+
+_model_config = None
+
+
+def get_model_config() -> dict:
+    """Load model configuration from config/model.yaml.
+
+    Returns simulation settings including:
+    - iterations: Number of Monte Carlo iterations (default: 1000)
+    - random_seed: Seed for reproducibility (null = random each run)
+    """
+    global _model_config
+    if _model_config is None:
+        config_path = Path(__file__).parent / "config" / "model.yaml"
+        with open(config_path) as f:
+            _model_config = yaml.safe_load(f)
+    return _model_config
 
 
 def build_input_registry(registry: VariableRegistry) -> dict:
@@ -789,6 +813,10 @@ def create_0_cover(wb):
     ws.sheet_properties.tabColor = TAB_WHITE
     set_column_widths(ws, {'A': 20, 'B': 45})
 
+    # Get iteration count for display
+    config = get_model_config()
+    iterations = config['simulation']['iterations']
+
     # Title
     ws['A1'] = "Luminous Wetland Monte Carlo Financial Model"
     ws['A1'].font = Font(bold=True, size=20)
@@ -825,7 +853,7 @@ def create_0_cover(wb):
         ("10_Calc_Stochastic", "Random variable generation"),
         ("12_Calc_Value", "Gated value calculations"),
         ("13_Calc_Costs", "Cost calculations"),
-        ("14_Calc_Sim", "1000-iteration Monte Carlo"),
+        ("14_Calc_Sim", f"{iterations}-iteration Monte Carlo"),
         ("15_PL_Monthly", "Monthly P&L (placeholder)"),
         ("16_PL_Annual", "Annual projections"),
         ("17_CashFlow", "Cumulative projections"),
@@ -935,6 +963,10 @@ def create_3_instructions(wb):
     ws.sheet_properties.tabColor = TAB_GRAY
     set_column_widths(ws, {'A': 35, 'B': 30, 'C': 50, 'D': 15})
 
+    # Get iteration count for display
+    config = get_model_config()
+    iterations = config['simulation']['iterations']
+
     row = 1
     ws.cell(row=row, column=1, value="Model Instructions & Documentation").font = FONT_TITLE
     row += 2
@@ -944,7 +976,7 @@ def create_3_instructions(wb):
     row += 1
     purpose = [
         "Quantify value of high-frequency biosensor monitoring vs HRMS for OSPW wetland treatment",
-        "Monte Carlo simulation for uncertainty quantification (1000 iterations)",
+        f"Monte Carlo simulation for uncertainty quantification ({iterations} iterations)",
         "FAST Standard compliance for transparency and auditability",
         "All calculations performed in Excel - Python only generates structure/formulas",
     ]
@@ -959,7 +991,7 @@ def create_3_instructions(wb):
     usage = [
         "1. Edit yellow-highlighted cells in 1_TOC and 4_Assumptions",
         "2. Go to 14_Calc_Sim and set up the Data Table:",
-        "   - Select range shown in instructions (formula row through 1000 iterations)",
+        f"   - Select range shown in instructions (formula row through {iterations} iterations)",
         "   - Data > What-If Analysis > Data Table",
         "   - Column Input Cell: $K$1 (blank cell on same sheet)",
         "3. Press Ctrl+Alt+F9 to run Monte Carlo simulation",
@@ -2579,13 +2611,17 @@ def create_13_calc_costs(wb):
 # =============================================================================
 
 def create_14_calc_sim(wb):
-    """Sheet 10: Calc_Sim - 1000-iteration Monte Carlo using Excel Data Table."""
+    """Sheet 10: Calc_Sim - Monte Carlo simulation using Excel Data Table."""
     ws = wb.create_sheet("14_Calc_Sim")
     ws.sheet_properties.tabColor = TAB_BLUE
     set_column_widths(ws, {'A': 26, 'B': 14, 'C': 14, 'D': 14, 'E': 14, 'F': 14, 'G': 14, 'H': 14, 'I': 18, 'K': 8})
 
+    # Get iteration count from model config
+    config = get_model_config()
+    iterations = config['simulation']['iterations']
+
     # Title row first (matching other sheets' pattern)
-    ws['A1'] = "Monte Carlo Simulation (1000 iterations)"
+    ws['A1'] = f"Monte Carlo Simulation ({iterations} iterations)"
     ws['A1'].font = FONT_TITLE
 
     # Context box starts at row 3 (after blank row 2)
@@ -2603,7 +2639,7 @@ def create_14_calc_sim(wb):
     header_row = row
     formula_row = header_row + 1
     first_iter_row = formula_row + 1
-    last_iter_row = first_iter_row + 999  # 1000 iterations
+    last_iter_row = first_iter_row + iterations - 1
 
     # Brief instructions above the data table
     ws.cell(row=row, column=1, value=f"Select A{formula_row}:I{last_iter_row} > Data > What-If Analysis > Data Table")
@@ -2616,7 +2652,7 @@ def create_14_calc_sim(wb):
     header_row = row + 1
     formula_row = header_row + 1
     first_iter_row = formula_row + 1
-    last_iter_row = first_iter_row + 999
+    last_iter_row = first_iter_row + iterations - 1
 
     # MC Anchor cell on this sheet - leave as None for Data Table column input
     # Do NOT set to empty string - causes Excel validation issues
@@ -2647,8 +2683,8 @@ def create_14_calc_sim(wb):
         ws.cell(row=row, column=col).number_format = FMT_CURRENCY
     ws.cell(row=row, column=9).number_format = '0.0'  # Days format
 
-    # Iteration numbers (1-1000)
-    for i in range(1, 1001):
+    # Iteration numbers (1 to iterations)
+    for i in range(1, iterations + 1):
         ws.cell(row=first_iter_row + i - 1, column=1, value=i)
 
     # Statistics section (after Data Table)
@@ -2662,7 +2698,7 @@ def create_14_calc_sim(wb):
         ("P50 NPV (Median)", f"=PERCENTILE(B{first_iter_row}:B{last_iter_row},0.50)", FMT_CURRENCY),
         ("P90 NPV", f"=PERCENTILE(B{first_iter_row}:B{last_iter_row},0.90)", FMT_CURRENCY),
         ("StdDev", f"=STDEV(B{first_iter_row}:B{last_iter_row})", FMT_CURRENCY),
-        ("Prob(NPV>0)", f"=COUNTIF(B{first_iter_row}:B{last_iter_row},\">0\")/1000", FMT_PERCENT),
+        ("Prob(NPV>0)", f"=COUNTIF(B{first_iter_row}:B{last_iter_row},\">0\")/{iterations}", FMT_PERCENT),
     ]
 
     stats_start = row
@@ -2689,7 +2725,7 @@ def create_14_calc_sim(wb):
         ("P10 Days (optimistic)", f'=IFERROR(PERCENTILE(I{first_iter_row}:I{last_iter_row},0.10),"Run MC")', '0.0'),
         ("P50 Days (median)", f'=IFERROR(PERCENTILE(I{first_iter_row}:I{last_iter_row},0.50),"Run MC")', '0.0'),
         ("P90 Days (conservative)", f'=IFERROR(PERCENTILE(I{first_iter_row}:I{last_iter_row},0.90),"Run MC")', '0.0'),
-        ("Prob(Achievable in Season)", f'=IFERROR(COUNTIF(I{first_iter_row}:I{last_iter_row},"<="&Season_Length)/1000,"Run MC")', FMT_PERCENT),
+        ("Prob(Achievable in Season)", f'=IFERROR(COUNTIF(I{first_iter_row}:I{last_iter_row},"<="&Season_Length)/{iterations},"Run MC")', FMT_PERCENT),
     ]
 
     kinetics_stats_start = row
@@ -3333,12 +3369,16 @@ def create_21_checks(wb):
 
 def generate_workbook():
     """Generate the FAST-compliant Excel workbook (22 sheets, 0-21)."""
+    # Load model config for iteration count
+    config = get_model_config()
+    iterations = config['simulation']['iterations']
+
     print("Luminous Wetland Financial Model - FAST Standard Generator v4.0")
     print("=" * 65)
     print("\nGenerating 22-sheet FAST-compliant workbook...")
     print("  - Python writes FORMULAS only (via LOCATIONS registry)")
     print("  - Excel performs ALL calculations")
-    print("  - Monte Carlo via Data Tables (1000 iterations)")
+    print(f"  - Monte Carlo via Data Tables ({iterations} iterations)")
     print("  - NEW: Environmental drivers and kinetics cascade")
     print("  - NEW: 13-variable compliance gate matrix")
     print()
@@ -3397,7 +3437,7 @@ def generate_workbook():
     print("  [9] 13_Calc_Costs - Cost calculations")
     create_13_calc_costs(wb)
 
-    print("  [10] 14_Calc_Sim - 1000-iteration Monte Carlo")
+    print(f"  [10] 14_Calc_Sim - {iterations}-iteration Monte Carlo")
     create_14_calc_sim(wb)
 
     print("  [11] 15_PL_Monthly - Monthly P&L (placeholder)")
